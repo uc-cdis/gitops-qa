@@ -1,8 +1,8 @@
 mappings:
-  - name: kf_harmonized
+  - name: kidsfirst
     doc_type: case
     type: aggregator
-    root: participant:
+    root: participant
     props:
       - name: submitter_id
       - name: project_id
