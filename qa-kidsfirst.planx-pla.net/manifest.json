@@ -21,7 +21,7 @@
     "fluentd": "fluent/fluentd-kubernetes-daemonset:cloudwatch",
     "jupyterhub": "quay.io/occ_data/jupyterhub:master",
     "spark": "quay.io/cdis/gen3-spark:master",
-    "tube": "quay.io/cdis/tube:master"
+    "tube": "quay.io/cdis/tube:feat_object_props"
   },
   "jupyterhub": {
     "enabled": "no"
