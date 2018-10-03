@@ -1,8 +1,8 @@
 mappings:
-  - name: kf_harmonized
+  - name: kidsfirst
     doc_type: case
     type: aggregator
-    root: participant:
+    root: participant
     props:
       - name: submitter_id
       - name: project_id
@@ -11,6 +11,7 @@ mappings:
       - path: demographics
         props:
           - name: gender
+          - name: race
             value_mappings:
               - White: white
               - American Indian or Alaska Native: american indian or alaska native
@@ -21,8 +22,9 @@ mappings:
               - Unknown: unknown
               - Not Reported: not reported
               - Not allowed to collect: not allowed to collect
-          - name: race
           - name: ethnicity
+            value_mappings:
+              - unknown: Unknown
     aggregated_props:
       - name: _samples_count
         path: samples
