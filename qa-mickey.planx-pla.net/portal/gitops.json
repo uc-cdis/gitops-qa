@@ -134,7 +134,7 @@
     "filters": {
       "tabs": [
         {
-          "title": "demographic",
+          "title": "Demographic",
           "fields":[
             "project_id",
             "gender",
