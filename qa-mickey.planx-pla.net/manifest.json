@@ -10,7 +10,7 @@
     "arborist": "quay.io/cdis/arborist:master",
     "arranger": "quay.io/cdis/arranger:master",
     "arranger-dashboard": "quay.io/cdis/arranger-dashboard:master",
-    "arranger-adminapi": "quay.io/cdis/arranger-server:master",
+    "arranger-adminapi": "quay.io/cdis/arranger-server:fix_adminserver",
     "fence": "quay.io/cdis/fence:master",
     "indexd": "quay.io/cdis/indexd:master",
     "peregrine": "quay.io/cdis/peregrine:feat_bagit",
@@ -26,7 +26,7 @@
   "arranger": {
     "project_id": "mickey_0",
     "auth_filter_field": "auth_resource_path",
-    "auth_filter_node_type": "case"
+    "auth_filter_node_type": "demographic"
   },
   "tube": {
     "es_index_name": "mickey"
@@ -39,7 +39,7 @@
     "hostname": "qa-mickey.planx-pla.net",
     "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
     "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/vadictionary/master/schema.json",
-    "portal_app": "va",
+    "portal_app": "gitops",
     "kube_bucket": "kube-qaplanetv1-gen3",
     "logs_bucket": "logs-qaplanetv1-gen3",
     "sync_from_dbgap": "False",
