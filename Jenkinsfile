@@ -12,7 +12,7 @@ pipeline {
         dir('gen3-qa') {
           git(
             url: 'https://github.com/uc-cdis/gen3-qa.git',
-            branch: 'master'
+            branch: 'fix/Jenkinsfile'
           )
         }
         dir('cloud-automation') {
@@ -20,6 +20,9 @@ pipeline {
             url: 'https://github.com/uc-cdis/cloud-automation.git',
             branch: 'master'
           )
+          script {
+            env.GEN3_HOME = env.WORKSPACE + "/cloud-automation"
+          }
         }
       }
     }
@@ -27,48 +30,46 @@ pipeline {
       steps {
         script {
           def changeLogSets = currentBuild.changeSets
-          for (int i = 0; i < changeLogSets.size(); i++) {
+          def foundMatch=false;
+          for (int i = 0; !foundMatch && i < changeLogSets.size(); i++) {
             def entries = changeLogSets[i].items
-            for (int j = 0; j < entries.length; j++) {
+            for (int j = 0; !foundMatch && j < entries.length; j++) {
               def affectedPaths = entries[j].getAffectedPaths()
-              env.ABORT_SUCCESS = 'false';
-              env.KUBECTL_NAMESPACE = 'qa-bloodpac'
-              if (affectedPaths.contains('nci-crdc.datacommons.io/manifest.json')) {
-                env.AFFECTED_PATH = 'nci-crdc.datacommons.io/manifest.json'
-                env.KUBECTL_NAMESPACE = 'default'
-              } else if (affectedPaths.contains('nci-crdc-staging.datacommons.io/manifest.json')) {
-                env.AFFECTED_PATH = 'nci-crdc-staging.datacommons.io/manifest.json'
-                env.KUBECTL_NAMESPACE = 'default'
-              } else if (affectedPaths.contains('nci-crdc-demo.datacommons.io/manifest.json')) {
-                env.AFFECTED_PATH = 'nci-crdc-demo.datacommons.io/manifest.json'
-                env.KUBECTL_NAMESPACE = 'default'
-              } else if (affectedPaths.contains('data.bloodpac.org/manifest.json')) {
-                env.AFFECTED_PATH = 'data.bloodpac.org/manifest.json'
-              } else if (affectedPaths.contains('data.braincommons.org/manifest.json')) {
-                env.AFFECTED_PATH = 'data.braincommons.org/manifest.json'
-                env.KUBECTL_NAMESPACE = 'qa-brain'
-              } else if (affectedPaths.contains('data.kidsfirstdrc.org/manifest.json')) {
-                env.AFFECTED_PATH = 'data.kidsfirstdrc.org/manifest.json'                
-                env.KUBECTL_NAMESPACE = 'qa-kidsfirst'
-              } else if (affectedPaths.contains('niaid.bionimbus.org/manifest.json')) {
-                env.AFFECTED_PATH = 'niaid.bionimbus.org/manifest.json'               
-                env.KUBECTL_NAMESPACE = 'qa-niaid'
-              } else if (affectedPaths.contains('dcp.bionimbus.org/manifest.json')) {
-                env.AFFECTED_PATH = 'dcp.bionimbus.org/manifest.json'               
-                env.KUBECTL_NAMESPACE = 'qa-dcp'
+              if (affectedPaths.contains('qa-brain/manifest.json')) {
+                env.AFFECTED_PATH = 'qa-brain/manifest.json'
+                env.KUBECTL_NAMESPACE = 'jenkins-brain'
+                env.COPY_MANIFEST = 'true';
+                foundMatch = true
+              } else if (affectedPaths.contains('qa-niaid/manifest.json')) {
+                env.AFFECTED_PATH = 'qa-niaid/manifest.json'
+                env.KUBECTL_NAMESPACE = 'jenkins-niaid'
+                env.COPY_MANIFEST = 'true';
+                foundMatch = true
+              } else if (affectedPaths.contains('jenkins-brain/manifest.json')) {
+                env.AFFECTED_PATH = 'jenkins-brain/manifest.json'
+                env.KUBECTL_NAMESPACE = 'jenkins-brain'
+                foundMatch = true
+              } else if (affectedPaths.contains('jenkins-niaid/manifest.json')) {
+                env.AFFECTED_PATH = 'jenkins-niaid/manifest.json'
+                env.KUBECTL_NAMESPACE = 'jenkins-niaid'
+                foundMatch = true
               } else {
-                println "production stuff was not affected, aborting"
-                currentBuild.result = 'SUCCESS'
-                env.ABORT_SUCCESS = 'true';
+                println "ignoring git changes to: " + affectedPaths.join("\n")
               }
             }
+          }
+          if (!foundMatch) {
+            println "testable stuff was not affected, aborting"
+            env.ABORT_SUCCESS = 'true';
+            env.COMPY_MANIFEST = 'false';
+            currentBuild.result = 'SUCCESS'
           }
         }
       }
     }
     stage('SubstituteManifest') {
       when {
-        environment name: 'ABORT_SUCCESS', value: 'false'
+        environment name: 'COPY_MANIFEST', value: 'true'
       }
       steps {
         script {
@@ -92,20 +93,12 @@ pipeline {
           echo "GIT_COMMIT is $env.GIT_COMMIT"
           echo "KUBECTL_NAMESPACE is $env.KUBECTL_NAMESPACE"
           echo "WORKSPACE is $env.WORKSPACE"
+          script {
+            uid = BUILD_TAG.replaceAll(' ', '_').replaceAll('%2F', '_')
+            sh("bash cloud-automation/gen3/bin/klock.sh lock jenkins "+uid)
+          }
           sh "bash cloud-automation/gen3/bin/kube-roll-all.sh"
           sh "bash cloud-automation/gen3/bin/kube-wait4-pods.sh || true"
-        }
-      }
-    }
-    stage('RunInstall') {
-      when {
-        environment name: 'ABORT_SUCCESS', value: 'false'
-      }
-      steps {
-        dir('gen3-qa') {
-          withEnv(['GEN3_NOPROXY=true']) {
-            sh "bash ./run-install.sh"
-          }
         }
       }
     }
@@ -115,7 +108,8 @@ pipeline {
       }
       steps {
         dir('gen3-qa') {
-          withEnv(['GEN3_NOPROXY=true', "vpc_name=$env.KUBECTL_NAMESPACE", "GEN3_HOME=$env.WORKSPACE/cloud-automation"]) {
+          withEnv(['GEN3_NOPROXY=true', "vpc_name=$env.KUBECTL_NAMESPACE", "GEN3_HOME=$env.WORKSPACE/cloud-automation", "NAMESPACE=$env.KUBECTL_NAMESPACE", "TEST_DATA_PATH=$env.WORKSPACE/testData/"]) {
+            sh "bash ./jenkins-simulate-data.sh $env.KUBECTL_NAMESPACE"
             sh "bash ./run-tests.sh $env.KUBECTL_NAMESPACE"
           }
         }
@@ -139,6 +133,13 @@ pipeline {
     }
     always {
       echo "done"
+      script {
+        if (env.ABORT_SUCCESS == 'false') {
+          uid = BUILD_TAG.replaceAll(' ', '_').replaceAll('%2F', '_')
+          sh("bash cloud-automation/gen3/bin/klock.sh unlock jenkins "+uid)
+          junit("gen3-qa/output/*.xml")
+        }
+      }
     }
   }
 }
