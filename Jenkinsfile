@@ -59,10 +59,14 @@ pipeline {
             }
           }
           if (!foundMatch) {
+            // nothing to test!
             println "testable stuff was not affected, aborting"
             env.ABORT_SUCCESS = 'true';
-            env.COMPY_MANIFEST = 'false';
+            env.COPY_MANIFEST = 'false';
             currentBuild.result = 'SUCCESS'
+          } else {
+            // there's something to test!
+            env.ABORT_SUCCESS = 'false';
           }
         }
       }
