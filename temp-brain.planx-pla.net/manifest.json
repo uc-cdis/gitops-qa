@@ -13,7 +13,7 @@
     "arranger-adminapi": "quay.io/cdis/arranger-server:master",
     "fence": "quay.io/cdis/fence:master",
     "indexd": "quay.io/cdis/indexd:master",
-    "peregrine": "quay.io/cdis/peregrine:fix_timers",
+    "peregrine": "quay.io/cdis/peregrine:master",
     "pidgin": "quay.io/cdis/pidgin:master",
     "revproxy": "quay.io/cdis/nginx:1.15.5-ctds",
     "sheepdog": "quay.io/cdis/sheepdog:master",
