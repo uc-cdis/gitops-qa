@@ -44,10 +44,10 @@
     "projectDetails": "boardCounts"
   },
   "components": {
-    "appName": "The VA Precision Oncology Data Portal",
+    "appName": "The VA Precision Oncology Data Commons",
     "index": {
       "introduction": {
-        "heading": "VA Data Portal",
+        "heading": "VA Data Commons",
         "text": "The VA Data Commons supports the management, analysis and sharing of US military veteran oncologic data for the research communityand aims to accelerate discovery and development of therapies, diagnostic tests, and other technologies for precision oncology. The data commons supports cross-project analyses by harmonizing data from different projects through the collaborative development of a data dictionary, providing an API for data queries and download, and providing a cloud-based analysis workspace with rich tools and resources.",
         "link": "/submission"
       },
@@ -55,7 +55,7 @@
         {
           "name": "Define Data Field",
           "icon": "data-field-define",
-          "body": "The VA Data Portal defines the data in a general way. Please study the dictionary before you start browsing.",
+          "body": "The VA Data Commons defines the data in a general way. Please study the dictionary before you start browsing.",
           "link": "/DD",
           "label": "Learn more"
         },
@@ -83,7 +83,6 @@
       ]
     },
     "navigation": {
-      "title": "VA Data Portal",
       "items": [
         {
           "icon": "dictionary",
@@ -116,6 +115,13 @@
           "name": "Profile"
         }
       ]
+    },
+    "login": {
+      "title": "Veterans Affairs Data Commons",
+      "subTitle": "search, compare, and download data",
+      "text": "The VA Data Commons supports the management, analysis and sharing of US military veteran oncologic data for the research communityand aims to accelerate discovery and development of therapies, diagnostic tests, and other technologies for precision oncology.",
+      "contact": "If you have any questions about access or the registration process, please contact ",
+      "email": "support@datacommons.io"
     }
   },
   "featureFlags": {
