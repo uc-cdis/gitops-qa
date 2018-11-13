@@ -1,11 +1,11 @@
 {
-  "gaTrackingId": "UA-119127212-4",
+  "gaTrackingId": "UA-119127212-1",
   "graphql": {
     "boardCounts": [
       {
-        "graphql": "_case_count",
-        "name": "Case",
-        "plural": "Cases"
+        "graphql": "_subject_count",
+        "name": "Subject",
+        "plural": "Subjects"
       },
       {
         "graphql": "_study_count",
@@ -13,15 +13,15 @@
         "plural": "Studies"
       },
       {
-        "graphql": "_aliquot_count",
-        "name": "Aliquot",
-        "plural": "Aliquots"
+        "graphql": "_summary_lab_result_count",
+        "name": "Lab record",
+        "plural": "Lab records"
       }
     ],
     "chartCounts": [
       {
-        "graphql": "_case_count",
-        "name": "Case"
+        "graphql": "_subject_count",
+        "name": "Subject"
       },
       {
         "graphql": "_study_count",
@@ -31,18 +31,18 @@
     "projectDetails": "boardCounts"
   },
   "components": {
-    "appName": "The Brain Commons Portal",
+    "appName": "NIAID Data Hub",
     "index": {
       "introduction": {
-        "heading": "Brain Commons",
-        "text": "The Brain Commons supports the management, analysis and sharing of brain health data for the research community and aims to accelerate discovery and development of therapies, diagnostic tests, and other technologies for treatment and prevention of diseases impacting the brain. The data commons supports cross-project analyses by harmonizing data from different projects through the collaborative development of a data dictionary, providing an API for data queries and download, and providing a cloud-based analysis workspace with rich tools and resources.",
+        "heading": "NIAID Data Hub",
+        "text": "The NIAID Data Hub supports the management, analysis and sharing of immunologic data for the research community and aims to accelerate discovery and development of therapies, vaccines, diagnostic tests, and other technologies for the treatment and prevention of infectious, immunologic, and allergic diseases. The data hub supports cross-project analyses by harmonizing data from different projects through the collaborative development of a data dictionary, providing an API for data queries and download, and providing a cloud-based analysis workspace with rich tools and resources.",
         "link": "/submission"
       },
       "buttons": [
         {
           "name": "Define Data Field",
           "icon": "data-field-define",
-          "body": "The Brain Commons define the data in a general way. Please study the dictionary before you start browsing.",
+          "body": "The NIAID Data Hub define the data in a general way. Please study the dictionary before you start browsing.",
           "link": "/DD",
           "label": "Learn more"
         },
@@ -70,7 +70,6 @@
       ]
     },
     "navigation": {
-      "title": "Brain Commons",
       "items": [
         {
           "icon": "dictionary",
@@ -85,16 +84,22 @@
           "name": "Exploration"
         },
         {
-          "icon": "query",
-          "link": "/query",
-          "color": "#a2a2a2",
-          "name": "Query"
-        },
-        {
           "icon": "files",
           "link": "/files",
           "color": "#a2a2a2",
           "name": "Files"
+        },
+        {
+          "icon": "analysis",
+          "link": "/analysis",
+          "color": "#a2a2a2",
+          "name": "Simulation"
+        },
+        {
+          "icon": "query",
+          "link": "/query",
+          "color": "#a2a2a2",
+          "name": "Query"
         },
         {
           "icon": "workspace",
@@ -111,9 +116,9 @@
       ]
     },
     "login": {
-      "title": "Brain Commons",
+      "title": "NIAID Data Hub",
       "subTitle": "search, compare, and download data",
-      "text": "This website provides a centralized, cloud-based discovery portal for the brain health research community and aims to accelerate discovery and development of therapies, diagnostic tests, and other technologies for the treatment and prevention of diseases impacting the brain.",
+      "text": "The website combines government datasets from 3 divisions of NIAID to create clean, easy to navigate visualizations for data-driven discovery within Allergy and Infectious Diseases.",
       "contact": "If you have any questions about access or the registration process, please contact ",
       "email": "support@datacommons.io"
     }
@@ -127,9 +132,9 @@
         "chartType": "count",
         "title": "Projects"
       },
-      "node_id": {
+      "submitter_id": {
         "chartType": "count",
-        "title": "Cases"
+        "title": "Subjects"
       },
       "gender": {
         "chartType": "pie",
@@ -147,30 +152,57 @@
     "filters": {
       "tabs": [
         {
-          "title": "Case",
-          "fields": [
+          "title": "Subject",
+          "fields":[
+            "project_id",
+            "gender",
             "race",
             "ethnicity",
-            "gender",
-            "project_id"
+            "vital_status",
+            "frstdthd"
+          ]
+        }, {
+          "title": "Diagnosis",
+          "fields": [
+            "arthxbase",
+            "bshbvstat",
+            "bshcvstat",
+            "cd4nadir",
+            "status",
+            "virus_type",
+            "virus_subtype"
           ]
         }
       ]
     },
-    "projectId": "search",
-    "graphqlField": "case",
-    "index": "",
+    "manifestMapping": {
+      "resourceIndexType": "file",
+      "resourceIdField": "object_id",
+      "referenceIdFieldInResourceIndex": "subject_id",
+      "referenceIdFieldInDataIndex": "node_id"
+    },
     "table": {
       "buttons": [
         {
           "enabled": true,
           "type": "data",
-          "title": "Download Data",
+          "title": "Download Clinical",
           "leftIcon": "user",
           "rightIcon": "download",
-          "fileName": "data.json"
+          "fileName": "clinical.json"
+        },
+        {
+          "enabled": true,
+          "type": "manifest",
+          "title": "Download Manifest",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "manifest.json"
         }
       ]
-    }
+    },
+    "projectId": "search",
+    "graphqlField": "subject",
+    "index": ""
   }
 }
