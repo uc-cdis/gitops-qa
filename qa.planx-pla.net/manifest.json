@@ -37,5 +37,8 @@
   },
   "jupyterhub": {
     "enabled": "no"
+  },
+  "canary": {
+    "default": 0
   }
 }
