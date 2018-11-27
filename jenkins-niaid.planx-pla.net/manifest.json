@@ -34,6 +34,9 @@
       "file"
     ]
   },
+  "peregrine": {
+    "sidecar": "True"
+  },
   "tube": {
     "es_index_name": "niaid_1"
   },
