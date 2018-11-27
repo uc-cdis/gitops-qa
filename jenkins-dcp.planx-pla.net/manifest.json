@@ -30,6 +30,9 @@
       "case"
     ]
   },
+  "peregrine": {
+    "sidecar": "True"
+  },
   "tube": {
     "es_index_name": "dcp_0"
   },
