@@ -31,7 +31,7 @@
     ]
   },
   "peregrine": {
-    "sidecar": "True"
+    "sidecar": "False"
   },
   "tube": {
     "es_index_name": "dcp_0"
