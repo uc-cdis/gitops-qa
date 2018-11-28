@@ -2,14 +2,16 @@
 
 @Library('cdis-jenkins-lib@refactor/microservices') _
 
-runPipeline {
-  pipeline = 'gitops'
+//runPipeline {
+//  pipeline = 'gitops'
 
-  namespaces = [
-    "jenkins-brain",
-    "jenkins-niaid",
-    "jenkins-dcp"
-  ]
+//  namespaces = [
+//    "jenkins-brain",
+//    "jenkins-niaid",
+//    "jenkins-dcp"
+//  ]
 
-  skipDeploy = 'true'
-}
+//  skipDeploy = 'true'
+//}
+
+srcPipeline()
