@@ -4,12 +4,4 @@
 
 runPipeline {
  pipeline = 'gitops'
-
- namespaces = [
-   "jenkins-brain",
-   "jenkins-niaid",
-   "jenkins-dcp"
- ]
-
- skipDeploy = 'true'
 }
