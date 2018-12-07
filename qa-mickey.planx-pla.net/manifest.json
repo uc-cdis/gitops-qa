@@ -8,7 +8,7 @@
   },
   "versions": {
     "arborist": "quay.io/cdis/arborist:master",
-    "arranger": "quay.io/cdis/arranger:1.0.2",
+    "arranger": "quay.io/cdis/arranger:master",
     "arranger-adminapi": "quay.io/cdis/arranger-server:fix_adminserver",
     "arranger-dashboard": "quay.io/cdis/arranger-dashboard:master",
     "fence": "quay.io/cdis/fence:master",

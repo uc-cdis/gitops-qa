@@ -138,7 +138,7 @@
     "charts": {
       "node_id": {
         "chartType": "count",
-        "title": "Demographic"
+        "title": "Demographics"
       },
       "Gender":{
         "chartType": "bar",
