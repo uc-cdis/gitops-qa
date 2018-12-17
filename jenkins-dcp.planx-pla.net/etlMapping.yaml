@@ -1,4 +1,4 @@
-case:
+mappings:
   - name: jenkins-dcp_etl
     doc_type: case
     type: aggregator
