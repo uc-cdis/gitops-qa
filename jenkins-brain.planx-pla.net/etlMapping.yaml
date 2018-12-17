@@ -16,7 +16,7 @@ mappings:
               - male: M
           - name: race
           - name: ethnicity
-    sorted_by: updated_datetime, desc
+        sorted_by: updated_datetime, desc
     aggregated_props:
       - name: _samples_count
         path: samples
