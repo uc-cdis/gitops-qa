@@ -40,7 +40,6 @@ mappings:
         path: samples
         fn: count
       - name: _aliquots_count
-        leaf: aliquot
         path: samples.aliquots
         fn: count
       - name: _summary_lab_results_on_sample_count
