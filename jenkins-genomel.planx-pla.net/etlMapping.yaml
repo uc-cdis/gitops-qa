@@ -19,7 +19,6 @@ mappings:
         path: samples
         fn: count
       - name: _aliquots_count
-        leaf: aliquot
         path: samples.aliquots
         fn: count
   - name: jenkins-genomel_file
@@ -43,4 +42,4 @@ mappings:
         path: read_groups.aliquots.samples.cases
       - name: submitted_unaligned_reads
         path: read_groups.aliquots.samples.cases
-      
+ 
