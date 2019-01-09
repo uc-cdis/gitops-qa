@@ -22,7 +22,8 @@
     "revproxy": "quay.io/cdis/nginx:1.15.5-ctds",
     "sheepdog": "quay.io/cdis/sheepdog:master",
     "spark": "quay.io/cdis/gen3-spark:feat_init",
-    "tube": "quay.io/cdis/tube:master"
+    "tube": "quay.io/cdis/tube:master",
+    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:master"
   },
   "arranger": {
     "project_id": "brain_2",
@@ -46,7 +47,8 @@
     "kube_bucket": "kube-qaplanetv1-gen3",
     "logs_bucket": "logs-qaplanetv1-gen3",
     "sync_from_dbgap": "False",
-    "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml"
+    "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
+    "dispatcher_job_num": "5"
   },
   "canary": {
     "default": 0
