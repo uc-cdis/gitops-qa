@@ -3,11 +3,6 @@
   "graphql": {
     "boardCounts": [
       {
-        "graphql": "_data_collection_count",
-        "name": "Data Collection",
-        "plural": "Data Collections"
-      },
-      {
         "graphql": "_clinical_supplement_count",
         "name": "Clinical Supplement",
         "plural": "Clinical Supplements"
@@ -24,10 +19,6 @@
       }
     ],
     "chartCounts": [
-      {
-        "graphql": "_data_collection_count",
-        "name": "Data Collection"
-      },
       {
         "graphql": "_clinical_supplement_count",
         "name": "Clinical Supplement"
