@@ -144,7 +144,7 @@
   },
   "arrangerConfig": {
     "charts": {
-      "node_id": {
+      "Chicago_ID": {
         "chartType": "count",
         "title": "Demographics"
       },
@@ -194,7 +194,7 @@
       ]
     },
     "projectId": "search",
-    "graphqlField": "demographic",
+    "graphqlField": "patients",
     "index": ""
   }
 }
