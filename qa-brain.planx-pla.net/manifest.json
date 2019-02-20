@@ -21,7 +21,8 @@
     "pidgin": "quay.io/cdis/pidgin:master",
     "portal": "quay.io/cdis/data-portal:feat_chunk-submission",
     "revproxy": "quay.io/cdis/nginx:1.15.5-ctds",
-    "sheepdog": "quay.io/cdis/sheepdog:feat_datamodel-1",
+    "sheepdog": "quay.io/cdis/sheepdog:feat_uniqueKeys",
+    "sheepdog-canary": "quay.io/cdis/sheepdog:fix_uniqueKeys",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:master",
     "spark": "quay.io/cdis/gen3-spark:1.0.0",
     "tube": "quay.io/cdis/tube:0.1.6"
