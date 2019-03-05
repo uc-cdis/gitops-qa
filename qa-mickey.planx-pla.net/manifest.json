@@ -25,7 +25,7 @@
     "tube": "quay.io/cdis/tube:master"
   },
   "arranger": {
-    "project_id": "mickey_0",
+    "project_id": "mickey_1",
     "auth_filter_field": "auth_resource_path",
     "auth_filter_node_types": ["patients"]
   },
