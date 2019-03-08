@@ -1,5 +1,5 @@
 mappings:
-  - name: etl
+  - name: qa-dcp_etl
     doc_type: case
     type: aggregator
     root: case
@@ -76,7 +76,7 @@ mappings:
           - name: data_type
             src: data_type
             fn: set
-  - name: file
+  - name: qa-dcp_file
     doc_type: file
     type: collector
     root: None
@@ -94,4 +94,3 @@ mappings:
           - name: case_id
             src: id
           - name: project_id
-
