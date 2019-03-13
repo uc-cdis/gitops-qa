@@ -86,7 +86,7 @@
           "icon": "exploration",
           "link": "/explorer",
           "label": "Explorer",
-          "color": "#a2a2a2" 
+          "color": "#a2a2a2"
         },
         {
           "icon": "files",
@@ -142,7 +142,7 @@
   "featureFlags": {
     "explorer": true
   },
-  "arrangerConfig": {
+  "dataExplorerConfig": {
     "charts": {
       "Chicago_ID": {
         "chartType": "count",
@@ -174,27 +174,31 @@
       ]
     },
     "table": {
-      "buttons": [
-        {
-          "enabled": false,
-          "type": "data",
-          "title": "Download Clinical",
-          "leftIcon": "user",
-          "rightIcon": "download",
-          "fileName": "clinical.json"
-        },
-        {
-          "enabled": false,
-          "type": "manifest",
-          "title": "Download Manifest",
-          "leftIcon": "datafile",
-          "rightIcon": "download",
-          "fileName": "manifest.json"
-        }
-      ]
+      "enabled": true
     },
-    "projectId": "search",
-    "graphqlField": "patients",
-    "index": ""
+    "buttons": [
+      {
+        "enabled": false,
+        "type": "data",
+        "title": "Download Clinical",
+        "leftIcon": "user",
+        "rightIcon": "download",
+        "fileName": "clinical.json"
+      },
+      {
+        "enabled": false,
+        "type": "manifest",
+        "title": "Download Manifest",
+        "leftIcon": "datafile",
+        "rightIcon": "download",
+        "fileName": "manifest.json"
+      }
+    ],
+    "arrangerConfig": {
+      "projectId": "search",
+      "graphqlField": "patients",
+      "index": "",
+      "nodeCountField": "Chicago_ID"
+    }
   }
 }
