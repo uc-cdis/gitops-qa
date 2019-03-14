@@ -8,14 +8,14 @@
         "plural": "Clinical Supplements"
       },
       {
-        "graphql": "_submitted_unaligned_reads_count",
+        "graphql": "_unaligned_reads_file_count",
         "name": "Submitted Unaligned Reads",
         "plural": "Submitted Unaligned Reads Files"
       },
       {
-        "graphql": "_image_exam_file_count",
-        "name": "Image Exam File",
-        "plural": "Image Exam Files"
+        "graphql": "_imaging_file_count",
+        "name": "Image File",
+        "plural": "Image Files"
       }
     ],
     "chartCounts": [
@@ -24,12 +24,12 @@
         "name": "Clinical Supplement"
       },
       {
-        "graphql": "_submitted_unaligned_reads_count",
+        "graphql": "_unaligned_reads_file_count",
         "name": "Submitted Unaligned Reads"
       },
       {
-        "graphql": "_image_exam_file_count",
-        "name": "Image Exam File"
+        "graphql": "_imaging_file_count",
+        "name": "Image File"
       }
     ],
     "projectDetails": "boardCounts"
