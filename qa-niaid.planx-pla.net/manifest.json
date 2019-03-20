@@ -25,7 +25,7 @@
     "tube": "quay.io/cdis/tube:feat_version"
   },
   "jupyterhub": {
-    "enabled": "no"
+    "enabled": "yes"
   },
   "arranger": {
     "project_id": "niaid_3",
