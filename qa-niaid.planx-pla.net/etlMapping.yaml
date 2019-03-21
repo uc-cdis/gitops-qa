@@ -7,23 +7,27 @@ mappings:
       - name: submitter_id
       - name: project_id
     flatten_props:
-      - path: virus_infections
-        props:
-          - name: virus_type
       - path: demographics
         props:
           - name: gender
-            value_mappings:
-              - female: F
-              - male: M
           - name: race
-            value_mappings:
-              - Asian/Pacific Islander: APAC
-              - American Indian or Alaskan Native: Indian
-              - Multi-racial: Multi
           - name: ethnicity
           - name: vital_status
           - name: year_of_birth
+          - name: study_center
+            src: country_of_birth
+      - path: virus_infections
+        props:
+          - name: virus_type
+          - name: virus_subtype
+      - path: hiv_history_records
+        props:
+          - name: arthxbase
+          - name: bshbvstat
+          - name: bshcvstat
+          - name: cd4nadir
+          - name: frstdthd
+          - name: status
     aggregated_props:
       - name: _follow_ups_count
         path: follow_ups
@@ -58,44 +62,62 @@ mappings:
       - name: _metabolite_mass_spectrometries_count
         path: samples.aliquots.metabolite_mass_spectrometries
         fn: count
+      - name: _submitted_unaligned_reads_count
+        path: samples.aliquots.read_groups.submitted_unaligned_reads_files
+        fn: count
+      - name: _regimen_or_line_of_therapies
+        src: regimen_or_line_of_therapy
+        path: diagnoses.treatments
+        fn: set
+      - name: _type_of_resistances
+        src: type_of_resistance
+        path: diagnoses
+        fn: set
+      - name: _summary_tb_culture_result
+        src: culture
+        path: samples.tb_results
+        fn: set
+      - name: _summary_tb_microscopy_result
+        src: microscopy
+        path: samples.tb_results
+        fn: set
+      - name: _summary_tb_specimen_result
+        src: test_type
+        path: samples.tb_results
+        fn: set
+      - name: therapy
+        path: follow_ups.summary_drug_uses
+        src: thrpy
+        fn: set
+      - name: therapyv
+        path: follow_ups.summary_drug_uses
+        src: thrpyv
+        fn: set
+      - name: _min_viral_load
+        path: follow_ups.summary_lab_results
+        src: viral_load
+        fn: min
+    special_props:
+      - name: _maintain_viral_load_less_than
+        path: follow_ups[visit_number].summary_lab_results[viral_load]
+        fn: sliding, 3, max, min
   - name: niaid_file
     doc_type: file
     type: collector
     root: None
+    category: data_file
     props:
       - name: object_id
       - name: md5sum
       - name: file_name
       - name: file_size
+      - name: data_format
+      - name: data_type
       - name: state
     injecting_props:
       subject:
         props:
           - name: subject_id
             src: id
+            fn: set
           - name: project_id
-    target_nodes:
-      - name: mutation_panel
-        path: subjects
-      - name: bgm_simulation
-        path: mutation_panels.subjects
-      - name: mrna_microarray
-        path: aliquots.samples.subjects
-      - name: mirna_microarray
-        path: aliquots.samples.subjects
-      - name: lipid_mass_spectrometry
-        path: aliquots.samples.subjects
-      - name: protein_mass_spectrometry
-        path: aliquots.samples.subjects
-      - name: metabolite_mass_spectrometry
-        path: aliquots.samples.subjects
-      - name: submitted_copy_number
-        path: aliquots.samples.subjects
-      - name: submitted_methylation
-        path: aliquots.samples.subjects
-      - name: submitted_aligned_reads
-        path: read_groups.aliquots.samples.subjects
-      - name: submitted_unaligned_reads
-        path: read_groups.aliquots.samples.subjects
-      - name: submitted_somatic_mutation
-        path: read_groups.aliquots.samples.subjects
