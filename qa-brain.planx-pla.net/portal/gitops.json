@@ -112,16 +112,34 @@
     },
     "login": {
       "title": "Brain Commons",
-      "subTitle": "search, compare, and download data",
+      "subTitle": "Explore, Analyze, and Share Data",
       "text": "This website provides a centralized, cloud-based discovery portal for the brain health research community and aims to accelerate discovery and development of therapies, diagnostic tests, and other technologies for the treatment and prevention of diseases impacting the brain.",
       "contact": "If you have any questions about access or the registration process, please contact ",
-      "email": "support@datacommons.io"
-    }
+      "email": "support@braincommons.org"
+    },
+    "footerLogos": [
+      {
+        "src": "/src/img/gen3.png",
+        "href": "https://ctds.uchicago.edu/gen3",
+        "alt": "Gen3 Data Commons"
+      },
+      {
+        "src": "/src/img/createdby.png",
+        "href": "https://ctds.uchicago.edu/",
+        "alt": "Center for Translational Data Science at the University of Chicago"
+      },
+      {
+        "src": "/src/img/sponsors/cvb.png",
+        "href": "https://www.cohenveteransbioscience.org/",
+        "alt": "Cohen Veterans Bioscience"
+      }
+    ]
   },
   "featureFlags": {
-    "explorer": true
+    "explorer": true,
+    "noIndex": true
   },
-  "arrangerConfig": {
+  "dataExplorerConfig": {
     "charts": {
       "project_id": {
         "chartType": "count",
@@ -157,20 +175,24 @@
         }
       ]
     },
-    "projectId": "search",
-    "graphqlField": "case",
-    "index": "",
+    "arrangerConfig": {
+      "projectId": "search",
+      "graphqlField": "case",
+      "index": "",
+      "nodeCountField": "node_id"
+    },
     "table": {
-      "buttons": [
-        {
-          "enabled": true,
-          "type": "data",
-          "title": "Download Data",
-          "leftIcon": "user",
-          "rightIcon": "download",
-          "fileName": "data.json"
-        }
-      ]
-    }
+      "enabled": true
+    },
+    "buttons": [
+      {
+        "enabled": true,
+        "type": "data",
+        "title": "Download All Data",
+        "leftIcon": "user",
+        "rightIcon": "download",
+        "fileName": "data.json"
+      }
+    ]
   }
 }
