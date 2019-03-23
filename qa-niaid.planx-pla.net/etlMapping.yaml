@@ -6,6 +6,10 @@ mappings:
     props:
       - name: submitter_id
       - name: project_id
+      - name: hiv_status
+        value_mappings:
+          - true: positive
+          - false: negative
     flatten_props:
       - path: demographics
         props:
@@ -97,6 +101,19 @@ mappings:
         path: follow_ups.summary_lab_results
         src: viral_load
         fn: min
+    joining_props:
+      - index: file
+        join_on: subject_id
+        props:
+          - name: data_format
+            src: data_format
+            fn: set
+          - name: data_type
+            src: data_type
+            fn: set
+          - name: file_id
+            src: file_id
+            fn: set
     special_props:
       - name: _maintain_viral_load_less_than
         path: follow_ups[visit_number].summary_lab_results[viral_load]
