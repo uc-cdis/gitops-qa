@@ -22,7 +22,7 @@
     "revproxy": "quay.io/cdis/nginx:1.15.5-ctds",
     "sheepdog": "quay.io/cdis/sheepdog:master",
     "spark": "quay.io/cdis/gen3-spark:master",
-    "tube": "quay.io/cdis/tube:feat_sliding_2",
+    "tube": "quay.io/cdis/tube:feat_prop_by_docname",
     "datasim": "quay.io/cdis/data-simulator:master"
   },
   "jupyterhub": {
@@ -33,7 +33,8 @@
     "auth_filter_field": "auth_resource_path",
     "auth_filter_node_types": [
       "subject",
-      "file"
+      "file",
+      "follow_up"
     ]
   },
   "global": {

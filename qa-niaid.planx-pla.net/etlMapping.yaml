@@ -118,6 +118,41 @@ mappings:
       - name: _maintain_viral_load_less_than
         path: follow_ups[visit_number].summary_lab_results[viral_load]
         fn: sliding, 3, max, min
+  - name: niaid_follow_up
+    doc_type: follow_up
+    type: aggregator
+    root: follow_up
+    props:
+      - name: submitter_id
+      - name: age_at_visit
+      - name: age_at_visit_gt89
+      - name: bmi
+      - name: drug_used
+      - name: ever_transferred
+      - name: health_insurance
+      - name: height
+      - name: pregnancy_status
+      - name: version_data
+      - name: visit_name
+      - name: visit_type
+      - name: visit_number
+      - name: visit_date
+      - name: weight
+      - name: weight_percentage
+      - name: tint
+      - name: days_to_follow_up
+    parent_props:
+      - path: subjects[subject_id:id,project_id]
+    flatten_props:
+      - path: summary_drug_uses
+        props:
+          - name: thrpy
+          - name: thrpyv
+    aggregated_props:
+      - name: viral_load
+        path: summary_lab_results
+        src: viral_load
+        fn: min
   - name: niaid_file
     doc_type: file
     type: collector
