@@ -26,7 +26,15 @@
     "datasim": "quay.io/cdis/data-simulator:master"
   },
   "jupyterhub": {
-    "enabled": "yes"
+    "enabled": "yes",
+    "containers": [
+       {
+         "name": "niaid-jupyter-notebook",
+         "cpu": 1,
+         "memory": "512M",
+         "image": "quay.io/cdis/niaid-jupyterhub:latest"
+       }
+    ]
   },
   "arranger": {
     "project_id": "qa-niaid",
