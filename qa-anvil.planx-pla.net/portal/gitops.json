@@ -128,10 +128,6 @@
         "chartType": "count",
         "title": "Projects"
       },
-      "node_id": {
-        "chartType": "count",
-        "title": "Cases"
-      },
       "gender": {
         "chartType": "pie",
         "title": "Gender"
@@ -161,7 +157,8 @@
     "arrangerConfig": {
       "projectId": "search",
       "graphqlField": "case",
-      "index": ""
+      "index": "",
+      "nodeCountField": "node_id"
     },
     "table": {
       "enabled": true
