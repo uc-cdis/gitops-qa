@@ -128,10 +128,6 @@
         "chartType": "count",
         "title": "Projects"
       },
-      "node_id": {
-        "chartType": "count",
-        "title": "Cases"
-      },
       "gender": {
         "chartType": "pie",
         "title": "Gender"
