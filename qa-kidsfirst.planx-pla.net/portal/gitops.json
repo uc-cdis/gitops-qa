@@ -109,7 +109,7 @@
   "featureFlags": {
     "explorer": true
   },
-  "arrangerConfig": {
+  "dataExplorerConfig": {
     "charts": {
       "project_id": {
         "chartType": "count",
@@ -169,43 +169,46 @@
         }
       ]
     },
-    "projectId": "search",
-    "graphqlField": "case",
-    "index": "",
+    "arrangerConfig": {
+      "projectId": "search",
+      "graphqlField": "case",
+      "index": "",
+      "nodeCountField": "node_id"
+    },
     "table": {
-      "referenceId": "submitter_id",
-      "dropdowns": {
-        "download": {
-          "title": "Download"
-        }
+      "enabled": true
+    },
+    "dropdowns": {
+      "download": {
+        "title": "Download"
+      }
+    },
+    "buttons": [
+      {
+        "enabled": true,
+        "type": "data",
+        "title": "Download Clinical",
+        "leftIcon": "clinical",
+        "rightIcon": "download",
+        "fileName": "clinical.json",
+        "dropdownId": "download"
       },
-      "buttons": [
-        {
-          "enabled": true,
-          "type": "data",
-          "title": "Download Clinical",
-          "leftIcon": "clinical",
-          "rightIcon": "download",
-          "fileName": "clinical.json",
-          "dropdownId": "download"
-        },
-        {
-          "enabled": false,
-          "type": "manifest",
-          "title": "Download Manifest",
-          "leftIcon": "datafile",
-          "rightIcon": "download",
-          "fileName": "manifest.json",
-          "dropdownId": "download"
-        },
-        {
-          "enabled": true,
-          "type": "export",
-          "title": "Export to Saturn",
-          "rightIcon": "external-link",
-          "leftIcon": "planet"
-        }
-      ]
-    }
+      {
+        "enabled": false,
+        "type": "manifest",
+        "title": "Download Manifest",
+        "leftIcon": "datafile",
+        "rightIcon": "download",
+        "fileName": "manifest.json",
+        "dropdownId": "download"
+      },
+      {
+        "enabled": true,
+        "type": "export",
+        "title": "Export to Saturn",
+        "rightIcon": "external-link",
+        "leftIcon": "planet"
+      }
+    ]
   }
 }
