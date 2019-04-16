@@ -167,7 +167,7 @@
         "chartType": "bar",
         "title": "Race"
       },
-      "fileCounts": true
+      "fileCounts": false
     },
     "filters": {
       "tabs": [
