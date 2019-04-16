@@ -7,9 +7,6 @@
 
 .g3-button--primary,
 .g3-dropdown-button__button--primary,
-.top-bar,
-.top-bar__header,
-.top-icon-button.body-typo,
 .data-dictionary__switch-button--active,
 .popup__title {
   background-color: var(--primary-color);
@@ -28,6 +25,12 @@
 }
 
 /* Nav Bars and Footer */
+
+.top-bar,
+.top-bar__header,
+.top-icon-button.body-typo {
+  background-color: var(--secondary-color);
+}
 
 .top-bar__link {
   border-right: 2px solid #fff;
@@ -93,9 +96,21 @@
 tspan.special-number,
 .special-number,
 .form-special-number {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .special-number {
   fill: var(--primary-color);
+}
+
+.data-explorer__charts {
+  tspan.special-number,
+  .special-number,
+  .form-special-number {
+    color: var(--secondary-color);
+  }
+
+  .special-number {
+    fill: var(--secondary-color);
+  }
 }
