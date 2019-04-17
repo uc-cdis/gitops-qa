@@ -7,6 +7,7 @@ mappings:
       - name: submitter_id
       - name: project_id
       - name: hiv_status
+      - name: species
         value_mappings:
           - true: positive
           - false: negative
@@ -149,6 +150,16 @@ mappings:
         path: summary_lab_results
         src: viral_load
         fn: min
+       - name: leu3n
+        path: summary_lab_results
+        src: leu3n
+        fn: min
+    joining:
+      - index: subject
+        join_on: subject_id
+        props:
+          - name: frstdthd
+            src: frstdthd
   - name: niaid_file
     doc_type: file
     type: collector
