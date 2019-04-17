@@ -91,6 +91,10 @@
   color: var(--primary-color);
 }
 
+.input-range__track--active {
+  background-color: var(--primary-color);
+}
+
 /* Charts */
 
 tspan.special-number,
