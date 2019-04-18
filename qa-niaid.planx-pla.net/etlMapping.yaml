@@ -138,7 +138,6 @@ mappings:
       - name: weight_percentage
       - name: tint
       - name: days_to_follow_up
-      - name: fposdate
     parent_props:
       - path: subjects[subject_id:id,project_id,hiv_status]
     flatten_props:
@@ -161,6 +160,9 @@ mappings:
         props:
           - name: frstdthd
             src: frstdthd
+        props:
+          - name: fposdate
+            src: fposdate
   - name: niaid_file
     doc_type: file
     type: collector
