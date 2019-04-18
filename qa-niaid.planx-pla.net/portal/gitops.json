@@ -182,7 +182,8 @@
             "race",
             "ethnicity",
             "vital_status",
-            "frstdthd"
+            "frstdthd",
+            "species"
           ]
         }, {
           "title": "Diagnosis",
@@ -203,6 +204,11 @@
     "table": {
       "enabled": false
     },
+    "dropdowns": {
+      "download": {
+        "title": "Download"
+      }
+    },
     "buttons": [
       {
         "enabled": true,
@@ -210,7 +216,8 @@
         "title": "Download All Clinical",
         "leftIcon": "user",
         "rightIcon": "download",
-        "fileName": "clinical.json"
+        "fileName": "clinical.json",
+        "dropdownId": "download"
       },
       {
         "enabled": true,
@@ -218,7 +225,15 @@
         "title": "Download Manifest",
         "leftIcon": "datafile",
         "rightIcon": "download",
-        "fileName": "manifest.json"
+        "fileName": "manifest.json",
+        "dropdownId": "download"
+      },
+      {
+        "enabled": true,
+        "type": "export-to-workspace",
+        "title": "Export To Workspace",
+        "leftIcon": "datafile",
+        "rightIcon": "download"
       }
     ],
     "arrangerConfig": {
