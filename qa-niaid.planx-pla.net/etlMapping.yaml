@@ -31,6 +31,7 @@ mappings:
           - name: bshbvstat
           - name: bshcvstat
           - name: cd4nadir
+          - name: fposdate
           - name: frstdthd
           - name: status
     aggregated_props:
