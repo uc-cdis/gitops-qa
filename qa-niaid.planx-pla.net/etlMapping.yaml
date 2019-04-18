@@ -160,7 +160,6 @@ mappings:
         props:
           - name: frstdthd
             src: frstdthd
-        props:
           - name: fposdate
             src: fposdate
   - name: niaid_file
