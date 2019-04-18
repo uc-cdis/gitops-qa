@@ -150,7 +150,7 @@ mappings:
         path: summary_lab_results
         src: viral_load
         fn: min
-       - name: leu3n
+      - name: leu3n
         path: summary_lab_results
         src: leu3n
         fn: min
