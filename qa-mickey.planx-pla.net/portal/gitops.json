@@ -146,7 +146,8 @@
     ]
   },
   "featureFlags": {
-    "explorer": true
+    "explorer": true,
+    "analysis": true
   },
   "analysisTools": [ "vaGWAS" ],
   "dataExplorerConfig": {
