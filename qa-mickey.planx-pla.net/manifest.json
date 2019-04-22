@@ -22,7 +22,17 @@
     "revproxy": "quay.io/cdis/nginx:1.15.5-ctds",
     "sheepdog": "quay.io/cdis/sheepdog:master",
     "spark": "quay.io/cdis/gen3-spark:master",
-    "tube": "quay.io/cdis/tube:master"
+    "tube": "quay.io/cdis/tube:master",
+    "sower": "quay.io/cdis/sower:feat_configuration"
+  },
+  "sower": {
+    "container": {
+      "name": "job-task",
+      "image": "quay.io/cdis/mickey-demo:master",
+      "pull_policy": "always",
+      "env": []
+    },
+    "restart_policy": "never"
   },
   "arranger": {
     "project_id": "mickey_1",
