@@ -7,10 +7,19 @@ mappings:
       - name: submitter_id
       - name: project_id
       - name: hiv_status
-      - name: species
         value_mappings:
           - true: positive
           - false: negative
+      - name: species
+      - name: amikacin_res_phenotype
+      - name: capreomycin_res_phenotype
+      - name: isoniazid_res_phenotype
+      - name: kanamycin_res_phenotype
+      - name: ofloxacin_res_phenotype
+      - name: pyrazinamide_res_phenotype
+      - name: rifampicin_res_phenotype
+      - name: rifampin_res_phenotype
+      - name: streptomycin_res_phenotype
     flatten_props:
       - path: demographics
         props:
