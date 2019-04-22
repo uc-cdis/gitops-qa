@@ -188,14 +188,14 @@
         }, {
           "title": "Diagnosis",
           "fields": [
+            "hiv_status",
             "arthxbase",
             "bshbvstat",
             "bshcvstat",
             "cd4nadir",
             "status",
             "virus_type",
-            "virus_subtype",
-            "hiv_status"
+            "virus_subtype"
           ]
         },
         {
