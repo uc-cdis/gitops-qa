@@ -140,7 +140,8 @@
     ]
   },
   "featureFlags": {
-    "explorer": true
+    "explorer": true,
+    "analysis": true
   },
   "dataExplorerConfig": {
     "charts": {
