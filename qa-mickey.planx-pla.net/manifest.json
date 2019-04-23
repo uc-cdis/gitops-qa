@@ -26,6 +26,7 @@
     "sower": "quay.io/cdis/sower:feat_configuration"
   },
   "sower": {
+    "name": "simu",
     "container": {
       "name": "job-task",
       "image": "quay.io/cdis/mickey-demo:master",
