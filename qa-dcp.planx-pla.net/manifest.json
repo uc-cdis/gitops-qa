@@ -25,7 +25,18 @@
     "spark": "quay.io/cdis/gen3-spark:master",
     "tube": "quay.io/cdis/tube:feat_list-case_id",
     "wts": "quay.io/cdis/workspace-token-service:master",
-     "guppy": "quay.io/cdis/guppy:feat_field-names"
+    "guppy": "quay.io/cdis/guppy:feat_field-names",
+    "sower": "quay.io/cdis/sower:feat_configuration"
+  },
+  "sower": {
+    "name": "pelican-export",
+    "container": {
+      "name": "job-task",
+      "image": "quay.io/cdis/pelican:chore_test-return",
+      "pull_policy": "always",
+      "env": []
+    },
+    "restart_policy": "never"
   },
   "arranger": {
     "project_id": "qa-dcp",
