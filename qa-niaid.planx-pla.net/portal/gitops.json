@@ -163,9 +163,9 @@
         "chartType": "bar",
         "title": "Race"
       },
-      "ethnicity": {
+      "species": {
         "chartType": "bar",
-        "title": "Ethnicity"
+        "title": "Species"
       }
     },
     "filters": {
