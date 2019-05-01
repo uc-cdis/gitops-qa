@@ -6,6 +6,8 @@
   height: 50px;
 }
 
-.footer__version-area {
-  width: 600px;
+@media screen and (max-width: 1290px) {
+  .index-page__bar-chart {
+    margin-left: -160px;
+  }
 }
