@@ -19,7 +19,7 @@
     "manifestservice": "quay.io/cdis/manifestservice:master",
     "peregrine": "quay.io/cdis/peregrine:feat_bagit2",
     "pidgin": "quay.io/cdis/pidgin:master",
-    "portal": "quay.io/cdis/data-portal:master",
+    "portal": "quay.io/cdis/data-portal:feat_lockable-table",
     "revproxy": "quay.io/cdis/nginx:1.15.5-ctds",
     "sheepdog": "quay.io/cdis/sheepdog:master",
     "spark": "quay.io/cdis/gen3-spark:master",
@@ -62,9 +62,24 @@
     "logs_bucket": "logs-qaplanetv1-gen3",
     "sync_from_dbgap": "False",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
-    "public_datasets": true
+    "public_datasets": true,
+    "tier_access_level": "regular",
+    "tier_access_limit": "800"
   },
   "canary": {
     "default": 0
+  },
+  "guppy": {
+    "indices": [
+      {
+        "index": "qa-dcp_etl",
+        "type": "case"
+      },
+      {
+        "index": "qa-dcp_file",
+        "type": "file"
+      }
+    ],
+    "auth_filter_field": "auth_resource_path"
   }
 }
