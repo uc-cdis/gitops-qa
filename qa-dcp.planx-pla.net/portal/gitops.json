@@ -304,23 +304,17 @@
       "dataType": "case",
       "fieldMapping": [
         { "field": "consent_codes", "name": "Data Use Restriction" },
-        { "field": "project_id", "name": "Project ID" },
-        { "field": "submitter_id", "name": "Submitter ID" },
-        { "field": "race", "name": "Race" },
-        { "field": "ethnicity", "name": "Ethnicity" },
-        { "field": "gender", "name": "Gender" },
-        { "field": "age_at_index", "name": "Age ai Index" },
-        { "field": "bmi", "name": "BMI" },
-        { "field": "file_count", "name": "File Count" },
-        { "field": "file_type", "name": "File Type" },
-        { "field": "file_format", "name": "File Format" }
+        { "field": "bmi", "name": "BMI" }
       ],
       "manifestMapping": {
         "resourceIndexType": "file",
         "resourceIdField": "object_id",
         "referenceIdFieldInResourceIndex": "case_id",
         "referenceIdFieldInDataIndex": "case_id"
-      }
-    }
+      },
+      "accessibleFieldCheckList": ["project_id"],
+      "accessibleValidationField": "project_id"
+    },
+    "getAccessButtonLink": "https://dbgap.ncbi.nlm.nih.gov/"
   }
 }
