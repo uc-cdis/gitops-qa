@@ -172,6 +172,20 @@
     "filters": {
       "tabs": [
         {
+          "title": "Case",
+          "fields": [
+            "project_id",
+            "consent_codes",
+            "data_type",
+            "data_format",
+            "race",
+            "ethnicity",
+            "gender",
+            "bmi",
+            "age_at_index"
+          ]
+        },
+        {
           "title": "Family History",
           "fields": [
             "diabetes",
@@ -194,20 +208,6 @@
           "fields": [
             "diastolic_blood_pressure",
             "systolic_blood_pressure"
-          ]
-        },
-        {
-          "title": "Case",
-          "fields": [
-            "project_id",
-            "consent_codes",
-            "data_type",
-            "data_format",
-            "race",
-            "ethnicity",
-            "gender",
-            "bmi",
-            "age_at_index"
           ]
         }
       ]
