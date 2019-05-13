@@ -38,6 +38,9 @@
                   }
                 ]
   },
+  "arborist": {
+    "deployment_version": "2"
+  },
   "arranger": {
     "project_id": "jniaid_3",
     "auth_filter_field": "auth_resource_path",

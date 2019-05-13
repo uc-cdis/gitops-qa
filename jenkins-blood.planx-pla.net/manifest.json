@@ -38,6 +38,9 @@
                   }
                 ]
   },
+  "arborist": {
+    "deployment_version": "2"
+  },
   "peregrine": {
     "sidecar": "False"
   },

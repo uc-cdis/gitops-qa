@@ -7,7 +7,7 @@
     "autodeploy": "yes"
   },
   "versions": {
-    "arborist": "quay.io/cdis/arborist:1.2.1",
+    "arborist": "quay.io/cdis/arborist:master",
     "arranger": "quay.io/cdis/arranger:master",
     "arranger-adminapi": "quay.io/cdis/arranger-server:master",
     "arranger-dashboard": "quay.io/cdis/arranger-dashboard:master",
@@ -37,6 +37,9 @@
                     "image": "quay.io/occ_data/jupyternotebook:feat_workspace-tools"
                   }
                 ]
+  },
+  "arborist": {
+    "deployment_version": "2"
   },
   "arranger": {
     "project_id": "jniaid_3",
