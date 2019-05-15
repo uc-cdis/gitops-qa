@@ -27,6 +27,9 @@
     "manifestservice": "quay.io/cdis/manifestservice:master",
     "wts": "quay.io/cdis/workspace-token-service:master"
   },
+  "arborist": {
+    "deployment_version": "2"
+  },
   "arranger": {
     "project_id": "brain_2",
     "auth_filter_field": "auth_resource_path"
