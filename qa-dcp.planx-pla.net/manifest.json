@@ -23,7 +23,7 @@
     "revproxy": "quay.io/cdis/nginx:1.15.5-ctds",
     "sheepdog": "quay.io/cdis/sheepdog:master",
     "spark": "quay.io/cdis/gen3-spark:master",
-    "tube": "quay.io/cdis/tube:feat_list-case_id",
+    "tube": "quay.io/cdis/tube:master",
     "wts": "quay.io/cdis/workspace-token-service:master",
     "guppy": "quay.io/cdis/guppy:master",
     "sower": "quay.io/cdis/sower:feat_configuration"
