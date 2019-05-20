@@ -28,6 +28,9 @@
   "arborist": {
     "deployment_version": "2"
   },
+  "indexd": {
+    "arborist": "true"
+  },
   "sower": {
     "container": {
       "name": "job-task",

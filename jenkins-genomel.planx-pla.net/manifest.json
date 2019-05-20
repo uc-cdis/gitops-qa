@@ -41,6 +41,9 @@
   "arborist": {
     "deployment_version": "2"
   },
+  "indexd": {
+    "arborist": "true"
+  },
   "arranger": {
     "project_id": "jniaid_3",
     "auth_filter_field": "auth_resource_path",
