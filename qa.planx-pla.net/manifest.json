@@ -28,6 +28,9 @@
   "arborist": {
     "deployment_version": "2"
   },
+  "indexd": {
+    "arborist": "true
+  },
   "arranger": {
     "project_id": "dev",
     "auth_filter_field": "gen3_resource_path",
