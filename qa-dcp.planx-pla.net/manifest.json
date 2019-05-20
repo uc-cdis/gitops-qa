@@ -32,7 +32,7 @@
     "deployment_version": "2"
   },
   "indexd": {
-    "arborist": "true
+    "arborist": "true"
   },
   "sower": {
     "name": "pelican-export",

@@ -31,7 +31,7 @@
     "deployment_version": "2"
   },
   "indexd": {
-    "arborist": "true
+    "arborist": "true"
   },
   "arranger": {
     "project_id": "brain_2",

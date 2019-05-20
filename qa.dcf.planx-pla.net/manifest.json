@@ -28,7 +28,7 @@
     "deployment_version": "2"
   },
   "indexd": {
-    "arborist": "true
+    "arborist": "true"
   },
   "jupyterhub": {
     "enabled": "no"
