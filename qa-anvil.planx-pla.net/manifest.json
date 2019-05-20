@@ -24,6 +24,9 @@
     "spark": "quay.io/cdis/gen3-spark:master",
     "tube": "quay.io/cdis/tube:0.1.9"
   },
+  "arborist": {
+    "deployment_version": "2"
+  },
   "peregrine": {
     "sidecar": "True"
   },
