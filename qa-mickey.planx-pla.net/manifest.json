@@ -7,7 +7,7 @@
     "autodeploy": "yes"
   },
   "versions": {
-    "arborist": "quay.io/cdis/arborist:1.2.1",
+    "arborist": "quay.io/cdis/arborist:master",
     "arranger": "quay.io/cdis/arranger:master",
     "arranger-adminapi": "quay.io/cdis/arranger-server:fix_adminserver",
     "arranger-dashboard": "quay.io/cdis/arranger-dashboard:master",
@@ -24,6 +24,9 @@
     "spark": "quay.io/cdis/gen3-spark:master",
     "tube": "quay.io/cdis/tube:master",
     "sower": "quay.io/cdis/sower:feat_configuration"
+  },
+  "arborist": {
+    "deployment_version": "2"
   },
   "sower": {
     "container": {

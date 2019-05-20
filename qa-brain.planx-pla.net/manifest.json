@@ -7,12 +7,12 @@
     "autodeploy": "yes"
   },
   "versions": {
-    "arborist": "quay.io/cdis/arborist:1.1.2",
+    "arborist": "quay.io/cdis/arborist:master",
     "arranger": "quay.io/cdis/arranger:master",
     "arranger-adminapi": "quay.io/cdis/arranger-server:master",
     "arranger-dashboard": "quay.io/cdis/arranger-dashboard:master",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
-    "fence": "quay.io/cdis/fence:2.7.0",
+    "fence": "quay.io/cdis/fence:master",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "indexd": "quay.io/cdis/indexd:1.1.0",
     "jupyterhub": "quay.io/occ_data/jupyterhub:master",
@@ -26,6 +26,9 @@
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:master",
     "spark": "quay.io/cdis/gen3-spark:1.0.0",
     "tube": "quay.io/cdis/tube:0.1.6"
+  },
+  "arborist": {
+    "deployment_version": "2"
   },
   "arranger": {
     "project_id": "brain_2",
