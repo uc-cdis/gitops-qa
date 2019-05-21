@@ -74,5 +74,8 @@
   },
   "canary": {
     "default": 0
+  },
+  "guppy": {
+    "place_holder": "this is a place holder for guppy config"
   }
 }
