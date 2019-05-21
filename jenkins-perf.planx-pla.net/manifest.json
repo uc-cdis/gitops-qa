@@ -25,7 +25,8 @@
       "spark": "quay.io/cdis/gen3-spark:master",
       "tube": "quay.io/cdis/tube:master",
       "manifestservice": "quay.io/cdis/manifestservice:master",
-      "wts": "quay.io/cdis/workspace-token-service:master"
+      "wts": "quay.io/cdis/workspace-token-service:master",
+      "guppy": "quay.io/cdis/guppy:master"
     },
     "arborist": {
       "deployment_version": "2"
@@ -67,6 +68,17 @@
       "default": 0
     },
     "guppy": {
-      "place_holder": "this is a place holder for guppy config"
+      "indices": [
+        {
+          "index": "qa-dcp_etl",
+          "type": "case"
+        },
+        {
+          "index": "qa-dcp_file",
+          "type": "file"
+        }
+      ],
+      "config_index": "qa-dcp_array-config",
+      "auth_filter_field": "auth_resource_path"
     }
   }
