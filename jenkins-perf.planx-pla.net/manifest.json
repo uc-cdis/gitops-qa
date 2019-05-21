@@ -65,5 +65,7 @@
     },
     "canary": {
       "default": 0
+    },
+    "guppy": {
     }
   }
