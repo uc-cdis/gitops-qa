@@ -13,9 +13,9 @@
         "plural": "Studies"
       },
       {
-        "graphql": "_aliquot_count",
-        "name": "Aliquot",
-        "plural": "Aliquots"
+        "graphql": "_diagnosis_count",
+        "name": "Disease State",
+        "plural": "Disease States"
       }
     ],
     "chartCounts": [
@@ -70,7 +70,6 @@
       ]
     },
     "navigation": {
-      "title": "BRAIN Commons",
       "items": [
         {
           "icon": "dictionary",
@@ -177,13 +176,26 @@
       "nodeCountField": "node_id"
     },
     "table": {
-      "enabled": true
+      "enabled": true,
+      "fields": [
+        "project_id",
+        "submitter_id",
+        "gender",
+        "ethnicity",
+        "race",
+        "experimental_group",
+        "_aliquots_count",
+        "_read_group_count",
+        "_samples_count",
+        "_submitted_expression_arrays_count",
+        "_submitted_unaligned_reads_count"
+      ]
     },
     "buttons": [
       {
         "enabled": true,
         "type": "data",
-        "title": "Download All Data",
+        "title": "Download Data",
         "leftIcon": "user",
         "rightIcon": "download",
         "fileName": "data.json"
