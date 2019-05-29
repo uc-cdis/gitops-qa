@@ -1,0 +1,61 @@
+{
+  "notes": [
+    "This is the dev environment manifest",
+    "That's all I have to say"
+  ],
+  "jenkins": {
+    "autodeploy": "yes"
+  },
+  "versions": {
+    "arborist": "quay.io/cdis/arborist:1.2.1",
+    "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
+    "fence": "quay.io/cdis/fence:2.8.2",
+    "indexd": "quay.io/cdis/indexd:1.1.0",
+    "peregrine": "quay.io/cdis/peregrine:1.0.9",
+    "pidgin": "quay.io/cdis/pidgin:1.0.0",
+    "revproxy": "quay.io/cdis/nginx:1.15.5-ctds",
+    "sheepdog": "quay.io/cdis/sheepdog:1.1.8",
+    "portal": "quay.io/cdis/data-portal:fix_guppy-config-optional",
+    "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
+    "jupyterhub": "quay.io/occ_data/jupyterhub:master",
+    "spark": "quay.io/cdis/gen3-spark:1.0.0",
+    "tube": "quay.io/cdis/tube:0.3.7",
+    "guppy": "quay.io/cdis/guppy:0.1.2",
+    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:0.0.5"
+  },
+  "jupyterhub": {
+    "enabled": "no"
+  },
+  "peregrine": {
+    "sidecar": "True"
+  },
+  "global": {
+    "environment": "qaplanetv1",
+    "hostname": "qa-canine.planx-pla.net",
+    "revproxy_arn": "arn:aws:acm:us-east-1:662843554732:certificate/5874502e-5b67-415f-80ee-dcb814d2883f",
+    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/dcfdictionary/3.1.4/schema.json",
+    "portal_app": "gitops",
+    "kube_bucket": "kube-qaplanetv1-gen3",
+    "logs_bucket": "logs-qaplanetv1-gen3",
+    "sync_from_dbgap": "False",
+    "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
+    "dispatcher_job_num": "5"
+  },
+  "canary": {
+    "default": 0
+  },
+  "guppy": {
+    "indices": [
+      {
+        "index": "canine_etl",
+        "type": "subject"
+      },
+      {
+        "index": "canine_file",
+        "type": "file"
+      }
+    ],
+    "config_index": "canine_array-config",
+    "auth_filter_field": "auth_resource_path"
+  }
+}
