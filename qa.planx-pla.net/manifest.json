@@ -34,7 +34,9 @@
   "arranger": {
     "project_id": "dev",
     "auth_filter_field": "gen3_resource_path",
-    "auth_filter_node_types": ["subject"]
+    "auth_filter_node_types": [
+      "subject"
+    ]
   },
   "peregrine": {
     "sidecar": "True"
@@ -48,7 +50,8 @@
     "sync_from_dbgap": "False",
     "kube_bucket": "kube_bucket.devplanetv1.gen3",
     "logs_bucket": "logs-devplanetv1-gen3",
-    "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml"
+    "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
+    "netpolicy": "on"
   },
   "jupyterhub": {
     "enabled": "no"
