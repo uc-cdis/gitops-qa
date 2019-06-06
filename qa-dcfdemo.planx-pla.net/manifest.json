@@ -37,7 +37,9 @@
   "arranger": {
     "project_id": "dcf_1",
     "auth_filter_field": "auth_resource_path",
-    "auth_filter_node_types": ["subject"]
+    "auth_filter_node_types": [
+      "subject"
+    ]
   },
   "ssjdispatcher": {
     "job_images": {
@@ -54,7 +56,8 @@
     "logs_bucket": "logs-qaplanetv1-gen3",
     "sync_from_dbgap": "False",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
-    "dispatcher_job_num": "10"
+    "dispatcher_job_num": "10",
+    "netpolicy": "on"
   },
   "canary": {
     "default": 0
