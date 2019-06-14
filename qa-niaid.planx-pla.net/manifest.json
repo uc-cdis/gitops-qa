@@ -42,6 +42,18 @@
         "cpu": 1,
         "memory": "512M",
         "image": "quay.io/cdis/niaid-jupyterhub:latest"
+      },
+      {
+        "name": "jupyter-R-3.6",
+        "cpu": 1,
+        "memory": "512M",
+        "image": "quay.io/occ_data/jupyternotebook:1.8.0"
+      },
+      {
+        "name": "jupyter-R-3.5",
+        "cpu": 1,
+        "memory": "512M",
+        "image": "quay.io/occ_data/jupyternotebook:1.7.4"
       }
     ]
   },
