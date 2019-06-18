@@ -26,7 +26,7 @@
     "tube": "quay.io/cdis/tube:master",
     "wts": "quay.io/cdis/workspace-token-service:master",
     "guppy": "quay.io/cdis/guppy:master",
-    "sower": "quay.io/cdis/sower:feat_mickey",
+    "sower": "quay.io/cdis/sower:master",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:master"
   },
   "arborist": {
@@ -39,7 +39,7 @@
     "name": "pelican-export",
     "container": {
       "name": "job-task",
-      "image": "quay.io/cdis/pelican:feat_microservice",
+      "image": "quay.io/cdis/pelican:master",
       "pull_policy": "always",
       "env": []
     },
