@@ -26,7 +26,9 @@
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:master",
     "manifestservice": "quay.io/cdis/manifestservice:master",
     "wts": "quay.io/cdis/workspace-token-service:master",
-    "guppy": "quay.io/cdis/guppy:master"
+    "guppy": "quay.io/cdis/guppy:master",
+    "sower": "quay.io/cdis/sower:master",
+    "hatchery": "quay.io/cdis/hatchery:master"
   },
   "arborist": {
     "deployment_version": "2"
@@ -41,6 +43,42 @@
       "case",
       "file"
     ]
+  },
+  "sower": {
+    "name": "pelican-export",
+    "container": {
+      "name": "job-task",
+      "image": "quay.io/cdis/pelican:master",
+      "pull_policy": "always",
+      "env": []
+    },
+    "restart_policy": "never"
+  },
+  "hatchery": {
+    "user-namespace": "jupyter-pods",
+    "sub-dir": "/lw-workspace",
+    "user-volume-size": "10Gi",
+    "sidecar": {
+      "cpu-limit": "1.0",
+      "memory-limit": "256Mi",
+      "image": "quay.io/cdis/gen3fuse-sidecar:chore_sidecar",
+      "env": {"NAMESPACE":"default", "HOSTNAME": "gen3.datastage.io"},
+      "args": [],
+      "command": ["/bin/bash", "/sidecarDockerrun.sh"],
+      "lifecycle-pre-stop": ["su", "-c", "echo test", "-s", "/bin/sh", "root"]
+    },
+    "containers": [{
+      "target-port": 8787,
+      "cpu-limit": "1.0",
+      "memory-limit": "512Mi",
+      "name": "R Studio",
+      "image": "heliumdatastage/rstudio-server:1",
+      "env": {"DISABLE_AUTH": "true"},
+      "args": [],
+      "path-rewrite": "/",
+      "use-tls": "false",
+      "ready-probe": "/"
+    }]
   },
   "peregrine": {
     "sidecar": "False"
