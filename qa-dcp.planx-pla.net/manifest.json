@@ -41,7 +41,9 @@
       "name": "job-task",
       "image": "quay.io/cdis/pelican:master",
       "pull_policy": "always",
-      "env": []
+      "env": [],
+      "cpu-limit": "1",
+      "memory-limit": "12Gi"
     },
     "restart_policy": "never"
   },
