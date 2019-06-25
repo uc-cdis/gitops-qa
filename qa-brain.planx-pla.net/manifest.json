@@ -8,9 +8,6 @@
   },
   "versions": {
     "arborist": "quay.io/cdis/arborist:master",
-    "arranger": "quay.io/cdis/arranger:master",
-    "arranger-adminapi": "quay.io/cdis/arranger-server:master",
-    "arranger-dashboard": "quay.io/cdis/arranger-dashboard:master",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
     "fence": "quay.io/cdis/fence:master",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
@@ -19,13 +16,13 @@
     "peregrine": "quay.io/cdis/peregrine:master",
     "peregrine-canary": "quay.io/cdis/peregrine:fix_promise",
     "pidgin": "quay.io/cdis/pidgin:master",
-    "portal": "quay.io/cdis/data-portal:feat_responsive",
+    "portal": "quay.io/cdis/data-portal:2.13.0",
     "revproxy": "quay.io/cdis/nginx:1.15.5-ctds",
     "sheepdog": "quay.io/cdis/sheepdog:1.1.10",
-    "sheepdog-canary": "quay.io/cdis/sheepdog:1.1.9",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:master",
     "spark": "quay.io/cdis/gen3-spark:1.0.0",
-    "tube": "quay.io/cdis/tube:0.3.7"
+    "tube": "quay.io/cdis/tube:0.3.7",
+    "guppy": "quay.io/cdis/guppy:master"
   },
   "arborist": {
     "deployment_version": "2"
@@ -33,15 +30,21 @@
   "indexd": {
     "arborist": "true"
   },
-  "arranger": {
-    "project_id": "qa-brain",
-    "auth_filter_field": "auth_resource_path"
-  },
   "tube": {
     "es_index_name": "etl_beta"
   },
   "jupyterhub": {
     "enabled": "no"
+  },
+  "guppy": {
+    "indices": [
+      {
+        "index": "qa-brain_etl",
+        "type": "case"
+      }
+    ],
+    "config_index": "qa-brain_array-config",
+    "auth_filter_field": "auth_resource_path"
   },
   "global": {
     "environment": "qaplanetv1",
@@ -54,7 +57,10 @@
     "sync_from_dbgap": "False",
     "dispatcher_job_num": "5",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
-    "netpolicy": "on"
+    "netpolicy": "on",
+    "tier_access_level": "regular",
+    "tier_access_limit": "50",
+    "public_datasets": true
   },
   "ssjdispatcher": {
     "job_images": {

@@ -67,6 +67,20 @@
           "link": "#hostname#workspace/",
           "label": "Run analysis"
         }
+      ],
+      "homepageChartNodes": [
+        {
+          "node": "case",
+          "name": "Cases"
+        },
+        {
+          "node": "study",
+          "name": "Studies"
+        },
+        {
+          "node": "diagnosis",
+          "name": "Disease States"
+        }
       ]
     },
     "navigation": {
@@ -166,7 +180,7 @@
             "snp_genotype",
             "adverse_event",
             "test_type",
-            "analyte-name",
+            "analyte_name",
             "_visits_count"
           ]
         },
@@ -204,6 +218,24 @@
       "index": "",
       "nodeCountField": "node_id"
     },
+    "guppyConfig": {
+      "dataType": "case",
+      "nodeCountTitle": "Cases",
+      "fieldMapping": [
+        { "field": "snp_id", "name": "SNP Id" },
+        { "field": "snp_genotype", "name": "SNP Genotype" },
+        { "field": "pd_primary_diagnosis", "name": "PD Primary Diagnosis" }
+      ],
+      "manifestMapping": {
+        "resourceIndexType": "file",
+        "resourceIdField": "object_id",
+        "referenceIdFieldInResourceIndex": "node_id",
+        "referenceIdFieldInDataIndex": "node_id"
+      },
+      "accessibleFieldCheckList": ["project_id"],
+      "accessibleValidationField": "project_id"
+    },
+    "getAccessButtonLink": "https://www.braincommons.org/",
     "table": {
       "enabled": true
     },
