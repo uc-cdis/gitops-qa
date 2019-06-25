@@ -166,7 +166,7 @@
             "snp_genotype",
             "adverse_event",
             "test_type",
-            "analyte-name",
+            "analyte_name",
             "_visits_count"
           ]
         },
@@ -204,6 +204,20 @@
       "index": "",
       "nodeCountField": "node_id"
     },
+    "guppyConfig": {
+      "dataType": "case",
+      "nodeCountTitle": "Cases",
+      "fieldMapping": [],
+      "manifestMapping": {
+        "resourceIndexType": "file",
+        "resourceIdField": "object_id",
+        "referenceIdFieldInResourceIndex": "node_id",
+        "referenceIdFieldInDataIndex": "node_id"
+      },
+      "accessibleFieldCheckList": ["project_id"],
+      "accessibleValidationField": "project_id"
+    },
+    "getAccessButtonLink": "https://www.braincommons.org/",
     "table": {
       "enabled": true
     },
