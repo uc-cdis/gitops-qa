@@ -78,7 +78,7 @@
           "name": "Studies"
         },
         {
-          "node": "primary_diagnosis",
+          "node": "diagnosis",
           "name": "Disease States"
         }
       ]
@@ -221,7 +221,11 @@
     "guppyConfig": {
       "dataType": "case",
       "nodeCountTitle": "Cases",
-      "fieldMapping": [],
+      "fieldMapping": [
+        { "field": "snp_id", "name": "SNP Id" },
+        { "field": "snp_genotype", "name": "SNP Genotype" },
+        { "field": "pd_primary_diagnosis", "name": "PD Primary Diagnosis" }
+      ],
       "manifestMapping": {
         "resourceIndexType": "file",
         "resourceIdField": "object_id",
