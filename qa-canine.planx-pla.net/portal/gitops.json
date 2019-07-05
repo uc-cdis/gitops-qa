@@ -58,13 +58,6 @@
           "label": "Explore data"
         },
         {
-          "name": "Access Data",
-          "icon": "data-access",
-          "body": "Use our selected tool to filter out the data you need.",
-          "link": "/query",
-          "label": "Query data"
-        },
-        {
           "name": "Submit Data",
           "icon": "data-submit",
           "body": "Submit Data based on the dictionary.",
@@ -92,12 +85,6 @@
           "link": "/files",
           "color": "#a2a2a2",
           "name": "Files"
-        },
-        {
-          "icon": "query",
-          "link": "/query",
-          "color": "#a2a2a2",
-          "name": "Query"
         },
         {
           "icon": "workspace",
