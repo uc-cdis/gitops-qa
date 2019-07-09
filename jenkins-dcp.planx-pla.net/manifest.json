@@ -18,7 +18,7 @@
     "jupyterhub": "quay.io/occ_data/jupyterhub:master",
     "peregrine": "quay.io/cdis/peregrine:feat_bagit",
     "pidgin": "quay.io/cdis/pidgin:master",
-    "portal": "quay.io/cdis/data-portal:master",
+    "portal": "quay.io/cdis/data-portal:fix_catch-error",
     "revproxy": "quay.io/cdis/nginx:1.15.5-ctds",
     "sheepdog": "quay.io/cdis/sheepdog:master",
     "spark": "quay.io/cdis/gen3-spark:master",
@@ -26,6 +26,7 @@
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:master",
     "manifestservice": "quay.io/cdis/manifestservice:master",
     "wts": "quay.io/cdis/workspace-token-service:master",
+    "guppy": "quay.io/cdis/guppy:master",
     "sower": "quay.io/cdis/sower:master"
   },
   "arborist": {
@@ -89,5 +90,19 @@
   },
   "canary": {
     "default": 0
+  },
+  "guppy": {
+    "indices": [
+      {
+        "index": "qa-dcp_etl",
+        "type": "case"
+      },
+      {
+        "index": "qa-dcp_file",
+        "type": "file"
+      }
+    ],
+    "config_index": "qa-dcp_array-config",
+    "auth_filter_field": "auth_resource_path"
   }
 }
