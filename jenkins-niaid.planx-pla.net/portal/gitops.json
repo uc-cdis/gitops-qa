@@ -199,7 +199,7 @@
           "rightIcon": "download",
           "fileName": "manifest.json"
         },{
-          "enabled": true,
+          "enabled": false,
           "type": "export-to-workspace",
           "title": "Export to Workspace",
           "leftIcon": "datafile",
