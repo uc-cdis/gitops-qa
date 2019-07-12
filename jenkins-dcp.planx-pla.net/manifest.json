@@ -55,14 +55,14 @@
     "restart_policy": "never"
   },
   "hatchery": {
-    "user-namespace": "jupyter-pods",
+    "user-namespace": "jupyter-pods-jenkins-dcp",
     "sub-dir": "/lw-workspace",
     "user-volume-size": "10Gi",
     "sidecar": {
       "cpu-limit": "1.0",
       "memory-limit": "256Mi",
       "image": "quay.io/cdis/gen3fuse-sidecar:0.1.3",
-      "env": {"NAMESPACE":"default", "HOSTNAME": "jenkins-dcp.planx-pla.net"},
+      "env": {"NAMESPACE":"jenkins-dcp", "HOSTNAME": "jenkins-dcp.planx-pla.net"},
       "args": [],
       "command": ["/bin/bash", "/sidecarDockerrun.sh"],
       "lifecycle-pre-stop": ["su", "-c", "echo test", "-s", "/bin/sh", "root"]
