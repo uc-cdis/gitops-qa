@@ -7,6 +7,7 @@
     "autodeploy": "yes"
   },
   "versions": {
+    "ambassador": "quay.io/datawire/ambassador:0.60.3",
     "arborist": "quay.io/cdis/arborist:master",
     "arranger": "quay.io/cdis/arranger:master",
     "arranger-adminapi": "quay.io/cdis/arranger-server:master",
@@ -66,14 +67,14 @@
     "restart_policy": "never"
   },
   "hatchery": {
-    "user-namespace": "jupyter-pods",
+    "user-namespace": "jupyter-pod-jenkins-niaid",
     "sub-dir": "/lw-workspace",
     "user-volume-size": "10Gi",
     "sidecar": {
       "cpu-limit": "1.0",
       "memory-limit": "256Mi",
       "image": "quay.io/cdis/gen3fuse-sidecar:chore_sidecar",
-      "env": {"NAMESPACE":"default", "HOSTNAME": "jenkins-niaid.planx-pla.net"},
+      "env": {"NAMESPACE":"jenkins-niaid", "HOSTNAME": "jenkins-niaid.planx-pla.net"},
       "args": [],
       "command": ["/bin/bash", "/sidecarDockerrun.sh"],
       "lifecycle-pre-stop": ["su", "-c", "echo test", "-s", "/bin/sh", "root"]
@@ -89,6 +90,22 @@
       "path-rewrite": "/",
       "use-tls": "false",
       "ready-probe": "/"
+    },{
+      "target-port": 8888,
+      "cpu-limit": "1.0",
+      "memory-limit": "512Mi",
+      "name": "Jupyter Notebook Bio Python",
+      "image": "quay.io/occ_data/jupyternotebook:1.7.2",
+      "env": {},
+      "args": ["--NotebookApp.base_url=/lw-workspace/proxy/","--NotebookApp.password=''","--NotebookApp.token=''"],
+      "command": ["start-notebook.sh"],
+      "path-rewrite": "/lw-workspace/proxy/",
+      "use-tls": "false",
+      "ready-probe": "/lw-workspace/proxy/",
+      "lifecycle-post-start": ["/bin/sh","-c","export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; ln -s $(pwd) /home/$IAM/pd/dockerHome; mkdir -p /home/$IAM/.jupyter/custom; echo \"define(['base/js/namespace'], function(Jupyter){Jupyter._target = '_self';})\" >/home/$IAM/.jupyter/custom/custom.js; ln -s /data /home/$IAM/pd/; true"],
+      "user-uid": 1000,
+      "fs-gid": 100,
+      "user-volume-location": "/home/jovyan/pd"
     }]
   },
   "peregrine": {
