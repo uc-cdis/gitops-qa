@@ -24,7 +24,7 @@
     "tube": "quay.io/cdis/tube:0.3.4",
     "wts": "quay.io/cdis/workspace-token-service:master",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:master",
-    "guppy": "quay.io/cdis/guppy:feat_filter-is-not-op"
+    "guppy": "quay.io/cdis/guppy:master"
   },
   "arborist": {
     "deployment_version": "2"
