@@ -26,7 +26,7 @@
     "tube": "quay.io/cdis/tube:master",
     "wts": "quay.io/cdis/workspace-token-service:master",
     "guppy": "quay.io/cdis/guppy:master",
-    "sower": "quay.io/cdis/sower:master",
+    "sower": "quay.io/cdis/sower:feat_conf",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:master",
     "hatchery": "quay.io/cdis/hatchery:master"
   },
@@ -36,18 +36,72 @@
   "indexd": {
     "arborist": "true"
   },
-  "sower": {
-    "name": "pelican-export",
-    "container": {
-      "name": "job-task",
-      "image": "quay.io/cdis/pelican:master",
-      "pull_policy": "always",
-      "env": [],
-      "cpu-limit": "1",
-      "memory-limit": "12Gi"
-    },
-    "restart_policy": "never"
-  },
+  "sower": [
+    {
+      "name": "pelican-export",
+      "action": "export",
+      "container": {
+        "name": "job-task",
+        "image": "quay.io/cdis/pelican:feat_conf",
+        "pull_policy": "always",
+        "env": [
+          {
+            "name": "DICTIONARY_URL",
+            "valueFrom": {
+              "configMapKeyRef": {
+                "name": "manifest-global",
+                "key": "dictionary_url"
+              }
+            }
+          },
+          {
+            "name": "GEN3_HOSTNAME",
+            "valueFrom": {
+              "configMapKeyRef": {
+                "name": "manifest-global",
+                "key": "hostname"
+              }
+            }
+          },
+          {
+            "name": "ROOT_NODE",
+            "value": "case"
+          }
+        ],
+        "volumeMounts": [
+          {
+            "name": "pelican-creds-volume",
+            "readOnly": true,
+            "mountPath": "/pelican-creds.json",
+            "subPath": "config.json"
+          },
+          {
+            "name": "peregrine-creds-volume",
+            "readOnly": true,
+            "mountPath": "/peregrine-creds.json",
+            "subPath": "creds.json"
+          }
+        ],
+        "cpu-limit": "1",
+        "memory-limit": "12Gi"
+      },
+      "volumes": [
+        {
+          "name": "pelican-creds-volume",
+          "secret": {
+            "secretName": "pelicanservice-g3auto"
+          }
+        },
+        {
+          "name": "peregrine-creds-volume",
+          "secret": {
+            "secretName": "peregrine-creds"
+          }
+        }
+      ],
+      "restart_policy": "never"
+    }
+  ],
   "hatchery": {
     "user-namespace": "jupyter-pods-qa-dcp",
     "sub-dir": "/lw-workspace",
