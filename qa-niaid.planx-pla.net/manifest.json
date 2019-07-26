@@ -26,7 +26,8 @@
     "spark": "quay.io/cdis/gen3-spark:master",
     "tube": "quay.io/cdis/tube:0.3.4",
     "wts": "quay.io/cdis/workspace-token-service:master",
-    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:master"
+    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:master",
+    "guppy": "quay.io/cdis/guppy:feat_filter-is-not-op"
   },
   "arborist": {
     "deployment_version": "2"
@@ -86,5 +87,22 @@
   },
   "canary": {
     "default": 0
+  },
+  "guppy": {
+    "indices": [
+      {
+        "index": "qa-niaid",
+        "type": "subject"
+      },
+      {
+        "index": "qa-niaid_follow_up",
+        "type": "follow_up"
+      },
+      {
+        "index": "qa-niaid_file",
+        "type": "file"
+      }
+    ],
+    "auth_filter_field": "auth_resource_path"
   }
 }
