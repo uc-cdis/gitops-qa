@@ -43,7 +43,7 @@
       "container": {
         "name": "job-task",
         "image": "quay.io/cdis/pelican:feat_conf",
-        "pull_policy": "always",
+        "pull_policy": "Always",
         "env": [
           {
             "name": "DICTIONARY_URL",
@@ -99,7 +99,7 @@
           }
         }
       ],
-      "restart_policy": "never"
+      "restart_policy": "Never"
     }
   ],
   "hatchery": {
