@@ -35,7 +35,8 @@
     "fence_url": "https://qa-test3.planx-pla.net/user",
     "indexd_url": "https://qa-test3.planx-pla.net/index/",
     "arborist_url": "http://arborist-service.qa-test3.svc.cluster.local",
-    "netpolicy": "on"
+    "netpolicy": "on",
+    "cookie_domain": ".planx-pla.net"
   },
   "arborist": {
     "deployment_version": "2"
