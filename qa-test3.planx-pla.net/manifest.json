@@ -4,9 +4,11 @@
     "works with qa-test2 (tb) and qa-test4 (charlie or whatever)"
   ],
   "versions": {
+    "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
     "arborist": "quay.io/cdis/arborist:master",
     "fence": "quay.io/cdis/fence:master",
     "indexd": "quay.io/cdis/indexd:master",
+    "guppy": "quay.io/cdis/guppy:master",
     "peregrine": "quay.io/cdis/peregrine:master",
     "pidgin": "quay.io/cdis/pidgin:master",
     "portal": "quay.io/cdis/data-ecosystem-portal:master",
@@ -32,7 +34,7 @@
     "logs_bucket": "logs-devplanetv1-gen3",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
     "origins_allow_credentials": ["https://qa-test2.planx-pla.net", "https://qa-test4.planx-pla.net"],
-    "netpolicy": "on",
+    "netpolicy": "off",
     "cookie_domain": "planx-pla.net"
   },
   "ssjdispatcher": {
@@ -42,5 +44,14 @@
   },
   "canary": {
     "default": 0
+  },
+  "guppy": {
+    "indices": [
+      {
+        "index": "qa_dataset_browser",
+        "type": "dataset"
+      }
+    ],
+    "auth_filter_field": "auth_resource_path"
   }
 }
