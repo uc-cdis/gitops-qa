@@ -1,0 +1,124 @@
+{
+  "notes": [
+    "QA environment for NIAID data ecosystem - tb.niaiddata.org",
+    "goes with qa-test3.planx-pla.net and qa-test4.planx-pla.net"
+  ],
+  "versions": {
+    "arborist": "quay.io/cdis/arborist:master",
+    "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
+    "fence": "quay.io/cdis/fence:master",
+    "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
+    "indexd": "quay.io/cdis/indexd:master",
+    "manifestservice": "quay.io/cdis/manifestservice:master",
+    "peregrine": "quay.io/cdis/peregrine:master",
+    "pidgin": "quay.io/cdis/pidgin:master",
+    "portal": "quay.io/cdis/data-portal:master",
+    "revproxy": "quay.io/cdis/nginx:1.15.5-ctds",
+    "sheepdog": "quay.io/cdis/sheepdog:master",
+    "sower": "quay.io/cdis/sower:master",
+    "spark": "quay.io/cdis/gen3-spark:master",
+    "tube": "quay.io/cdis/tube:master"
+  },
+  "global": {
+    "dispatcher_job_num": "10",
+    "environment": "qaplanetv1",
+    "hostname": "qa-flue.planx-pla.net",
+    "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
+    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/tb-datadictionary/master/schema.json",
+    "portal_app": "gitops",
+    "sync_from_dbgap": "False",
+    "kube_bucket": "kube_bucket.devplanetv1.gen3",
+    "logs_bucket": "logs-devplanetv1-gen3",
+    "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
+    "fence_url": "https://qa-test3.planx-pla.net/user",
+    "indexd_url": "https://qa-test3.planx-pla.net/index/",
+    "arborist_url": "http://arborist-service.qa-test3.svc.cluster.local",
+    "netpolicy": "on",
+    "cookie_domain": "planx-pla.net"
+  },
+  "arborist": {
+    "deployment_version": "2"
+  },
+  "guppy": {
+    "indices": [
+      {
+        "index": "qa-flu_subject",
+        "type": "subject"
+      },
+      {
+        "index": "qa-flu_follow_up",
+        "type": "follow_up"
+      },
+      {
+        "index": "qa-flu_file",
+        "type": "file"
+      }
+    ],
+    "config_index": "qa-flu_array-config",
+    "auth_filter_field": "auth_resource_path"
+  },
+  "hatchery": {
+    "user-namespace": "jupyter-pods-qa-test2",
+    "sub-dir": "/lw-workspace",
+    "user-volume-size": "10Gi",
+    "sidecar": {
+      "cpu-limit": "1.0",
+      "memory-limit": "256Mi",
+      "image": "quay.io/cdis/gen3fuse-sidecar:master",
+      "env": {"NAMESPACE":"qa-test2", "HOSTNAME": "qa-test2.planx-pla.net"},
+      "args": [],
+      "command": ["/bin/bash", "/sidecarDockerrun.sh"],
+      "lifecycle-pre-stop": ["su", "-c", "echo test", "-s", "/bin/sh", "root"]
+    },
+    "containers": [{
+      "target-port": 8787,
+      "cpu-limit": "1.0",
+      "memory-limit": "512Mi",
+      "name": "R Studio",
+      "image": "heliumdatastage/rstudio-server:1",
+      "env": {"DISABLE_AUTH": "true"},
+      "args": [],
+      "path-rewrite": "/",
+      "use-tls": "false",
+      "ready-probe": "/"
+    },
+    {
+      "target-port": 8888,
+      "cpu-limit": "1.0",
+      "memory-limit": "512Mi",
+      "name": "Jupyter Notebook Bio Python",
+      "image": "quay.io/occ_data/jupyternotebook:1.7.2",
+      "env": {},
+      "args": ["--NotebookApp.base_url=/lw-workspace/proxy/","--NotebookApp.password=''","--NotebookApp.token=''"],
+      "command": ["start-notebook.sh"],
+      "path-rewrite": "/lw-workspace/proxy/",
+      "use-tls": "false",
+      "ready-probe": "/lw-workspace/proxy/",
+      "lifecycle-post-start": ["/bin/sh","-c","export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; ln -s $(pwd) /home/$IAM/pd/dockerHome; mkdir -p /home/$IAM/.jupyter/custom; echo \"define(['base/js/namespace'], function(Jupyter){Jupyter._target = '_self';})\" >/home/$IAM/.jupyter/custom/custom.js; ln -s /data /home/$IAM/pd/; true"],
+      "user-uid": 1000,
+      "fs-gid": 100,
+      "user-volume-location": "/home/jovyan/pd"
+    }]
+  },
+  "indexd": {
+    "arborist": "true"
+  },
+  "jupyterhub": {
+    "enabled": "no"
+  },
+  "sower": {
+    "name": "pelican-export",
+    "container": {
+      "name": "job-task",
+      "image": "quay.io/cdis/pelican:master",
+      "pull_policy": "always",
+      "env": [],
+      "cpu-limit": "1",
+      "memory-limit": "12Gi"
+    },
+    "restart_policy": "never"
+  },
+  "canary": {
+    "default": 0
+  }
+}
