@@ -35,6 +35,7 @@
     "fence_url": "https://qa-test3.planx-pla.net/user",
     "indexd_url": "https://qa-test3.planx-pla.net/index/",
     "arborist_url": "http://arborist-service.qa-test3.svc.cluster.local",
+    "origins_allow_credentials": ["https://qa-test3.planx-pla.net", "https://qa-test4.planx-pla.net", "https://qa-flu.planx-pla.net"],
     "netpolicy": "off",
     "cookie_domain": "planx-pla.net"
   },
@@ -44,19 +45,19 @@
   "guppy": {
     "indices": [
       {
-        "index": "qa-test2_subject",
+        "index": "qa-niaid",
         "type": "subject"
       },
       {
-        "index": "qa-test2_follow_up",
+        "index": "qa-niaid_follow_up",
         "type": "follow_up"
       },
       {
-        "index": "qa-test2_file",
+        "index": "qa-niaid_file",
         "type": "file"
       }
     ],
-    "config_index": "qa-test2_array-config",
+    "config_index": "qa-niaid_array-config",
     "auth_filter_field": "auth_resource_path"
   },
   "hatchery": {
