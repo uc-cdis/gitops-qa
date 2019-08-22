@@ -28,7 +28,7 @@
     "hostname": "qa-test3.planx-pla.net",
     "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
     "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/ndhdictionary/3.5.3/schema.json",
-    "portal_app": "ndef",
+    "portal_app": "ndef-qa",
     "sync_from_dbgap": "False",
     "kube_bucket": "kube_bucket.devplanetv1.gen3",
     "logs_bucket": "logs-devplanetv1-gen3",
