@@ -45,7 +45,7 @@
   "guppy": {
     "indices": [
       {
-        "index": "qa-niaid",
+        "index": "qa-test2_subject",
         "type": "subject"
       },
       {
