@@ -59,6 +59,6 @@
       }
     ],
     "auth_filter_field": "auth_resource_path",
-    "enable_encrypt_whitelist": false,
+    "enable_encrypt_whitelist": false
   }
 }
