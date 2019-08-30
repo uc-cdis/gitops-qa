@@ -23,7 +23,7 @@
     "sheepdog": "quay.io/cdis/sheepdog:master",
     "spark": "quay.io/cdis/gen3-spark:master",
     "tube": "quay.io/cdis/tube:master",
-    "sower": "quay.io/cdis/sower:feat_configuration",
+    "sower": "quay.io/cdis/sower:0.1.0",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:master"
   },
   "arborist": {
