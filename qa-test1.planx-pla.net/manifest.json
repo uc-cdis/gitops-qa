@@ -25,7 +25,8 @@
     "sower": "quay.io/cdis/sower:master",
     "spark": "quay.io/cdis/gen3-spark:master",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:master",
-    "tube": "quay.io/cdis/tube:master"
+    "tube": "quay.io/cdis/tube:master",
+    "wts": "quay.io/cdis/workspace-token-service:master"
   },
   "global": {
     "dispatcher_job_num": "10",
