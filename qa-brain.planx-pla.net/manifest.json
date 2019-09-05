@@ -22,7 +22,8 @@
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:master",
     "spark": "quay.io/cdis/gen3-spark:1.0.0",
     "tube": "quay.io/cdis/tube:0.3.7",
-    "guppy": "quay.io/cdis/guppy:master"
+    "guppy": "quay.io/cdis/guppy:master",
+    "dashboard": "quay.io/cdis/gen3-statics:master"
   },
   "arborist": {
     "deployment_version": "2"

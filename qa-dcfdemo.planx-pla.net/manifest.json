@@ -23,7 +23,8 @@
     "sheepdog": "quay.io/cdis/sheepdog:master",
     "spark": "quay.io/cdis/gen3-spark:master",
     "tube": "quay.io/cdis/tube:0.1.9",
-    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:master"
+    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:master",
+    "dashboard": "quay.io/cdis/gen3-statics:master"
   },
   "arborist": {
     "deployment_version": "2"

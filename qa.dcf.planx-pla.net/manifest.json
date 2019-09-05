@@ -22,7 +22,8 @@
     "revproxy": "quay.io/cdis/nginx:1.15.5-ctds",
     "sheepdog": "quay.io/cdis/sheepdog:master",
     "spark": "quay.io/cdis/gen3-spark:master",
-    "tube": "quay.io/cdis/tube:master"
+    "tube": "quay.io/cdis/tube:master",
+    "dashboard": "quay.io/cdis/gen3-statics:master"
   },
   "arborist": {
     "deployment_version": "2"
