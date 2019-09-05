@@ -26,7 +26,8 @@
     "spark": "quay.io/cdis/gen3-spark:master",
     "tube": "quay.io/cdis/tube:0.3.9",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:0.0.6",
-    "wts": "quay.io/cdis/workspace-token-service:master"
+    "wts": "quay.io/cdis/workspace-token-service:master",
+    "dashboard": "quay.io/cdis/gen3-statics:master"
   },
   "global": {
     "environment": "anvilstaging",
@@ -74,10 +75,23 @@
       "cpu-limit": "1.0",
       "memory-limit": "512Mi",
       "image": "quay.io/cdis/gen3fuse-sidecar:chore_sidecar",
-      "env": {"NAMESPACE":"default", "HOSTNAME": "gen3.datastage.io"},
+      "env": {
+        "NAMESPACE": "default",
+        "HOSTNAME": "gen3.datastage.io"
+      },
       "args": [],
-      "command": ["/bin/bash", "/sidecarDockerrun.sh"],
-      "lifecycle-pre-stop": ["su", "-c", "echo test", "-s", "/bin/sh", "root"]
+      "command": [
+        "/bin/bash",
+        "/sidecarDockerrun.sh"
+      ],
+      "lifecycle-pre-stop": [
+        "su",
+        "-c",
+        "echo test",
+        "-s",
+        "/bin/sh",
+        "root"
+      ]
     },
     "containers": [
       {

@@ -22,7 +22,8 @@
     "tube": "quay.io/cdis/tube:0.3.7",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:0.0.5",
     "guppy": "quay.io/cdis/guppy:master",
-    "sower": "quay.io/cdis/sower:feat_conf"
+    "sower": "quay.io/cdis/sower:feat_conf",
+    "dashboard": "quay.io/cdis/gen3-statics:master"
   },
   "sower": [
     {
