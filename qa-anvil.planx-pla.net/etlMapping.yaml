@@ -1,5 +1,5 @@
 mappings:
-  - name: etl_anvil
+  - name: etl_qa-anvil
     doc_type: case
     type: aggregator
     root: case
@@ -20,20 +20,11 @@ mappings:
       - name: _aliquots_count
         path: samples.aliquots
         fn: count
-      - name: _submitted_methylations_count
-        path: samples.aliquots.submitted_methylation_files
-        fn: count
       - name: _read_groups_count
         path: samples.aliquots.read_groups
         fn: count
       - name: _submitted_aligned_reads_count
         path: samples.aliquots.read_groups.submitted_aligned_reads_files
-        fn: count
-      - name: _submitted_copy_number_files_on_read_groups_count
-        path: samples.aliquots.read_groups.submitted_copy_number_files
-        fn: count
-      - name: _submitted_somatic_mutations_count
-        path: samples.aliquots.read_groups.submitted_somatic_mutations
         fn: count
     joining_props:
       - index: file
@@ -45,7 +36,7 @@ mappings:
           - name: data_type
             src: data_type
             fn: set
-  - name: file_anvil
+  - name: file_qa-anvil
     doc_type: file
     type: collector
     root: None
