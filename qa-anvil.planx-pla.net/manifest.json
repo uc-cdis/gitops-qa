@@ -55,15 +55,14 @@
   "guppy": {
     "indices": [
       {
-        "index": "etl_anvil",
+        "index": "etl_qa-anvil",
         "type": "case"
       },
       {
-        "index": "file_anvil",
+        "index": "file_qa-anvil",
         "type": "file"
       }
     ],
-    "config_index": "anvil_array-config",
     "auth_filter_field": "auth_resource_path",
     "enable_encrypt_whitelist": false
   },
