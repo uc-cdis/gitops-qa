@@ -16,6 +16,7 @@ mappings:
       - path: diagnoses
         props:
           - name: primary_diagnosis
+        sorted_by: updated_datetime, desc
     aggregated_props:
       - name: _samples_count
         path: samples
