@@ -50,7 +50,7 @@
   "guppy": {
     "indices": [
       {
-        "index": "qa-test2",
+        "index": "qa-test2_subject",
         "type": "subject"
       },
       {
