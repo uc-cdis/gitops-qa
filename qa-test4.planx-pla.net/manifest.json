@@ -1,7 +1,7 @@
 {
   "notes": [
     "QA environment for NIAID data ecosystem - daids.niaiddata.org",
-    "goes with qa-test3.planx-pla.net and qa-test3.planx-pla.net"
+    "goes with qa-test2.planx-pla.net, qa-test3.planx-pla.net and qa-flu.planx-pla.net"
   ],
   "versions": {
     "arborist": "quay.io/cdis/arborist:master",
@@ -50,7 +50,7 @@
   "guppy": {
     "indices": [
       {
-        "index": "qa-test4_subject",
+        "index": "qa-test4",
         "type": "subject"
       },
       {

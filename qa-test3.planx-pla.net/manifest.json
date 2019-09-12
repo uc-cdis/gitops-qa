@@ -1,7 +1,7 @@
 {
   "notes": [
     "This is the root for niaid data commons qa",
-    "works with qa-test2 (tb) and qa-test4 (charlie or whatever)"
+    "works with qa-test2 (tb), qa-test4 (aids) and qa-flu"
   ],
   "versions": {
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",

@@ -1,7 +1,7 @@
 {
   "notes": [
-    "QA environment for NIAID data ecosystem - tb.niaiddata.org",
-    "goes with qa-test3.planx-pla.net and qa-test4.planx-pla.net"
+    "QA environment for NIAID data ecosystem - flu.niaiddata.org",
+    "goes with qa-test2.planx-pla.net, qa-test3.planx-pla.net and qa-test4.planx-pla.net"
   ],
   "versions": {
     "arborist": "quay.io/cdis/arborist:master",
