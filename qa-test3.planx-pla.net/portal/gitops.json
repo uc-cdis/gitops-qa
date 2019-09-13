@@ -1,0 +1,253 @@
+{
+  "subcommons": [ 
+    {
+      "URL": "https://qa-test2.planx-pla.net/",
+      "name": "NDE: TB"
+    }, 
+    {
+      "URL": "https://qa-test4.planx-pla.net/",
+      "name": "NDE: AIDS"
+    },
+    {
+      "URL": "https://qa-flu.planx-pla.net/",
+      "name": "NDE: Flu"
+    }
+  ],
+  "gaTrackingId": "undefined",
+  "graphql": {
+    "boardCounts": [
+      {
+        "graphql": "_subject_count",
+        "name": "Subject",
+        "plural": "Subjects"
+      },
+      {
+        "graphql": "_study_count",
+        "name": "Study",
+        "plural": "Studies"
+      },
+      {
+        "graphql": "_summary_lab_result_count",
+        "name": "Lab record",
+        "plural": "Lab records"
+      }
+    ],
+    "chartCounts": [
+      {
+        "graphql": "_subject_count",
+        "name": "Subject"
+      },
+      {
+        "graphql": "_study_count",
+        "name": "Study"
+      }
+    ],
+    "projectDetails": "boardCounts"
+  },
+  "components": {
+    "appName": "NIAID Data Ecosystem",
+    "index": {
+      "introduction": {
+        "heading": "Cross Environment Datasets",
+        "text": "Divisions within NIAID can have their own independent data models while maintaining interoperability of the data ecosystem. The data within projects are findable, accessible, interoperable, and reusable (FAIR), but it will be easier for each individual research community to work within the system. Of course, with this approach, two different research communities may create data models that have data elements that may conflict and that will need to be manually de-conflicted.",
+        "link": "/datasets"
+      },
+      "buttons": [
+        {
+          "name": "ImmPort",
+          "body": "ImmPort is funded by the NIH, NIAID, and DAIT in support of the NIH mission to share data with the public. Data is provided by NIH-funded programs and other research organizations.",
+          "external_link": "https://www.immport.org/home",
+          "logo": "/custom/logo/immport-main-icon.png"
+        },
+        {
+          "name": "NIAID TB Environment",
+          "icon": "data-explore",
+          "body": "The NDE TB Environment.",
+          "external_link": "https://qa-test2.planx-pla.net/",
+          "internal_link": "/datasets",
+          "label": "Explore cohorts"
+        },
+        {
+          "name": "NIAID AIDS Environment",
+          "icon": "data-explore",
+          "body": "The NDE AIDS Environment.",
+          "external_link": "https://qa-test4.planx-pla.net/",
+          "internal_link": "/datasets",
+          "label": "Explore cohorts"
+        },
+        {
+          "name": "NIAID Flu Environment",
+          "icon": "data-explore",
+          "body": "The NDE Flu Environment.",
+          "external_link": "https://qa-flu.planx-pla.net",
+          "internal_link": "/datasets",
+          "label": "Explore cohorts"
+        }
+      ]
+    },
+    "navigation": {
+      "items": [
+        {
+          "icon": "query",
+          "link": "/datasets",
+          "color": "#a2a2a2",
+          "name": "Dataset Browser"
+        },
+        {
+          "icon": "exploration",
+          "link": "/explorer",
+          "color": "#a2a2a2",
+          "name": "Data Explorer"
+        }
+      ]
+    },
+    "topBar": {
+      "items": [
+        {
+          "link": "https://gen3.org/resources/user/",
+          "name": "Documentation"
+        }
+      ]
+    },
+    "login": {
+      "title": "NIAID Data Ecosystem",
+      "subTitle": "Cross Environment Datasets",
+      "text": "The website combines government datasets from multiple divisions of NIAID to create clean, easy to navigate visualizations for data-driven discovery within Allergy and Infectious Diseases.",
+      "contact": "If you have any questions about access or the registration process, please contact ",
+      "email": "support@datacommons.io"
+    },
+    "footerLogos": [
+      {
+        "src": "/src/img/gen3.png",
+        "href": "https://ctds.uchicago.edu/gen3",
+        "alt": "Gen3 Data Commons"
+      },
+      {
+        "src": "/src/img/createdby.png",
+        "href": "https://ctds.uchicago.edu/",
+        "alt": "Center for Translational Data Science at the University of Chicago"
+      },
+      {
+        "src": "/custom/logo/niaid.png",
+        "href": "https://qa-test3.planx-pla.net/",
+        "alt": "NIAID Data Ecosystem"
+      }
+    ]
+  },
+  "requiredCerts": [],
+  "featureFlags": {
+    "explorer": true,
+    "analysis": true
+  },
+  "datasetBrowserConfig": {
+    "filterSections": [
+      {
+        "title": "Supported Data Resources", 
+        "options": [
+          { "text": "ImmPort", "filterType": "singleSelect"},
+          { "text": "NDE: TB", "filterType": "singleSelect"},
+          { "text": "NDE: AIDS", "filterType": "singleSelect"},
+          { "text": "NDE: Flu", "filterType": "singleSelect"}
+        ]
+      },
+      { 
+        "title": "Research Focus",
+        "options": [
+          { "text": "AIDS", "filterType": "singleSelect"},
+          { "text": "TB", "filterType": "singleSelect"},
+          { "text": "Flu", "filterType": "singleSelect"},
+          { "text": "Immune Response", "filterType": "singleSelect"},
+          { "text": "Allergy", "filterType": "singleSelect"},
+          { "text": "Atopy", "filterType": "singleSelect"},
+          { "text": "Infection Response", "filterType": "singleSelect"},
+          { "text": "Vaccine Response", "filterType": "singleSelect"},
+          { "text": "Transplantation", "filterType": "singleSelect"},
+          { "text": "Oncology", "filterType": "singleSelect"},
+          { "text": "Autoimmune", "filterType": "singleSelect"},
+          { "text": "Preterm Birth", "filterType": "singleSelect"}
+        ]
+      }
+    ],
+    "fieldMapping" : [
+      { "field": "link", "name": "View" },
+      { "field": "dataset_name", "name": "Study" },
+      { "field": "supported_data_resource", "name": "Supported Data Resource" },
+      { "field": "research_focus", "name": "Research Focus" },
+      { "field": "description", "name": "Description of Dataset" }
+    ],
+    "filterConfig": {
+      "tabs": [{
+        "title": "Filters",
+        "fields": ["supported_data_resource", "research_focus"]
+      }]
+    }
+  },
+  "dataExplorerConfig": {
+    "charts": {
+      "project_id": {
+        "chartType": "count",
+        "title": "Projects"
+      },
+      "subject_id": {
+        "chartType": "count",
+        "title": "Subjects"
+      },
+      "dataset": {
+        "chartType": "pie",
+        "title": "Dataset"
+      },
+      "species": {
+        "chartType": "bar",
+        "title": "Species"
+      },
+      "gender": {
+        "chartType": "pie",
+        "title": "Gender"
+      }
+    },
+    "projectSections": [
+      { 
+        "title": "Resource",
+        "field": "dataset",
+        "options": []
+      }
+    ], 
+    "subjectSections": [
+      { 
+        "title": "Ethnicity", 
+        "field": "ethnicity",
+        "options": []
+      },
+      { 
+        "title": "Gender",
+        "field": "gender",
+        "options": []
+      },
+      { 
+        "title": "Genus species",
+        "field": "species",
+        "options": []
+      }
+    ],
+    "fieldMapping" : [
+      { "field": "dataset", "name": "Resource" },
+      { "field": "studyAccession", "name": "Study" },
+      { "field": "phenotype", "name": "Phenotype" },
+      { "field": "gender", "name": "Gender" },
+      { "field": "ethnicity", "name": "Ethnicity" },
+      { "field": "strain", "name": "Strain" },
+      { "field": "species", "name": "Genus species" },
+      { "field": "submitter_id", "name": "Submitter ID" }
+    ],
+    "filterConfig": {
+      "tabs": [{
+        "title": "Subject",
+        "fields": ["ethnicity", "gender", "species"]
+      },
+      {
+        "title": "Project",
+        "fields": ["dataset", "research_focus"]
+      }]
+    }
+  }
+}
