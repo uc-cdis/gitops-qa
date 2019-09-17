@@ -24,7 +24,7 @@
   "global": {
     "dispatcher_job_num": "10",
     "environment": "qaplanetv1",
-    "hostname": "qa-flue.planx-pla.net",
+    "hostname": "qa-flu.planx-pla.net",
     "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
     "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/flu-datadictionary/master/schema.json",
     "portal_app": "gitops",
@@ -35,6 +35,9 @@
     "fence_url": "https://qa-test3.planx-pla.net/user",
     "indexd_url": "https://qa-test3.planx-pla.net/index/",
     "arborist_url": "http://arborist-service.qa-test3.svc.cluster.local",
+    "workspace_url": "https://qa-test3.planx-pla.net/lw-workspace",
+    "manifest_service_url": "https://qa-test3.planx-pla.net/manifests",
+    "wts_url": "https://qa-test3.planx-pla.net/wts/oauth2/",
     "origins_allow_credentials": [
       "https://qa-test3.planx-pla.net",
       "https://qa-test2.planx-pla.net",
@@ -55,76 +58,6 @@
     ],
     "auth_filter_field": "auth_resource_path"
   },
-  "hatchery": {
-    "user-namespace": "jupyter-pods-qa-test2",
-    "sub-dir": "/lw-workspace",
-    "user-volume-size": "10Gi",
-    "sidecar": {
-      "cpu-limit": "1.0",
-      "memory-limit": "256Mi",
-      "image": "quay.io/cdis/gen3fuse-sidecar:master",
-      "env": {
-        "NAMESPACE": "qa-test2",
-        "HOSTNAME": "qa-test2.planx-pla.net"
-      },
-      "args": [],
-      "command": [
-        "/bin/bash",
-        "/sidecarDockerrun.sh"
-      ],
-      "lifecycle-pre-stop": [
-        "su",
-        "-c",
-        "echo test",
-        "-s",
-        "/bin/sh",
-        "root"
-      ]
-    },
-    "containers": [
-      {
-        "target-port": 8787,
-        "cpu-limit": "1.0",
-        "memory-limit": "512Mi",
-        "name": "R Studio",
-        "image": "heliumdatastage/rstudio-server:1",
-        "env": {
-          "DISABLE_AUTH": "true"
-        },
-        "args": [],
-        "path-rewrite": "/",
-        "use-tls": "false",
-        "ready-probe": "/"
-      },
-      {
-        "target-port": 8888,
-        "cpu-limit": "1.0",
-        "memory-limit": "512Mi",
-        "name": "Jupyter Notebook Bio Python",
-        "image": "quay.io/occ_data/jupyternotebook:1.7.2",
-        "env": {},
-        "args": [
-          "--NotebookApp.base_url=/lw-workspace/proxy/",
-          "--NotebookApp.password=''",
-          "--NotebookApp.token=''"
-        ],
-        "command": [
-          "start-notebook.sh"
-        ],
-        "path-rewrite": "/lw-workspace/proxy/",
-        "use-tls": "false",
-        "ready-probe": "/lw-workspace/proxy/",
-        "lifecycle-post-start": [
-          "/bin/sh",
-          "-c",
-          "export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; ln -s $(pwd) /home/$IAM/pd/dockerHome; mkdir -p /home/$IAM/.jupyter/custom; echo \"define(['base/js/namespace'], function(Jupyter){Jupyter._target = '_self';})\" >/home/$IAM/.jupyter/custom/custom.js; ln -s /data /home/$IAM/pd/; true"
-        ],
-        "user-uid": 1000,
-        "fs-gid": 100,
-        "user-volume-location": "/home/jovyan/pd"
-      }
-    ]
-  },
   "indexd": {
     "arborist": "true"
   },
@@ -142,8 +75,5 @@
       "memory-limit": "12Gi"
     },
     "restart_policy": "never"
-  },
-  "canary": {
-    "default": 0
   }
 }
