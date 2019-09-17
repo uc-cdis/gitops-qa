@@ -145,10 +145,6 @@
         "chartType": "count",
         "title": "Projects"
       },
-      "subject_id": {
-        "chartType": "count",
-        "title": "Subjects"
-      },
       "gender": {
         "chartType": "pie",
         "title": "Gender"
@@ -167,7 +163,6 @@
         {
           "title": "Subject",
           "fields":[
-            "project_id",
             "gender",
             "race",
             "ethnicity"
