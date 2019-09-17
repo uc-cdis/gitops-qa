@@ -54,6 +54,10 @@
       {
         "index": "qa-flu_subject",
         "type": "subject"
+      },
+      {
+        "index": "qa-niaid_file",
+        "type": "file"
       }
     ],
     "auth_filter_field": "auth_resource_path"
@@ -75,5 +79,8 @@
       "memory-limit": "12Gi"
     },
     "restart_policy": "never"
+  },
+  "canary": {
+    "default": 0
   }
 }
