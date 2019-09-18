@@ -44,7 +44,8 @@
       "https://qa-test4.planx-pla.net"
     ],
     "netpolicy": "off",
-    "cookie_domain": "planx-pla.net"
+    "cookie_domain": "planx-pla.net",
+    "des_namespace": "qa-test3"
   },
   "arborist": {
     "deployment_version": "2"
