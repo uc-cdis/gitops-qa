@@ -1,5 +1,5 @@
 mappings:
-  - name: qa-flu_subject
+  - name: qa-flu
     doc_type: subject
     type: aggregator
     root: subject
