@@ -53,11 +53,15 @@
   "guppy": {
     "indices": [
       {
-        "index": "qa-flu_subject",
+        "index": "qa-flu",
         "type": "subject"
       },
       {
-        "index": "qa-niaid_file",
+        "index": "qa-flu_follow_up",
+        "type": "follow_up"
+      },
+      {
+        "index": "qa-flu_file",
         "type": "file"
       }
     ],

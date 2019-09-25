@@ -54,15 +54,15 @@
   "guppy": {
     "indices": [
       {
-        "index": "qa-test4_subject",
+        "index": "qa-test4",
         "type": "subject"
       },
       {
-        "index": "qa-niaid_follow_up",
+        "index": "qa-test4_follow_up",
         "type": "follow_up"
       },
       {
-        "index": "qa-niaid_file",
+        "index": "qa-test4_file",
         "type": "file"
       }
     ],
