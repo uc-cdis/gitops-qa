@@ -1,8 +1,8 @@
 mappings:
   - name: jenkins-dcp_etl
-    doc_type: subject
+    doc_type: case
     type: aggregator
-    root: subject
+    root: case
     props:
       - name: submitter_id
       - name: project_id
@@ -10,11 +10,11 @@ mappings:
     flatten_props:
       - path: demographics
         props:
-          - name: annotated_sex
+          - name: gender
           - name: race
           - name: ethnicity
           - name: age_at_index
-          - name: bmi_baseline
+          - name: bmi
       - path: medical_histories
         props:
           - name: diabetes
@@ -32,7 +32,7 @@ mappings:
       - path: blood_pressure_test
         props:
           - name: diastolic_blood_pressure
-          - name: bp_systolic
+          - name: systolic_blood_pressure
       - path: medication_records
         props:
           - name: hypertension_meds

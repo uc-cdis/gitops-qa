@@ -3,9 +3,9 @@
   "graphql": {
     "boardCounts": [
       {
-        "graphql": "_subject_count",
-        "name": "Subject",
-        "plural": "Subjects"
+        "graphql": "_case_count",
+        "name": "Case",
+        "plural": "Cases"
       },
       {
         "graphql": "_study_count",
@@ -20,8 +20,8 @@
     ],
     "chartCounts": [
       {
-        "graphql": "_subject_count",
-        "name": "Subject"
+        "graphql": "_case_count",
+        "name": "Case"
       },
       {
         "graphql": "_study_count",
@@ -70,8 +70,8 @@
       ],
       "homepageChartNodes": [
         {
-          "node": "subject",
-          "name": "Subjects"
+          "node": "case",
+          "name": "Cases"
         },
         {
           "node": "study",
@@ -290,7 +290,7 @@
     ],
     "arrangerConfig": {
       "projectId": "search",
-      "graphqlField": "subject",
+      "graphqlField": "case",
       "index": "",
       "manifestMapping": {
         "resourceIndexType": "file",
