@@ -6,20 +6,10 @@ mappings:
     props:
       - name: submitter_id
       - name: project_id
-      - name: hiv_status
-        value_mappings:
-          - true: positive
-          - false: negative
       - name: species
-      - name: amikacin_res_phenotype
-      - name: capreomycin_res_phenotype
-      - name: isoniazid_res_phenotype
-      - name: kanamycin_res_phenotype
-      - name: ofloxacin_res_phenotype
-      - name: pyrazinamide_res_phenotype
-      - name: rifampicin_res_phenotype
-      - name: rifampin_res_phenotype
-      - name: streptomycin_res_phenotype
+      - name: strain
+    parent_props:
+      - path: studies[study_objective]
     flatten_props:
       - path: demographics
         props:
@@ -28,23 +18,10 @@ mappings:
           - name: ethnicity
           - name: vital_status
           - name: year_of_birth
-          - name: study_center
-            src: country_of_birth
       - path: virus_infections
         props:
           - name: virus_type
           - name: virus_subtype
-      - path: hiv_history_records
-        props:
-          - name: arthxbase
-          - name: cd4nadir
-          - name: fposdate
-          - name: frstdthd
-          - name: status
-      - path: comorbidities
-        props:
-          - name: bshbvstat
-          - name: bshcvstat
     aggregated_props:
       - name: _follow_ups_count
         path: follow_ups
@@ -86,34 +63,30 @@ mappings:
         src: regimen_or_line_of_therapy
         path: diagnoses.treatments
         fn: set
-      - name: _type_of_resistances
-        src: type_of_resistance
-        path: diagnoses
-        fn: set
-      - name: _summary_tb_culture_result
-        src: culture
-        path: samples.tb_results
-        fn: set
-      - name: _summary_tb_microscopy_result
-        src: microscopy
-        path: samples.tb_results
-        fn: set
-      - name: _summary_tb_specimen_result
-        src: test_type
-        path: samples.tb_results
-        fn: set
       - name: therapy
         path: follow_ups.summary_drug_uses
         src: thrpy
         fn: set
-      - name: therapyv
-        path: follow_ups.summary_drug_uses
-        src: thrpyv
+      - name: analyte_type
+        path: samples.aliquots
+        src: analyte_type
         fn: set
-      - name: _min_viral_load
-        path: follow_ups.summary_lab_results
-        src: viral_load
-        fn: min
+      - name: biospecimen_anatomic_site
+        path: samples
+        src: biospecimen_anatomic_site
+        fn: set
+      - name: cell_line
+        path: samples
+        src: cell_line
+        fn: set
+      - name: sample_type
+        path: samples
+        src: sample_type
+        fn: set
+      - name: composition
+        path: samples
+        src: composition
+        fn: set
     joining_props:
       - index: file
         join_on: subject_id
@@ -150,30 +123,6 @@ mappings:
       - name: weight_percentage
       - name: tint
       - name: days_to_follow_up
-    parent_props:
-      - path: subjects[subject_id:id,project_id,hiv_status]
-    flatten_props:
-      - path: summary_drug_uses
-        props:
-          - name: thrpy
-          - name: thrpyv
-    aggregated_props:
-      - name: viral_load
-        path: summary_lab_results
-        src: viral_load
-        fn: min
-      - name: leu3n
-        path: summary_lab_results
-        src: leu3n
-        fn: min
-    joining:
-      - index: subject
-        join_on: subject_id
-        props:
-          - name: frstdthd
-            src: frstdthd
-          - name: fposdate
-            src: fposdate
   - name: qa-flu_file
     doc_type: file
     type: collector
