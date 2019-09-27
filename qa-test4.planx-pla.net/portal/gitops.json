@@ -141,7 +141,7 @@
   "analysisTools": [ "ndhHIV" ],
   "dataExplorerConfig": {
     "charts": {
-      "project_id": {
+      "study_submitter_id": {
         "chartType": "count",
         "title": "Studies"
       },
@@ -167,7 +167,7 @@
         {
           "title": "Subject",
           "fields":[
-            "project_id",
+            "study_submitter_id",
             "gender",
             "race",
             "ethnicity",
@@ -251,6 +251,7 @@
       "dataType": "subject",
       "nodeCountTitle": "Subjects",
       "fieldMapping": [
+        { "field": "study_submitter_id", "name": "Study" },
         { "field": "frstdthd", "name": "Year of Death" },
         { "field": "arthxbase", "name": "ART Use Prior to Baseline"},
         { "field": "bshbvstat", "name": "Baseline HBV Sero-status"},
