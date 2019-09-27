@@ -66,7 +66,7 @@
         "type": "file"
       }
     ],
-    "config_index": "qa-niaid_array-config",
+    "config_index": "qa-test2_array-config",
     "auth_filter_field": "auth_resource_path"
   },
   "indexd": {
