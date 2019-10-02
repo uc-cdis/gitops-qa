@@ -198,37 +198,13 @@
       },
       "species": {
         "chartType": "bar",
-        "title": "Genus species"
+        "title": "Species"
       },
       "gender": {
         "chartType": "pie",
         "title": "Gender"
       }
     },
-    "projectSections": [
-      { 
-        "title": "Resource",
-        "field": "dataset",
-        "options": []
-      }
-    ], 
-    "subjectSections": [
-      { 
-        "title": "Ethnicity", 
-        "field": "ethnicity",
-        "options": []
-      },
-      { 
-        "title": "Gender",
-        "field": "gender",
-        "options": []
-      },
-      { 
-        "title": "Genus species",
-        "field": "species",
-        "options": []
-      }
-    ],
     "fieldMapping" : [
       { "field": "dataset", "name": "Resource" },
       { "field": "studyAccession", "name": "Study" },
@@ -242,12 +218,70 @@
     "filterConfig": {
       "tabs": [{
         "title": "Subject",
-        "fields": ["ethnicity", "gender", "species"]
+        "fields": ["ethnicity", "gender", "species", "race"]
+      },
+      {
+        "title": "Diagnosis",
+        "fields": [
+          "arthxbase",
+          "bshbvstat",
+          "bshcvstat",
+          "cd4nadir",
+          "status",
+          "hiv_status"
+        ]
+      },
+      {
+        "title": "Drug Resistance",
+        "fields": [
+          "amikacin_res_phenotype",
+          "capreomycin_res_phenotype",
+          "isoniazid_res_phenotype",
+          "kanamycin_res_phenotype",
+          "ofloxacin_res_phenotype",
+          "pyrazinamide_res_phenotype",
+          "rifampicin_res_phenotype",
+          "rifampin_res_phenotype",
+          "streptomycin_res_phenotype"
+        ]
       },
       {
         "title": "Resource",
-        "fields": ["dataset", "research_focus"]
+        "fields": ["dataset"]
       }]
+    },
+    "tableConfig": {
+      "fields": [
+        "dataset",
+        "studyAccession",
+        "phenotype",
+        "gender",
+        "ethnicity",
+        "strain",
+        "species",
+        "submitter_id",
+        "race",
+        "arthxbase",
+        "bshbvstat",
+        "bshcvstat",
+        "cd4nadir",
+        "status",
+        "hiv_status",
+        "amikacin_res_phenotype",
+        "capreomycin_res_phenotype",
+        "isoniazid_res_phenotype",
+        "kanamycin_res_phenotype",
+        "ofloxacin_res_phenotype",
+        "pyrazinamide_res_phenotype",
+        "rifampicin_res_phenotype",
+        "rifampin_res_phenotype",
+        "streptomycin_res_phenotype"
+      ]
+    },
+    "phenotypeNameMapping": {
+      "NDE: TB": "_type_of_resistances",
+      "NDE: Flu": "virus_subtype",
+      "NDE: AIDS": "status"
     }
   }
 }
