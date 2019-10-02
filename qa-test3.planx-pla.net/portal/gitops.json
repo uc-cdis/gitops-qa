@@ -10,7 +10,7 @@
     },
     {
       "URL": "https://qa-flu.planx-pla.net/",
-      "name": "NDE: Flu"
+      "name": "NDE: FLU"
     }
   ],
   "gaTrackingId": "undefined",
@@ -48,8 +48,8 @@
     "appName": "NIAID Data Ecosystem",
     "index": {
       "introduction": {
-        "heading": "Cross Environment Datasets",
-        "text": "Disciplines within NIAID can have their own independent data models while maintaining interoperability of the data ecosystem, facilitating individual research communities to work within the system.. The data within all supported resources are findable, accessible, interoperable, and reusable (FAIR).",
+        "heading": "NIAID Data Ecosystem Datasets",
+        "text": "Disciplines within NIAID can have their own independent data models while maintaining interoperability of the data ecosystem, facilitating individual research communities to work within the system. The data within all supported resources are findable, accessible, interoperable, and reusable (FAIR).", 
         "link": "/datasets"
       },
       "buttons": [
@@ -109,7 +109,7 @@
     "login": {
       "title": "NIAID Data Ecosystem",
       "subTitle": "Cross Environment Datasets",
-      "text": "The website combines government datasets from multiple divisions of NIAID to create clean, easy to navigate visualizations for data-driven discovery within Allergy and Infectious Diseases.",
+      "text": "The website combines government datasets from multiple disciplines of NIAID to create clean, easy to navigate visualizations for data-driven discovery within Allergy and Infectious Diseases.",
       "contact": "If you have any questions about access or the registration process, please contact ",
       "email": "support@datacommons.io"
     },
@@ -202,30 +202,6 @@
         "title": "Gender"
       }
     },
-    "projectSections": [
-      { 
-        "title": "Resource",
-        "field": "dataset",
-        "options": []
-      }
-    ], 
-    "subjectSections": [
-      { 
-        "title": "Ethnicity", 
-        "field": "ethnicity",
-        "options": []
-      },
-      { 
-        "title": "Gender",
-        "field": "gender",
-        "options": []
-      },
-      { 
-        "title": "Genus species",
-        "field": "species",
-        "options": []
-      }
-    ],
     "fieldMapping" : [
       { "field": "dataset", "name": "Resource" },
       { "field": "studyAccession", "name": "Study" },
@@ -239,12 +215,65 @@
     "filterConfig": {
       "tabs": [{
         "title": "Subject",
-        "fields": ["ethnicity", "gender", "species"]
+        "fields": ["ethnicity", "gender", "species", "race"]
       },
       {
-        "title": "Project",
-        "fields": ["dataset", "research_focus"]
+        "title": "Diagnosis",
+        "fields": [
+          "arthxbase",
+          "bshbvstat",
+          "bshcvstat",
+          "cd4nadir",
+          "status",
+          "hiv_status"
+        ]
+      },
+      {
+        "title": "Drug Resistance",
+        "fields": [
+          "amikacin_res_phenotype",
+          "capreomycin_res_phenotype",
+          "isoniazid_res_phenotype",
+          "kanamycin_res_phenotype",
+          "ofloxacin_res_phenotype",
+          "pyrazinamide_res_phenotype",
+          "rifampicin_res_phenotype",
+          "rifampin_res_phenotype",
+          "streptomycin_res_phenotype"
+        ]
+      },
+      {
+        "title": "Resource",
+        "fields": ["dataset"]
       }]
+    },
+    "tableConfig": {
+      "fields": [
+        "dataset",
+        "studyAccession",
+        "phenotype",
+        "gender",
+        "ethnicity",
+        "strain",
+        "species",
+        "submitter_id",
+        "race",
+        "arthxbase",
+        "bshbvstat",
+        "bshcvstat",
+        "cd4nadir",
+        "status",
+        "hiv_status",
+        "amikacin_res_phenotype",
+        "capreomycin_res_phenotype",
+        "isoniazid_res_phenotype",
+        "kanamycin_res_phenotype",
+        "ofloxacin_res_phenotype",
+        "pyrazinamide_res_phenotype",
+        "rifampicin_res_phenotype",
+        "rifampin_res_phenotype",
+        "streptomycin_res_phenotype"
+      ]
     },
     "phenotypeNameMapping": {
       "NDE: TB": "_type_of_resistances",
