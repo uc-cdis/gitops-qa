@@ -114,7 +114,7 @@
       "items": [
         {
           "link": "/",
-          "name": "QA Flu Environment"
+          "name": "QA Flu Environment Home"
         },
         {
           "icon": "upload",
@@ -159,21 +159,21 @@
   "analysisTools": [ ],
   "dataExplorerConfig": {
     "charts": {
-      "project_id": {
+      "study_submitter_id": {
         "chartType": "count",
         "title": "Projects"
       },
-      "gender": {
+      "subject_id": {
+        "chartType": "count",
+        "title": "Subjects"
+      },
+      "virus_subtype": {
         "chartType": "pie",
-        "title": "Gender"
+        "title": "Virus Subtype"
       },
-      "race": {
-        "chartType": "bar",
-        "title": "Race"
-      },
-      "species": {
-        "chartType": "bar",
-        "title": "Species"
+      "strain": {
+        "chartType": "pie",
+        "title": "Virus Strain"
       }
     },
     "filters": {
@@ -181,9 +181,25 @@
         {
           "title": "Subject",
           "fields":[
+            "study_submitter_id",
             "gender",
             "race",
-            "ethnicity"
+            "ethnicity",
+            "vital_status",
+            "data_type",
+            "data_format"
+          ]
+        }, {
+          "title": "Experiment",
+          "fields": [
+            "virus_type",
+            "virus_subtype",
+            "analyte_type",
+            "biospecimen_anatomic_site",
+            "cell_line",
+            "sample_type",
+            "composition",
+            "strain"
           ]
         }
       ]
@@ -226,7 +242,9 @@
     "guppyConfig": {
       "dataType": "subject",
       "nodeCountTitle": "Subjects",
-      "fieldMapping": [],
+      "fieldMapping": [
+        { "field": "study_submitter_id", "name": "Study" }
+      ],
       "manifestMapping": {
         "resourceIndexType": "file",
         "resourceIdField": "object_id",
@@ -303,6 +321,24 @@
       "accessibleFieldCheckList": ["subject_id"],
       "accessibleValidationField": "subject_id",
       "downloadAccessor": "object_id"
+    }
+  },
+  "dataAvailabilityToolConfig": {
+    "guppyConfig": {
+      "dataType": "subject",
+      "mainField": "virus_subtype",
+      "mainFieldTitle": "Virus subtype",
+      "mainFieldIsNumeric": false,
+      "aggFields": [
+        "biospecimen_anatomic_site",
+        "sample_type",
+        "composition",
+        "strain",
+        "species"
+      ],
+      "fieldMapping": [
+        { "field": "subject_id", "name": "Subject" }
+      ]
     }
   }
 }
