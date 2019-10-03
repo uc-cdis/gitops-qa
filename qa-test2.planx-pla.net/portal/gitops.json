@@ -161,7 +161,7 @@
     "charts": {
       "study_submitter_id": {
         "chartType": "count",
-        "title": "Projects"
+        "title": "Studies"
       },
       "subject_id": {
         "chartType": "count",

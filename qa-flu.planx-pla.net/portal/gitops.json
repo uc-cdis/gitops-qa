@@ -161,7 +161,7 @@
     "charts": {
       "study_submitter_id": {
         "chartType": "count",
-        "title": "Projects"
+        "title": "Studies"
       },
       "subject_id": {
         "chartType": "count",
@@ -185,9 +185,7 @@
             "gender",
             "race",
             "ethnicity",
-            "vital_status",
-            "data_type",
-            "data_format"
+            "vital_status"
           ]
         }, {
           "title": "Experiment",
@@ -258,11 +256,11 @@
   "fileExplorerConfig": {
     "charts": {
       "data_type": {
-        "chartType": "stackedBar",
+        "chartType": "pie",
         "title": "File Type"
       },
       "data_format": {
-        "chartType": "stackedBar",
+        "chartType": "pie",
         "title": "File Format"
       }
     },
