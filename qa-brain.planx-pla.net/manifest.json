@@ -16,12 +16,12 @@
     "peregrine": "quay.io/cdis/peregrine:master",
     "peregrine-canary": "quay.io/cdis/peregrine:fix_promise",
     "pidgin": "quay.io/cdis/pidgin:master",
-    "portal": "quay.io/cdis/data-portal:master",
+    "portal": "quay.io/cdis/data-portal:feat_presigned-url-btn",
     "revproxy": "quay.io/cdis/nginx:1.15.5-ctds",
     "sheepdog": "quay.io/cdis/sheepdog:1.1.10",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:master",
     "spark": "quay.io/cdis/gen3-spark:1.0.0",
-    "tube": "quay.io/cdis/tube:0.3.7",
+    "tube": "quay.io/cdis/tube:master",
     "guppy": "quay.io/cdis/guppy:master",
     "dashboard": "quay.io/cdis/gen3-statics:master"
   },
@@ -31,9 +31,6 @@
   "indexd": {
     "arborist": "true"
   },
-  "tube": {
-    "es_index_name": "etl_beta"
-  },
   "jupyterhub": {
     "enabled": "no"
   },
@@ -42,6 +39,10 @@
       {
         "index": "qa-brain_etl",
         "type": "case"
+      },
+      {
+        "index": "qa-brain_file",
+        "type": "file"
       }
     ],
     "config_index": "qa-brain_array-config",
