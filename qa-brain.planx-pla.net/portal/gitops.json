@@ -178,7 +178,7 @@
         "chartType": "count",
         "title": "Projects"
       },
-      "node_id": {
+      "case_id": {
         "chartType": "count",
         "title": "Cases"
       },
