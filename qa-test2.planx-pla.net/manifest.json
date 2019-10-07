@@ -19,7 +19,6 @@
     "sower": "quay.io/cdis/sower:master",
     "spark": "quay.io/cdis/gen3-spark:master",
     "tube": "quay.io/cdis/tube:master",
-    "wts": "quay.io/cdis/workspace-token-service:master",
     "dashboard": "quay.io/cdis/gen3-statics:master"
   },
   "global": {
