@@ -191,15 +191,53 @@
       },
       "dataset": {
         "chartType": "pie",
-        "title": "Dataset"
+        "title": "Dataset",
+        "chartRow": 0
       },
       "species": {
         "chartType": "bar",
-        "title": "Species"
+        "title": "Genus species",
+        "chartRow": 0
       },
       "gender": {
         "chartType": "pie",
-        "title": "Gender"
+        "title": "Gender",
+        "chartRow": 0
+      },
+      "status": {
+        "chartType": "pie",
+        "title": "HIV Status",
+        "chartRow": 0
+      },
+      "strain": {
+        "chartType": "pie",
+        "title": "Strain",
+        "chartRow": 0
+      },
+      "amikacin_res_phenotype": {
+        "chartType": "bar",
+        "title": "Amikacin Res Phenotype",
+        "chartRow": 1
+      },
+      "capreomycin_res_phenotype": {
+        "chartType": "pie",
+        "title": "Capreomycin Res Phenotype",
+        "chartRow": 1
+      },
+      "isoniazid_res_phenotype": {
+        "chartType": "bar",
+        "title": "Isoniazid Res Phenotype",
+        "chartRow": 1
+      },
+      "kanamycin_res_phenotype": {
+        "chartType": "pie",
+        "title": "Kanamycin Res Phenotype",
+        "chartRow": 1
+      },
+      "ofloxacin_res_phenotype": {
+        "chartType": "bar",
+        "title": "Ofloxacin Res Phenotype",
+        "chartRow": 1
       }
     },
     "fieldMapping" : [
@@ -209,13 +247,19 @@
       { "field": "gender", "name": "Gender" },
       { "field": "ethnicity", "name": "Ethnicity" },
       { "field": "strain", "name": "Strain" },
-      { "field": "species", "name": "Genus species" },
-      { "field": "submitter_id", "name": "Submitter ID" }
+      { "field": "species", "name": "Genus Species" },
+      { "field": "submitter_id", "name": "Submitter ID" },
+      { "field": "race", "name": "Race" },
+      { "field": "hiv_status", "name": "HIV Status" }
     ],
     "filterConfig": {
       "tabs": [{
         "title": "Subject",
         "fields": ["ethnicity", "gender", "species", "race"]
+      },
+      {
+        "title": "Resource",
+        "fields": ["dataset"]
       },
       {
         "title": "Diagnosis",
@@ -226,6 +270,30 @@
           "cd4nadir",
           "status",
           "hiv_status"
+        ]
+      },
+      {
+        "title": "Comorbidity",
+        "fields": [
+          "frstcncrd",
+          "frstdmd",
+          "frstdmmd",
+          "frsthtnd",
+          "frsthtnmd"
+        ]
+      }, {
+        "title": "HIV History",
+        "fields": [
+          "cd4nadir",
+          "fcd4lowd",
+          "fposdate",
+          "frstaidd",
+          "lastafrd",
+          "lastcond",
+          "lastcontact",
+          "lcd4higd",
+          "lnegdate",
+          "status"
         ]
       },
       {
@@ -243,41 +311,22 @@
         ]
       },
       {
-        "title": "Resource",
-        "fields": ["dataset"]
+        "title": "Experiment",
+        "fields": [
+          "virus_type",
+          "virus_subtype",
+          "analyte_type",
+          "biospecimen_anatomic_site",
+          "cell_line",
+          "sample_type",
+          "composition",
+          "strain"
+        ]
       }]
-    },
-    "tableConfig": {
-      "fields": [
-        "dataset",
-        "studyAccession",
-        "phenotype",
-        "gender",
-        "ethnicity",
-        "strain",
-        "species",
-        "submitter_id",
-        "race",
-        "arthxbase",
-        "bshbvstat",
-        "bshcvstat",
-        "cd4nadir",
-        "status",
-        "hiv_status",
-        "amikacin_res_phenotype",
-        "capreomycin_res_phenotype",
-        "isoniazid_res_phenotype",
-        "kanamycin_res_phenotype",
-        "ofloxacin_res_phenotype",
-        "pyrazinamide_res_phenotype",
-        "rifampicin_res_phenotype",
-        "rifampin_res_phenotype",
-        "streptomycin_res_phenotype"
-      ]
     },
     "phenotypeNameMapping": {
       "NDE: TB": "_type_of_resistances",
-      "NDE: Flu": "virus_subtype",
+      "NDE: FLU": "virus_subtype",
       "NDE: AIDS": "status"
     }
   }

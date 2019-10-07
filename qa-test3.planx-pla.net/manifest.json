@@ -11,7 +11,7 @@
     "guppy": "quay.io/cdis/guppy:master",
     "peregrine": "quay.io/cdis/peregrine:master",
     "pidgin": "quay.io/cdis/pidgin:master",
-    "portal": "quay.io/cdis/data-ecosystem-portal:feat_union-filter",
+    "portal": "quay.io/cdis/data-ecosystem-portal:fix_remove-explorer-table",
     "revproxy": "quay.io/cdis/nginx:1.15.5-ctds",
     "sheepdog": "quay.io/cdis/sheepdog:master",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:0.0.7",
