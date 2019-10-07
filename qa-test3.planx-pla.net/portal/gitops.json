@@ -57,28 +57,26 @@
           "name": "ImmPort",
           "body": "Visit ImmPort, a resource funded by the NIH, NIAID, and DAIT in support of the NIH mission to share data with the public. Data is provided by NIH-funded programs and other research organizations.",
           "external_link": "https://www.immport.org/home",
+          "external_link_text": "Visit Website",
           "logo": "/custom/logo/immport-main-icon.png"
         },
         {
           "name": "NIAID TB Environment",
           "icon": "data-explore",
-          "body": "Explore data from the NIAID TB Portals Program and PATRIC, the all-bacterial Bioinformatics Database and Analysis Resource Center.",
-          "external_link": "https://qa-test2.planx-pla.net/",
-          "label": "Explore cohorts"
+          "body": "Explore data from the NIAID <a href='https://tbportals.niaid.nih.gov/'>TB Portals</a> Program and <a href='https://tbportals.niaid.nih.gov/'>PATRIC</a>, the all-bacterial Bioinformatics Database and Analysis Resource Center.",
+          "external_link": "https://qa-test2.planx-pla.net/"
         },
         {
           "name": "NIAID AIDS Environment",
           "icon": "data-explore",
           "body": "Explore data from the NIAID Multicenter Acquired Immunodeficiency Syndrome Cohort Study (MACS) and Women's Interagency HIV Study (WIHS).",
-          "external_link": "https://qa-test4.planx-pla.net/",
-          "label": "Explore cohorts"
+          "external_link": "https://qa-test4.planx-pla.net/"
         },
         {
           "name": "NIAID Flu Environment",
           "icon": "data-explore",
           "body": "Explore data from a collection of Influenza related studies funded by the NIAID Divison of Microbiology & Infectious Diseases (DMID).",
-          "external_link": "https://qa-flu.planx-pla.net",
-          "label": "Explore cohorts"
+          "external_link": "https://qa-flu.planx-pla.net"
         }
       ]
     },
@@ -191,7 +189,22 @@
       },
       "dataset": {
         "chartType": "pie",
-        "title": "Dataset",
+        "title": "Resources",
+        "chartRow": 0
+      },
+      "data_format": {
+        "chartType": "bar",
+        "title": "Data Format",
+        "chartRow": 0
+      },
+      "data_type": {
+        "chartType": "pie",
+        "title": "Data Type",
+        "chartRow": 0
+      },
+      "experimental_strategies": {
+        "chartType": "bar",
+        "title": "Experimental Strategies",
         "chartRow": 0
       },
       "species": {
@@ -202,41 +215,21 @@
       "gender": {
         "chartType": "pie",
         "title": "Gender",
-        "chartRow": 0
-      },
-      "status": {
-        "chartType": "pie",
-        "title": "HIV Status",
-        "chartRow": 0
-      },
-      "strain": {
-        "chartType": "pie",
-        "title": "Strain",
-        "chartRow": 0
-      },
-      "amikacin_res_phenotype": {
-        "chartType": "bar",
-        "title": "Amikacin Res Phenotype",
         "chartRow": 1
       },
-      "capreomycin_res_phenotype": {
+      "race": {
         "chartType": "pie",
-        "title": "Capreomycin Res Phenotype",
+        "title": "Race",
         "chartRow": 1
       },
-      "isoniazid_res_phenotype": {
-        "chartType": "bar",
-        "title": "Isoniazid Res Phenotype",
-        "chartRow": 1
-      },
-      "kanamycin_res_phenotype": {
+      "ethnicity": {
         "chartType": "pie",
-        "title": "Kanamycin Res Phenotype",
+        "title": "Ethnicity",
         "chartRow": 1
       },
-      "ofloxacin_res_phenotype": {
-        "chartType": "bar",
-        "title": "Ofloxacin Res Phenotype",
+      "biospecimen_anatomic_site": {
+        "chartType": "pie",
+        "title": "Biospecimen Anatomic Site",
         "chartRow": 1
       }
     },
@@ -250,16 +243,17 @@
       { "field": "species", "name": "Genus Species" },
       { "field": "submitter_id", "name": "Submitter ID" },
       { "field": "race", "name": "Race" },
-      { "field": "hiv_status", "name": "HIV Status" }
+      { "field": "hiv_status", "name": "HIV Status" },
+      { "field": "study_submitter_id", "name": "Study"}
     ],
     "filterConfig": {
       "tabs": [{
-        "title": "Subject",
-        "fields": ["ethnicity", "gender", "species", "race"]
+        "title": "Resource",
+        "fields": ["dataset", "data_format", "data_type"]
       },
       {
-        "title": "Resource",
-        "fields": ["dataset"]
+        "title": "Subject",
+        "fields": ["ethnicity", "gender", "species", "race", "experimental_strategies"]
       },
       {
         "title": "Diagnosis",
@@ -323,11 +317,6 @@
           "strain"
         ]
       }]
-    },
-    "phenotypeNameMapping": {
-      "NDE: TB": "_type_of_resistances",
-      "NDE: FLU": "virus_subtype",
-      "NDE: AIDS": "status"
     }
   }
 }
