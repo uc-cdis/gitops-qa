@@ -191,15 +191,53 @@
       },
       "dataset": {
         "chartType": "pie",
-        "title": "Dataset"
+        "title": "Dataset",
+        "chartRow": 0
       },
       "species": {
         "chartType": "bar",
-        "title": "Species"
+        "title": "Genus species",
+        "chartRow": 0
       },
       "gender": {
         "chartType": "pie",
-        "title": "Gender"
+        "title": "Gender",
+        "chartRow": 0
+      },
+      "status": {
+        "chartType": "pie",
+        "title": "HIV Status",
+        "chartRow": 0
+      },
+      "strain": {
+        "chartType": "pie",
+        "title": "Strain",
+        "chartRow": 0
+      },
+      "amikacin_res_phenotype": {
+        "chartType": "bar",
+        "title": "Amikacin Res Phenotype",
+        "chartRow": 1
+      },
+      "capreomycin_res_phenotype": {
+        "chartType": "pie",
+        "title": "capreomycin_res_phenotype",
+        "chartRow": 1
+      },
+      "isoniazid_res_phenotype": {
+        "chartType": "bar",
+        "title": "isoniazid_res_phenotype",
+        "chartRow": 1
+      },
+      "kanamycin_res_phenotype": {
+        "chartType": "pie",
+        "title": "kanamycin_res_phenotype",
+        "chartRow": 1
+      },
+      "ofloxacin_res_phenotype": {
+        "chartType": "bar",
+        "title": "ofloxacin_res_phenotype",
+        "chartRow": 1
       }
     },
     "fieldMapping" : [
@@ -210,7 +248,9 @@
       { "field": "ethnicity", "name": "Ethnicity" },
       { "field": "strain", "name": "Strain" },
       { "field": "species", "name": "Genus species" },
-      { "field": "submitter_id", "name": "Submitter ID" }
+      { "field": "submitter_id", "name": "Submitter ID" },
+      { "field": "race", "name": "Race" },
+      { "field": "hiv_status", "name": "HIV Status" }
     ],
     "filterConfig": {
       "tabs": [{
@@ -225,7 +265,8 @@
           "bshcvstat",
           "cd4nadir",
           "status",
-          "hiv_status"
+          "hiv_status",
+          "strain"
         ]
       },
       {
@@ -247,37 +288,9 @@
         "fields": ["dataset"]
       }]
     },
-    "tableConfig": {
-      "fields": [
-        "dataset",
-        "studyAccession",
-        "phenotype",
-        "gender",
-        "ethnicity",
-        "strain",
-        "species",
-        "submitter_id",
-        "race",
-        "arthxbase",
-        "bshbvstat",
-        "bshcvstat",
-        "cd4nadir",
-        "status",
-        "hiv_status",
-        "amikacin_res_phenotype",
-        "capreomycin_res_phenotype",
-        "isoniazid_res_phenotype",
-        "kanamycin_res_phenotype",
-        "ofloxacin_res_phenotype",
-        "pyrazinamide_res_phenotype",
-        "rifampicin_res_phenotype",
-        "rifampin_res_phenotype",
-        "streptomycin_res_phenotype"
-      ]
-    },
     "phenotypeNameMapping": {
       "NDE: TB": "_type_of_resistances",
-      "NDE: Flu": "virus_subtype",
+      "NDE: FLU": "virus_subtype",
       "NDE: AIDS": "status"
     }
   }
