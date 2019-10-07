@@ -221,22 +221,22 @@
       },
       "capreomycin_res_phenotype": {
         "chartType": "pie",
-        "title": "capreomycin_res_phenotype",
+        "title": "Capreomycin Res Phenotype",
         "chartRow": 1
       },
       "isoniazid_res_phenotype": {
         "chartType": "bar",
-        "title": "isoniazid_res_phenotype",
+        "title": "Isoniazid Res Phenotype",
         "chartRow": 1
       },
       "kanamycin_res_phenotype": {
         "chartType": "pie",
-        "title": "kanamycin_res_phenotype",
+        "title": "Kanamycin Res Phenotype",
         "chartRow": 1
       },
       "ofloxacin_res_phenotype": {
         "chartType": "bar",
-        "title": "ofloxacin_res_phenotype",
+        "title": "Ofloxacin Res Phenotype",
         "chartRow": 1
       }
     },
@@ -247,7 +247,7 @@
       { "field": "gender", "name": "Gender" },
       { "field": "ethnicity", "name": "Ethnicity" },
       { "field": "strain", "name": "Strain" },
-      { "field": "species", "name": "Genus species" },
+      { "field": "species", "name": "Genus Species" },
       { "field": "submitter_id", "name": "Submitter ID" },
       { "field": "race", "name": "Race" },
       { "field": "hiv_status", "name": "HIV Status" }
@@ -258,6 +258,10 @@
         "fields": ["ethnicity", "gender", "species", "race"]
       },
       {
+        "title": "Resource",
+        "fields": ["dataset"]
+      },
+      {
         "title": "Diagnosis",
         "fields": [
           "arthxbase",
@@ -265,8 +269,31 @@
           "bshcvstat",
           "cd4nadir",
           "status",
-          "hiv_status",
-          "strain"
+          "hiv_status"
+        ]
+      },
+      {
+        "title": "Comorbidity",
+        "fields": [
+          "frstcncrd",
+          "frstdmd",
+          "frstdmmd",
+          "frsthtnd",
+          "frsthtnmd"
+        ]
+      }, {
+        "title": "HIV History",
+        "fields": [
+          "cd4nadir",
+          "fcd4lowd",
+          "fposdate",
+          "frstaidd",
+          "lastafrd",
+          "lastcond",
+          "lastcontact",
+          "lcd4higd",
+          "lnegdate",
+          "status"
         ]
       },
       {
@@ -284,8 +311,17 @@
         ]
       },
       {
-        "title": "Resource",
-        "fields": ["dataset"]
+        "title": "Experiment",
+        "fields": [
+          "virus_type",
+          "virus_subtype",
+          "analyte_type",
+          "biospecimen_anatomic_site",
+          "cell_line",
+          "sample_type",
+          "composition",
+          "strain"
+        ]
       }]
     },
     "phenotypeNameMapping": {
