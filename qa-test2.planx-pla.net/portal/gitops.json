@@ -178,6 +178,14 @@
       "species": {
         "chartType": "bar",
         "title": "Species"
+      },
+      "treatment_outcome": {
+        "chartType": "pie",
+        "title": "Treatment Outcome"
+      },
+      "type_of_resistance": {
+        "chartType": "pie",
+        "title": "Type of Resistance"
       }
     },
     "filters": {
@@ -190,7 +198,9 @@
             "race",
             "ethnicity",
             "vital_status",
-            "species"
+            "species",
+            "treatment_outcome",
+            "type_of_resistance"
           ]
         },
         {
@@ -248,6 +258,15 @@
       "dataType": "subject",
       "nodeCountTitle": "Subjects",
       "fieldMapping": [
+        {"field": "amikacin_res_phenotype", "name": "Amikacin Phenotype" },
+        {"field": "capreomycin_res_phenotype", "name": "Capreomycin Phenotype" },
+        {"field": "isoniazid_res_phenotype", "name": "Isoniazid Phenotype" },
+        {"field": "kanamycin_res_phenotype", "name": "Kanamycin Phenotype" },
+        {"field": "ofloxacin_res_phenotype", "name": "Ofloxacin Phenotype" },
+        {"field": "pyrazinamide_res_phenotype", "name": "Pyrazinamide Phenotype" },
+        {"field": "rifampicin_res_phenotype", "name": "Rifampicin Phenotype" },
+        {"field": "rifampin_res_phenotype", "name": "Rifampin Phenotype" },
+        {"field": "streptomycin_res_phenotype", "name": "Streptomycin Phenotype" },
         { "field": "study_submitter_id", "name": "Study" }
       ],
       "manifestMapping": {
