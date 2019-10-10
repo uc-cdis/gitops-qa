@@ -335,7 +335,7 @@
       "method": "access",
       "service": "query_page"
     },
-    "Access Data": {
+    "Query Data": {
       "resource": "/query_page",
       "method": "access",
       "service": "query_page"
