@@ -117,6 +117,19 @@
         }
       ]
     },
+    "topBar": {
+      "items": [
+        {
+          "icon": "upload",
+          "link": "/submission",
+          "name": "Submit Data"
+        },
+        {
+          "link": "https://gen3.org/resources/user/",
+          "name": "Documentation"
+        }
+      ]
+    },
     "login": {
       "title": "BRAIN Commons",
       "subTitle": "Explore, Analyze, and Share Data",
@@ -303,6 +316,29 @@
       "accessibleFieldCheckList": ["project_id"],
       "accessibleValidationField": "project_id",
       "downloadAccessor": "object_id"
+    }
+  },
+  "useArboristUI": true,
+  "componentToResourceMapping": {
+    "Workspace": {
+      "resource": "/workspace",
+      "method": "access",
+      "service": "jupyterhub"
+    },
+    "Analyze Data": {
+      "resource": "/workspace",
+      "method": "access",
+      "service": "jupyterhub"
+    },
+    "Query": {
+      "resource": "/query_page",
+      "method": "access",
+      "service": "query_page"
+    },
+    "Access Data": {
+      "resource": "/query_page",
+      "method": "access",
+      "service": "query_page"
     }
   }
 }
