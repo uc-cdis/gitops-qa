@@ -11,15 +11,14 @@
     "guppy": "quay.io/cdis/guppy:master",
     "indexd": "quay.io/cdis/indexd:master",
     "manifestservice": "quay.io/cdis/manifestservice:master",
-    "peregrine": "quay.io/cdis/peregrine:master",
-    "pidgin": "quay.io/cdis/pidgin:master",
-    "portal": "quay.io/cdis/data-portal:master",
+    "peregrine": "quay.io/cdis/peregrine:2.1.1",
+    "pidgin": "quay.io/cdis/pidgin:1.2.0",
+    "portal": "quay.io/cdis/data-portal:2.20.6",
     "revproxy": "quay.io/cdis/nginx:1.15.5-ctds",
-    "sheepdog": "quay.io/cdis/sheepdog:2.0.1",
+    "sheepdog": "quay.io/cdis/sheepdog:2.1.1",
     "sower": "quay.io/cdis/sower:master",
     "spark": "quay.io/cdis/gen3-spark:master",
     "tube": "quay.io/cdis/tube:master",
-    "wts": "quay.io/cdis/workspace-token-service:master",
     "dashboard": "quay.io/cdis/gen3-statics:master"
   },
   "global": {
@@ -27,7 +26,7 @@
     "environment": "qaplanetv1",
     "hostname": "qa-test4.planx-pla.net",
     "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
-    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/charlie-datadictionary/master/schema.json",
+    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/charlie-datadictionary/v1.3.0/schema.json",
     "portal_app": "gitops",
     "sync_from_dbgap": "False",
     "kube_bucket": "kube_bucket.devplanetv1.gen3",
@@ -58,8 +57,8 @@
         "type": "subject"
       },
       {
-        "index": "qa-test4_follow_up",
-        "type": "follow_up"
+        "index": "qa-test4_visit",
+        "type": "visit"
       },
       {
         "index": "qa-test4_file",
