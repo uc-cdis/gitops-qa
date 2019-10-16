@@ -22,6 +22,9 @@ mappings:
       - name: _aggregated_genotyping_arrays_count
         path: samples.aliquots.aggregated_genotyping_arrays
         fn: count
+      - name: _tangent_copy_numbers_count
+        path: samples.aliquots.tangent_copy_numbers
+        fn: count
       - name: _copy_number_estimates_count
         path: samples.aliquots.tangent_copy_numbers.copy_number_estimates
         fn: count
@@ -30,12 +33,6 @@ mappings:
         fn: count
       - name: _genotyping_arrays_count
         path: samples.aliquots.genotyping_arrays
-        fn: count
-      - name: _mRNA_microarrays_count
-        path: samples.aliquots.mRNA_microarrays
-        fn: count
-      - name: _miRNA_microarrays_count
-        path: samples.aliquots.miRNA_microarrays
         fn: count
       - name: _read_groups_count
         path: samples.aliquots.read_groups
@@ -51,9 +48,6 @@ mappings:
         fn: count
       - name: _submitted_unaligned_reads_count
         path: samples.aliquots.read_groups.submitted_unaligned_reads_files
-        fn: count
-      - name: _tangent_copy_numbers_count
-        path: samples.aliquots.tangent_copy_numbers
         fn: count
     joining_props:
        - index: file
