@@ -102,7 +102,7 @@
           "icon": "exploration",
           "link": "/explorer",
           "color": "#a2a2a2",
-          "name": "Data Explorer"
+          "name": "Eco Explorer"
         }
       ]
     },
@@ -152,7 +152,8 @@
           { "text": "ImmPort", "filterType": "singleSelect"},
           { "text": "NDE: TB", "filterType": "singleSelect"},
           { "text": "NDE: AIDS", "filterType": "singleSelect"},
-          { "text": "NDE: Flu", "filterType": "singleSelect"}
+          { "text": "NDE: Flu", "filterType": "singleSelect"},
+          { "text": "NDE: Microbiome", "filterType": "singleSelect"}
         ]
       },
       { 
