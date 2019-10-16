@@ -11,6 +11,10 @@
     {
       "URL": "https://qa-flu.planx-pla.net/",
       "name": "NDE: FLU"
+    },
+    {
+      "URL": "https://qa-microbiome.planx-pla.net/",
+      "name": "NDE: Microbiome"
     }
   ],
   "gaTrackingId": "undefined",
@@ -77,6 +81,12 @@
           "icon": "data-explore",
           "body": "Explore data from a collection of Influenza related studies funded by the NIAID Divison of Microbiology & Infectious Diseases (DMID).",
           "external_link": "https://qa-flu.planx-pla.net"
+        },
+        {
+          "name": "NIAID Microbiome Environment",
+          "icon": "data-explore",
+          "body": "NIAID Data Ecosystem Microbiome Environment",
+          "external_link": "https://qa-microbiome.planx-pla.net"
         }
       ]
     },
@@ -92,7 +102,7 @@
           "icon": "exploration",
           "link": "/explorer",
           "color": "#a2a2a2",
-          "name": "Data Explorer"
+          "name": "Eco Explorer"
         }
       ]
     },
@@ -142,7 +152,8 @@
           { "text": "ImmPort", "filterType": "singleSelect"},
           { "text": "NDE: TB", "filterType": "singleSelect"},
           { "text": "NDE: AIDS", "filterType": "singleSelect"},
-          { "text": "NDE: Flu", "filterType": "singleSelect"}
+          { "text": "NDE: Flu", "filterType": "singleSelect"},
+          { "text": "NDE: Microbiome", "filterType": "singleSelect"}
         ]
       },
       { 
