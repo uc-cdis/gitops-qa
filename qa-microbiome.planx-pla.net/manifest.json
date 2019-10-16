@@ -18,7 +18,9 @@
     "sower": "quay.io/cdis/sower:master",
     "spark": "quay.io/cdis/gen3-spark:master",
     "tube": "quay.io/cdis/tube:master",
-    "dashboard": "quay.io/cdis/gen3-statics:master"
+    "wts": "quay.io/cdis/workspace-token-service:master",
+    "dashboard": "quay.io/cdis/gen3-statics:master",
+    "guppy": "quay.io/cdis/guppy:master"
   },
   "global": {
     "dispatcher_job_num": "10",
@@ -75,5 +77,19 @@
   },
   "canary": {
     "default": 0
+  },
+  "guppy": {
+    "indices": [
+      {
+        "index": "qa-microbiome",
+        "type": "subject"
+      },
+      {
+        "index": "qa-microbiome_file",
+        "type": "file"
+      }
+    ],
+    "config_index": "qa-microbiome_array-config",
+    "auth_filter_field": "auth_resource_path"
   }
 }
