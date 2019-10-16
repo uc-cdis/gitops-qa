@@ -8,7 +8,6 @@
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
     "fence": "quay.io/cdis/fence:master",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
-    "guppy": "quay.io/cdis/guppy:master",
     "indexd": "quay.io/cdis/indexd:master",
     "manifestservice": "quay.io/cdis/manifestservice:master",
     "peregrine": "quay.io/cdis/peregrine:master",
@@ -20,7 +19,8 @@
     "spark": "quay.io/cdis/gen3-spark:master",
     "tube": "quay.io/cdis/tube:master",
     "wts": "quay.io/cdis/workspace-token-service:master",
-    "dashboard": "quay.io/cdis/gen3-statics:master"
+    "dashboard": "quay.io/cdis/gen3-statics:master",
+    "guppy": "quay.io/cdis/guppy:master"
   },
   "global": {
     "dispatcher_job_num": "10",
@@ -77,5 +77,19 @@
   },
   "canary": {
     "default": 0
+  },
+  "guppy": {
+    "indices": [
+      {
+        "index": "qa-microbiome",
+        "type": "subject"
+      },
+      {
+        "index": "qa-microbiome_file",
+        "type": "file"
+      }
+    ],
+    "config_index": "qa-microbiome_array-config",
+    "auth_filter_field": "auth_resource_path"
   }
 }
