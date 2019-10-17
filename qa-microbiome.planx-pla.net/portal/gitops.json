@@ -245,7 +245,7 @@
       "dataType": "subject",
       "nodeCountTitle": "Subjects",
       "fieldMapping": [
-        { "field": "ubmitter_id", "name": "Study" },
+        { "field": "submitter_id", "name": "Study" },
         { "field": "study_organization", "name": "Study Organization" },
         { "field": "study_doi", "name": "Study DOI" },
         { "field": "is_clinical_trial", "name": "Clinical Trial" },
