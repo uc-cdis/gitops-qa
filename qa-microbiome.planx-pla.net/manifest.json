@@ -16,11 +16,11 @@
     "revproxy": "quay.io/cdis/nginx:1.15.5-ctds",
     "sheepdog": "quay.io/cdis/sheepdog:2.1.1",
     "sower": "quay.io/cdis/sower:master",
-    "spark": "quay.io/cdis/gen3-spark:master",
-    "tube": "quay.io/cdis/tube:master",
+    "spark": "quay.io/cdis/gen3-spark:1.0.0",
+    "tube": "quay.io/cdis/tube:0.3.16",
     "wts": "quay.io/cdis/workspace-token-service:master",
     "dashboard": "quay.io/cdis/gen3-statics:master",
-    "guppy": "quay.io/cdis/guppy:master"
+    "guppy": "quay.io/cdis/guppy:0.3.7"
   },
   "global": {
     "dispatcher_job_num": "10",
