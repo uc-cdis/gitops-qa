@@ -13,7 +13,6 @@
     "fence": "quay.io/cdis/fence:4.6.0",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "indexd": "quay.io/cdis/indexd:2.1.0",
-    "jupyterhub": "quay.io/occ_data/jupyterhub:master",
     "peregrine": "quay.io/cdis/peregrine:master",
     "peregrine-canary": "quay.io/cdis/peregrine:fix_promise",
     "pidgin": "quay.io/cdis/pidgin:master",
