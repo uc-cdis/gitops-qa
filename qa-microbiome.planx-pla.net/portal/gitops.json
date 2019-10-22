@@ -342,5 +342,20 @@
       "accessibleValidationField": "subject_id",
       "downloadAccessor": "object_id"
     }
+  },
+  "dataAvailabilityToolConfig": {
+    "guppyConfig": {
+      "dataType": "subject",
+      "mainField": "study_submitter_id",
+      "mainFieldTitle": "Study",
+      "mainFieldIsNumeric": false,
+      "aggFields": [
+        "gender",
+        "race",
+        "ethnicity",
+        "human_age_at_index"
+      ],
+      "fieldMapping": []
+    }
   }
 }
