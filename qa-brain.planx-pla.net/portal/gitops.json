@@ -319,6 +319,8 @@
     }
   },
   "useArboristUI": true,
+  "showArboristAuthzOnProfile": true,
+  "showFenceAuthzOnProfile": false,
   "componentToResourceMapping": {
     "Workspace": {
       "resource": "/workspace",
