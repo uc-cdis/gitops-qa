@@ -67,7 +67,7 @@
         {
           "name": "NIAID TB Environment",
           "icon": "data-explore",
-          "body": "Explore data from the NIAID <a href='https://tbportals.niaid.nih.gov/'>TB Portals</a> Program and <a href='https://tbportals.niaid.nih.gov/'>PATRIC</a>, the all-bacterial Bioinformatics Database and Analysis Resource Center.",
+          "body": "Explore data from the NIAID <a href='https://tbportals.niaid.nih.gov/'>TB Portals</a> Program and <a href='https://www.patricbrc.org'>PATRIC</a>, the all-bacterial Bioinformatics Database and Analysis Resource Center.",
           "external_link": "https://qa-test2.planx-pla.net/"
         },
         {
