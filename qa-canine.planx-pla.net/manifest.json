@@ -131,5 +131,31 @@
     ],
     "config_index": "canine_array-config",
     "auth_filter_field": "auth_resource_path"
+  },
+  "scaling": {
+    "arborist": {
+      "strategy": "auto"
+    },
+    "portal": {
+      "strategy": "auto"
+    },
+    "fence": {
+      "strategy": "auto"
+    },
+    "indexd": {
+      "strategy": "auto"
+    },
+    "peregrine": {
+      "strategy": "auto"
+    },
+    "revproxy": {
+      "strategy": "auto"
+    },
+    "sheepdog": {
+      "strategy": "auto"
+    },
+    "guppy": {
+      "strategy": "auto"
+    }
   }
 }
