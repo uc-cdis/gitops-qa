@@ -8,9 +8,6 @@
   },
   "versions": {
     "arborist": "quay.io/cdis/arborist:master",
-    "arranger": "quay.io/cdis/arranger:master",
-    "arranger-adminapi": "quay.io/cdis/arranger-server:fix_adminserver",
-    "arranger-dashboard": "quay.io/cdis/arranger-dashboard:master",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
     "fence": "quay.io/cdis/fence:master",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
@@ -23,6 +20,7 @@
     "sheepdog": "quay.io/cdis/sheepdog:master",
     "spark": "quay.io/cdis/gen3-spark:master",
     "tube": "quay.io/cdis/tube:master",
+    "guppy": "quay.io/cdis/guppy:feat_nested",
     "sower": "quay.io/cdis/sower:0.1.0",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:master",
     "dashboard": "quay.io/cdis/gen3-statics:master"
@@ -41,13 +39,6 @@
       "env": []
     },
     "restart_policy": "never"
-  },
-  "arranger": {
-    "project_id": "mickey_1",
-    "auth_filter_field": "auth_resource_path",
-    "auth_filter_node_types": [
-      "patients"
-    ]
   },
   "tube": {
     "es_index_name": "mickey"
@@ -101,5 +92,14 @@
     "guppy": {
       "strategy": "auto"
     }
+  },
+  "guppy": {
+    "indices": [
+      {
+        "index": "etl_mickey_1",
+        "type": "patients"
+      }
+    ],
+    "auth_filter_field": "auth_resource_path"
   }
 }
