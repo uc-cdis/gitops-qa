@@ -220,11 +220,11 @@
     "table": {
       "enabled": true
     },
-    "arrangerConfig": {
-      "projectId": "search",
-      "graphqlField": "patients",
-      "index": "",
-      "nodeCountField": "Chicago_ID"
+    "guppyConfig": {
+      "dataType": "patients",
+      "nodeCountTitle": "Patients",
+      "fieldMapping": [
+      ]
     }
   }
 }
