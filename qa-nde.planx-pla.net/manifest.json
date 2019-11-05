@@ -1,7 +1,7 @@
 {
   "notes": [
     "This is the root for niaid data commons qa",
-    "works with qa-test2 (tb), qa-test4 (aids) , qa-microbiome and qa-flu"
+    "works with qa-tb (tb), qa-aids (aids) , qa-microbiome and qa-flu"
   ],
   "versions": {
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
@@ -29,7 +29,7 @@
   "global": {
     "dispatcher_job_num": "10",
     "environment": "qaplanetv1",
-    "hostname": "qa-test3.planx-pla.net",
+    "hostname": "qa-nde.planx-pla.net",
     "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
     "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/ndhdictionary/3.5.3/schema.json",
     "portal_app": "gitops",
@@ -38,8 +38,8 @@
     "logs_bucket": "logs-devplanetv1-gen3",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
     "origins_allow_credentials": [
-      "https://qa-test2.planx-pla.net",
-      "https://qa-test4.planx-pla.net",
+      "https://qa-tb.planx-pla.net",
+      "https://qa-aids.planx-pla.net",
       "https://qa-microbiome.planx-pla.net",
       "https://qa-flu.planx-pla.net"
     ],
@@ -49,14 +49,14 @@
     "tier_access_level": "libre"
   },
   "hatchery": {
-    "user-namespace": "jupyter-pods-qa-test3",
+    "user-namespace": "jupyter-pods-qa-nde",
     "sub-dir": "/lw-workspace",
     "user-volume-size": "10Gi",
     "sidecar": {
       "cpu-limit": "1.0",
       "memory-limit": "256Mi",
       "image": "quay.io/cdis/gen3fuse-sidecar:master",
-      "env": {"NAMESPACE":"default", "HOSTNAME": "qa-test3.planx-pla.net"},
+      "env": {"NAMESPACE":"default", "HOSTNAME": "qa-nde.planx-pla.net"},
       "args": [],
       "command": ["/bin/bash", "/sidecarDockerrun.sh"],
       "lifecycle-pre-stop": ["su", "-c", "echo test", "-s", "/bin/sh", "root"]
@@ -67,7 +67,7 @@
       "memory-limit": "512Mi",
       "name": "Jupyter Notebook Bio Python",
       "image": "quay.io/occ_data/jupyternotebook:fix_niaid-test",
-      "env": {"FRAME_ANCESTORS": "https://qa-test2.planx-pla.net https://qa-microbiome.planx-pla.net https://qa-test4.planx-pla.net https://qa-flu.planx-pla.net"},
+      "env": {"FRAME_ANCESTORS": "https://qa-tb.planx-pla.net https://qa-microbiome.planx-pla.net https://qa-aids.planx-pla.net https://qa-flu.planx-pla.net"},
       "args": ["--NotebookApp.base_url=/lw-workspace/proxy/","--NotebookApp.password=''","--NotebookApp.token=''"],
       "command": ["start-notebook.sh"],
       "path-rewrite": "/lw-workspace/proxy/",
@@ -85,7 +85,7 @@
       "pull_policy":"Always",
       "name": "Jupyter Notebook- TB Ariba and Mykrobe (Lab Edition)",
       "image": "quay.io/cdis/jupyter-tb:fix_tb",
-      "env": {"FRAME_ANCESTORS": "https://qa-test2.planx-pla.net https://qa-microbiome.planx-pla.net https://qa-test4.planx-pla.net https://qa-flu.planx-pla.net"},
+      "env": {"FRAME_ANCESTORS": "https://qa-tb.planx-pla.net https://qa-microbiome.planx-pla.net https://qa-aids.planx-pla.net https://qa-flu.planx-pla.net"},
       "args": ["--NotebookApp.base_url=/lw-workspace/proxy/","--NotebookApp.default_url=/lab","--NotebookApp.password=''","--NotebookApp.token=''"],
       "command": ["start-notebook.sh"],
       "path-rewrite": "/lw-workspace/proxy/",
@@ -102,7 +102,7 @@
       "memory-limit": "1024Mi",
       "name": "R Studio",
       "image": "quay.io/cdis/rstudio:master",
-      "env": {"WWW_FRAME_ORIGIN": "https://qa-test2.planx-pla.net https://qa-microbiome.planx-pla.net https://qa-test4.planx-pla.net https://qa-flu.planx-pla.net","DISABLE_AUTH": "true"},
+      "env": {"WWW_FRAME_ORIGIN": "https://qa-tb.planx-pla.net https://qa-microbiome.planx-pla.net https://qa-aids.planx-pla.net https://qa-flu.planx-pla.net","DISABLE_AUTH": "true"},
       "args": [],
       "path-rewrite": "/",
       "use-tls": "false",
