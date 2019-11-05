@@ -1,11 +1,11 @@
 {
   "subcommons": [ 
     {
-      "URL": "https://qa-test2.planx-pla.net/",
+      "URL": "https://qa-tb.planx-pla.net/",
       "name": "NDE: TB"
     }, 
     {
-      "URL": "https://qa-test4.planx-pla.net/",
+      "URL": "https://qa-aids.planx-pla.net/",
       "name": "NDE: AIDS"
     },
     {
@@ -69,14 +69,14 @@
           "name": "NIAID TB Environment",
           "icon": "data-explore",
           "body": "Explore data from the NIAID <a href='https://tbportals.niaid.nih.gov/'>TB Portals</a> Program and <a href='https://www.patricbrc.org'>PATRIC</a>, the all-bacterial Bioinformatics Database and Analysis Resource Center.",
-          "external_link": "https://qa-test2.planx-pla.net/",
+          "external_link": "https://qa-tb.planx-pla.net/",
           "internal_link": "/explorer"
         },
         {
           "name": "NIAID AIDS Environment",
           "logo": "/custom/sponsors/gitops-sponsors/macs-wihs-logo.png",
           "body": "Explore data from the NIAID Multicenter AIDS Cohort Study <a href='https://www.niaid.nih.gov/research/multicenter-aids-cohort-study-public-data-set'>(MACS)</a> and Women's Interagency HIV Study <a href='https://www.niaid.nih.gov/research/womens-interagency-hiv-study'>(WIHS)</a>.",
-          "external_link": "https://qa-test4.planx-pla.net/",
+          "external_link": "https://qa-aids.planx-pla.net/",
           "internal_link": "/explorer"
         },
         {
@@ -163,7 +163,7 @@
       },
       {
         "src": "/custom/logo/niaid.png",
-        "href": "https://qa-test3.planx-pla.net/",
+        "href": "https://qa-nde.planx-pla.net/",
         "alt": "NIAID Data Ecosystem"
       }
     ]

@@ -1,7 +1,7 @@
 {
   "notes": [
     "QA environment for NIAID data ecosystem - daids.niaiddata.org",
-    "goes with qa-test2.planx-pla.net, qa-test3.planx-pla.net and qa-flu.planx-pla.net"
+    "goes with qa-tb.planx-pla.net, qa-nde.planx-pla.net and qa-flu.planx-pla.net"
   ],
   "versions": {
     "arborist": "quay.io/cdis/arborist:master",
@@ -24,7 +24,7 @@
   "global": {
     "dispatcher_job_num": "10",
     "environment": "qaplanetv1",
-    "hostname": "qa-test4.planx-pla.net",
+    "hostname": "qa-aids.planx-pla.net",
     "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
     "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/charlie-datadictionary/v1.3.0/schema.json",
     "portal_app": "gitops",
@@ -32,20 +32,20 @@
     "kube_bucket": "kube_bucket.devplanetv1.gen3",
     "logs_bucket": "logs-devplanetv1-gen3",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
-    "fence_url": "https://qa-test3.planx-pla.net/user",
-    "indexd_url": "https://qa-test3.planx-pla.net/index/",
-    "arborist_url": "http://arborist-service.qa-test3.svc.cluster.local",
-    "workspace_url": "https://qa-test3.planx-pla.net/lw-workspace",
-    "manifest_service_url": "https://qa-test3.planx-pla.net/manifests",
-    "wts_url": "https://qa-test3.planx-pla.net/wts/oauth2/",
+    "fence_url": "https://qa-nde.planx-pla.net/user",
+    "indexd_url": "https://qa-nde.planx-pla.net/index/",
+    "arborist_url": "http://arborist-service.qa-nde.svc.cluster.local",
+    "workspace_url": "https://qa-nde.planx-pla.net/lw-workspace",
+    "manifest_service_url": "https://qa-nde.planx-pla.net/manifests",
+    "wts_url": "https://qa-nde.planx-pla.net/wts/oauth2/",
     "origins_allow_credentials": [
-      "https://qa-test3.planx-pla.net",
-      "https://qa-test2.planx-pla.net",
+      "https://qa-nde.planx-pla.net",
+      "https://qa-tb.planx-pla.net",
       "https://qa-flu.planx-pla.net"
     ],
     "netpolicy": "off",
     "cookie_domain": "planx-pla.net",
-    "des_namespace": "qa-test3"
+    "des_namespace": "qa-nde"
   },
   "arborist": {
     "deployment_version": "2"
@@ -53,19 +53,19 @@
   "guppy": {
     "indices": [
       {
-        "index": "qa-test4",
+        "index": "qa-aids",
         "type": "subject"
       },
       {
-        "index": "qa-test4_visit",
+        "index": "qa-aids_visit",
         "type": "visit"
       },
       {
-        "index": "qa-test4_file",
+        "index": "qa-aids_file",
         "type": "file"
       }
     ],
-    "config_index": "qa-test4_array-config",
+    "config_index": "qa-aids_array-config",
     "auth_filter_field": "auth_resource_path"
   },
   "indexd": {

@@ -1,5 +1,5 @@
 mappings:
-  - name: qa-test2
+  - name: qa-tb
     doc_type: subject
     type: aggregator
     root: subject
@@ -155,7 +155,7 @@ mappings:
           - name: file_id
             src: file_id
             fn: set
-  - name: qa-test2_follow_up
+  - name: qa-tb_follow_up
     doc_type: follow_up
     type: aggregator
     root: follow_up
@@ -222,7 +222,7 @@ mappings:
         path: samples.tb_results
         src: drug
         fn: set
-  - name: qa-test2_file
+  - name: qa-tb_file
     doc_type: file
     type: collector
     root: None

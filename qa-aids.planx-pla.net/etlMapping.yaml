@@ -1,5 +1,5 @@
 mappings:
-  - name: qa-test4
+  - name: qa-aids
     doc_type: subject
     type: aggregator
     root: subject
@@ -128,7 +128,7 @@ mappings:
           - name: file_id
             src: file_id
             fn: set
-  - name: qa-test4_visit
+  - name: qa-aids_visit
     doc_type: visit
     type: aggregator
     root: visit
@@ -441,7 +441,7 @@ mappings:
             src: frstdthd
           - name: fposdate
             src: fposdate
-  - name: qa-test4_file
+  - name: qa-aids_file
     doc_type: file
     type: collector
     root: None
