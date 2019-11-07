@@ -40,46 +40,32 @@
       },
       "buttons": [
         {
-          "name": "Data Dictionary",
+          "name": "Define Data Field",
           "icon": "data-field-define",
-          "body": "Browse the nodes and properties of the graph data model used in the BRAIN Commons",
+          "body": "The BRAIN Commons define the data in a general way. Please study the dictionary before you start browsing.",
           "link": "/DD",
-          "label": "Explore Data Model"
+          "label": "Learn more"
         },
         {
           "name": "Explore Data",
           "icon": "data-explore",
-          "body": "Search and download subsets of data from the BRAIN Commons using intuitive navigation tools",
+          "body": "The Exploration Page gives you insights and a clear overview under selected factors.",
           "link": "/explorer",
-          "label": "Explore Data"
+          "label": "Explore data"
         },
         {
-          "name": "Query Data",
+          "name": "Access Data",
           "icon": "data-access",
-          "body": "Search and download subsets of data from the BRAIN Commons using GraphQL queries",
+          "body": "Use our selected tool to filter out the data you need.",
           "link": "/query",
-          "label": "Query Data"
+          "label": "Query data"
         },
         {
           "name": "Analyze Data",
           "icon": "data-analyze",
-          "body": "Perform analysis on the BRAIN Commons data using Jupyter Notebooks",
-          "link": "/workspace",
-          "label": "Run Analysis"
-        }
-      ],
-      "homepageChartNodes": [
-        {
-          "node": "case",
-          "name": "Cases"
-        },
-        {
-          "node": "study",
-          "name": "Studies"
-        },
-        {
-          "node": "diagnosis",
-          "name": "Disease States"
+          "body": "Analyze your selected cases using Jupyter Notebooks in our secure cloud environment",
+          "link": "#hostname#workspace/",
+          "label": "Run analysis"
         }
       ]
     },
@@ -104,6 +90,12 @@
           "name": "Query"
         },
         {
+          "icon": "files",
+          "link": "/files",
+          "color": "#a2a2a2",
+          "name": "Files"
+        },
+        {
           "icon": "workspace",
           "link": "#hostname#workspace/",
           "color": "#a2a2a2",
@@ -117,19 +109,6 @@
         }
       ]
     },
-    "topBar": {
-      "items": [
-        {
-          "icon": "upload",
-          "link": "/submission",
-          "name": "Submit Data"
-        },
-        {
-          "link": "https://help.braincommons.org",
-          "name": "Documentation"
-        }
-      ]
-    },
     "login": {
       "title": "BRAIN Commons",
       "subTitle": "Explore, Analyze, and Share Data",
@@ -139,9 +118,7 @@
     },
     "certs": {
       "privacy_policy":{
-        "hasCorrectAnswers": false,
         "title": "Privacy Policy and Terms of Use",
-        "subtitle": "Please read and agree to each by clicking \"I Agree.\"",
         "description": "",
         "questions": [
           {
@@ -185,7 +162,7 @@
         "chartType": "count",
         "title": "Projects"
       },
-      "case_id": {
+      "node_id": {
         "chartType": "count",
         "title": "Cases"
       },
@@ -207,25 +184,37 @@
         {
           "title": "Case",
           "fields": [
-            "project_id",
-            "submitter_id"
-          ]
-        },
-        {
-          "title": "Demographics",
-          "fields": [
-            "age_at_enrollment",
-            "education_years",
-            "veteran_status"
+            "race",
+            "ethnicity",
+            "gender",
+            "project_id"
           ]
         }
       ]
     },
-    "guppyConfig": {
+    "table": {
+      "enabled": true,
+      "fields": [
+        "project_id",
+        "submitter_id",
+        "race",
+        "ethnicity",
+        "gender",
+        "age_at_enrollment",
+        "age_at_onset",
+        "education_years"
+      ]
+    },
+    "arrangerConfig": {
+      "projectId": "search",
+      "graphqlField": "case",
+      "index": "",
+      "nodeCountField": "node_id"
+    },
+  "guppyConfig": {
       "dataType": "case",
       "nodeCountTitle": "Cases",
-      "fieldMapping": [
-      ],
+      "fieldMapping": [],
       "manifestMapping": {
         "resourceIndexType": "file",
         "resourceIdField": "object_id",
@@ -235,7 +224,6 @@
       "accessibleFieldCheckList": ["project_id"],
       "accessibleValidationField": "project_id"
     },
-    "getAccessButtonLink": "https://www.braincommons.org/",
     "table": {
       "enabled": true
     },
@@ -243,7 +231,7 @@
       {
         "enabled": true,
         "type": "data",
-        "title": "Download All Data",
+        "title": "Download Data",
         "leftIcon": "user",
         "rightIcon": "download",
         "fileName": "data.json"
@@ -266,7 +254,7 @@
         {
           "title": "File",
           "fields": [
-            "case_id",
+            "project_id",
             "data_type",
             "data_format"
           ]
@@ -276,31 +264,12 @@
     "table": {
       "enabled": true,
       "fields": [
-        "case_id",
+        "project_id",
         "file_name",
         "file_size",
         "object_id"
       ]
     },
-    "dropdowns": {},
-    "buttons": [
-      {
-        "enabled": true,
-        "type": "file-manifest",
-        "title": "Download Manifest",
-        "leftIcon": "datafile",
-        "rightIcon": "download",
-        "fileName": "file-manifest.json",
-        "dropdownId": "download"
-      },
-      {
-        "enabled": true,
-        "type": "export-files-to-workspace",
-        "title": "Export to Workspace",
-        "leftIcon": "datafile",
-        "rightIcon": "download"
-      }
-    ],
     "guppyConfig": {
       "dataType": "file",
       "fieldMapping": [
@@ -316,31 +285,8 @@
       "accessibleFieldCheckList": ["project_id"],
       "accessibleValidationField": "project_id",
       "downloadAccessor": "object_id"
-    }
-  },
-  "useArboristUI": true,
-  "showArboristAuthzOnProfile": true,
-  "showFenceAuthzOnProfile": false,
-  "componentToResourceMapping": {
-    "Workspace": {
-      "resource": "/workspace",
-      "method": "access",
-      "service": "jupyterhub"
     },
-    "Analyze Data": {
-      "resource": "/workspace",
-      "method": "access",
-      "service": "jupyterhub"
-    },
-    "Query": {
-      "resource": "/query_page",
-      "method": "access",
-      "service": "query_page"
-    },
-    "Query Data": {
-      "resource": "/query_page",
-      "method": "access",
-      "service": "query_page"
-    }
+    "buttons": [],
+    "dropdowns": {}
   }
 }
