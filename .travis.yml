@@ -1,0 +1,6 @@
+language: python
+
+script:
+  - pip install -r requirements.txt
+  - python lint.py
+  - gen3users validate users/*/user.yaml # run tests
