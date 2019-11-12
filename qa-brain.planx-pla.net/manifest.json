@@ -7,24 +7,25 @@
     "autodeploy": "yes"
   },
   "versions": {
+    "manifestservice": "quay.io/cdis/manifestservice:master",
     "arborist": "quay.io/cdis/arborist:2.3.2",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
+    "dashboard": "quay.io/cdis/gen3-statics:1.0.0",
     "ambassador": "quay.io/datawire/ambassador:0.60.3",
-    "fence": "quay.io/cdis/fence:feat_username-limit",
-    "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
+    "hatchery": "quay.io/cdis/hatchery:0.1.0",
+    "fence": "quay.io/cdis/fence:4.12.0",
     "indexd": "quay.io/cdis/indexd:2.1.0",
-    "peregrine": "quay.io/cdis/peregrine:master",
-    "peregrine-canary": "quay.io/cdis/peregrine:fix_promise",
-    "pidgin": "quay.io/cdis/pidgin:master",
-    "portal": "quay.io/cdis/data-portal:feat_improve-locked-ui",
+    "peregrine": "quay.io/cdis/peregrine:2.1.1",
+    "pidgin": "quay.io/cdis/pidgin:1.1.0",
     "revproxy": "quay.io/cdis/nginx:1.15.5-ctds",
-    "sheepdog": "quay.io/cdis/sheepdog:1.1.10",
-    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:master",
+    "sheepdog": "quay.io/cdis/sheepdog:2.1.2",
+    "portal": "quay.io/cdis/data-portal:2.22.10",
+    "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
+    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:0.0.6",
     "spark": "quay.io/cdis/gen3-spark:1.0.0",
-    "tube": "quay.io/cdis/tube:master",
-    "guppy": "quay.io/cdis/guppy:master",
-    "hatchery": "quay.io/cdis/hatchery:master",
-    "dashboard": "quay.io/cdis/gen3-statics:master"
+    "tube": "quay.io/cdis/tube:0.3.15",
+    "guppy": "quay.io/cdis/guppy:0.3.9",
+    "wts": "quay.io/cdis/workspace-token-service:0.1.0"
   },
   "arborist": {
     "deployment_version": "2"
