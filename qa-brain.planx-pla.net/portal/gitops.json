@@ -13,9 +13,9 @@
         "plural": "Studies"
       },
       {
-        "graphql": "_diagnosis_count",
-        "name": "Disease State",
-        "plural": "Disease States"
+        "graphql": "_visit_count",
+        "name": "Visit",
+        "plural": "Visits"
       }
     ],
     "chartCounts": [
@@ -40,32 +40,32 @@
       },
       "buttons": [
         {
-          "name": "Define Data Field",
+          "name": "Data Dictionary",
           "icon": "data-field-define",
-          "body": "The BRAIN Commons define the data in a general way. Please study the dictionary before you start browsing.",
+          "body": "Browse the nodes and properties of the graph data model used in the BRAIN Commons.",
           "link": "/DD",
-          "label": "Learn more"
+          "label": "Explore Data Model"
         },
         {
           "name": "Explore Data",
           "icon": "data-explore",
-          "body": "The Exploration Page gives you insights and a clear overview under selected factors.",
+          "body": "Search and download subsets of data from the BRAIN Commons using intuitive navigation tools.",
           "link": "/explorer",
-          "label": "Explore data"
+          "label": "Explore Data"
         },
         {
-          "name": "Access Data",
+          "name": "Query Data",
           "icon": "data-access",
-          "body": "Use our selected tool to filter out the data you need.",
+          "body": "Search and download subsets of data from the BRAIN Commons using GraphQL queries.",
           "link": "/query",
-          "label": "Query data"
+          "label": "Query Data"
         },
         {
           "name": "Analyze Data",
           "icon": "data-analyze",
-          "body": "Analyze your selected cases using Jupyter Notebooks in our secure cloud environment",
-          "link": "#hostname#workspace/",
-          "label": "Run analysis"
+          "body": "Perform analysis on the BRAIN Commons data using Jupyter Notebooks.",
+          "link": "/workspace",
+          "label": "Run Analysis"
         }
       ]
     },
@@ -97,7 +97,7 @@
         },
         {
           "icon": "workspace",
-          "link": "#hostname#workspace/",
+          "link": "/workspace",
           "color": "#a2a2a2",
           "name": "Workspace"
         },
@@ -109,6 +109,19 @@
         }
       ]
     },
+    "topBar": {
+      "items": [
+        {
+          "icon": "upload",
+          "link": "/submission",
+          "name": "Submit Data"
+        },
+        {
+          "link": "https://help.braincommons.org",
+          "name": "Documentation"
+        }
+      ]
+    },
     "login": {
       "title": "BRAIN Commons",
       "subTitle": "Explore, Analyze, and Share Data",
@@ -117,8 +130,10 @@
       "email": "support@braincommons.org"
     },
     "certs": {
-      "privacy_policy":{
+      "privacy_policy": {
+        "hasCorrectAnswers": false,
         "title": "Privacy Policy and Terms of Use",
+        "subtitle": "Please read and agree to each by clicking \"I Agree.\"",
         "description": "",
         "questions": [
           {
@@ -184,10 +199,10 @@
         {
           "title": "Case",
           "fields": [
-            "race",
+            "project_id",
             "ethnicity",
             "gender",
-            "project_id"
+            "race"
           ]
         }
       ]
@@ -197,24 +212,27 @@
       "fields": [
         "project_id",
         "submitter_id",
-        "race",
-        "ethnicity",
         "gender",
-        "age_at_enrollment",
-        "age_at_onset",
-        "education_years"
+        "ethnicity",
+        "race",
+        "experimental_group",
+        "_aliquots_count",
+        "_read_group_count",
+        "_samples_count",
+        "_submitted_expression_arrays_count",
+        "_submitted_unaligned_reads_count"
       ]
     },
-    "arrangerConfig": {
-      "projectId": "search",
-      "graphqlField": "case",
-      "index": "",
-      "nodeCountField": "node_id"
-    },
-  "guppyConfig": {
+    "guppyConfig": {
       "dataType": "case",
       "nodeCountTitle": "Cases",
-      "fieldMapping": [],
+      "fieldMapping": [
+        {"field": "_aliquots_count", "name": "Aliquots Count"},
+        {"field": "_read_group_count", "name": "Read Groups Count"},
+        {"field": "_samples_count", "name": "Samples Count"},
+        {"field": "_submitted_expression_arrays_count", "name": "Submitted Expression Arrays Count"},
+        {"field": "_submitted_unaligned_reads_count", "name": "Submitted Unaligned Reads Count"}
+      ],
       "manifestMapping": {
         "resourceIndexType": "file",
         "resourceIdField": "object_id",
@@ -224,9 +242,6 @@
       "accessibleFieldCheckList": ["project_id"],
       "accessibleValidationField": "project_id"
     },
-    "table": {
-      "enabled": true
-    },
     "buttons": [
       {
         "enabled": true,
@@ -235,6 +250,14 @@
         "leftIcon": "user",
         "rightIcon": "download",
         "fileName": "data.json"
+      },
+      {
+        "enabled": true,
+        "type": "manifest",
+        "title": "Download Manifest",
+        "leftIcon": "datafile",
+        "rightIcon": "download",
+        "fileName": "manifest.json"
       }
     ]
   },
@@ -286,7 +309,41 @@
       "accessibleValidationField": "project_id",
       "downloadAccessor": "object_id"
     },
-    "buttons": [],
+    "buttons": [
+      {
+        "enabled": true,
+        "type": "file-manifest",
+        "title": "Download Manifest",
+        "leftIcon": "datafile",
+        "rightIcon": "download",
+        "fileName": "file-manifest.json"
+      }
+    ],
     "dropdowns": {}
+  },
+  "useArboristUI": true,
+  "showArboristAuthzOnProfile": true,
+  "showFenceAuthzOnProfile": false,
+  "componentToResourceMapping": {
+    "Workspace": {
+      "resource": "/workspace",
+      "method": "access",
+      "service": "jupyterhub"
+    },
+    "Analyze Data": {
+      "resource": "/workspace",
+      "method": "access",
+      "service": "jupyterhub"
+    },
+    "Query": {
+      "resource": "/query_page",
+      "method": "access",
+      "service": "query_page"
+    },
+    "Query Data": {
+      "resource": "/query_page",
+      "method": "access",
+      "service": "query_page"
+    }
   }
 }
