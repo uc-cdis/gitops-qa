@@ -67,6 +67,20 @@
           "link": "/workspace",
           "label": "Run Analysis"
         }
+      ],
+      "homepageChartNodes": [
+        {
+          "node": "case",
+          "name": "Cases"
+        },
+        {
+          "node": "study",
+          "name": "Studies"
+        },
+        {
+          "node": "visit",
+          "name": "Visits"
+        }
       ]
     },
     "navigation": {
