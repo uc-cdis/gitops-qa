@@ -24,11 +24,8 @@
     "wts": "quay.io/cdis/workspace-token-service:0.2.0",
     "manifestservice": "quay.io/cdis/manifestservice:0.2.0"
   },
-  "indexd": {
-    "arborist": "true"
-  },
   "hatchery": {
-    "user-namespace": "jupyter-pods",
+    "user-namespace": "jupyter-pods-qa-bloodpac",
     "sub-dir": "/lw-workspace",
     "user-volume-size": "500Gi",
     "sidecar": {
@@ -36,8 +33,8 @@
       "memory-limit": "256Mi",
       "image": "quay.io/cdis/gen3fuse-sidecar:chore_sidecar",
       "env": {
-        "NAMESPACE": "default",
-        "HOSTNAME": "gen3.datastage.io"
+        "NAMESPACE": "qa-bloodpac",
+        "HOSTNAME": "qa-bloodpac.planx-pla.net"
       },
       "args": [],
       "command": [
