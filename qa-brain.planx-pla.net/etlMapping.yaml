@@ -29,7 +29,11 @@ mappings:
         fn: count
       - name: mds_updrs
         value_mappings:
-          - jnkns-jenkins: MDS_UPDRS Rating
+          - uploaded: MDS-UPDRS Rating
+          - md5summed: MDS-UPDRS Rating
+          - validating: MDS-UPDRS Rating
+          - validated: MDS-UPDRS Rating
+          - released: MDS-UPDRS Rating
         path: visits.mds_unified_pd_ratings
         src: project_id
         fn: set
