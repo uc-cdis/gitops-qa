@@ -27,6 +27,10 @@ mappings:
       - name: _samples_count
         path: visits.samples
         fn: count
+      - name: mds_updrs
+        path: visits.mds_unified_pd_ratings
+        src: type
+        fn: set
       - name: _aliquots_count
         path: visits.samples.aliquots
         fn: count
