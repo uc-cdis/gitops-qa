@@ -28,8 +28,10 @@ mappings:
         path: visits.samples
         fn: count
       - name: mds_updrs
+        value_mappings:
+          - jnkns-jenkins: MDS_UPDRS Rating
         path: visits.mds_unified_pd_ratings
-        src: type
+        src: project_id
         fn: set
       - name: mds_updrs_part_iii_summary_score
         path:visits.mds_unified_pd_ratings
