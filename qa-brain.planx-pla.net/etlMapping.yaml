@@ -35,7 +35,7 @@ mappings:
           - validated: MDS-UPDRS Rating
           - released: MDS-UPDRS Rating
         path: visits.mds_unified_pd_ratings
-        src: project_id
+        src: state
         fn: set
       - name: mds_updrs_part_iii_summary_score
         path: visits.mds_unified_pd_ratings
