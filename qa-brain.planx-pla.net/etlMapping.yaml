@@ -34,7 +34,7 @@ mappings:
         src: project_id
         fn: set
       - name: mds_updrs_part_iii_summary_score
-        path:visits.mds_unified_pd_ratings
+        path: visits.mds_unified_pd_ratings
         src: mds_updrs_part_iii_summary_score
         fn: max
       - name: _aliquots_count
