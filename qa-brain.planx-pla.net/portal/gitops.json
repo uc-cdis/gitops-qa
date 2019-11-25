@@ -231,8 +231,20 @@
         {
           "title": "Assessment",
           "fields": [
+            "unified_parkinsons_disease_ratings",
             "mds_updrs",
-            "mds_updrs_part_iii_summary_score"
+            "hopkins_verbal_learning_tests",
+            "scales_for_outcomes_in_pds",
+            "modified_schwab_england_scales",
+            "baseline_dyspnea_indexes",
+            "hamilton_depression_ratings",
+            "state_trait_anxiety_inventories",
+            "upenn_smell_tests",
+            "geriatric_depression_scales",
+            "montreal_cognitive_functional_tests",
+            "mini_mental_status_exams",
+            "rem_sleep_behaviors",
+            "epworth_sleep_behaviors"
           ]
         }
       ]
