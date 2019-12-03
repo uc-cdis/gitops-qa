@@ -312,7 +312,8 @@
         "rightIcon": "download",
         "fileName": "manifest.json"
       }
-    ]
+    ],
+    "hideGetAccessButton": true
   },
   "fileExplorerConfig": {
     "charts": {
