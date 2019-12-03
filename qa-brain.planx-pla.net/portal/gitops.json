@@ -314,7 +314,7 @@
       }
     ],
     "hideGetAccessButton": true,
-    "getAccessButtonLink": "https://qa-brain.planx-pla.net/",
+    "getAccessButtonLink": "https://qa-brain.planx-pla.net/"
   },
   "fileExplorerConfig": {
     "charts": {
