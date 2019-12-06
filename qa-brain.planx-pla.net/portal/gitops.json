@@ -307,8 +307,7 @@
         "fileName": "manifest.json"
       }
     ],
-    "hideGetAccessButton": true,
-    "getAccessButtonLink": "https://qa-brain.planx-pla.net/"
+    "hideGetAccessButton": false
   },
   "fileExplorerConfig": {
     "charts": {
