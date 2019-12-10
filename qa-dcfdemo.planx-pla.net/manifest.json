@@ -82,7 +82,9 @@
         "args": [
           "--NotebookApp.base_url=/lw-workspace/proxy/",
           "--NotebookApp.password=''",
-          "--NotebookApp.token=''"
+          "--NotebookApp.token=''",
+          "--NotebookApp.notebook_dir='/home/jovyan/pd'",
+          "--NotebookApp.quit_button=False"
         ],
         "command": [
           "start-notebook.sh"
@@ -109,7 +111,9 @@
         "args": [
           "--NotebookApp.base_url=/lw-workspace/proxy/",
           "--NotebookApp.password=''",
-          "--NotebookApp.token=''"
+          "--NotebookApp.token=''",
+          "--NotebookApp.notebook_dir='/home/jovyan/pd'",
+          "--NotebookApp.quit_button=False"
         ],
         "command": [
           "start-notebook.sh"
