@@ -1,7 +1,8 @@
 # TL;DR
 
-Centrally manage and log which versions of which services get deployed where.  Ex:
+Manifests for gen3 internal QA environments.
 
+Ex:
 ```
 $ cat dev.planx-pla.net/manifest.json 
 {
