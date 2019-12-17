@@ -67,46 +67,6 @@
     "auth_filter_field": "auth_resource_path",
     "enable_encrypt_whitelist": false
   },
-  "hatchery": {
-    "user-namespace": "jupyter-pods",
-    "sub-dir": "/lw-workspace",
-    "user-volume-size": "500Gi",
-    "sidecar": {
-      "cpu-limit": "1.0",
-      "memory-limit": "512Mi",
-      "image": "quay.io/cdis/gen3fuse-sidecar:chore_sidecar",
-      "env": {
-        "NAMESPACE": "default",
-        "HOSTNAME": "gen3.datastage.io"
-      },
-      "args": [],
-      "command": [
-        "/bin/bash",
-        "/sidecarDockerrun.sh"
-      ],
-      "lifecycle-pre-stop": [
-        "su",
-        "-c",
-        "echo test",
-        "-s",
-        "/bin/sh",
-        "root"
-      ]
-    },
-    "containers": [
-      {
-        "target-port": 8888,
-        "cpu-limit": "1.0",
-        "memory-limit": "512Mi",
-        "name": "R Studio",
-        "image": "heliumdatastage/rstudio-server:1",
-        "args": [],
-        "path-rewrite": "/",
-        "use-tls": "false",
-        "ready-probe": "/"
-      }
-    ]
-  },
   "jupyterhub": {
     "enabled": "yes",
     "containers": [
