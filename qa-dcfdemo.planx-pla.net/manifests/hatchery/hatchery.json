@@ -1,5 +1,5 @@
 {
-  "user-namespace": "jupyter-pods",
+  "user-namespace": "jupyter-pods-qa-dcfdemo",
   "sub-dir": "/lw-workspace",
   "user-volume-size": "500Gi",
   "sidecar": {
