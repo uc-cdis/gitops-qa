@@ -18,8 +18,9 @@ mappings:
      - name: data_format
      - name: data_type
     injecting_props:
-      study:
+      subject:
         props:
-          - name: study_id
+          - name: subject_id
             src: id
             fn: set
+          - name: project_id
