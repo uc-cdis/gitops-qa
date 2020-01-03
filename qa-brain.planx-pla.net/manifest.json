@@ -81,6 +81,9 @@
     "fence": {
       "strategy": "auto"
     },
+    "presigned-url-fence": {
+      "strategy": "auto"
+    },
     "indexd": {
       "strategy": "auto"
     },
