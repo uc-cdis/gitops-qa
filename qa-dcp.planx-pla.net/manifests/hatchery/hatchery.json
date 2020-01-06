@@ -180,6 +180,82 @@
       ],
       "user-uid": 1000,
       "fs-gid": 100
+    },
+    {
+      "target-port": 80,
+      "name": "DICOM Viewer",
+      "cpu-limit": "0.5",
+      "memory-limit": "512Mi",
+      "image": "quay.io/cdis/ohif-viewer:master",
+      "env": {
+        "ORTHANC_HOST": "localhost"
+      },
+      "args": [],
+      "path-rewrite": "/lw-workspace/proxy/",
+      "use-tls": false,
+      "ready-probe": "/lw-workspace/proxy/",
+      "friends": [
+        {
+          "name": "orthanc",
+          "image": "quay.io/cdis/orthanc-plugins:master",
+          "imagePullPolicy": "Always",
+          "livenessProbe": {
+            "httpGet": {
+              "path": "/",
+              "port": 80
+            },
+            "initialDelaySeconds": 30,
+            "periodSeconds": 60,
+            "timeoutSeconds": 30
+          },
+          "readinessProbe": {
+            "httpGet": {
+              "path": "/",
+              "port": 80
+            }
+          },
+          "ports": [
+            {
+              "containerPort": 80
+            }
+          ],
+          "resources": {
+            "limits": {
+              "cpu": "0.5",
+              "memory": "512Mi"
+            }
+          },
+          "volumeMounts": [
+            {
+              "mountPath": "/data",
+              "readOnly": true,
+              "name": "shared-data"
+            }
+          ]
+        },
+        {
+          "name": "postgres",
+          "image": "postgres",
+          "env": [
+            {
+              "name": "POSTGRES_DB",
+              "value": "orthanc"
+            }, {
+              "name": "POSTGRES_USER",
+              "value": "postgres"
+            }, {
+              "name": "POSTGRES_PASSWORD",
+              "value": "postgres"
+            }
+          ],
+          "resources": {
+            "limits": {
+              "cpu": "0.5",
+              "memory": "512Mi"
+            }
+          }
+        }
+      ]
     }
   ]
 }
