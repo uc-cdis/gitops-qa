@@ -198,7 +198,6 @@
         {
           "name": "orthanc",
           "image": "quay.io/cdis/orthanc-plugins:master",
-          "imagePullPolicy": "Always",
           "livenessProbe": {
             "httpGet": {
               "path": "/",
@@ -221,14 +220,14 @@
           ],
           "resources": {
             "limits": {
-              "cpu": "0.5",
+              "cpu": "1.0",
               "memory": "512Mi"
             }
           },
           "volumeMounts": [
             {
               "mountPath": "/data",
-              "readOnly": true,
+              "mountPropagation": "HostToContainer",
               "name": "shared-data"
             }
           ]
