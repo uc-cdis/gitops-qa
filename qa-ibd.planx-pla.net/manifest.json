@@ -51,7 +51,7 @@
     "indices": [
       {
         "index": "qa-ibd",
-        "type": "case"
+        "type": "participant"
       },
       {
         "index": "qa-ibd_file",
