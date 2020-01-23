@@ -1,5 +1,5 @@
 language: python
 
 script:
-  - pip install gen3utils
+  - pip install gen3utils==0.2.4
   - gen3utils validate-manifest */manifest.json
