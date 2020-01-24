@@ -13,7 +13,7 @@
     "indexd": "quay.io/cdis/indexd:master",
     "peregrine": "quay.io/cdis/peregrine:master",
     "pidgin": "quay.io/cdis/pidgin:master",
-    "revproxy": "quay.io/cdis/nginx:1.17.6-ctds-1.0.0",
+    "revproxy": "quay.io/cdis/nginx:1.17.6-ctds-1.0.1",
     "sheepdog": "quay.io/cdis/sheepdog:master",
     "portal": "quay.io/cdis/data-portal:master",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
