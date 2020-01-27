@@ -83,7 +83,7 @@
     "indices": [
       {
         "index": "jenkins-dcp_etl_1",
-        "type": "case"
+        "type": "subject"
       },
       {
         "index": "qa-dcp_file_23",
