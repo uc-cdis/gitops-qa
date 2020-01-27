@@ -82,8 +82,8 @@
   "guppy": {
     "indices": [
       {
-        "index": "qa-dcp_etl_49",
-        "type": "case"
+        "index": "jenkins-dcp_etl_1",
+        "type": "subject"
       },
       {
         "index": "qa-dcp_file_23",
