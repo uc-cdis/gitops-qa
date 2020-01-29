@@ -142,6 +142,9 @@
     "tier_access_level": "regular",
     "tier_access_limit": 50
   },
+  "indexd": {
+    "arborist": "true"
+  },
   "canary": {
     "default": 0
   },
