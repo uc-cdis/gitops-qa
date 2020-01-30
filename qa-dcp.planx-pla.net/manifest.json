@@ -7,25 +7,25 @@
     "autodeploy": "yes"
   },
   "versions": {
-    "arborist": "quay.io/cdis/arborist:2.3.2",
+    "arborist": "quay.io/cdis/arborist:integration202002",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
-    "fence": "quay.io/cdis/fence:4.13.2",
-    "indexd": "quay.io/cdis/indexd:2.6.1",
-    "peregrine": "quay.io/cdis/peregrine:2.1.1",
-    "pidgin": "quay.io/cdis/pidgin:1.0.0",
+    "fence": "quay.io/cdis/fence:integration202002",
+    "indexd": "quay.io/cdis/indexd:integration202002",
+    "peregrine": "quay.io/cdis/peregrine:integration202002",
+    "pidgin": "quay.io/cdis/pidgin:integration202002",
     "revproxy": "quay.io/cdis/nginx:1.17.6-ctds-1.0.1",
-    "sheepdog": "quay.io/cdis/sheepdog:1.1.10",
-    "portal": "quay.io/cdis/data-portal:2.22.2",
+    "sheepdog": "quay.io/cdis/sheepdog:integration202002",
+    "portal": "quay.io/cdis/data-portal:integration202002",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
-    "spark": "quay.io/cdis/gen3-spark:1.0.0",
-    "tube": "quay.io/cdis/tube:0.3.18",
-    "guppy": "quay.io/cdis/guppy:0.3.9",
-    "sower": "quay.io/cdis/sower:0.3.0",
-    "hatchery": "quay.io/cdis/hatchery:0.1.2",
+    "spark": "quay.io/cdis/gen3-spark:integration202002",
+    "tube": "quay.io/cdis/tube:integration202002",
+    "guppy": "quay.io/cdis/guppy:integration202002",
+    "sower": "quay.io/cdis/sower:integration202002",
+    "hatchery": "quay.io/cdis/hatchery:integration202002",
     "ambassador": "quay.io/datawire/ambassador:0.60.3",
-    "wts": "quay.io/cdis/workspace-token-service:0.2.0",
-    "manifestservice": "quay.io/cdis/manifestservice:0.2.0",
-    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:0.0.6"
+    "wts": "quay.io/cdis/workspace-token-service:integration202002",
+    "manifestservice": "quay.io/cdis/manifestservice:integration202002",
+    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:integration202002"
   },
   "google": {
     "enabled": "yes"
@@ -39,7 +39,7 @@
       "action": "export",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/pelican:master",
+        "image": "quay.io/cdis/pelican:integration202002",
         "pull_policy": "Always",
         "env": [
           {
@@ -124,7 +124,7 @@
   },
   "ssjdispatcher": {
     "job_images": {
-      "indexing": "quay.io/cdis/indexs3client:0.0.3"
+      "indexing": "quay.io/cdis/indexs3client:integration202002"
     }
   },
   "global": {
@@ -141,6 +141,9 @@
     "public_datasets": true,
     "tier_access_level": "regular",
     "tier_access_limit": 50
+  },
+  "indexd": {
+    "arborist": "true"
   },
   "canary": {
     "default": 0
