@@ -151,11 +151,11 @@
   "guppy": {
     "indices": [
       {
-        "index": "qa-dcp_etl_49",
-        "type": "case"
+        "index": "qa-dcp_etl",
+        "type": "subject"
       },
       {
-        "index": "qa-dcp_file_23",
+        "index": "qa-dcp_file",
         "type": "file"
       }
     ],
