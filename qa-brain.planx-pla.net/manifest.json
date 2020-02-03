@@ -36,11 +36,11 @@
   "guppy": {
     "indices": [
       {
-        "index": "qa-dcp_etl_49",
+        "index": "qa-brain_etl",
         "type": "case"
       },
       {
-        "index": "qa-dcp_file_23",
+        "index": "qa-brain_file",
         "type": "file"
       }
     ],
