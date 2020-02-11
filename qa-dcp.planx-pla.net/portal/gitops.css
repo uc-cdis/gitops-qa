@@ -26,12 +26,9 @@
 
 /* Nav Bars and Footer */
 
-.top-icon-button.body-typo {
-  background-color: var(--secondary-color);
-}
-
 .top-bar,
-.top-bar__header {
+.top-bar__header,
+.top-icon-button.body-typo {
   background-color: #616265;
 }
 
