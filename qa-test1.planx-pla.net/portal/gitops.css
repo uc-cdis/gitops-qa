@@ -26,10 +26,13 @@
 
 /* Nav Bars and Footer */
 
-.top-bar,
-.top-bar__header,
 .top-icon-button.body-typo {
   background-color: var(--secondary-color);
+}
+
+.top-bar,
+.top-bar__header {
+  background-color: #616265;
 }
 
 .top-bar__link {
