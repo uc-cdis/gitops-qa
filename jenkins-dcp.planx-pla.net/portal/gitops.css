@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #c02f42;
-  --secondary-color: #6d6e70;
+  --primary-color: #c0143c;
+  --secondary-color: #616265;
 }
 
 /* Buttons */
@@ -41,13 +41,10 @@
   border-bottom: 3px solid var(--primary-color);
 }
 
-.nav-bar__logo {
-  padding: 15px 0;
-}
-
 .nav-bar__logo-img {
-  height: 27px;
-  margin-top: 18px;
+  height: 110px;
+  margin-bottom: -30px;
+  margin-top: -25px;
 }
 
 .footer__version-area {
@@ -88,6 +85,10 @@
 
 .aggregation-card input[type='checkbox']:checked {
   background: var(--secondary-color);
+}
+
+.g3-single-select-filter__checkbox:checked {
+  background: var(--primary-color);
 }
 
 .sqon-clear {
@@ -131,4 +132,21 @@ tspan.special-number,
   .special-number {
     fill: var(--secondary-color);
   }
+}
+
+.explorer-button-group__dropdown {
+  margin-right: 10px;
+}
+
+/* Other */
+.protected-content {
+  background-color: #f4f4f6;
+}
+
+.g3-button--primary, .g3-dropdown-button__button--primary, .data-dictionary__switch-button--active, .popup__title {
+  background-color:  #1a568c;
+}
+
+.g3-button--primary:hover, .g3-dropdown-button__button--primary:hover, .data-dictionary__switch-button--active:hover, .popup__title:hover {
+  background-color:  #12385a;
 }

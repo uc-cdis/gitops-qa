@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #c02f42;
-  --secondary-color: #6d6e70;
+  --primary-color: #c0143c;
+  --secondary-color: #616265;
 }
 
 /* Buttons */
@@ -42,8 +42,9 @@
 }
 
 .nav-bar__logo-img {
-  height: 27px;
-  margin-top: 18px;
+  height: 110px;
+  margin-bottom: -30px;
+  margin-top: -25px;
 }
 
 .footer__version-area {
@@ -135,4 +136,17 @@ tspan.special-number,
 
 .explorer-button-group__dropdown {
   margin-right: 10px;
+}
+
+/* Other */
+.protected-content {
+  background-color: #f4f4f6;
+}
+
+.g3-button--primary, .g3-dropdown-button__button--primary, .data-dictionary__switch-button--active, .popup__title {
+  background-color:  #1a568c;
+}
+
+.g3-button--primary:hover, .g3-dropdown-button__button--primary:hover, .data-dictionary__switch-button--active:hover, .popup__title:hover {
+  background-color:  #12385a;
 }
