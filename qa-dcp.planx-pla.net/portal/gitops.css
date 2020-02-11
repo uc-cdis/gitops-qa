@@ -24,6 +24,14 @@
   fill: 1px solid var(--primary-color);
 }
 
+.button-primary-white:hover svg path, .button-primary-white:hover {
+  border: 1px solid #12385a;
+  background-color: #41ABF5;
+  font-weight: 500;
+  color: #606060;
+  fill: #606060;
+}
+
 /* Nav Bars and Footer */
 
 .top-bar,
