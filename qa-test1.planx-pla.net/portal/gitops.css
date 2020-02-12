@@ -1,6 +1,6 @@
 :root {
-  --primary-color:  #c02f42;
-  --secondary-color: #c02f42;
+  --primary-color: #c02f42;
+  --secondary-color: #6d6e70;
 }
 
 /* Buttons */
@@ -49,8 +49,9 @@
 }
 
 .nav-bar__logo-img {
-  height: 27px;
-  margin-top: 18px;
+  height: 110px;
+  margin-bottom: -30px;
+  margin-top: -25px;
 }
 
 .footer__version-area {
