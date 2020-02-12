@@ -32,6 +32,13 @@
   fill: black;
 }
 
+.g3-dropdown-button__button--primary:hover, 
+.g3-dropdown-button__button--primary:hover svg path, 
+.g3-dropdown-button__menu-trigger--primary:hover, 
+.g3-dropdown-button__menu-trigger--primary:hover svg path {
+  border: 1px solid black;
+}
+
 /* Nav Bars and Footer */
 
 .top-bar,
