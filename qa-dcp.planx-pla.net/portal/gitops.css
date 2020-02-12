@@ -24,14 +24,6 @@
   fill: 1px solid var(--primary-color);
 }
 
-.button-primary-white:hover svg path, .button-primary-white:hover {
-  border: 1px solid #12385a;
-  background-color: #41ABF5;
-  font-weight: 500;
-  color: black;
-  fill: black;
-}
-
 .g3-dropdown-button__button--primary:hover, 
 .g3-dropdown-button__button--primary:hover svg path, 
 .g3-dropdown-button__menu-trigger--primary:hover, 
