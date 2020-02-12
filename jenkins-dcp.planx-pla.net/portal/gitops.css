@@ -161,11 +161,3 @@ tspan.special-number,
 .g3-button--primary, .g3-dropdown-button__button--primary, .data-dictionary__switch-button--active, .popup__title {
   background-color:  #1a568c;
 }
-
-.g3-button--primary:hover, .g3-dropdown-button__button--primary:hover, .data-dictionary__switch-button--active:hover, .popup__title:hover {
-  background-color:  #12385a;
-}
-
-.nav-button:hover, .button-active {
-  border-bottom: 3px solid #12385a;
-}
