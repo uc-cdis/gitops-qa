@@ -3,9 +3,9 @@
   "graphql": {
     "boardCounts": [
       {
-        "graphql": "_subject_count",
-        "name": "Subject",
-        "plural": "Subjects"
+        "graphql": "_case_count",
+        "name": "Case",
+        "plural": "Cases"
       },
       {
         "graphql": "_study_count",
@@ -20,8 +20,8 @@
     ],
     "chartCounts": [
       {
-        "graphql": "_subject_count",
-        "name": "Subject"
+        "graphql": "_case_count",
+        "name": "Case"
       },
       {
         "graphql": "_study_count",
@@ -70,8 +70,8 @@
       ],
       "homepageChartNodes": [
         {
-          "node": "subject",
-          "name": "Subjects"
+          "node": "case",
+          "name": "Cases"
         },
         {
           "node": "study",
@@ -142,8 +142,8 @@
         "alt": "NHLBI"
       }
     ],
-    "categorical9Colors": ["#c0143c", "#616265", "#59CD90", "#F2DC5D", "#40476D", "#FFA630", "#AE8799", "#1A535C", "#462255"],
-    "categorical2Colors": ["#616265", "#c0143c"]
+    "categorical9Colors": ["#c02f42", "#175676", "#59CD90", "#F2DC5D", "#40476D", "#FFA630", "#AE8799", "#1A535C", "#462255"],
+    "categorical2Colors": ["#6d6e70", "#c02f42"]
   },
   "requiredCerts": [],
   "featureFlags": {
@@ -155,13 +155,13 @@
         "chartType": "count",
         "title": "Projects"
       },
-      "subject_id": {
+      "case_id": {
         "chartType": "count",
-        "title": "Subjects"
+        "title": "Cases"
       },
       "annotated_sex": {
         "chartType": "pie",
-        "title": "Annotated Sex"
+        "title": "annotated_sex"
       },
       "race": {
         "chartType": "bar",
@@ -172,58 +172,42 @@
     "filters": {
       "tabs": [
         {
-          "title": "Medical History",
-          "fields": [
-            "cac_score",
-            "cac_volume",
-            "carotid_plaque",
-            "carotid_stenosis",
-            "cimt_1",
-            "cimt_2",
-            "vte_case_status",
-            "vte_followup_start_age",
-            "vte_prior_history",
-            "antihypertensive_meds",
-            "fasting_lipids",
-            "lipid_lowering_medication"
-          ]
-        },
-        {
-          "title": "Diagnosis",
-          "fields": [
-            "bp_diastolic",
-            "basophil_ncnc_bld",
-            "eosinophil_ncnc_bld",
-            "hdl",
-            "hematocrit_vfr_bld",
-            "hemoglobin_mcnc_bld",
-            "ldl",
-            "lymphocyte_ncnc_bld",
-            "mch_entmass_rbc",
-            "mchc_mcnc_rbc",
-            "mcv_entvol_rbc",
-            "monocyte_ncnc_bld",
-            "neutrophil_ncnc_bld",
-            "platelet_ncnc_bld",
-            "pmv_entvol_bld",
-            "rbc_ncnc_bld",
-            "rdw_ratio_rbc",
-            "wbc_ncnc_bld"
-          ]
-        },
-        {
-          "title": "Subject",
+          "title": "Case",
           "fields": [
             "project_id",
             "consent_codes",
             "data_type",
             "data_format",
             "race",
-            "annotated_sex",
-            "hispanic_subgroup",
             "ethnicity",
-            "subcohort",
-            "weight_baseline"
+            "annotated_sex",
+            "bmi",
+            "age_at_index"
+          ]
+        },
+        {
+          "title": "Family History",
+          "fields": [
+            "diabetes",
+            "hypertension",
+            "cerebrovascular_disease",
+            "chronic_respiratory_disease",
+            "coronary_artery_disease",
+            "asthma",
+            "cabg_presence",
+            "copd",
+            "emphysema",
+            "heart_failure",
+            "myocardial_infarction",
+            "stroke",
+            "hypertension_meds"
+          ]
+        },
+        {
+          "title": "Diagnosis",
+          "fields": [
+            "diastolic_blood_pressure",
+            "systolic_blood_pressure"
           ]
         }
       ]
@@ -232,13 +216,29 @@
       "enabled": true,
       "fields": [
         "project_id",
+        "consent_codes",
+        "data_type",
         "data_format",
         "race",
-        "annotated_sex",
         "ethnicity",
-        "bp_diastolic",
-        "hdl",
-        "ldl"
+        "annotated_sex",
+        "bmi",
+        "age_at_index",
+        "diastolic_blood_pressure",
+        "systolic_blood_pressure",
+        "diabetes",
+        "hypertension",
+        "cerebrovascular_disease",
+        "chronic_respiratory_disease",
+        "coronary_artery_disease",
+        "asthma",
+        "cabg_presence",
+        "copd",
+        "emphysema",
+        "heart_failure",
+        "myocardial_infarction",
+        "stroke",
+        "hypertension_meds"
       ]
     },
     "dropdowns": {
@@ -254,10 +254,11 @@
         "leftIcon": "user",
         "rightIcon": "download",
         "fileName": "clinical.json",
-        "dropdownId": "download"
+        "dropdownId": "download",
+        "tooltipText": "You have not selected any cases to download. Please use the checkboxes on the left to select specific cases you would like to download."
       },
       {
-        "enabled": true,
+        "enabled": false,
         "type": "manifest",
         "title": "Download Manifest",
         "leftIcon": "datafile",
@@ -269,7 +270,8 @@
         "enabled": true,
         "type": "export",
         "title": "Export All to Terra",
-        "rightIcon": "external-link"
+        "rightIcon": "external-link",
+        "tooltipText": "You have not selected any cases to export. Please use the checkboxes on the left to select specific cases you would like to export."
       },
       {
         "enabled": true,
@@ -288,126 +290,16 @@
     ],
     "arrangerConfig": {
       "projectId": "search",
-      "graphqlField": "subject",
+      "graphqlField": "case",
       "index": "",
       "manifestMapping": {
         "resourceIndexType": "file",
         "resourceIdField": "object_id",
-        "referenceIdFieldInResourceIndex": "subject_id",
-        "referenceIdFieldInDataIndex": "subject_id"
+        "referenceIdFieldInResourceIndex": "case_id",
+        "referenceIdFieldInDataIndex": "case_id"
       },
-      "nodeCountField": "subject_id"
+      "nodeCountField": "case_id"
     },
-    "guppyConfig": {
-      "dataType": "subject",
-      "nodeCountTitle": "Subjects",
-      "fieldMapping": [
-        { "field": "consent_codes", "name": "Data Use Restriction" },
-        { "field": "cac_score", "name": "CAC Score" },
-        { "field": "cac_volume", "name": "CAC Volume" },
-        { "field": "cimt_1", "name": "CIMT 1" },
-        { "field": "cimt_2", "name": "CIMT 2" },
-        { "field": "vte_case_status", "name": "VTE Case Status" },
-        { "field": "vte_followup_start_age", "name": "VTE Followup Start Age" },
-        { "field": "vte_prior_history", "name": "VTE Prior History" },
-        { "field": "bp_diastolic", "name": "BP Diastolic" },
-        { "field": "basophil_ncnc_bld", "name": "Basophils Number Concentration Bld" },
-        { "field": "eosinophil_ncnc_bld", "name": "Eosinophils Number Concentration Bld" },
-        { "field": "hdl", "name": "HDL" },
-        { "field": "hematocrit_vfr_bld", "name": "Hematocrit Fraction of Volume Bld" },
-        { "field": "hemoglobin_mcnc_bld", "name": "Hemoglobin Mass Concentration Bld" },
-        { "field": "ldl", "name": "LDL" },
-        { "field": "lymphocyte_ncnc_bld", "name": "Lymphocytes Number Concentration Bld" },
-        { "field": "mch_entmass_rbc", "name": "MCH Average Mass Rbc" },
-        { "field": "mchc_mcnc_rbc", "name": "MCHC Mass Concentration Rbc" },
-        { "field": "mcv_entvol_rbc", "name": "MCV Average Volume Rbc" },
-        { "field": "monocyte_ncnc_bld", "name": "Monocytes Number Concentration Bld" },
-        { "field": "neutrophil_ncnc_bld", "name": "Neutrophils Number Concentration Bld" },
-        { "field": "platelet_ncnc_bld", "name": "Platelets Number Concentration Bld" },
-        { "field": "pmv_entvol_bld", "name": "PMV Mean Volume Bld" },
-        { "field": "rbc_ncnc_bld", "name": "Red Blood Cells Number Concentration Bld" },
-        { "field": "rdw_ratio_rbc", "name": "Red Cell Distribution Width Ratio Rbc" },
-        { "field": "wbc_ncnc_bld", "name": "White Blood Cells Number Concentration Bld" }
-      ],
-      "manifestMapping": {
-        "resourceIndexType": "file",
-        "resourceIdField": "object_id",
-        "referenceIdFieldInResourceIndex": "subject_id",
-        "referenceIdFieldInDataIndex": "subject_id"
-      },
-      "accessibleFieldCheckList": ["project_id"],
-      "accessibleValidationField": "project_id"
-    },
-    "getAccessButtonLink": "https://dbgap.ncbi.nlm.nih.gov/",
-    "terraExportURL": "https://bvdp-saturn-dev.appspot.com/#import-data",
-    "terraTemplate": "bdc"
-  },
-  "fileExplorerConfig": {
-    "charts": {
-      "data_type": {
-        "chartType": "stackedBar",
-        "title": "File Type"
-      },
-      "data_format": {
-        "chartType": "stackedBar",
-        "title": "File Format"
-      }
-    },
-    "filters": {
-      "tabs": [
-        {
-          "title": "File",
-          "fields": [
-            "project_id",
-            "data_type",
-            "data_format"
-          ]
-        }
-      ]
-    },
-    "table": {
-      "enabled": true,
-      "fields": [
-        "project_id",
-        "file_name",
-        "file_size",
-        "object_id"
-      ]
-    },
-    "guppyConfig": {
-      "dataType": "file",
-      "fieldMapping": [
-        { "field": "object_id", "name": "GUID" }
-      ],
-      "nodeCountTitle": "Files",
-      "manifestMapping": {
-        "resourceIndexType": "subject",
-        "resourceIdField": "subject_id",
-        "referenceIdFieldInResourceIndex": "object_id",
-        "referenceIdFieldInDataIndex": "object_id"
-      },
-      "accessibleFieldCheckList": ["project_id"],
-      "accessibleValidationField": "project_id",
-      "downloadAccessor": "object_id"
-    },
-    "buttons": [
-      {
-        "enabled": true,
-        "type": "file-manifest",
-        "title": "Download Manifest",
-        "leftIcon": "datafile",
-        "rightIcon": "download",
-        "fileName": "file-manifest.json",
-        "dropdownId": "download"
-      },
-      {
-        "enabled": true,
-        "type": "export-files-to-workspace",
-        "title": "Export to Workspace",
-        "leftIcon": "datafile",
-        "rightIcon": "download"
-      }
-    ],
-    "dropdowns": {}
+    "getAccessButtonLink": "https://dbgap.ncbi.nlm.nih.gov/"
   }
 }
