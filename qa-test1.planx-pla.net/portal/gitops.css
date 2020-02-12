@@ -157,7 +157,3 @@ tspan.special-number,
 .protected-content {
   background-color: #f4f4f6;
 }
-
-.g3-button--primary, .g3-dropdown-button__button--primary, .data-dictionary__switch-button--active, .popup__title {
-  background-color:  #1a568c;
-}
