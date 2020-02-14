@@ -4,6 +4,7 @@
     "goes with qa-tb.planx-pla.net, qa-nde.planx-pla.net and qa-flu.planx-pla.net"
   ],
   "versions": {
+    "ambassador": "quay.io/datawire/ambassador:0.60.3",
     "arborist": "quay.io/cdis/arborist:2020.02",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
     "fence": "quay.io/cdis/fence:2020.02",
