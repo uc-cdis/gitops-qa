@@ -107,7 +107,8 @@
       "title": "JCOIN Portal",
       "subTitle": "Explore, Analyze, and Share Data",
       "contact": "If you have any questions about access or the registration process, please contact ",
-      "email": "support@datacommons.io"
+      "email": "support@datacommons.io",
+      "image": "/custom/sponsors/gitops-sponsors/bg.png"
     },
     "footerLogos": [
       {
