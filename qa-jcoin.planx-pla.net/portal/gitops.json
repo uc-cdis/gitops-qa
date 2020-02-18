@@ -136,6 +136,14 @@
       "project_id": {
         "chartType": "count",
         "title": "Projects"
+      },
+      "gender": {
+        "chartType": "pie",
+        "title": "Gender"
+      },
+      "race": {
+        "chartType": "pie",
+        "title": "Race"
       }
     },
     "filters": {
@@ -148,9 +156,15 @@
             "race",
             "jewish",
             "hispanic",
-            "ibd_affection_status",
-            "diagnosis",
-            "population_control"
+            "drug_used",
+            "ever_transferred",
+            "pregnancy_status",
+            "protocol",
+            "height",
+            "weight",
+            "weight_percentage",
+            "bmi",
+            "health_insurance"
           ]
         }
       ]
@@ -163,10 +177,15 @@
         "race",
         "jewish",
         "hispanic",
-        "ibd_affection_status",
-        "diagnosis",
-        "population_control",
-        "_samples_count"
+        "drug_used",
+        "ever_transferred",
+        "pregnancy_status",
+        "protocol",
+        "height",
+        "weight",
+        "weight_percentage",
+        "bmi",
+        "health_insurance"
       ]
     },
     "buttons": [
@@ -187,15 +206,15 @@
       }
     ],
     "guppyConfig": {
-      "dataType": "case",
+      "dataType": "participant",
       "nodeCountTitle": "Participants",
       "fieldMapping": [
       ],
       "manifestMapping": {
         "resourceIndexType": "file",
         "resourceIdField": "object_id",
-        "referenceIdFieldInResourceIndex": "case_id",
-        "referenceIdFieldInDataIndex": "case_id"
+        "referenceIdFieldInResourceIndex": "participant_id",
+        "referenceIdFieldInDataIndex": "participant_id"
       }
     }
   },
@@ -248,8 +267,8 @@
       ],
       "nodeCountTitle": "Files",
       "manifestMapping": {
-        "resourceIndexType": "case",
-        "resourceIdField": "case_id",
+        "resourceIndexType": "participant",
+        "resourceIdField": "participant_id",
         "referenceIdFieldInResourceIndex": "object_id",
         "referenceIdFieldInDataIndex": "object_id"
       },
