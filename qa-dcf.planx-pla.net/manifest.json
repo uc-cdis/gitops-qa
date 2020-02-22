@@ -42,7 +42,7 @@
     "hostname": "qa-dcf.planx-pla.net",
     "revproxy_arn": "arn:aws:acm:us-east-1:733512436101:certificate/2137c4c4-3513-4f89-b763-7b6edf2f229f",
     "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/datadictionary/develop/schema.json",
-    "portal_app": "gitops",
+    "portal_app": "dev",
     "kube_bucket": "kube-qaplanetv1-gen3",
     "logs_bucket": "logs-qaplanetv1-gen3",
     "sync_from_dbgap": "False",
