@@ -22,6 +22,12 @@
     "tube": "quay.io/cdis/tube:2020.02",
     "dashboard": "quay.io/cdis/gen3-statics:master"
   },
+  "peregrine": {
+    "sidecar": "False"
+  },
+  "google": {
+    "enabled": "yes"
+  },
   "arborist": {
     "deployment_version": "2"
   },
