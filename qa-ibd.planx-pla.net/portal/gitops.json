@@ -107,6 +107,12 @@
           "name": "Workspace"
         },
         {
+          "icon": "workspace",
+          "link": "/dashboard/Secure/index.html",
+          "color": "#a2a2a2",
+          "name": "Dashboard"
+        },
+        {
           "icon": "profile",
           "link": "/identity",
           "color": "#a2a2a2",
@@ -257,5 +263,12 @@
       "downloadAccessor": "object_id"
     },
     "dropdowns": {}
+  },
+  "componentToResourceMapping": {
+    "Dashboard": {
+      "resource": "/dashboard",
+      "method": "access",
+      "service": "dashboard"
+    }
   }
 }
