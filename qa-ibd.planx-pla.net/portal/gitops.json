@@ -108,7 +108,7 @@
         },
         {
           "icon": "workspace",
-          "link": "/dashboard/Secure/index.html",
+          "link": "https://qa-ibd.planx-pla.net/dashboard/Secure/index.html",
           "color": "#a2a2a2",
           "name": "Dashboard"
         },
