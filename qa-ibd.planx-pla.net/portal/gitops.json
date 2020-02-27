@@ -107,16 +107,23 @@
           "name": "Workspace"
         },
         {
-          "icon": "workspace",
-          "link": "https://qa-ibd.planx-pla.net/dashboard/Secure/index.html",
-          "color": "#a2a2a2",
-          "name": "Dashboard"
-        },
-        {
           "icon": "profile",
           "link": "/identity",
           "color": "#a2a2a2",
           "name": "Profile"
+        }
+      ]
+    },
+    "topBar": {
+      "items": [
+        {
+          "icon": "upload",
+          "link": "/submission",
+          "name": "Submit Data"
+        },
+        {
+          "link": "https://qa-ibd.planx-pla.net/dashboard/Public/index.html",
+          "name": "Documentation"
         }
       ]
     },
@@ -263,12 +270,5 @@
       "downloadAccessor": "object_id"
     },
     "dropdowns": {}
-  },
-  "componentToResourceMapping": {
-    "Dashboard": {
-      "resource": "/dashboard",
-      "method": "access",
-      "service": "dashboard"
-    }
   }
 }
