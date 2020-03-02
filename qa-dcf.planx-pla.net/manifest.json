@@ -22,6 +22,12 @@
     "tube": "quay.io/cdis/tube:2020.02",
     "dashboard": "quay.io/cdis/gen3-statics:master"
   },
+  "peregrine": {
+    "sidecar": "False"
+  },
+  "google": {
+    "enabled": "yes"
+  },
   "arborist": {
     "deployment_version": "2"
   },
@@ -33,13 +39,18 @@
   },
   "global": {
     "environment": "dcfqav1",
-    "hostname": "qa.dcf.planx-pla.net",
+    "hostname": "qa-dcf.planx-pla.net",
     "revproxy_arn": "arn:aws:acm:us-east-1:733512436101:certificate/2137c4c4-3513-4f89-b763-7b6edf2f229f",
     "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/datadictionary/develop/schema.json",
     "portal_app": "dev",
+    "kube_bucket": "kube-qaplanetv1-gen3",
+    "logs_bucket": "logs-qaplanetv1-gen3",
     "sync_from_dbgap": "False",
-    "useryaml_s3path": "s3://cdis-gen3-users/dcfqa/user.yaml",
-    "netpolicy": "on"
+    "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
+    "netpolicy": "on",
+    "tier_access_level": "regular",
+    "tier_access_limit": "50",
+    "public_datasets": true
   },
   "canary": {
     "default": 0

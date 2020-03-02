@@ -1,0 +1,11 @@
+.nav-bar__logo {
+  padding: 15px 0;
+}
+
+.nav-bar__logo-img {
+  height: 50px;
+}
+
+.login-page__side-box {
+  background-repeat: round;
+}

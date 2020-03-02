@@ -5,31 +5,21 @@
         "graphql": "_participant_count",
         "name": "Participant",
         "plural": "Participants"
-      },
-      {
-        "graphql": "_sample_count",
-        "name": "Sample",
-        "plural": "Samples"
       }
     ],
     "chartCounts": [
       {
         "graphql": "_participant_count",
         "name": "Participant"
-      },
-      {
-        "graphql": "_sample_count",
-        "name": "Sample"
       }
     ],
     "projectDetails": "boardCounts"
   },
    "components": {
-    "appName": "IBDGC Portal",
+    "appName": "JCOIN Portal",
     "index": {
       "introduction": {
-        "heading": "IBD Genetics Consortium Data Commons",
-        "text": "The Inflammatory Bowel Disease Genetics Consortium Data Commons supports the management, analysis, and sharing of genetic data to support the vision and mission of the IBD genetics consortium.",
+        "heading": "JCOIN Data Commons",
         "link": "/submission"
       },
       "buttons": [
@@ -68,13 +58,12 @@
           "name": "Participants"
         },
         {
-          "node": "sample",
-          "name": "Samples"
+          "node": "follow_up",
+          "name": "Follow Ups"
         }
       ]
     },
     "navigation": {
-      "title": "IBDGC Data Commons",
       "items": [
         {
           "icon": "dictionary",
@@ -114,31 +103,28 @@
         }
       ]
     },
-    "topBar": {
-      "items": [
-        {
-          "icon": "upload",
-          "link": "/submission",
-          "name": "Submit Data"
-        },
-        {
-          "link": "https://qa-ibd.planx-pla.net/dashboard/Public/index.html",
-          "name": "Documentation"
-        }
-      ]
-    },
     "login": {
-      "title": "IBDGC Portal",
+      "title": "JCOIN Portal",
       "subTitle": "Explore, Analyze, and Share Data",
-      "text": "The Inflammatory Bowel Disease Genetics Consortium Data Commons supports the management, analysis, and sharing of genetic data to support the vision and mission of the IBD genetics consortium.",
       "contact": "If you have any questions about access or the registration process, please contact ",
-      "email": "support@datacommons.io"
+      "email": "support@datacommons.io",
+      "image": "/../../../../custom/sponsors/gitops-sponsors/bg"
     },
     "footerLogos": [
       {
-        "src": "/src/img/sponsors/niddk_white.png",
-        "href": "https://www.niddk.nih.gov",
-        "alt": "National Institute of Diabetes & Digestive & Kidney Diseases (NIDDK)"
+        "src": "/src/img/gen3.png",
+        "href": "https://ctds.uchicago.edu/gen3",
+        "alt": "Gen3 Data Commons"
+      },
+      {
+        "src": "/src/img/createdby.png",
+        "href": "https://ctds.uchicago.edu/",
+        "alt": "Center for Translational Data Science at the University of Chicago"
+      },
+      {
+        "src": "/custom/sponsors/gitops-sponsors/JCOIN-funded.png",
+        "href": "https://heal.nih.gov/research/research-to-practice/jcoin",
+        "alt": "JCOIN is funded by NIDA as part of the NIH HEAL Initiative(SM)"
       }
     ]
   },
@@ -150,21 +136,35 @@
       "project_id": {
         "chartType": "count",
         "title": "Projects"
+      },
+      "gender": {
+        "chartType": "pie",
+        "title": "Gender"
+      },
+      "race": {
+        "chartType": "pie",
+        "title": "Race"
       }
     },
     "filters": {
       "tabs": [
         {
-          "title": "Participant",
+          "title": "Case",
           "fields":[
             "project_id",
             "gender",
             "race",
             "jewish",
             "hispanic",
-            "ibd_affection_status",
-            "diagnosis",
-            "population_control"
+            "drug_used",
+            "ever_transferred",
+            "pregnancy_status",
+            "protocol",
+            "height",
+            "weight",
+            "weight_percentage",
+            "bmi",
+            "health_insurance"
           ]
         }
       ]
@@ -177,10 +177,15 @@
         "race",
         "jewish",
         "hispanic",
-        "ibd_affection_status",
-        "diagnosis",
-        "population_control",
-        "_samples_count"
+        "drug_used",
+        "ever_transferred",
+        "pregnancy_status",
+        "protocol",
+        "height",
+        "weight",
+        "weight_percentage",
+        "bmi",
+        "health_insurance"
       ]
     },
     "buttons": [
