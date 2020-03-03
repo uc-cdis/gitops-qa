@@ -127,6 +127,19 @@
         }
       ]
     },
+    "topBar": {
+      "items": [
+        {
+          "icon": "upload",
+          "link": "/submission",
+          "name": "Submit Data"
+        },
+        {
+          "link": "https://qa-ibd.planx-pla.net/dashboard/Public/index.html",
+          "name": "Documentation"
+        }
+      ]
+    },
     "login": {
       "title": "IBDGC Portal",
       "subTitle": "Explore, Analyze, and Share Data",

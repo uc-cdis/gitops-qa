@@ -7,25 +7,25 @@
     "autodeploy": "yes"
   },
   "versions": {
-    "arborist": "quay.io/cdis/arborist:1.2.1",
+    "arborist": "quay.io/cdis/arborist:2020.02",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
-    "fence": "quay.io/cdis/fence:2.7.2",
+    "fence": "quay.io/cdis/fence:2020.02",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
-    "indexd": "quay.io/cdis/indexd:1.1.0",
+    "indexd": "quay.io/cdis/indexd:2020.02",
     "jupyterhub": "quay.io/occ_data/jupyterhub:master",
-    "peregrine": "quay.io/cdis/peregrine:1.2.1",
-    "pidgin": "quay.io/cdis/pidgin:1.2.0",
-    "portal": "quay.io/cdis/data-portal:2.19.1",
-    "revproxy": "quay.io/cdis/nginx:1.17.6-ctds-1.0.0",
-    "sheepdog": "quay.io/cdis/sheepdog:1.1.11",
-    "spark": "quay.io/cdis/gen3-spark:1.0.0",
-    "tube": "quay.io/cdis/tube:0.3.17",
-    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:0.0.6",
+    "peregrine": "quay.io/cdis/peregrine:2020.02",
+    "pidgin": "quay.io/cdis/pidgin:2020.02",
+    "portal": "quay.io/cdis/data-portal:2020.02",
+    "revproxy": "quay.io/cdis/nginx:1.17.6-ctds-1.0.1",
+    "sheepdog": "quay.io/cdis/sheepdog:2020.02",
+    "spark": "quay.io/cdis/gen3-spark:2020.02",
+    "tube": "quay.io/cdis/tube:2020.02",
+    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:2020.02",
     "dashboard": "quay.io/cdis/gen3-statics:master",
-    "guppy": "quay.io/cdis/guppy:0.3.0",
-    "hatchery": "quay.io/cdis/hatchery:0.1.0",
+    "guppy": "quay.io/cdis/guppy:2020.02",
+    "hatchery": "quay.io/cdis/hatchery:2020.02",
     "ambassador": "quay.io/datawire/ambassador:0.60.3",
-    "wts": "quay.io/cdis/workspace-token-service:0.2.0",
+    "wts": "quay.io/cdis/workspace-token-service:2020.02",
     "manifestservice": "quay.io/cdis/manifestservice:0.2.0"
   },
   "indexd": {
@@ -73,6 +73,9 @@
         "image": "quay.io/occ_data/jupyternotebook:1.8.0"
       }
     ]
+  },
+  "arborist": {
+    "deployment_version": "2"
   },
   "peregrine": {
     "sidecar": "True"
