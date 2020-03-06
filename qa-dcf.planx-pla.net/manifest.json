@@ -20,7 +20,8 @@
     "sheepdog": "quay.io/cdis/sheepdog:2020.02",
     "spark": "quay.io/cdis/gen3-spark:2020.02",
     "tube": "quay.io/cdis/tube:2020.02",
-    "dashboard": "quay.io/cdis/gen3-statics:master"
+    "dashboard": "quay.io/cdis/gen3-statics:master",
+    "status-api": "quay.io/cdis/status-dashboard:master"
   },
   "peregrine": {
     "sidecar": "False"
