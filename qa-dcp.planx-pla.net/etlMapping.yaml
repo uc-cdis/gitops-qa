@@ -137,4 +137,5 @@ mappings:
         props:
           - name: subject_id
             src: id
+            fn: set
           - name: project_id
