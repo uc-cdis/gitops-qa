@@ -155,18 +155,6 @@
       "Chicago_ID": {
         "chartType": "count",
         "title": "Patients"
-      },
-      "Oncology_Primary__ICDOSite":{
-        "chartType": "bar",
-        "title": "Site (ICD-O)"
-      },
-      "Oncology_Primary__Radiation":{
-        "chartType": "pie",
-        "title": "Radiation"
-      },
-      "Oncology_Primary__Chemotherapy":{
-        "chartType": "pie",
-        "title": "Chemotherapy"
       }
     },
     "filters": {
@@ -180,29 +168,7 @@
             "DeceasedFlag",
             "Ethnicity",
             "Gender",
-            "Race",
-            "ICDCode__ICD9Code",
-            "ICDCode__ICD9Description",
-            "ICDCode__ICD10Code",
-            "ICDCode__ICD10Description",
-            "ICDCode__DaysFromAnchorDateToStartDate",
-            "Oncology_Primary__ICDOSite",
-            "Oncology_Primary__Radiation",
-            "Oncology_Primary__Chemotherapy",
-            "Oncology_Primary__DaysFromAnchorDateToDiagnosisDate",
-            "Oncology_Primary__Gradedifferentiation",
-            "Oncology_Primary__Laterality",
-            "Oncology_Primary__Stagegroupbest",
-            "Oncology_Primary__RadiationsurgerySequence",
-            "Oncology_Primary__Histologyicdo3X",
-            "Oncology_Primary__Lymphvascularinvasionl",
-            "Oncology_Primary__SeerSummaryStage2000",
-            "Oncology_Primary__PhysiciansStage",
-            "Oncology_Primary__DaysFromAnchorDateToMostdefinitivesurgDate",
-            "Oncology_Primary__ChemotherapyFac",
-            "Oncology_Primary__TumorSize",
-            "Oncology_Primary__SequenceNumber",
-            "ActionableMutations__Gene"
+            "Race"
           ]
         }
       ]
@@ -218,7 +184,16 @@
       }
     ],
     "table": {
-      "enabled": true
+      "enabled": true,
+      "fields": [
+        "project_id",
+        "auth_resource_path",
+        "Race",
+        "Ethnicity",
+        "Gender",
+        "Days_To_Birth",
+        "Days_To_Death"
+      ]
     },
     "guppyConfig": {
       "dataType": "patients",
