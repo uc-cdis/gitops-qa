@@ -42,6 +42,9 @@
     },
     "restart_policy": "never"
   },
+  "jupyterhub": {
+    "enabled": "no"
+  },
   "tube": {
     "es_index_name": "mickey"
   },
