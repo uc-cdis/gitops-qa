@@ -144,7 +144,11 @@
       "race": {
         "chartType": "pie",
         "title": "Race"
-      }
+      },
+      "center": {
+        "chartType": "bar",
+        "title": "center"
+       }
     },
     "filters": {
       "tabs": [
@@ -152,10 +156,6 @@
           "title": "Case",
           "fields":[
             "project_id",
-            "gender",
-            "race",
-            "jewish",
-            "hispanic",
             "drug_used",
             "ever_transferred",
             "pregnancy_status",
@@ -165,6 +165,15 @@
             "weight_percentage",
             "bmi",
             "health_insurance"
+          ]
+        },
+        {
+          "title": "Participant",
+          "fields":[
+            "gender",
+            "race",
+            "jewish",
+            "hispanic"
           ]
         }
       ]
@@ -185,7 +194,8 @@
         "weight",
         "weight_percentage",
         "bmi",
-        "health_insurance"
+        "health_insurance",
+        "center"
       ]
     },
     "buttons": [
