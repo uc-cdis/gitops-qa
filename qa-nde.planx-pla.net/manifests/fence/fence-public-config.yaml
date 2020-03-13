@@ -8,7 +8,11 @@ DEBUG: false
 # if true, will automatically login a user with username "test"
 MOCK_AUTH: false
 # if true, will only fake a successful login response from Google in /login/google
+#     NOTE: this will also modify the behavior of /link/google endpoints
+# WARNING: DO NOT ENABLE IN PRODUCTION (for testing purposes only)
+# will login as the username set in cookie DEV_LOGIN_COOKIE_NAME
 MOCK_GOOGLE_AUTH: false
+DEV_LOGIN_COOKIE_NAME: "dev_login"
 # if true, will ignore anything configured in STORAGE_CREDENTIALS
 MOCK_STORAGE: false
 # allow OIDC traffic on http for development. By default it requires https.
@@ -97,13 +101,6 @@ S3_BUCKETS:
     cred: 'cdistest'
 
 # //////////////////////////////////////////////////////////////////////////////////////
-# SUPPORT INFO
-# //////////////////////////////////////////////////////////////////////////////////////
-# If you want an email address to show up when an unhandled error occurs, provide one
-# here. Something like: support@example.com
-SUPPORT_EMAIL_FOR_ERRORS: null
-
-# //////////////////////////////////////////////////////////////////////////////////////
 # SHIBBOLETH
 #   - Support using `shibboleth` in ENABLED_IDENTITY_PROVIDERS
 #   - Contains defaults for using NIH's Login.
@@ -123,7 +120,7 @@ DATA_UPLOAD_BUCKET: 'qaplanetv1-data-bucket'
 #
 # NOTE: Make this short! Less than 8 characters if possible. Google has
 #       length restrictions on group names.
-GOOGLE_GROUP_PREFIX: dcf
+GOOGLE_GROUP_PREFIX: nde
 
 # Service account email domains that represent a service account that Google owns.
 # These are usually created when a sepcific GCP service is enabled.
