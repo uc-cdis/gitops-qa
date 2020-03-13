@@ -8,7 +8,7 @@
     "arborist": "quay.io/cdis/arborist:2020.03",
     "fence": "quay.io/cdis/fence:2020.03",
     "indexd": "quay.io/cdis/indexd:2020.03",
-    "portal": "quay.io/cdis/data-portal:2020.03",
+    "portal": "quay.io/cdis/data-ecosystem-portal:1.2.4",
     "revproxy": "quay.io/cdis/nginx:1.17.6-ctds-1.0.1",
     "dashboard": "quay.io/cdis/gen3-statics:master",
     "wts": "quay.io/cdis/workspace-token-service:2020.03",
