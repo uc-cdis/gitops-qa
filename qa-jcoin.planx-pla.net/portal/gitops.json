@@ -144,7 +144,11 @@
       "race": {
         "chartType": "pie",
         "title": "Race"
-      }
+      },
+      "center": {
+        "chartType": "bar",
+        "title": "center"
+       }
     },
     "filters": {
       "tabs": [
@@ -152,10 +156,6 @@
           "title": "Case",
           "fields":[
             "project_id",
-            "gender",
-            "race",
-            "jewish",
-            "hispanic",
             "drug_used",
             "ever_transferred",
             "pregnancy_status",
@@ -164,13 +164,23 @@
             "weight",
             "weight_percentage",
             "bmi",
-            "health_insurance"
+            "health_insurance",
+            "center"
+          ]
+        },
+        {
+          "title": "Participant",
+          "fields":[
+            "gender",
+            "race",
+            "jewish",
+            "hispanic"
           ]
         }
       ]
     },
     "table": {
-      "enabled": true,
+      "enabled": false,
       "fields": [
         "project_id",
         "gender",
@@ -185,7 +195,8 @@
         "weight",
         "weight_percentage",
         "bmi",
-        "health_insurance"
+        "health_insurance",
+        "center"
       ]
     },
     "buttons": [
@@ -209,6 +220,10 @@
       "dataType": "participant",
       "nodeCountTitle": "Participants",
       "fieldMapping": [
+        { "field": "project_id", "name": "Project ID" },
+        { "field": "bmi", "name": "BMI (kg/m^2)" },
+        { "field": "height", "name": "Height (cm)" },
+        { "field": "weight", "name": "Weight (g)" }
       ],
       "manifestMapping": {
         "resourceIndexType": "file",
