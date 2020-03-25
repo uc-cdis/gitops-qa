@@ -56,7 +56,7 @@
     "sidecar": {
       "cpu-limit": "1.0",
       "memory-limit": "256Mi",
-      "image": "quay.io/cdis/gen3fuse-sidecar:chore_sidecar",
+      "image": "quay.io/cdis/gen3fuse-sidecar:integration202004",
       "env": {"NAMESPACE":"default", "HOSTNAME": "jcoin.datacommons.io"},
       "args": [],
       "command": ["/bin/bash", "/sidecarDockerrun.sh"],
