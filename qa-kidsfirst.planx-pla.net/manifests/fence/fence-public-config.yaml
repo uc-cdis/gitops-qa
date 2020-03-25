@@ -143,4 +143,6 @@ S3_BUCKETS:
 #
 # NOTE: Make this short! Less than 8 characters if possible. Google has
 #       length restrictions on group names.
-GOOGLE_GROUP_PREFIX: 'gen3'
+GOOGLE_GROUP_PREFIX: 'kf'
+
+ENABLE_DB_MIGRATION: false
