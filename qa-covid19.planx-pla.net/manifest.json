@@ -24,11 +24,11 @@
   "global": {
     "environment": "qa-covid19",
     "hostname": "qa-covid19.planx-pla.net",
-    "revproxy_arn": "arn:aws:acm:us-east-1:236714345101:certificate/ec368910-95e7-4f7f-bdd3-020a2f51bc94",
+    "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
     "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/covid19-datadictionary/1.0.1/schema.json",
     "portal_app": "gitops",
-    "kube_bucket": "kube_bucket.devplanetv1.gen3",
-    "logs_bucket": "logs-devplanetv1-gen3",
+    "kube_bucket": "kube-qaplanetv2-gen3",
+    "logs_bucket": "logs-qaplanetv2-gen3",
     "sync_from_dbgap": "False",
     "dispatcher_job_num": "10",
     "netpolicy": "on",
@@ -42,7 +42,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "256Mi",
       "image": "quay.io/cdis/gen3fuse-sidecar:2020.03",
-      "env": {"NAMESPACE":"default", "HOSTNAME": "covid19.datacommons.io"},
+      "env": {"NAMESPACE":"default", "HOSTNAME": "qa-covid19.planx-pla.net"},
       "args": [],
       "command": ["/bin/bash", "/sidecarDockerrun.sh"],
       "lifecycle-pre-stop": ["su", "-c", "echo test", "-s", "/bin/sh", "root"]
