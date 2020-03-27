@@ -15,7 +15,7 @@
     "pidgin": "quay.io/cdis/pidgin:integration202004",
     "revproxy": "quay.io/cdis/nginx:integration202004",
     "sheepdog": "quay.io/cdis/sheepdog:integration202004",
-    "portal": "quay.io/cdis/data-portal:integration202004",
+    "portal": "quay.io/cdis/data-portal:2.24.10",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "spark": "quay.io/cdis/gen3-spark:integration202004",
     "tube": "quay.io/cdis/tube:integration202004",
