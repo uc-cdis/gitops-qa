@@ -66,6 +66,10 @@
   background-color: #000;
 }
 
+.footer-container { 
+  background-color: #000;
+}
+
 /* Data Explorer */
 
 .filter-group__tab,
