@@ -27,4 +27,6 @@
 .image-wrapper{
   height: 100px;
   justify-content: space-around;
+  padding-right: 15px;
+  padding-left: 15px;
 }
