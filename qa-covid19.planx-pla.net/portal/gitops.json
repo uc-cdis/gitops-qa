@@ -118,6 +118,10 @@
           "name": "COVID-19 Data Commons Home"
         },
         {
+          "link": "https://qa-covid19.datacommons.io/dashboard/Public/index.html",
+          "name": "Sponsors"
+        },
+        {
           "icon": "upload",
           "link": "/submission",
           "name": "Submit Data"

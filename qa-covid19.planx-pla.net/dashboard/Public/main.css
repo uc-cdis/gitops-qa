@@ -1,0 +1,24 @@
+#header {
+  background-color: #eeeeee;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.header__img-wrapper {
+  flex-grow: 1;
+}
+
+#main {
+  overflow: auto;
+  padding-bottom: 40px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+#container {
+  min-height: 100%;
+}
