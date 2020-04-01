@@ -1,5 +1,5 @@
 #header {
-  background-color: #eeeeee;
+  background-color: #ffffff;
   border-bottom: 1px solid #ddd;
   display: flex;
   justify-content: space-between;
@@ -21,4 +21,5 @@
 
 #container {
   min-height: 100%;
+  background-color: #eeeeee;
 }
