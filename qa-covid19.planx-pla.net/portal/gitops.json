@@ -122,6 +122,10 @@
           "name": "Partners"
         },
         {
+          "link": "https://qa-covid19.planx-pla.net/dashboard/Public/index.html",
+          "name": "Partners"
+        },
+        {
           "icon": "upload",
           "link": "/submission",
           "name": "Submit Data"
