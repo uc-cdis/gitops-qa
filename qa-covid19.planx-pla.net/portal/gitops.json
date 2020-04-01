@@ -118,6 +118,10 @@
           "name": "COVID-19 Data Commons Home"
         },
         {
+          "link": "https://qa-covid19.planx-pla.net/dashboard/Public/index.html",
+          "name": "Partners"
+        },
+        {
           "icon": "upload",
           "link": "/submission",
           "name": "Submit Data"
