@@ -70,11 +70,11 @@
       ],
       "homepageChartNodes": [
         {
-          "node": "location",
+          "node": "summary_location",
           "name": "Locations"
         },
         {
-          "node": "summary_reports",
+          "node": "summary_report",
           "name": "Summary Reports"
         },
         {
@@ -118,6 +118,10 @@
           "name": "Chicagoland COVID-19 Commons Home"
         },
         {
+          "link": "https://covid19.datacommons.io/dashboard/Public/index.html",
+          "name": "Partners"
+        },
+        {
           "icon": "upload",
           "link": "/submission",
           "name": "Submit Data"
@@ -130,7 +134,7 @@
     },
     "login": {
       "title": "Chicagoland COVID-19 Commons",
-      "subTitle": "Explore, Analyze, and Share Data",
+      "subTitle": "Explore, Analyze, and Share Data to Improve Health Outcomes for COVID-19",
       "text": "",
       "contact": "If you have any questions about access or the registration process, please contact ",
       "email": "support@datacommons.io",
@@ -152,15 +156,15 @@
   "analysisTools": [ ],
   "dataExplorerConfig": {
     "charts": {
-      "study_submitter_id": {
+      "project_id": {
         "chartType": "count",
         "title": "Projects"
       },
-      "virus_subtype": {
+      "country_region": {
         "chartType": "bar",
         "title": "Country Region"
       },
-      "strain": {
+      "province_state": {
         "chartType": "bar",
         "title": "Province State"
       }
