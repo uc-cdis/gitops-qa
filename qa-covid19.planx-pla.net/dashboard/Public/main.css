@@ -1,3 +1,654 @@
+Last login: Wed Mar 25 12:48:47 on ttys003
+(base) MacBook-Pro-3:~ ginakuffel$ ssh gkuffel@10.128.7.28
+ssh: connect to host 10.128.7.28 port 22: Operation timed out
+(base) MacBook-Pro-3:~ ginakuffel$ ssh gkuffel@10.128.7.28
+Enter passphrase for key '/Users/ginakuffel/.ssh/id_rsa': 
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.4.0-1102-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ * Kubernetes 1.18 GA is now available! See https://microk8s.io for docs or
+   install it with:
+
+     sudo snap install microk8s --channel=1.18 --classic
+
+ * Multipass 1.1 adds proxy support for developers behind enterprise
+   firewalls. Rapid prototyping for cloud operations just got easier.
+
+     https://multipass.run/
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+11 packages can be updated.
+7 updates are security updates.
+
+New release '18.04.4 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Wed Jan 22 17:56:59 2020 from 10.128.5.187
+INFO: refreshing aws access token cache
+gkuffel@cdistest_dev_admin:~$ ls
+backup  cdis-manifest  cloud-automation  devplanetv1  Gen3Secrets
+gkuffel@cdistest_dev_admin:~$ cd cdis-manifest/
+gkuffel@cdistest_dev_admin:~/cdis-manifest$ ls
+abby.planx-pla.net           giangb.planx-pla.net       NOTICE
+andrew.planx-pla.net         gkuffel.planx-pla.net      pauline.planx-pla.net
+atharva.planx-pla.net        hara.planx-pla.net         qingya.planx-pla.net
+avantol.planx-pla.net        Jenkinsfile                raryav1.planx-pla.net
+dev.planx-pla.net            jiaqi.planx-pla.net        README.md
+diwv1.planx-pla.net          LICENSE                    reuben.planx-pla.net
+emalinowskiv1.planx-pla.net  marcelo.planx-pla.net      thanhnd.planx-pla.net
+fantix.planx-pla.net         mattgarvin1.planx-pla.net  zakir.planx-pla.net
+fauziv1.planx-pla.net        mingfei.planx-pla.net      zlchitty.planx-pla.net
+galaxy.planx-pla.net         mlukowski.planx-pla.net
+Gen3CICD.svg                 mpingram.planx-pla.net
+gkuffel@cdistest_dev_admin:~/cdis-manifest$ cd gkuffel.planx-pla.net/
+gkuffel@cdistest_dev_admin:~/cdis-manifest/gkuffel.planx-pla.net$ ls
+manifest.json
+gkuffel@cdistest_dev_admin:~/cdis-manifest/gkuffel.planx-pla.net$ nano manifest.json 
+gkuffel@cdistest_dev_admin:~/cdis-manifest/gkuffel.planx-pla.net$ cd ..
+gkuffel@cdistest_dev_admin:~/cdis-manifest$ cd ..
+gkuffel@cdistest_dev_admin:~$ ls
+backup  cdis-manifest  cloud-automation  devplanetv1  Gen3Secrets
+gkuffel@cdistest_dev_admin:~$ cd devplanetv1/
+gkuffel@cdistest_dev_admin:~/devplanetv1$ ls
+00configmap.yaml      apis_configs  creds.json      g3auto    kubeconfig      ssh-keys
+00configmap.yaml.bak  credentials   creds.json.bak  jwt-keys  kubeconfig.bak
+gkuffel@cdistest_dev_admin:~/devplanetv1$ cd ..
+gkuffel@cdistest_dev_admin:~$ ls
+backup  cdis-manifest  cloud-automation  devplanetv1  Gen3Secrets
+gkuffel@cdistest_dev_admin:~$ cd cdis-manifest/
+gkuffel@cdistest_dev_admin:~/cdis-manifest$ ls
+abby.planx-pla.net           giangb.planx-pla.net       NOTICE
+andrew.planx-pla.net         gkuffel.planx-pla.net      pauline.planx-pla.net
+atharva.planx-pla.net        hara.planx-pla.net         qingya.planx-pla.net
+avantol.planx-pla.net        Jenkinsfile                raryav1.planx-pla.net
+dev.planx-pla.net            jiaqi.planx-pla.net        README.md
+diwv1.planx-pla.net          LICENSE                    reuben.planx-pla.net
+emalinowskiv1.planx-pla.net  marcelo.planx-pla.net      thanhnd.planx-pla.net
+fantix.planx-pla.net         mattgarvin1.planx-pla.net  zakir.planx-pla.net
+fauziv1.planx-pla.net        mingfei.planx-pla.net      zlchitty.planx-pla.net
+galaxy.planx-pla.net         mlukowski.planx-pla.net
+Gen3CICD.svg                 mpingram.planx-pla.net
+gkuffel@cdistest_dev_admin:~/cdis-manifest$ cd diwv1.planx-pla.net/
+gkuffel@cdistest_dev_admin:~/cdis-manifest/diwv1.planx-pla.net$ ls
+manifest.json
+gkuffel@cdistest_dev_admin:~/cdis-manifest/diwv1.planx-pla.net$ cd ..
+gkuffel@cdistest_dev_admin:~/cdis-manifest$ cd qa-ibd/
+-bash: cd: qa-ibd/: No such file or directory
+gkuffel@cdistest_dev_admin:~/cdis-manifest$ cd ..
+gkuffel@cdistest_dev_admin:~$ pwd
+/home/gkuffel
+gkuffel@cdistest_dev_admin:~$ cd qa-ibd/
+-bash: cd: qa-ibd/: No such file or directory
+gkuffel@cdistest_dev_admin:~$ cd ..
+gkuffel@cdistest_dev_admin:/home$ ls
+abby           galaxy                 jiaqi        qa-acct           qa-ibd             rarya
+andrew         gcp-dev-commons        kmhernan     qa-aids           qa-jcoin           raryav1
+atharva        gen3demo               loki         qa-anvil          qa-kidsfirst       reuben
+avantol        giangb                 loki-dev     qa-bloodpac       qa-mickey          seapasulli
+binamb         gkuffel                loki-qa      qa-brain          qa-microbiome      thanhnd
+devplanetv1    hara                   lost+found   qa-canine         qa-microbiome.bak  ubuntu
+diw            jenkins-blood          marcelo      qa-covid19        qa-nde             zakir
+diwv1          jenkins-brain          mattgarvin1  qa-dcf            qa-niaid           zlchitty
+emalinowski    jenkins-dcp            mingfei      qa-dcfdemo        qaplanetv1
+emalinowskiv1  jenkins-genomel        mlukowski    qa-dcp            qaplanetv2
+fantix         jenkins-innovationday  mpingram     qa-dcp-stageprod  qa-release
+fauzi          jenkins-niaid          nish         qa-flu            qa-tb
+fauziv1        jenkins-perf           pauline      qa-flu.bak        qa-test1
+gkuffel@cdistest_dev_admin:/home$ cd qa-covid19/
+gkuffel@cdistest_dev_admin:/home/qa-covid19$ ls
+appcreds.json  backup  cdis-manifest  cloud-automation  Gen3Secrets
+gkuffel@cdistest_dev_admin:/home/qa-covid19$ cd cdis-manifest/
+gkuffel@cdistest_dev_admin:/home/qa-covid19/cdis-manifest$ ls
+Gen3CICD.svg                   qa-aids.planx-pla.net      qa-jcoin.planx-pla.net
+jenkins-blood.planx-pla.net    qa-anvil.planx-pla.net     qa-kidsfirst.planx-pla.net
+jenkins-brain.planx-pla.net    qa-bloodpac.planx-pla.net  qa-mickey.planx-pla.net
+jenkins-dcp.planx-pla.net      qa-brain.planx-pla.net     qa-microbiome.planx-pla.net
+Jenkinsfile                    qa-canine.planx-pla.net    qa-nde.planx-pla.net
+jenkins-genomel.planx-pla.net  qa-covid19.planx-pla.net   qa-niaid.planx-pla.net
+jenkins-niaid.planx-pla.net    qa-dcfdemo.planx-pla.net   qaplanetv2.planx-pla.net
+jenkins-perf.planx-pla.net     qa-dcf.planx-pla.net       qa.planx-pla.net
+LICENSE                        qa-dcp.datastage.io        qa-tb.planx-pla.net
+NOTICE                         qa-dcp.planx-pla.net       qa-test1.planx-pla.net
+pull_request_template.md       qa-flu.planx-pla.net       README.md
+qa-acct.planx-pla.net          qa-ibd.planx-pla.net
+gkuffel@cdistest_dev_admin:/home/qa-covid19/cdis-manifest$ pwd
+/home/qa-covid19/cdis-manifest
+gkuffel@cdistest_dev_admin:/home/qa-covid19/cdis-manifest$ ls
+Gen3CICD.svg                   qa-aids.planx-pla.net      qa-jcoin.planx-pla.net
+jenkins-blood.planx-pla.net    qa-anvil.planx-pla.net     qa-kidsfirst.planx-pla.net
+jenkins-brain.planx-pla.net    qa-bloodpac.planx-pla.net  qa-mickey.planx-pla.net
+jenkins-dcp.planx-pla.net      qa-brain.planx-pla.net     qa-microbiome.planx-pla.net
+Jenkinsfile                    qa-canine.planx-pla.net    qa-nde.planx-pla.net
+jenkins-genomel.planx-pla.net  qa-covid19.planx-pla.net   qa-niaid.planx-pla.net
+jenkins-niaid.planx-pla.net    qa-dcfdemo.planx-pla.net   qaplanetv2.planx-pla.net
+jenkins-perf.planx-pla.net     qa-dcf.planx-pla.net       qa.planx-pla.net
+LICENSE                        qa-dcp.datastage.io        qa-tb.planx-pla.net
+NOTICE                         qa-dcp.planx-pla.net       qa-test1.planx-pla.net
+pull_request_template.md       qa-flu.planx-pla.net       README.md
+qa-acct.planx-pla.net          qa-ibd.planx-pla.net
+gkuffel@cdistest_dev_admin:/home/qa-covid19/cdis-manifest$ cd ..
+gkuffel@cdistest_dev_admin:/home/qa-covid19$ ls
+appcreds.json  backup  cdis-manifest  cloud-automation  Gen3Secrets
+gkuffel@cdistest_dev_admin:/home/qa-covid19$ cd cdis-manifest/
+gkuffel@cdistest_dev_admin:/home/qa-covid19/cdis-manifest$ ls
+Gen3CICD.svg                   qa-aids.planx-pla.net      qa-jcoin.planx-pla.net
+jenkins-blood.planx-pla.net    qa-anvil.planx-pla.net     qa-kidsfirst.planx-pla.net
+jenkins-brain.planx-pla.net    qa-bloodpac.planx-pla.net  qa-mickey.planx-pla.net
+jenkins-dcp.planx-pla.net      qa-brain.planx-pla.net     qa-microbiome.planx-pla.net
+Jenkinsfile                    qa-canine.planx-pla.net    qa-nde.planx-pla.net
+jenkins-genomel.planx-pla.net  qa-covid19.planx-pla.net   qa-niaid.planx-pla.net
+jenkins-niaid.planx-pla.net    qa-dcfdemo.planx-pla.net   qaplanetv2.planx-pla.net
+jenkins-perf.planx-pla.net     qa-dcf.planx-pla.net       qa.planx-pla.net
+LICENSE                        qa-dcp.datastage.io        qa-tb.planx-pla.net
+NOTICE                         qa-dcp.planx-pla.net       qa-test1.planx-pla.net
+pull_request_template.md       qa-flu.planx-pla.net       README.md
+qa-acct.planx-pla.net          qa-ibd.planx-pla.net
+gkuffel@cdistest_dev_admin:/home/qa-covid19/cdis-manifest$ cd ..
+gkuffel@cdistest_dev_admin:/home/qa-covid19$ cd ..
+gkuffel@cdistest_dev_admin:/home$ cd ..
+gkuffel@cdistest_dev_admin:/$ ls
+bin   etc         initrd.img.old  lost+found  opt   run   srv  usr      vmlinuz.old
+boot  home        lib             media       proc  sbin  sys  var
+dev   initrd.img  lib64           mnt         root  snap  tmp  vmlinuz
+gkuffel@cdistest_dev_admin:/$ cd ..
+gkuffel@cdistest_dev_admin:/$ cd
+gkuffel@cdistest_dev_admin:~$ ls
+backup  cdis-manifest  cloud-automation  devplanetv1  Gen3Secrets
+gkuffel@cdistest_dev_admin:~$ cd ..
+gkuffel@cdistest_dev_admin:/home$ ls
+abby           galaxy                 jiaqi        qa-acct           qa-ibd             rarya
+andrew         gcp-dev-commons        kmhernan     qa-aids           qa-jcoin           raryav1
+atharva        gen3demo               loki         qa-anvil          qa-kidsfirst       reuben
+avantol        giangb                 loki-dev     qa-bloodpac       qa-mickey          seapasulli
+binamb         gkuffel                loki-qa      qa-brain          qa-microbiome      thanhnd
+devplanetv1    hara                   lost+found   qa-canine         qa-microbiome.bak  ubuntu
+diw            jenkins-blood          marcelo      qa-covid19        qa-nde             zakir
+diwv1          jenkins-brain          mattgarvin1  qa-dcf            qa-niaid           zlchitty
+emalinowski    jenkins-dcp            mingfei      qa-dcfdemo        qaplanetv1
+emalinowskiv1  jenkins-genomel        mlukowski    qa-dcp            qaplanetv2
+fantix         jenkins-innovationday  mpingram     qa-dcp-stageprod  qa-release
+fauzi          jenkins-niaid          nish         qa-flu            qa-tb
+fauziv1        jenkins-perf           pauline      qa-flu.bak        qa-test1
+gkuffel@cdistest_dev_admin:/home$ exit
+logout
+Connection to 10.128.7.28 closed.
+(base) MacBook-Pro-3:~ ginakuffel$ ssh qa-covid19@10.128.7.28
+Enter passphrase for key '/Users/ginakuffel/.ssh/id_rsa': 
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.4.0-1102-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ * Kubernetes 1.18 GA is now available! See https://microk8s.io for docs or
+   install it with:
+
+     sudo snap install microk8s --channel=1.18 --classic
+
+ * Multipass 1.1 adds proxy support for developers behind enterprise
+   firewalls. Rapid prototyping for cloud operations just got easier.
+
+     https://multipass.run/
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+11 packages can be updated.
+7 updates are security updates.
+
+New release '18.04.4 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Wed Apr  1 15:22:27 2020 from 10.128.5.187
+INFO: refreshing aws access token cache
+qa-covid19@cdistest_dev_admin:~$ ls
+appcreds.json  backup  cdis-manifest  cloud-automation  Gen3Secrets
+qa-covid19@cdistest_dev_admin:~$ cd cdis-manifest/
+qa-covid19@cdistest_dev_admin:~/cdis-manifest$ ls
+Gen3CICD.svg                   qa-aids.planx-pla.net      qa-jcoin.planx-pla.net
+jenkins-blood.planx-pla.net    qa-anvil.planx-pla.net     qa-kidsfirst.planx-pla.net
+jenkins-brain.planx-pla.net    qa-bloodpac.planx-pla.net  qa-mickey.planx-pla.net
+jenkins-dcp.planx-pla.net      qa-brain.planx-pla.net     qa-microbiome.planx-pla.net
+Jenkinsfile                    qa-canine.planx-pla.net    qa-nde.planx-pla.net
+jenkins-genomel.planx-pla.net  qa-covid19.planx-pla.net   qa-niaid.planx-pla.net
+jenkins-niaid.planx-pla.net    qa-dcfdemo.planx-pla.net   qaplanetv2.planx-pla.net
+jenkins-perf.planx-pla.net     qa-dcf.planx-pla.net       qa.planx-pla.net
+LICENSE                        qa-dcp.datastage.io        qa-tb.planx-pla.net
+NOTICE                         qa-dcp.planx-pla.net       qa-test1.planx-pla.net
+pull_request_template.md       qa-flu.planx-pla.net       README.md
+qa-acct.planx-pla.net          qa-ibd.planx-pla.net
+qa-covid19@cdistest_dev_admin:~/cdis-manifest$ cd qa-covid19.planx-pla.net/
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net$ ls
+dashboard  manifest.json  portal
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net$ cd dashboard/
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard$ ls
+Public
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard$ cd Public/
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ ls
+index.html  main.css  sponsors-logo
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ nano index.html 
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ gen3 dashboard gitops-sync
+INFO: 19:15:49 - git fetch branch master in /home/qa-covid19/cdis-manifest
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From https://github.com/uc-cdis/gitops-qa
+ * [new branch]      svburke-patch-1 -> origin/svburke-patch-1
+Your configuration specifies to merge with the ref 'refs/heads/chore/covid19_dashboard'
+from the remote, but no such ref was fetched.
+error: Your local changes to the following files would be overwritten by checkout:
+	qa-covid19.planx-pla.net/dashboard/Public/index.html
+	qa-covid19.planx-pla.net/manifest.json
+Please, commit your changes or stash them before you can switch branches.
+Aborting
+Your configuration specifies to merge with the ref 'refs/heads/chore/covid19_dashboard'
+from the remote, but no such ref was fetched.
+On branch chore/covid19_dashboard
+Your branch is up-to-date with 'origin/chore/covid19_dashboard'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   qa-covid19.planx-pla.net/dashboard/Public/index.html
+	modified:   qa-covid19.planx-pla.net/manifest.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+INFO: 19:15:52 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/index.html s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/index.html 
+upload: ./index.html to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/index.html
+INFO: 19:15:54 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/main.css s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css 
+upload: ./main.css to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css
+INFO: 19:15:56 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/sponsors-logo s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo --recursive
+upload: sponsors-logo/OCC-data.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/OCC-data.png
+upload: sponsors-logo/gen3.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/gen3.png
+upload: sponsors-logo/awswhite.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/awswhite.png
+upload: sponsors-logo/logo_bioteam_1000px.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/logo_bioteam_1000px.png
+upload: sponsors-logo/gitops-logo.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/gitops-logo.png
+upload: sponsors-logo/AWS_logo_RGB.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/AWS_logo_RGB.png
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ git status
+On branch chore/covid19_dashboard
+Your branch is up-to-date with 'origin/chore/covid19_dashboard'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+	modified:   ../../manifest.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ git add -A
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ git status
+On branch chore/covid19_dashboard
+Your branch is up-to-date with 'origin/chore/covid19_dashboard'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   index.html
+	modified:   ../../manifest.json
+
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ git commit -m "Changed header"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <qa-covid19@cdistest_dev_admin.(none)>) not allowed
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ ls
+index.html  main.css  sponsors-logo
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ nano index.html 
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ git branch
+* chore/covid19_dashboard
+  master
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ ls
+index.html  main.css  sponsors-logo
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ nano index.html 
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ nano main.css 
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ gen3 dashboard gitops-sync
+INFO: 19:38:57 - git fetch branch master in /home/qa-covid19/cdis-manifest
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From https://github.com/uc-cdis/gitops-qa
+ * [new branch]      COVID_DD_2.0.1 -> origin/COVID_DD_2.0.1
+Your configuration specifies to merge with the ref 'refs/heads/chore/covid19_dashboard'
+from the remote, but no such ref was fetched.
+error: Your local changes to the following files would be overwritten by checkout:
+	qa-covid19.planx-pla.net/dashboard/Public/index.html
+	qa-covid19.planx-pla.net/manifest.json
+Please, commit your changes or stash them before you can switch branches.
+error: Your local changes to the following files would be overwritten by checkout:
+	qa-covid19.planx-pla.net/dashboard/Public/main.css
+Please, commit your changes or stash them before you can switch branches.
+Aborting
+Your configuration specifies to merge with the ref 'refs/heads/chore/covid19_dashboard'
+from the remote, but no such ref was fetched.
+On branch chore/covid19_dashboard
+Your branch is up-to-date with 'origin/chore/covid19_dashboard'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   qa-covid19.planx-pla.net/dashboard/Public/index.html
+	modified:   qa-covid19.planx-pla.net/manifest.json
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   qa-covid19.planx-pla.net/dashboard/Public/main.css
+
+INFO: 19:39:01 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/index.html s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/index.html 
+upload: ./index.html to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/index.html
+INFO: 19:39:02 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/main.css s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css 
+upload: ./main.css to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css
+INFO: 19:39:04 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/sponsors-logo s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo --recursive
+upload: sponsors-logo/logo_bioteam_1000px.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/logo_bioteam_1000px.png
+upload: sponsors-logo/gen3.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/gen3.png
+upload: sponsors-logo/AWS_logo_RGB.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/AWS_logo_RGB.png
+upload: sponsors-logo/awswhite.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/awswhite.png
+upload: sponsors-logo/OCC-data.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/OCC-data.png
+upload: sponsors-logo/gitops-logo.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/gitops-logo.png
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ ls
+index.html  main.css  sponsors-logo
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ nano index.html 
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ nano main.css 
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ gen3 dashboard gitops-sync
+INFO: 19:42:03 - git fetch branch master in /home/qa-covid19/cdis-manifest
+Your configuration specifies to merge with the ref 'refs/heads/chore/covid19_dashboard'
+from the remote, but no such ref was fetched.
+error: Your local changes to the following files would be overwritten by checkout:
+	qa-covid19.planx-pla.net/dashboard/Public/index.html
+	qa-covid19.planx-pla.net/manifest.json
+Please, commit your changes or stash them before you can switch branches.
+error: Your local changes to the following files would be overwritten by checkout:
+	qa-covid19.planx-pla.net/dashboard/Public/main.css
+Please, commit your changes or stash them before you can switch branches.
+Aborting
+Your configuration specifies to merge with the ref 'refs/heads/chore/covid19_dashboard'
+from the remote, but no such ref was fetched.
+On branch chore/covid19_dashboard
+Your branch is up-to-date with 'origin/chore/covid19_dashboard'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   qa-covid19.planx-pla.net/dashboard/Public/index.html
+	modified:   qa-covid19.planx-pla.net/manifest.json
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   qa-covid19.planx-pla.net/dashboard/Public/main.css
+
+INFO: refreshing aws access token cache
+INFO: 19:42:07 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/index.html s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/index.html 
+upload: ./index.html to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/index.html
+INFO: 19:42:09 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/main.css s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css 
+upload: ./main.css to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css
+INFO: 19:42:10 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/sponsors-logo s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo --recursive
+upload: sponsors-logo/logo_bioteam_1000px.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/logo_bioteam_1000px.png
+upload: sponsors-logo/awswhite.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/awswhite.png
+upload: sponsors-logo/AWS_logo_RGB.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/AWS_logo_RGB.png
+upload: sponsors-logo/gitops-logo.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/gitops-logo.png
+upload: sponsors-logo/OCC-data.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/OCC-data.png
+upload: sponsors-logo/gen3.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/gen3.png
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ nano main.css 
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ gen3 dashboard gitops-sync
+INFO: 19:43:09 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/index.html s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/index.html 
+upload: ./index.html to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/index.html
+INFO: 19:43:11 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/main.css s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css 
+upload: ./main.css to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css
+INFO: 19:43:13 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/sponsors-logo s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo --recursive
+upload: sponsors-logo/OCC-data.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/OCC-data.png
+upload: sponsors-logo/gen3.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/gen3.png
+upload: sponsors-logo/awswhite.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/awswhite.png
+upload: sponsors-logo/logo_bioteam_1000px.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/logo_bioteam_1000px.png
+upload: sponsors-logo/AWS_logo_RGB.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/AWS_logo_RGB.png
+upload: sponsors-logo/gitops-logo.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/gitops-logo.png
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ nano index.html 
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ ls
+index.html  main.css  sponsors-logo
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ nano main.css 
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ nano index.html 
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ nano main.css 
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ gen3 dashboard gitops-sync
+INFO: 20:17:36 - git fetch branch master in /home/qa-covid19/cdis-manifest
+Your configuration specifies to merge with the ref 'refs/heads/chore/covid19_dashboard'
+from the remote, but no such ref was fetched.
+error: Your local changes to the following files would be overwritten by checkout:
+	qa-covid19.planx-pla.net/dashboard/Public/index.html
+	qa-covid19.planx-pla.net/manifest.json
+Please, commit your changes or stash them before you can switch branches.
+error: Your local changes to the following files would be overwritten by checkout:
+	qa-covid19.planx-pla.net/dashboard/Public/main.css
+Please, commit your changes or stash them before you can switch branches.
+Aborting
+Your configuration specifies to merge with the ref 'refs/heads/chore/covid19_dashboard'
+from the remote, but no such ref was fetched.
+On branch chore/covid19_dashboard
+Your branch is up-to-date with 'origin/chore/covid19_dashboard'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   qa-covid19.planx-pla.net/dashboard/Public/index.html
+	modified:   qa-covid19.planx-pla.net/manifest.json
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   qa-covid19.planx-pla.net/dashboard/Public/main.css
+
+INFO: 20:17:39 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/index.html s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/index.html 
+upload: ./index.html to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/index.html
+INFO: 20:17:41 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/main.css s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css 
+upload: ./main.css to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css
+INFO: 20:17:43 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/sponsors-logo s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo --recursive
+upload: sponsors-logo/gen3.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/gen3.png
+upload: sponsors-logo/AWS_logo_RGB.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/AWS_logo_RGB.png
+upload: sponsors-logo/OCC-data.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/OCC-data.png
+upload: sponsors-logo/logo_bioteam_1000px.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/logo_bioteam_1000px.png
+upload: sponsors-logo/awswhite.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/awswhite.png
+upload: sponsors-logo/gitops-logo.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/gitops-logo.png
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ ls
+index.html  main.css  sponsors-logo
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ nano main.css 
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ nano index.html 
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ nano main.css 
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ nano index.html 
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ nano index.html 
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ nano main.css 
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ nano index.html 
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ nano main.css 
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ gen3 dashboard gitops-sync
+INFO: 20:26:08 - git fetch branch master in /home/qa-covid19/cdis-manifest
+Your configuration specifies to merge with the ref 'refs/heads/chore/covid19_dashboard'
+from the remote, but no such ref was fetched.
+error: Your local changes to the following files would be overwritten by checkout:
+	qa-covid19.planx-pla.net/dashboard/Public/index.html
+	qa-covid19.planx-pla.net/manifest.json
+Please, commit your changes or stash them before you can switch branches.
+error: Your local changes to the following files would be overwritten by checkout:
+	qa-covid19.planx-pla.net/dashboard/Public/main.css
+Please, commit your changes or stash them before you can switch branches.
+Aborting
+Your configuration specifies to merge with the ref 'refs/heads/chore/covid19_dashboard'
+from the remote, but no such ref was fetched.
+On branch chore/covid19_dashboard
+Your branch is up-to-date with 'origin/chore/covid19_dashboard'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   qa-covid19.planx-pla.net/dashboard/Public/index.html
+	modified:   qa-covid19.planx-pla.net/manifest.json
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   qa-covid19.planx-pla.net/dashboard/Public/main.css
+
+INFO: 20:26:11 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/index.html s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/index.html 
+upload: ./index.html to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/index.html
+INFO: 20:26:13 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/main.css s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css 
+upload: ./main.css to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css
+INFO: 20:26:15 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/sponsors-logo s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo --recursive
+upload: sponsors-logo/gen3.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/gen3.png
+upload: sponsors-logo/AWS_logo_RGB.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/AWS_logo_RGB.png
+upload: sponsors-logo/awswhite.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/awswhite.png
+upload: sponsors-logo/OCC-data.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/OCC-data.png
+upload: sponsors-logo/logo_bioteam_1000px.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/logo_bioteam_1000px.png
+upload: sponsors-logo/gitops-logo.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/gitops-logo.png
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ nano main.css 
+qa-covid19@cdistest_dev_admin:~$ ls
+appcreds.json  backup  cdis-manifest  cloud-automation  Gen3Secrets
+qa-covid19@cdistest_dev_admin:~$ cd cdis-manifest/
+qa-covid19@cdistest_dev_admin:~/cdis-manifest$ ls
+Gen3CICD.svg                   NOTICE                     qa-dcfdemo.planx-pla.net    qa-microbiome.planx-pla.net
+jenkins-blood.planx-pla.net    pull_request_template.md   qa-dcf.planx-pla.net        qa-nde.planx-pla.net
+jenkins-brain.planx-pla.net    qa-acct.planx-pla.net      qa-dcp.datastage.io         qa-niaid.planx-pla.net
+jenkins-dcp.planx-pla.net      qa-aids.planx-pla.net      qa-dcp.planx-pla.net        qaplanetv2.planx-pla.net
+Jenkinsfile                    qa-anvil.planx-pla.net     qa-flu.planx-pla.net        qa.planx-pla.net
+jenkins-genomel.planx-pla.net  qa-bloodpac.planx-pla.net  qa-ibd.planx-pla.net        qa-tb.planx-pla.net
+jenkins-niaid.planx-pla.net    qa-brain.planx-pla.net     qa-jcoin.planx-pla.net      qa-test1.planx-pla.net
+jenkins-perf.planx-pla.net     qa-canine.planx-pla.net    qa-kidsfirst.planx-pla.net  README.md
+LICENSE                        qa-covid19.planx-pla.net   qa-mickey.planx-pla.net
+qa-covid19@cdistest_dev_admin:~/cdis-manifest$ cd qa-covid19.planx-pla.net/
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net$ ls
+dashboard  manifest.json  portal
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net$ cd dashboard/
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard$ ls
+Public
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard$ cd Public/
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ ls
+index.html  main.css  main.css.save  sponsors-logo
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ nano main.css
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ gen3 dashboard gitops-sync
+INFO: 21:09:25 - git fetch branch master in /home/qa-covid19/cdis-manifest
+Your configuration specifies to merge with the ref 'refs/heads/chore/covid19_dashboard'
+from the remote, but no such ref was fetched.
+error: Your local changes to the following files would be overwritten by checkout:
+	qa-covid19.planx-pla.net/dashboard/Public/index.html
+	qa-covid19.planx-pla.net/manifest.json
+Please, commit your changes or stash them before you can switch branches.
+error: Your local changes to the following files would be overwritten by checkout:
+	qa-covid19.planx-pla.net/dashboard/Public/main.css
+Please, commit your changes or stash them before you can switch branches.
+Aborting
+Your configuration specifies to merge with the ref 'refs/heads/chore/covid19_dashboard'
+from the remote, but no such ref was fetched.
+On branch chore/covid19_dashboard
+Your branch is up-to-date with 'origin/chore/covid19_dashboard'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   qa-covid19.planx-pla.net/dashboard/Public/index.html
+	modified:   qa-covid19.planx-pla.net/manifest.json
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   qa-covid19.planx-pla.net/dashboard/Public/main.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	qa-covid19.planx-pla.net/dashboard/Public/main.css.save
+
+INFO: 21:09:29 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/index.html s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/index.html 
+upload: ./index.html to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/index.html
+INFO: 21:09:30 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/main.css s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css 
+upload: ./main.css to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css
+INFO: 21:09:32 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/main.css.save s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css.save 
+upload: ./main.css.save to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css.save
+INFO: 21:09:34 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/sponsors-logo s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo --recursive
+upload: sponsors-logo/awswhite.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/awswhite.png
+upload: sponsors-logo/AWS_logo_RGB.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/AWS_logo_RGB.png
+upload: sponsors-logo/gen3.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/gen3.png
+upload: sponsors-logo/gitops-logo.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/gitops-logo.png
+upload: sponsors-logo/logo_bioteam_1000px.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/logo_bioteam_1000px.png
+upload: sponsors-logo/OCC-data.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/OCC-data.png
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ nano main.css
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ gen3 dashboard gitops-sync
+INFO: 21:30:55 - git fetch branch master in /home/qa-covid19/cdis-manifest
+Your configuration specifies to merge with the ref 'refs/heads/chore/covid19_dashboard'
+from the remote, but no such ref was fetched.
+error: Your local changes to the following files would be overwritten by checkout:
+	qa-covid19.planx-pla.net/dashboard/Public/index.html
+	qa-covid19.planx-pla.net/manifest.json
+Please, commit your changes or stash them before you can switch branches.
+error: Your local changes to the following files would be overwritten by checkout:
+	qa-covid19.planx-pla.net/dashboard/Public/main.css
+Please, commit your changes or stash them before you can switch branches.
+Aborting
+Your configuration specifies to merge with the ref 'refs/heads/chore/covid19_dashboard'
+from the remote, but no such ref was fetched.
+On branch chore/covid19_dashboard
+Your branch is up-to-date with 'origin/chore/covid19_dashboard'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   qa-covid19.planx-pla.net/dashboard/Public/index.html
+	modified:   qa-covid19.planx-pla.net/manifest.json
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   qa-covid19.planx-pla.net/dashboard/Public/main.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	qa-covid19.planx-pla.net/dashboard/Public/main.css.save
+
+INFO: 21:30:59 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/index.html s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/index.html 
+upload: ./index.html to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/index.html
+INFO: 21:31:00 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/main.css s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css 
+upload: ./main.css to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css
+INFO: 21:31:02 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/main.css.save s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css.save 
+upload: ./main.css.save to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css.save
+INFO: 21:31:04 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/sponsors-logo s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo --recursive
+upload: sponsors-logo/AWS_logo_RGB.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/AWS_logo_RGB.png
+upload: sponsors-logo/awswhite.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/awswhite.png
+upload: sponsors-logo/OCC-data.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/OCC-data.png
+upload: sponsors-logo/logo_bioteam_1000px.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/logo_bioteam_1000px.png
+upload: sponsors-logo/gen3.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/gen3.png
+upload: sponsors-logo/gitops-logo.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/gitops-logo.png
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ gen3 dashboard gitops-sync
+INFO: 21:31:27 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/index.html s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/index.html 
+upload: ./index.html to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/index.html
+INFO: 21:31:28 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/main.css s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css 
+upload: ./main.css to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css
+INFO: 21:31:30 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/main.css.save s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css.save 
+upload: ./main.css.save to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/main.css.save
+INFO: 21:31:32 - aws s3 cp /home/qa-covid19/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public/sponsors-logo s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo --recursive
+upload: sponsors-logo/gen3.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/gen3.png
+upload: sponsors-logo/logo_bioteam_1000px.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/logo_bioteam_1000px.png
+upload: sponsors-logo/gitops-logo.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/gitops-logo.png
+upload: sponsors-logo/awswhite.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/awswhite.png
+upload: sponsors-logo/AWS_logo_RGB.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/AWS_logo_RGB.png
+upload: sponsors-logo/OCC-data.png to s3://dashboard-707767160287-qa-covid19-gen3/qa-covid19.planx-pla.net/Public/sponsors-logo/OCC-data.png
+qa-covid19@cdistest_dev_admin:~/cdis-manifest/qa-covid19.planx-pla.net/dashboard/Public$ nano main.css
+
+  GNU nano 2.5.3                              File: main.css                                                                  
+
 #header {
   background-color: #ffffff;
   border-bottom: 1px solid #ddd;
@@ -19,15 +670,38 @@
   justify-content: center;
 }
 
+
+.container {
+    height: 300px;
+    text-align: center;  /* align the inline(-block) elements horizontally */
+    font: 0/0 a;         /* remove the gap between inline(-block) elements */
+}
+
+.container:before {    /* create a full-height inline block pseudo=element */
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+    height: 100%;
+}
+
+#element {
+  display: inline-block;
+  vertical-align: middle;  /* vertical alignment of the inline element */
+  font: 16px/1 Arial sans-serif;        /* <-- reset the font property */
+}
+
+
 #container {
-  min-height: 100%;
-  background-color: #eeeeee;
+display: wrap;
+min-height: 100%;
+background-color: #eeeeee;
 }
 
 .image-wrapper{
-  height: 150px;
-  justify-content: space-around;
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 50px;
+height: 150px;
+justify-content: space-around;
+padding-right: 15px;
+padding-left: 15px;
+padding-top: 50px;
 }
+
