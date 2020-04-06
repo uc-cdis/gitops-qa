@@ -23,7 +23,7 @@
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:integration202004",
     "spark": "quay.io/cdis/gen3-spark:integration202004",
-    "tube": "quay.io/cdis/tube:2020.03",
+    "tube": "quay.io/cdis/tube:integration202004",
     "guppy": "quay.io/cdis/guppy:integration202004",
     "wts": "quay.io/cdis/workspace-token-service:integration202004"
   },
