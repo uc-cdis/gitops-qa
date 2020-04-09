@@ -148,6 +148,10 @@
       {
         "index": "qa-covid19_file",
         "type": "file"
+      },
+      {
+        "index": "qa-covid19_subject",
+        "type": "subject"
       }
     ],
     "config_index": "qa-covid19_array-config",
