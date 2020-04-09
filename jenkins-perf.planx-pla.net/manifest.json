@@ -84,15 +84,15 @@
   "guppy": {
     "indices": [
       {
-        "index": "qa-dcp_etl_49",
-        "type": "case"
+        "index": "jenkins_subject_alias",
+        "type": "subject"
       },
       {
-        "index": "qa-dcp_file_23",
+        "index": "jenkins_file_alias",
         "type": "file"
       }
     ],
-    "config_index": "qa-dcp_array-config",
+    "config_index": "jenkins_configs_alias",
     "auth_filter_field": "auth_resource_path"
   },
   "scaling": {
