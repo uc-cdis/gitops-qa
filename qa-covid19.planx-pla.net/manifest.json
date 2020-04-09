@@ -35,6 +35,7 @@
     "sync_from_dbgap": "False",
     "dispatcher_job_num": "10",
     "netpolicy": "on",
+    "public_datasets": true,
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml"
   },
   "hatchery": {
@@ -148,6 +149,10 @@
       {
         "index": "qa-covid19_file",
         "type": "file"
+      },
+      {
+        "index": "qa-covid19_subject",
+        "type": "subject"
       }
     ],
     "config_index": "qa-covid19_array-config",
