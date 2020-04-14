@@ -1,5 +1,5 @@
 mappings:
-  - name: qa-covid19
+  - name: covid19
     doc_type: location
     type: aggregator
     root: summary_location
@@ -16,30 +16,30 @@ mappings:
       - name: iso3
     aggregated_props:
       - name: confirmed
-        path: summary_report
+        path: summary_reports
         src: confirmed
         fn: list
       - name: deaths
-        path: summary_report
+        path: summary_reports
         src: deaths
         fn: list
       - name: recovered
-        path: summary_report
+        path: summary_reports
         src: recovered
         fn: list
       - name: negative
-        path: summary_report
+        path: summary_reports
         src: negative
         fn: list
       - name: testing
-        path: summary_report
+        path: summary_reports
         src: testing
         fn: list
       - name: date
-        path: summary_report
+        path: summary_reports
         src: date
         fn: list
-  - name: qa-covid19_subject
+  - name: covid19_subject
     doc_type: subject
     type: aggregator
     root: subject
@@ -59,7 +59,7 @@ mappings:
       - path: demographics
         props:
           - name: gender
-  - name: qa-covid19_file
+  - name: covid19_file
     doc_type: file
     type: collector
     root: None
