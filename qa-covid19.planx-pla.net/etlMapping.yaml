@@ -1,5 +1,5 @@
 mappings:
-  - name: covid19
+  - name: qa-covid19
     doc_type: location
     type: aggregator
     root: summary_location
@@ -39,7 +39,7 @@ mappings:
         path: summary_reports
         src: date
         fn: list
-  - name: covid19_subject
+  - name: qa-covid19_subject
     doc_type: subject
     type: aggregator
     root: subject
@@ -59,7 +59,7 @@ mappings:
       - path: demographics
         props:
           - name: gender
-  - name: covid19_file
+  - name: qa-covid19_file
     doc_type: file
     type: collector
     root: None
