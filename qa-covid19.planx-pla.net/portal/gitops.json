@@ -154,11 +154,11 @@
         "chartType": "count",
         "title": "Projects"
       },
-      "country_region": {
+      "symptoms": {
         "chartType": "bar",
         "title": "Symptons"
       },
-      "province_state": {
+      "source": {
         "chartType": "pie",
         "title": "Source"
       }
