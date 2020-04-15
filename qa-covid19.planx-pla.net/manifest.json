@@ -14,7 +14,7 @@
     "pidgin": "quay.io/cdis/pidgin:2020.03",
     "revproxy": "quay.io/cdis/nginx:1.17.6-ctds-1.0.1",
     "sheepdog": "quay.io/cdis/sheepdog:4.0.0",
-    "portal": "quay.io/cdis/data-portal:covid19-1.4.1",
+    "portal": "quay.io/cdis/data-portal:covid19-1.8.0",
     "tube": "quay.io/cdis/tube:2020.03",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "spark": "quay.io/cdis/gen3-spark:2020.03",
@@ -29,7 +29,7 @@
     "environment": "qa-covid19",
     "hostname": "qa-covid19.planx-pla.net",
     "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
-    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/covid19-datadictionary/2.2/schema.json",
+    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/covid19-datadictionary/2.3.1/schema.json",
     "portal_app": "gitops",
     "kube_bucket": "kube-qaplanetv2-gen3",
     "logs_bucket": "logs-qaplanetv2-gen3",
@@ -39,50 +39,6 @@
     "public_datasets": true,
     "useryaml_s3path": "s3://cdis-gen3-users/qa-covid19/user.yaml"
   },
-  "hatchery": {
-    "user-namespace": "jupyter-pods",
-    "sub-dir": "/lw-workspace",
-    "user-volume-size": "10Gi",
-    "sidecar": {
-      "cpu-limit": "1.0",
-      "memory-limit": "256Mi",
-      "image": "quay.io/cdis/gen3fuse-sidecar:2020.03",
-      "env": {"NAMESPACE":"default", "HOSTNAME": "qa-covid19.planx-pla.net"},
-      "args": [],
-      "command": ["/bin/bash", "/sidecarDockerrun.sh"],
-      "lifecycle-pre-stop": ["su", "-c", "echo test", "-s", "/bin/sh", "root"]
-    },
-    "containers": [{
-      "target-port": 8787,
-      "cpu-limit": "1.0",
-      "memory-limit": "1024Mi",
-      "name": "R Studio",
-      "image": "quay.io/cdis/rstudio:master",
-      "env": {"DISABLE_AUTH": "true"},
-      "args": [],
-      "path-rewrite": "/",
-      "use-tls": "false",
-      "ready-probe": "/",
-      "user-volume-location": "/home/rstudio/pd",
-      "fs-gid": 100
-    },{
-      "target-port": 8888,
-      "cpu-limit": "1.0",
-      "memory-limit": "1024Mi",
-      "name": "Jupyter - Python/R",
-      "image": "quay.io/occ_data/jupyternotebook:1.7.2",
-      "env": {},
-      "args": ["--NotebookApp.base_url=/lw-workspace/proxy/","--NotebookApp.password=''","--NotebookApp.token=''"],
-      "command": ["start-notebook.sh"],
-      "path-rewrite": "/lw-workspace/proxy/",
-      "use-tls": "false",
-      "ready-probe": "/lw-workspace/proxy/",
-      "lifecycle-post-start": ["/bin/sh","-c","export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; ln -s $(pwd) /home/$IAM/pd/dockerHome; mkdir -p /home/$IAM/.jupyter/custom; echo \"define(['base/js/namespace'], function(Jupyter){Jupyter._target = '_self';})\" >/home/$IAM/.jupyter/custom/custom.js; ln -s /data /home/$IAM/pd/; true"],
-      "user-uid": 1000,
-      "fs-gid": 100,
-      "user-volume-location": "/home/jovyan/pd"
-    }]
-  },
   "canary": {
     "default": 0
   },
@@ -90,51 +46,7 @@
     "arborist": "true"
   },
   "arborist": {
-   "deployment_version": "2"
-  },
-  "scaling": {
-    "arborist": {
-      "strategy": "auto",
-      "min": 2,
-      "max": 4,
-      "targetCpu": 40
-    },
-    "portal": {
-      "strategy": "auto",
-      "min": 2,
-      "max": 4,
-      "targetCpu": 40
-    },
-    "fence": {
-      "strategy": "auto",
-      "min": 1,
-      "max": 10,
-      "targetCpu": 40
-    },
-    "indexd": {
-      "strategy": "auto",
-      "min": 4,
-      "max": 8,
-      "targetCpu": 40
-    },
-    "peregrine": {
-      "strategy": "auto",
-      "min": 2,
-      "max": 4,
-      "targetCpu": 40
-    },
-    "revproxy": {
-      "strategy": "auto",
-      "min": 2,
-      "max": 4,
-      "targetCpu": 40
-    },
-    "sheepdog": {
-      "strategy": "auto",
-      "min": 2,
-      "max": 4,
-      "targetCpu": 40
-    }
+    "deployment_version": "2"
   },
   "ssjdispatcher": {
     "job_images": {
