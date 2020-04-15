@@ -105,7 +105,10 @@
       "strategy": "auto"
     },
     "presigned-url-fence": {
-      "strategy": "auto"
+      "strategy": "auto",
+      "min": 3,
+      "max": 5,
+      "targetCpu": 40
     },
     "indexd": {
       "strategy": "auto"
