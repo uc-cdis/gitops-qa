@@ -139,3 +139,8 @@ body {
     text-decoration: underline;
     cursor: pointer;
 }
+
+ul, ol {
+    padding: 0;
+    margin-left: 1em;
+}
