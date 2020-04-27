@@ -140,13 +140,10 @@
         "title": "Source"
       }
     },
-    "fieldMapping" : [
-      { "field": "project_id", "name": "Dataset" }
-    ],
     "filters": {
       "tabs": [
         {
-          "title": "subject",
+          "title": "Subject",
           "fields":[
             "project_id",
             "symptoms",
@@ -179,6 +176,9 @@
     "guppyConfig": {
       "dataType": "subject",
       "nodeCountTitle": "Subjects",
+      "fieldMapping" : [
+        { "field": "project_id", "name": "Dataset" }
+      ],
       "manifestMapping": {
         "resourceIndexType": "file",
         "resourceIdField": "object_id",
