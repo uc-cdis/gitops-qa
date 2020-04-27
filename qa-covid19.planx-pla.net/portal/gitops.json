@@ -129,11 +129,11 @@
     "charts": {
       "project_id": {
         "chartType": "count",
-        "title": "Projects"
+        "title": "Datasets"
       },
       "symptoms": {
         "chartType": "bar",
-        "title": "Symptons"
+        "title": "Symptoms"
       },
       "source": {
         "chartType": "pie",
