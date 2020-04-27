@@ -154,7 +154,18 @@
             "recovered",
             "reporting_date",
             "source",
-            "age"
+            "age",
+            "age_decade",
+            "city",
+            "date_confirmation",
+            "date_death_or_discharge",
+            "date_onset_symptoms",
+            "disease",
+            "infection_case",
+            "province",
+            "global_num",
+            "contact_number",
+            "isolated"
           ]
         }
       ]
