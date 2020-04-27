@@ -131,15 +131,18 @@
         "chartType": "count",
         "title": "Projects"
       },
-      "country_region": {
+      "symptoms": {
         "chartType": "bar",
         "title": "Symptons"
       },
-      "province_state": {
+      "source": {
         "chartType": "pie",
         "title": "Source"
       }
     },
+    "fieldMapping" : [
+      { "field": "project_id", "name": "Dataset" }
+    ],
     "filters": {
       "tabs": [
         {
@@ -147,7 +150,6 @@
           "fields":[
             "project_id",
             "symptoms",
-            "country",
             "visiting_wuhan",
             "from_wuhan",
             "death",
@@ -155,17 +157,16 @@
             "reporting_date",
             "source",
             "age",
-            "age_decade",
-            "city",
-            "date_confirmation",
-            "date_death_or_discharge",
-            "date_onset_symptoms",
-            "disease",
             "infection_case",
-            "province",
-            "global_num",
-            "contact_number",
             "isolated"
+          ]
+        },
+        {
+          "title": "Origin",
+          "fields":[
+            "city",
+            "province",
+            "country"
           ]
         }
       ]
