@@ -211,7 +211,10 @@
       }
     ]
   },
-  "enableCovid19Dashboard": true,
+  "covid19DashboardConfig": {
+    "dataUrl": "https://static.planx-pla.net/",
+    "enableCharts": true
+  },
   "showArboristAuthzOnProfile": true,
   "showFenceAuthzOnProfile": false
 }
