@@ -127,13 +127,15 @@
   "analysisTools": [ ],
   "explorerConfig": [
     {
+      "tabTitle": "Datasets",
+      "charts": {},
       "filters": {
         "tabs": [
           {
-            "title": "Dataset",
+            "title": "Catalogue",
             "fields": [
-              "code",
-              "program_name"
+              "program_name",
+              "code"
             ]
           }
         ]
@@ -164,6 +166,7 @@
       }
     },
     {
+      "tabTitle": "Subjects",
       "charts": {
         "project_id": {
           "chartType": "count",
@@ -181,7 +184,7 @@
       "filters": {
         "tabs": [
           {
-            "title": "Subject",
+            "title": "Clinical",
             "fields": [
               "project_id",
               "symptoms",
@@ -197,7 +200,7 @@
             ]
           },
           {
-            "title": "Origin",
+            "title": "Demographic",
             "fields": [
               "city",
               "province",
