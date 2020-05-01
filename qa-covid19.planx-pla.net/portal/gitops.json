@@ -125,7 +125,8 @@
     "analysis": true
   },
   "analysisTools": [ ],
-  "dataExplorerConfig": {
+  "explorerConfig": [
+  {
     "charts": {
       "project_id": {
         "chartType": "count",
@@ -187,6 +188,7 @@
       }
     }
   },
+  ],
   "resourceBrowser": {
     "title": "COVID-19 Jupyter Notebooks",
     "public": true,

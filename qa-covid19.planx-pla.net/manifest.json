@@ -66,6 +66,10 @@
       {
         "index": "qa-covid19_subject",
         "type": "subject"
+      },
+      {
+        "index": "qa-covid19_dataset",
+        "type": "dataset"
       }
     ],
     "config_index": "qa-covid19_array-config",

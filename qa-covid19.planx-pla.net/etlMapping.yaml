@@ -84,3 +84,13 @@ mappings:
       - name: data_format
       - name: data_type
       - name: state
+  - name: qa-covid19_dataset
+    doc_type: dataset
+    type: aggregator
+    root: project
+    props:
+      - name: code
+      - name: name
+      - name: availability_mechanism
+    parent_props:
+      - path: programs[program_name:name]
