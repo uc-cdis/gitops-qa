@@ -127,6 +127,39 @@
   "analysisTools": [ ],
   "explorerConfig": [
     {
+      "filters": {
+        "tabs": [
+          {
+            "title": "Dataset",
+            "fields": [
+              "code",
+              "program_name"
+            ]
+          }
+        ]
+      },
+      "table": {
+        "enabled": true,
+        "fields": [
+          "name",
+          "data_description",
+          "code"
+        ]
+      },
+      "buttons": [
+      ],
+      "guppyConfig": {
+        "dataType": "dataset",
+        "nodeCountTitle": "Datasets",
+        "manifestMapping": {
+          "resourceIndexType": "file",
+          "resourceIdField": "object_id",
+          "referenceIdFieldInResourceIndex": "subject_id",
+          "referenceIdFieldInDataIndex": "node_id"
+        }
+      }
+    },
+    {
       "charts": {
         "project_id": {
           "chartType": "count",
@@ -145,7 +178,7 @@
         "tabs": [
           {
             "title": "Subject",
-            "fields":[
+            "fields": [
               "project_id",
               "symptoms",
               "visiting_wuhan",
@@ -161,7 +194,7 @@
           },
           {
             "title": "Origin",
-            "fields":[
+            "fields": [
               "city",
               "province",
               "country"
@@ -180,41 +213,6 @@
         "fieldMapping" : [
           { "field": "project_id", "name": "Dataset" }
         ],
-        "manifestMapping": {
-          "resourceIndexType": "file",
-          "resourceIdField": "object_id",
-          "referenceIdFieldInResourceIndex": "subject_id",
-          "referenceIdFieldInDataIndex": "node_id"
-        }
-      }
-    },
-    {
-      "charts": {
-        "project_id": {
-          "chartType": "count",
-          "title": "Datasets"
-        }
-      },
-      "filters": {
-        "tabs": [
-          {
-            "title": "Dataset",
-            "fields":[
-              "name",
-              "code",
-              "program_name"
-            ]
-          }
-        ]
-      },
-      "table": {
-        "enabled": true
-      },
-      "buttons": [
-      ],
-      "guppyConfig": {
-        "dataType": "dataset",
-        "nodeCountTitle": "Datasets",
         "manifestMapping": {
           "resourceIndexType": "file",
           "resourceIdField": "object_id",
