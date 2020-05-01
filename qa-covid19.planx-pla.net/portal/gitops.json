@@ -188,13 +188,10 @@
             "fields": [
               "project_id",
               "symptoms",
-              "visiting_wuhan",
-              "from_wuhan",
               "death",
               "recovered",
               "reporting_date",
               "source",
-              "age",
               "infection_case",
               "isolated"
             ]
@@ -202,9 +199,12 @@
           {
             "title": "Demographic",
             "fields": [
-              "city",
+              "country",
               "province",
-              "country"
+              "city",
+              "age",
+              "from_wuhan",
+              "visiting_wuhan"
             ]
           }
         ]
