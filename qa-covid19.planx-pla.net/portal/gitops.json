@@ -126,68 +126,103 @@
   },
   "analysisTools": [ ],
   "explorerConfig": [
-  {
-    "charts": {
-      "project_id": {
-        "chartType": "count",
-        "title": "Datasets"
+    {
+      "charts": {
+        "project_id": {
+          "chartType": "count",
+          "title": "Datasets"
+        },
+        "symptoms": {
+          "chartType": "bar",
+          "title": "Symptoms"
+        },
+        "source": {
+          "chartType": "pie",
+          "title": "Source"
+        }
       },
-      "symptoms": {
-        "chartType": "bar",
-        "title": "Symptoms"
+      "filters": {
+        "tabs": [
+          {
+            "title": "Subject",
+            "fields":[
+              "project_id",
+              "symptoms",
+              "visiting_wuhan",
+              "from_wuhan",
+              "death",
+              "recovered",
+              "reporting_date",
+              "source",
+              "age",
+              "infection_case",
+              "isolated"
+            ]
+          },
+          {
+            "title": "Origin",
+            "fields":[
+              "city",
+              "province",
+              "country"
+            ]
+          }
+        ]
       },
-      "source": {
-        "chartType": "pie",
-        "title": "Source"
+      "table": {
+        "enabled": true
+      },
+      "buttons": [
+      ],
+      "guppyConfig": {
+        "dataType": "subject",
+        "nodeCountTitle": "Subjects",
+        "fieldMapping" : [
+          { "field": "project_id", "name": "Dataset" }
+        ],
+        "manifestMapping": {
+          "resourceIndexType": "file",
+          "resourceIdField": "object_id",
+          "referenceIdFieldInResourceIndex": "subject_id",
+          "referenceIdFieldInDataIndex": "node_id"
+        }
       }
     },
-    "filters": {
-      "tabs": [
-        {
-          "title": "Subject",
-          "fields":[
-            "project_id",
-            "symptoms",
-            "visiting_wuhan",
-            "from_wuhan",
-            "death",
-            "recovered",
-            "reporting_date",
-            "source",
-            "age",
-            "infection_case",
-            "isolated"
-          ]
-        },
-        {
-          "title": "Origin",
-          "fields":[
-            "city",
-            "province",
-            "country"
-          ]
+    {
+      "charts": {
+        "project_id": {
+          "chartType": "count",
+          "title": "Datasets"
         }
-      ]
-    },
-    "table": {
-      "enabled": true
-    },
-    "buttons": [
-    ],
-    "guppyConfig": {
-      "dataType": "subject",
-      "nodeCountTitle": "Subjects",
-      "fieldMapping" : [
-        { "field": "project_id", "name": "Dataset" }
+      },
+      "filters": {
+        "tabs": [
+          {
+            "title": "Dataset",
+            "fields":[
+              "name",
+              "code",
+              "program_name"
+            ]
+          }
+        ]
+      },
+      "table": {
+        "enabled": true
+      },
+      "buttons": [
       ],
-      "manifestMapping": {
-        "resourceIndexType": "file",
-        "resourceIdField": "object_id",
-        "referenceIdFieldInResourceIndex": "subject_id",
-        "referenceIdFieldInDataIndex": "node_id"
+      "guppyConfig": {
+        "dataType": "dataset",
+        "nodeCountTitle": "Datasets",
+        "manifestMapping": {
+          "resourceIndexType": "file",
+          "resourceIdField": "object_id",
+          "referenceIdFieldInResourceIndex": "subject_id",
+          "referenceIdFieldInDataIndex": "node_id"
+        }
       }
     }
-  },
   ],
   "resourceBrowser": {
     "title": "COVID-19 Jupyter Notebooks",
