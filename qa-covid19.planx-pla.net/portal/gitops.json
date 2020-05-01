@@ -128,7 +128,6 @@
   "explorerConfig": [
     {
       "tabTitle": "Datasets",
-      "charts": {},
       "filters": {
         "tabs": [
           {
@@ -148,8 +147,7 @@
           "code"
         ]
       },
-      "buttons": [
-      ],
+      "buttons": [],
       "guppyConfig": {
         "dataType": "dataset",
         "nodeCountTitle": "Datasets",
@@ -197,7 +195,7 @@
             ]
           },
           {
-            "title": "Demographic",
+            "title": "Demographics",
             "fields": [
               "country",
               "province",
@@ -212,8 +210,7 @@
       "table": {
         "enabled": true
       },
-      "buttons": [
-      ],
+      "buttons": [],
       "guppyConfig": {
         "dataType": "subject",
         "nodeCountTitle": "Subjects",
