@@ -44,7 +44,7 @@
     {
       "name": "manifest-indexing",
       "action": "index-object-manifest",
-      "serviceAccountName": "jobs-${hostname//./-}",
+      "serviceAccountName": "jobs-jenkins-blood-planx-pla-net",
       "container": {
         "name": "job-task",
         "image": "quay.io/cdis/manifest-indexing:master",
@@ -84,7 +84,7 @@
     {
       "name": "indexd-manifest",
       "action": "download-indexd-manifest",
-      "serviceAccountName": "jobs-${hostname//./-}",
+      "serviceAccountName": "jobs-jenkins-blood-planx-pla-net",
       "container": {
         "name": "job-task",
         "image": "quay.io/cdis/download-indexd-manifest:master",
