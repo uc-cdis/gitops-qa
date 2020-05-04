@@ -43,6 +43,7 @@
     {
       "name": "manifest-indexing",
       "action": "index-object-manifest",
+      "serviceAccountName": "jobs-${hostname//./-}",
       "container": {
         "name": "job-task",
         "image": "quay.io/cdis/manifest-indexing:master",
@@ -60,10 +61,10 @@
         ],
         "volumeMounts": [
           {
-            "name": "manifest-indexing-creds-volume",
+            "name": "sower-jobs-creds-volume",
             "readOnly": true,
-            "mountPath": "/manifest-indexing-creds.json",
-            "subPath": "config.json"
+            "mountPath": "/creds.json",
+            "subPath": "creds.json"
           }
         ],
         "cpu-limit": "1",
@@ -71,9 +72,9 @@
       },
       "volumes": [
         {
-          "name": "manifest-indexing-creds-volume",
+          "name": "sower-jobs-creds-volume",
           "secret": {
-            "secretName": "manifestindexing-g3auto"
+            "secretName": "sower-jobs-g3auto"
           }
         }
       ],
@@ -82,6 +83,7 @@
     {
       "name": "indexd-manifest",
       "action": "download-indexd-manifest",
+      "serviceAccountName": "jobs-${hostname//./-}",
       "container": {
         "name": "job-task",
         "image": "quay.io/cdis/download-indexd-manifest:master",
@@ -99,10 +101,10 @@
         ],
         "volumeMounts": [
           {
-            "name": "manifest-indexing-creds-volume",
+            "name": "sower-jobs-creds-volume",
             "readOnly": true,
-            "mountPath": "/manifest-indexing-creds.json",
-            "subPath": "config.json"
+            "mountPath": "/creds.json",
+            "subPath": "creds.json"
           }
         ],
         "cpu-limit": "1",
@@ -110,9 +112,9 @@
       },
       "volumes": [
         {
-          "name": "manifest-indexing-creds-volume",
+          "name": "sower-jobs-creds-volume",
           "secret": {
-            "secretName": "manifestindexing-g3auto"
+            "secretName": "sower-jobs-g3auto"
           }
         }
       ],
