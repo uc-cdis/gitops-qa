@@ -119,7 +119,7 @@
       "action": "export",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/pelican-export:master",
+        "image": "quay.io/cdis/pelican-export:integration202005",
         "pull_policy": "Always",
         "env": [
           {
