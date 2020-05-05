@@ -1,0 +1,36 @@
+version: '3'
+services:
+   webapp:
+      image: "python:3.8-buster"
+      volumes:
+         - ${DATA_VOLUME}:/data
+      entrypoint: [ /bin/bash ]
+      command:
+        - "-c"
+        - "cd /tmp && mkdir -p lw-workspace/proxy; echo '<html><body>Hello!</body></html>' > lw-workspace/proxy/index.html; /usr/bin/python3 -m http.server 8000"
+      ports: 
+         - "${SERVICE_PORT}:8000"
+      healthcheck:
+        test: ["CMD", "curl", "-f", "http://localhost:8000/lw-workspace/proxy/index.html"]
+        interval: 1m30s
+        timeout: 10s
+        retries: 3
+
+   worker:
+      image: "ubuntu:18.04"
+      # avoid user-volume mount if not necessary
+      #volumes:
+      #   - user-volume/config/nginx-with-proxy.conf:/etc/nginx/conf.d/default.conf
+      environment:
+         - MONGO_URL=mongodb://localhost:27017/ohif
+         - APP_CONFIG=/usr/share/nginx/html/app-config.js
+      entrypoint: [ /bin/bash ]
+      command: [ -c, 'while true; do echo "hello there!"; sleep 10; done;' ]
+      deploy:
+        resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
+          reservations:
+            cpus: '0.25'
+            memory: 20M
