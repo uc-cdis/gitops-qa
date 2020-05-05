@@ -6,16 +6,15 @@ mappings:
     props:
       - name: submitter_id
       - name: project_id
+      - name: gender
+      - name: ethnicity
+      - name: race
+      - name: age_at_enrollment
       - name: experimental_group
     flatten_props:
       - path: demographics
         props:
-          - name: gender
-            value_mappings:
-              - female: F
-              - male: M
-          - name: race
-          - name: ethnicity
+          - name: veteran_status
         sorted_by: updated_datetime, desc
     aggregated_props:
       - name: _samples_count
