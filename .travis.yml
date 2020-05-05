@@ -6,10 +6,9 @@ script:
   # validate all the manifest.json files:
   - gen3utils validate-manifest */manifest.json
   
-    # validate ETL mapping files
-    # disabled for now because too many are failing validation...
-  # - |
-  #   for dir in *; do
-  #     man=$dir/manifest.json; etl=$dir/etlMapping.yaml
-  #     [ -f $man ] && [ -f $etl ] && echo "ETL mapping validation for $dir" && gen3utils validate-etl-mapping $etl $man
-  #   done
+  # validate ETL mapping files
+  - |
+    for dir in *; do
+      man=$dir/manifest.json; etl=$dir/etlMapping.yaml
+      [ -f $man ] && [ -f $etl ] && echo "ETL mapping validation for $dir" && gen3utils validate-etl-mapping $etl $man
+    done
