@@ -9,7 +9,7 @@
   "versions": {
     "arborist": "quay.io/cdis/arborist:2020.02",
     "dashboard": "quay.io/cdis/gen3-statics:1.0.0",
-    "fence": "quay.io/cdis/fence:2020.02",
+    "fence": "quay.io/cdis/fence:2020.05",
     "indexd": "quay.io/cdis/indexd:2020.02",
     "peregrine": "quay.io/cdis/peregrine:2020.02",
     "pidgin": "quay.io/cdis/pidgin:2020.02",
