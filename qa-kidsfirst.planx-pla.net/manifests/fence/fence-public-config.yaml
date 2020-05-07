@@ -1,6 +1,5 @@
 APP_NAME: Gen3 Data Commons
 # Where fence microservice is deployed
-BASE_URL: https://qa-kidsfirst.planx-pla.net/user
 
 # flask's debug setting
 # WARNING: DO NOT ENABLE IN PRODUCTION
