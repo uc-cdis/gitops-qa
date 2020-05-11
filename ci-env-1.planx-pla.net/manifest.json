@@ -1,6 +1,6 @@
 {
   "notes": [
-    "This is the new CI environment manifest",
+    "This is the new CI environment manifest.",
     "That's all I have to say"
   ],
   "jenkins": {
