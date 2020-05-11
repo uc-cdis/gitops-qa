@@ -2,7 +2,8 @@
   "notes": [
     "This is the qa-dcp environment manifest",
     "That's all I have to say",
-    "Test edit"
+    "Test edit",
+    "Test edit again"
   ],
   "jenkins": {
     "autodeploy": "yes"
