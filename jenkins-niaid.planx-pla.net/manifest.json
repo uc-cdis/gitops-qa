@@ -7,7 +7,7 @@
     "autodeploy": "yes"
   },
   "versions": {
-    "ambassador": "quay.io/datawire/ambassador:0.82.0",
+    "ambassador": "quay.io/datawire/ambassador:1.4.2",
     "arborist": "quay.io/cdis/arborist:master",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
     "awshelper": "quay.io/cdis/awshelper:master",
