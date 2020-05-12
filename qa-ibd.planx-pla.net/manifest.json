@@ -48,7 +48,7 @@
       "image": "quay.io/cdis/gen3fuse-sidecar:2020.05",
       "env": {
         "NAMESPACE": "default",
-        "HOSTNAME": "ibdgc.datacommons.io"
+        "HOSTNAME": "qa-ibd.planx-pla.net"
       },
       "args": [],
       "command": [
