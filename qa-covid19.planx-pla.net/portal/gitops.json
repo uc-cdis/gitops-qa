@@ -211,7 +211,15 @@
         ]
       },
       "table": {
-        "enabled": true
+        "enabled": true,
+        "fields": [
+          "project_id",
+          "gender",
+          "age",
+          "city",
+          "province",
+          "country"
+        ]
       },
       "buttons": [],
       "guppyConfig": {
