@@ -11,7 +11,7 @@
     "ambassador": "quay.io/datawire/ambassador:0.60.3",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
     "dashboard": "quay.io/cdis/gen3-statics:2020.03",
-    "fence": "quay.io/cdis/fence:2020.03",
+    "fence": "quay.io/cdis/fence:4.18.0",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "guppy": "quay.io/cdis/guppy:0.5.0",
     "hatchery": "quay.io/cdis/hatchery:2020.03",
