@@ -12,7 +12,6 @@ mappings:
           - name: gender
           - name: race
           - name: ethnicity
-          - name: vital_status
           - name: year_of_birth
     aggregated_props:
       - name: _samples_count
@@ -25,6 +24,7 @@ mappings:
     doc_type: file
     type: collector
     root: None
+    category: data_file
     props:
       - name: object_id
       - name: md5sum
