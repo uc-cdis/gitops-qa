@@ -21,11 +21,14 @@ mappings:
       - path: hiv_history_records
         props:
           - name: arthxbase
-          - name: bshbvstat
-          - name: bshcvstat
           - name: cd4nadir
+          - name: fposdate
           - name: frstdthd
           - name: status
+      - path: comorbidities
+        props:
+          - name: bshbvstat
+          - name: bshcvstat
     aggregated_props:
       - name: _follow_ups_count
         path: follow_ups
@@ -64,6 +67,7 @@ mappings:
     doc_type: file
     type: collector
     root: None
+    category: data_file
     props:
       - name: object_id
       - name: md5sum

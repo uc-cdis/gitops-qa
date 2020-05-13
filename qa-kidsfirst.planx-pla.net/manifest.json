@@ -7,41 +7,22 @@
     "autodeploy": "yes"
   },
   "versions": {
-    "arborist": "quay.io/cdis/arborist:2020.02",
+    "arborist": "quay.io/cdis/arborist:2020.05",
     "dashboard": "quay.io/cdis/gen3-statics:1.0.0",
-    "fence": "quay.io/cdis/fence:2020.02",
-    "indexd": "quay.io/cdis/indexd:2020.02",
-    "peregrine": "quay.io/cdis/peregrine:2020.02",
-    "pidgin": "quay.io/cdis/pidgin:2020.02",
-    "revproxy": "quay.io/cdis/nginx:1.17.6-ctds-1.0.1",
-    "sheepdog": "quay.io/cdis/sheepdog:2020.02",
-    "portal": "quay.io/cdis/data-portal:2020.02",
-    "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
-    "jupyterhub": "quay.io/occ_data/jupyterhub:master"
+    "fence": "quay.io/cdis/fence:2020.05",
+    "indexd": "quay.io/cdis/indexd:2020.05",
+    "peregrine": "quay.io/cdis/peregrine:2020.05",
+    "pidgin": "quay.io/cdis/pidgin:2020.05",
+    "revproxy": "quay.io/cdis/nginx:2020.05",
+    "sheepdog": "quay.io/cdis/sheepdog:2020.05",
+    "portal": "quay.io/cdis/data-portal:2020.05",
+    "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch"
   },
   "arborist": {
     "deployment_version": "2"
   },
   "indexd": {
     "arborist": "true"
-  },
-  "jupyterhub": {
-    "enabled": "no"
-  },
-  "arranger": {
-    "project_id": "kidsfirst",
-    "auth_filter_field": "auth_resource_path",
-    "auth_filter_node_types": [
-      "case"
-    ]
-  },
-  "tube": {
-    "es_index_name": "kidsfirst_0"
-  },
-  "ssjdispatcher": {
-    "job_images": {
-      "indexing": "quay.io/cdis/indexs3client:master"
-    }
   },
   "global": {
     "environment": "qaplanetv1",
@@ -51,7 +32,7 @@
     "portal_app": "gitops",
     "kube_bucket": "kube-qaplanetv1-gen3",
     "logs_bucket": "logs-qaplanetv1-gen3",
-    "sync_from_dbgap": "False",
+    "sync_from_dbgap": "True",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
     "dispatcher_job_num": "10",
     "netpolicy": "on"
@@ -82,9 +63,6 @@
       "strategy": "auto"
     },
     "sheepdog": {
-      "strategy": "auto"
-    },
-    "guppy": {
       "strategy": "auto"
     }
   }

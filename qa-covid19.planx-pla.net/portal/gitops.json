@@ -158,7 +158,8 @@
         "nodeCountTitle": "Datasets",
         "fieldMapping": [
           { "field": "name", "name": "Dataset" },
-          { "field": "code", "name": "ID" }
+          { "field": "code", "name": "ID" },
+          { "field": "url", "name": "Source" }
         ],
         "manifestMapping": {
           "referenceIdFieldInResourceIndex": "code"
@@ -210,7 +211,15 @@
         ]
       },
       "table": {
-        "enabled": true
+        "enabled": true,
+        "fields": [
+          "project_id",
+          "gender",
+          "age",
+          "city",
+          "province",
+          "country"
+        ]
       },
       "buttons": [],
       "guppyConfig": {

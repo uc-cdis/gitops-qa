@@ -1,14 +1,14 @@
 {
-  "user-namespace": "jupyter-pods-qa-covid19",
+  "user-namespace": "jupyter-pods-ci-env-1",
   "sub-dir": "/lw-workspace",
   "user-volume-size": "10Gi",
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "quay.io/cdis/gen3fuse-sidecar:2020.05",
+    "image": "quay.io/cdis/gen3fuse-sidecar:0.1.3",
     "env": {
-      "NAMESPACE": "default",
-      "HOSTNAME": "qa-covid19.planx-pla.net"
+      "NAMESPACE": "ci-env-1",
+      "HOSTNAME": "ci-env-1.planx-pla.net"
     },
     "args": [],
     "command": [
@@ -28,30 +28,30 @@
     {
       "target-port": 8787,
       "cpu-limit": "1.0",
-      "memory-limit": "1024Mi",
+      "memory-limit": "512Mi",
       "name": "R Studio",
-      "image": "quay.io/cdis/rstudio:master",
+      "image": "heliumdatastage/rstudio-server:1",
       "env": {
         "DISABLE_AUTH": "true"
       },
       "args": [],
       "path-rewrite": "/",
       "use-tls": "false",
-      "ready-probe": "/",
-      "user-volume-location": "/home/rstudio/pd",
-      "fs-gid": 100
+      "ready-probe": "/"
     },
     {
       "target-port": 8888,
       "cpu-limit": "1.0",
-      "memory-limit": "1024Mi",
-      "name": "Jupyter - Python/R",
+      "memory-limit": "512Mi",
+      "name": "Jupyter Notebook Bio Python",
       "image": "quay.io/occ_data/jupyternotebook:1.7.2",
       "env": {},
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",
-        "--NotebookApp.token=''"
+        "--NotebookApp.token=''",
+        "--NotebookApp.notebook_dir='/home/jovyan/pd'",
+        "--NotebookApp.quit_button=False"
       ],
       "command": [
         "start-notebook.sh"
