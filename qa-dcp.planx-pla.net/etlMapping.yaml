@@ -17,7 +17,7 @@ mappings:
           - name: weight_baseline
           - name: bmi_baseline
           - name: height_baseline
-      - path: exposure
+      - path: exposures
         props:
           - name: current_smoker_baseline
           - name: ever_smoker_baseline
