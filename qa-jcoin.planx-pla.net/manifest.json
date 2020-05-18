@@ -4,23 +4,23 @@
     "That's all I have to say"
   ],
   "versions": {
-    "arborist": "quay.io/cdis/arborist:2020.05",
+    "arborist": "quay.io/cdis/arborist:integration202006",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
-    "dashboard": "quay.io/cdis/gen3-statics:2020.05",
-    "fence": "quay.io/cdis/fence:2020.05",
-    "indexd": "quay.io/cdis/indexd:2020.05",
-    "peregrine": "quay.io/cdis/peregrine:2020.05",
-    "pidgin": "quay.io/cdis/pidgin:2020.05",
-    "revproxy": "quay.io/cdis/nginx:2020.05",
-    "sheepdog": "quay.io/cdis/sheepdog:2020.05",
-    "portal": "quay.io/cdis/data-portal:2020.05",
-    "tube": "quay.io/cdis/tube:0.3.28",
-    "guppy": "quay.io/cdis/guppy:2020.05",
+    "dashboard": "quay.io/cdis/gen3-statics:integration202006",
+    "fence": "quay.io/cdis/fence:integration202006",
+    "indexd": "quay.io/cdis/indexd:integration202006",
+    "peregrine": "quay.io/cdis/peregrine:integration202006",
+    "pidgin": "quay.io/cdis/pidgin:integration202006",
+    "revproxy": "quay.io/cdis/nginx:integration202006",
+    "sheepdog": "quay.io/cdis/sheepdog:integration202006",
+    "portal": "quay.io/cdis/data-portal:integration202006",
+    "tube": "quay.io/cdis/tube:integration202006",
+    "guppy": "quay.io/cdis/guppy:integration202006",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
-    "spark": "quay.io/cdis/gen3-spark:2020.05",
-    "hatchery": "quay.io/cdis/hatchery:2020.05",
-    "wts": "quay.io/cdis/workspace-token-service:2020.05",
-    "ambassador": "quay.io/datawire/ambassador:0.60.3"
+    "spark": "quay.io/cdis/gen3-spark:integration202006",
+    "hatchery": "quay.io/cdis/hatchery:integration202006",
+    "wts": "quay.io/cdis/workspace-token-service:integration202006",
+    "ambassador": "quay.io/datawire/ambassador:1.4.2"
   },
   "guppy": {
     "indices": [
@@ -56,7 +56,7 @@
     "sidecar": {
       "cpu-limit": "1.0",
       "memory-limit": "256Mi",
-      "image": "quay.io/cdis/gen3fuse-sidecar:2020.05",
+      "image": "quay.io/cdis/gen3fuse-sidecar:integration202006",
       "env": {"NAMESPACE":"default", "HOSTNAME": "qa-jcoin.planx-pla.net"},
       "args": [],
       "command": ["/bin/bash", "/sidecarDockerrun.sh"],
