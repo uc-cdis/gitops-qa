@@ -13081,8 +13081,8 @@ div#notebook {
 <h2 id="Model-Definition">Model Definition<a class="anchor-link" href="#Model-Definition">&#182;</a></h2><p>The SEIR model is a standard mathematical model from epidemiology for modeling the outbreak of an infectious disease in a given population. The basic model consists of four states - suceptible (S), exposed (E), infectious (I), and removed (R). A susceptible individual becomes exposed to the virus through contact with infectious individuals, and so progresses from S to E. At disease onset the individual moves to state I, and upon recovery or death they move to R. Model parameters determine the rate of transfer between each state.</p>
 <p>The SEIR model can be extended by including additional states and parameters which help to more fully capture the complexity of a particular outbreak. One example of this kind of extended SEIR model is presented in <a href="https://www.medrxiv.org/content/10.1101/2020.03.22.20041079v1.full.pdf">Kissler et al. 2020</a>. Their model stratifies cases by severity - that is, after exposure an individual either becomes a mild/asymptomatic, severe, or critical case. Mild/asymptomatic cases require no hospitalization, severe cases require hospitalization but no critical care, and critical cases require hospitalization including critical care. Mild/asymptomatic cases move straight from the infectious state to the removed state. Severe cases move from the infectious state to the non-critical hospitalization state, then to removed. Critical cases move from the infectious state to hospitalization, to ICU, to removed.</p>
 <p>The states, paths, and parameters for the Kissler model are depicted here (diagram and table directly from the paper):</p>
-<p><img src="./images/diagram.png" width="600">
-<img src="./images/parameters.png" width="600"></p>
+<p><img src="./extended-seir_diagram.png" width="600">
+<img src="./extended-seir_parameters.png" width="600"></p>
 
 </div>
 </div>
