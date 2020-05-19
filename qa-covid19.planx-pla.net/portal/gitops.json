@@ -205,7 +205,15 @@
               "city",
               "age",
               "from_wuhan",
-              "visiting_wuhan"
+              "visiting_wuhan",
+              "gender",
+              "nationality"
+            ]
+          },
+          {
+            "title": "Origin",
+            "fields": [
+              "hospital"
             ]
           }
         ]
