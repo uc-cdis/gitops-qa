@@ -66,11 +66,13 @@ mappings:
       - name: global_num
       - name: contact_number
       - name: isolated
+      - name: hospital
     flatten_props:
       - path: demographics
         props:
           - name: gender
           - name: year_of_birth
+          - name: nationality
     aggregated_props:
       - name: location
         path: samples
