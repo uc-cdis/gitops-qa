@@ -167,6 +167,7 @@
             "arthxbase",
             "bshbvstat",
             "bshcvstat",
+            "fposdate",
             "cd4nadir",
             "status",
             "virus_type",
