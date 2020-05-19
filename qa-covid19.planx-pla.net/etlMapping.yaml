@@ -71,6 +71,25 @@ mappings:
         props:
           - name: gender
           - name: year_of_birth
+    aggregated_props:
+      - name: location
+        path: samples
+        src: location
+        fn: set
+      - name: host
+        path: samples
+        src: host
+        fn: set
+      - name: organism
+        path: samples
+        src: organism
+        fn: set
+      - name: sample_type
+        path: samples
+        src: sample_type
+        fn: set
+    parent_props:
+      - path: studies[journal:journal]
   - name: qa-covid19_file
     doc_type: file
     type: collector
