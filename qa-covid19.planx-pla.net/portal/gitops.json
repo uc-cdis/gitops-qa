@@ -243,6 +243,18 @@
         "data_format": {
           "chartType": "bar",
           "title": "Data Format"
+        },
+        "host": {
+          "chartType": "bar",
+          "title": "Host"
+        },
+        "organism": {
+          "chartType": "bar",
+          "title": "Organism"
+        },
+        "sample_type": {
+          "chartType": "bar",
+          "title": "Molecular Type"
         }
       },
       "filters": {
@@ -252,7 +264,12 @@
             "fields": [
               "project_id",
               "data_type",
-              "data_format"
+              "data_format",
+              "location",
+              "host",
+              "organism",
+              "sample_type",
+              "journal"
             ]
           }
         ]
@@ -291,7 +308,8 @@
           { "field": "object_id", "name": "GUID" },
           { "field": "project_id", "name": "Dataset" },
           { "field": "data_type", "name": "Data Type" },
-          { "field": "data_format", "name": "Data Format" }
+          { "field": "data_format", "name": "Data Format" },
+          { "field": "sample_type", "name": "Molecular Type" }
         ],
         "nodeCountTitle": "Files",
         "manifestMapping": {
