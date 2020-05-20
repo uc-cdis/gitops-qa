@@ -158,7 +158,6 @@
         "dataType": "dataset",
         "nodeCountTitle": "Datasets",
         "fieldMapping": [
-          { "field": "name", "name": "Name" },
           { "field": "code", "name": "Dataset" },
           { "field": "url", "name": "Source" }
         ],
@@ -232,8 +231,8 @@
         "dataType": "subject",
         "nodeCountTitle": "Subjects",
         "fieldMapping" : [
-          { "field": "project_code", "name": "Dataset" },
           { "field": "project_url", "name": "Dataset Source" },
+          { "field": "project_code", "name": "Dataset" },
           { "field": "project_name", "name": "Dataset Name" }
         ],
         "manifestMapping": {
@@ -302,10 +301,10 @@
       "guppyConfig": {
         "dataType": "file",
         "fieldMapping": [
-          { "field": "object_id", "name": "GUID" },
-          { "field": "project_code", "name": "Dataset" },
           { "field": "project_url", "name": "Dataset Source" },
-          { "field": "project_name", "name": "Dataset Name" }
+          { "field": "project_code", "name": "Dataset" },
+          { "field": "project_name", "name": "Dataset Name" },
+          { "field": "object_id", "name": "GUID" }
         ],
         "nodeCountTitle": "Files",
         "manifestMapping": {
