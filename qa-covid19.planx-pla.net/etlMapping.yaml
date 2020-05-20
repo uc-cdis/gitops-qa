@@ -87,7 +87,7 @@ mappings:
       - name: data_type
       - name: state
     injecting_props:
-      samples:
+      sample:
         props:
           - name: location
             src: location
@@ -101,7 +101,7 @@ mappings:
           - name: sample_type
             src: sample_type
             fn: set
-      studies:
+      study:
         props:
           - name: journal
             src: journal
