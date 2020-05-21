@@ -17,10 +17,6 @@ mappings:
           - name: weight_baseline
           - name: bmi_baseline
           - name: height_baseline
-      - path: exposures
-        props:
-          - name: current_smoker_baseline
-          - name: ever_smoker_baseline
       - path: medical_histories
         props:
           - name: diabetes
@@ -114,6 +110,14 @@ mappings:
       - name: _simple_germline_variations_count
         path: samples.aliquots.read_groups.simple_germline_variations
         fn: count
+      - name: current_smoker_baseline
+        path: exposures
+        src: current_smoker_baseline
+        fn: set        
+      - name: ever_smoker_baseline
+        path: exposures
+        src: ever_smoker_baseline
+        fn: set                 
     joining_props:
       - index: file
         join_on: subject_id
