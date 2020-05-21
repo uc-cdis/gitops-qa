@@ -359,8 +359,8 @@
     ]
   },
   "covid19DashboardConfig": {
-    "dataUrl": "https://opendata.datacommons.io/",
-    "enableCharts": false
+    "dataUrl": "https://static.planx-pla.net/",
+    "enableCharts": true
   },
   "showArboristAuthzOnProfile": true,
   "showFenceAuthzOnProfile": false
