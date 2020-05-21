@@ -73,6 +73,11 @@ mappings:
           - name: gender
           - name: year_of_birth
           - name: nationality
+    parent_props:
+      - path: projects[project_code:code]
+      - path: projects[project_name:name]
+      - path: projects[project_url:url]
+      - path: projects[project_data_description:data_description]
   - name: qa-covid19_file
     doc_type: file
     type: collector
@@ -105,6 +110,19 @@ mappings:
         props:
           - name: journal
             src: journal
+      project:
+        props:
+          - name: project_code
+            src: code
+            fn: set
+          - name: project_name
+            src: name
+            fn: set
+          - name: project_url
+            src: url
+            fn: set
+          - name: project_data_description
+            src: data_description
             fn: set
   - name: qa-covid19_dataset
     doc_type: dataset

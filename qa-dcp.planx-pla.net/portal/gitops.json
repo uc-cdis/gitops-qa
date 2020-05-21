@@ -335,13 +335,13 @@
         { "field": "rbc_ncnc_bld", "name": "Red Blood Cells Number Concentration Bld" },
         { "field": "rdw_ratio_rbc", "name": "Red Cell Distribution Width Ratio Rbc" },
         { "field": "wbc_ncnc_bld", "name": "White Blood Cells Number Concentration Bld" },
-        {"field": "bmi_baseline", "name": "BMI Baseline"},
-        {"field": "current_smoker_baseline", "name": "Current Smoker Baseline"},
-        {"field": "ever_smoker_baseline", "name": "Ever Smoker Baseline"},
-        {"field": "geographic_site", "name": "Geographic Site"},
-        {"field": "height_baseline", "name": "Height Baseline"},
-        {"field": "total_cholesterol", "name": "Total Cholesterol"},
-        {"field": "triglycerides", "name": "Triglycerides"}
+        { "field": "bmi_baseline", "name": "BMI Baseline" },
+        { "field": "current_smoker_baseline", "name": "Current Smoker Baseline" },
+        { "field": "ever_smoker_baseline", "name": "Ever Smoker Baseline" },
+        { "field": "geographic_site", "name": "Geographic Site" },
+        { "field": "height_baseline", "name": "Height Baseline" },
+        { "field": "total_cholesterol", "name": "Total Cholesterol" },
+        { "field": "triglycerides", "name": "Triglycerides" }
       ],
       "manifestMapping": {
         "resourceIndexType": "file",
