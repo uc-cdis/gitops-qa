@@ -2,10 +2,10 @@
   "gaTrackingId": "UA-119127212-1",
   "graphql": {
     "boardCounts": [
-      {	
-        "graphql": "_summary_location_count",	
-        "name": "Location",	
-        "plural": "Locations"	
+      {
+        "graphql": "_summary_location_count",
+        "name": "Location",
+        "plural": "Locations"
       },
       {
         "graphql": "_subject_count",
@@ -61,19 +61,19 @@
           "name": "Exploration",
           "link": "/explorer",
           "icon": "exploration",
-          "tooltip": "The Exploration Page gives you insights and a clear overview under selected factors."
+          "tooltip": "The Exploration Page enables discovery of the data at the subject level and features a cohort builder."
         },
         {
           "name": "Workspace",
           "link": "#hostname#workspace/",
           "icon": "workspace",
-          "tooltip": "The Workspace provides a secure cloud environment and features Jupyter Notebooks and RStudio."
+          "tooltip": "The Workspace provides a secure cloud environment featuring Jupyter Notebooks and RStudio."
         },
         {
           "name": "Dictionary",
           "link": "/DD",
           "icon": "dictionary",
-          "tooltip": "The Chicagoland COVID-19 Commons defines the data in a general way. Study the dictionary before you start browsing."
+          "tooltip": "The Data Dictionary serves to inform the data model and is updated as new data is ingested."
         },
         {
           "name": "Profile",
@@ -89,7 +89,7 @@
           "name": "Chicagoland COVID-19 Commons Home"
         },
         {
-          "link": "https://qa-covid19.planx-pla.net/dashboard/Public/index.html",
+          "link": "https://pandemicresponsecommons.org/members/chicagoland-commons-partners/",
           "name": "Partners"
         },
         {
@@ -134,8 +134,7 @@
           {
             "title": "Details",
             "fields": [
-              "program_name",
-              "code",
+              "name",
               "data_description"
             ]
           }
@@ -158,8 +157,8 @@
         "dataType": "dataset",
         "nodeCountTitle": "Datasets",
         "fieldMapping": [
-          { "field": "code", "name": "Dataset" },
-          { "field": "url", "name": "Source" }
+          { "field": "url", "name": "Source" },
+          { "field": "name", "name": "Dataset" }
         ],
         "manifestMapping": {
           "referenceIdFieldInResourceIndex": "code"
@@ -169,17 +168,21 @@
     {
       "tabTitle": "Subjects",
       "charts": {
-        "project_code": {
-          "chartType": "count",
-          "title": "Datasets"
+        "project_name": {
+          "chartType": "bar",
+          "title": "Dataset"
+        },
+        "gender": {
+          "chartType": "pie",
+          "title": "Gender"
+        },
+        "country": {
+          "chartType": "bar",
+          "title": "Country"
         },
         "symptoms": {
           "chartType": "bar",
           "title": "Symptoms"
-        },
-        "source": {
-          "chartType": "pie",
-          "title": "Source"
         }
       },
       "filters": {
@@ -187,7 +190,7 @@
           {
             "title": "Clinical",
             "fields": [
-              "project_code",
+              "project_name",
               "symptoms",
               "death",
               "recovered",
@@ -203,6 +206,7 @@
               "country",
               "province",
               "city",
+              "gender",
               "age",
               "from_wuhan",
               "visiting_wuhan"
@@ -232,8 +236,8 @@
         "nodeCountTitle": "Subjects",
         "fieldMapping" : [
           { "field": "project_url", "name": "Dataset Source" },
-          { "field": "project_code", "name": "Dataset" },
-          { "field": "project_name", "name": "Dataset Name" }
+          { "field": "project_code", "name": "Dataset Code" },
+          { "field": "project_name", "name": "Dataset" }
         ],
         "manifestMapping": {
           "referenceIdFieldInResourceIndex": "subject_id"
@@ -257,7 +261,7 @@
           {
             "title": "Viral",
             "fields": [
-              "project_code",
+              "project_name",
               "data_type",
               "data_format"
             ]
@@ -302,8 +306,8 @@
         "dataType": "file",
         "fieldMapping": [
           { "field": "project_url", "name": "Dataset Source" },
-          { "field": "project_code", "name": "Dataset" },
-          { "field": "project_name", "name": "Dataset Name" },
+          { "field": "project_code", "name": "Dataset Code" },
+          { "field": "project_name", "name": "Dataset" },
           { "field": "object_id", "name": "GUID" }
         ],
         "nodeCountTitle": "Files",
@@ -320,16 +324,17 @@
   "resourceBrowser": {
     "title": "COVID-19 Jupyter Notebooks",
     "public": true,
+    "description": "The Jupyter notebooks contained in this notebook viewer pull data from various external sources to generate and output useful tables, charts, graphs, and models. Each notebook is static, meaning the data being used by the notebooks is not updated in real time. These notebooks are also available in the Gen3 Workspace and can be launched by following the instructions listed in the readme.md file. When running the notebooks from the Workspace the most recent data is pulled from the originating source in real time and the notebook will render the most updated information.",
     "resources": [
       {
         "title": "Exploring the Demographics of COVID-19 Cases",
-        "description": "In this notebook, we explore some of the demographic data associated with COVID-19 cases in a Gen3 Data Commons.",
+        "description": "In this notebook, we explore some of the demographic data associated with COVID-19 cases in the Chicagoland Pandemic Response Commons.",
         "link": "/dashboard/Public/notebooks/kaggle_data_analysis_04072020.html",
         "imageUrl": "/dashboard/Public/notebooks/kaggle_data_analysis_04072020.png"
       },
       {
         "title": "Chicago COVID-19 forecasting using SEIR models",
-        "description": "In this notebook, we construct an SEIR model for COVID-19 in Cook County, Illinois, using data sourced from Johns Hopkins University, but available within the Chicagoland COVID-19 Commons. We then perform an optimization of initial model parameter values and do some simple validation. This notebook is intended to demonstrate real-life usage of data for epidemiological modeling and is not intended for rigorous scientific interpretation.",
+        "description": "In this notebook, we construct an SEIR model for COVID-19 in Cook County, Illinois, using data sourced from Johns Hopkins University, but available within the Chicagoland COVID-19 Commons. We then perform an optimization of initial model parameter values and do some simple validation.",
         "link": "/dashboard/Public/notebooks/covid19_seir.html",
         "imageUrl": "/dashboard/Public/notebooks/covid19_seir.png"
       },
@@ -354,8 +359,8 @@
     ]
   },
   "covid19DashboardConfig": {
-    "dataUrl": "https://static.planx-pla.net/",
-    "enableCharts": true
+    "dataUrl": "https://opendata.datacommons.io/",
+    "enableCharts": false
   },
   "showArboristAuthzOnProfile": true,
   "showFenceAuthzOnProfile": false
