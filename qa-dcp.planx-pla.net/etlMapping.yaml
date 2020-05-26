@@ -40,13 +40,9 @@ mappings:
           - name: vte_case_status
           - name: vte_followup_start_age
           - name: vte_prior_history
-      - path: diagnoses
-        props:
-          - name: metabolic_syndrome_diagnosis
-        sorted_by: updated_datetime, desc
       - path: blood_pressure_test
         props:
-          - name: diastolic_blood_pressure
+          - name: bp_systolic
           - name: bp_diastolic
       - path: medication_records
         props:
