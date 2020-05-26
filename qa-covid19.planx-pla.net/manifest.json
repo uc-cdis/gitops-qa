@@ -61,11 +61,11 @@
         "type": "location"
       },
       {
-        "index": "qa-covid19_file_38",
+        "index": "qa-covid19_file",
         "type": "file"
       },
       {
-        "index": "qa-covid19_subject_38",
+        "index": "qa-covid19_subject",
         "type": "subject"
       },
       {
