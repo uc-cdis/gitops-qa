@@ -17,10 +17,6 @@ mappings:
           - name: weight_baseline
           - name: bmi_baseline
           - name: height_baseline
-      - path: exposures
-        props:
-          - name: current_smoker_baseline
-          - name: ever_smoker_baseline
       - path: medical_histories
         props:
           - name: diabetes
@@ -44,13 +40,9 @@ mappings:
           - name: vte_case_status
           - name: vte_followup_start_age
           - name: vte_prior_history
-      - path: diagnoses
-        props:
-          - name: metabolic_syndrome_diagnosis
-        sorted_by: updated_datetime, desc
       - path: blood_pressure_test
         props:
-          - name: diastolic_blood_pressure
+          - name: bp_systolic
           - name: bp_diastolic
       - path: medication_records
         props:
@@ -114,6 +106,14 @@ mappings:
       - name: _simple_germline_variations_count
         path: samples.aliquots.read_groups.simple_germline_variations
         fn: count
+      - name: current_smoker_baseline
+        path: exposures
+        src: current_smoker_baseline
+        fn: set        
+      - name: ever_smoker_baseline
+        path: exposures
+        src: ever_smoker_baseline
+        fn: set                 
     joining_props:
       - index: file
         join_on: subject_id
