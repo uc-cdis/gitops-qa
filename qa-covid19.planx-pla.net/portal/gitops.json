@@ -195,14 +195,14 @@
             "fields": [
               "project_investigator_affiliation",
               "project_name",
+              "hospital",
               "symptoms",
               "death",
               "recovered",
               "reporting_date",
               "source",
               "infection_case",
-              "isolated",
-              "hospital"
+              "isolated"
             ]
           },
           {
