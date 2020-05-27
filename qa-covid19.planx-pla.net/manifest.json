@@ -6,10 +6,10 @@
   "versions": {
     "arborist": "quay.io/cdis/arborist:2020.05",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
-    "covid19-etl": "quay.io/cdis/covid19-etl:1.1.2",
-    "nb-etl": "quay.io/cdis/nb-etl:1.1.2",
+    "covid19-etl": "quay.io/cdis/covid19-etl:1.1.3",
+    "nb-etl": "quay.io/cdis/nb-etl:1.1.3",
     "fence": "quay.io/cdis/fence:2020.05",
-    "indexd": "quay.io/cdis/indexd:2020.05",
+    "indexd": "quay.io/cdis/indexd:2.10.0",
     "peregrine": "quay.io/cdis/peregrine:2020.05",
     "pidgin": "quay.io/cdis/pidgin:2020.05",
     "revproxy": "quay.io/cdis/nginx:1.17.6-ctds-1.0.1",
@@ -23,6 +23,7 @@
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:2020.05",
     "ambassador": "quay.io/datawire/ambassador:0.60.3",
     "guppy": "quay.io/cdis/guppy:2020.05",
+    "manifestservice": "quay.io/cdis/manifestservice:2020.05",
     "dashboard": "quay.io/cdis/gen3-statics:1.0.0"
   },
   "global": {

@@ -251,6 +251,7 @@
           { "field": "project_url", "name": "Source URL" },
           { "field": "project_code", "name": "Code" },
           { "field": "project_name", "name": "Dataset" },
+          { "field": "source", "name": "Media Outlet"},
           { "field": "project_investigator_affiliation", "name": "Source"}
         ],
         "manifestMapping": {
@@ -328,7 +329,7 @@
           "dropdownId": "download"
         },
         {
-          "enabled": false,
+          "enabled": true,
           "type": "export-files-to-workspace",
           "title": "Export to Workspace",
           "leftIcon": "datafile",
