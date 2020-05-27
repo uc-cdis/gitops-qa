@@ -72,6 +72,9 @@ mappings:
       - name: global_num
       - name: contact_number
       - name: isolated
+      - name: current_state
+      - name: infected_by
+      - name: released_date
       - name: hospital
     flatten_props:
       - path: demographics
