@@ -114,10 +114,23 @@ mappings:
           - name: sample_type
             src: sample_type
             fn: set
+          - name: isolation_source
+            src: isolation_source
+            fn: set
+          - name: isolate
+            src: isolate
+            fn: set
+          - name: collection_date
+            src: collection_date
+            fn: set
       study:
         props:
           - name: journal
             src: journal
+            fn: set
+          - name: pmid
+            src: pmid
+            fn: set
       project:
         props:
           - name: project_code
