@@ -214,7 +214,6 @@
               "age",
               "from_wuhan",
               "visiting_wuhan",
-              "gender",
               "nationality"
             ]
           },
@@ -296,7 +295,8 @@
               "host",
               "organism",
               "sample_type",
-              "journal"
+              "isolation_source",
+              "collection_date"
             ]
           }
         ]
