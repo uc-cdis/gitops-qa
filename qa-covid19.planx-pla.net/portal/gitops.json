@@ -279,7 +279,11 @@
         },
         "sample_type": {
           "chartType": "bar",
-          "title": "Molecular Type"
+          "title": "Sample Type"
+        },
+        "isolation_source": {
+          "chartType": "bar",
+          "title": "Isolation Source"
         }
       },
       "filters": {
