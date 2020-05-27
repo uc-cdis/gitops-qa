@@ -195,6 +195,7 @@
             "fields": [
               "project_investigator_affiliation",
               "project_name",
+              "hospital",
               "symptoms",
               "death",
               "recovered",
@@ -207,20 +208,14 @@
           {
             "title": "Demographics",
             "fields": [
+              "gender",
               "country",
               "province",
               "city",
-              "gender",
               "age",
               "from_wuhan",
               "visiting_wuhan",
               "nationality"
-            ]
-          },
-          {
-            "title": "Origin",
-            "fields": [
-              "hospital"
             ]
           }
         ]
