@@ -213,7 +213,14 @@
               "gender",
               "age",
               "from_wuhan",
-              "visiting_wuhan"
+              "visiting_wuhan",
+              "nationality"
+            ]
+          },
+          {
+            "title": "Origin",
+            "fields": [
+              "hospital"
             ]
           }
         ]
@@ -261,6 +268,22 @@
         "data_format": {
           "chartType": "bar",
           "title": "Data Format"
+        },
+        "host": {
+          "chartType": "bar",
+          "title": "Host"
+        },
+        "organism": {
+          "chartType": "bar",
+          "title": "Organism"
+        },
+        "sample_type": {
+          "chartType": "bar",
+          "title": "Sample Type"
+        },
+        "isolation_source": {
+          "chartType": "bar",
+          "title": "Isolation Source"
         }
       },
       "filters": {
@@ -271,7 +294,13 @@
               "project_investigator_affiliation",
               "project_name",
               "data_type",
-              "data_format"
+              "data_format",
+              "location",
+              "host",
+              "organism",
+              "sample_type",
+              "isolation_source",
+              "collection_date"
             ]
           }
         ]
