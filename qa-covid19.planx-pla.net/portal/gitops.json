@@ -201,26 +201,21 @@
               "reporting_date",
               "source",
               "infection_case",
-              "isolated"
+              "isolated",
+              "hospital"
             ]
           },
           {
             "title": "Demographics",
             "fields": [
+              "gender",
               "country",
               "province",
               "city",
-              "gender",
               "age",
               "from_wuhan",
               "visiting_wuhan",
               "nationality"
-            ]
-          },
-          {
-            "title": "Origin",
-            "fields": [
-              "hospital"
             ]
           }
         ]
