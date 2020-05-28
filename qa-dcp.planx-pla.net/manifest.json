@@ -25,7 +25,8 @@
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
     "wts": "quay.io/cdis/workspace-token-service:integration202006",
     "manifestservice": "quay.io/cdis/manifestservice:integration202006",
-    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:integration202006"
+    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:integration202006",
+    "metadata": "quay.io/cdis/metadata-service:integration202006"
   },
   "google": {
     "enabled": "yes"
