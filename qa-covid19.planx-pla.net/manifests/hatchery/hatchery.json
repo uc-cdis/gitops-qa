@@ -46,7 +46,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "1024Mi",
       "name": "R Studio 3.6",
-      "image": "quay.io/cdis/rstudio3.6:chore_r-3.6",
+      "image": "quay.io/cdis/rstudio3.6:rstudio3.6-1.0.0",
       "env": {
         "DISABLE_AUTH": "true"
       },
