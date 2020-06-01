@@ -25,7 +25,8 @@
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
     "wts": "quay.io/cdis/workspace-token-service:integration202006",
     "manifestservice": "quay.io/cdis/manifestservice:integration202006",
-    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:integration202006"
+    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:integration202006",
+    "metadata": "quay.io/cdis/metadata-service:integration202006"
   },
   "google": {
     "enabled": "yes"
@@ -188,7 +189,7 @@
     "environment": "qaplanetv1",
     "hostname": "qa-dcp.planx-pla.net",
     "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
-    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/gtexdictionary/3.3.9/schema.json",
+    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/gtexdictionary/3.4.9/schema.json",
     "portal_app": "gitops",
     "kube_bucket": "kube-qaplanetv1-gen3",
     "logs_bucket": "logs-qaplanetv1-gen3",
