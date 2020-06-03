@@ -139,7 +139,7 @@
         "alt": "Center for Translational Data Science at the University of Chicago"
       },
       {
-        "src": "/src/img/sponsors/OCC.png",
+        "src": "/custom/sponsors/gitops-sponsors/OCC.png",
         "href": "http://occ-data.org/",
         "alt": "Open Commons Consortium"
       }
@@ -213,14 +213,16 @@
         "Race",
         "Ethnicity",
         "Gender",
-        "Days_To_Birth",
-        "Days_To_Death"
+        "ActionableMutations.Lab",
+        "Oncology_Primary.Multiplicitycounter",
+        "Oncology_Primary.ICDOSite"
       ]
     },
     "guppyConfig": {
       "dataType": "patients",
       "nodeCountTitle": "Patients",
       "fieldMapping": [
+        {"field": "Oncology_Primary.Multiplicitycounter", "name": "OPMC"}
       ]
     }
   }
