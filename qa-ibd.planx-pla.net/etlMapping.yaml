@@ -8,6 +8,9 @@ mappings:
       - name: project_id
     parent_props:
       - path: centers[country]
+      - path: centers[name]
+      - path: centers[investigator_name]
+      - path: projects[project_id]
     flatten_props:
       - path: demographics
         props:
