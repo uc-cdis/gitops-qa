@@ -155,6 +155,14 @@
       "Chicago_ID": {
         "chartType": "count",
         "title": "Patients"
+      },
+      "ActionableMutations.Lab": {
+        "chartType": "pie",
+        "title": "ActionableMutations.Lab"
+      },
+      "Oncology_Primary.ICDOSite": {
+        "chartType": "bar",
+        "title": "OncologyPrimaryICDOSite"
       }
     },
     "filters": {
@@ -167,6 +175,22 @@
             "Days_To_Death",
             "DeceasedFlag",
             "Ethnicity"
+          ]
+        },
+        {
+          "title": "ActionableMutations",
+          "fields":[
+            "project_id",
+            "ActionableMutations.Lab",
+            "ActionableMutations.DaysFromAnchorDateToBxDate"
+          ]
+        },
+        {
+          "title": "Oncology_Primary",
+          "fields":[
+            "project_id",
+            "Oncology_Primary.Multiplicitycounter",
+            "Oncology_Primary.ICDOSite"
           ]
         }
       ]
@@ -185,9 +209,12 @@
       "enabled": true,
       "fields": [
         "project_id",
+        "auth_resource_path",
+        "Race",
+        "Ethnicity",
         "Gender",
-        "Days_To_Birth",
         "ActionableMutations.Lab",
+        "Oncology_Primary.Multiplicitycounter",
         "Oncology_Primary.ICDOSite"
       ]
     },
@@ -195,6 +222,7 @@
       "dataType": "patients",
       "nodeCountTitle": "Patients",
       "fieldMapping": [
+        {"field": "Oncology_Primary.Multiplicitycounter", "name": "OPMC"}
       ]
     }
   }
