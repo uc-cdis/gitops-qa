@@ -15,7 +15,7 @@ mappings:
       - name: iso2
       - name: iso3
     flatten_props:
-      - path: summary_reports
+      - path: summary_clinicals
         props:
           - name: confirmed
           - name: deaths
