@@ -109,6 +109,9 @@ mappings:
       - name: _simple_germline_variations_count
         path: samples.aliquots.read_groups.simple_germline_variations
         fn: count
+      - name: _file_count
+        path: samples.file.object_id // path to this node from the root
+        fn: count
     joining_props:
       - index: file
         join_on: subject_id
