@@ -106,9 +106,6 @@ mappings:
       - name: _simple_germline_variations_count
         path: samples.aliquots.read_groups.simple_germline_variations
         fn: count
-      - name: _file_count
-        path: samples.file.object_id // path to this node from the root
-        fn: count
       - name: current_smoker_baseline
         path: exposures
         src: current_smoker_baseline
@@ -116,7 +113,7 @@ mappings:
       - name: ever_smoker_baseline
         path: exposures
         src: ever_smoker_baseline
-        fn: set
+        fn: set                 
     joining_props:
       - index: file
         join_on: subject_id
@@ -127,6 +124,12 @@ mappings:
           - name: data_type
             src: data_type
             fn: set
+          - name: file_id
+            src: file_id
+            fn: set
+          - name: file_count
+            src: file_id
+            fn: count
   - name: qa-dcp_file
     doc_type: file
     type: collector
