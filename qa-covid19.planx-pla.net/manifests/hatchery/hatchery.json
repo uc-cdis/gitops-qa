@@ -101,5 +101,12 @@
       "fs-gid": 100,
       "user-volume-location": "/home/jovyan/pd"
     }
+  ],
+  "more-configs": [
+    {
+      "type": "dockstore-compose:1.0.0",
+      "path": "/hatchery-more-configs/gen3-igv.yaml",
+      "name": "DockstoreIGV"
+    }
   ]
 }

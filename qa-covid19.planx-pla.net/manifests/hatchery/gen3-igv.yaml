@@ -1,0 +1,17 @@
+# Docker-compose for software_application smartretail
+version: "3.5"
+
+services:
+  igv-app:
+    container_name: gen3-igv
+    image: quay.io/cdis/gen3-igv:master
+    restart: on-failure
+    environment:
+      # - APP_BASE_URL=http://localhost:4000
+      - PROTOCOL=https
+      - HOSTNAME=localhost
+      - PORT=${SERVICE_PORT}
+    ports:
+      - ${SERVICE_PORT}:3000
+    volumes:
+      - ${DATA_VOLUME}:/data
