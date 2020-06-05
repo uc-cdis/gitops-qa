@@ -139,7 +139,7 @@
         "alt": "Center for Translational Data Science at the University of Chicago"
       },
       {
-        "src": "/src/img/sponsors/OCC.png",
+        "src": "/custom/sponsors/gitops-sponsors/OCC.png",
         "href": "http://occ-data.org/",
         "alt": "Open Commons Consortium"
       }
@@ -155,6 +155,14 @@
       "Chicago_ID": {
         "chartType": "count",
         "title": "Patients"
+      },
+      "ActionableMutations.Lab": {
+        "chartType": "pie",
+        "title": "ActionableMutations.Lab"
+      },
+      "Oncology_Primary.ICDOSite": {
+        "chartType": "bar",
+        "title": "OncologyPrimaryICDOSite"
       }
     },
     "filters": {
@@ -166,9 +174,23 @@
             "Days_To_Birth",
             "Days_To_Death",
             "DeceasedFlag",
-            "Ethnicity",
-            "Gender",
-            "Race"
+            "Ethnicity"
+          ]
+        },
+        {
+          "title": "ActionableMutations",
+          "fields":[
+            "project_id",
+            "ActionableMutations.Lab",
+            "ActionableMutations.DaysFromAnchorDateToBxDate"
+          ]
+        },
+        {
+          "title": "Oncology_Primary",
+          "fields":[
+            "project_id",
+            "Oncology_Primary.Multiplicitycounter",
+            "Oncology_Primary.ICDOSite"
           ]
         }
       ]
@@ -191,14 +213,16 @@
         "Race",
         "Ethnicity",
         "Gender",
-        "Days_To_Birth",
-        "Days_To_Death"
+        "ActionableMutations.Lab",
+        "Oncology_Primary.Multiplicitycounter",
+        "Oncology_Primary.ICDOSite"
       ]
     },
     "guppyConfig": {
       "dataType": "patients",
       "nodeCountTitle": "Patients",
       "fieldMapping": [
+        {"field": "Oncology_Primary.Multiplicitycounter", "name": "OPMC"}
       ]
     }
   }

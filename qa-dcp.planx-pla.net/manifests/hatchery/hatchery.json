@@ -5,7 +5,7 @@
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "quay.io/cdis/gen3fuse-sidecar:0.1.4",
+    "image": "quay.io/cdis/gen3fuse-sidecar:2020.06",
     "env": {
       "NAMESPACE": "qa-dcp",
       "HOSTNAME": "qa-dcp.planx-pla.net"
@@ -255,6 +255,23 @@
           }
         }
       ]
+    }
+  ],
+  "more-configs": [
+    {
+      "type": "dockstore-compose:1.0.0",
+      "path": "/hatchery-more-configs/test-app.yaml",
+      "name": "DockstoreTest"
+    },
+    {
+      "type": "dockstore-compose:1.0.0",
+      "path": "/hatchery-more-configs/notebook-app.yaml",
+      "name": "DockstoreNotebook"
+    },
+    {
+      "type": "dockstore-compose:1.0.0",
+      "path": "/hatchery-more-configs/dicom-compose.yaml",
+      "name": "DockstoreDicom"
     }
   ]
 }

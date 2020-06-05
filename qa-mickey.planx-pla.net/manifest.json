@@ -11,15 +11,15 @@
     "ambassador": "quay.io/datawire/ambassador:0.60.3",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
     "dashboard": "quay.io/cdis/gen3-statics:2020.03",
-    "fence": "quay.io/cdis/fence:2020.03",
+    "fence": "quay.io/cdis/fence:4.18.0",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
-    "guppy": "quay.io/cdis/guppy:2020.03",
+    "guppy": "quay.io/cdis/guppy:feat_nested-table",
     "hatchery": "quay.io/cdis/hatchery:2020.03",
     "indexd": "quay.io/cdis/indexd:2020.03",
     "manifestservice": "quay.io/cdis/manifestservice:2020.03",
     "peregrine": "quay.io/cdis/peregrine:2020.03",
     "pidgin": "quay.io/cdis/pidgin:2020.03",
-    "portal": "quay.io/cdis/data-portal:2020.03",
+    "portal": "quay.io/cdis/data-portal:feat_nested-table",
     "revproxy": "quay.io/cdis/nginx:1.17.6-ctds-1.0.1",
     "sheepdog": "quay.io/cdis/sheepdog:2020.03",
     "sower": "quay.io/cdis/sower:2020.03",
@@ -100,6 +100,7 @@
         "type": "patients"
       }
     ],
+    "config_index": "etl_mickey_array-config_1",
     "auth_filter_field": "auth_resource_path"
   }
 }
