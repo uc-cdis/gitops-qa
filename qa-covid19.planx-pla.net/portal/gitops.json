@@ -380,14 +380,26 @@
       "tabTitle": "Summary",
       "charts": {
         "country_region": {
-          "chartType": "pie",
+          "chartType": "bar",
           "title": "Country"
+        },
+        "county": {
+          "chartType": "bar",
+          "title": "Illinois Counties"
         }
       },
         "filters": {
           "tabs": [
             {
-              "title": "Reports",
+              "title": "Demographics",
+              "fields": [
+                "country_region",
+                "province_state",
+                "county"
+              ]
+            },
+            {
+              "title": "Clinical",
               "fields": [
                 "staffed_all_beds",
                 "staffed_icu_beds",
@@ -399,14 +411,6 @@
                 "population_gtr_65",
                 "estimated_full_mech_ventilators",
                 "estimated_full_mech_pediatric_ventilators"
-              ]
-            },
-            {
-              "title": "Location",
-              "fields": [
-                "county",
-                "province_state",
-                "country_region"
               ]
             }
           ]
@@ -469,6 +473,10 @@
             {
               "field": "province_state",
               "name": "Province or State"
+            },
+            {
+              "fields": "country_region",
+              "name": "Country or Region"
             }
           ],
           "nodeCountTitle": "Locations",
