@@ -2,7 +2,15 @@
 version: "3.5"
 
 services:
-  igv-app:
+  nginx:
+    image: quay.io/cdis/nginx-igv:master
+    container_name: nginx-gen3-igv
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./data:/static-data
+    ports:
+      - ${SERVICE_PORT}:80
+  gen3-igv:
     container_name: gen3-igv
     image: quay.io/cdis/gen3-igv:master
     restart: on-failure
@@ -11,7 +19,5 @@ services:
       - PROTOCOL=https
       - HOSTNAME=localhost
       - PORT=${SERVICE_PORT}
-    ports:
-      - ${SERVICE_PORT}:3000
     volumes:
       - ${DATA_VOLUME}:/data
