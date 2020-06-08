@@ -401,6 +401,8 @@
             {
               "title": "Clinical",
               "fields": [
+                "project_investigator_affiliation",
+                "project_name",
                 "staffed_all_beds",
                 "staffed_icu_beds",
                 "licensed_all_beds",
@@ -477,6 +479,22 @@
             {
               "fields": "country_region",
               "name": "Country or Region"
+            },
+            {
+              "field": "project_url",
+              "name": "Source URL"
+            },
+            {
+              "field": "project_code",
+              "name": "Code"
+            },
+            {
+              "field": "project_name",
+              "name": "Dataset"
+            },
+            {
+              "field": "project_investigator_affiliation",
+              "name": "Source"
             }
           ],
           "nodeCountTitle": "Locations",
