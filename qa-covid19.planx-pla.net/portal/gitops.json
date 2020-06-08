@@ -412,7 +412,11 @@
                 "population_gtr_20",
                 "population_gtr_65",
                 "estimated_full_mech_ventilators",
-                "estimated_full_mech_pediatric_ventilators"
+                "estimated_full_mech_pediatric_ventilators",
+                "confirmed",
+                "deaths",
+                "recovered",
+                "testing"
               ]
             }
           ]
