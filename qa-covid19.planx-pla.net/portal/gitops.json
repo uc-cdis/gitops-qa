@@ -379,6 +379,10 @@
     {
       "tabTitle": "Summary",
       "charts": {
+        "project_name": {
+          "chartType": "bar",
+          "title": "Dataset"
+        },
         "country_region": {
           "chartType": "bar",
           "title": "Country"
