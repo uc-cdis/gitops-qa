@@ -169,7 +169,7 @@
     {
       "tabTitle": "Subjects",
       "charts": {
-        "project_name": {
+        "project_investigator_affiliation": {
           "chartType": "bar",
           "title": "Dataset"
         },
@@ -379,7 +379,7 @@
     {
       "tabTitle": "Summary",
       "charts": {
-        "project_name": {
+        "project_investigator_affiliation": {
           "chartType": "bar",
           "title": "Dataset"
         },
@@ -485,7 +485,7 @@
               "name": "Province or State"
             },
             {
-              "fields": "country_region",
+              "field": "country_region",
               "name": "Country or Region"
             },
             {
