@@ -381,7 +381,7 @@
       "charts": {
         "project_investigator_affiliation": {
           "chartType": "bar",
-          "title": "Dataset"
+          "title": "Dataset Source"
         },
         "country_region": {
           "chartType": "bar",
