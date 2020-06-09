@@ -171,7 +171,7 @@
       "charts": {
         "project_investigator_affiliation": {
           "chartType": "bar",
-          "title": "Dataset"
+          "title": "Dataset Source"
         },
         "gender": {
           "chartType": "pie",
@@ -562,4 +562,3 @@
   "showArboristAuthzOnProfile": true,
   "showFenceAuthzOnProfile": false
 }
-
