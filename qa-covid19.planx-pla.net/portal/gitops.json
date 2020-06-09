@@ -169,9 +169,9 @@
     {
       "tabTitle": "Subjects",
       "charts": {
-        "project_name": {
+        "project_investigator_affiliation": {
           "chartType": "bar",
-          "title": "Dataset"
+          "title": "Dataset Source"
         },
         "gender": {
           "chartType": "pie",
@@ -379,9 +379,9 @@
     {
       "tabTitle": "Summary",
       "charts": {
-        "project_name": {
+        "project_investigator_affiliation": {
           "chartType": "bar",
-          "title": "Dataset"
+          "title": "Dataset Source"
         },
         "country_region": {
           "chartType": "bar",
@@ -485,7 +485,7 @@
               "name": "Province or State"
             },
             {
-              "fields": "country_region",
+              "field": "country_region",
               "name": "Country or Region"
             },
             {
@@ -562,4 +562,3 @@
   "showArboristAuthzOnProfile": true,
   "showFenceAuthzOnProfile": false
 }
-
