@@ -453,18 +453,6 @@
               "name": "ICU Beds"
             },
             {
-              "field": "licensed_all_beds",
-              "name": "All Licensed Beds"
-            },
-            {
-              "field": "icu_bed_occupancy_rate",
-              "name": "ICU Beds Occupancy Rate"
-            },
-            {
-              "field": "population_gtr_20",
-              "name": "Population Greater Than 20"
-            },
-            {
               "field": "population_gtr_65",
               "name": "Population Greater Than 65"
             },
