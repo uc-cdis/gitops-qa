@@ -377,7 +377,7 @@
       }
     },
     {
-      "tabTitle": "Location",
+      "tabTitle": "Locations",
       "charts": {
         "project_investigator_affiliation": {
           "chartType": "bar",
@@ -433,7 +433,12 @@
             "confirmed",
             "deaths",
             "recovered",
-            "testing"
+            "testing",
+            "staffed_all_beds",
+            "staffed_icu_beds",
+            "population_gtr_65",
+            "estimated_full_mech_ventilators",
+            "estimated_full_mech_pediatric_ventilators"
           ],
           "linkFields": [
             "project_url"
