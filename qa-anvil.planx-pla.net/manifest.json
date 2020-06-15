@@ -9,8 +9,6 @@
   "versions": {
     "ambassador": "quay.io/datawire/ambassador:0.60.3",
     "arborist": "quay.io/cdis/arborist:integration202007",
-    "arranger-adminapi": "quay.io/cdis/arranger-server:master",
-    "arranger-dashboard": "quay.io/cdis/arranger-dashboard:master",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
     "fence": "quay.io/cdis/fence:integration202007",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
