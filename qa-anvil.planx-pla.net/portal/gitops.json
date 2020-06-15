@@ -141,8 +141,7 @@
             "disease_id", 
             "solve_state", 
             "congenital_status", 
-            "age_of_onset",
-            "hardy_scale"
+            "age_of_onset"
           ]
         }, {
           "title": "Sample",
@@ -184,7 +183,6 @@
         "sex",
         "age_value",
         "total_ischemic_time",
-        "hardy_scale",
         "_subjects_count",
         "_samples_count",
         "_sequencings_count"
@@ -262,7 +260,10 @@
         { "field": "reference_genome_build", "name": "Reference Genome Build" }, 
         { "field": "sequencing_assay", "name": "Sequencing Assay" }, 
         { "field": "alignment_method", "name": "Alignment Method" }, 
-        { "field": "data_processing_pipeline", "name": "Data Processing Pipeline" }     
+        { "field": "data_processing_pipeline", "name": "Data Processing Pipeline" },
+        { "field": "short_name", "name": "Short Name" },
+        { "field": "dbgap_accession_number", "name": "dbGaP Accession Number" },
+        { "field": "dbgap_consent_text", "name":"dbGaP Consent Text"},
       ],
       "manifestMapping": {
         "resourceIndexType": "file",
