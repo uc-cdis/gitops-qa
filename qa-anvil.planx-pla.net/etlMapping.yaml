@@ -16,7 +16,6 @@ mappings:
       - name: solve_state
       - name: congenital_status
       - name: age_of_onset
-      - name: hardy_scale
     flatten_props:
       - path: samples
         props:
