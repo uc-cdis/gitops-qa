@@ -263,7 +263,7 @@
         { "field": "data_processing_pipeline", "name": "Data Processing Pipeline" },
         { "field": "short_name", "name": "Short Name" },
         { "field": "dbgap_accession_number", "name": "dbGaP Accession Number" },
-        { "field": "dbgap_consent_text", "name":"dbGaP Consent Text"},
+        { "field": "dbgap_consent_text", "name":"dbGaP Consent Text"}
       ],
       "manifestMapping": {
         "resourceIndexType": "file",
