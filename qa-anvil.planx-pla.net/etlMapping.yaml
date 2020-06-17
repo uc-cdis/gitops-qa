@@ -6,9 +6,6 @@ mappings:
     props:
       - name: submitter_id
       - name: project_id
-      - name: dbgap_accession_number
-      - name: short_name
-      - name: dbgap_consent_text
       - name: sex
       - name: age_value
       - name: ancestry
@@ -19,11 +16,9 @@ mappings:
       - name: solve_state
       - name: congenital_status
       - name: age_of_onset
-      - name: hardy_scale
     flatten_props:
       - path: samples
         props:
-          - name: hardy_scale
           - name: sample_provider
           - name: tissue_affected_status
           - name: tissue_type

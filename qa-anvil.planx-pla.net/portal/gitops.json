@@ -141,8 +141,7 @@
             "disease_id", 
             "solve_state", 
             "congenital_status", 
-            "age_of_onset",
-            "hardy_scale"
+            "age_of_onset"
           ]
         }, {
           "title": "Sample",
@@ -184,7 +183,6 @@
         "sex",
         "age_value",
         "total_ischemic_time",
-        "hardy_scale",
         "_subjects_count",
         "_samples_count",
         "_sequencings_count"
@@ -242,7 +240,6 @@
       "fieldMapping": [
         { "field": "sex", "name": "Sex" },
         { "field": "age_value", "name": "Age Value" },
-        { "field": "hardy_scale", "name": "Hardy Scale" },
         { "field": "ancestry", "name": "Ancestry" },
         { "field": "disease_description", "name": "Disease Description" }, 
         { "field": "phenotype_present", "name": "Phenotype Present" }, 
@@ -264,9 +261,9 @@
         { "field": "sequencing_assay", "name": "Sequencing Assay" }, 
         { "field": "alignment_method", "name": "Alignment Method" }, 
         { "field": "data_processing_pipeline", "name": "Data Processing Pipeline" },
-        { "field": "short_name", "name": "Short Name" }, 
-        { "field": "dbgap_accession_number", "name": "dbGaP Accession Number" },    
-        { "field": "dbgap_consent_text", "name": "dbGaP Consent Text" }           
+        { "field": "short_name", "name": "Short Name" },
+        { "field": "dbgap_accession_number", "name": "dbGaP Accession Number" },
+        { "field": "dbgap_consent_text", "name":"dbGaP Consent Text"}
       ],
       "manifestMapping": {
         "resourceIndexType": "file",
