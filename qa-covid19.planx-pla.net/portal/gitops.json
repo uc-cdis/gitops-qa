@@ -417,6 +417,12 @@
                 "province_state",
                 "county"
               ]
+            },
+            {
+              "title": "Location",
+              "fields": [
+                "reporting_org"
+              ]
             }
           ]
         },
@@ -492,6 +498,10 @@
             {
               "field": "project_investigator_affiliation",
               "name": "Source"
+            },
+            {
+              "field": "reporting_org",
+              "name": "Reporting Organization"
             }
           ],
           "nodeCountTitle": "Locations",
