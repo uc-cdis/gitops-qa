@@ -16,15 +16,28 @@ mappings:
       - name: solve_state
       - name: congenital_status
       - name: age_of_onset
-    flatten_props:
-      - path: samples
-        props:
-          - name: sample_provider
-          - name: tissue_affected_status
-          - name: tissue_type
-          - name: sample_type
-          - name: original_material_type
+#    flatten_props:
     aggregated_props:
+      - name: sample_provider
+        path: samples
+        src: sample_provider
+        fn: set
+      - name: tissue_affected_status
+        path: samples
+        src: tissue_affected_status
+        fn: set
+      - name: tissue_type
+        path: samples
+        src: tissue_type
+        fn: set
+      - name: sample_type
+        path: samples
+        src: sample_type
+        fn: set
+      - name: original_material_type
+        path: samples
+        src: original_material_type
+        fn: set
       - name: exome_capture_platform
         path: samples.sequencings
         src: exome_capture_platform
