@@ -415,12 +415,7 @@
               "fields": [
                 "country_region",
                 "province_state",
-                "county"
-              ]
-            },
-            {
-              "title": "Location",
-              "fields": [
+                "county",
                 "reporting_org"
               ]
             }
