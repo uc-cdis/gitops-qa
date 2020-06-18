@@ -1,5 +1,5 @@
 mappings:
-  - name: etl_internalstaging-anvil
+  - name: etl_qa-anvil
     doc_type: subject
     type: aggregator
     root: subject
@@ -82,7 +82,7 @@ mappings:
           - name: data_type
             src: data_type
             fn: set
-  - name: file_internalstaging-anvil
+  - name: file_qa-anvil
     doc_type: file
     type: collector
     root: None
