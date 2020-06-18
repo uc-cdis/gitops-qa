@@ -65,6 +65,7 @@
       }
     ],
     "auth_filter_field": "auth_resource_path",
+    "config_index": "etl_qa-anvil-array-config"
     "enable_encrypt_whitelist": false
   },
   "jupyterhub": {
