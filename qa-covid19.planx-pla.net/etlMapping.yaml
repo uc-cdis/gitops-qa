@@ -14,12 +14,9 @@ mappings:
       - name: FIPS
       - name: iso2
       - name: iso3
-<<<<<<< HEAD
       - name: reporting_org
-=======
       - name: state_hospital_region
       - name: state_region_description
->>>>>>> feat(idph): add idph fields for covid19
     flatten_props:
       - path: summary_clinicals
         props:
