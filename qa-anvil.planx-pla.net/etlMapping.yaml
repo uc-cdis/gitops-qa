@@ -85,7 +85,7 @@ mappings:
     parent_props:
       - path: projects[project_code:code]
       - path: projects[project_name:name]
-      - path: projects[project_programs:program]
+      - path: projects[project_programs:programs]
       - path: projects[project_dbgap_phs:dbgap_phs]
       - path: projects[project_dbgap_consent_text:dbgap_consent_text]
       - path: projects[project_short_name:short_name]
