@@ -26,7 +26,8 @@
     "wts": "quay.io/cdis/workspace-token-service:integration202007",
     "manifestservice": "quay.io/cdis/manifestservice:integration202007",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:integration202007",
-    "metadata": "quay.io/cdis/metadata-service:integration202007"
+    "metadata": "quay.io/cdis/metadata-service:integration202007",
+    "dashboard": "quay.io/cdis/gen3-statics:master"
   },
   "google": {
     "enabled": "yes"
