@@ -57,7 +57,7 @@
     "indices": [
       {
         "index": "etl_qa-anvil",
-        "type": "case"
+        "type": "subject"
       },
       {
         "index": "file_qa-anvil",
@@ -108,7 +108,7 @@
           },
           {
             "name": "ROOT_NODE",
-            "value": "case"
+            "value": "subject"
           }
         ],
         "volumeMounts": [
