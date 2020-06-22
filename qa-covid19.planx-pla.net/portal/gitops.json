@@ -252,7 +252,7 @@
           },
           {
             "field": "source",
-            "name": "Media Outlet"
+            "name": "Reporting Source"
           },
           {
             "field": "project_investigator_affiliation",
