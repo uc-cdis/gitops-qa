@@ -57,7 +57,7 @@
     "indices": [
       {
         "index": "etl_qa-anvil",
-        "type": "case"
+        "type": "subject"
       },
       {
         "index": "file_qa-anvil",
@@ -65,6 +65,7 @@
       }
     ],
     "auth_filter_field": "auth_resource_path",
+    "config_index": "etl_qa-anvil-array-config",
     "enable_encrypt_whitelist": false
   },
   "jupyterhub": {
@@ -107,7 +108,7 @@
           },
           {
             "name": "ROOT_NODE",
-            "value": "case"
+            "value": "subject"
           }
         ],
         "volumeMounts": [

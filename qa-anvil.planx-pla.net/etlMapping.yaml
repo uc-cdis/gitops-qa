@@ -1,5 +1,5 @@
 mappings:
-  - name: etl_internalstaging-anvil
+  - name: etl_qa-anvil
     doc_type: subject
     type: aggregator
     root: subject
@@ -82,7 +82,15 @@ mappings:
           - name: data_type
             src: data_type
             fn: set
-  - name: file_internalstaging-anvil
+    parent_props:
+      - path: projects[project_code:code]
+      - path: projects[project_name:name]
+      - path: projects[project_dbgap_phs:dbgap_phs]
+      - path: projects[project_dbgap_consent_text:dbgap_consent_text]
+      - path: projects[project_short_name:short_name]
+      - path: projects[project_dbgap_accession_number:dbgap_accession_number]
+
+  - name: file_qa-anvil
     doc_type: file
     type: collector
     root: None
