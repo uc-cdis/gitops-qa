@@ -1,5 +1,5 @@
 mappings:
-  - name: etl_qa-anvil
+  - name: qa-anvil_etl
     doc_type: subject
     type: aggregator
     root: subject
@@ -90,7 +90,7 @@ mappings:
       - path: projects[project_short_name:short_name]
       - path: projects[project_dbgap_accession_number:dbgap_accession_number]
 
-  - name: file_qa-anvil
+  - name: qa-anvil_file
     doc_type: file
     type: collector
     root: None
@@ -108,4 +108,6 @@ mappings:
         props:
           - name: subject_id
             src: id
+            fn: set
           - name: project_id
+            fn: set
