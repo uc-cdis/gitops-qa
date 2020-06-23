@@ -56,16 +56,16 @@
   "guppy": {
     "indices": [
       {
-        "index": "etl_qa-anvil",
+        "index": "qa-anvil_etl",
         "type": "subject"
       },
       {
-        "index": "file_qa-anvil",
+        "index": "qa-anvil_file",
         "type": "file"
       }
     ],
     "auth_filter_field": "auth_resource_path",
-    "config_index": "etl_qa-anvil-array-config",
+    "config_index": "qa-anvil_array-config",
     "enable_encrypt_whitelist": false
   },
   "jupyterhub": {
