@@ -553,8 +553,6 @@
   "showFenceAuthzOnProfile": false,
   "covid19DashboardConfig": {
     "dataUrl": "https://static.planx-pla.net/",
-  "covid19DashboardConfig": {
-    "dataUrl": "https://static.planx-pla.net/",
     "chartsConfig": {
       "world": [
         [
