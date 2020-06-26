@@ -1,7 +1,8 @@
 {
   "gaTrackingId": "UA-119127212-1",
   "graphql": {
-    "boardCounts": [{
+    "boardCounts": [
+      {
         "graphql": "_summary_location_count",
         "name": "Location",
         "plural": "Locations"
@@ -12,7 +13,8 @@
         "plural": "Subjects"
       }
     ],
-    "chartCounts": [{
+    "chartCounts": [
+      {
         "graphql": "_subject_count",
         "name": "Subject"
       },
@@ -32,7 +34,8 @@
         "link": "/submission"
       },
       "buttons": [],
-      "homepageChartNodes": [{
+      "homepageChartNodes": [
+        {
           "node": "summary_location",
           "name": "Locations"
         },
@@ -47,7 +50,8 @@
       ]
     },
     "navigation": {
-      "items": [{
+      "items": [
+        {
           "name": "Notebook Browser",
           "link": "/resource-browser",
           "icon": "query",
@@ -79,12 +83,13 @@
       ]
     },
     "topBar": {
-      "items": [{
+      "items": [
+        {
           "link": "/",
           "name": "Chicagoland COVID-19 Commons Home"
         },
         {
-          "link": "https://qa-covid19.planx-pla.net/dashboard/Public/index.html",
+          "link": "https://pandemicresponsecommons.org/members/chicagoland-commons-partners/",
           "name": "Partners"
         },
         {
@@ -107,29 +112,34 @@
       "image": "/../../../../custom/sponsors/gitops-sponsors/covid_gene"
     },
     "categorical9Colors": ["#B02F34", "#421C52", "#AEEBF2", "#E0DD10", "#40476D", "#FFA630", "#AE8799", "#035C94", "#462255"],
-    "footerLogos": [{
-      "src": "/src/img/gen3.png",
-      "href": "https://ctds.uchicago.edu/gen3",
-      "alt": "Gen3 Data Commons"
-    }]
+    "footerLogos": [
+      {
+        "src": "/src/img/gen3.png",
+        "href": "https://ctds.uchicago.edu/gen3",
+        "alt": "Gen3 Data Commons"
+      }
+    ]
   },
   "featureFlags": {
     "explorer": true,
     "analysis": true
   },
-  "analysisTools": [],
-  "explorerConfig": [{
+  "analysisTools": [ ],
+  "explorerConfig": [
+    {
       "tabTitle": "Datasets",
       "charts": {},
       "filters": {
-        "tabs": [{
-          "title": "Details",
-          "fields": [
-            "investigator_affiliation",
-            "name",
-            "data_description"
-          ]
-        }]
+        "tabs": [
+          {
+            "title": "Details",
+            "fields": [
+              "investigator_affiliation",
+              "name",
+              "data_description"
+            ]
+          }
+        ]
       },
       "table": {
         "enabled": true,
@@ -148,18 +158,10 @@
       "guppyConfig": {
         "dataType": "dataset",
         "nodeCountTitle": "Datasets",
-        "fieldMapping": [{
-            "field": "url",
-            "name": "Source URL"
-          },
-          {
-            "field": "investigator_affiliation",
-            "name": "Source"
-          },
-          {
-            "field": "name",
-            "name": "Dataset"
-          }
+        "fieldMapping": [
+          { "field": "url", "name": "Source URL" },
+          { "field": "investigator_affiliation", "name": "Source"},
+          { "field": "name", "name": "Dataset" }
         ],
         "manifestMapping": {
           "referenceIdFieldInResourceIndex": "code"
@@ -187,7 +189,8 @@
         }
       },
       "filters": {
-        "tabs": [{
+        "tabs": [
+          {
             "title": "Clinical",
             "fields": [
               "project_investigator_affiliation",
@@ -238,26 +241,12 @@
       "guppyConfig": {
         "dataType": "subject",
         "nodeCountTitle": "Subjects",
-        "fieldMapping": [{
-            "field": "project_url",
-            "name": "Source URL"
-          },
-          {
-            "field": "project_code",
-            "name": "Code"
-          },
-          {
-            "field": "project_name",
-            "name": "Dataset"
-          },
-          {
-            "field": "source",
-            "name": "Reporting Source"
-          },
-          {
-            "field": "project_investigator_affiliation",
-            "name": "Source"
-          }
+        "fieldMapping" : [
+          { "field": "project_url", "name": "Source URL" },
+          { "field": "project_code", "name": "Code" },
+          { "field": "project_name", "name": "Dataset" },
+          { "field": "source", "name": "Reporting Source"},
+          { "field": "project_investigator_affiliation", "name": "Source"}
         ],
         "manifestMapping": {
           "referenceIdFieldInResourceIndex": "subject_id"
@@ -293,21 +282,23 @@
         }
       },
       "filters": {
-        "tabs": [{
-          "title": "Viral",
-          "fields": [
-            "project_investigator_affiliation",
-            "project_name",
-            "data_type",
-            "data_format",
-            "location",
-            "host",
-            "organism",
-            "sample_type",
-            "isolation_source",
-            "collection_date"
-          ]
-        }]
+        "tabs": [
+          {
+            "title": "Viral",
+            "fields": [
+              "project_investigator_affiliation",
+              "project_name",
+              "data_type",
+              "data_format",
+              "location",
+              "host",
+              "organism",
+              "sample_type",
+              "isolation_source",
+              "collection_date"
+            ]
+          }
+        ]
       },
       "table": {
         "enabled": true,
@@ -326,7 +317,8 @@
         ]
       },
       "dropdowns": {},
-      "buttons": [{
+      "buttons": [
+        {
           "enabled": true,
           "type": "file-manifest",
           "title": "Download Manifest",
@@ -345,26 +337,12 @@
       ],
       "guppyConfig": {
         "dataType": "file",
-        "fieldMapping": [{
-            "field": "project_url",
-            "name": "Source URL"
-          },
-          {
-            "field": "project_code",
-            "name": "Code"
-          },
-          {
-            "field": "project_name",
-            "name": "Dataset"
-          },
-          {
-            "field": "project_investigator_affiliation",
-            "name": "Source"
-          },
-          {
-            "field": "object_id",
-            "name": "GUID"
-          }
+        "fieldMapping": [
+          { "field": "project_url", "name": "Source URL" },
+          { "field": "project_code", "name": "Code" },
+          { "field": "project_name", "name": "Dataset" },
+          { "field": "project_investigator_affiliation", "name": "Source"},
+          { "field": "object_id", "name": "GUID" }
         ],
         "nodeCountTitle": "Files",
         "manifestMapping": {
@@ -506,12 +484,13 @@
           }
         }
       }
-    ],
+  ],
   "resourceBrowser": {
     "title": "COVID-19 Jupyter Notebooks",
     "public": true,
     "description": "The Jupyter notebooks contained in this notebook viewer pull data from various external sources to generate and output useful tables, charts, graphs, and models. Each notebook is static, meaning the data being used by the notebooks is not updated in real time. These notebooks are also available in the Gen3 Workspace and can be launched by following the instructions listed in the readme.md file. When running the notebooks from the Workspace the most recent data is pulled from the originating source in real time and the notebook will render the most updated information.",
-    "resources": [{
+    "resources": [
+      {
         "title": "Exploring the Demographics of COVID-19 Cases",
         "description": "In this notebook, we explore some of the demographic data associated with COVID-19 cases in the Chicagoland Pandemic Response Commons.",
         "link": "/dashboard/Public/notebooks/kaggle_data_analysis_04072020.html",
@@ -542,7 +521,7 @@
         "imageUrl": "/dashboard/Public/notebooks/extended-seir.png"
       },
       {
-        "title": "COVID-19 Testing in the US",
+        "title": "COVID-19 Testing Over Time in the US",
         "description": "COVID-19 testing is very crucial to understand the spread of the pandemic. In this Python notebook, we have focused our efforts on visualizing the COVID-19 testing data across the U.S. States and Territories from the COVID Tracking Project. The animations will allow you to see how testing data has changed over time.",
         "link": "/dashboard/Public/notebooks/CTP_testing.html",
         "imageUrl": "/dashboard/Public/notebooks/CTP_testing.png"
