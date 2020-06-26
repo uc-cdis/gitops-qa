@@ -43,7 +43,7 @@
       "serviceAccountName": "jobs-qa-dcp-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/metadata-manifest-ingestion:1.1.6",
+        "image": "quay.io/cdis/metadata-manifest-ingestion:master",
         "pull_policy": "Always",
         "env": [
           {
@@ -83,7 +83,7 @@
       "serviceAccountName": "jobs-qa-dcp-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/get-dbgap-metadata:1.1.6",
+        "image": "quay.io/cdis/get-dbgap-metadata:master",
         "pull_policy": "Always",
         "env": [],
         "volumeMounts": [
