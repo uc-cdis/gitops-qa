@@ -108,7 +108,7 @@ mappings:
           - name: data_category
             src: data_type
             fn: set
-  - name: acct_file
+  - name: qa-acct_file
     doc_type: file
     type: collector
     root: None
