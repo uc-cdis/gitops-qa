@@ -1,5 +1,5 @@
 #!groovy
-@Library('cdis-jenkins-lib@fix/duplicate_sower_entries') _
+@Library('cdis-jenkins-lib@master') _
 testPipeline {
   MANIFEST = "True"
 }
