@@ -528,11 +528,11 @@
             },
             {
               "field": "state_icu_capacity",
-              "name": "IL ICU Capacity"
+              "name": "Illinois ICU Capacity"
             },
             {
               "field": "state_icu_covid_patients",
-              "name": "IL ICU COVID-19 Patients"
+              "name": "Illinois ICU COVID-19 Patients"
             },
             {
               "field": "state_vent_capacity",
