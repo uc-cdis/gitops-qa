@@ -125,7 +125,7 @@
   "featureFlags": {
     "explorer": true
   },
-"dataExplorerConfig": {
+  "dataExplorerConfig": {
     "charts": {
       "project_id": {
         "chartType": "count",
@@ -133,16 +133,31 @@
       },
       "node_id": {
         "chartType": "count",
-        "title": "Cases"
+        "title": "Subjects"
       }
     },
     "filters": {
       "tabs": [
         {
-          "title": "Study Selection",
+          "title": "Subjects",
           "fields": [
             "project_id",
-	    "submitter_id"
+            "disease_type",
+            "index_date",
+            "primary_site",
+            "species",
+            "strain",
+            "ethnicity",
+            "gender",
+            "race",
+            "primary_diagnosis",
+            "alcohol_intensity",
+            "bmi",
+            "pack_years_smoked",
+            "years_smoked",
+            "composition",
+            "tissue_type",
+            "therapeutic_agents"
           ]
         }
       ]
@@ -151,7 +166,22 @@
       "enabled": true,
       "fields": [
         "project_id",
-        "submitter_id"
+        "disease_type",
+        "index_date",
+        "primary_site",
+        "species",
+        "strain",
+        "ethnicity",
+        "gender",
+        "race",
+        "primary_diagnosis",
+        "alcohol_intensity",
+        "bmi",
+        "pack_years_smoked",
+        "years_smoked",
+        "composition",
+        "tissue_type",
+        "therapeutic_agents"
       ]
     },
     "guppyConfig": {
@@ -176,12 +206,27 @@
         "leftIcon": "user",
         "rightIcon": "download",
         "fileName": "data.json"
+      },
+      {
+        "enabled": true,
+        "type": "manifest",
+        "title": "Download Manifest",
+        "leftIcon": "datafile",
+        "rightIcon": "download",
+        "fileName": "manifest.json"
       }
-    ],
-    "hideGetAccessButton": true
+    ]
   },
   "fileExplorerConfig": {
     "charts": {
+      "project_id": {
+        "chartType": "pie",
+        "title": "Project ID"
+      },
+      "data_category": {
+        "chartType": "stackedBar",
+        "title": "File Category"
+      },
       "data_type": {
         "chartType": "stackedBar",
         "title": "File Type"
@@ -198,7 +243,9 @@
           "fields": [
             "project_id",
             "data_type",
-            "data_format"
+            "data_format",
+            "data_category",
+            "experimental_strategy"
           ]
         }
       ]
@@ -207,9 +254,16 @@
       "enabled": true,
       "fields": [
         "project_id",
+        "subject_submitter_id",
         "file_name",
+        "data_format",
+        "data_type",
+        "data_category",
+        "experimental_strategy",
         "file_size",
-        "object_id"
+        "submitter_id",
+        "object_id",
+        "md5sum"
       ]
     },
     "guppyConfig": {
