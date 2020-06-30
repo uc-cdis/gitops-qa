@@ -7,11 +7,13 @@ services:
     image: quay.io/cdis/gen3-igv:master
     restart: on-failure
     environment:
-      # - APP_BASE_URL=http://localhost:4000
       - PROTOCOL=https
       - HOSTNAME=localhost
       - ROOT_URL=/lw-workspace/proxy/
     volumes:
       - ${DATA_VOLUME}:/data
+  nginx-igv:
+    image: "quay.io/cdis/nginx-igv:master"
+    container_name: nginx
     ports:
-      - ${SERVICE_PORT}:3000
+      - ${SERVICE_PORT}:80

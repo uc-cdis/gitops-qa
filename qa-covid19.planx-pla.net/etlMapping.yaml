@@ -72,30 +72,18 @@ mappings:
           - name: state_covid_pui_patients
           - name: state_covid_pui_patients_pct
           - name: state_covid_pui_patients_beds_in_use_pct
-          - name: state_ventilator_capacity
-          - name: state_ventilators_open
           - name: state_Ventilators_open_pct
           - name: state_ventilators_in_use
           - name: state_ventilators_in_use_covid
           - name: state_ventilators_covid_patients_pct
-          - name: state_ventilators_covid_patients_in_use_pct
           - name: state_covid_patients_non_icu
           - name: state_total_covid_pui_in_icu
           - name: state_total_covid_pui_in_hospital
           - name: state_pct_beds_covid_pui
-          - name: state_med_surg_beds
-          - name: state_med_surg_beds_open
-          - name: state_med_surg_beds_open_pct
-          - name: state_med_surg_beds_in_use
-          - name: state_total_beds
           - name: testing
-          - name: total_open_beds
           - name: total_in_use_beds_non_covid
           - name: total_in_use_beds_covid
-          - name: ventilator_capacity
-          - name: ventilator_available
-          - name: ventilator_in_use_non_covid
-          - name: ventilator_in_use_covid
+
         sorted_by: updated_datetime, desc
     parent_props:
       - path: projects[project_code:code,project_name:name,project_url:url,project_investigator_affiliation:investigator_affiliation]
