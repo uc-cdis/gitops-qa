@@ -104,6 +104,7 @@ mappings:
       - name: file_size
       - name: data_format
       - name: data_type
+      - name: state
       - name: data_category
       - name: analyte_type
       - name: sequencing_assay
