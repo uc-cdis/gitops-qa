@@ -93,7 +93,7 @@ mappings:
   - name: qa-anvil_file
     doc_type: file
     type: collector
-    root: none
+    root: None
     category: data_file
     props:
       - name: project_id
