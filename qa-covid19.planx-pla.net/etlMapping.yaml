@@ -7,6 +7,7 @@ mappings:
       - name: submitter_id
       - name: project_id
       - name: country_region
+      - name: community_area
       - name: province_state
       - name: county
       - name: latitude
@@ -24,6 +25,7 @@ mappings:
           - name: confirmed
           - name: date
           - name: deaths
+          - name: deaths_per_10000
           - name: estimated_full_mech_ventilators
           - name: estimated_full_mech_ventilators_per_100000
           - name: estimated_full_mech_pediatric_ventilators
