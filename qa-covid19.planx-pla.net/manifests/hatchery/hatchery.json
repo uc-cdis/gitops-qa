@@ -62,7 +62,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "1024Mi",
       "name": "R Studio JHU map",
-      "image": "quay.io/cdis/rstudio-jhumap:chore_init_moveimage",
+      "image": "quay.io/cdis/rstudio-jhumap:jhumap-1.0.0",
       "env": {
         "DISABLE_AUTH": "true"
       },
