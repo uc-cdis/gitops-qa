@@ -415,7 +415,9 @@
             {
               "title": "Illinois",
               "fields": [
+                "community_area",
                 "state_region_description",
+                "deaths_per_10000",
                 "region_icu_avail",
                 "region_icu_capacity",
                 "region_vents_available",
@@ -528,7 +530,7 @@
             },
             {
               "field": "state_region_description",
-              "name": "Region"
+              "name": "Hospital Region"
             },
             {
               "field": "region_icu_avail",
