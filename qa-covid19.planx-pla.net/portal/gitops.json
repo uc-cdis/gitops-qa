@@ -154,23 +154,7 @@
           "url"
         ]
       },
-      "buttons": [
-        {
-          "enabled": true,
-          "type": "manifest",
-          "title": "Download Manifest",
-          "leftIcon": "datafile",
-          "rightIcon": "download",
-          "fileName": "manifest.json"
-        },
-        {
-          "enabled": true,
-          "type": "export-to-workspace",
-          "title": "Export File Manifest to Workspace",
-          "leftIcon": "datafile",
-          "rightIcon": "download"
-        }
-      ],
+      "buttons": [],
       "guppyConfig": {
         "dataType": "dataset",
         "nodeCountTitle": "Datasets",
@@ -261,13 +245,6 @@
           "leftIcon": "datafile",
           "rightIcon": "download",
           "fileName": "manifest.json"
-        },
-        {
-          "enabled": true,
-          "type": "export-to-workspace",
-          "title": "Export File Manifest to Workspace",
-          "leftIcon": "datafile",
-          "rightIcon": "download"
         }
       ],
       "guppyConfig": {
@@ -499,13 +476,6 @@
             "leftIcon": "datafile",
             "rightIcon": "download",
             "fileName": "manifest.json"
-          },
-          {
-            "enabled": true,
-            "type": "export-to-workspace",
-            "title": "Export File Manifest to Workspace",
-            "leftIcon": "datafile",
-            "rightIcon": "download"
           }
         ],
         "guppyConfig": {
