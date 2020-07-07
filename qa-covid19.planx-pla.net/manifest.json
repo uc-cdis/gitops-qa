@@ -62,8 +62,8 @@
         "type": "location"
       },
       {
-        "index": "qa-covid19_file",
-        "type": "file"
+        "index": "qa-covid19_genomic_file",
+        "type": "genomic_file"
       },
       {
         "index": "qa-covid19_subject",
