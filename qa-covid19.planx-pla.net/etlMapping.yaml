@@ -130,7 +130,13 @@ mappings:
         props:
           - name: finding
           - name: intubated
+            value_mappings:
+              - Y: 'True'
+              - N: 'False'
           - name: extubated
+            value_mappings:
+              - Y: 'True'
+              - N: 'False'
           - name: pO2_saturation
           - name: leukocyte_count
           - name: neutrophil_count
