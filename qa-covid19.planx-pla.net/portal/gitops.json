@@ -248,7 +248,16 @@
           "project_url"
         ]
       },
-      "buttons": [],
+      "buttons": [
+        {
+          "enabled": true,
+          "type": "manifest",
+          "title": "Download Manifest",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "manifest.json"
+        }
+      ],
       "guppyConfig": {
         "dataType": "subject",
         "nodeCountTitle": "Subjects",
@@ -476,7 +485,16 @@
           ]
         },
         "dropdowns": {},
-        "buttons": [],
+        "buttons": [
+          {
+            "enabled": true,
+            "type": "manifest",
+            "title": "Download Manifest",
+            "leftIcon": "datafile",
+            "rightIcon": "download",
+            "fileName": "manifest.json"
+          }
+        ],
         "guppyConfig": {
           "dataType": "location",
           "fieldMapping": [
