@@ -765,7 +765,7 @@
           "description": "Here we plot daily death counts over time, where the gray bars are observed deaths and the blue curve represents modeled death counts."
         },
         "imgRt": {
-          "description": "Step-wise estimate of Rt from the beginning of the outbreak up to the end of lockdown in Illinois; initial Rt is estimated using mortality data from early in the outbreak. Rt drops on March 21st in response to the state-wide lockdown beginning on that day."
+          "description": "Here we plot estimated Rt over time; Rt is estimated using Google mobility data."
         }
       }
     }
