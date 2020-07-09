@@ -345,7 +345,7 @@
         {
           "enabled": true,
           "type": "file-manifest",
-          "title": "Download Manifest",
+          "title": "Download Object Data Manifest",
           "leftIcon": "datafile",
           "rightIcon": "download",
           "fileName": "file-manifest.json",
