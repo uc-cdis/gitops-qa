@@ -750,8 +750,8 @@
         ],
         [
           {
-            "title": "Rt as of June 1st",
-            "description": "June 1st estimates of Rt for the IL counties most impacted by COVID-19.",
+            "title": "Average Rt Over Latest 7 Days Of Observations",
+            "description": "Latest Rt estimates for the IL counties most impacted by COVID-19.",
             "type": "image",
             "path": "bayes-by-county/Rt_All.png"
           }
