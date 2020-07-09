@@ -251,11 +251,11 @@
       "buttons": [
         {
           "enabled": true,
-          "type": "manifest",
-          "title": "Download Manifest",
-          "leftIcon": "datafile",
+          "type": "data",
+          "title": "Download Clinical",
+          "leftIcon": "user",
           "rightIcon": "download",
-          "fileName": "manifest.json"
+          "fileName": "clinical.json"
         }
       ],
       "guppyConfig": {
@@ -488,11 +488,11 @@
         "buttons": [
           {
             "enabled": true,
-            "type": "manifest",
-            "title": "Download Manifest",
-            "leftIcon": "datafile",
+            "type": "data",
+            "title": "Download Clinical",
+            "leftIcon": "user",
             "rightIcon": "download",
-            "fileName": "manifest.json"
+            "fileName": "clinical.json"
           }
         ],
         "guppyConfig": {
