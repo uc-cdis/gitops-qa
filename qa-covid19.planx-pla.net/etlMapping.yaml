@@ -98,7 +98,6 @@ mappings:
       - name: country
       - name: visiting_wuhan
       - name: from_wuhan
-      - name: travel_history_location
       - name: death
       - name: recovered
       - name: reporting_date
@@ -119,7 +118,6 @@ mappings:
       - name: infected_by
       - name: released_date
       - name: hospital
-      - name: underlying_conditions
     flatten_props:
       - path: demographics
         props:
