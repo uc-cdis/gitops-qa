@@ -174,7 +174,6 @@
           "fields":[
             "project_id",
             "gender",
-            "country",
             "ibd_affection_status",
             "diagnosis"
           ]
@@ -184,6 +183,7 @@
           "fields":[
             "project_id",
             "name",
+            "country",
             "investigator_name"
           ]  
         }
