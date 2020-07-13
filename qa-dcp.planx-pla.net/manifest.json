@@ -43,7 +43,7 @@
       "serviceAccountName": "jobs-qa-dcp-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/metadata-manifest-ingestion:master",
+        "image": "quay.io/cdis/metadata-manifest-ingestion:integration202008",
         "pull_policy": "Always",
         "env": [
           {
@@ -83,7 +83,7 @@
       "serviceAccountName": "jobs-qa-dcp-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/get-dbgap-metadata:master",
+        "image": "quay.io/cdis/get-dbgap-metadata:integration202008",
         "pull_policy": "Always",
         "env": [],
         "volumeMounts": [
@@ -113,7 +113,7 @@
       "serviceAccountName": "jobs-qa-dcp-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/manifest-indexing:master",
+        "image": "quay.io/cdis/manifest-indexing:integration202008",
         "pull_policy": "Always",
         "env": [
           {
@@ -153,7 +153,7 @@
       "serviceAccountName": "jobs-qa-dcp-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/download-indexd-manifest:master",
+        "image": "quay.io/cdis/download-indexd-manifest:integration202008",
         "pull_policy": "Always",
         "env": [
           {
