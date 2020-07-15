@@ -67,11 +67,15 @@
   "guppy": {
     "indices": [
       {
-        "index": "etl_mickey_1",
+        "index": "etl_mickey",
         "type": "patients"
+      },
+      {
+        "index": "file_etl_mickey",
+        "type": "file"
       }
     ],
-    "config_index": "etl_mickey_array-config_1",
+    "config_index": "etl_mickey_array-config",
     "auth_filter_field": "auth_resource_path"
   }
 }
