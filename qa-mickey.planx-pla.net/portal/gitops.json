@@ -29,7 +29,7 @@
       },
       {
         "graphql": "_imaging_file_count",
-        "name": "Image File"
+        "name": "Image Exam File"
       }
     ],
     "projectDetails": "boardCounts"
@@ -46,7 +46,7 @@
         {
           "name": "Define Data Field",
           "icon": "data-field-define",
-          "body": "The VA Data Commons defines the data in a general way. Please study the dictionary before you start browsing.",
+          "body": "The VPO Data Commons defines the data in a general way. Please study the dictionary before you start browsing.",
           "link": "/DD",
           "label": "Learn more"
         },
@@ -149,48 +149,72 @@
     "explorer": true,
     "analysis": true
   },
-  "analysisTools": [ "vaGWAS" ],
+  "analysisTools": [
+    "vaGWAS"
+  ],
   "dataExplorerConfig": {
     "charts": {
       "Chicago_ID": {
         "chartType": "count",
         "title": "Patients"
       },
-      "ActionableMutations.Lab": {
-        "chartType": "pie",
-        "title": "ActionableMutations.Lab"
-      },
       "Oncology_Primary.ICDOSite": {
         "chartType": "bar",
-        "title": "OncologyPrimaryICDOSite"
+        "title": "Site (ICD-O)"
+      },
+      "Oncology_Primary.Radiation": {
+        "chartType": "pie",
+        "title": "Radiation"
+      },
+      "Oncology_Primary.Chemotherapy": {
+        "chartType": "pie",
+        "title": "Chemotherapy"
       }
     },
     "filters": {
       "tabs": [
         {
           "title": "Demographic",
-          "fields":[
+          "fields": [
             "project_id",
             "Days_To_Birth",
             "Days_To_Death",
             "DeceasedFlag",
-            "Ethnicity"
+            "Ethnicity",
+            "Gender",
+            "Race"
           ]
         },
         {
           "title": "ActionableMutations",
-          "fields":[
+          "fields": [
             "project_id",
             "ActionableMutations.Lab",
+            "ActionableMutations.Gene",
             "ActionableMutations.DaysFromAnchorDateToBxDate"
           ]
         },
         {
-          "title": "Oncology_Primary",
-          "fields":[
+          "title": "Oncology Primary",
+          "fields": [
             "project_id",
             "Oncology_Primary.Multiplicitycounter",
-            "Oncology_Primary.ICDOSite"
+            "Oncology_Primary.ICDOSite",
+            "Oncology_Primary.Radiation",
+            "Oncology_Primary.Chemotherapy",
+            "Oncology_Primary.DaysFromAnchorDateToDiagnosisDate",
+            "Oncology_Primary.Gradedifferentiation",
+            "Oncology_Primary.Laterality",
+            "Oncology_Primary.Stagegroupbest",
+            "Oncology_Primary.RadiationsurgerySequence",
+            "Oncology_Primary.Histologyicdo3X",
+            "Oncology_Primary.Lymphvascularinvasionl",
+            "Oncology_Primary.SeerSummaryStage2000",
+            "Oncology_Primary.PhysiciansStage",
+            "Oncology_Primary.DaysFromAnchorDateToMostdefinitivesurgDate",
+            "Oncology_Primary.ChemotherapyFac",
+            "Oncology_Primary.TumorSize",
+            "Oncology_Primary.SequenceNumber"
           ]
         }
       ]
@@ -221,9 +245,15 @@
     "guppyConfig": {
       "dataType": "patients",
       "nodeCountTitle": "Patients",
-      "fieldMapping": [
-        {"field": "Oncology_Primary.Multiplicitycounter", "name": "OPMC"}
-      ]
+      "fieldMapping": [],
+      "manifestMapping": {
+        "resourceIndexType": "file",
+        "resourceIdField": "object_id",
+        "referenceIdFieldInResourceIndex": "case_id",
+        "referenceIdFieldInDataIndex": "Chicago_ID"
+      }
     }
-  }
+  },
+  "showArboristAuthzOnProfile": true,
+  "showFenceAuthzOnProfile": false
 }
