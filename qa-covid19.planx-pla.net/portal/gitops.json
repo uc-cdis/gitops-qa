@@ -252,7 +252,16 @@
           "project_url"
         ]
       },
-      "buttons": [],
+      "buttons": [
+        {
+          "enabled": false,
+          "type": "data",
+          "title": "Download Clinical",
+          "leftIcon": "user",
+          "rightIcon": "download",
+          "fileName": "clinical.json"
+        }
+      ],
       "guppyConfig": {
         "dataType": "subject",
         "nodeCountTitle": "Subjects",
@@ -343,6 +352,15 @@
       },
       "dropdowns": {},
       "buttons": [
+        {
+          "enabled": false,
+          "type": "file-manifest",
+          "title": "Download Object Data Manifest",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "file-manifest.json",
+          "dropdownId": "download"
+        },
         {
           "enabled": true,
           "type": "export-files-to-workspace",
@@ -477,7 +495,16 @@
           ]
         },
         "dropdowns": {},
-        "buttons": [],
+        "buttons": [
+          {
+            "enabled": false,
+            "type": "data",
+            "title": "Download Clinical",
+            "leftIcon": "user",
+            "rightIcon": "download",
+            "fileName": "clinical.json"
+          }
+        ],
         "guppyConfig": {
           "dataType": "location",
           "fieldMapping": [
