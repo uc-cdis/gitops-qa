@@ -831,7 +831,9 @@
               "xAxisProp": "province_state",
               "yAxisProp": "totalTestsViral",
               "filters": {
-                "project_id": "open-CTP"
+                "=": {
+                  "project_id": "open-CTP"
+                }
               },
               "maxItems": 10
             }
@@ -860,7 +862,9 @@
               "xAxisProp": "county",
               "yAxisProp": "testing",
               "filters": {
-                "project_id": "open-IDPH"
+                "=": {
+                  "project_id": "open-IDPH"
+                }
               },
               "maxItems": 15
             }
