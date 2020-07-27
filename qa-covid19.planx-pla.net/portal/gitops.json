@@ -825,6 +825,8 @@
             "xTitle": "State",
             "yTitle": "Number of tests",
             "type": "barChart",
+            "layout": "horizontal",
+            "maxItems": 10,
             "barColor": "#421C52",
             "guppyConfig": {
               "dataType": "location",
@@ -834,8 +836,26 @@
                 "=": {
                   "project_id": "open-CTP"
                 }
-              },
-              "maxItems": 10
+              }
+            }
+          },
+          {
+            "title": "Number of COVID-19 tests in the United States",
+            "xTitle": "Number of tests",
+            "yTitle": "State",
+            "type": "barChart",
+            "layout": "vertical",
+            "maxItems": 10,
+            "barColor": "#421C52",
+            "guppyConfig": {
+              "dataType": "location",
+              "xAxisProp": "province_state",
+              "yAxisProp": "totalTestsViral",
+              "filters": {
+                "=": {
+                  "project_id": "open-CTP"
+                }
+              }
             }
           }
         ],
@@ -856,6 +876,8 @@
             "xTitle": "County",
             "yTitle": "Number of tests",
             "type": "barChart",
+            "layout": "horizontal",
+            "maxItems": 15,
             "barColor": "#421C52",
             "guppyConfig": {
               "dataType": "location",
@@ -865,8 +887,26 @@
                 "=": {
                   "project_id": "open-IDPH"
                 }
-              },
-              "maxItems": 15
+              }
+            }
+          },
+          {
+            "title": "Number of COVID-19 tests in Illinois",
+            "xTitle": "Number of tests",
+            "yTitle": "County",
+            "type": "barChart",
+            "layout": "vertical",
+            "maxItems": 15,
+            "barColor": "#421C52",
+            "guppyConfig": {
+              "dataType": "location",
+              "xAxisProp": "county",
+              "yAxisProp": "testing",
+              "filters": {
+                "=": {
+                  "project_id": "open-IDPH"
+                }
+              }
             }
           }
         ],
