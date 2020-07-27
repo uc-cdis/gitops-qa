@@ -824,7 +824,7 @@
             "title": "COVID-19 Testing in the United States",
             "descripion": "The source of the data used to compile this chart is the COVID Tracking Project and can be viewed directly here: https://covidtracking.com/data/download",
             "xTitle": "State",
-            "yTitle": "Number of tests",
+            "yTitle": "Number of Tests",
             "type": "barChart",
             "layout": "horizontal",
             "maxItems": 10,
