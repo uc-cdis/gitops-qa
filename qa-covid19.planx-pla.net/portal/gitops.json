@@ -821,9 +821,10 @@
       "world": [
         [
           {
-            "title": "Number of COVID-19 tests in the United States",
+            "title": "COVID-19 Testing in the United States",
+            "description": "The source of the data used to compile this chart is the COVID Tracking Project and can be viewed directly here: https://covidtracking.com/data/download",
             "xTitle": "State",
-            "yTitle": "Number of tests",
+            "yTitle": "Number of Tests",
             "type": "barChart",
             "layout": "horizontal",
             "maxItems": 10,
@@ -840,8 +841,9 @@
             }
           },
           {
-            "title": "Number of COVID-19 tests in the United States",
-            "xTitle": "Number of tests",
+            "title": "COVID-19 Testing in the United States",
+            "description": "The source of the data used to compile this chart is the COVID Tracking Project and can be viewed directly here: https://covidtracking.com/data/download",
+            "xTitle": "Number of Tests",
             "yTitle": "State",
             "type": "barChart",
             "layout": "vertical",
@@ -872,9 +874,10 @@
       "illinois": [
         [
           {
-            "title": "Number of COVID-19 tests in Illinois",
+            "title": "COVID-19 Testing in Illinois",
+            "description": "The source of the data used to compile this chart is the Illinois Department of Health and can be viewed directly here: http://www.dph.illinois.gov/sitefiles/COVIDTestResults.json",
             "xTitle": "County",
-            "yTitle": "Number of tests",
+            "yTitle": "Number of Tests",
             "type": "barChart",
             "layout": "horizontal",
             "maxItems": 15,
@@ -891,8 +894,9 @@
             }
           },
           {
-            "title": "Number of COVID-19 tests in Illinois",
-            "xTitle": "Number of tests",
+            "title": "COVID-19 Testing in Illinois",
+            "description": "The source of the data used to compile this chart is the Illinois Department of Health and can be viewed directly here: http://www.dph.illinois.gov/sitefiles/COVIDTestResults.json",
+            "xTitle": "Number of Tests",
             "yTitle": "County",
             "type": "barChart",
             "layout": "vertical",
