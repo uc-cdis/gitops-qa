@@ -822,32 +822,12 @@
       "world": [
         [
           {
-            "title": "COVID-19 Testing in the United States",
-            "description": "The source of the data used to compile this chart is the COVID Tracking Project and can be viewed directly here: https://covidtracking.com/data/download",
+            "title": "Cumulative Testing in the United States",
+            "description": "The source of the data used to compile this chart is the COVID Tracking Project. This chart depicts the total number of tests to date for the top 10 states that have administered the most tests in the US.",
             "xTitle": "State",
             "yTitle": "Number of Tests",
             "type": "barChart",
             "layout": "horizontal",
-            "maxItems": 10,
-            "barColor": "#421C52",
-            "guppyConfig": {
-              "dataType": "location",
-              "xAxisProp": "province_state",
-              "yAxisProp": "totalTestsViral",
-              "filters": {
-                "=": {
-                  "project_id": "open-CTP"
-                }
-              }
-            }
-          },
-          {
-            "title": "COVID-19 Testing in the United States",
-            "description": "The source of the data used to compile this chart is the COVID Tracking Project and can be viewed directly here: https://covidtracking.com/data/download",
-            "xTitle": "Number of Tests",
-            "yTitle": "State",
-            "type": "barChart",
-            "layout": "vertical",
             "maxItems": 10,
             "barColor": "#421C52",
             "guppyConfig": {
@@ -875,32 +855,12 @@
       "illinois": [
         [
           {
-            "title": "COVID-19 Testing in Illinois",
-            "description": "The source of the data used to compile this chart is the Illinois Department of Health and can be viewed directly here: http://www.dph.illinois.gov/sitefiles/COVIDTestResults.json",
+            "title": "Cumulative Testing in Illinois",
+            "description": "The source of the data used to compile this chart is the Illinois Department of Public Health. This chart depicts the total number of tests to date per Illinois county for the top 15 counties that have administered the most tests in Illinois.",
             "xTitle": "County",
             "yTitle": "Number of Tests",
             "type": "barChart",
             "layout": "horizontal",
-            "maxItems": 15,
-            "barColor": "#421C52",
-            "guppyConfig": {
-              "dataType": "location",
-              "xAxisProp": "county",
-              "yAxisProp": "testing",
-              "filters": {
-                "=": {
-                  "project_id": "open-IDPH"
-                }
-              }
-            }
-          },
-          {
-            "title": "COVID-19 Testing in Illinois",
-            "description": "The source of the data used to compile this chart is the Illinois Department of Health and can be viewed directly here: http://www.dph.illinois.gov/sitefiles/COVIDTestResults.json",
-            "xTitle": "Number of Tests",
-            "yTitle": "County",
-            "type": "barChart",
-            "layout": "vertical",
             "maxItems": 15,
             "barColor": "#421C52",
             "guppyConfig": {
