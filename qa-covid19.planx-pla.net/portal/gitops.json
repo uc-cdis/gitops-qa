@@ -122,7 +122,8 @@
   },
   "featureFlags": {
     "explorer": true,
-    "analysis": true
+    "analysis": true,
+    "explorerPublic": true
   },
   "analysisTools": [ ],
   "explorerConfig": [
