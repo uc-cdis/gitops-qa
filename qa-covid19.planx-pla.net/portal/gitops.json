@@ -918,9 +918,18 @@
               "xAxisProp": "county",
               "yAxisProp": "testing",
               "filters": {
-                "=": {
-                  "project_id": "open-IDPH"
-                }
+                "AND": [
+                  {
+                    "=": {
+                      "project_id": "open-IDPH"
+                    }
+                  },
+                  {
+                    "!=": {
+                      "county": "Illinois"
+                    }
+                  }
+                ]
               }
             }
           }
