@@ -225,7 +225,7 @@
               
               "covid_19_status",
               "vital_status",
-              "hopitalized_status",
+              "hospitalized_status",
               "icu_status",
               "hospital",
               "needed_supplemental_O2",
