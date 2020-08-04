@@ -270,6 +270,7 @@
           "city",
           "covid_19_status",
           "vital_status",
+          "isolation_status",
           "icu_status",
           "ventilator_status",
           "hospital",
