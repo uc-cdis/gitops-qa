@@ -225,7 +225,6 @@
               
               "covid_19_status",
               "vital_status",
-              "hospitalized_status",
               "icu_status",
               "hospital",
               "needed_supplemental_O2",
@@ -234,7 +233,6 @@
               "reporting_source",
               "exposure",
               "pneumonia_type",
-              "vital_status",
               "ventilator_status",
               "extubated",
               "pO2_saturation",
@@ -318,6 +316,22 @@
           {
             "field": "project_investigator_affiliation",
             "name": "Source"
+          },
+          {
+            "field": "country_region",
+            "name": "Country or Region"
+          },
+          {
+            "field": "province_state",
+            "name": "Province or State"
+          },
+          {
+            "field": "covid_19_status",
+            "name": "COVID-19 Status"
+          },
+          {
+            "field": "icu_status",
+            "name": "ICU Status"
           },
           {
             "field": "pO2_saturation",
