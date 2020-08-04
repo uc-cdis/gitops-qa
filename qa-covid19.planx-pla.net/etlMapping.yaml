@@ -112,7 +112,7 @@ mappings:
           - name: country_region
           - name: province_state
           - name: city
-      - path: observation
+      - path: observations
         props:
           - name: treatment_status
           - name: isolation_status
