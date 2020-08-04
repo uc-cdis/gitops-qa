@@ -129,6 +129,7 @@ mappings:
           - name: hospital
           - name: pneumonia_type
           - name: ventilator_status
+        sorted_by: updated_datetime, desc          
       - path: follow_ups
         props:
           - name: extubated
