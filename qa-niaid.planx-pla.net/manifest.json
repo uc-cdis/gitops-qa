@@ -7,59 +7,25 @@
     "autodeploy": "yes"
   },
   "versions": {
-    "arborist": "quay.io/cdis/arborist:2020.02",
+    "arborist": "quay.io/cdis/arborist:2020.08",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
-    "datasim": "quay.io/cdis/data-simulator:master",
-    "fence": "quay.io/cdis/fence:2020.02",
+    "fence": "quay.io/cdis/fence:2020.08",
+    "indexd": "quay.io/cdis/indexd:2020.08",
+    "peregrine": "quay.io/cdis/peregrine:2020.08",
+    "pidgin": "quay.io/cdis/pidgin:2020.08",
+    "revproxy": "quay.io/cdis/nginx:2020.08",
+    "sheepdog": "quay.io/cdis/sheepdog:2020.08",
+    "portal": "quay.io/cdis/data-portal:2020.08",
+    "tube": "quay.io/cdis/tube:2020.08",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
-    "indexd": "quay.io/cdis/indexd:2020.02",
-    "jupyterhub": "quay.io/occ_data/jupyterhub:master",
-    "manifestservice": "quay.io/cdis/manifestservice:2020.02",
-    "peregrine": "quay.io/cdis/peregrine:2020.02",
-    "pidgin": "quay.io/cdis/pidgin:2020.02",
-    "portal": "quay.io/cdis/data-portal:2020.02",
-    "revproxy": "quay.io/cdis/nginx:1.17.6-ctds-1.0.1",
-    "sheepdog": "quay.io/cdis/sheepdog:2020.02",
-    "spark": "quay.io/cdis/gen3-spark:2020.02",
-    "tube": "quay.io/cdis/tube:2020.02",
-    "wts": "quay.io/cdis/workspace-token-service:2020.02",
-    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:2020.02",
-    "guppy": "quay.io/cdis/guppy:2020.02",
-    "dashboard": "quay.io/cdis/gen3-statics:master"
+    "spark": "quay.io/cdis/gen3-spark:2020.08",
+    "guppy": "quay.io/cdis/guppy:2020.08"
   },
   "arborist": {
     "deployment_version": "2"
   },
   "indexd": {
     "arborist": "true"
-  },
-  "jupyterhub": {
-    "enabled": "yes",
-    "containers": [
-      {
-        "name": "niaid-jupyter-notebook",
-        "cpu": 1,
-        "memory": "512M",
-        "image": "quay.io/cdis/niaid-jupyterhub:latest"
-      },
-      {
-        "name": "jupyter-R-3.6",
-        "cpu": 1,
-        "memory": "512M",
-        "image": "quay.io/occ_data/jupyternotebook:1.8.0"
-      },
-      {
-        "name": "jupyter-R-3.5",
-        "cpu": 1,
-        "memory": "512M",
-        "image": "quay.io/occ_data/jupyternotebook:1.7.4"
-      }
-    ]
-  },
-  "ssjdispatcher": {
-    "job_images": {
-      "indexing": "quay.io/cdis/indexs3client:master"
-    }
   },
   "global": {
     "environment": "qaplanetv1",
@@ -71,8 +37,8 @@
     "logs_bucket": "logs-qaplanetv1-gen3",
     "sync_from_dbgap": "False",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
-    "dispatcher_job_num": "10",
-    "netpolicy": "on"
+    "netpolicy": "on",
+    "tier_access_level": "libre"
   },
   "canary": {
     "default": 0
