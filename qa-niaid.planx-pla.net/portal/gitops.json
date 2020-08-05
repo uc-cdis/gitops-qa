@@ -19,9 +19,9 @@
       "items": [
         {
           "icon": "query",
-          "link": "/browser",
+          "link": "/study-viewer",
           "color": "#a2a2a2",
-          "name": "Browser POC"
+          "name": "Study Viewer POC"
         },
         {
           "icon": "exploration",
