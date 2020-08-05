@@ -28,6 +28,12 @@
           "link": "/explorer",
           "color": "#a2a2a2",
           "name": "Exploration"
+        },
+        {
+          "icon": "profile",
+          "link": "/identity",
+          "color": "#a2a2a2",
+          "name": "Profile"
         }
       ]
     },
