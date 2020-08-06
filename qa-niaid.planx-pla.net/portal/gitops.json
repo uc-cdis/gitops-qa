@@ -13,7 +13,13 @@
         "text": "Someone's going to have to put some fancy words here. My guess is that Gina is going to do it. We'll see!",
         "link": "/submission"
       },
-      "buttons": []
+      "buttons": [],
+      "customHomepageChartConfig": [
+        {
+          "chartType": "image",
+          "imageLink": "/custom/images/gitops-misc-images/cat.jpg"
+        }
+      ]
     },
     "navigation": {
       "items": [
