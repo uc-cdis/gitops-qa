@@ -62,10 +62,10 @@
     {
       "name": "manifest-indexing",
       "action": "index-object-manifest",
-      "serviceAccountName": "jobs-qa-covid19-planx-plan-net",
+      "serviceAccountName": "jobs-qa-covid19-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/manifest-indexing:master",
+        "image": "quay.io/cdis/manifest-indexing:2020.08",
         "pull_policy": "Always",
         "env": [
           {
@@ -105,7 +105,7 @@
       "serviceAccountName": "jobs-qa-covid19-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/download-indexd-manifest:master",
+        "image": "quay.io/cdis/download-indexd-manifest:2020.08",
         "pull_policy": "Always",
         "env": [
           {
