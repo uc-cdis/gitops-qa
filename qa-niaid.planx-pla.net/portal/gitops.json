@@ -9,8 +9,8 @@
     "appName": "NIAID Clinical Trials Repository",
     "index": {
       "introduction": {
-        "heading": "NIAID Clinical Trials Repository",
-        "text": "Someone's going to have to put some fancy words here. My guess is that Gina is going to do it. We'll see!",
+        "heading": "Accessing  NIAID  Clinical Trials Data",
+        "text": "AccessClinicalData@NIAID is a NIAID cloud-based, secure data platform that enables sharing of and access to data sets from NIAID COVID-19 and other sponsored clinical trials for the basic and clinical research community.  The goal of the platform is to allow the research community access to clinical data sets to harness the power of data to generate new knowledge to understand, treat, and prevent infectious diseases such as COVID-19.   Biomedical and health data coupled with powerful advanced data analytical tools provide innovative opportunities to accelerate the development of new and improved therapeutic interventions and diagnostics, prevention strategies and disease surveillance, and identification of molecular biomarkers to predict susceptibility, progression and severity of diseases. This resource provides a foundation with potential to improve the health of people in the United States and around the world.",
         "link": "/submission"
       },
       "buttons": [],
@@ -44,9 +44,9 @@
       ]
     },
     "login": {
-      "title": "NIAID Clinical Trials Repository",
-      "subTitle": "Explore, Analyze, and Share Clinical Trials Data",
-      "text": "Someone's going to have to put some fancy words here. My guess is that Gina is going to do it. We'll see!",
+      "title": "Accessing NIAID Clinical Trials Data",
+      "subTitle": "Access clinical data to understand, treat, and prevent infectious diseases",
+      "text": "Data access to de-identified and anonymous individual patient level data from NIAID sponsored clinical trials will be available to approved users and their institution through a data access request and data use agreement to assure protection of patient privacy and data security.",
       "contact": "If you have any questions about access or the registration process, please contact ",
       "email": "support@datacommons.io"
     },
