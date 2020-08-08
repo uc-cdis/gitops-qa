@@ -19,7 +19,8 @@
           "chartType": "image",
           "imageLink": "/custom/sponsors/gitops-sponsors/sars-cov2.png"
         }
-      ]
+      ],
+      "homepageChartNodes": []
     },
     "navigation": {
       "items": [
@@ -50,7 +51,13 @@
       "contact": "If you have any questions about access or the registration process, please contact ",
       "email": "support@datacommons.io"
     },
-    "footerLogos": []
+    "footerLogos": [
+      {
+        "src": "/src/img/logo.png",
+        "href": "https://www.niaid.nih.gov/",
+        "alt": "NIAID"
+      }
+    ]
   },
   "featureFlags": {
     "explorer": true
