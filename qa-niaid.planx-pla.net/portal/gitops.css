@@ -72,13 +72,6 @@
   border-bottom: 3px solid var(--primary-color);
 }
 
-.footer__version-area {
-  width: 300px;
-}
-
-.footer__logo-area {
-  width: 600px;
-}
 .nav-bar__logo {
   padding: 15px 0;
 }
