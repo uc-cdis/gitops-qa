@@ -1,9 +1,11 @@
 :root {
-  --primary-color: #20558A;
-  --secondary-color: #BC3231;
+  --primary-color: #BC3231;
+  --secondary-color: #20558A;
+  
 
-  --primary-color_light: #6ea6dd;
-  --secondary-color_light: #da7171;
+  --primary-color_light: #da7171;
+  --secondary-color_light: #6ea6dd;
+  
 
   --g3-color__bg-cloud: #F5F5F5;
   --g3-color__bg-coal: #4A4A4A;
