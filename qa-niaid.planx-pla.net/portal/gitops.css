@@ -82,8 +82,22 @@
   height: 50px;
 }
 
-@media screen and (max-width: 1290px) {
-  .index-page__bar-chart {
-    margin-left: -160px;
-  }
+.index-page__top {
+  display: inline-flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.index-page__bar-chart {
+  max-width: 770px;
+  width: 100%;
+}
+
+.introduction {
+  width: 100%;
+  position: relative;
+}
+
+.introduction__text {
+  text-align: justify;
 }
