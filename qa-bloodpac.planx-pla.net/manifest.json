@@ -88,7 +88,8 @@
         "type": "file"
       }
     ],
-    "auth_filter_field": "auth_resource_path"
+    "auth_filter_field": "auth_resource_path",
+    "config_index": "bloodpac_array-config"
   },
   "global": {
     "environment": "qaplanetv1",
