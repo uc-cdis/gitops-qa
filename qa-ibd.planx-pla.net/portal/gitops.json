@@ -28,7 +28,7 @@
     "appName": "IBDGC Portal",
     "index": {
       "introduction": {
-        "heading": "IBD Genetics Consortium Data Commons",
+        "heading": "NIDDK IBD Genetics Consortium Data Commons",
         "text": "The Inflammatory Bowel Disease Genetics Consortium Data Commons supports the management, analysis, and sharing of genetic data to support the vision and mission of the IBD genetics consortium.",
         "link": "/submission"
       },
@@ -74,7 +74,7 @@
       ]
     },
     "navigation": {
-      "title": "IBDGC Data Commons",
+      "title": "NIDDK IBD Genetics Consortium Data Commons",
       "items": [
         {
           "icon": "dictionary",
