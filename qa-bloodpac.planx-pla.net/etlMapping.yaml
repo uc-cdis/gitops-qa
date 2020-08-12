@@ -1,4 +1,4 @@
-amappings:
+mappings:
   - name: bloodpac_study
     doc_type: study
     type: aggregator
