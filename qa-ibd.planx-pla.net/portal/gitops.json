@@ -135,7 +135,7 @@
       "email": "support@datacommons.io"
     },
     "footerLogos": [],
-    "footer" {
+    "footer": {
       "links: [
         {
           "href": "https://www.niddk.nih.gov",
