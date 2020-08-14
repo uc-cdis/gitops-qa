@@ -141,7 +141,6 @@ mappings:
       - name: data_type
       - name: state
       - name: callset
-      - name: bucket_path
     injecting_props:
       subject:
         props:
