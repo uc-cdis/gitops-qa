@@ -521,16 +521,7 @@
               "staffed_icu_beds",
               "population_gtr_65",
               "estimated_full_mech_ventilators",
-              "estimated_full_mech_pediatric_ventilators",
-              "npi",
-              "provider_business_practice_city",
-              "provider_business_practice_st",
-              "provider_first_line_business_pr",
-              "provider_second_line_business_pr",
-              "taxonomy_code",
-              "provider_type",
-              "provider_subtype",
-              "detailed_specialty"
+              "estimated_full_mech_pediatric_ventilators"
             ]
           },
           {
@@ -538,6 +529,10 @@
             "fields": [
               "community_area",
               "state_region_description",
+              "provider_business_practice_city",
+              "provider_type",
+              "provider_subtype",
+              "detailed_specialty",
               "reporting_org",
               "deaths_per_10000",
               "region_icu_capacity",
