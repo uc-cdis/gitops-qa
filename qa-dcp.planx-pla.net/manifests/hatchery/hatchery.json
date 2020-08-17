@@ -5,7 +5,7 @@
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "quay.io/cdis/gen3fuse-sidecar:2020.08",
+    "image": "quay.io/cdis/gen3fuse-sidecar:integration202009",
     "env": {
       "NAMESPACE": "qa-dcp",
       "HOSTNAME": "qa-dcp.planx-pla.net"
@@ -239,10 +239,12 @@
             {
               "name": "POSTGRES_DB",
               "value": "orthanc"
-            }, {
+            },
+            {
               "name": "POSTGRES_USER",
               "value": "postgres"
-            }, {
+            },
+            {
               "name": "POSTGRES_PASSWORD",
               "value": "postgres"
             }
