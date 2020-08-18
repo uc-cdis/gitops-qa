@@ -18,7 +18,7 @@ mappings:
       - name: reporting_org
       - name: state_hospital_region
       - name: state_region_description
-      - name: provider_business_practice_city
+      - name: city
     flatten_props:
       - path: summary_clinicals
         props:

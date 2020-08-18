@@ -529,7 +529,7 @@
             "fields": [
               "community_area",
               "state_region_description",
-              "provider_business_practice_city",
+              "city",
               "provider_type",
               "provider_subtype",
               "detailed_specialty",
