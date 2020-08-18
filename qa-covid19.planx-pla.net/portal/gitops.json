@@ -815,10 +815,6 @@
           {
             "field": "npi",
             "name": "National Provider Identifier"
-          },
-          {
-            "field": "provider_business_practice_st",
-            "name": "Provider Business Practice"
           }
         ],
         "nodeCountTitle": "Locations",
