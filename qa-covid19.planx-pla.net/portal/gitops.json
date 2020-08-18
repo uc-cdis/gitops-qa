@@ -811,10 +811,6 @@
           {
             "field": "total_in_use_beds_covid",
             "name": "IL Total In Use COVID-19 Beds"
-          },
-          {
-            "field": "npi",
-            "name": "National Provider Identifier"
           }
         ],
         "nodeCountTitle": "Locations",
