@@ -141,12 +141,8 @@ mappings:
       - name: data_type
       - name: state
       - name: callset
-    injecting_props:
-      reference_file:
-        props:
-          - name: bucket_path
-            src: id
-            fn: set   
+      - name: bucket_path
+    injecting_props: 
       subject:
         props:
           - name: subject_id
