@@ -27,7 +27,7 @@
     "manifestservice": "quay.io/cdis/manifestservice:integration202009",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:integration202009",
     "metadata": "quay.io/cdis/metadata-service:integration202009",
-    "dashboard": "quay.io/cdis/gen3-statics:master"
+    "dashboard": "quay.io/cdis/gen3-statics:integration202009"
   },
   "google": {
     "enabled": "yes"
