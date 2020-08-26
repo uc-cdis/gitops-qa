@@ -18,7 +18,9 @@
     "portal": "quay.io/cdis/data-portal:feat_wireframe-poc",
     "tube": "quay.io/cdis/tube:2020.08",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
-    "spark": "quay.io/cdis/gen3-spark:2020.08"
+    "spark": "quay.io/cdis/gen3-spark:2020.08",
+    "requestor": "quay.io/cdis/requestor:feat_redirect",
+    "guppy": "quay.io/cdis/guppy:2020.08"
   },
   "arborist": {
     "deployment_version": "2"
@@ -30,7 +32,7 @@
     "environment": "qaplanetv1",
     "hostname": "qa-niaid.planx-pla.net",
     "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
-    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/ndhdictionary/3.5.4/schema.json",
+    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/niaid-clinical-trials-dictionary/master/schema.json",
     "portal_app": "gitops",
     "kube_bucket": "kube-qaplanetv1-gen3",
     "logs_bucket": "logs-qaplanetv1-gen3",
@@ -46,16 +48,8 @@
   "guppy": {
     "indices": [
       {
-        "index": "qa-niaid",
-        "type": "subject"
-      },
-      {
-        "index": "qa-niaid_follow_up",
-        "type": "follow_up"
-      },
-      {
-        "index": "qa-niaid_file",
-        "type": "file"
+        "index": "qa-niaid_dataset",
+        "type": "dataset"
       }
     ],
     "config_index": "qa-niaid_array-config",
