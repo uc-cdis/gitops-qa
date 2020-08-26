@@ -1,6 +1,6 @@
 mappings:
-  - name: qa-niaid_dataset
-    doc_type: dataset
+  - name: qa-niaid_clinical-trial
+    doc_type: clinical_trial
     type: collector
     root: clinical_trial
     props:
