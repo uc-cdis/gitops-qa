@@ -48,8 +48,8 @@
   "guppy": {
     "indices": [
       {
-        "index": "qa-niaid_dataset",
-        "type": "dataset"
+        "index": "qa-niaid_clinical-trial",
+        "type": "clinical_trial"
       }
     ],
     "config_index": "qa-niaid_array-config",
