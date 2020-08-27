@@ -213,25 +213,25 @@
         {
           "enabled": true,
           "type": "export-to-workspace",
-          "title": "Export to Workspace",
+          "title": "Export Files to Workspace",
           "leftIcon": "datafile",
           "rightIcon": "external-link"
         },
         {
           "enabled": true,
           "type": "manifest",
-          "title": "Download Manifest",
+          "title": "Download File Manifest",
           "leftIcon": "datafile",
           "rightIcon": "download",
-          "fileName": "manifest.json"
+          "fileName": "file-manifest.json"
         },
         {
           "enabled": true,
           "type": "data",
-          "title": "Download Data",
-          "leftIcon": "user",
+          "title": "Download Clinical Data",
+          "leftIcon": "datafile",
           "rightIcon": "download",
-          "fileName": "data.json"
+          "fileName": "clinical-data.json"
         }
       ],
       "guppyConfig": {
@@ -305,14 +305,14 @@
         {
           "enabled": true,
           "type": "export-files-to-workspace",
-          "title": "Export to Workspace",
+          "title": "Export Files to Workspace",
           "leftIcon": "datafile",
-          "rightIcon": "download"
+          "rightIcon": "external-link"
         },
         {
           "enabled": true,
           "type": "file-manifest",
-          "title": "Download Manifest",
+          "title": "Download File Manifest",
           "leftIcon": "datafile",
           "rightIcon": "download",
           "fileName": "file-manifest.json"
