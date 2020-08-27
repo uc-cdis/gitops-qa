@@ -2,10 +2,10 @@ language: python
 
 script:
   - pip install gen3utils
-  
+
   # validate all the manifest.json files:
   - gen3utils validate-manifest */manifest.json
-  
+
   # validate ETL mapping files
   - |
     for dir in *; do
