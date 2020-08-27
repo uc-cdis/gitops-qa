@@ -4,7 +4,7 @@ Manifests for gen3 internal QA environments.
 
 Ex:
 ```
-$ cat dev.planx-pla.net/manifest.json 
+$ cat dev.planx-pla.net/manifest.json
 {
   "notes": [
     "This is the dev environment manifest",
@@ -31,7 +31,7 @@ $ cat dev.planx-pla.net/manifest.json
 ## Policies
 
 * Never release :master or :latest docker tags to production.
-* `{DOMAIN}/manifest.json` is the manifest for a particular commons - ex: `manifest_dev.planx-pla.net_.json` 
+* `{DOMAIN}/manifest.json` is the manifest for a particular commons - ex: `manifest_dev.planx-pla.net_.json`
 * `default/manifest.json` is the fall-through default manifest if `{DOMAIN}/manifest.json` does not exist
 
 ## Deployment workflow
@@ -46,15 +46,15 @@ $ ssh reuben@k8s.devplanetv1
 $ kubectl get pods
 ```
 
-The *qa* cluster is administered by a [Jenkins](https://jenkins.io/) server at https://jenkins.planx-pla.net/, and is not directly accessible by `kubectl`.  Jenkins jobs 
+The *qa* cluster is administered by a [Jenkins](https://jenkins.io/) server at https://jenkins.planx-pla.net/, and is not directly accessible by `kubectl`.  Jenkins jobs
 monitor the QA branch of the [cdis-manifest](https://github.com/uc-cdis/cdis-manifest)
 github repository, and auto-updates the gen3 qa environments running
 on the cluster.  Jenkins also periodically runs gen3's system level integration tests against each QA environment.  We run one QA environment per production commons (https://kidsfirstqa.planx-pla.net, https://bloodpacqa.planx-pla.net, ...).  Each QA environment is
-configured (via its manifest) to run the latest `:master` Docker image of each gen3 service. 
+configured (via its manifest) to run the latest `:master` Docker image of each gen3 service.
 
-We also run one QA environment per developer (https://reubenqa.planx-pla.net, https://phillisqa.planx-pla.net, ...), 
+We also run one QA environment per developer (https://reubenqa.planx-pla.net, https://phillisqa.planx-pla.net, ...),
 so a developer
-can test new code in the QA environment before merging the code into 
+can test new code in the QA environment before merging the code into
 the `master` branch.
 
 To update a QA environment such as *reubenqa.planx-pla.net*
@@ -77,7 +77,7 @@ To update a production environment such as *data.bloodpac.org*
 
 We implement manifest based versioning of our services in kubernetes via the `g3k` helper scripts in [cloud-automation](https://github.com/uc-cdis/cloud-automation).  The `-deployment.yaml` template defining each service's k8s deployment includes `GEN3` variables that `g3k roll` replaces.  For example:
 ```
-$ cat cloud-automation/kube/services/peregrine/peregrine-deploy.yaml 
+$ cat cloud-automation/kube/services/peregrine/peregrine-deploy.yaml
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
