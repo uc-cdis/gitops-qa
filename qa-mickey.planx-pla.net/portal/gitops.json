@@ -229,7 +229,6 @@
         "enabled": true,
         "fields": [
           "project_id",
-          "auth_resource_path",
           "Race",
           "Ethnicity",
           "Gender",
