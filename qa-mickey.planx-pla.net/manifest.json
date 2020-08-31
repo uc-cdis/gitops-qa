@@ -72,7 +72,7 @@
         "type": "patients"
       },
       {
-        "index": "file_etl_mickey",
+        "index": "qa-mickey_file",
         "type": "file"
       }
     ],

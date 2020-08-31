@@ -283,7 +283,6 @@
         "enabled": true,
         "fields": [
           "submitter_id",
-          "auth_resource_path",
           "data_type",
           "data_format",
           "file_id",
