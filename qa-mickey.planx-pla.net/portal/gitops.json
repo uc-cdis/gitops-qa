@@ -272,7 +272,7 @@
       "buttons": [
         {
           "enabled": false,
-          "type": "manifest",
+          "type": "file-manifest",
           "title": "Download Manifest",
           "leftIcon": "datafile",
           "rightIcon": "download",
