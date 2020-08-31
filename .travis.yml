@@ -11,6 +11,10 @@ script:
     for dir in *; do
       man=$dir/manifest.json; etl=$dir/etlMapping.yaml
       if [ -f $man ] && [ -f $etl ]; then
+        if [ "$man" == "qa-niaid.planx-pla.net" ]; then
+          echo "skip because this dd is not healthy"
+          continue
+        fi
         echo "ETL mapping validation for $dir"
         gen3utils validate-etl-mapping $etl $man || exit 1
       fi
