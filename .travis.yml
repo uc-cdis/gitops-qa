@@ -11,7 +11,7 @@ script:
     for dir in *; do
       man=$dir/manifest.json; etl=$dir/etlMapping.yaml
       if [ -f $man ] && [ -f $etl ]; then
-        if [ "$man" == "qa-niaid.planx-pla.net" ]; then
+        if [ "$dir" == "qa-niaid.planx-pla.net" ]; then
           echo "skip because this dd is not healthy"
           continue
         fi
