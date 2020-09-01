@@ -950,6 +950,33 @@
         ],
         [
           {
+            "title": "Total Deaths per 10,000 in Chicago",
+            "description": "The source of the data used to compile this chart is the Cook County Data Portal.",
+            "xTitle": "Neighborhood",
+            "yTitle": "Number of Deaths per 10,000",
+            "type": "barChart",
+            "layout": "horizontal",
+            "maxItems": 15,
+            "barColor": "#421C52",
+            "guppyConfig": {
+              "dataType": "location",
+              "xAxisProp": "community_area",
+              "yAxisProp": "deaths_per_10000",
+              "filters": {
+                "AND": [
+                  {
+                    "=": {
+                      "project_id": "open-CHI-NBHD"
+                    }
+                  }
+                ]
+              }
+            }
+
+          }
+        ],
+        [
+          {
             "title": "Cook County Daily Cases",
             "description": "Here we plot daily case counts over time, where the red bars are reported cases and the blue curve traces the estimated number of true (i.e., reported and not-reported) cases. The darker and lighter shaded regions correspond to 50% and 95% posterior credible intervals, respectively.",
             "type": "image",
