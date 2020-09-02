@@ -1,28 +1,43 @@
 mappings:
-  - name: qa-niaid_clinical-trial
-    doc_type: clinical_trial
-    type: collector
-    root: clinical_trial
+  - name: qa-niaid_cmc
+    doc_type: cmc
+    type: aggregator
+    root: core_metadata_collection
     props:
-      - name: projects
       - name: condition
       - name: study_design_allocation
       - name: study_design_intervention_model
       - name: study_design_masking
       - name: study_design_primary_purpose
-      - name: sponsor
+      - name: responsible_party
       - name: study_start_date
       - name: study_completion_date
       - name: publications
+      - name: brief_summary
+      - name: description
+      - name: title
+      - name: project_id
+  - name: qa-niaid_ct-file
+    doc_type: ctfile
+    type: aggregator
+    root: clinical_trial_file
+    props:
       - name: object_id
       - name: md5sum
       - name: file_name
       - name: file_size
       - name: data_format
       - name: data_type
-    injecting_props:
-      project:
-        props:
-          - name: project_id
-            src: code
-            fn: set
+      - name: project_id
+  - name: qa-niaid_oa-file
+    doc_type: oafile
+    type: aggregator
+    root: open_access_doc
+    props:
+      - name: md5sum
+      - name: file_name
+      - name: file_size
+      - name: data_format
+      - name: data_type
+      - name: doc_url
+      - name: project_id
