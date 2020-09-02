@@ -946,14 +946,16 @@
                 ]
               }
             }
-          },
+          }
+        ],
+        [
           {
             "title": "Total Deaths per 10,000 in Chicago",
             "description": "The source of the data used to compile this chart is the Cook County Data Portal.",
-            "xTitle": "",
-            "yTitle": "",
+            "xTitle": "Neighborhood",
+            "yTitle": "Number of Deaths per 10,000",
             "type": "barChart",
-            "layout": "vertical",
+            "layout": "horizontal",
             "maxItems": 15,
             "barColor": "#421C52",
             "guppyConfig": {
