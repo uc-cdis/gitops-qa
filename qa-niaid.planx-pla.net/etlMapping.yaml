@@ -4,7 +4,6 @@ mappings:
     type: aggregator
     root: core_metadata_collection
     props:
-      - name: projects
       - name: condition
       - name: study_design_allocation
       - name: study_design_intervention_model
