@@ -149,6 +149,7 @@
       ]
     }
   },
+  "categorical9Colors": ["#67B49D", "#616265", "#59CD90", "#F2DC5D", "#40476D", "#FFA630", "#AE8799", "#1A535C", "#462255"],
   "featureFlags": {
     "explorer": true
   },
