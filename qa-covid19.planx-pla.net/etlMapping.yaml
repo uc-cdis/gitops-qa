@@ -9,9 +9,9 @@ mappings:
       - name: country_region
       - name: community_area
         value_mappings:
-          - Greater Grand Crossing: 'Grand Crossing'
-          - South Lawndale (Little Village): 'Little Village'
-          - West Englewood: 'Englewood'
+          - GREATER GRAND CROSSING: 'Grand Crossing'
+          - SOUTH LAWNDALE (LITTLE VILLAGE): 'Little Village'
+          - WEST ENGLEWOOD: 'W.Englewood'
       - name: province_state
       - name: county
       - name: latitude
