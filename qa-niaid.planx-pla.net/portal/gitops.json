@@ -54,7 +54,7 @@
   },
   "studyViewerConfig": [{
     "openMode": "open-first",
-    "defaultOpenStudyName": "",
+    "openFirstRowAccessor": "",
     "dataType": "cmc",
     "title": "Studies",
     "titleField": "title",
