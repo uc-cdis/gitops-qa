@@ -9,6 +9,9 @@ mappings:
       - name: consent_codes
       - name: geographic_site
     flatten_props:
+      - path: studies
+        props:
+          - name: submitter_id
       - path: demographics
         props:
           - name: age_at_index
