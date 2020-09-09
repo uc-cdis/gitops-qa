@@ -143,8 +143,9 @@
     "footer": {
       "links": [
         {
+          "src": "/../../../../custom/sponsors/gitops-sponsors/attribution",
           "href": "https://www.niddk.nih.gov",
-          "text": "Funded by the National Institute of Diabetes & Digestive & Kidney Diseases (NIDDK)"
+          "alt": "Funded by the NIDDK"
         }
       ]
     }
