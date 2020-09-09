@@ -82,6 +82,18 @@
   height: 50px;
 }
 
+.nav-bar__link--home {
+  padding-top: 4px;
+  font-size: x-large;
+  color: var(--primary-color);;
+}
+
+.nav-bar__link--home:hover {
+  color: var(--primary-color);;
+  opacity: 1;
+  border-bottom: 0;
+}
+
 .index-page__top {
   display: inline-flex;
   width: 80%;

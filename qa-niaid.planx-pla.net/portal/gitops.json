@@ -27,6 +27,7 @@
       "homepageChartNodes": []
     },
     "navigation": {
+      "title": "AccessClinicalData@NIAID",
       "items": [{
         "icon": "query",
         "link": "/study-viewer/cmc",
