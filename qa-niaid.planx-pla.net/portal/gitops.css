@@ -50,6 +50,21 @@
   --g3-font__semi-bold-weight: 600;
 }
 
+h1, h2, h3, h4,
+.caption,
+.form-h1, .form-h2, .form-caption {
+    font-family: 'Martel', serif;
+}
+
+body,
+.introduction,
+.body,
+.special-number,
+.form-body,
+.form-special-number {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* Buttons */
 
 .data-dictionary__switch-button--active,
