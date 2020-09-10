@@ -1,6 +1,6 @@
 mappings:
   - name: qa-niaid_cmc
-    doc_type: cmc
+    doc_type: clinical_trials
     type: aggregator
     root: core_metadata_collection
     props:
@@ -17,6 +17,8 @@ mappings:
       - name: description
       - name: title
       - name: project_id
+      - name: cmc_unique_id
+        src: submitter_id
   - name: qa-niaid_ct-file
     doc_type: ctfile
     type: aggregator
@@ -29,6 +31,8 @@ mappings:
       - name: data_format
       - name: data_type
       - name: project_id
+    parent_props:
+      - path: core_metadata_collections[cmc_unique_id:submitter_id]
   - name: qa-niaid_oa-file
     doc_type: oafile
     type: aggregator
@@ -41,3 +45,5 @@ mappings:
       - name: data_type
       - name: doc_url
       - name: project_id
+    parent_props:
+      - path: core_metadata_collections[cmc_unique_id:submitter_id]
