@@ -58,7 +58,7 @@
     "dataType": "clinical_trials",
     "title": "Studies",
     "titleField": "title",
-    "rowAccessor": "submitter_id",
+    "rowAccessor": "cmc_unique_id",
     "listItemConfig": {
       "blockFields": ["brief_summary"],
       "tableFields": ["condition", "responsible_party", "study_start_date", "study_completion_date", "study_design_primary_purpose", "publications"]
