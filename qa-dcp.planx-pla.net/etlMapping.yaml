@@ -73,10 +73,6 @@ mappings:
           - name: triglycerides
           - name: total_cholesterol
     aggregated_props:
-      - name: studies_submitter_id
-        path: studies
-        src: submitter_id
-        fn: set
       - name: annotated_sex
         path: demographics
         src: annotated_sex
@@ -117,7 +113,9 @@ mappings:
       - name: ever_smoker_baseline
         path: exposures
         src: ever_smoker_baseline
-        fn: set                 
+        fn: set     
+    parent_props:
+      - path: studies[studies_submitter_id:submitter_id]
     joining_props:
       - index: file
         join_on: subject_id
