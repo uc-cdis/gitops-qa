@@ -9,9 +9,6 @@ mappings:
       - name: consent_codes
       - name: geographic_site
     flatten_props:
-      - path: studies
-        props:
-          - name: submitter_id
       - path: demographics
         props:
           - name: age_at_index
@@ -76,6 +73,10 @@ mappings:
           - name: triglycerides
           - name: total_cholesterol
     aggregated_props:
+      - name: studies_submitter_id
+        path: studies
+        src: submitter_id
+        fn: set
       - name: annotated_sex
         path: demographics
         src: annotated_sex
