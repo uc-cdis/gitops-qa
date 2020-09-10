@@ -61,14 +61,17 @@
     "rowAccessor": "project_id",
     "listItemConfig": {
       "blockFields": ["brief_summary"],
-      "tableFields": ["condition", "responsible_party", "study_start_date", "study_completion_date", "study_design_primary_purpose", "publications"]
+      "tableFields": ["creator","condition", "study_design_primary_purpose", "study_design_allocation", "study_start_date", "study_completion_date", "publications"]
     },
     "singleItemConfig": {
       "blockFields": ["description"],
-      "tableFields": ["condition", "responsible_party", "study_start_date", "study_completion_date", "study_design_primary_purpose", "publications", "study_design_intervention_model"]
+      "tableFields": ["creator","condition", "study_design_primary_purpose","study_design_allocation", "study_start_date", "study_completion_date", "publications"]
     },
     "fieldMapping": [
-      { "field": "brief_summary", "name": "Brief Study Description" }
+      { "field": "brief_summary", "name": "Brief Study Description" },
+      { "field": "description", "name": "Detailed Description"},
+      { "field": "creator", "name": "Sponsor"},
+      { "field": "publications", "name": "Study Publications"}
     ],
     "downloadField": "object_id",
     "fileDataType": "ctfile",
