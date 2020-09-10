@@ -179,7 +179,7 @@
             "data_type",
             "data_format",
             "geographic_site",
-            "submitter_id"
+            "studies_submitter_id"
           ]
         },
         {
@@ -343,7 +343,8 @@
         { "field": "geographic_site", "name": "Geographic Site" },
         { "field": "height_baseline", "name": "Height Baseline" },
         { "field": "total_cholesterol", "name": "Total Cholesterol" },
-        { "field": "triglycerides", "name": "Triglycerides" }
+        { "field": "triglycerides", "name": "Triglycerides" },
+        { "field": "studies_submitter_id", "name": "Study" }
       ],
       "manifestMapping": {
         "resourceIndexType": "file",
