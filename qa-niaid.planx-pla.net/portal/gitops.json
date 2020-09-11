@@ -30,7 +30,7 @@
       "title": "AccessClinicalData@NIAID",
       "items": [{
         "icon": "query",
-        "link": "/study-viewer/cmc",
+        "link": "/study-viewer/clinical_trials",
         "color": "#a2a2a2",
         "name": "Study Viewer"
       }]
@@ -57,10 +57,10 @@
   "studyViewerConfig": [{
     "openMode": "open-first",
     "openFirstRowAccessor": "",
-    "dataType": "cmc",
+    "dataType": "clinical_trials",
     "title": "Studies",
     "titleField": "title",
-    "rowAccessor": "project_id",
+    "rowAccessor": "cmc_unique_id",
     "listItemConfig": {
       "blockFields": ["brief_summary"],
       "tableFields": ["condition", "responsible_party", "study_start_date", "study_completion_date", "study_design_primary_purpose", "publications"]

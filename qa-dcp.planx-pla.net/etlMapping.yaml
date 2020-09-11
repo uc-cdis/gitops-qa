@@ -9,9 +9,6 @@ mappings:
       - name: consent_codes
       - name: geographic_site
     flatten_props:
-      - path: studies
-        props:
-          - name: submitter_id
       - path: demographics
         props:
           - name: age_at_index
@@ -116,7 +113,9 @@ mappings:
       - name: ever_smoker_baseline
         path: exposures
         src: ever_smoker_baseline
-        fn: set                 
+        fn: set     
+    parent_props:
+      - path: studies[studies_submitter_id:submitter_id]
     joining_props:
       - index: file
         join_on: subject_id
