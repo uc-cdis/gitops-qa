@@ -15,7 +15,7 @@
     "revproxy": "quay.io/cdis/nginx:2020.09",
     "sheepdog": "quay.io/cdis/sheepdog:2020.09",
     "portal": "quay.io/cdis/data-portal:covid19-3.8.1",
-    "tube": "quay.io/cdis/tube:0.4.0",
+    "tube": "quay.io/cdis/tube:2020.09",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "spark": "quay.io/cdis/gen3-spark:2020.09",
     "hatchery": "quay.io/cdis/hatchery:2020.09",
