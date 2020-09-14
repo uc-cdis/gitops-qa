@@ -19,7 +19,7 @@
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "spark": "quay.io/cdis/gen3-spark:2020.08",
     "hatchery": "quay.io/cdis/hatchery:2020.08",
-    "mariner": "quay.io/cdis/mariner-server:1.0.1",
+    "mariner": "quay.io/cdis/mariner-server:fix_task-dir",
     "wts": "quay.io/cdis/workspace-token-service:2020.08",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:1.0.3",
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
@@ -33,7 +33,7 @@
     "environment": "qa-covid19",
     "hostname": "qa-covid19.planx-pla.net",
     "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
-    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/covid19-datadictionary/3.0.3/schema.json",
+    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/covid19-datadictionary/3.0.4/schema.json",
     "portal_app": "gitops",
     "kube_bucket": "kube-qaplanetv2-gen3",
     "logs_bucket": "logs-qaplanetv2-gen3",
@@ -194,7 +194,7 @@
     "containers": {
       "engine": {
         "name": "mariner-engine",
-        "image": "quay.io/cdis/mariner-engine:1.0.1",
+        "image": "quay.io/cdis/mariner-engine:fix_task-dir",
         "pull_policy": "always",
         "command": [
           "/bin/sh",
@@ -209,7 +209,7 @@
       },
       "s3sidecar": {
         "name": "mariner-s3sidecar",
-        "image": "quay.io/cdis/mariner-s3sidecar:1.0.1",
+        "image": "quay.io/cdis/mariner-s3sidecar:fix_task-dir",
         "pull_policy": "always",
         "command": [
           "/bin/sh",

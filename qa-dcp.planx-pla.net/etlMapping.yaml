@@ -113,7 +113,9 @@ mappings:
       - name: ever_smoker_baseline
         path: exposures
         src: ever_smoker_baseline
-        fn: set                 
+        fn: set     
+    parent_props:
+      - path: studies[studies_submitter_id:submitter_id]
     joining_props:
       - index: file
         join_on: subject_id
