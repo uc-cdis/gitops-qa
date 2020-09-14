@@ -176,19 +176,19 @@
           "fields": [
             "project_id",
             "consent_codes",
-            "data_type",
-            "data_format",
+            "studies_submitter_id",
             "geographic_site",
-            "studies_submitter_id"
+            "data_type",
+            "data_format"            
           ]
         },
         {
           "title": "Subject",
           "fields": [
-            "race",
             "annotated_sex",
-            "hispanic_subgroup",
+            "race",
             "ethnicity",
+            "hispanic_subgroup",
             "subcohort"            
           ]
         },
