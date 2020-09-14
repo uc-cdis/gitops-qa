@@ -21,7 +21,7 @@
     "hatchery": "quay.io/cdis/hatchery:2020.09",
     "mariner": "quay.io/cdis/mariner-server:fix_task-dir",
     "wts": "quay.io/cdis/workspace-token-service:2020.09",
-    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:1.0.3",
+    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:2020.09",
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
     "guppy": "quay.io/cdis/guppy:2020.09",
     "manifestservice": "quay.io/cdis/manifestservice:2020.09",
