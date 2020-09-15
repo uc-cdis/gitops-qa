@@ -6,6 +6,7 @@ mappings:
     props:
       - name: creator
       - name: condition
+      - name: category
       - name: study_design_allocation
       - name: study_design_intervention_model
       - name: study_design_masking
