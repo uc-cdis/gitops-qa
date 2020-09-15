@@ -4,6 +4,7 @@ mappings:
     type: aggregator
     root: core_metadata_collection
     props:
+      - name: creator
       - name: condition
       - name: study_design_allocation
       - name: study_design_intervention_model
@@ -12,6 +13,8 @@ mappings:
       - name: responsible_party
       - name: study_start_date
       - name: study_completion_date
+      - name: data_available
+      - name: clinical_trial_website
       - name: publications
       - name: brief_summary
       - name: description
