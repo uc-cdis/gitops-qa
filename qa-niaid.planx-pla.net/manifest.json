@@ -9,6 +9,7 @@
   "versions": {
     "arborist": "quay.io/cdis/arborist:2020.08",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
+    "dashboard": "quay.io/cdis/gen3-statics:2020.08",
     "fence": "quay.io/cdis/fence:2020.08",
     "indexd": "quay.io/cdis/indexd:2020.08",
     "peregrine": "quay.io/cdis/peregrine:2020.08",
@@ -19,7 +20,7 @@
     "tube": "quay.io/cdis/tube:2020.08",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "spark": "quay.io/cdis/gen3-spark:2020.08",
-    "requestor": "quay.io/cdis/requestor:feat_authz",
+    "requestor": "quay.io/cdis/requestor:1.0.0",
     "guppy": "quay.io/cdis/guppy:2020.08"
   },
   "arborist": {
@@ -32,7 +33,7 @@
     "environment": "qaplanetv1",
     "hostname": "qa-niaid.planx-pla.net",
     "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
-    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/niaid-clinical-trials-dictionary/0.2.0/schema.json",
+    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/niaid-clinical-trials-dictionary/0.2.1/schema.json",
     "portal_app": "gitops",
     "kube_bucket": "kube-qaplanetv1-gen3",
     "logs_bucket": "logs-qaplanetv1-gen3",
