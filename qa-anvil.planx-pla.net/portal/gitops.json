@@ -130,8 +130,19 @@
     "filters": {
       "tabs": [
         {
+          "title": "Projects",
+          "fields": [
+            "project_id",
+            "project_short_name",
+            "project_dbgap_accession_number",
+            "project_dbgap_consent_text",
+            "project_dbgap_phs",
+            "project_name"
+          ]
+        }, {
           "title": "Subject",
           "fields":[
+            "anvil_project_id",
             "sex",
             "age_value",
             "ancestry",
@@ -141,7 +152,8 @@
             "disease_id", 
             "solve_state", 
             "congenital_status", 
-            "age_of_onset"
+            "age_of_onset",
+            "phenotype_group"
           ]
         }, {
           "title": "Sample",
@@ -163,16 +175,6 @@
             "alignment_method", 
             "data_processing_pipeline"
           ]
-        }, {
-          "title": "Projects",
-          "fields": [
-            "project_id",
-            "project_short_name",
-            "project_dbgap_accession_number",
-            "project_dbgap_consent_text",
-            "project_dbgap_phs",
-            "project_name"
-          ]
         }
       ]
     },
@@ -180,9 +182,11 @@
       "enabled": true,
       "fields": [
         "project_id",
+        "anvil_project_id",
         "ancestry",
         "sex",
         "age_value",
+        "phenotype_group",
         "_samples_count",
         "_sequencings_count"
       ]
