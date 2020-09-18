@@ -88,7 +88,7 @@
             "name": "sower-jobs-creds-volume",
             "readOnly": true,
             "mountPath": "/creds.json",
-            "subPath": "config.json"
+            "subPath": "creds.json"
           }
         ],
         "cpu-limit": "1",
