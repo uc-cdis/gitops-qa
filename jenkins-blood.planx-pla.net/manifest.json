@@ -318,7 +318,9 @@
       "strategy": "auto"
     },
     "portal": {
-      "strategy": "auto"
+      "strategy": "auto",
+      "min": 1,
+      "max": 2
     },
     "fence": {
       "strategy": "auto"

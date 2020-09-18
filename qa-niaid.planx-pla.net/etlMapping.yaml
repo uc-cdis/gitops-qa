@@ -1,10 +1,12 @@
 mappings:
   - name: qa-niaid_cmc
-    doc_type: cmc
+    doc_type: clinical_trials
     type: aggregator
     root: core_metadata_collection
     props:
+      - name: creator
       - name: condition
+      - name: category
       - name: study_design_allocation
       - name: study_design_intervention_model
       - name: study_design_masking
@@ -12,11 +14,15 @@ mappings:
       - name: responsible_party
       - name: study_start_date
       - name: study_completion_date
+      - name: data_available
+      - name: clinical_trial_website
       - name: publications
       - name: brief_summary
       - name: description
       - name: title
       - name: project_id
+      - name: cmc_unique_id
+        src: submitter_id
   - name: qa-niaid_ct-file
     doc_type: ctfile
     type: aggregator
@@ -29,6 +35,8 @@ mappings:
       - name: data_format
       - name: data_type
       - name: project_id
+    parent_props:
+      - path: core_metadata_collections[cmc_unique_id:submitter_id]
   - name: qa-niaid_oa-file
     doc_type: oafile
     type: aggregator
@@ -41,3 +49,5 @@ mappings:
       - name: data_type
       - name: doc_url
       - name: project_id
+    parent_props:
+      - path: core_metadata_collections[cmc_unique_id:submitter_id]

@@ -28,7 +28,7 @@
     "navigation": {
       "items": [{
         "icon": "query",
-        "link": "/study-viewer/cmc",
+        "link": "/study-viewer/clinical_trials",
         "color": "#a2a2a2",
         "name": "Study Viewer"
       }]
@@ -55,20 +55,25 @@
   "studyViewerConfig": [{
     "openMode": "open-first",
     "openFirstRowAccessor": "",
-    "dataType": "cmc",
+    "dataType": "clinical_trials",
     "title": "Studies",
     "titleField": "title",
-    "rowAccessor": "project_id",
+    "rowAccessor": "cmc_unique_id",
     "listItemConfig": {
       "blockFields": ["brief_summary"],
-      "tableFields": ["condition", "responsible_party", "study_start_date", "study_completion_date", "study_design_primary_purpose", "publications"]
+      "tableFields": ["creator","condition", "category", "data_available", "clinical_trial_website", "publications"]
     },
     "singleItemConfig": {
       "blockFields": ["description"],
-      "tableFields": ["condition", "responsible_party", "study_start_date", "study_completion_date", "study_design_primary_purpose", "publications", "study_design_intervention_model"]
+      "tableFields": ["creator","condition", "category", "study_design_primary_purpose","study_design_allocation", "study_start_date", "study_completion_date", "data_available", "clinical_trial_website", "publications"]
     },
     "fieldMapping": [
-      { "field": "brief_summary", "name": "Brief Study Description" }
+      { "field": "brief_summary", "name": "Brief Study Description" },
+      { "field": "description", "name": "Detailed Description"},
+      { "field": "creator", "name": "Sponsor"},
+      { "field": "category", "name": "Study Type"},
+      { "field": "clinical_trial_website", "name": "Websites"},
+      { "field": "publications", "name": "Study Publications"}
     ],
     "downloadField": "object_id",
     "fileDataType": "ctfile",
