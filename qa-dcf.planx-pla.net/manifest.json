@@ -44,10 +44,10 @@
         ],
         "volumeMounts": [
           {
-            "name": "manifest-indexing-creds-volume",
+            "name": "creds-volume",
             "readOnly": true,
-            "mountPath": "/manifest-indexing-creds.json",
-            "subPath": "config.json"
+            "mountPath": "/creds.json",
+            "subPath": "creds.json"
           }
         ],
         "cpu-limit": "1",
@@ -55,9 +55,9 @@
       },
       "volumes": [
         {
-          "name": "manifest-indexing-creds-volume",
+          "name": "creds-volume",
           "secret": {
-            "secretName": "manifestindexing-g3auto"
+            "secretName": "sower-jobs-g3auto"
           }
         }
       ],
@@ -83,9 +83,9 @@
         ],
         "volumeMounts": [
           {
-            "name": "manifest-indexing-creds-volume",
+            "name": "creds-volume",
             "readOnly": true,
-            "mountPath": "/manifest-indexing-creds.json",
+            "mountPath": "/creds.json",
             "subPath": "config.json"
           }
         ],
@@ -94,9 +94,9 @@
       },
       "volumes": [
         {
-          "name": "manifest-indexing-creds-volume",
+          "name": "creds-volume",
           "secret": {
-            "secretName": "manifestindexing-g3auto"
+            "secretName": "sower-jobs-g3auto"
           }
         }
       ],
