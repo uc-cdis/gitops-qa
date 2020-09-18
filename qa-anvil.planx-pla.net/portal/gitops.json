@@ -122,7 +122,7 @@
         "chartType": "pie",
         "title": "Sex"
       },
-      "race": {
+      "ancestry": {
         "chartType": "bar",
         "title": "Ancestry"
       }
