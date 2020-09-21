@@ -17,7 +17,7 @@
     "hatchery": "quay.io/cdis/hatchery:2020.03",
     "indexd": "quay.io/cdis/indexd:2020.03",
     "manifestservice": "quay.io/cdis/manifestservice:2020.03",
-    "mariner": "quay.io/cdis/mariner-server:1.0.0",
+    "mariner": "quay.io/cdis/mariner-server:1.0.2",
     "peregrine": "quay.io/cdis/peregrine:2020.03",
     "pidgin": "quay.io/cdis/pidgin:2020.03",
     "portal": "quay.io/cdis/data-portal:2.28.0",
@@ -110,7 +110,7 @@
     "containers": {
       "engine": {
         "name": "mariner-engine",
-        "image": "quay.io/cdis/mariner-engine:1.0.0",
+        "image": "quay.io/cdis/mariner-engine:1.0.2",
         "pull_policy": "always",
         "command": [
           "/bin/sh",
@@ -125,7 +125,7 @@
       },
       "s3sidecar": {
         "name": "mariner-s3sidecar",
-        "image": "quay.io/cdis/mariner-s3sidecar:1.0.0",
+        "image": "quay.io/cdis/mariner-s3sidecar:1.0.2",
         "pull_policy": "always",
         "command": [
           "/bin/sh",
