@@ -20,6 +20,7 @@
     "mariner": "quay.io/cdis/mariner-server:feat_gwas-pilot",
     "ohdsi-broadsea-webtools": "ohdsi/broadsea-webtools:latest",
     "ohdsi-atlas": "quay.io/cdis/ohdsi-atlas:latest",
+    "ohdsi-broadsea-webtools": "ohdsi/broadsea-webtools",
     "ohdsi-webapi": "quay.io/cdis/ohdsi-webapi:latest",
     "peregrine": "quay.io/cdis/peregrine:2020.03",
     "pidgin": "quay.io/cdis/pidgin:2020.03",
