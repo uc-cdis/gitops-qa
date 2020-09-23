@@ -9,7 +9,7 @@
   "versions": {
     "arborist": "quay.io/cdis/arborist:integration202010",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
-    "fence": "quay.io/cdis/fence:integration202010",
+    "fence": "quay.io/cdis/fence:4.23.5",
     "indexd": "quay.io/cdis/indexd:integration202010",
     "peregrine": "quay.io/cdis/peregrine:integration202010",
     "pidgin": "quay.io/cdis/pidgin:integration202010",
