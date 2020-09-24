@@ -29,7 +29,8 @@
     "sower": "quay.io/cdis/sower:master",
     "hatchery": "quay.io/cdis/hatchery:master",
     "metadata": "quay.io/cdis/metadata-service:master",
-    "dashboard": "quay.io/cdis/gen3-statics:master"
+    "dashboard": "quay.io/cdis/gen3-statics:master",
+    "requestor": "quay.io/cdis/requestor:1.1.0"
   },
   "arborist": {
     "deployment_version": "2"
