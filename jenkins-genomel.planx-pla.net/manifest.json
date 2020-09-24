@@ -30,7 +30,7 @@
     "hatchery": "quay.io/cdis/hatchery:master",
     "metadata": "quay.io/cdis/metadata-service:master",
     "dashboard": "quay.io/cdis/gen3-statics:master",
-    "requestor": "quay.io/cdis/requestor:1.1.0"
+    "requestor": "quay.io/cdis/requestor:master"
   },
   "jupyterhub": {
     "enabled": "yes",
