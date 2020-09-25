@@ -109,11 +109,11 @@ mappings:
       - name: current_smoker_baseline
         path: exposures
         src: current_smoker_baseline
-        fn: set        
+        fn: set
       - name: ever_smoker_baseline
         path: exposures
         src: ever_smoker_baseline
-        fn: set     
+        fn: set
     parent_props:
       - path: studies[studies_submitter_id:submitter_id]
     joining_props:
@@ -144,7 +144,8 @@ mappings:
       - name: state
       - name: callset
       - name: bucket_path
-    injecting_props: 
+      - name: source_node
+    injecting_props:
       subject:
         props:
           - name: subject_id
