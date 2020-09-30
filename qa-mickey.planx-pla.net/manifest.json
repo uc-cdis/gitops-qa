@@ -17,7 +17,7 @@
     "hatchery": "quay.io/cdis/hatchery:2020.03",
     "indexd": "quay.io/cdis/indexd:2020.03",
     "manifestservice": "quay.io/cdis/manifestservice:2020.03",
-    "mariner": "quay.io/cdis/mariner-server:feat_gwas-pilot",
+    "mariner": "quay.io/cdis/mariner-server:feat_gwas-pilot-races",
     "ohdsi-broadsea-webtools": "ohdsi/broadsea-webtools:latest",
     "ohdsi-atlas": "quay.io/cdis/ohdsi-atlas:latest",
     "ohdsi-webapi": "quay.io/cdis/ohdsi-webapi:latest",
@@ -113,7 +113,7 @@
     "containers": {
       "engine": {
         "name": "mariner-engine",
-        "image": "quay.io/cdis/mariner-engine:feat_gwas-pilot",
+        "image": "quay.io/cdis/mariner-engine:feat_gwas-pilot-races",
         "pull_policy": "always",
         "command": [
           "/bin/sh",
@@ -128,7 +128,7 @@
       },
       "s3sidecar": {
         "name": "mariner-s3sidecar",
-        "image": "quay.io/cdis/mariner-s3sidecar:feat_gwas-pilot",
+        "image": "quay.io/cdis/mariner-s3sidecar:feat_gwas-pilot-races",
         "pull_policy": "always",
         "command": [
           "/bin/sh",
