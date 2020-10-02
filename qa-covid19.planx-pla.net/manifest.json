@@ -156,6 +156,10 @@
         "type": "subject"
       },
       {
+        "index": "qa-covid19_clinical_trials",
+        "type": "clinical_trials"
+      },
+      {
         "index": "qa-covid19_dataset",
         "type": "dataset"
       }
