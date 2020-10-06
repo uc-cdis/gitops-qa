@@ -164,6 +164,7 @@ mappings:
     type: aggregator
     root: clinical_trials
     props:
+      - name: project_id
       - name: completed_clinical_trials
       - name: description
       - name: development_stage
