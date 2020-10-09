@@ -6,7 +6,7 @@
   "versions": {
     "arborist": "quay.io/cdis/arborist:2020.08",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
-    "covid19-etl": "quay.io/cdis/covid19-etl:4.0.4",
+    "covid19-etl": "quay.io/cdis/covid19-etl:4.2.1",
     "nb-etl": "quay.io/cdis/covid19-nb-etl:4.0.2",
     "fence": "quay.io/cdis/fence:2020.08",
     "indexd": "quay.io/cdis/indexd:2020.08",
@@ -19,7 +19,7 @@
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "spark": "quay.io/cdis/gen3-spark:2020.08",
     "hatchery": "quay.io/cdis/hatchery:2020.08",
-    "mariner": "quay.io/cdis/mariner-server:fix_task-dir",
+    "mariner": "quay.io/cdis/mariner-server:1.0.3",
     "wts": "quay.io/cdis/workspace-token-service:2020.08",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:1.0.3",
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
@@ -33,7 +33,7 @@
     "environment": "qa-covid19",
     "hostname": "qa-covid19.planx-pla.net",
     "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
-    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/covid19-datadictionary/3.2.4/schema.json",
+    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/covid19-datadictionary/3.3.5/schema.json",
     "portal_app": "gitops",
     "kube_bucket": "kube-qaplanetv2-gen3",
     "logs_bucket": "logs-qaplanetv2-gen3",
@@ -156,6 +156,10 @@
         "type": "subject"
       },
       {
+        "index": "qa-covid19_clinical_trials",
+        "type": "clinical_trials"
+      },
+      {
         "index": "qa-covid19_dataset",
         "type": "dataset"
       }
@@ -194,7 +198,7 @@
     "containers": {
       "engine": {
         "name": "mariner-engine",
-        "image": "quay.io/cdis/mariner-engine:fix_task-dir",
+        "image": "quay.io/cdis/mariner-engine:1.0.3",
         "pull_policy": "always",
         "command": [
           "/bin/sh",
@@ -209,7 +213,7 @@
       },
       "s3sidecar": {
         "name": "mariner-s3sidecar",
-        "image": "quay.io/cdis/mariner-s3sidecar:fix_task-dir",
+        "image": "quay.io/cdis/mariner-s3sidecar:1.0.3",
         "pull_policy": "always",
         "command": [
           "/bin/sh",
