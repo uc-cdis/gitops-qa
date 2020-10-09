@@ -66,15 +66,15 @@ mappings:
         src: mace
         fn: set
       - name: indication_for_noac_treatment
-        path: treatments
+        path: diagnoses.treatments
         src: indication_for_noac_treatment
         fn: set
       - name: indication_for_warfarin_treatment
-        path: treatments
+        path: diagnoses.treatments
         src: indication_for_warfarin_treatment
         fn: set
       - name: indication_for_clopidogrel_treatment
-        path: treatments
+        path: diagnoses.treatments
         src: indication_for_clopidogrel_treatment
         fn: set
       - name: age_at_index
