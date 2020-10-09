@@ -199,7 +199,7 @@
       "nodeCountTitle": "Subjects",
       "fieldMapping": [
         { "field": "age_at_index", "name": "Age" },
-        { "field": "indication_for_noac_treatment", "name": "Indication for NOAC treatment" }
+        { "field": "indication_for_noac_treatment", "name": "Indication For NOAC Treatment" }
       ],
       "manifestMapping": {
         "resourceIndexType": "file",
