@@ -340,7 +340,7 @@
       "dropdowns": {}
     },
     {
-      "tabTitle": "Downloadable Data",
+      "tabTitle": "Downloadable",
       "adminAppliedPreFilters": {
         "project_id": { 
           "selectedValues": ["DEV-QA"]
