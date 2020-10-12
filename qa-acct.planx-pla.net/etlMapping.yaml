@@ -65,6 +65,10 @@ mappings:
         path: follow_ups
         src: mace
         fn: set
+      - name: years_smoked
+        path: exposures
+        src: years_smoked
+        fn: set        
       - name: indication_for_noac_treatment
         path: diagnoses.treatments
         src: indication_for_noac_treatment
