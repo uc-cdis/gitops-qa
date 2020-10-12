@@ -12,6 +12,10 @@ mappings:
       - name: species
       - name: strain
       - name: arm
+    flatten_props:
+      - path: demographics
+        props: 
+          - name: age_at_index
     aggregated_props:
       - name: ethnicity
         path: demographics
@@ -41,10 +45,6 @@ mappings:
         path: exposures
         src: pack_years_smoked
         fn: max
-      - name: years_smoked
-        path: exposures
-        src: years_smoked
-        fn: set
       - name: composition
         path: samples
         src: composition
@@ -65,6 +65,10 @@ mappings:
         path: follow_ups
         src: mace
         fn: set
+      - name: years_smoked
+        path: exposures
+        src: years_smoked
+        fn: set        
       - name: indication_for_noac_treatment
         path: diagnoses.treatments
         src: indication_for_noac_treatment
@@ -76,10 +80,6 @@ mappings:
       - name: indication_for_clopidogrel_treatment
         path: diagnoses.treatments
         src: indication_for_clopidogrel_treatment
-        fn: set
-      - name: age_at_index
-        path: demographics
-        src: age_at_index
         fn: set
       - name: therapeutic_agents
         path: diagnoses.treatments
