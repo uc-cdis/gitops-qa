@@ -94,6 +94,20 @@ mappings:
           - name: provider_type
           - name: provider_subtype
           - name: detailed_specialty
+          - name: new_cases
+          - name: new_deaths
+          - name: positive_rate
+          - name: population
+          - name: population_density
+          - name: median_age
+          - name: gdp_per_capita
+          - name: extreme_poverty
+          - name: cardiovasc_death_rate
+          - name: diabetes_prevalence
+          - name: female_smokers
+          - name: male_smokers
+          - name: handwashing_facilities
+          - name: life_expectancy
         sorted_by: updated_datetime, desc
     parent_props:
       - path: projects[project_code:code,project_name:name,project_url:url,project_investigator_affiliation:investigator_affiliation]
@@ -158,7 +172,6 @@ mappings:
     parent_props:
       - path: projects[project_code:code,project_name:name,project_url:url,project_data_description:data_description,project_investigator_affiliation:investigator_affiliation,project_availability_type:availability_type]
       - path: studies[study_doi:study_doi]
-
   - name: qa-covid19_clinical_trials
     doc_type: clinical_trials
     type: aggregator
@@ -179,7 +192,6 @@ mappings:
       - name: title
     parent_props:
       - path: projects[project_code:code,project_name:name,project_url:url,project_data_description:data_description,project_investigator_affiliation:investigator_affiliation,project_availability_type:availability_type]
-  
   - name: qa-covid19_genomic_file
     doc_type: genomic_file
     type: collector
