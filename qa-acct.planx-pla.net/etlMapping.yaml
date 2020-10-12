@@ -16,10 +16,6 @@ mappings:
       - path: demographics
         props: 
           - name: age_at_index
-    flatten_props:
-      - path: exposure
-        props: 
-          - name: years_smoked
     aggregated_props:
       - name: ethnicity
         path: demographics
