@@ -73,7 +73,24 @@
     },
     "singleItemConfig": {
       "blockFields": ["description"],
-      "tableFields": ["creator","condition", "category", "study_design_primary_purpose","study_design_allocation", "study_start_date", "study_completion_date", "data_available", "clinical_trial_website", "publications"]
+      "tableFields": ["creator","condition", "category", "study_design_primary_purpose","study_design_allocation", "study_start_date", "study_completion_date", "data_available", "clinical_trial_website", "publications"],
+      "sideBoxes": [
+        {
+          "title": "Data Access Agreements",
+          "items": [
+            {
+              "type": "pdf",
+              "link": "https://accessclinicaldata.niaid.nih.gov/dashboard/Public/files/2020-1138%20v200917FINALDUA.pdf",
+              "name": "Data Use Agreement (DUA)"
+            },
+            {
+              "type": "pdf",
+              "link": "https://accessclinicaldata.niaid.nih.gov/dashboard/Public/files/NIAID%20Data%20Access%20Request%20FormSept2020.pdf",
+              "name": "Data Access Request (DAR)"
+            }
+          ]
+        }
+      ]
     },
     "fieldMapping": [
       { "field": "brief_summary", "name": "Brief Study Description" },
