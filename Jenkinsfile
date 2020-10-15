@@ -1,5 +1,5 @@
 #!groovy
-@Library('cdis-jenkins-lib@test/debug') _
+@Library('cdis-jenkins-lib@fix/manifest-block') _
 testPipeline {
   MANIFEST = "True"
 }
