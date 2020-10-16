@@ -4,24 +4,24 @@
     "That's all I have to say"
   ],
   "versions": {
-    "arborist": "quay.io/cdis/arborist:2020.09",
+    "arborist": "quay.io/cdis/arborist:integration202011",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
-    "dashboard": "quay.io/cdis/gen3-statics:2020.09",
-    "fence": "quay.io/cdis/fence:2020.09",
-    "indexd": "quay.io/cdis/indexd:2020.09",
-    "peregrine": "quay.io/cdis/peregrine:2020.09",
-    "pidgin": "quay.io/cdis/pidgin:2020.09",
-    "revproxy": "quay.io/cdis/nginx:2020.09",
-    "sheepdog": "quay.io/cdis/sheepdog:2020.09",
-    "portal": "quay.io/cdis/data-portal:2.32.2",
+    "dashboard": "quay.io/cdis/gen3-statics:integration202011",
+    "fence": "quay.io/cdis/fence:integration202011",
+    "indexd": "quay.io/cdis/indexd:integration202011",
+    "peregrine": "quay.io/cdis/peregrine:integration202011",
+    "pidgin": "quay.io/cdis/pidgin:integration202011",
+    "revproxy": "quay.io/cdis/nginx:integration202011",
+    "sheepdog": "quay.io/cdis/sheepdog:integration202011",
+    "portal": "quay.io/cdis/data-portal:integration202011",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
-    "spark": "quay.io/cdis/gen3-spark:2020.09",
-    "tube": "quay.io/cdis/tube:2020.09",
-    "hatchery": "quay.io/cdis/hatchery:2020.09",
-    "wts": "quay.io/cdis/workspace-token-service:2020.09",
+    "spark": "quay.io/cdis/gen3-spark:integration202011",
+    "tube": "quay.io/cdis/tube:integration202011",
+    "hatchery": "quay.io/cdis/hatchery:integration202011",
+    "wts": "quay.io/cdis/workspace-token-service:integration202011",
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
-    "manifestservice": "quay.io/cdis/manifestservice:2020.09",
-    "guppy": "quay.io/cdis/guppy:2020.09"
+    "manifestservice": "quay.io/cdis/manifestservice:integration202011",
+    "guppy": "quay.io/cdis/guppy:integration202011"
   },
   "indexd": {
     "arborist": "true"
@@ -46,7 +46,7 @@
     "sidecar": {
       "cpu-limit": "1.0",
       "memory-limit": "256Mi",
-      "image": "quay.io/cdis/gen3fuse-sidecar:2020.09",
+      "image": "quay.io/cdis/gen3fuse-sidecar:integration202011",
       "env": {
         "NAMESPACE": "default",
         "HOSTNAME": "qa-ibd.planx-pla.net"
