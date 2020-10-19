@@ -59,46 +59,49 @@
   "featureFlags": {
     "explorer": true
   },
-  "studyViewerConfig": [{
-    "openMode": "open-first",
-    "openFirstRowAccessor": "ACTT",
-    "dataType": "clinical_trials",
-    "title": "Studies",
-    "titleField": "title",
-    "rowAccessor": "cmc_unique_id",
-    "listItemConfig": {
-      "blockFields": ["brief_summary"],
-      "tableFields": ["data_availability_date", "data_available", "creator", "nct_number", "condition", "category", "clinical_trial_website", "publications"]
-    },
-    "singleItemConfig": {
-      "blockFields": ["description"],
-      "tableFields": ["data_availability_date", "data_available",  "creator", "nct_number", "condition", "category", "study_design_primary_purpose","study_design_allocation", "study_start_date", "study_completion_date",  "clinical_trial_website", "publications"]
-    },
-    "fieldMapping": [
-      { "field": "brief_summary", "name": "Brief Study Description" },
-      { "field": "description", "name": "Detailed Description"},
-      { "field": "creator", "name": "Sponsor"},
-      { "field": "nct_number", "name": "NCT Number"},
-      { "field": "category", "name": "Study Type"},
-      { "field": "clinical_trial_website", "name": "Websites"},
-      { "field": "publications", "name": "Study Publications"}
-    ],
-    "fileDataType": "ctfile",
-    "docDataType": "oafile",
-    "buttons": [
-      {
-        "type": "download"
+  "explorerConfig": [],
+  "studyViewerConfig": [
+    {
+      "openMode": "open-first",
+      "openFirstRowAccessor": "ACTT",
+      "dataType": "clinical_trials",
+      "title": "Studies",
+      "titleField": "title",
+      "rowAccessor": "cmc_unique_id",
+      "listItemConfig": {
+        "blockFields": ["brief_summary"],
+        "tableFields": ["data_availability_date", "data_available", "creator", "nct_number", "condition", "category", "clinical_trial_website", "publications"]
       },
-      {
-        "type": "request_access",
-        "resourceDisplayNameField": "title",
-        "redirectModalText": "the NIAID Data Access Request Form",
-        "singleItemView": false,
-        "accessRequestedText": "DAR In Progress",
-        "accessRequestedTooltipText": "Your recently submitted DAR is being reviewed by NIAID"
-      }
-    ]
-  }],
+      "singleItemConfig": {
+        "blockFields": ["description"],
+        "tableFields": ["data_availability_date", "data_available",  "creator", "nct_number", "condition", "category", "study_design_primary_purpose","study_design_allocation", "study_start_date", "study_completion_date",  "clinical_trial_website", "publications"]
+      },
+      "fieldMapping": [
+        { "field": "brief_summary", "name": "Brief Study Description" },
+        { "field": "description", "name": "Detailed Description"},
+        { "field": "creator", "name": "Sponsor"},
+        { "field": "category", "name": "Study Type"},
+        { "field": "clinical_trial_website", "name": "Websites"},
+        { "field": "nct_number", "name": "NCT Number"},
+        { "field": "publications", "name": "Study Publications"}
+      ],
+      "fileDataType": "ctfile",
+      "docDataType": "oafile",
+      "buttons": [
+        {
+          "type": "download"
+        },
+        {
+          "type": "request_access",
+          "resourceDisplayNameField": "title",
+          "redirectModalText": "the NIAID Data Access Request Form",
+          "singleItemView": false,
+          "accessRequestedText": "DAR In Progress",
+          "accessRequestedTooltipText": "Your recently submitted DAR is being reviewed by NIAID"
+        }
+      ]
+    }
+  ],
   "useArboristUI": true,
   "showArboristAuthzOnProfile": true,
   "showFenceAuthzOnProfile": false
