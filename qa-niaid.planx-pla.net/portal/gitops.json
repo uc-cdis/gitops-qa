@@ -68,16 +68,17 @@
     "rowAccessor": "cmc_unique_id",
     "listItemConfig": {
       "blockFields": ["brief_summary"],
-      "tableFields": ["creator", "nct_number", "condition", "category", "data_available", "data_availability_date", "clinical_trial_website", "publications"]
+      "tableFields": ["data_availability_date", "data_available", "creator", "nct_number", "condition", "category", "clinical_trial_website", "publications"]
     },
     "singleItemConfig": {
       "blockFields": ["description"],
-      "tableFields": ["creator", "nct_number", "condition", "category", "study_design_primary_purpose","study_design_allocation", "study_start_date", "study_completion_date", "data_available", "data_availability_date", "clinical_trial_website", "publications"]
+      "tableFields": ["data_availability_date", "data_available",  "creator", "nct_number", "condition", "category", "study_design_primary_purpose","study_design_allocation", "study_start_date", "study_completion_date",  "clinical_trial_website", "publications"]
     },
     "fieldMapping": [
       { "field": "brief_summary", "name": "Brief Study Description" },
       { "field": "description", "name": "Detailed Description"},
       { "field": "creator", "name": "Sponsor"},
+      { "field": "nct_number", "name": "NCT Number"},
       { "field": "category", "name": "Study Type"},
       { "field": "clinical_trial_website", "name": "Websites"},
       { "field": "publications", "name": "Study Publications"}
