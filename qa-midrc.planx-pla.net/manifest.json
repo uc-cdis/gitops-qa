@@ -60,7 +60,6 @@
   "global": {
     "environment": "qa-midrc",
     "hostname": "qa-midrc.planx-pla.net",
-    "environment": "qa-covid19",
     "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
     "portal_app": "gitops",
     "kube_bucket": "kube-qaplanetv2-gen3",
@@ -69,7 +68,7 @@
     "public_datasets": true,
     "tier_access_level": "regular",
     "tier_access_limit": "2",
-    "useryaml_s3path": "s3://cdis-gen3-users/midrc/user.yaml",
+    "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
     "dispatcher_job_num": "10",
     "dictionary_url": "http://s3.amazonaws.com/dictionary-artifacts/midrc_dictionary/0.0.4/schema.json",
     "portal_app": "gitops",

@@ -12,11 +12,11 @@
       "introduction": {
         "heading": "Accessing  NIAID  Clinical Trials Data",
         "multiLineTexts": [
-          "AccessClinicalData@NIAID is a NIAID cloud-based, secure data platform that enables sharing of and access to data sets from NIAID COVID-19 and other sponsored clinical trials for the basic and clinical research community.",
-          "The goal of the platform is to allow the research community access to clinical data sets to harness the power of data to generate new knowledge to understand, treat, and prevent infectious diseases such as COVID-19.",
+          "AccessClinicalData@NIAID is a NIAID cloud-based, secure data platform that enables sharing of and access to reports and data sets from NIAID COVID-19 and other sponsored clinical trials for the basic and clinical research community.",
+          "The goal of the platform is to allow the research community access to clinical data to generate new knowledge to understand, treat, and prevent infectious diseases such as COVID-19.",
           "Biomedical and health data coupled with powerful advanced data analytical tools provide innovative opportunities to accelerate the development of new and improved therapeutic interventions and diagnostics, prevention strategies and disease surveillance, and identification of molecular biomarkers to predict susceptibility, progression and severity of diseases.",
           "This resource provides a foundation with potential to improve the health of people in the United States and around the world.",
-          "To access and download a dataset from this NIAID controlled access clinical trials data repository, a <a href='https://qa-niaid.planx-pla.net/dashboard/Public/files/NIAID%20Data%20Access%20Request%20FormSept2020.pdf'>Data Access Request (DAR)</a> is required to be submitted to NIAID by the requestor using the DAR form found on the Accessclinicaldata@NIAID data platform and will be reviewed by the NIAID Clinical Trials Data Access Committee. Upon approval of the DAR by NIAID and prior to accessing and downloading the data set, the primary requestor and their institution will be notified and required to agree to and sign a <a href='https://qa-niaid.planx-pla.net/dashboard/Public/files/2020-1138%20v200917FINALDUA.pdf'>Data Use Agreement (DUA)</a> that outlines the terms of the use of the data.  Note that the DUA will require two signatures – from the requestor and from the institutional authorizing official. The DUA signature process will be facilitated via a DocuSign mechanism and the requestor and the authorizing institutional official’s email addresses will be utilized to facilitate the sign-off process."
+          "To access and download a dataset, a <a href='https://qa-niaid.planx-pla.net/dashboard/Public/files/NIAID%20Data%20Access%20Request%20FormSept2020.pdf'>Data Access Request (DAR)</a> is required to be submitted to NIAID. The DAR form will be reviewed by the NIAID Clinical Trials Data Access Committee. Upon approval, the primary requestor and their institution will be notified and required to agree to and sign a <a href='https://qa-niaid.planx-pla.net/dashboard/Public/files/2020-1138%20v200917FINALDUA.pdf'>Data Use Agreement (DUA)</a> that outlines the terms of the use of the data. If study reports are available, these will be provided in pdf format for download"
         ]
       },
       "buttons": [],
@@ -60,62 +60,66 @@
   "featureFlags": {
     "explorer": true
   },
-  "studyViewerConfig": [{
-    "openMode": "open-first",
-    "openFirstRowAccessor": "",
-    "dataType": "clinical_trials",
-    "title": "Studies",
-    "titleField": "title",
-    "rowAccessor": "cmc_unique_id",
-    "listItemConfig": {
-      "blockFields": ["brief_summary"],
-      "tableFields": ["creator","condition", "category", "data_available", "clinical_trial_website", "publications"]
-    },
-    "singleItemConfig": {
-      "blockFields": ["description"],
-      "tableFields": ["creator","condition", "category", "study_design_primary_purpose","study_design_allocation", "study_start_date", "study_completion_date", "data_available", "clinical_trial_website", "publications"],
-      "sideBoxes": [
+  "explorerConfig": [],
+  "studyViewerConfig": [
+    {
+      "openMode": "open-first",
+      "openFirstRowAccessor": "ACTT",
+      "dataType": "clinical_trials",
+      "title": "Studies",
+      "titleField": "title",
+      "rowAccessor": "cmc_unique_id",
+      "listItemConfig": {
+        "blockFields": ["brief_summary"],
+        "tableFields": ["data_availability_date", "data_available", "creator", "nct_number", "condition", "category", "clinical_trial_website", "publications"]
+      },
+      "singleItemConfig": {
+        "blockFields": ["description"],
+        "tableFields": ["data_availability_date", "data_available",  "creator", "nct_number", "condition", "category", "study_design_primary_purpose","study_design_allocation", "study_start_date", "study_completion_date",  "clinical_trial_website", "publications"],
+        "sideBoxes": [
+          {
+            "title": "Data Access Agreements",
+            "items": [
+              {
+                "type": "pdf",
+                "link": "https://qa-niaid.planx-pla.net/dashboard/Public/files/2020-1138%20v200917FINALDUA.pdf",
+                "name": "Data Use Agreement (DUA)"
+              },
+              {
+                "type": "pdf",
+                "link": "https://qa-niaid.planx-pla.net/dashboard/Public/files/NIAID%20Data%20Access%20Request%20FormSept2020.pdf",
+                "name": "Data Access Request (DAR)"
+              }
+            ]
+          }
+        ]
+      },
+      "fieldMapping": [
+        { "field": "brief_summary", "name": "Brief Study Description" },
+        { "field": "description", "name": "Detailed Description"},
+        { "field": "creator", "name": "Sponsor"},
+        { "field": "category", "name": "Study Type"},
+        { "field": "clinical_trial_website", "name": "Websites"},
+        { "field": "nct_number", "name": "NCT Number"},
+        { "field": "publications", "name": "Study Publications"}
+      ],
+      "fileDataType": "ctfile",
+      "docDataType": "oafile",
+      "buttons": [
         {
-          "title": "Data Access Agreements",
-          "items": [
-            {
-              "type": "pdf",
-              "link": "https://accessclinicaldata.niaid.nih.gov/dashboard/Public/files/2020-1138%20v200917FINALDUA.pdf",
-              "name": "Data Use Agreement (DUA)"
-            },
-            {
-              "type": "pdf",
-              "link": "https://accessclinicaldata.niaid.nih.gov/dashboard/Public/files/NIAID%20Data%20Access%20Request%20FormSept2020.pdf",
-              "name": "Data Access Request (DAR)"
-            }
-          ]
+          "type": "download"
+        },
+        {
+          "type": "request_access",
+          "resourceDisplayNameField": "title",
+          "redirectModalText": "the NIAID Data Access Request Form",
+          "singleItemView": false,
+          "accessRequestedText": "DAR In Progress",
+          "accessRequestedTooltipText": "Your recently submitted DAR is being reviewed by NIAID"
         }
       ]
-    },
-    "fieldMapping": [
-      { "field": "brief_summary", "name": "Brief Study Description" },
-      { "field": "description", "name": "Detailed Description"},
-      { "field": "creator", "name": "Sponsor"},
-      { "field": "category", "name": "Study Type"},
-      { "field": "clinical_trial_website", "name": "Websites"},
-      { "field": "publications", "name": "Study Publications"}
-    ],
-    "fileDataType": "ctfile",
-    "docDataType": "oafile",
-    "buttons": [
-      {
-        "type": "download"
-      },
-      {
-        "type": "request_access",
-        "resourceDisplayNameField": "title",
-        "redirectModalText": "the NIAID Data Access Request Form",
-        "singleItemView": false,
-        "accessRequestedText": "DAR In Progress",
-        "accessRequestedTooltipText": "Your recently submitted DAR is being reviewed by NIAID"
-      }
-    ]
-  }],
+    }
+  ],
   "useArboristUI": true,
   "showArboristAuthzOnProfile": true,
   "showFenceAuthzOnProfile": false
