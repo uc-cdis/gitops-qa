@@ -4,7 +4,7 @@
     "That's all I have to say"
   ],
   "versions": {
-    "arborist": "quay.io/cdis/arborist:integration202011",
+    "arborist": "quay.io/cdis/arborist:2.5.0",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
     "dashboard": "quay.io/cdis/gen3-statics:integration202011",
     "fence": "quay.io/cdis/fence:integration202011",
