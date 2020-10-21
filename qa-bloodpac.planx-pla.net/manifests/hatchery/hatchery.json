@@ -98,13 +98,13 @@
       "user-volume-location": "/home/jovyan/pd"
     },
     {
-      "target-port": 5800,
+      "target-port": 8787,
       "cpu-limit": "1.0",
       "memory-limit": "1024Mi",
       "name": "R Studio thru VNC",
-      "image": "quay.io/cdis/docker-firefox:master",
+      "image": "heliumdatastage/rstudio-server:1",
       "env": {
-        "LANDING_URL": "http://localhost:8787/"
+        "DISABLE_AUTH": "true"
       },
       "args": [],
       "path-rewrite": "/",
@@ -113,11 +113,14 @@
       "friends": [
         {
           "name": "rstudio",
-          "image": "heliumdatastage/rstudio-server:1",
+          "image": "quay.io/cdis/docker-firefox:master",
+          "securityContext": {
+            "privileged": true
+          },
           "env": [
             {
-              "name": "DISABLE_AUTH",
-              "value": "true"
+              "name": "LANDING_URL",
+              "value": "http://localhost:8787/"
             }
           ],
           "resources": {
@@ -128,7 +131,7 @@
           },
           "ports": [
             {
-              "containerPort": 8787
+              "containerPort": 5800
             }
           ]
         }
