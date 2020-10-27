@@ -4,8 +4,8 @@
   "user-volume-size": "10Gi",
   "sidecar": {
     "cpu-limit": "1.0",
-    "memory-limit": "256Mi",
-    "image": "quay.io/cdis/gen3fuse-sidecar:2020.03",
+    "memory-limit": "1Gi",
+    "image": "quay.io/cdis/gen3fuse-sidecar:2020.08",
     "env": {
       "NAMESPACE": "qa-mickey",
       "HOSTNAME": "qa-mickey.planx-pla.net"
@@ -95,7 +95,7 @@
       "user-volume-location": "/home/jovyan/pd"
     },
     {
-      "target-port": 8787,
+      "target-port": 5800,
       "cpu-limit": "1.0",
       "memory-limit": "1024Mi",
       "name": "R Studio thru VNC",
@@ -107,9 +107,10 @@
       "path-rewrite": "/",
       "use-tls": "false",
       "ready-probe": "/",
+      "use-shared-memory": "true",
       "friends": [
         {
-          "name": "rstudio",
+          "name": "firefox",
           "image": "quay.io/cdis/docker-firefox:master",
           "securityContext": {
             "privileged": true
@@ -123,7 +124,7 @@
           "resources": {
             "limits": {
               "cpu": "1.0",
-              "memory": "512Mi"
+              "memory": "5Gi"
             }
           },
           "ports": [
