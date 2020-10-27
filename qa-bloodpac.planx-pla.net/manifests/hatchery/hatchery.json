@@ -98,7 +98,7 @@
       "user-volume-location": "/home/jovyan/pd"
     },
     {
-      "target-port": 8787,
+      "target-port": 5800,
       "cpu-limit": "1.0",
       "memory-limit": "1024Mi",
       "name": "R Studio thru VNC",
