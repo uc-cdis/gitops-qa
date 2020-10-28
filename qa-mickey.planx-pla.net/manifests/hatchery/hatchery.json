@@ -134,6 +134,48 @@
           ]
         }
       ]
+    },
+    {
+      "target-port": 8888,
+      "cpu-limit": "1.0",
+      "memory-limit": "512Mi",
+      "name": "Jupyter Notebook Bio Python thru VNC",
+      "image": "quay.io/cdis/jupyter-notebook:1.0.2",
+      "env": {},
+      "args": ["--NotebookApp.base_url=/lw-workspace/proxy/", "--NotebookApp.password=''", "--NotebookApp.token=''"],
+      "command": ["start-notebook.sh"],
+      "path-rewrite": "/lw-workspace/proxy/",
+      "use-tls": "false",
+      "ready-probe": "/lw-workspace/proxy/",
+      "lifecycle-post-start": ["/bin/sh", "-c", "export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; ln -s $(pwd) /home/$IAM/pd/dockerHome; mkdir -p /home/$IAM/.jupyter/custom; echo \"define(['base/js/namespace'], function(Jupyter){Jupyter._target = '_self';})\" >/home/$IAM/.jupyter/custom/custom.js; ln -s /data /home/$IAM/pd/; true"],
+      "user-volume-location": "/home/jovyan/pd",
+      "use-shared-memory": "true",
+      "friends": [
+        {
+          "name": "firefox",
+          "image": "quay.io/cdis/docker-firefox:master",
+          "securityContext": {
+            "privileged": true
+          },
+          "env": [
+            {
+              "name": "LANDING_URL",
+              "value": "http://localhost:8787/"
+            }
+          ],
+          "resources": {
+            "limits": {
+              "cpu": "1.0",
+              "memory": "5Gi"
+            }
+          },
+          "ports": [
+            {
+              "containerPort": 8888
+            }
+          ]
+        }
+      ]
     }
   ]
 }
