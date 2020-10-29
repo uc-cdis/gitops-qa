@@ -140,24 +140,7 @@
     "explorerConfig": [
         {
             "tabTitle": "Studies",
-            "charts": {
-              "project_id": {
-                "chartType": "count",
-                "title": "Projects"
-              },
-              "study_setup": {
-                "chartType": "bar",
-                "title": "Study Setup"
-              },
-              "study_objective": {
-                "chartType": "bar",
-                "title": "Study Objective"
-              },
-              "study_design": {
-                "chartType": "bar",
-                "title": "Study Design"
-              }
-            },
+            "charts": {},
             "filters": {
               "tabs": [
                 {
@@ -383,13 +366,19 @@
           "filters": {
             "tabs": [
               {
-                "title": "Imaging Files",
+                "title": "File Properties",
                 "fields": [
                   "project_id",
+                  "file_size",
                   "data_type",
                   "data_format",
-                  "data_category",
-                  "file_size"
+                  "data_category"
+                ]
+              },
+              {
+                "title": "DICOM Elements",
+                "fields": [
+                  "Manufacturer"
                 ]
               },
               {
@@ -431,13 +420,53 @@
               "md5sum",
               "data_type",
               "data_format",
-              "data_category"
+              "data_category",
+              "ImplementationClassUID",
+              "ImplementationVersionName",
+              "TransferSyntaxUID",
+              "ImageType",
+              "Modality",
+              "Manufacturer",
+              "ManufacturerModelName",
+              "StudyDescription",
+              "SeriesDescription",
+              "BodyPartExamined",
+              "ViewPosition",
+              "SliceThickness",
+              "ContrastBolusAgentNumber",
+              "SpacingBetweenSlices",
+              "LossyImageCompression",
+              "exam_id",
+              "exam_modality",
+              "days_to_exam",
+              "hours_to_exam",
+              "exam_description",
+              "FLO2_percentage",
+              "radiologist_notes",
+              "age_at_imaging",
+              "scan_year",
+              "series_type",
+              "series_description",
+              "series_name",
+              "series_id",
+              "subject_id",
+              "gender",
+              "race",
+              "age",
+              "zip"
             ]
           },
           "guppyConfig": {
             "dataType": "imaging_file",
             "fieldMapping": [
-              { "field": "object_id", "name": "GUID" }
+              {
+                "field": "object_id",
+                "name": "GUID"
+              },
+              {
+                "field": "LossyImageCompression",
+                "name": "Lossy Image Compression"
+              }
             ],
             "nodeCountTitle": "Imaging Files",
             "manifestMapping": {
@@ -476,13 +505,26 @@
           "filters": {
             "tabs": [
               {
-                "title": "Viral Genomics Files",
+                "title": "File Properties",
                 "fields": [
                   "project_id",
                   "data_type",
                   "data_format",
                   "data_category",
                   "file_size"
+                ]
+              },
+              {
+                "title": "Samples",
+                "fields": [
+                  "ncbi_bioproject",
+                  "ncbi_biosample",
+                  "host",
+                  "location",
+                  "organism",
+                  "isolation_source",
+                  "isolate",
+                  "collection_date"
                 ]
               }
             ]
@@ -498,13 +540,32 @@
               "md5sum",
               "data_type",
               "data_format",
-              "data_category"
+              "data_category",
+              "ncbi_bioproject",
+              "ncbi_biosample",
+              "host",
+              "location",
+              "organism",
+              "isolation_source",
+              "isolate",
+              "collection_date"
             ]
           },
           "guppyConfig": {
             "dataType": "virus_file",
             "fieldMapping": [
-              { "field": "object_id", "name": "GUID" }
+              {
+                "field": "object_id",
+                "name": "GUID"
+              },
+              {
+                "field": "ncbi_bioproject",
+                "name": "NCBI Bioproject"
+              },
+              {
+                "field": "ncbi_biosample",
+                "name": "NCBI Biosample"
+              }
             ],
             "nodeCountTitle": "Viral Genomic Files",
             "manifestMapping": {
