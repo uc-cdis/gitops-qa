@@ -257,9 +257,6 @@
   "peregrine": {
     "sidecar": "False"
   },
-  "tube": {
-    "es_index_name": "qa-dcp"
-  },
   "global": {
     "environment": "qaplanetv1",
     "hostname": "jenkins-dcp.planx-pla.net",

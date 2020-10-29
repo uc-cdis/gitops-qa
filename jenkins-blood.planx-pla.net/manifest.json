@@ -276,9 +276,6 @@
       "case"
     ]
   },
-  "tube": {
-    "es_index_name": "blood"
-  },
   "global": {
     "environment": "qaplanetv1",
     "hostname": "jenkins-blood.planx-pla.net",
