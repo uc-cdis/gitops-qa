@@ -277,9 +277,6 @@
   "peregrine": {
     "sidecar": "True"
   },
-  "tube": {
-    "es_index_name": "genomel_1"
-  },
   "global": {
     "environment": "qaplanetv1",
     "hostname": "jenkins-genomel.planx-pla.net",

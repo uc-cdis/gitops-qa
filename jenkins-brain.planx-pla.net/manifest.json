@@ -262,9 +262,6 @@
   "peregrine": {
     "sidecar": "True"
   },
-  "tube": {
-    "es_index_name": "etl"
-  },
   "jupyterhub": {
     "enabled": "yes",
     "containers": [

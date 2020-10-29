@@ -49,9 +49,6 @@
   "jupyterhub": {
     "enabled": "no"
   },
-  "tube": {
-    "es_index_name": "mickey"
-  },
   "global": {
     "environment": "qaplanetv1",
     "hostname": "qa-mickey.planx-pla.net",
