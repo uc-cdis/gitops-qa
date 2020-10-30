@@ -19,7 +19,7 @@
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "spark": "quay.io/cdis/gen3-spark:2020.08",
     "hatchery": "quay.io/cdis/hatchery:2020.08",
-    "mariner": "quay.io/cdis/mariner-server:1.0.3",
+    "mariner": "quay.io/cdis/mariner-server:feat_no-fuse",
     "wts": "quay.io/cdis/workspace-token-service:2020.08",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:1.0.3",
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
@@ -202,11 +202,12 @@
     "containers": {
       "engine": {
         "name": "mariner-engine",
-        "image": "quay.io/cdis/mariner-engine:1.0.3",
+        "image": "quay.io/cdis/mariner-engine:feat_no-fuse",
         "pull_policy": "always",
         "command": [
-          "/bin/sh",
-          "/engineDockerrun.sh"
+          "/mariner",
+          "run", 
+          "$(RUN_ID)"
         ],
         "resources": {
           "limits": {
@@ -217,19 +218,11 @@
       },
       "s3sidecar": {
         "name": "mariner-s3sidecar",
-        "image": "quay.io/cdis/mariner-s3sidecar:1.0.3",
+        "image": "quay.io/cdis/mariner-s3sidecar:feat_no-fuse",
         "pull_policy": "always",
         "command": [
-          "/bin/sh",
-          "/s3sidecarDockerrun.sh"
+          "/sidecar"
         ],
-        "lifecycle": {
-          "prestop": [
-            "/bin/sh",
-            "-c",
-            "fusermount -u -z /$ENGINE_WORKSPACE"
-          ]
-        },
         "resources": {
           "limits": {
             "memory": "256Mi",
