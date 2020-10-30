@@ -3,24 +3,66 @@
     "graphql": {
       "boardCounts": [
         {
-          "graphql": "_imaging_file_count",
-          "name": "Image",
-          "plural": "Images"
-        },
-        {
           "graphql": "_subject_count",
           "name": "Subject",
           "plural": "Subjects"
+        },
+        {
+          "graphql": "_imaging_exam_count",
+          "name": "Imaging Exam",
+          "plural": "Imaging Exams"
+        },
+        {
+          "graphql": "_imaging_series_count",
+          "name": "Imaging Series",
+          "plural": "Imaging Series"
+        },
+        {
+          "graphql": "_ct_image_count",
+          "name": "CT Image",
+          "plural": "CT Images"
+        },
+        {
+          "graphql": "_cr_image_count",
+          "name": "CR Image",
+          "plural": "CR Images"
+        },
+        {
+          "graphql": "_dx_image_count",
+          "name": "DX Image",
+          "plural": "DX Images"
         }
       ],
       "chartCounts": [
         {
           "graphql": "_subject_count",
-          "name": "Subject"
+          "name": "Subject",
+          "plural": "Subjects"
         },
         {
-          "graphql": "_study_count",
-          "name": "Study"
+          "graphql": "_imaging_exam_count",
+          "name": "Imaging Exam",
+          "plural": "Imaging Exams"
+        },
+        {
+          "graphql": "_imaging_series_count",
+          "name": "Imaging Series",
+          "plural": "Imaging Series"
+        },
+        {
+          "graphql": "_ct_image_count",
+          "name": "CT Image",
+          "plural": "CT Images"
+        },
+        {
+          "graphql": "_cr_image_count",
+          "name": "CR Image",
+          "plural": "CR Images"
+        },
+        {
+          "graphql": "_dx_image_count",
+          "name": "DX Image",
+          "plural": "DX Images"
         }
       ],
       "projectDetails": "boardCounts"
