@@ -112,6 +112,10 @@
         {
           "name": "firefox",
           "image": "quay.io/cdis/docker-firefox:master",
+          "volumeMounts": [{
+            "name": "dshm",
+            "mountPath": "/dev/shm"
+          }],
           "securityContext": {
             "privileged": true
           },
@@ -124,7 +128,7 @@
           "resources": {
             "limits": {
               "cpu": "1.0",
-              "memory": "5Gi"
+              "memory": "3Gi"
             }
           },
           "ports": [
@@ -143,7 +147,7 @@
       "image": "quay.io/cdis/jupyter-notebook:1.0.2",
       "env": {},
       "args": [
-        "--NotebookApp.base_url=/lw-workspace/proxy/",
+        "--NotebookApp.base_url=/",
         "--NotebookApp.password=''",
         "--NotebookApp.token=''"
       ],
@@ -164,19 +168,23 @@
         {
           "name": "firefox",
           "image": "quay.io/cdis/docker-firefox:master",
+          "volumeMounts": [{
+            "name": "dshm",
+            "mountPath": "/dev/shm"
+          }],
           "securityContext": {
             "privileged": true
           },
           "env": [
             {
               "name": "LANDING_URL",
-              "value": "http://localhost:8888/lw-workspace/proxy/"
+              "value": "http://localhost:8888/"
             }
           ],
           "resources": {
             "limits": {
               "cpu": "1.0",
-              "memory": "5Gi"
+              "memory": "3Gi"
             }
           },
           "ports": [
