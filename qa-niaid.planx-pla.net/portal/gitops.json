@@ -28,12 +28,13 @@
     },
     "navigation": {
       "title": "AccessClinicalData@NIAID",
-      "items": [{
-        "icon": "query",
-        "link": "/study-viewer/clinical_trials",
-        "color": "#a2a2a2",
-        "name": "Study Viewer"
-      },
+      "items": [
+        {
+          "icon": "query",
+          "link": "/study-viewer/clinical_trials",
+          "color": "#a2a2a2",
+          "name": "Study Viewer"
+        },
         {
           "icon": "workspace",
           "link": "#hostname#workspace/",
