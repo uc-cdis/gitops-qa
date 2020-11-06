@@ -211,8 +211,8 @@
         ],
         "resources": {
           "limits": {
-            "memory": "1Gi",
-            "cpu": "400m"
+            "memory": "8Gi",
+            "cpu": "800m"
           }
         }
       },
@@ -225,8 +225,8 @@
         ],
         "resources": {
           "limits": {
-            "memory": "256Mi",
-            "cpu": "100m"
+            "memory": "4Gi",
+            "cpu": "500m"
           }
         },
         "securitycontext": {
