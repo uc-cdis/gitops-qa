@@ -71,7 +71,6 @@
   "explorerConfig": [],
   "studyViewerConfig": [
     {
-      "openMode": "close-all",
       "dataType": "clinical_trials",
       "title": "Studies",
       "titleField": "title",
@@ -112,6 +111,8 @@
       ],
       "fileDataType": "ctfile",
       "docDataType": "oafile",
+      "openMode": "close-all",
+      "defaultOrderBy": ["title", "asc"],
       "buttons": [
         {
           "type": "download"
