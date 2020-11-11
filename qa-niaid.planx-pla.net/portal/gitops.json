@@ -133,7 +133,7 @@
   "useArboristUI": true,
   "showArboristAuthzOnProfile": true,
   "showFenceAuthzOnProfile": false,
-    "componentToResourceMapping": {
+  "componentToResourceMapping": {
     "Workspace": {
       "resource": "/workspace",
       "method": "access",
