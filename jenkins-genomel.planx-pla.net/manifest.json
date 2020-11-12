@@ -14,7 +14,7 @@
     "fence": "quay.io/cdis/fence:master",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "indexd": "quay.io/cdis/indexd:master",
-    "mariner": "quay.io/cdis/mariner:master",
+    "mariner": "quay.io/cdis/mariner-server:master",
     "ws-storage": "quay.io/cdis/ws-storage:master",
     "peregrine": "quay.io/cdis/peregrine:master",
     "pidgin": "quay.io/cdis/pidgin:master",
