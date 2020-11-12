@@ -41,7 +41,7 @@ mappings:
       - name: data_type
       - name: state
   - name: qa-ibd_supplementary_file
-    doc_type: file
+    doc_type: supplementary_file
     type: collector
     root: None
     category: supplementary_data_file
@@ -54,3 +54,4 @@ mappings:
       - name: file_size
       - name: data_format
       - name: data_type
+      - name: data_category
