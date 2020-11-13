@@ -368,7 +368,7 @@
           {
             "title": "Files",
             "fields": [
-              
+              "data_category",
               "data_type",
               "data_format"
             ]
@@ -379,6 +379,7 @@
         "enabled": true,
         "fields": [
           "project_id",
+          "data_category",
           "data_type",
           "data_format",
           "file_name",
@@ -407,7 +408,9 @@
         "dataType": "supplementary_file",
         "fieldMapping": [
           { "field": "object_id", "name": "GUID" },
-          { "field": "project_id", "name": "Project ID" }
+          { "field": "project_id", "name": "Project ID" },
+          { "field": "pmid", "name": "PMID"},
+          { "field": "doi", "name": "DOI"}
         ],
         "nodeCountTitle": "Files",
         "manifestMapping": {
