@@ -127,7 +127,7 @@
       },
       {
         "index": "qa-ibd_supplementary_file",
-        "type": "file"
+        "type": "supplementary_file"
       }
     ],
     "config_index": "qa-ibd_array-config",
