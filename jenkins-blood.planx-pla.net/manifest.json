@@ -13,13 +13,14 @@
     "awshelper": "quay.io/cdis/awshelper:master",
     "fence": "quay.io/cdis/fence:master",
     "indexd": "quay.io/cdis/indexd:master",
+    "mariner": "quay.io/cdis/mariner-server:master",
+    "ws-storage": "quay.io/cdis/ws-storage:master",
     "peregrine": "quay.io/cdis/peregrine:master",
     "pidgin": "quay.io/cdis/pidgin:master",
     "revproxy": "quay.io/cdis/nginx:1.17.6-ctds-1.0.1",
     "sheepdog": "quay.io/cdis/sheepdog:master",
     "portal": "quay.io/cdis/data-portal:master",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
-    "jupyterhub": "quay.io/occ_data/jupyterhub:master",
     "spark": "quay.io/cdis/gen3-spark:master",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:master",
     "tube": "quay.io/cdis/tube:master",
@@ -31,17 +32,6 @@
     "metadata": "quay.io/cdis/metadata-service:master",
     "dashboard": "quay.io/cdis/gen3-statics:master",
     "requestor": "quay.io/cdis/requestor:master"
-  },
-  "jupyterhub": {
-    "enabled": "yes",
-    "containers": [
-      {
-        "name": "Bioinfo - Python/R",
-        "cpu": 0.5,
-        "memory": "256M",
-        "image": "quay.io/occ_data/jupyternotebook:feat_workspace-tools"
-      }
-    ]
   },
   "sower": [
     {
@@ -275,9 +265,6 @@
     "auth_filter_node_types": [
       "case"
     ]
-  },
-  "tube": {
-    "es_index_name": "blood"
   },
   "global": {
     "environment": "qaplanetv1",

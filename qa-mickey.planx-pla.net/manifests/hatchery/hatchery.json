@@ -4,8 +4,8 @@
   "user-volume-size": "10Gi",
   "sidecar": {
     "cpu-limit": "1.0",
-    "memory-limit": "256Mi",
-    "image": "quay.io/cdis/gen3fuse-sidecar:2020.03",
+    "memory-limit": "1Gi",
+    "image": "quay.io/cdis/gen3fuse-sidecar:2020.08",
     "env": {
       "NAMESPACE": "qa-mickey",
       "HOSTNAME": "qa-mickey.planx-pla.net"
@@ -93,6 +93,107 @@
       "user-uid": 1000,
       "fs-gid": 100,
       "user-volume-location": "/home/jovyan/pd"
+    },
+    {
+      "target-port": 5800,
+      "cpu-limit": "1.0",
+      "memory-limit": "1024Mi",
+      "name": "R Studio thru VNC",
+      "image": "heliumdatastage/rstudio-server:1",
+      "env": {
+        "DISABLE_AUTH": "true"
+      },
+      "args": [],
+      "path-rewrite": "/",
+      "use-tls": "false",
+      "ready-probe": "/",
+      "use-shared-memory": "true",
+      "friends": [
+        {
+          "name": "firefox",
+          "image": "quay.io/cdis/docker-firefox:master",
+          "volumeMounts": [{
+            "name": "dshm",
+            "mountPath": "/dev/shm"
+          }],
+          "securityContext": {
+            "privileged": true
+          },
+          "env": [
+            {
+              "name": "LANDING_URL",
+              "value": "http://localhost:8787/"
+            }
+          ],
+          "resources": {
+            "limits": {
+              "cpu": "1.0",
+              "memory": "3Gi"
+            }
+          },
+          "ports": [
+            {
+              "containerPort": 5800
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "target-port": 5800,
+      "cpu-limit": "1.0",
+      "memory-limit": "512Mi",
+      "name": "Jupyter Notebook Bio Python thru VNC",
+      "image": "quay.io/cdis/jupyter-notebook:1.0.2",
+      "env": {},
+      "args": [
+        "--NotebookApp.base_url=/",
+        "--NotebookApp.password=''",
+        "--NotebookApp.token=''"
+      ],
+      "command": [
+        "start-notebook.sh"
+      ],
+      "path-rewrite": "/",
+      "use-tls": "false",
+      "ready-probe": "/",
+      "lifecycle-post-start": [
+        "/bin/sh",
+        "-c",
+        "export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; ln -s $(pwd) /home/$IAM/pd/dockerHome; mkdir -p /home/$IAM/.jupyter/custom; echo \"define(['base/js/namespace'], function(Jupyter){Jupyter._target = '_self';})\" >/home/$IAM/.jupyter/custom/custom.js; ln -s /data /home/$IAM/pd/; true"
+      ],
+      "user-volume-location": "/home/jovyan/pd",
+      "use-shared-memory": "true",
+      "friends": [
+        {
+          "name": "firefox",
+          "image": "quay.io/cdis/docker-firefox:master",
+          "volumeMounts": [{
+            "name": "dshm",
+            "mountPath": "/dev/shm"
+          }],
+          "securityContext": {
+            "privileged": true
+          },
+          "env": [
+            {
+              "name": "LANDING_URL",
+              "value": "http://localhost:8888/"
+            }
+          ],
+          "resources": {
+            "limits": {
+              "cpu": "1.0",
+              "memory": "3Gi"
+            }
+          },
+          "ports": [
+            {
+              "containerPort": 5800
+            }
+          ]
+        }
+      ]
     }
   ]
 }
