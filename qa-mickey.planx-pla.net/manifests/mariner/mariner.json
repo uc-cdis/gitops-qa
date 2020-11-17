@@ -1,7 +1,7 @@
 {
   "storage": {
     "s3": {
-      "name": "workspace-storage-test",
+      "name": "qaplanetv1--qa-mickey--mariner-707767160287",
       "region": "us-east-1"
     }
   },
