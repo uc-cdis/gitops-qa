@@ -196,6 +196,7 @@ mappings:
     props:
       - name: submitter_id
       - name: object_id
+      - name: project_id
       - name: md5sum
       - name: file_name
       - name: file_size
@@ -223,9 +224,6 @@ mappings:
         props:
           - name: _subject_id
             src: id
-            fn: set
-          - name: project_id
-            src: project_id
             fn: set
           - name: gender
             src: gender
