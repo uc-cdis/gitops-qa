@@ -148,7 +148,7 @@
     {
       "title": "OHDSI Atlas",
       "description": "An Atlas App",
-      "applicationUrl": "https://qa-mickey.planx-pla.net/ohdsi-broadsea-webtools/atlas",
+      "applicationUrl": "https://qa-mickey.planx-pla.net/ohdsi-broadsea-webtools/atlas/",
       "image": "/custom/sponsors/gitops-sponsors/atlas-logo.png"
     }
   ],
