@@ -25,7 +25,8 @@
     "spark": "quay.io/cdis/gen3-spark:integration202012",
     "tube": "quay.io/cdis/tube:integration202012",
     "guppy": "quay.io/cdis/guppy:integration202012",
-    "wts": "quay.io/cdis/workspace-token-service:integration202012"
+    "wts": "quay.io/cdis/workspace-token-service:integration202012",
+    "metadata": "quay.io/cdis/metadata-service:integration202012"
   },
   "arborist": {
     "deployment_version": "2"
