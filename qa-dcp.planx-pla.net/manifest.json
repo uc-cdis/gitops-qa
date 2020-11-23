@@ -7,27 +7,27 @@
     "autodeploy": "yes"
   },
   "versions": {
-    "arborist": "quay.io/cdis/arborist:2020.11",
+    "arborist": "quay.io/cdis/arborist:integration202012",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
-    "fence": "quay.io/cdis/fence:2020.11",
-    "indexd": "quay.io/cdis/indexd:2020.11",
-    "peregrine": "quay.io/cdis/peregrine:2020.11",
-    "pidgin": "quay.io/cdis/pidgin:2020.11",
-    "revproxy": "quay.io/cdis/nginx:2020.11",
-    "sheepdog": "quay.io/cdis/sheepdog:2020.11",
-    "portal": "quay.io/cdis/data-portal:2020.11",
+    "fence": "quay.io/cdis/fence:integration202012",
+    "indexd": "quay.io/cdis/indexd:integration202012",
+    "peregrine": "quay.io/cdis/peregrine:integration202012",
+    "pidgin": "quay.io/cdis/pidgin:integration202012",
+    "revproxy": "quay.io/cdis/nginx:integration202012",
+    "sheepdog": "quay.io/cdis/sheepdog:integration202012",
+    "portal": "quay.io/cdis/data-portal:integration202012",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
-    "spark": "quay.io/cdis/gen3-spark:2020.11",
-    "tube": "quay.io/cdis/tube:2020.11",
-    "guppy": "quay.io/cdis/guppy:2020.11",
-    "sower": "quay.io/cdis/sower:2020.11",
-    "hatchery": "quay.io/cdis/hatchery:2020.11",
+    "spark": "quay.io/cdis/gen3-spark:integration202012",
+    "tube": "quay.io/cdis/tube:integration202012",
+    "guppy": "quay.io/cdis/guppy:integration202012",
+    "sower": "quay.io/cdis/sower:integration202012",
+    "hatchery": "quay.io/cdis/hatchery:integration202012",
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
-    "wts": "quay.io/cdis/workspace-token-service:2020.11",
-    "manifestservice": "quay.io/cdis/manifestservice:2020.11",
-    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:2020.11",
-    "metadata": "quay.io/cdis/metadata-service:2020.11",
-    "dashboard": "quay.io/cdis/gen3-statics:2020.11"
+    "wts": "quay.io/cdis/workspace-token-service:integration202012",
+    "manifestservice": "quay.io/cdis/manifestservice:integration202012",
+    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:integration202012",
+    "metadata": "quay.io/cdis/metadata-service:integration202012",
+    "dashboard": "quay.io/cdis/gen3-statics:integration202012"
   },
   "google": {
     "enabled": "yes"
@@ -43,7 +43,7 @@
       "serviceAccountName": "jobs-qa-dcp-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/metadata-manifest-ingestion:2020.11",
+        "image": "quay.io/cdis/metadata-manifest-ingestion:integration202012",
         "pull_policy": "Always",
         "env": [
           {
@@ -83,7 +83,7 @@
       "serviceAccountName": "jobs-qa-dcp-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/get-dbgap-metadata:2020.11",
+        "image": "quay.io/cdis/get-dbgap-metadata:integration202012",
         "pull_policy": "Always",
         "env": [],
         "volumeMounts": [
@@ -113,7 +113,7 @@
       "serviceAccountName": "jobs-qa-dcp-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/manifest-indexing:2020.11",
+        "image": "quay.io/cdis/manifest-indexing:integration202012",
         "pull_policy": "Always",
         "env": [
           {
@@ -153,7 +153,7 @@
       "serviceAccountName": "jobs-qa-dcp-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/download-indexd-manifest:2020.11",
+        "image": "quay.io/cdis/download-indexd-manifest:integration202012",
         "pull_policy": "Always",
         "env": [
           {
@@ -192,7 +192,7 @@
       "action": "export",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/pelican-export:2020.11",
+        "image": "quay.io/cdis/pelican-export:integration202012",
         "pull_policy": "Always",
         "env": [
           {
@@ -256,7 +256,7 @@
       "action": "export-files",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/pelican-export:2020.11",
+        "image": "quay.io/cdis/pelican-export:integration202012",
         "pull_policy": "Always",
         "env": [
           {
@@ -322,7 +322,7 @@
   ],
   "ssjdispatcher": {
     "job_images": {
-      "indexing": "quay.io/cdis/indexs3client:2020.11"
+      "indexing": "quay.io/cdis/indexs3client:integration202012"
     }
   },
   "global": {
