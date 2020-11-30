@@ -49,7 +49,7 @@
       "memory-limit": "256Mi",
       "image": "quay.io/cdis/gen3fuse-sidecar:integration202012",
       "env": {
-        "NAMESPACE": "default",
+        "NAMESPACE": "qa-ibd",
         "HOSTNAME": "qa-ibd.planx-pla.net"
       },
       "args": [],
