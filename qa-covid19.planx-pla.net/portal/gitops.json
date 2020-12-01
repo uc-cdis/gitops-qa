@@ -978,8 +978,8 @@
         "imageUrl": "/dashboard/Public/notebooks/SSR_notebook.png"
       },
       {
-        "title": "Covid-19 X-ray images classification",
-        "description": "This notebook is a replication of the DarkCovidNet model to classify COVID-19 x-ray images from \"No finding\" images to assist COVID-19 diagnosis and an extension of the notebook published along with the paper. We use data available in the Chicagoland Pandemic Response Commons (CRPC) for this notebook. We applied the DarkCovidNet model to classify x-ray images for No finding and COVID-19 cases. After training the model over 100 epochs, the losses for the training dataset and validation dataset is stable and the accuracy is 97.4%. The confusion matrix showed that the model could distinguish the Covid-19 cases from No findings well. Of the 69 COVID-19 cases in the validation dataset, 66 were predicted as COVID-19 cases. For the 87 “No finding” cases, only one case was incorrectly predicted as a COVID-19 case. The precision for predicting COVID-19 from No finding is high (99%) with a recall rate of 96%. This notebook demonstrates the potential predictive power of deep neural networks for diagnosis of COVID-19.",
+        "title": "COVID-19 X-ray images classification",
+        "description": "This notebook is a replication of the DarkCovidNet model to classify COVID-19 x-ray images from \"No finding\" images to assist COVID-19 diagnosis and an extension of the notebook published along with the paper.",
         "link": "/dashboard/Public/notebooks/DarkCovidNet_binary_classes.html",
         "imageUrl": "/dashboard/Public/notebooks/DarkCovidNet_binary_classes.png"
       }
