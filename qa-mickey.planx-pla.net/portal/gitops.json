@@ -39,7 +39,8 @@
     "index": {
       "introduction": {
         "heading": "VA Data Commons",
-        "text": "The VA Data Commons supports the management, and analysis of veteran oncologic data for the research community. The data commons aims to accelerate discovery and development of therapies, diagnostic tests, and other technologies for precision oncology. The data commons supports cross-project analyses by harmonizing data from different projects through the collaborative development of a data dictionary, providing an API for data queries, and providing a cloud-based analysis workspace with rich tools and resources.",
+        "text": "The VA Data Commons supports the management, and analysis of veteran oncologic data for the research community. The data commons aims to accelerate discovery and development of therapies, diagnostic tests, and other technologies for precision oncology. The data commons supports cross-project analyses by harmonizing data from different projects through the collaborative development of a data dictionary, providing an API for data queries, and providing a cloud-based analysis 
+        with rich tools and resources.",
         "link": "/submission"
       },
       "buttons": [
@@ -68,7 +69,7 @@
           "name": "Analyze Data",
           "icon": "data-analyze",
           "body": "Analyze your selected cases using Jupyter Notebooks in our secure cloud environment",
-          "link": "#hostname#workspace/",
+          "link": "/workspace",
           "label": "Run analysis"
         }
       ]
