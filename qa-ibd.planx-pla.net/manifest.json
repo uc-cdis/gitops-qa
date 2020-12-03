@@ -21,7 +21,9 @@
     "wts": "quay.io/cdis/workspace-token-service:integration202012",
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
     "manifestservice": "quay.io/cdis/manifestservice:integration202012",
-    "guppy": "quay.io/cdis/guppy:integration202012"
+    "guppy": "quay.io/cdis/guppy:integration202012",
+    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:integration202012",
+    "metadata": "quay.io/cdis/metadata-service:integration202012"
   },
   "indexd": {
     "arborist": "true"
