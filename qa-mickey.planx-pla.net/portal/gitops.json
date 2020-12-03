@@ -35,18 +35,19 @@
     "projectDetails": "boardCounts"
   },
   "components": {
-    "appName": "The Veterans Precision Oncology Data Commons",
+    "appName": "VA Data Commons",
     "index": {
       "introduction": {
-        "heading": "Veterans Precision Oncology Data Commons",
-        "text": "The VPO Data Commons supports the management, and analysis of veteran oncologic data for the research community. The data commons aims to accelerate discovery and development of therapies, diagnostic tests, and other technologies for precision oncology. The data commons supports cross-project analyses by harmonizing data from different projects through the collaborative development of a data dictionary, providing an API for data queries, and providing a cloud-based analysis workspace with rich tools and resources.",
+        "heading": "VA Data Commons",
+        "text": "The VA Data Commons supports the management, and analysis of veteran oncologic data for the research community. The data commons aims to accelerate discovery and development of therapies, diagnostic tests, and other technologies for precision oncology. The data commons supports cross-project analyses by harmonizing data from different projects through the collaborative development of a data dictionary, providing an API for data queries, and providing a cloud-based analysis 
+        with rich tools and resources.",
         "link": "/submission"
       },
       "buttons": [
         {
           "name": "Define Data Field",
           "icon": "data-field-define",
-          "body": "The VPO Data Commons defines the data in a general way. Please study the dictionary before you start browsing.",
+          "body": "VA Data Commons defines the data in a general way. Please study the dictionary before you start browsing.",
           "link": "/DD",
           "label": "Learn more"
         },
@@ -68,7 +69,7 @@
           "name": "Analyze Data",
           "icon": "data-analyze",
           "body": "Analyze your selected cases using Jupyter Notebooks in our secure cloud environment",
-          "link": "#hostname#workspace/",
+          "link": "/workspace",
           "label": "Run analysis"
         }
       ]
@@ -115,9 +116,9 @@
       ]
     },
     "login": {
-      "title": "Veterans Precision Oncology Data Commons",
+      "title": "VA Data Commons",
       "subTitle": "Explore, Analyze, and Share Data",
-      "text": "The Veterans Data Commons supports the management, analysis and sharing of veteran oncologic data for the research community and aims to accelerate discovery and development of therapies, diagnostic tests, and other technologies for precision oncology.",
+      "text": "VA Data Commons supports the management, analysis and sharing of veteran oncologic data for the research community and aims to accelerate discovery and development of therapies, diagnostic tests, and other technologies for precision oncology.",
       "contact": "If you have any questions about access or the registration process, please contact ",
       "email": "support@datacommons.io"
     },
