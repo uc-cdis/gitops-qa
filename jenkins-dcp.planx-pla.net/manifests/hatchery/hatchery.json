@@ -45,7 +45,9 @@
       "memory-limit": "512Mi",
       "name": "Jupyter Notebook Bio Python",
       "image": "quay.io/occ_data/jupyternotebook:1.7.2",
-      "env": {},
+      "env": {
+        "NAMESPACE": "jenkins-dcp"
+      },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",
