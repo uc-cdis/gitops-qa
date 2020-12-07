@@ -24,7 +24,7 @@
     "ws-storage": "quay.io/cdis/ws-storage:master",
     "peregrine": "quay.io/cdis/peregrine:2020.08",
     "pidgin": "quay.io/cdis/pidgin:2020.08",
-    "portal": "quay.io/cdis/data-portal:feat_gwas-mockup",
+    "portal": "quay.io/cdis/data-portal:feat_va-gwas-app",
     "revproxy": "quay.io/cdis/nginx:2020.08",
     "sheepdog": "quay.io/cdis/sheepdog:2020.08",
     "sower": "quay.io/cdis/sower:2020.08",

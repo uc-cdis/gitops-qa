@@ -99,6 +99,11 @@
       "type": "dockstore-compose:1.0.0",
       "path": "/hatchery-more-configs/gen3-igv.yaml",
       "name": "Gen3 IGV"
+    },
+    {
+      "type": "dockstore-compose:1.0.0",
+      "path": "/hatchery-more-configs/jupyter-covid19.yaml",
+      "name": "BETA - A collection of Jupyter notebooks to explore health outcomes for COVID-19"
     }
   ]
 }
