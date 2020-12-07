@@ -89,7 +89,9 @@
         "memory-limit": "1024Mi",
         "name": "Jupyter - Python/R",
         "image": "quay.io/occ_data/jupyternotebook:1.7.2",
-        "env": {},
+        "env": {
+          "NAMESPACE": "qa-ibd"
+        },
         "args": [
           "--NotebookApp.base_url=/lw-workspace/proxy/",
           "--NotebookApp.password=''",
