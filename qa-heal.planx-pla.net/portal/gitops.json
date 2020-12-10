@@ -137,7 +137,7 @@
       ],
       "fileDataType": "ctfile",
       "docDataType": "oafile",
-      "openMode": "close-all",
+      "openMode": "open-first",
       "defaultOrderBy": ["title", "asc"],
       "buttons": [
         {
