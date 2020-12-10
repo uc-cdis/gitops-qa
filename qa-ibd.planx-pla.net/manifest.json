@@ -28,6 +28,11 @@
   "indexd": {
     "arborist": "true"
   },
+  "ssjdispatcher": {
+    "job_images": {
+      "indexing": "quay.io/cdis/indexs3client:integration202012"
+    }
+  },
   "global": {
     "environment": "qaplanetv2",
     "hostname": "qa-ibd.planx-pla.net",
