@@ -48,28 +48,29 @@
       "title": "Generic Data Commons",
       "items": [
         {
+          "icon": "query",
+          "link": "/study-viewer/clinical_trials",
+          "name": "Study Viewer"
+        },
+        {
           "icon": "dictionary",
           "link": "/DD",
-          "name": "Dictionary",
-          "tooltip": ""
+          "name": "Dictionary"
         },
         {
           "icon": "query",
           "link": "/query",
-          "name": "Query",
-          "tooltip": ""
+          "name": "Query"
         },
         {
           "icon": "workspace",
           "link": "/workspace",
-          "name": "Workspace",
-          "tooltip": ""
+          "name": "Workspace"
         },
         {
           "icon": "profile",
           "link": "/identity",
-          "name": "Profile",
-          "tooltip": ""
+          "name": "Profile"
         }
       ]
     },
@@ -111,8 +112,42 @@
     "explorer": false,
     "analysis": false
   },
+  "studyViewerConfig": [
+    {
+      "dataType": "clinical_trials",
+      "title": "Studies",
+      "titleField": "title",
+      "rowAccessor": "cmc_unique_id",
+      "listItemConfig": {
+        "blockFields": ["brief_summary"],
+        "tableFields": ["data_availability_date", "data_available", "creator", "nct_number", "condition", "category", "clinical_trial_website", "publications"]
+      },
+      "singleItemConfig": {
+        "blockFields": ["description"],
+        "tableFields": ["data_availability_date", "data_available",  "creator", "nct_number", "condition", "category", "study_design_primary_purpose","study_design_allocation", "study_start_date", "study_completion_date",  "clinical_trial_website", "publications"]
+      },
+      "fieldMapping": [
+        { "field": "brief_summary", "name": "Brief Study Description" },
+        { "field": "description", "name": "Detailed Description"},
+        { "field": "creator", "name": "Sponsor"},
+        { "field": "category", "name": "Study Type"},
+        { "field": "clinical_trial_website", "name": "Websites"},
+        { "field": "nct_number", "name": "NCT Number"},
+        { "field": "publications", "name": "Study Publications"}
+      ],
+      "fileDataType": "ctfile",
+      "docDataType": "oafile",
+      "openMode": "close-all",
+      "defaultOrderBy": ["title", "asc"],
+      "buttons": [
+        {
+          "type": "download"
+        }
+      ]
+    }
+  ],
   "useArboristUI": false,
-  "showArboristAuthzOnProfile": false,
-  "showFenceAuthzOnProfile": true,
+  "showArboristAuthzOnProfile": true,
+  "showFenceAuthzOnProfile": false,
   "componentToResourceMapping": {}
 }
