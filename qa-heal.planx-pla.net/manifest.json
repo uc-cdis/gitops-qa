@@ -11,7 +11,7 @@
     "indexd": "quay.io/cdis/indexd:2020.11",
     "peregrine": "quay.io/cdis/peregrine:2020.11",
     "pidgin": "quay.io/cdis/pidgin:2020.11",
-    "portal": "quay.io/cdis/data-portal:2020.11",
+    "portal": "quay.io/cdis/data-portal:2.39.5",
     "revproxy": "quay.io/cdis/nginx:2020.11",
     "sheepdog": "quay.io/cdis/sheepdog:2020.11",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:2020.11",
@@ -19,10 +19,14 @@
     "spark": "quay.io/cdis/gen3-spark:2020.11",
     "manifestservice": "quay.io/cdis/manifestservice:2020.11",
     "wts": "quay.io/cdis/workspace-token-service:2020.11",
-    "tube": "quay.io/cdis/tube:2020.11"
+    "tube": "quay.io/cdis/tube:2020.11",
+    "guppy": "quay.io/cdis/guppy:2020.11"
   },
   "arborist": {
     "deployment_version": "2"
+  },
+  "indexd": {
+    "arborist": "true"
   },
   "ssjdispatcher": {
     "job_images": {
@@ -40,9 +44,27 @@
     "sync_from_dbgap": "False",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
     "dispatcher_job_num": "10",
+    "tier_access_level": "libre",
     "netpolicy": "on"
   },
   "canary": {
     "default": 0
+  },
+  "guppy": {
+    "indices": [{
+        "index": "qa-heal_cmc",
+        "type": "clinical_trials"
+      },
+      {
+        "index": "qa-heal_ct-file",
+        "type": "ctfile"
+      },
+      {
+        "index": "qa-heal_oa-file",
+        "type": "oafile"
+      }
+    ],
+    "config_index": "qa-heal_array-config",
+    "auth_filter_field": "auth_resource_path"
   }
 }
