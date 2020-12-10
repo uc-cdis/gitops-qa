@@ -7,7 +7,7 @@
     "memory-limit": "256Mi",
     "image": "quay.io/cdis/gen3fuse-sidecar:2020.08",
     "env": {
-      "NAMESPACE": "default",
+      "NAMESPACE": "qa-nde",
       "HOSTNAME": "qa-nde.planx-pla.net"
     },
     "args": [],
@@ -32,6 +32,7 @@
       "name": "Jupyter Notebook Bio Python",
       "image": "quay.io/occ_data/jupyternotebook:fix_niaid-test",
       "env": {
+        "NAMESPACE": "qa-nde",
         "FRAME_ANCESTORS": "https://qa-tb.planx-pla.net https://qa-microbiome.planx-pla.net https://qa-aids.planx-pla.net https://qa-flu.planx-pla.net"
       },
       "args": [
@@ -64,6 +65,7 @@
       "name": "Jupyter Notebook- TB Ariba and Mykrobe (Lab Edition)",
       "image": "quay.io/cdis/jupyter-tb:chore_nde_base",
       "env": {
+        "NAMESPACE": "qa-nde",
         "FRAME_ANCESTORS": "https://qa-tb.planx-pla.net https://qa-microbiome.planx-pla.net https://qa-aids.planx-pla.net https://qa-flu.planx-pla.net"
       },
       "args": [
@@ -96,6 +98,7 @@
       "name": "Jupyter Notebook- DAIDS (Lab Edition)",
       "image": "quay.io/cdis/jupyter-daids:chore_nde_base",
       "env": {
+        "NAMESPACE": "qa-nde",
         "FRAME_ANCESTORS": "https://qa-tb.planx-pla.net https://qa-microbiome.planx-pla.net https://qa-aids.planx-pla.net https://qa-flu.planx-pla.net"
       },
       "args": [
@@ -128,6 +131,7 @@
       "name": "Jupyter Notebook- DAIT (Lab Edition)",
       "image": "quay.io/cdis/jupyter-dait:chore_nde_base",
       "env": {
+        "NAMESPACE": "qa-nde",
         "FRAME_ANCESTORS": "https://qa-tb.planx-pla.net https://qa-microbiome.planx-pla.net https://qa-aids.planx-pla.net https://qa-flu.planx-pla.net"
       },
       "args": [
@@ -160,6 +164,7 @@
       "name": "Jupyter Notebook- DMID (Lab Edition)",
       "image": "quay.io/cdis/jupyter-dmid:chore_nde_base",
       "env": {
+        "NAMESPACE": "qa-nde",
         "FRAME_ANCESTORS": "https://qa-tb.planx-pla.net https://qa-microbiome.planx-pla.net https://qa-aids.planx-pla.net https://qa-flu.planx-pla.net"
       },
       "args": [

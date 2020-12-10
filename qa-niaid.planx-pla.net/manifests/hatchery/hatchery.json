@@ -7,7 +7,7 @@
     "memory-limit": "256Mi",
     "image": "quay.io/cdis/gen3fuse-sidecar:2020.11",
     "env": {
-      "NAMESPACE": "default",
+      "NAMESPACE": "qa-niaid",
       "HOSTNAME": "qa-niaid.planx-pla.net"
     },
     "args": [],
@@ -47,7 +47,9 @@
         "memory-limit": "1024Mi",
         "name": "Jupyter - Python/R",
         "image": "quay.io/occ_data/jupyternotebook:1.7.2",
-        "env": {},
+        "env": {
+          "NAMESPACE": "qa-niaid"
+        },
         "args": [
           "--NotebookApp.base_url=/lw-workspace/proxy/",
           "--NotebookApp.password=''",

@@ -5,7 +5,7 @@
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "quay.io/cdis/gen3fuse-sidecar:integration202011",
+    "image": "quay.io/cdis/gen3fuse-sidecar:integration202012",
     "env": {
       "NAMESPACE": "qa-brain",
       "HOSTNAME": "qa-brain.planx-pla.net"
@@ -47,7 +47,9 @@
       "memory-limit": "1.5Gi",
       "name": "Brain - Python/R/Freesurfer",
       "image": "quay.io/cdis/jupyterbrain:1.1",
-      "env": {},
+      "env": {
+        "NAMESPACE": "qa-brain"
+      },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",
@@ -76,7 +78,9 @@
       "memory-limit": "256Mi",
       "name": "Bioinfo - Python/R",
       "image": "quay.io/occ_data/jupyternotebook:1.7.2",
-      "env": {},
+      "env": {
+        "NAMESPACE": "qa-brain"
+      },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",
@@ -105,7 +109,9 @@
       "memory-limit": "1024Mi",
       "name": "Bioinfo - Python/R",
       "image": "quay.io/occ_data/jupyternotebook:1.7.2",
-      "env": {},
+      "env": {
+        "NAMESPACE": "qa-brain"
+      },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",

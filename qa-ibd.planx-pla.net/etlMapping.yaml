@@ -50,6 +50,8 @@ mappings:
       - name: doi
       - name: first_author
       - name: year
+      - name: object_id
+      - name: md5sum
       - name: file_name
       - name: file_size
       - name: data_format
