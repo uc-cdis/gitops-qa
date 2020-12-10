@@ -1,17 +1,18 @@
 mappings:
-  - name: midrc_study
-    doc_type: study
+  - name: midrc_dataset
+    doc_type: dataset
     type: aggregator
-    root: study
+    root: dataset
     props:
       - name: project_id
       - name: submitter_id
-      - name: study_setup
-      - name: study_objective
-      - name: study_design
-      - name: study_description
+      - name: data_contributor
       - name: data_description
-      - name: associated_study
+      - name: data_url
+      - name: research_description
+      - name: research_design
+      - name: research_objective
+      - name: research_setup
     aggregated_props:
       - name: _subjects_count
         path: subjects
@@ -22,18 +23,40 @@ mappings:
       - name: _virus_genomes_count
         path: virus_genomes
         fn: count
-      - name: _imaging_exams_count
-        path: subjects.imaging_exams
+      - name: _imaging_studies_count
+        path: subjects.imaging_studies
         fn: count
       - name: _imaging_series_count
-        path: subjects.imaging_exams.imaging_series
+        path: subjects.imaging_studies.imaging_series
         fn: count
       - name: _ct_images_count
-        path: subjects.imaging_exams.ct_images
+        path: subjects.imaging_studies.ct_images
         fn: count
-      - name: _structured_reports_count
-        path: subjects.imaging_exams.structured_reports
+      - name: _cr_images_count
+        path: subjects.imaging_studies.cr_images
         fn: count
+      - name: _dx_images_count
+        path: subjects.imaging_studies.dx_images
+        fn: count
+    joining_props:
+      - index: imaging_data_file
+        join_on: _dataset_id
+        props:
+          - name: object_id
+            src: object_id
+            fn: set
+          - name: file_name
+            src: file_name
+            fn: set
+          - name: data_format
+            src: data_format
+            fn: set
+          - name: data_type
+            src: data_type
+            fn: set
+          - name: data_category
+            src: data_category
+            fn: set
     parent_props:
       - path: projects[project_code:code,project_name:name,project_investigator_affiliation:investigator_affiliation]
   - name: midrc_subject
@@ -47,6 +70,7 @@ mappings:
       - name: race
       - name: age
       - name: zip
+      - name: covid_status
     flatten_props:
       - path: conditions
         props:
@@ -74,7 +98,6 @@ mappings:
           - name: measles
           - name: mortality
           - name: number_icu_admits
-          - name: primary_diagnosis
           - name: rheumatoid_arthritis
           - name: systemic_lupus_erythmatosus
           - name: transplant
@@ -84,22 +107,31 @@ mappings:
       - name: _samples_count
         path: samples
         fn: count
-      - name: _imaging_exams_count
-        path: imaging_exams
+      - name: _imaging_studies_count
+        path: imaging_studies
         fn: count
       - name: _imaging_series_count
-        path: imaging_exams.imaging_series
+        path: imaging_studies.imaging_series
         fn: count
       - name: _ct_images_count
-        path: imaging_exams.ct_images
+        path: imaging_studies.ct_images
         fn: count
-      - name: _structured_reports_count
-        path: structured_reports
+      - name: _cr_images_count
+        path: imaging_studies.ct_images
+        fn: count
+      - name: _dx_images_count
+        path: imaging_studies.ct_images
         fn: count
     joining_props:
       - index: imaging_data_file
         join_on: _subject_id
         props:
+          - name: object_id
+            src: object_id
+            fn: set
+          - name: file_name
+            src: file_name
+            fn: set
           - name: data_format
             src: data_format
             fn: set
@@ -150,44 +182,6 @@ mappings:
           - name: collection_date
             src: collection_date
             fn: set
-  - name: midrc_condition
-    doc_type: condition
-    type: aggregator
-    root: condition
-    props:
-      - name: project_id
-      - name: submitter_id
-      - name: asplenia
-      - name: cancer
-      - name: chicken_pox
-      - name: chronic_kidney_disease
-      - name: covid_test_positive
-      - name: covid_test_name
-      - name: current_pregnant
-      - name: cytomegalovirus
-      - name: diabetes_type_1
-      - name: diabetes_type_2
-      - name: extensive_burns
-      - name: hemodialysis_post_diagnosis
-      - name: hemodialysis_pre_diagnosis
-      - name: herpes_zoster
-      - name: hyposplenia
-      - name: icu_admit
-      - name: latest_bmi
-      - name: latest_height_inches
-      - name: latest_height_string
-      - name: latest_weight
-      - name: malnutrition
-      - name: measles
-      - name: mortality
-      - name: number_icu_admits
-      - name: primary_diagnosis
-      - name: rheumatoid_arthritis
-      - name: systemic_lupus_erythmatosus
-      - name: transplant
-      - name: tuberculosis
-    parent_props:
-      - path: subjects[_subject_id:id]
   - name: midrc_imaging_data_file
     doc_type: imaging_data_file
     type: collector
@@ -196,7 +190,6 @@ mappings:
     props:
       - name: submitter_id
       - name: object_id
-      - name: project_id
       - name: md5sum
       - name: file_name
       - name: file_size
@@ -220,10 +213,21 @@ mappings:
       - name: spacing_between_slices
       - name: lossy_image_compression
     injecting_props:
+      dataset:
+        props:
+          - name: _dataset_id
+            src: id
+            fn: set
+          - name: data_contributor
+            src: data_contributor
+            fn: set
       subject:
         props:
           - name: _subject_id
             src: id
+            fn: set
+          - name: subject_submitter_id
+            src: submitter_id
             fn: set
           - name: gender
             src: gender
@@ -237,19 +241,22 @@ mappings:
           - name: zip
             src: zip
             fn: set
-      imaging_exam:
+      imaging_study:
         props:
-          - name: exam_modality
-            src: exam_modality
+          - name: _imaging_study_id
+            src: id
             fn: set
-          - name: days_to_exam
-            src: days_to_exam
+          - name: study_modality
+            src: study_modality
+            fn: set
+          - name: days_to_study
+            src: days_to_study
             fn: max
-          - name: hours_to_exam
-            src: hours_to_exam
+          - name: hours_to_study
+            src: hours_to_study
             fn: max
-          - name: exam_description
-            src: exam_description
+          - name: study_description
+            src: study_description
             fn: set
           - name: FLO2_percentage
             src: FLO2_percentage
@@ -260,27 +267,26 @@ mappings:
           - name: age_at_imaging
             src: age_at_imaging
             fn: max
-          - name: scan_year
-            src: scan_year
+          - name: study_year
+            src: study_year
             fn: max
+          - name: study_covid_status
+            src: study_covid_status
+            fn: set
       imaging_series:
         props:
+          - name: _imaging_series_id
+            src: id
+            fn: set
           - name: series_description
             src: series_description
             fn: set
           - name: series_id
             src: series_id
             fn: set
-          - name: series_type
-            src: series_type
-            fn: set
           - name: series_name
             src: series_name
             fn: set
-    joining_props:
-      - index: condition
-        join_on: _subject_id
-        props:
-          - name: covid_test_name
-            src: covid_test_name
+          - name: series_type
+            src: series_type
             fn: set
