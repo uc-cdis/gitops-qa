@@ -4,7 +4,7 @@
     "goes with qa-tb.planx-pla.net, qa-nde.planx-pla.net and qa-flu.planx-pla.net, qa-aids.planx-pla.net"
   ],
   "versions": {
-    "arborist": "quay.io/cdis/arborist:2020.08",
+    "arborist": "quay.io/cdis/arborist:2.5.1",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
     "fence": "quay.io/cdis/fence:2020.08",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
@@ -48,9 +48,6 @@
     "netpolicy": "off",
     "cookie_domain": "planx-pla.net",
     "des_namespace": "qa-nde"
-  },
-  "arborist": {
-    "deployment_version": "2"
   },
   "indexd": {
     "arborist": "true"
