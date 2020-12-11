@@ -16,7 +16,7 @@ mappings:
           - GREATER GRAND CROSSING: 'Grand Crossing'
           - SOUTH LAWNDALE (LITTLE VILLAGE): 'Little Village'
           - WEST ENGLEWOOD: 'W.Englewood'
-      - name: province_state_lolol
+      - name: province_state
         value_mappings:
           - AL: 'Alabama'
           - AK: 'Alaska'

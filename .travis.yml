@@ -9,7 +9,7 @@ script:
     # for push builds, TRAVIS_BRANCH is the current branch name; for PR
     # builds, it's the name of the branch targeted by the PR.
     # We need the latter, which we can't get for push builds, so the tests
-    # only run on PRs.
+    # only run properly on PRs.
     changed_files=$(git diff --name-only HEAD..$TRAVIS_BRANCH)
     envs=()
     for file in $changed_files; do
@@ -26,7 +26,7 @@ script:
 
       # validate manifest.json
       if [ -f $man ]; then
-        gen3utils validate-manifest $man
+        gen3utils validate-manifest $man || exit 1
       fi
 
       # validate ETL mapping
