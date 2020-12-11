@@ -1,0 +1,59 @@
+mappings:
+  - name: qa-ibd
+    doc_type: participant
+    type: aggregator
+    root: participant
+    props:
+      - name: submitter_id
+      - name: project_id
+    parent_props:
+      - path: centers[country]
+      - path: centers[name]
+      - path: centers[investigator_name]
+    flatten_props:
+      - path: demographics
+        props:
+          - name: gender
+          - name: race
+          - name: jewish
+          - name: hispanic
+      - path: diagnoses
+        props:
+          - name: ibd_affection_status
+          - name: diagnosis
+          - name: population_control
+        sorted_by: updated_datetime, desc
+    aggregated_props:
+      - name: _samples_count
+        path: samples
+        fn: count
+  - name: qa-ibd_file
+    doc_type: file
+    type: collector
+    root: None
+    category: data_file
+    props:
+      - name: object_id
+      - name: md5sum
+      - name: file_name
+      - name: file_size
+      - name: data_format
+      - name: data_type
+      - name: state
+  - name: qa-ibd_supplementary_file
+    doc_type: supplementary_file
+    type: collector
+    root: None
+    category: supplementary_data_file
+    props:
+      - name: pmid
+      - name: doi
+      - name: first_author
+      - name: year
+      - name: object_id
+      - name: md5sum
+      - name: file_name
+      - name: file_size
+      - name: data_format
+      - name: data_type
+      - name: data_category
