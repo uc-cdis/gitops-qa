@@ -62,7 +62,7 @@ mappings:
           - name: pmid
             src: pmid
             fn: set
-          -name: doi
+          - name: doi
             src: doi
             fn: set
           - name: year
