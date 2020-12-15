@@ -371,6 +371,7 @@
               "data_category",
               "data_type",
               "data_format"
+              
             ]
           }
         ]
@@ -413,6 +414,7 @@
           { "field": "doi", "name": "DOI"}
         ],
         "nodeCountTitle": "Files",
+        
         "manifestMapping": {
           "referenceIdFieldInResourceIndex": "object_id",
           "referenceIdFieldInDataIndex": "object_id"
