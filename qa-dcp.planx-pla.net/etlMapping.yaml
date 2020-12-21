@@ -142,6 +142,7 @@ mappings:
       - name: callset
       - name: bucket_path
       - name: source_node
+      - name: data_category
     injecting_props:
       subject:
         props:
