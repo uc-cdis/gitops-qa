@@ -1,3 +1,4 @@
+# this is a comment.
 mappings:
   - name: qa-dcp_etl
     doc_type: subject
