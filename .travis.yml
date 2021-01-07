@@ -2,6 +2,7 @@ language: python
 
 before_script:
   - pip install gen3utils --upgrade
+  - pip freeze
 
 script:
   # validate manifest.json and etlMapping.yaml:
