@@ -13,24 +13,19 @@
           "plural": "Imaging Exams"
         },
         {
-          "graphql": "_imaging_series_count",
-          "name": "Imaging Series",
-          "plural": "Imaging Series"
-        },
-        {
           "graphql": "_ct_image_count",
-          "name": "CT Image",
-          "plural": "CT Images"
+          "name": "CT Image File",
+          "plural": "CT Image Files"
         },
         {
           "graphql": "_cr_image_count",
-          "name": "CR Image",
-          "plural": "CR Images"
+          "name": "CR Image File",
+          "plural": "CR Image Files"
         },
         {
           "graphql": "_dx_image_count",
-          "name": "DX Image",
-          "plural": "DX Images"
+          "name": "DX Image File",
+          "plural": "DX Image Files"
         }
       ],
       "chartCounts": [
@@ -45,24 +40,19 @@
           "plural": "Imaging Exams"
         },
         {
-          "graphql": "_imaging_series_count",
-          "name": "Imaging Series",
-          "plural": "Imaging Series"
-        },
-        {
           "graphql": "_ct_image_count",
-          "name": "CT Image",
-          "plural": "CT Images"
+          "name": "CT Image File",
+          "plural": "CT Image Files"
         },
         {
           "graphql": "_cr_image_count",
-          "name": "CR Image",
-          "plural": "CR Images"
+          "name": "CR Image File",
+          "plural": "CR Image Files"
         },
         {
           "graphql": "_dx_image_count",
-          "name": "DX Image",
-          "plural": "DX Images"
+          "name": "DX Image File",
+          "plural": "DX Image Files"
         }
       ],
       "projectDetails": "boardCounts"
