@@ -212,7 +212,7 @@
           "hispanic",
           "ibd_affection_status",
           "diagnosis",
-          "control",
+          "population_control",
           "_samples_count"
         ]
       },
@@ -268,7 +268,7 @@
               "jewish",
               "hispanic",
               "ibd_affection_status",
-              "control"
+              "population_control"
           ],
           "fieldMapping": [
           ]
