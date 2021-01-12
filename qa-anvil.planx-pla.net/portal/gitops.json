@@ -371,25 +371,6 @@
           "md5sum"
         ]
       },
-      "guppyConfig": {
-        "dataType": "file",
-        "fieldMapping": [
-          {
-          "field": "object_id",
-          "name": "GUID"
-          }
-        ],
-        "nodeCountTitle": "Files",
-        "manifestMapping": {
-          "resourceIndexType": "subject",
-          "resourceIdField": "_subject_id",
-          "referenceIdFieldInResourceIndex": "object_id",
-          "referenceIdFieldInDataIndex": "object_id"
-        },
-        "accessibleFieldCheckList": ["project_id"],
-        "accessibleValidationField": "project_id",
-        "downloadAccessor": "object_id"
-      },
       "buttons": [
       {
           "enabled": true,
