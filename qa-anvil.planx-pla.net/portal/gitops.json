@@ -279,22 +279,6 @@
           "md5sum"
         ]
       },
-      "guppyConfig": {
-        "dataType": "file",
-        "fieldMapping": [
-          { "field": "object_id", "name": "GUID" }
-        ],
-        "nodeCountTitle": "Files",
-        "manifestMapping": {
-          "resourceIndexType": "subject",
-          "resourceIdField": "_subject_id",
-          "referenceIdFieldInResourceIndex": "object_id",
-          "referenceIdFieldInDataIndex": "object_id"
-        },
-        "accessibleFieldCheckList": ["project_id"],
-        "accessibleValidationField": "project_id",
-        "downloadAccessor": "object_id"
-      },
       "buttons": [
         {
           "enabled": true,
@@ -436,6 +420,22 @@
           "tooltipText": "You have not selected any files to export. Please use the checkboxes on the left to select specific files you would like to export."
         }
       ],
+      "guppyConfig": {
+        "dataType": "file",
+        "fieldMapping": [
+          { "field": "object_id", "name": "GUID" }
+        ],
+        "nodeCountTitle": "Files",
+        "manifestMapping": {
+          "resourceIndexType": "subject",
+          "resourceIdField": "_subject_id",
+          "referenceIdFieldInResourceIndex": "object_id",
+          "referenceIdFieldInDataIndex": "object_id"
+        },
+        "accessibleFieldCheckList": ["project_id"],
+        "accessibleValidationField": "project_id",
+        "downloadAccessor": "object_id"
+      },
       "enableLimitedFilePFBExport": {
         "sourceNodeField": "source_node"
       },
