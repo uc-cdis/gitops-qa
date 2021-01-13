@@ -945,7 +945,7 @@
           },
           {
             "field": "med_hhinc",
-            "name": "Median Household Income (US Currency)"
+            "name": "Median Household Income (USD)"
           },
           {
             "field": "cardiovasc_death_rate",
