@@ -346,7 +346,7 @@
             "name": "Study DOI"
           },
           { "field": "pO2_saturation",
-            "name": "pO2 Saturation (%)"
+            "name": "pO2 Saturation (percent)"
           },
           {
             "field": "leukocyte_count",
