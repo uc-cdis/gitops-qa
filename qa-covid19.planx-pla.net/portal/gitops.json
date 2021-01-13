@@ -949,7 +949,7 @@
           },
           {
             "field": "cardiovasc_death_rate",
-            "name": "Cardiovascular Death Rate (annual number of deaths per 100,000 people)"
+            "name": "Cardiovascular Death Rate (per 100,000 people)"
           },
           {
             "field": "diabetes_prevalence",
