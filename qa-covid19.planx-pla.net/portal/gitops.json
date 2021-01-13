@@ -941,7 +941,7 @@
           },
           {
             "field": "hhinc_mean",
-            "name": "Mean Household Income (US Currency"
+            "name": "Mean Household Income (USD)"
           },
           {
             "field": "med_hhinc",
