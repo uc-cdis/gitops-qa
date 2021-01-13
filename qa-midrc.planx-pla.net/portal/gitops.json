@@ -81,7 +81,7 @@
               "icon": "data-explore",
               "body": "Search and download subsets of data from the MIDRC Data Commons using intuitive navigation tools.",
               "link": "/explorer",
-              "label": "Explore data"
+              "label": "Explore Data"
             },
             {
               "name": "Data Dictionary",
@@ -95,14 +95,14 @@
               "icon": "data-access",
               "body": "Search and download subsets of data from the MIDRC Data Commons using GraphQL queries.",
               "link": "/query",
-              "label": "Query data"
+              "label": "Query Data"
             },
             {
               "name": "Analyze Data",
               "icon": "data-analyze",
               "body": "Perform analysis on the MIDRC Data Commons data using Jupyter Notebooks.",
               "link": "/workspace",
-              "label": "Run analysis"
+              "label": "Run Analysis"
             }
         ]
       },
@@ -237,12 +237,6 @@
                 "rightIcon": "download"
               }
             ],
-            "arrangerConfig": {
-              "projectId": "search",
-              "graphqlField": "study",
-              "index": "",
-              "nodeCountField": "project_id"
-            },
             "guppyConfig": {
               "dataType": "study",
               "nodeCountTitle": "Studies",
@@ -397,12 +391,6 @@
               "rightIcon": "download"
             }
           ],
-          "arrangerConfig": {
-            "projectId": "search",
-            "graphqlField": "subject",
-            "index": "",
-            "nodeCountField": "project_id"
-          },
           "guppyConfig": {
             "dataType": "subject",
             "nodeCountTitle": "Subjects",
