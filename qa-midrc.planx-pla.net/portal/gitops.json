@@ -265,7 +265,7 @@
               "title": "Projects"
             },
             "gender": {
-              "chartType": "pie",
+              "chartType": "full-pie",
               "title": "Gender"
             },
             "race": {
@@ -318,7 +318,6 @@
                   "measles",
                   "mortality",
                   "number_icu_admits",
-                  "primary_diagnosis",
                   "rheumatoid_arthritis",
                   "systemic_lupus_erythmatosus",
                   "transplant",
