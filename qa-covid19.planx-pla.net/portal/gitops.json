@@ -957,7 +957,7 @@
           },
           { 
             "field": "population_density",
-            "name": "Population Density (residents per sqaure mile)"
+            "name": "Population Density (residents per square mile)"
           },
           {
             "field": "job_density",
