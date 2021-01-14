@@ -259,7 +259,7 @@
               "title": "Projects"
             },
             "gender": {
-              "chartType": "full-pie",
+              "chartType": "fullPie",
               "title": "Gender"
             },
             "race": {
