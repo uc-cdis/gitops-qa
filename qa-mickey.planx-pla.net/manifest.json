@@ -7,8 +7,8 @@
     "autodeploy": "yes"
   },
   "versions": {
-    "arborist": "quay.io/cdis/arborist:2020.08",
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
+    "arborist": "quay.io/cdis/arborist:2020.08",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
     "dashboard": "quay.io/cdis/gen3-statics:2020.08",
     "fence": "quay.io/cdis/fence:2020.08",
@@ -18,10 +18,8 @@
     "indexd": "quay.io/cdis/indexd:2020.08",
     "manifestservice": "quay.io/cdis/manifestservice:2020.08",
     "mariner": "quay.io/cdis/mariner-server:2020.12",
-    "ohdsi-broadsea-webtools": "ohdsi/broadsea-webtools:latest",
     "ohdsi-atlas": "quay.io/cdis/ohdsi-atlas:latest",
     "ohdsi-webapi": "quay.io/cdis/ohdsi-webapi:latest",
-    "ws-storage": "quay.io/cdis/ws-storage:master",
     "peregrine": "quay.io/cdis/peregrine:2020.08",
     "pidgin": "quay.io/cdis/pidgin:2020.08",
     "portal": "quay.io/cdis/data-portal:feat_va-gwas-app",
@@ -30,6 +28,7 @@
     "sower": "quay.io/cdis/sower:2020.08",
     "spark": "quay.io/cdis/gen3-spark:2020.08",
     "tube": "quay.io/cdis/tube:2020.08",
+    "ws-storage": "quay.io/cdis/ws-storage:master",
     "wts": "quay.io/cdis/workspace-token-service:2020.08"
   },
   "arborist": {
