@@ -306,17 +306,15 @@
       "strategy": "auto"
     },
     "portal": {
-      "strategy": "auto",
-      "min": 1,
-      "max": 2
+      "strategy": "auto"
     },
     "fence": {
       "strategy": "auto"
     },
     "presigned-url-fence": {
       "strategy": "auto",
-      "min": 3,
-      "max": 5,
+      "min": 2,
+      "max": 3,
       "targetCpu": 40
     },
     "indexd": {
