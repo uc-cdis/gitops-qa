@@ -213,7 +213,7 @@
               ]
             },
           "dropdowns": {
-            "download": {
+            "download_studies": {
               "title": "Download Studies Data"
             }
           },
@@ -395,7 +395,7 @@
             ]
           },
           "dropdowns": {
-            "download": {
+            "download_subject": {
               "title": "Download Subject Data"
             }
           },
@@ -589,7 +589,7 @@
             "downloadAccessor": "object_id"
           },
           "dropdowns": {
-            "download": {
+            "download_image": {
               "title": "Download Image Data"
             }
           },
