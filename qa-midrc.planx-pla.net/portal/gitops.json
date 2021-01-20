@@ -212,14 +212,35 @@
                 "_structured_reports_count"
               ]
             },
+          "dropdowns": {
+            "download_studies": {
+              "title": "Download Studies Data"
+            }
+          },
             "buttons": [
               {
                 "enabled": true,
-                "type": "data",
-                "title": "Download Studies",
-                "leftIcon": "user",
+                "type": "data-csv",
+                "title": "CSV",
                 "rightIcon": "download",
-                "fileName": "midrc_studies.json"
+                "fileName": "midrc_studies.csv",
+                "dropdownId": "download_studies"
+              },
+              {
+                "enabled": true,
+                "type": "data-tsv",
+                "title": "TSV",
+                "rightIcon": "download",
+                "fileName": "midrc_studies.tsv",
+                "dropdownId": "download_studies"
+              },
+              {
+                "enabled": true,
+                "type": "data-json",
+                "title": "JSON",
+                "rightIcon": "download",
+                "fileName": "midrc_studies.json",
+                "dropdownId": "download_studies"
               },
               {
                 "enabled": false,
@@ -373,14 +394,35 @@
               "_structured_reports_count"
             ]
           },
+          "dropdowns": {
+            "download_subject": {
+              "title": "Download Subject Data"
+            }
+          },
           "buttons": [
             {
               "enabled": true,
-              "type": "data",
-              "title": "Download Subject Metadata",
-              "leftIcon": "user",
+              "type": "data-csv",
+              "title": "CSV",
               "rightIcon": "download",
-              "fileName": "midrc_subjects.json"
+              "fileName": "midrc_subjects.csv",
+              "dropdownId": "download_subject"
+            },
+            {
+              "enabled": true,
+              "type": "data-tsv",
+              "title": "TSV",
+              "rightIcon": "download",
+              "fileName": "midrc_subjects.tsv",
+              "dropdownId": "download_subject"
+            },
+            {
+              "enabled": true,
+              "type": "data-json",
+              "title": "JSON",
+              "rightIcon": "download",
+              "fileName": "midrc_subjects.json",
+              "dropdownId": "download_subject"
             },
             {
               "enabled": true,
@@ -546,14 +588,35 @@
             "accessibleValidationField": "project_id",
             "downloadAccessor": "object_id"
           },
+          "dropdowns": {
+            "download_image": {
+              "title": "Download Image Data"
+            }
+          },
           "buttons": [
             {
               "enabled": true,
-              "type": "data",
-              "title": "Get Image Metadata",
-              "leftIcon": "user",
+              "type": "data-csv",
+              "title": "CSV",
               "rightIcon": "download",
-              "fileName": "MIDRC_images_metadata.json"
+              "fileName": "MIDRC_images_metadata.csv",
+              "dropdownId": "download_image"
+            },
+            {
+              "enabled": true,
+              "type": "data-tsv",
+              "title": "TSV",
+              "rightIcon": "download",
+              "fileName": "MIDRC_images_metadata.tsv",
+              "dropdownId": "download_image"
+            },
+            {
+              "enabled": true,
+              "type": "data-json",
+              "title": "JSON",
+              "rightIcon": "download",
+              "fileName": "MIDRC_images_metadata.json",
+              "dropdownId": "download_image"
             },
             {
               "enabled": true,
@@ -571,8 +634,7 @@
               "leftIcon": "datafile",
               "rightIcon": "download"
             }
-          ],
-          "dropdowns": {}
+          ]
         },
         {
           "tabTitle": "Viral Genomics",
