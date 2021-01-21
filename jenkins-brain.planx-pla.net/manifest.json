@@ -302,7 +302,7 @@
     "arborist": {
       "strategy": "auto"
     },
-    "portal": { strategy: "pin", num: 1 },
+    "portal": { "strategy": "pin", "num": 1 },
     "fence": {
       "strategy": "auto"
     },
