@@ -22,6 +22,7 @@ qa-microbiome.planx-pla.net/manifest.json @atharvar28
 qa-nde.planx-pla.net/manifest.json @atharvar28
 qa-niaid.planx-pla.net/manifest.json @atharvar28
 qa-tb.planx-pla.net/manifest.json @atharvar28
+qa-heal.planx-pla.net/ @atharvar28
 
 jenkins-blood.planx-pla.net/manifest.json @themarcelor @haraprasadj @atharvar28 @jingh8
 jenkins-brain.planx-pla.net/manifest.json @themarcelor @haraprasadj @atharvar28 @jingh8
