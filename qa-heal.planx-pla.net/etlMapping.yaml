@@ -11,6 +11,7 @@ mappings:
       - name: location
       - name: principle_investigator
       - name: publisher
+      - name: source
       - name: study_design_allocation
       - name: study_design_intervention_model
       - name: study_design_masking
