@@ -58,3 +58,4 @@ mappings:
       - name: project_id
     parent_props:
       - path: core_metadata_collections[cmc_unique_id:submitter_id]
+      
