@@ -13,11 +13,11 @@
     "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:2020.09",
     "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:4.1.2",
     "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:2020.09",
-    "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:2.42.0",
+    "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:2.41.0",
     "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:2020.09",
+    "guppy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/guppy:2020.09",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "spark": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-spark:2020.09",
-    "guppy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/guppy:0.10.0",
     "tube": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/tube:0.4.2",
     "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:2020.09",
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
@@ -28,6 +28,9 @@
   },
   "arborist": {
     "deployment_version": "2"
+  },
+  "indexd": {
+    "arborist": "true"
   },
   "jupyterhub": {
     "enabled": "no"
@@ -43,24 +46,32 @@
   "guppy": {
     "indices": [
       {
-        "index": "midrc_study",
-        "type": "study"
+        "index": "midrc_dataset",
+        "type": "dataset"
       },
       {
-        "index": "midrc_subject",
-        "type": "subject"
+        "index": "midrc_case",
+        "type": "case"
       },
       {
-        "index": "midrc_condition",
-        "type": "condition"
+        "index": "midrc_virus_data_file",
+        "type": "virus_data_file"
       },
       {
         "index": "midrc_imaging_data_file",
         "type": "imaging_data_file"
       },
       {
-        "index": "midrc_virus_data_file",
-        "type": "virus_data_file"
+        "index": "midrc_imaging_study",
+        "type": "imaging_study"
+      },
+      {
+        "index": "midrc_ct_scan",
+        "type": "ct_scan"
+      },
+      {
+        "index": "midrc_radiography_exam",
+        "type": "radiography_exam"
       }
     ],
     "config_index": "midrc_array-config",
@@ -69,17 +80,19 @@
   "global": {
     "environment": "qa-midrc",
     "hostname": "qa-midrc.planx-pla.net",
+    "environment": "qa-covid19",
     "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
     "portal_app": "gitops",
     "kube_bucket": "kube-qaplanetv2-gen3",
     "logs_bucket": "logs-qaplanetv2-gen3",
     "netpolicy": "on",
     "public_datasets": true,
-    "tier_access_level": "libre",
+    "tier_access_level": "regular",
     "tier_access_limit": "2",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
     "dispatcher_job_num": "10",
-    "dictionary_url": "http://s3.amazonaws.com/dictionary-artifacts/midrc_dictionary/0.2.2/schema.json",
+    "dictionary_url": "http://s3.amazonaws.com/dictionary-artifacts/midrc_dictionary/0.3.6/schema.json",
+    "portal_app": "gitops",
     "sync_from_dbgap": "False"
   },
   "canary": {
