@@ -104,16 +104,6 @@
                 "type": "pdf",
                 "link": "https://qa-niaid.planx-pla.net/dashboard/Public/files/NIAID%20Data%20Access%20Request%20FormSept2020.pdf",
                 "name": "Data Access Request (DAR)"
-              },
-              {
-                "type": "pdf",
-                "link": "https://qa-niaid.planx-pla.net/dashboard/Public/files/ACTT-1 Data Use Limitations.pdf",
-                "name": "ACTT-1 Data Use Limitations"
-              },
-              {
-                "type": "pdf",
-                "link": "qa-niaid.planx-pla.net/dashboard/Public/files/ACTT-2 Data Use Limitations.pdf",
-                "name": "ACTT-2 Data Use Limitations"
               }
             ]
           }
