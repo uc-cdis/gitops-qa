@@ -288,6 +288,16 @@ mappings:
       - name: assay_type
       - name: center_name
     injecting_props:
+      virus_sequence:
+        props:
+          - name: nextstrain_clade
+          - src: nextstrain_clade
+          - fn: set
+      submitter_id:
+        props:
+          - name: submitter_id
+          - src: submitter_id
+          - fn: set
       sample:
         props:
           - name: location
@@ -304,6 +314,9 @@ mappings:
             fn: set
           - name: county
             src: county
+            fn: set
+          - name: zipcode
+            src: zipcode
             fn: set
           - name: host
             src: host
