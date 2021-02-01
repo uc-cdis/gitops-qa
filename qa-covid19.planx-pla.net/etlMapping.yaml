@@ -287,7 +287,7 @@ mappings:
       - name: sra_accession
       - name: assay_type
       - name: center_name
-      - name: nextrain_clade
+      - name: nextstrain_clade
       - name: submitter_id
     injecting_props:
       sample:
