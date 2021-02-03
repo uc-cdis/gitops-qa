@@ -130,13 +130,29 @@
   "dataExplorerConfig": {
     "charts": {
       "project_id": {
-        "chartType": "count",
+        "chartType": "stackedBar",
         "title": "Projects"
       },
-      "node_id": {
-        "chartType": "count",
+      "gender": {
+        "chartType": "stackedBar",
         "title": "Subjects"
-      }
+      },
+      "race": {
+        "chartType": "stackedBar",
+        "title": "Subjects"
+      },
+      "clotting": {
+        "chartType": "fullPie",
+        "title": "Clotting"
+      },
+      "bleeding": {
+        "chartType": "fullPie",
+        "title": "Bleeding"
+      },
+      "mace": {
+        "chartType": "fullPie",
+        "title": "Mace"
+      },
     },
     "filters": {
       "tabs": [
