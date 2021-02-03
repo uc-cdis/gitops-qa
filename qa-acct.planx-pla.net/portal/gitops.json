@@ -152,7 +152,7 @@
       "mace": {
         "chartType": "fullPie",
         "title": "Mace"
-      },
+      }
     },
     "filters": {
       "tabs": [
