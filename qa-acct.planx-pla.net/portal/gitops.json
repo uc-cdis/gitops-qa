@@ -46,7 +46,7 @@
         {
           "name": "Define Data Field",
           "icon": "data-field-define",
-          "body": "TThe ACCOuNT Data Commons ingests and exports data that conform to a graph-like relational data model. Study the dictionary to send GraphQL queries or format your data submissions.",
+          "body": "The ACCOuNT Data Commons ingests and exports data that conform to a graph-like relational data model. Study the dictionary to send GraphQL queries or format your data submissions.",
           "link": "/DD",
           "label": "Learn more"
         },
