@@ -113,6 +113,7 @@
       "subTitle": "Explore, Analyze, and Share Data",
       "text": "This website provides a centralized, cloud-based discovery portal for African American pharmacogenomics data and aims to accelerate discovery of novel genetic variants in African Americans related to clinically actionable cardiovascular phenotypes.",
       "contact": "If you have any questions about access or the registration process, please contact support@datacommons.io"
+      "image": "/../../../../custom/sponsors/gitops-sponsors/gene_br2"
     },
     "footerLogos": [
       {
@@ -122,6 +123,7 @@
       }
     ]
   },
+  "categorical9Colors": ["#C62C2E", "#616265", "#59CD90", "#F2DC5D", "#40476D", "#FFA630", "#AE8799", "#1A535C", "#462255"],
   "featureFlags": {
     "explorer": true
   },
@@ -139,18 +141,30 @@
     "filters": {
       "tabs": [
         {
-          "title": "Subjects",
+            "title": "Studies",
+            "fields": [
+              "project_id",
+              "arm",
+            ]
+          },
+        {
+          "title": "Demographics",
           "fields": [
-            "project_id",
-            "arm",
             "gender",
             "race",
             "age_at_index",
-            "bmi",
-            "alcohol_intensity",
-            "pack_years_smoked"
+            "bmi"
           ]
         },
+        {
+            "title": "Clinical",
+            "fields": [
+              "gender",
+              "race",
+              "age_at_index",
+              "bmi"
+            ]
+          },
         {
           "title": "Clinical",
           "fields": [
@@ -160,6 +174,8 @@
             "indication_for_noac_treatment",
             "indication_for_warfarin_treatment",
             "indication_for_clopidogrel_treatment",
+            "alcohol_intensity",
+            "pack_years_smoked",
             "therapeutic_agents",
             "disease_type",
             "primary_site",
@@ -174,22 +190,22 @@
       "enabled": true,
       "fields": [
         "project_id",
-        "disease_type",
-        "index_date",
-        "primary_site",
-        "species",
-        "strain",
-        "ethnicity",
-        "gender",
         "race",
-        "primary_diagnosis",
         "alcohol_intensity",
-        "bmi",
         "pack_years_smoked",
         "years_smoked",
+        "bmi",
+        "clotting",
+        "bleeding",
+        "mace",
+        "disease_type",
+        "primary_site",
+        "therapeutic_agents",
+        "primary_diagnosis",
+        "species",
+        "gender",
         "composition",
-        "tissue_type",
-        "therapeutic_agents"
+        "tissue_type"
       ]
     },
     "guppyConfig": {
