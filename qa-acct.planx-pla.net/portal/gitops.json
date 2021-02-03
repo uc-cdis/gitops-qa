@@ -144,7 +144,7 @@
             "title": "Studies",
             "fields": [
               "project_id",
-              "arm",
+              "arm"
             ]
           },
         {
@@ -247,7 +247,7 @@
   "fileExplorerConfig": {
     "charts": {
       "project_id": {
-        "chartType": "pie",
+        "chartType": "stackedBar",
         "title": "Project ID"
       },
       "data_category": {
@@ -296,7 +296,10 @@
     "guppyConfig": {
       "dataType": "file",
       "fieldMapping": [
-        { "field": "object_id", "name": "GUID" }
+        { "field": "object_id", "name": "GUID" },
+        { "field": "data_type", "name": "File Type" },
+        { "field": "data_format", "name": "File Format" },
+        { "field": "data_category", "name": "File Category" },
       ],
       "nodeCountTitle": "Files",
       "manifestMapping": {
