@@ -157,16 +157,10 @@
           ]
         },
         {
-            "title": "Clinical",
-            "fields": [
-              "gender",
-              "race",
-              "age_at_index",
-              "bmi"
-            ]
-          },
-        {
           "title": "Clinical",
+          "searchFields": [
+            "submitter_id"
+          ],
           "fields": [
             "clotting",
             "bleeding",
@@ -267,6 +261,9 @@
       "tabs": [
         {
           "title": "File",
+          "searchFields": [
+            "file_name"
+          ],
           "fields": [
             "project_id",
             "data_type",
