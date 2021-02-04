@@ -330,7 +330,7 @@
             { "field": "object_id", "name": "GUID" },
             { "field": "data_type", "name": "File Type" },
             { "field": "data_format", "name": "File Format" },
-            { "field": "data_category", "name": "File Category" },
+            { "field": "data_category", "name": "File Category" }
             ],
             "nodeCountTitle": "Files",
             "manifestMapping": {
