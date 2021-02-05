@@ -5,7 +5,6 @@
   --primary-color_light: #c46566;
   --secondary-color_light: #2e59a2;
   
-
   --g3-color__bg-cloud: #F5F5F5;
   --g3-color__bg-coal: #4A4A4A;
   --g3-color__gray: #606060;
@@ -81,5 +80,91 @@
 }
 
 .footer__version-area {
-  width: 600px;
+  width: 300px;
+}
+
+.footer-container {
+  background-color: var(--secondary-color);
+}
+
+.footer {
+  background-color: var(--secondary-color);
+  align-items: center;
+}
+
+.footer__nav {
+  background-color: var(--secondary-color);
+  align-items: center;
+}
+
+/* Data Explorer */
+
+.aggregation-card .bucket-item .bucket-count {
+  color: var(--secondary-color);
+}
+
+.aggregation-card input[type='checkbox']:checked {
+  background: var(--secondary-color);
+}
+
+.g3-single-select-filter__checkbox:checked {
+  background: var(--primary-color);
+}
+
+/* .input-range__track--active,
+.rc-slider-track,
+.g3-single-select-filter__count .g3-icon--under {
+  background-color: var(--primary-color);
+} */
+
+/* Charts */
+
+tspan.special-number,
+.special-number,
+.form-special-number {
+  color: var(--primary-color);
+}
+
+.special-number {
+  fill: var(--primary-color);
+}
+
+.data-explorer__charts tspan.special-number,
+.data-explorer__charts .special-number,
+.data-explorer__charts .form-special-number {
+  color: var(--secondary-color);
+}
+
+.data-explorer__charts .special-number {
+  fill: var(--secondary-color);
+}
+
+/* Index Changes inherited from MIDRC */
+
+.introduction__icon {
+  display: none;
+}
+
+.index-button-bar {
+  width: 100%;
+  background-color: var(--g3-color__white);
+}
+
+.index-button-bar__thumbnail-button {
+  background-color: inherit;
+  border: none;
+}
+
+.index-button-bar__icon {
+  filter: hue-rotate(45deg);
+}
+
+.index-button-bar__thumbnail-title {
+  display: none;
+}
+
+@media screen and (max-width: 1170px) {
+  .index-button-bar {
+    padding: 0 10%;
+  }
 }
