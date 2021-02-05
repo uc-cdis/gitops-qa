@@ -257,9 +257,9 @@
           "chartType": "pie",
           "title": "Study Type (category)"
         },
-        "controlled_access_property_1": {
+        "data_available": {
           "chartType": "bar",
-          "title": "Controlled Access Property 1"
+          "title": "Data Available"
         },
         "fileCounts": false
       },

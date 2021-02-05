@@ -51,7 +51,7 @@
   },
   "guppy": {
     "indices": [{
-        "index": "qa-heal_cmc",
+        "index": "qa-heal_cmc_open_access",
         "type": "clinical_trials",
         "tier_access_level": "libre"
       },
