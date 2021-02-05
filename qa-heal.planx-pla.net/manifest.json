@@ -20,7 +20,7 @@
     "manifestservice": "quay.io/cdis/manifestservice:2020.11",
     "wts": "quay.io/cdis/workspace-token-service:2020.11",
     "tube": "quay.io/cdis/tube:2020.11",
-    "guppy": "quay.io/cdis/guppy:2020.11"
+    "guppy": "quay.io/cdis/guppy:feat_per-index-tiered-access"
   },
   "arborist": {
     "deployment_version": "2"
@@ -44,7 +44,6 @@
     "sync_from_dbgap": "False",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
     "dispatcher_job_num": "10",
-    "tier_access_level": "libre",
     "netpolicy": "on"
   },
   "canary": {
@@ -52,16 +51,24 @@
   },
   "guppy": {
     "indices": [{
-        "index": "qa-heal_cmc",
-        "type": "clinical_trials"
+        "index": "qa-heal_cmc_open_access",
+        "type": "clinical_trials",
+        "tier_access_level": "libre"
+      },
+      {
+        "index": "qa-heal_cmc_controlled_access",
+        "type": "clinical_trials_controlled_access",
+        "tier_access_level": "private"
       },
       {
         "index": "qa-heal_ct-file",
-        "type": "ctfile"
+        "type": "ctfile",
+        "tier_access_level": "libre"
       },
       {
         "index": "qa-heal_oa-file",
-        "type": "oafile"
+        "type": "oafile",
+        "tier_access_level": "libre"
       }
     ],
     "config_index": "qa-heal_array-config",
