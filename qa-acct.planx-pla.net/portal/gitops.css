@@ -208,10 +208,6 @@ tspan.special-number,
   border: none;
 }
 
-.index-button-bar__icon {
-  filter: hue-rotate(45deg);
-}
-
 .index-button-bar__thumbnail-title {
   display: none;
 }
