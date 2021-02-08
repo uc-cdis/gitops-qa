@@ -138,7 +138,9 @@
       }
     ]
   },
-  "categorical9Colors": ["#C62C2E", "#616265", "#59CD90", "#F2DC5D", "#40476D", "#FFA630", "#AE8799", "#1A535C", "#462255"],
+  "categorical9Colors": ["#1a3057", "#C62C2E", "#AEEBF2", "#c46566", "#2e59a2", "#FFA630", "#AE8799", "#035C94", "#462255"],
+  "categorical2Colors": ["#1a3057", "#C62C2E"]
+},
   "featureFlags": {
     "explorer": true
   },
