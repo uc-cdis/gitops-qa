@@ -144,7 +144,7 @@
     "analysis": true
   },
   "analysisTools": [
-    "vaGWAS",
+    "GWASApp",
     {
       "title": "OHDSI Atlas",
       "description": "An Atlas App",
