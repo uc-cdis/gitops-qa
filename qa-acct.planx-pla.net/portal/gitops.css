@@ -52,8 +52,23 @@
 
 .data-dictionary__switch-button--active,
 .popup__title {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
+
+.g3-button--primary:hover,
+.g3-dropdown-button__button--primary:hover,
+.data-dictionary__switch-button:hover,
+.button-primary-orange:hover {
+  background-color: var(--primary-color)
+}
+
+.g3-button--default:active, .g3-button--default:active svg path {
+  border: 1px solid var(--secondary-color);
+  color: 1px solid var(--secondary-color);
+  fill: 1px solid var(--secondary-color);
+}
+
+
 
 /* Nav Bars and Footer */
 
