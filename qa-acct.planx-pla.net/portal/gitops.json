@@ -130,7 +130,7 @@
       "contact": "If you have any questions about access or the registration process, please contact ",
       "email": "support@datacommons.io"
     },
-    "categorical9Colors": ["#1a3057", "#C62C2E", "#AEEBF2", "#c46566", "#2e59a2", "#FFA630", "#AE8799", "#035C94", "#462255"],
+    "categorical9Colors": ["#1a3057", "#C62C2E", "#FEBA00", "#FF8800", "#2E59A2", "#FFD900", "#E76662", "#95B5E5", "#F3B44F"],
     "categorical2Colors": ["#1a3057", "#C62C2E"],
     "footerLogos": [
         {
