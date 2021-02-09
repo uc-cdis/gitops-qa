@@ -153,11 +153,11 @@
               },
               "gender": {
                   "chartType": "bar",
-                  "title": "Subjects"
+                  "title": "Gender"
               },
               "race": {
                   "chartType": "bar",
-                  "title": "Subjects"
+                  "title": "Race"
               },
               "clotting": {
                   "chartType": "fullPie",
