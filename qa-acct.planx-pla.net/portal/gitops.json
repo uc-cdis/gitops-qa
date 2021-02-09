@@ -126,9 +126,9 @@
       "title": "ACCOuNT Data Commons (QA)",
       "subTitle": "Explore, Analyze, and Share Data",
       "text": "This website provides a centralized, cloud-based discovery portal for African American pharmacogenomics data and aims to accelerate discovery of novel genetic variants in African Americans related to clinically actionable cardiovascular phenotypes.",
-      "image": "/../../../../custom/sponsors/gitops-sponsors/gene_br2",
       "contact": "If you have any questions about access or the registration process, please contact ",
-      "email": "support@datacommons.io"
+      "email": "support@datacommons.io",
+      "image": "/../../../../custom/sponsors/gitops-sponsors/gene_br2"
     },
     "categorical9Colors": ["#1a3057", "#C62C2E", "#FEBA00", "#FF8800", "#2E59A2", "#FFD900", "#E76662", "#95B5E5", "#F3B44F"],
     "categorical2Colors": ["#1a3057", "#C62C2E"],
