@@ -144,18 +144,6 @@
   background: var(--primary-color);
 }
 
-.sqon-clear {
-  background-color: var(--secondary-color);
-}
-
-.sqon-value {
-  background-color: var(--primary-color);
-}
-
-.sqon-value-group, .sqon-more, .sqon-less {
-  color: var(--secondary-color);
-}
-
 .input-range__track--active,
 .rc-slider-track,
 .g3-single-select-filter__count .g3-icon--under {
