@@ -128,7 +128,7 @@
 
 .filter-group__tab--selected,
 .g3-filter-group__tab--selected {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: #fff;
 }
 
