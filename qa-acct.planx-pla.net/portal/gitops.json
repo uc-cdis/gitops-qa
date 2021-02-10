@@ -44,9 +44,9 @@
       },
       "buttons": [
         {
-          "name": "Define Data Field",
+          "name": "Data Model",
           "icon": "acct-planning",
-          "body": "The ACCOuNT Data Commons ingests and exports data that conform to a graph-like relational data model. Study the dictionary to send GraphQL queries or format your data submissions.",
+          "body": "The ACCOuNT Data Commons ingests and exports data that conform to a graph-like relational data model.",
           "link": "/DD",
           "label": "Learn more",
           "color": "#1a3057"
@@ -71,7 +71,7 @@
           "name": "Analyze Data",
           "icon": "acct-analyze",
           "body": "Analyze your selected cases using Jupyter Notebooks in our secure cloud environment",
-          "link": "#hostname#workspace/",
+          "link": "/workspace",
           "label": "Run analysis",
           "color": "#1a3057"
         }
@@ -110,7 +110,7 @@
         },
         {
           "icon": "workspace",
-          "link": "#hostname#workspace/",
+          "link": "/workspace",
           "color": "#1a3057",
           "name": "Workspace"
         },
@@ -119,6 +119,19 @@
           "link": "/identity",
           "color": "#1a3057",
           "name": "Profile"
+        }
+      ]
+    },
+    "topBar": {
+      "items": [
+        {
+          "icon": "upload",
+          "link": "/submission",
+          "name": "Browse Data"
+        },
+        {
+          "link": "https://gen3.org/resources/user/",
+          "name": "Gen3 Documentation"
         }
       ]
     },
