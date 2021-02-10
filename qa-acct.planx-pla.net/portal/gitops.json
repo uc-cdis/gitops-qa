@@ -45,15 +45,15 @@
       "buttons": [
         {
           "name": "Define Data Field",
-          "icon": "data-field-define",
-          "body": "TThe ACCOuNT Data Commons ingests and exports data that conform to a graph-like relational data model. Study the dictionary to send GraphQL queries or format your data submissions.",
+          "icon": "acct-planning",
+          "body": "The ACCOuNT Data Commons ingests and exports data that conform to a graph-like relational data model. Study the dictionary to send GraphQL queries or format your data submissions.",
           "link": "/DD",
           "label": "Learn more",
           "color": "#1a3057"
         },
         {
           "name": "Explore Data",
-          "icon": "data-explore",
+          "icon": "acct-explore",
           "body": "Use the Exploration tool for cohort building via faceted search and downloading subsets of data from the ACCOuNT Data Commons.",
           "link": "/explorer",
           "label": "Explore data",
@@ -61,7 +61,7 @@
         },
         {
           "name": "Access Data",
-          "icon": "data-access",
+          "icon": "acct-access",
           "body": "Subject and file metadata can be queried using GraphQL.",
           "link": "/query",
           "label": "Query data",
@@ -69,7 +69,7 @@
         },
         {
           "name": "Analyze Data",
-          "icon": "data-analyze",
+          "icon": "acct-analyze",
           "body": "Analyze your selected cases using Jupyter Notebooks in our secure cloud environment",
           "link": "#hostname#workspace/",
           "label": "Run analysis",
