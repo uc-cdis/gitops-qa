@@ -236,7 +236,7 @@
       },
       "gen3fusesidecar": {
         "name": "mariner-gen3fusesidecar",
-        "image": "quay.io/cdis/gen3fuse-sidecar:2021.01",
+        "image": "quay.io/cdis/gen3fuse-sidecar:0.2.3",
         "pull_policy": "always",
         "command": [
           "/bin/bash",
