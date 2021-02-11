@@ -151,8 +151,17 @@
             "href": "https://www.nimhd.nih.gov",
             "alt": "National Institute on Minority Health and Health Disparities (NIMHD)"
         }
-    ]
+      ],
+      "footer": {
+        "links": [
+          {
+            "text": "This project has been funded in whole or in part with Federal funds from the National Institute on Minority Health and Health Disparities, Grant Number U54 MD010723.",
+            "href": "https://precisionmedicine4all.com/about/"
+          }
+        ]
+      }
 },
+"requiredCerts": [],
 "featureFlags": {
     "explorer": true
 },
