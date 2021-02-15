@@ -115,7 +115,8 @@
   "requiredCerts": [],
   "featureFlags": {
     "explorer": true,
-    "analysis": false
+    "analysis": false,
+    "discovery": true
   },
   "studyViewerConfig": [
     {
@@ -336,6 +337,162 @@
       }
     }
   ],
+  "discoveryConfig": {
+    "features": {
+      "pageTitle": {
+        "enabled": false
+      },
+      "search": {
+        "searchBar": {
+          "enabled": true
+        }
+      },
+      "authorization": {
+        "enabled": false
+      }
+    },
+    "aggregations": [
+        {
+            "name": "Studies",
+            "field": "study_id",
+            "type": "count"
+        },
+        {
+            "name": "Total Subjects",
+            "field": "_subjects_count",
+            "type": "sum"
+        }
+    ],
+    "tagSelector": {
+      "title": "Tags by category"
+    },
+    "studyColumns": [
+      {
+        "name": "Project Title",
+        "field": "project_title"
+      },
+      {
+        "name": "Number of Subjects",
+        "field": "_subjects_count",
+        "contentType": "number"
+      },
+      {
+        "name": "Administering IC",
+        "field": "administering_ic"
+      },
+      {
+        "name": "Host Institution",
+        "field": "host_institution"
+      },
+      {
+        "name": "Clinical Trial Link",
+        "field": "clinical_trial_link"
+      }
+    ],
+    "studyPreviewField": {
+      "name": "Description",
+      "field": "study_description",
+      "contentType": "string",
+      "includeName": false,
+      "includeIfNotAvailable": true,
+      "valueIfNotAvailable": "No description has been provided for this study."
+    },
+    "studyPageFields": {
+      "header": {
+        "field": "project_title"
+      },
+      "fieldsToShow": [
+        {
+          "groupName": "HEAL Research Initiatives",
+          "includeName": false,
+          "fields": [
+            {
+              "name": "Research Focus Area",
+              "field": "research_focus_area"
+            },
+            {
+              "name": "Research Program",
+              "field": "research_program"
+            }
+          ]
+        },
+        {
+          "groupName": "Host Institution",
+          "includeName": false,
+          "fields": [
+            {
+              "name": "Host Insitution",
+              "field": "host_institution"
+            },
+            {
+              "name": "Location",
+              "field": "location"
+            },
+            {
+              "name": "Principal Investigator",
+              "field": "principal_investigator"
+            },
+            {
+              "name": "Year Grant Awarded",
+              "field": "year_awarded"
+            }
+          ]
+        },
+        {
+          "groupName": "Clinical Trial",
+          "includeName": false,
+          "fields": [
+            {
+              "name": "Number of Subjects",
+              "field": "_num_subjects"
+            },
+            {
+              "name": "Clinical Trial Link",
+              "field": "clinical_trial_link"
+            }
+          ]
+        },
+        {
+          "fields": [
+            {
+              "name": "Description",
+              "field": "study_description",
+              "contentType": "paragraphs",
+              "includeName": false,
+              "includeIfNotAvailable": true,
+              "valueIfNotAvailable": "No description has been provided for this study."
+            }
+          ]
+        }
+      ]
+    },
+    "minimalFieldMapping": {
+      "tagsListFieldName": "tags",
+      "uid": "_id"
+    },
+    "tagCategories": [
+      {
+        "name": "Program",
+        "color": "rgba(129, 211, 248, 1)",
+        "display": true
+      },
+      {
+        "name": "Research",
+        "color": "rgba(236, 128, 141, 1)",
+        "display": true
+      },
+      {
+        "name": "Focus Area",
+        "color": "rgba(112, 182, 3, 1)",
+        "display": true
+      },
+      {
+        "name": "Medication Type",
+        "color": "rgba(112, 182, 3, 1)",
+        "display": true
+      }
+    ]
+  },
   "useArboristUI": false,
   "showArboristAuthzOnProfile": true,
   "showFenceAuthzOnProfile": false,
