@@ -19,7 +19,7 @@
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "spark": "quay.io/cdis/gen3-spark:2021.02",
     "tube": "quay.io/cdis/tube:2021.02",
-    "guppy": "quay.io/cdis/guppy:2021.02",
+    "guppy": "quay.io/cdis/guppy:feat_per-index-tiered-access",
     "sower": "quay.io/cdis/sower:2021.02",
     "hatchery": "quay.io/cdis/hatchery:2021.02",
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
