@@ -40,7 +40,7 @@ script:
     if [ -z $GH_TOKEN ]; then echo "there is no GH_TOKEN"; else echo "GH_TOKEN has been defined"; fi
     if [ -z $GITHUB_TOKEN ]; then echo "there is no GITHUB_TOKEN"; else echo "GITHUB_TOKEN has been defined"; fi
     if [[ $TRAVIS_PULL_REQUEST != false ]]; then
-      gen3utils post-deployment-changes uc-cdis/gitops-qa $TRAVIS_PULL_REQUEST --github-access-token
+      gen3utils post-deployment-changes uc-cdis/gitops-qa $TRAVIS_PULL_REQUEST --github-access-token $GH_TOKEN
     fi
 
 env:
