@@ -7,7 +7,7 @@
     "autodeploy": "yes"
   },
   "versions": {
-    "access-backend": "quay.io/cdis/access-backend:1.3.2",
+    "access-backend": "quay.io/cdis/access-backend:1.4.0",
     "ambassador": "quay.io/datawire/ambassador:0.60.3",
     "arborist": "quay.io/cdis/arborist:2020.10",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
