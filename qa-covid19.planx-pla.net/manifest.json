@@ -6,7 +6,7 @@
   "versions": {
     "arborist": "quay.io/cdis/arborist:2021.01",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
-    "covid19-etl": "quay.io/cdis/covid19-etl:4.6.1",
+    "covid19-etl": "quay.io/cdis/covid19-etl:4.6.3",
     "nb-etl": "quay.io/cdis/covid19-nb-etl:4.4.4",
     "fence": "quay.io/cdis/fence:2021.01",
     "indexd": "quay.io/cdis/indexd:2021.01",
@@ -26,7 +26,7 @@
     "guppy": "quay.io/cdis/guppy:0.10.0",
     "manifestservice": "quay.io/cdis/manifestservice:2021.01",
     "dashboard": "quay.io/cdis/gen3-statics:2021.01",
-    "auspice": "quay.io/cdis/gen3-auspice:v2.16.gen3.4",
+    "auspice": "quay.io/cdis/gen3-auspice:v2.16.gen3.7",
     "sower": "quay.io/cdis/sower:2021.01",
     "metadata": "quay.io/cdis/metadata-service:2021.01"
   },
@@ -236,7 +236,7 @@
       },
       "gen3fusesidecar": {
         "name": "mariner-gen3fusesidecar",
-        "image": "quay.io/cdis/gen3fuse-sidecar:2021.01",
+        "image": "quay.io/cdis/gen3fuse-sidecar:0.2.3",
         "pull_policy": "always",
         "command": [
           "/bin/bash",

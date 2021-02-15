@@ -7,6 +7,7 @@
     "autodeploy": "yes"
   },
   "versions": {
+    "ambassador": "quay.io/datawire/ambassador:1.4.2",
     "arborist": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/arborist:2021.01",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
     "fence": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/fence:2021.01",
@@ -15,7 +16,7 @@
     "pidgin": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/pidgin:2021.01",
     "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:2021.01",
     "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:2021.01",
-    "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:2021.01",
+    "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:2.44.2",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "spark": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-spark:2021.01",
     "tube": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/tube:2021.01",
@@ -44,7 +45,8 @@
     "logs_bucket": "logs-qaplanetv1-gen3",
     "sync_from_dbgap": "False",
     "dispatcher_job_num": "10",
-    "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml"
+    "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
+    "netpolicy": "on"
   },
   "ssjdispatcher": {
     "job_images": {
