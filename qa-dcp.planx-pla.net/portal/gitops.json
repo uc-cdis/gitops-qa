@@ -325,6 +325,7 @@
     },
     "guppyConfig": {
       "dataType": "subject",
+      "tierAccessLevel": "libre",
       "nodeCountTitle": "Subjects",
       "fileCountField": "file_count",
       "fieldMapping": [
@@ -527,6 +528,7 @@
     },
     "guppyConfig": {
       "dataType": "file",
+      "tierAccessLevel": "private",
       "fieldMapping": [
         {
           "field": "object_id",
