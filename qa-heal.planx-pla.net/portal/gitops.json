@@ -48,7 +48,7 @@
       "title": "Generic Data Commons",
       "items": [
         {
-          "icon": "query",
+          "icon": "cohort-tools",
           "link": "/study-viewer/clinical_trials",
           "name": "Study Viewer"
         },
@@ -68,7 +68,7 @@
           "name": "Dictionary"
         },
         {
-          "icon": "query",
+          "icon": "analysis",
           "link": "/query",
           "name": "Query"
         },
