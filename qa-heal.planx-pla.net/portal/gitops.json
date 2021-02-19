@@ -356,13 +356,8 @@
     "aggregations": [
         {
             "name": "Studies",
-            "field": "study_id",
+            "field": "_unique_id",
             "type": "count"
-        },
-        {
-            "name": "Total Subjects",
-            "field": "_subjects_count",
-            "type": "sum"
         }
     ],
     "tagSelector": {
@@ -374,9 +369,8 @@
         "field": "project_title"
       },
       {
-        "name": "Number of Subjects",
-        "field": "_subjects_count",
-        "contentType": "number"
+        "name": "Clinical Trial Link",
+        "field": "clinical_trial_link"
       },
       {
         "name": "Administering IC",
@@ -385,10 +379,6 @@
       {
         "name": "Host Institution",
         "field": "host_institution"
-      },
-      {
-        "name": "Clinical Trial Link",
-        "field": "clinical_trial_link"
       }
     ],
     "studyPreviewField": {
@@ -470,7 +460,7 @@
     },
     "minimalFieldMapping": {
       "tagsListFieldName": "tags",
-      "uid": "_id"
+      "uid": "_unique_id"
     },
     "tagCategories": [
       {
