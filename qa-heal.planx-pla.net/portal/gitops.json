@@ -53,6 +53,11 @@
           "name": "Study Viewer"
         },
         {
+          "icon": "query",
+          "link": "/discovery",
+          "name": "Discovery"
+        },
+        {
           "icon": "exploration",
           "link": "/explorer",
           "name": "Exploration"
