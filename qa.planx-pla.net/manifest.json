@@ -9,6 +9,7 @@
   "versions": {
     "arborist": "quay.io/cdis/arborist:2.5.0",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
+    "cogwheel": "quay.io/cdis/cogwheel:gen3",
     "fence": "quay.io/cdis/fence:2020.10",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.10.2-debian-cloudwatch-1.0",
     "indexd": "quay.io/cdis/indexd:2020.10",

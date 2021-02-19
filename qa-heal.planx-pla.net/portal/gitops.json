@@ -215,6 +215,7 @@
       "buttons": [],
       "guppyConfig": {
         "dataType": "clinical_trials",
+        "tierAccessLevel": "libre",
         "nodeCountTitle": "Studies (clinical trials)",
         "fileCountField": "file_count",
         "fieldMapping": [
@@ -308,6 +309,7 @@
       "buttons": [],
       "guppyConfig": {
         "dataType": "clinical_trials_controlled_access",
+        "tierAccessLevel": "private",
         "nodeCountTitle": "Studies (clinical trials)",
         "fileCountField": "file_count",
         "fieldMapping": [
