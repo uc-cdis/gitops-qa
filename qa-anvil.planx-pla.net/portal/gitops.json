@@ -144,8 +144,8 @@
             "title": "Subject",
             "fields":[
               "sex",
-              "age_value",
               "ancestry",
+              "age_value",
               "disease_description", 
               "phenotype_present", 
               "phenotype_absent", 
