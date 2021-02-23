@@ -158,20 +158,20 @@
           }, {
             "title": "Sample",
             "fields": [
-              "sample_provider",
-              "tissue_affected_status",
               "tissue_type",
               "sample_type",
-              "original_material_type"
+              "original_material_type",
+              "sample_provider",
+              "tissue_affected_status"
             ]
           }, {
             "title": "Sequencing",
             "fields": [
+              "sequencing_assay", 
+              "reference_genome_build", 
               "library_prep_kit_method", 
               "exome_capture_platform", 
               "capture_region_bed_file", 
-              "reference_genome_build", 
-              "sequencing_assay", 
               "alignment_method", 
               "data_processing_pipeline"
             ]
