@@ -5,7 +5,7 @@
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "1Gi",
-    "image": "quay.io/cdis/gen3fuse-sidecar:2020.08",
+    "image": "quay.io/cdis/gen3fuse-sidecar:0.2.3",
     "env": {
       "NAMESPACE": "qa-mickey",
       "HOSTNAME": "qa-mickey.planx-pla.net"
