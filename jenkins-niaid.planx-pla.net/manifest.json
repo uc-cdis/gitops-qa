@@ -33,6 +33,9 @@
     "dashboard": "quay.io/cdis/gen3-statics:master",
     "requestor": "quay.io/cdis/requestor:master"
   },
+  "portal": {
+    "GEN3_BUNDLE": "nct"
+  },
   "arborist": {
     "deployment_version": "2"
   },
@@ -297,6 +300,10 @@
       {
         "index": "jenkins_file_alias",
         "type": "file"
+      },
+      {
+        "index": "jenkins_clinical_trials_alias",
+        "type": "clinical_trials"
       }
     ],
     "config_index": "jenkins_configs_alias",
