@@ -102,7 +102,7 @@
       "target-port": 5800,
       "cpu-limit": "1.0",
       "memory-limit": "1024Mi",
-      "name": "R Studio thru VNC",
+      "name": "R Studio thru noVNC",
       "image": "heliumdatastage/rstudio-server:1",
       "env": {
         "DISABLE_AUTH": "true"
@@ -115,7 +115,7 @@
       "friends": [
         {
           "name": "firefox",
-          "image": "quay.io/cdis/docker-firefox:master",
+          "image": "quay.io/cdis/docker-firefox:v1.13.0_ctds.1.0.0",
           "volumeMounts": [{
             "name": "dshm",
             "mountPath": "/dev/shm"
@@ -147,13 +147,14 @@
       "target-port": 5800,
       "cpu-limit": "1.0",
       "memory-limit": "512Mi",
-      "name": "Jupyter Notebook Bio Python thru VNC",
+      "name": "Jupyter Notebook Bio Python (Lab Edition) thru noVNC",
       "image": "quay.io/cdis/jupyter-notebook:1.0.2",
       "env": {
         "NAMESPACE": "qa-mickey"
       },
       "args": [
         "--NotebookApp.base_url=/",
+        "--NotebookApp.default_url=/lab",
         "--NotebookApp.password=''",
         "--NotebookApp.token=''"
       ],
@@ -173,7 +174,7 @@
       "friends": [
         {
           "name": "firefox",
-          "image": "quay.io/cdis/docker-firefox:master",
+          "image": "quay.io/cdis/docker-firefox:v1.13.0_ctds.1.0.0",
           "volumeMounts": [{
             "name": "dshm",
             "mountPath": "/dev/shm"
