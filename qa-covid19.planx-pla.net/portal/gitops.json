@@ -149,8 +149,8 @@
           {
             "title": "Details",
             "fields": [
+              "date_collected",
               "investigator_affiliation",
-              "name",
               "data_description"
             ]
           }
@@ -161,6 +161,7 @@
         "fields": [
           "url",
           "code",
+          "date_collected",
           "investigator_affiliation",
           "name",
           "data_description"
@@ -263,6 +264,7 @@
         "fields": [
           "project_url",
           "project_code",
+          "project_date_collected",
           "project_investigator_affiliation",
           "project_name",
           "age",
@@ -372,6 +374,7 @@
           {
             "title": "Details",
             "fields": [
+              "project_date_collected",
               "project_investigator_affiliation",
               "project_name",
               "title",
@@ -387,6 +390,7 @@
         "enabled": true,
         "fields": [
           "project_url",
+          "project_date_collected",
           "project_investigator_affiliation",
           "project_name",
           "title",
@@ -471,6 +475,7 @@
           {
             "title": "Details",
             "fields": [
+              "project_date_collected",
               "project_investigator_affiliation",
               "project_name"
             ]
@@ -499,6 +504,7 @@
         "fields": [
           "project_url",
           "project_code",
+          "project_date_collected",
           "project_investigator_affiliation",
           "project_name",
           "country_region",
@@ -611,6 +617,7 @@
           {
             "title": "Details",
             "fields": [
+              "project_date_collected",
               "project_investigator_affiliation",
               "project_name"
             ]
@@ -681,6 +688,7 @@
         "fields": [
           "project_url",
           "project_code",
+          "project_date_collected",
           "project_investigator_affiliation",
           "project_name",
           "country_region",
