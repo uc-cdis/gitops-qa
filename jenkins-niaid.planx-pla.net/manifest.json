@@ -302,7 +302,7 @@
         "type": "file"
       },
       {
-        "index": "jenkins_clinical_trials_alias",
+        "index": "jenkins_cmc_alias",
         "type": "clinical_trials"
       }
     ],
