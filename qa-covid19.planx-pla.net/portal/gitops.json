@@ -186,6 +186,10 @@
           {
             "field": "name",
             "name": "Dataset"
+          },
+          {
+            "field": "date_collected",
+            "name": "Data Collection Status"
           }
         ],
         "manifestMapping": {
@@ -357,6 +361,10 @@
           {
             "field": "age",
             "name": "Age (years)"
+          },
+          {
+            "field": "project_date_collected",
+            "name": "Data Collection Status"
           }
         ],
         "manifestMapping": {
@@ -374,7 +382,6 @@
           {
             "title": "Details",
             "fields": [
-              "project_date_collected",
               "project_investigator_affiliation",
               "project_name",
               "title",
@@ -433,6 +440,10 @@
           },
           {  "field": "nct_number",
              "name": "NCT Number"
+          },
+          {
+            "field": "project_date_collected",
+            "name": "Data Collection Status"
           }
         ],
         "manifestMapping": {
@@ -475,7 +486,6 @@
           {
             "title": "Details",
             "fields": [
-              "project_date_collected",
               "project_investigator_affiliation",
               "project_name"
             ]
@@ -521,7 +531,8 @@
           "data_type",
           "data_format",
           "file_size",
-          "object_id"
+          "object_id",
+          "project_date_collected"
         ],
         "linkFields": [
           "project_url"
@@ -584,6 +595,10 @@
           {
             "field": "collection_date",
             "name": "Collection Date (year-month-day)"
+          },
+          {
+            "field": "project_date_collected",
+            "name": "Data Collection Status"
           }
         ],
         "nodeCountTitle": "Files",
@@ -617,7 +632,6 @@
           {
             "title": "Details",
             "fields": [
-              "project_date_collected",
               "project_investigator_affiliation",
               "project_name"
             ]
@@ -954,6 +968,10 @@
           {
             "field": "jail",
             "name": "Incarcerated"
+          },
+          {
+            "field": "project_date_collected",
+            "name": "Data Collection Status"
           }
         ],
         "nodeCountTitle": "Locations",
