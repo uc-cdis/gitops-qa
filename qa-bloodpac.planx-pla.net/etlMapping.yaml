@@ -1,5 +1,5 @@
 mappings:
-  - name: bloodpac_study
+  - name: qa-bloodpac.planx-pla.net_study
     doc_type: study
     type: aggregator
     root: study
@@ -66,7 +66,7 @@ mappings:
         fn: count
     parent_props:
       - path: projects[project_code:code,project_name:name,project_investigator_affiliation:investigator_affiliation]
-  - name: bloodpac_case
+  - name: qa-bloodpac.planx-pla.net_case
     doc_type: case
     type: aggregator
     root: case
@@ -141,7 +141,7 @@ mappings:
           - name: data_type
             src: data_type
             fn: set
-  - name: bloodpac_biospecimen
+  - name: qa-bloodpac.planx-pla.net_biospecimen
     doc_type: biospecimen
     type: aggregator
     root: biospecimen
@@ -160,15 +160,13 @@ mappings:
       - name: shipping_temperature
       - name: tumor_code
       - name: tumor_morphology
-      - name: days_to_collection_not_reported
-      - name: days_to_procurement_not_reported
+      - name: days_to_collection_other
+      - name: days_to_procurement_other
       - name: biospecimen_volume
       - name: blood_draw_method
       - name: clinical_site
       - name: primary_site
       - name: tumor_descriptor
-      - name: days_to_collection
-      - name: days_to_procurement
       - name: procurement_temperature
       - name: metastatic_bone
       - name: metastatic_visceral
@@ -181,13 +179,11 @@ mappings:
           - name: hours_to_fractionation_lower
           - name: hours_to_fractionation_upper
           - name: blood_fractionation_method
-          - name: hours_to_fractionation_lower
-          - name: hours_to_fractionation_upper
           - name: sample_volume
           - name: storage_agitation
           - name: storage_agitation_hours
         sorted_by: updated_datetime, desc
-  - name: bloodpac_aliquot
+  - name: qa-bloodpac.planx-pla.net_aliquot
     doc_type: aliquot
     type: aggregator
     root: aliquot
@@ -196,8 +192,6 @@ mappings:
       - name: submitter_id
       - name: aliquot_container
       - name: clinical_or_contrived
-      - name: hours_to_freezer_lower
-      - name: hours_to_freezer_upper
       - name: preservation_method
       - name: storage_temperature
       - name: aliquot_volume
@@ -219,7 +213,7 @@ mappings:
           - name: run_identifier
           - name: days_to_assay
         sorted_by: updated_datetime, desc
-  - name: bloodpac_read_group
+  - name: qa-bloodpac.planx-pla.net_read_group
     doc_type: read_group
     type: aggregator
     root: read_group
@@ -246,7 +240,7 @@ mappings:
       - name: adapter_sequence
       - name: library_preparation_kit_catalog_number
       - name: cycles
-  - name: bloodpac_medical_history
+  - name: qa-bloodpac.planx-pla.net_medical_history
     doc_type: medical_history
     type: aggregator
     root: case
@@ -314,7 +308,7 @@ mappings:
           - name: dosage
           - name: dosage_units
         sorted_by: updated_datetime, desc
-  - name: bloodpac_file
+  - name: qa-bloodpac.planx-pla.net_file
     doc_type: file
     type: collector
     root: None
