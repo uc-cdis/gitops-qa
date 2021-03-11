@@ -17,6 +17,8 @@
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:integration202103",
     "metadata": "quay.io/cdis/metadata-service:integration202103",
     "spark": "quay.io/cdis/gen3-spark:integration202103",
+    "hatchery": "quay.io/cdis/hatchery:integration202103",
+    "ambassador": "quay.io/datawire/ambassador:1.4.2",
     "manifestservice": "quay.io/cdis/manifestservice:integration202103",
     "wts": "quay.io/cdis/workspace-token-service:integration202103",
     "tube": "quay.io/cdis/tube:integration202103",
