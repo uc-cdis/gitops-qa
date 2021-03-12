@@ -295,12 +295,12 @@
   "guppy": {
     "indices": [
       {
-        "index": "jenkins_subject_alias",
-        "type": "subject"
+        "index": "jenkins_oa_file",
+        "type": "oafile"
       },
       {
-        "index": "jenkins_file_alias",
-        "type": "file"
+        "index": "jenkins_ct_file",
+        "type": "ctfile"
       },
       {
         "index": "jenkins_cmc_alias",
