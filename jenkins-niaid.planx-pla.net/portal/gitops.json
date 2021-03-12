@@ -151,8 +151,6 @@
         { "field": "nct_number", "name": "NCT Number"},
         { "field": "publications", "name": "Study Publications"}
       ],
-      "fileDataType": "ctfile",
-      "docDataType": "oafile",
       "buttons": [
         {
           "type": "download"
