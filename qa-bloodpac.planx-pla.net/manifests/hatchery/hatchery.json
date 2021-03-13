@@ -75,7 +75,7 @@
       "name": "Jupyter Notebook Power Python",
       "image": "quay.io/occ_data/jupyternotebook:1.7.2",
       "env": {
-        "NAMESPACE": "default"
+        "NAMESPACE": "qa-bloodpac"
       },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
