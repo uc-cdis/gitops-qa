@@ -4,34 +4,87 @@
     "That's all I have to say"
   ],
   "versions": {
-    "arborist": "quay.io/cdis/arborist:2020.08",
+    "arborist": "quay.io/cdis/arborist:2021.03",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
-    "dashboard": "quay.io/cdis/gen3-statics:master",
-    "fence": "quay.io/cdis/fence:2020.08",
-    "indexd": "quay.io/cdis/indexd:2020.08",
-    "peregrine": "quay.io/cdis/peregrine:2020.08",
-    "pidgin": "quay.io/cdis/pidgin:2020.08",
-    "revproxy": "quay.io/cdis/nginx:2020.08",
-    "sheepdog": "quay.io/cdis/sheepdog:2020.08",
-    "portal": "quay.io/cdis/data-portal:2020.08",
+    "fence": "quay.io/cdis/fence:2021.03",
+    "indexd": "quay.io/cdis/indexd:2021.03",
+    "peregrine": "quay.io/cdis/peregrine:2021.03",
+    "sower": "quay.io/cdis/sower:2021.03",
+    "metadata": "quay.io/cdis/metadata-service:2021.03",
+    "pidgin": "quay.io/cdis/pidgin:2021.03",
+    "revproxy": "quay.io/cdis/nginx:2021.03",
+    "sheepdog": "quay.io/cdis/sheepdog:2021.03",
+    "portal": "quay.io/cdis/data-portal:2021.03",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "jupyterhub": "quay.io/occ_data/jupyterhub:2020.05",
-    "spark": "quay.io/cdis/gen3-spark:2020.08",
-    "tube": "quay.io/cdis/tube:2020.08",
-    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:2020.08",
-    "guppy": "quay.io/cdis/guppy:2020.08",
-    "hatchery": "quay.io/cdis/hatchery:2020.08",
+    "spark": "quay.io/cdis/gen3-spark:2021.03",
+    "tube": "quay.io/cdis/tube:2021.03",
+    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:2021.03",
+    "guppy": "quay.io/cdis/guppy:2021.03",
+    "hatchery": "quay.io/cdis/hatchery:2021.03",
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
-    "wts": "quay.io/cdis/workspace-token-service:2020.08",
-    "manifestservice": "quay.io/cdis/manifestservice:2020.08"
+    "wts": "quay.io/cdis/workspace-token-service:2021.03",
+    "manifestservice": "quay.io/cdis/manifestservice:2021.03",
+    "dashboard": "quay.io/cdis/gen3-statics:2021.03"
+  },
+  "indexd": {
+    "arborist": "true"
+  },
+  "ssjdispatcher": {
+    "job_images": {
+      "indexing": "quay.io/cdis/indexs3client:2021.03"
+    }
   },
   "arborist": {
     "deployment_version": "2"
   },
+  "sower": [
+    {
+      "name": "manifest-indexing",
+      "action": "index-object-manifest",
+      "activeDeadlineSeconds": 86400,
+      "serviceAccountName": "jobs-qa-bloodpac-planx-pla-net",
+      "container": {
+        "name": "job-task",
+        "image": "quay.io/cdis/manifest-indexing:2021.03",
+        "pull_policy": "Always",
+        "env": [
+          {
+            "name": "GEN3_HOSTNAME",
+            "valueFrom": {
+              "configMapKeyRef": {
+                "name": "manifest-global",
+                "key": "hostname"
+              }
+            }
+          }
+        ],
+        "volumeMounts": [
+          {
+            "name": "sower-jobs-creds-volume",
+            "readOnly": true,
+            "mountPath": "/creds.json",
+            "subPath": "creds.json"
+          }
+        ],
+        "cpu-limit": "1",
+        "memory-limit": "1Gi"
+      },
+      "volumes": [
+        {
+          "name": "sower-jobs-creds-volume",
+          "secret": {
+            "secretName": "sower-jobs-g3auto"
+          }
+        }
+      ],
+      "restart_policy": "Never"
+    }
+  ],
   "jupyterhub": {
     "enabled": "yes",
     "nb_storage_size": "250Gi",
-    "sidecar": "quay.io/cdis/gen3fuse-sidecar:2020.08",
+    "sidecar": "quay.io/cdis/gen3fuse-sidecar:2021.03",
     "containers": [
       {
         "name": "Bioinfo - Python/R",
@@ -95,54 +148,50 @@
   "guppy": {
     "indices": [
       {
-        "index": "bloodpac_study",
+        "index": "qa-bloodpac.planx-pla.net_study",
         "type": "study"
       },
       {
-        "index": "bloodpac_case",
+        "index": "qa-bloodpac.planx-pla.net_case",
         "type": "case"
       },
       {
-        "index": "bloodpac_medical_history",
+        "index": "qa-bloodpac.planx-pla.net_medical_history",
         "type": "medical_history"
       },
       {
-        "index": "bloodpac_biospecimen",
+        "index": "qa-bloodpac.planx-pla.net_biospecimen",
         "type": "biospecimen"
       },
       {
-        "index": "bloodpac_aliquot",
+        "index": "qa-bloodpac.planx-pla.net_aliquot",
         "type": "aliquot"
       },
       {
-        "index": "bloodpac_read_group",
+        "index": "qa-bloodpac.planx-pla.net_read_group",
         "type": "read_group"
       },
       {
-        "index": "bloodpac_file",
+        "index": "qa-bloodpac.planx-pla.net_file",
         "type": "file"
       }
     ],
-    "config_index": "bloodpac_array-config",
+    "config_index": "qa-bloodpac.planx-pla.net_array-config",
     "auth_filter_field": "auth_resource_path"
   },
   "global": {
     "environment": "qaplanetv1",
     "hostname": "qa-bloodpac.planx-pla.net",
     "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
-    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/bpadictionary/0.7.0/schema.json",
+    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/bpadictionary/0.8.3/schema.json",
     "portal_app": "gitops",
-    "kube_bucket": "kube-qaplanetv1-gen3",
-    "logs_bucket": "logs-qaplanetv1-gen3",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
     "dispatcher_job_num": "10",
     "sync_from_dbgap": "False",
-    "netpolicy": "on"
-  },
-  "ssjdispatcher": {
-    "job_images": {
-      "indexing": "quay.io/cdis/indexs3client:2020.07"
-    }
+    "public_datasets": true,
+    "netpolicy": "on",
+    "kube_bucket": "kube-qaplanetv1-gen3",
+    "logs_bucket": "logs-qaplanetv1-gen3"
   },
   "canary": {
     "default": 0
