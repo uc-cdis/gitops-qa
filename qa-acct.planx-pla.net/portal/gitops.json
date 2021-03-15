@@ -219,6 +219,7 @@
                             "clotting",
                             "bleeding",
                             "mace",
+                            "drug_treatmet",
                             "indication_for_noac_treatment",
                             "indication_for_warfarin_treatment",
                             "indication_for_clopidogrel_treatment",
