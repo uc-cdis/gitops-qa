@@ -22,12 +22,12 @@
           "label": "Learn more"
         },
         {
-          "name": "Explore Data",
-          "icon": "data-explore",
-          "body": "The Exploration Page gives you insights and a clear overview under selected factors.",
-          "link": "/explorer",
-          "label": "Explore data"
-        },
+          "name": "Discover Study Metadata",
+          "icon": "query",
+          "body": "Discover Study Metadata",
+          "link": "/discovery",
+          "label": "Discovery"
+        },    
         {
           "name": "Access Data",
           "icon": "data-access",
@@ -51,11 +51,6 @@
           "icon": "query",
           "link": "/discovery",
           "name": "Discovery"
-        },
-        {
-          "icon": "exploration",
-          "link": "/explorer",
-          "name": "Exploration"
         },
         {
           "icon": "dictionary",
@@ -117,194 +112,10 @@
   },
   "requiredCerts": [],
   "featureFlags": {
-    "explorer": true,
+    "explorer": false,
     "analysis": false,
     "discovery": true
   },
-  "explorerConfig": [
-    {
-      "tabTitle": "Studies - Open Access",
-      "charts": {
-        "project_id": {
-          "chartType": "count",
-          "title": "Projects"
-        },
-        "_clinical_trials_id": {
-          "chartType": "count",
-          "title": "Studies (clinical_trials)"
-        },
-        "category": {
-          "chartType": "pie",
-          "title": "Study Type (category)"
-        },
-        "data_available": {
-          "chartType": "bar",
-          "title": "Data Available"
-        },
-        "fileCounts": false
-      },
-      "filters": {
-        "tabs": [
-          {
-            "title": "Study",
-            "searchFields": [
-              "_clinical_trials_id"
-            ],
-            "fields": [
-              "study_design_masking",
-              "brief_summary",
-              "study_design_primary_purpose",
-              "category",
-              "data_available",
-              "data_availability_date",
-              "study_design_primary_purpose"
-            ]
-          },
-          {
-            "title": "Project",
-            "fields": [
-              "project_id"
-            ]
-          }
-        ]
-      },
-      "table": {
-        "enabled": true,
-        "fields": [
-          "project_id",
-          "category",
-          "data_available",
-          "study_design_primary_purpose",
-          "study_design_masking"
-        ]
-      },
-      "buttons": [],
-      "guppyConfig": {
-        "dataType": "clinical_trials",
-        "tierAccessLevel": "libre",
-        "nodeCountTitle": "Studies (clinical trials)",
-        "fileCountField": "file_count",
-        "fieldMapping": [
-          {
-            "field": "_subject_id",
-            "name": "Subject ID"
-          },
-          {
-            "field": "brief_summary",
-            "name": "Brief Summary"
-          },
-          {
-            "field": "data_available",
-            "name": "Data Available"
-          }
-        ],
-        "manifestMapping": {
-          "resourceIndexType": "file",
-          "resourceIdField": "object_id",
-          "referenceIdFieldInResourceIndex": "_clinical_trials_id",
-          "referenceIdFieldInDataIndex": "_clinical_trials_id"
-        },
-        "accessibleFieldCheckList": [
-          "project_id"
-        ],
-        "accessibleValidationField": "project_id"
-      }
-    },
-    {
-      "tabTitle": "Studies - Controlled Access",
-      "charts": {
-        "project_id": {
-          "chartType": "count",
-          "title": "Projects"
-        },
-        "_clinical_trials_id": {
-          "chartType": "count",
-          "title": "Studies (clinical_trials)"
-        },
-        "category": {
-          "chartType": "pie",
-          "title": "Study Type (category)"
-        },
-        "data_available": {
-          "chartType": "bar",
-          "title": "Data Available"
-        },
-        "fileCounts": false
-      },
-      "filters": {
-        "tabs": [
-          {
-            "title": "Study",
-            "searchFields": [
-              "_clinical_trials_id",
-              "controlled_access_property_1"
-            ],
-            "fields": [
-              "controlled_access_property_2",
-              "controlled_access_property_3",
-              "study_design_masking",
-              "brief_summary",
-              "study_design_primary_purpose",
-              "category",
-              "data_available",
-              "data_availability_date",
-              "study_design_primary_purpose"
-            ]
-          },
-          {
-            "title": "Project",
-            "fields": [
-              "project_id"
-            ]
-          }
-        ]
-      },
-      "table": {
-        "enabled": true,
-        "fields": [
-          "project_id",
-          "controlled_access_property_1",
-          "controlled_access_property_2",
-          "controlled_access_property_3",
-          "category",
-          "data_available",
-          "study_design_primary_purpose",
-          "study_design_masking"
-        ]
-      },
-      "buttons": [],
-      "guppyConfig": {
-        "dataType": "clinical_trials_controlled_access",
-        "tierAccessLevel": "private",
-        "nodeCountTitle": "Studies (clinical trials)",
-        "fileCountField": "file_count",
-        "fieldMapping": [
-          {
-            "field": "_subject_id",
-            "name": "Subject ID"
-          },
-          {
-            "field": "brief_summary",
-            "name": "Brief Summary"
-          },
-          {
-            "field": "data_available",
-            "name": "Data Available"
-          }
-        ],
-        "manifestMapping": {
-          "resourceIndexType": "file",
-          "resourceIdField": "object_id",
-          "referenceIdFieldInResourceIndex": "_clinical_trials_controlled_access_id",
-          "referenceIdFieldInDataIndex": "_clinical_trials_controlled_access_id"
-        },
-        "accessibleFieldCheckList": [
-          "project_id"
-        ],
-        "accessibleValidationField": "project_id"
-      }
-    }
-  ],
   "discoveryConfig": {
     "features": {
       "pageTitle": {
