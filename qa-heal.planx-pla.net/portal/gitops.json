@@ -23,7 +23,7 @@
         },
         {
           "name": "Discover Study Metadata",
-          "icon": "query",
+          "icon": "data-explore",
           "body": "Discover Study Metadata",
           "link": "/discovery",
           "label": "Discovery"
