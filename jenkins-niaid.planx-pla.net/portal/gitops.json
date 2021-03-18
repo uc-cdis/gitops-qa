@@ -2,31 +2,8 @@
   "gaTrackingId": "UA-119127212-3",
   "graphql": {
     "boardCounts": [
-      {
-        "graphql": "_subject_count",
-        "name": "Subject",
-        "plural": "Subjects"
-      },
-      {
-        "graphql": "_study_count",
-        "name": "Study",
-        "plural": "Studies"
-      },
-      {
-        "graphql": "_summary_lab_result_count",
-        "name": "Lab record",
-        "plural": "Lab records"
-      }
     ],
     "chartCounts": [
-      {
-        "graphql": "_subject_count",
-        "name": "Subject"
-      },
-      {
-        "graphql": "_study_count",
-        "name": "Study"
-      }
     ],
     "projectDetails": "boardCounts"
   },
