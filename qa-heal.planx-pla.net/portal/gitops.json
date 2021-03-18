@@ -15,25 +15,11 @@
       },
       "buttons": [
         {
-          "name": "Define Data Field",
-          "icon": "data-field-define",
-          "body": "The HEAL QA Data Commons define the data in a general way. Please study the dictionary before you start browsing.",
-          "link": "/DD",
-          "label": "Learn more"
-        },
-        {
           "name": "Discover Study Metadata",
           "icon": "data-explore",
           "body": "Discover Study Metadata",
           "link": "/discovery",
-          "label": "Discovery"
-        },    
-        {
-          "name": "Access Data",
-          "icon": "data-access",
-          "body": "Use our selected tool to filter out the data you need.",
-          "link": "/query",
-          "label": "Query data"
+          "label": "Discover Metadata"
         },
         {
           "name": "Submit Data",
@@ -51,16 +37,6 @@
           "icon": "query",
           "link": "/discovery",
           "name": "Discovery"
-        },
-        {
-          "icon": "dictionary",
-          "link": "/DD",
-          "name": "Dictionary"
-        },
-        {
-          "icon": "analysis",
-          "link": "/query",
-          "name": "Query"
         },
         {
           "icon": "workspace",
@@ -96,7 +72,7 @@
       "image": "/../../../../custom/sponsors/gitops-sponsors/gene_heal"
     },
     "categorical9Colors": ["#99286B", "#402264", "#A1242E", "#CF3626", "#C2BACD", "#E0C4D2", "#E4BEB8", "#F5D1D0", "#F2F2F2"],
-    "categorical2Colors": ["#99286B", "#402264"],    
+    "categorical2Colors": ["#99286B", "#402264"],
     "footerLogos": [
       {
         "src": "/src/img/gen3.png",
@@ -302,7 +278,7 @@
       }
     ]
   },
-  "useArboristUI": false,
+  "useArboristUI": true,
   "showArboristAuthzOnProfile": true,
   "showFenceAuthzOnProfile": false,
   "componentToResourceMapping": {}
