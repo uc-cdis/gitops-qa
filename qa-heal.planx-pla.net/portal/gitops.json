@@ -19,7 +19,7 @@
           "icon": "data-explore",
           "body": "Discover Study Metadata",
           "link": "/discovery",
-          "label": "Discovery"
+          "label": "Discover Metadata"
         },
         {
           "name": "Submit Data",
