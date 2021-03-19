@@ -172,7 +172,15 @@
           "url"
         ]
       },
-      "buttons": [],
+      "buttons": [ {
+        "enabled": true, 
+        "type": "data", 
+        "title": "Download All Clinical", 
+        "leftIcon": "user", 
+        "rightIcon": "download", 
+        "fileName": "clinical.json",
+        "dropdownId": "download"
+      }],
       "guppyConfig": {
         "dataType": "not a datatype",
         "nodeCountTitle": "Datasets",
@@ -416,7 +424,15 @@
           "project_url"
         ]
       },
-      "buttons": [],
+      "buttons": [ {
+        "enabled": true, 
+        "type": "data", 
+        "title": "Download All Clinical", 
+        "leftIcon": "user", 
+        "rightIcon": "download", 
+        "fileName": "clinical.json",
+        "dropdownId": "download"
+      }],
       "guppyConfig": {
         "dataType": "clinical_trials",
         "nodeCountTitle": "Interventions",
