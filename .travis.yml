@@ -21,7 +21,7 @@ script:
     echo "Updated: ${envs[@]}"
 
     for dir in "${envs[@]}"; do
-      man=$dir/manifest.json; etl=$dir/etlMapping.yaml
+      man=$dir/manifest.json; etl=$dir/etlMapping.yaml ptlcfg=$dir/portal/gitops
 
       # validate manifest.json
       if [ -f $man ]; then
@@ -33,6 +33,16 @@ script:
       if [ -f $man ] && [ -f $etl ]; then
         gen3utils validate-etl-mapping $etl $man || exit 1
       fi
+
+      # validate portal configuration
+      if [ -f $man ] && [ -f $etl ] && [-f $ptlcfg ]; then
+        if [[ $TRAVIS_PULL_REQUEST != false ]]; then
+          gen3utils validate-portal-config $etl $man $ptlcfg uc-cdis/gitops-qa $TRAVIS_PULL_REQUEST
+        else
+          gen3utils validate-portal-config $etl $man $ptlcfg
+        fi
+      fi
+
     done
 
   # comment on PRs with relevant deployment changes:
