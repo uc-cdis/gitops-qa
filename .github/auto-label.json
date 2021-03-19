@@ -1,7 +1,0 @@
-{
-  "rules": {
-    "test-portal-homepageTest": ["qa-heal.planx-pla.net/"],
-    "test-apis-etlTest": ["qa-heal.planx-pla.net/"],
-    "test-sheepdogAndPeregrine-submitAndQueryNodesTest": ["qa-heal.planx-pla.net/"]
-  }
-}
