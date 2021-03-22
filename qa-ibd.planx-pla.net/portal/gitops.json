@@ -424,7 +424,6 @@
       "dropdowns": {}
     }
   ],
-
   "resourceBrowser": {
     "title": "NIDDK IBDGC Notebooks",
     "public": true,
@@ -434,5 +433,7 @@
         "title": "NIDDK IBDGC Notebooks coming soon"
       }
     ]
-  }
+  },
+  "showArboristAuthzOnProfile": true,
+  "showFenceAuthzOnProfile": false,
 }
