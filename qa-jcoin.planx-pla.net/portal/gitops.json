@@ -329,5 +329,5 @@
     }
   ],
   "showArboristAuthzOnProfile": true,
-  "showFenceAuthzOnProfile": false,
+  "showFenceAuthzOnProfile": false
 }
