@@ -327,5 +327,7 @@
       },
       "dropdowns": {}
     }
-  ]
+  ],
+  "showArboristAuthzOnProfile": true,
+  "showFenceAuthzOnProfile": false,
 }
