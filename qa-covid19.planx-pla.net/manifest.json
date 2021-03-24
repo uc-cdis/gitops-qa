@@ -6,6 +6,7 @@
   "versions": {
     "arborist": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/arborist:2021.03",
     "augur": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-augur:fix_docker2",
+    "awshelper": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/awshelper:2021.03",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
     "covid19-etl": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/covid19-etl:4.6.5",
     "nb-etl": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/covid19-nb-etl:4.6.7",
