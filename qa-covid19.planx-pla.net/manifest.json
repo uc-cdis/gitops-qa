@@ -171,8 +171,7 @@
     ],
     "config_index": "qa-covid19_array-config",
     "auth_filter_field": "auth_resource_path",
-    "aggs_include_missing_data": false,
-    "filter_field_hide_empty": true
+    "aggs_include_missing_data": false
   },
   "mariner": {
     "storage": {
