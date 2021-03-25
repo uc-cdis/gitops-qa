@@ -4,7 +4,7 @@ before_script:
   - pip install git+https://github.com/uc-cdis/gen3utils.git@chore/add_gitops_validation
 
 script:
-  # validate manifest.json and etlMapping.yaml:
+  # validate manifest.json and etlMapping.yaml and gitops.json:
   - |
     # for push builds, TRAVIS_BRANCH is the current branch name; for PR
     # builds, it's the name of the branch targeted by the PR.
@@ -21,7 +21,7 @@ script:
     echo "Updated: ${envs[@]}"
 
     for dir in "${envs[@]}"; do
-      man=$dir/manifest.json; etl=$dir/etlMapping.yaml ptlcfg=$dir/portal/gitops
+      man=$dir/manifest.json; etl=$dir/etlMapping.yaml; ptlcfg=$dir/portal/gitops
 
       # validate manifest.json
       if [ -f $man ]; then
@@ -36,7 +36,9 @@ script:
 
       # validate portal configuration
       if [ -f $man ] && [ -f $etl ] && [-f $ptlcfg ]; then
-        if [[ $TRAVIS_PULL_REQUEST != false ]]; then
+        echo " Running Portal Validation"
+        if [[ $TRAVIS_PULL_REQUEST != false ]]; 
+          excho " Running portal PR commment"
           gen3utils validate-portal-config $etl $man $ptlcfg uc-cdis/gitops-qa $TRAVIS_PULL_REQUEST
         else
           gen3utils validate-portal-config $etl $man $ptlcfg
