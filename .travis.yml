@@ -1,7 +1,7 @@
 language: python
 
 before_script:
-  - pip install git+https://github.com/uc-cdis/gen3utils.git@chore/add_gitops_validation
+  - pip install git+https://github.com/uc-cdis/gen3utils.git@master
 
 script:
   # validate manifest.json and etlMapping.yaml and gitops.json:
@@ -34,14 +34,14 @@ script:
         gen3utils validate-etl-mapping $etl $man || exit 1
       fi
 
-      validate portal configuration
-      if [ -f $man ] && [ -f $etl ] && [ -f $ptlcfg ]; then
-        if [[ $TRAVIS_PULL_REQUEST != false ]]; then
-          gen3utils validate-portal-config $etl $man $ptlcfg uc-cdis/gitops-qa $TRAVIS_PULL_REQUEST || exit 1
-        else
-          gen3utils validate-portal-config $etl $man $ptlcfg || exit 1
-        fi
-      fi
+      # validate portal configuration
+      # if [ -f $man ] && [ -f $etl ] && [ -f $ptlcfg ]; then
+      #   if [[ $TRAVIS_PULL_REQUEST != false ]]; then
+      #     gen3utils validate-portal-config $etl $man $ptlcfg uc-cdis/gitops-qa $TRAVIS_PULL_REQUEST || exit 1
+      #   else
+      #     gen3utils validate-portal-config $etl $man $ptlcfg || exit 1
+      #   fi
+      # fi
 
     done
 
