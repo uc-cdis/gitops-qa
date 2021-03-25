@@ -9,6 +9,7 @@
     "awshelper": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/awshelper:2021.03",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
     "covid19-etl": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/covid19-etl:4.6.8",
+    "covid19-notebook-etl": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/covid19-notebook-etl:4.7.0",
     "nb-etl": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/covid19-nb-etl:4.6.7",
     "fence": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/fence:2021.03",
     "indexd": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexd:2021.03",
