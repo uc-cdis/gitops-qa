@@ -151,7 +151,7 @@
             "fields": [
               "date_collected",
               "investigator_affiliation",
-              "data_description",
+              "data_description"
             ]
           }
         ]
