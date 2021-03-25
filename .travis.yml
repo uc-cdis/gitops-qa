@@ -38,7 +38,7 @@ script:
       if [ -f $man ] && [ -f $etl ] && [-f $ptlcfg ]; then
         echo " Running Portal Validation"
         if [[ $TRAVIS_PULL_REQUEST != false ]]; 
-          excho " Running portal PR commment"
+          echo " Running portal PR commment"
           gen3utils validate-portal-config $etl $man $ptlcfg uc-cdis/gitops-qa $TRAVIS_PULL_REQUEST
         else
           gen3utils validate-portal-config $etl $man $ptlcfg
