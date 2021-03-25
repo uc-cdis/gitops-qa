@@ -3,7 +3,7 @@
   "graphql": {
     "boardCounts": [
       {
-        "graphql": "_notanode_count",
+        "graphql": "_summary_location_count",
         "name": "Location",
         "plural": "Locations"
       },
@@ -152,8 +152,6 @@
               "date_collected",
               "investigator_affiliation",
               "data_description",
-              "not a field 1",
-              "not a field 2"
             ]
           }
         ]
@@ -182,7 +180,7 @@
         "dropdownId": "download"
       }],
       "guppyConfig": {
-        "dataType": "not a datatype",
+        "dataType": "dataset",
         "nodeCountTitle": "Datasets",
         "fieldMapping": [
           {
