@@ -32,6 +32,9 @@
     "metadata": "quay.io/cdis/metadata-service:master",
     "requestor": "quay.io/cdis/requestor:master"
   },
+  "portal": {
+    "GEN3_BUNDLE": "nct"
+  },
   "arborist": {
     "deployment_version": "2"
   },
@@ -270,11 +273,12 @@
     "environment": "qaplanetv1",
     "hostname": "jenkins-niaid.planx-pla.net",
     "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
-    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/ndhdictionary/master/schema.json",
+    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/niaid-clinical-trials-dictionary/master/schema.json",
     "portal_app": "gitops",
     "kube_bucket": "kube-qaplanetv1-gen3",
     "logs_bucket": "logs-qaplanetv1-gen3",
     "sync_from_dbgap": "True",
+    "tier_access_level": "libre",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
     "dispatcher_job_num": "5",
     "netpolicy": "on"
@@ -296,6 +300,10 @@
       {
         "index": "jenkins_file_alias",
         "type": "file"
+      },
+      {
+        "index": "jenkins_cmc_alias",
+        "type": "clinical_trials"
       }
     ],
     "config_index": "jenkins_configs_alias",
