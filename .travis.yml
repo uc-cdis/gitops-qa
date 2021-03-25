@@ -35,13 +35,13 @@ script:
       fi
 
       # validate portal configuration
-      if [ -f $man ] && [ -f $etl ] && [-f $ptlcfg ]; then
+      if [ -f $man ] && [ -f $etl ] && [ -f $ptlcfg ]; then
         echo " Running Portal Validation"
-        if [[ $TRAVIS_PULL_REQUEST != false ]]; 
+        if [[ $TRAVIS_PULL_REQUEST != false ]]; then
           echo " Running portal PR commment"
-          gen3utils validate-portal-config $etl $man $ptlcfg uc-cdis/gitops-qa $TRAVIS_PULL_REQUEST
+          gen3utils validate-portal-config $etl $man $ptlcfg uc-cdis/gitops-qa $TRAVIS_PULL_REQUEST || exit 1
         else
-          gen3utils validate-portal-config $etl $man $ptlcfg
+          gen3utils validate-portal-config $etl $man $ptlcfg || exit 1
         fi
       fi
 
