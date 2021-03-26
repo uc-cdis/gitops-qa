@@ -237,7 +237,7 @@
             "geriatric_depression_scales",
             "montreal_cognitive_functional_tests",
             "mini_mental_status_exams",
-            "rem_sleep_behaviors",
+            "not a field",
             "epworth_sleepiness_scales"
           ]
         }
