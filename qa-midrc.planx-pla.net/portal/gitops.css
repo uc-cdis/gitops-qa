@@ -138,10 +138,6 @@ tspan.special-number,
 
 /* MIDRC Index Changes */
 
-.introduction__icon {
-  display: none;
-}
-
 .index-button-bar {
   width: 100%;
   background-color: var(--g3-color__white);
