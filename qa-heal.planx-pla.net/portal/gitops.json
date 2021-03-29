@@ -245,6 +245,18 @@
               "field": "dataset_category"
             }
           ]
+        },       
+        {
+          "fields": [
+            {
+              "name": "Summary",
+              "field": "summary",
+              "contentType": "paragraphs",
+              "includeName": true,
+              "includeIfNotAvailable": true,
+              "valueIfNotAvailable": "No summary has been provided for this study."
+            }
+          ]
         },
         {
           "groupName": "Datasets",
@@ -297,18 +309,6 @@
             {
               "name": "Dataset 4 - Type",
               "field": "dataset_4_type"
-            }
-          ]
-        },       
-        {
-          "fields": [
-            {
-              "name": "Summary",
-              "field": "summary",
-              "contentType": "paragraphs",
-              "includeName": true,
-              "includeIfNotAvailable": true,
-              "valueIfNotAvailable": "No summary has been provided for this study."
             }
           ]
         }
