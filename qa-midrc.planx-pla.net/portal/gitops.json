@@ -1,5 +1,5 @@
 {
-    "gaTrackingId": "UA-119127212-1",
+    "gaTrackingId": "UA-119127212-3",
     "graphql": {
       "boardCounts": [
         {
@@ -29,6 +29,7 @@
     "useArboristUI": true,
     "showArboristAuthzOnProfile": true,
     "showFenceAuthzOnProfile": true,
+    "hideSubmissionIfIneligible": true,
     "componentToResourceMapping": {
       "Workspace": {
         "resource": "/workspace",
@@ -142,6 +143,11 @@
           {
             "link": "https://www.midrc.org/",
             "name": "About"
+          },
+          {
+            "icon": "upload",
+            "link": "/submission",
+            "name": "Submit Data"
           },
           {
             "link": "https://gen3.org/resources/user/",
