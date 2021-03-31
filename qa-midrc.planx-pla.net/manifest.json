@@ -13,7 +13,7 @@
     "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:2020.09",
     "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:4.1.2",
     "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:2020.09",
-    "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:2.41.0",
+    "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:2.49.2",
     "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:2020.09",
     "guppy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/guppy:2020.09",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
@@ -80,7 +80,6 @@
   "global": {
     "environment": "qa-midrc",
     "hostname": "qa-midrc.planx-pla.net",
-    "environment": "qa-covid19",
     "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
     "portal_app": "gitops",
     "kube_bucket": "kube-qaplanetv2-gen3",
@@ -92,7 +91,6 @@
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
     "dispatcher_job_num": "10",
     "dictionary_url": "http://s3.amazonaws.com/dictionary-artifacts/midrc_dictionary/0.3.6/schema.json",
-    "portal_app": "gitops",
     "sync_from_dbgap": "False"
   },
   "canary": {

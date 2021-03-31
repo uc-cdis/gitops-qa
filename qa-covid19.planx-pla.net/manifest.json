@@ -199,7 +199,7 @@
         "labels": {
           "app": "mariner-task"
         },
-        "restart_policy": "never"
+        "restart_policy": "on_failure"
       }
     },
     "containers": {
