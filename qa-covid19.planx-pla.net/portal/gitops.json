@@ -1153,6 +1153,78 @@
               }
             }
 
+          },
+          {
+            "title": "Age Demographics in Illinois",
+            "description": "@fan",
+            "type": "image",
+            "path": "charts_data/IL_tab_charts_age_demographic.png"
+          },
+          {
+            "title": "Race Demographics in Illinois",
+            "description": "@fan",
+            "type": "image",
+            "path": "charts_data/IL_tab_charts_race_demographic.png"
+          },
+          {
+            "title": "Gender Demographics in Illinois",
+            "description": "@fan",
+            "type": "image",
+            "path": "charts_data/IL_tab_charts_gender_demographic.png"
+          },
+          {
+            "title": "Daily Reported Administered Vaccine Doses in Illinois",
+            "description": "@fan",
+            "type": "image",
+            "path": "charts_data/IL_tab_charts_daily_vaccine.png"
+          },
+          {
+            "title": "Cumulative Reported Administered Vaccine Doses in Illinois ",
+            "description": "@fan",
+            "type": "image",
+            "path": "charts_data/IL_tab_charts_cumulative_vaccine.png"
+          },
+          {
+            "title": "Reported Administered Vaccine Doses by County for Most Recent Date",
+            "description": "@fan",
+            "type": "image",
+            "path": "charts_data/IL_tab_charts_vaccine_by_county.png"
+          },
+          {
+            "title": "Using 4-Phase Sine-Logistic Model and Data from Past 180 Days to Obtain Cumulative Cases Forecasts for Future 10 Days",
+            "description": "@fan",
+            "type": "image",
+            "path": "charts_data/IL_tab_charts_cumulative_sine_logistic_last180days.png"
+          },
+          {
+            "title": "Using 4-Phase Sine-Logistic Model and Data Since 01/22/2020 to Obtain Cumulative Cases Forecasts for Future 30 Days",
+            "description": "@fan",
+            "type": "image",
+            "path": "charts_data/IL_tab_charts_cumulative_sine_logistic_all_data.png"
+          },
+          {
+            "title": "Using 4-Phase Sine-Logistic Model and Data Since 01/23/2020 to Obtain Daily New Cases Forecasts for Future 30 Days",
+            "description": "@fan",
+            "type": "image",
+            "path": "charts_data/IL_tab_charts_daily_sine_logistic.png"
+          },
+          {
+            "title": "Using 4-phase Logistic Model and Data from Past 180 Days to Obtain Cumulative Cases Forecasts for Future 10 Days",
+            "description": "@fan",
+            "type": "image",
+            "path": "charts_data/IL_tab_charts_cumulative_logistic_last180days.png"
+          },
+          {
+            "title": "Using 4-phase Logistic Model and Data Since 01/22/2020 to Obtain Cumulative Cases Forecasts for Future 30 Days",
+            "description": "@fan",
+            "type": "image",
+            "path": "charts_data/IL_tab_charts_cumulative_logistic_all_data.png"
+          },
+          {
+            "title": "Using 4-Phase Logistic Model and Data Since 01/23/2020 to Obtain Daily New Cases Forecasts for Future 30 Days",
+            "description": "@fan",
+            "type": "image",
+            "path": "charts_data/IL_tab_charts_daily_logistic.png"
           }
         ],
         [
