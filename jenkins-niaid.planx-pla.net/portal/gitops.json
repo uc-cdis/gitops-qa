@@ -141,6 +141,7 @@
       ]
     }
   ],
+  "useArboristUI": true,
   "arrangerConfig": {
     "charts": {
       "project_id": {
