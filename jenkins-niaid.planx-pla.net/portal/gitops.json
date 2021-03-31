@@ -129,7 +129,7 @@
         { "field": "publications", "name": "Study Publications"}
       ],
       "openMode": "close-all",
-      "buttons":[
+      "buttons": [
         {
           "type": "download"
         },
