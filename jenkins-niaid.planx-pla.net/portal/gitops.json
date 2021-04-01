@@ -128,6 +128,7 @@
         { "field": "nct_number", "name": "NCT Number"},
         { "field": "publications", "name": "Study Publications"}
       ],
+      "openMode": "close-all",
       "buttons": [
         {
           "type": "download"
