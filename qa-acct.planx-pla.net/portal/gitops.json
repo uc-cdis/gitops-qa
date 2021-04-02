@@ -260,15 +260,15 @@
             "buttons": [
                 {
                   "enabled": true,
-                  "type": "data",
-                  "title": "Download Data",
+                  "type": "data-tsv",
+                  "title": "Download Table",
                   "leftIcon": "user",
                   "rightIcon": "download",
                   "fileName": "data.json"
                 },
                 {
                   "enabled": true,
-                  "type": "manifest",
+                  "type": "file-manifest",
                   "title": "Download Manifest",
                   "leftIcon": "datafile",
                   "rightIcon": "download",
@@ -374,6 +374,14 @@
                 "downloadAccessor": "object_id"
             },
             "buttons": [
+                {
+                    "enabled": true,
+                    "type": "data-tsv",
+                    "title": "Download Table",
+                    "leftIcon": "user",
+                    "rightIcon": "download",
+                    "fileName": "data.json"
+                },
                 {
                     "enabled": true,
                     "type": "file-manifest",
