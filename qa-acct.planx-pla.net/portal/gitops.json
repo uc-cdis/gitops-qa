@@ -264,7 +264,7 @@
                   "title": "Download Table",
                   "leftIcon": "user",
                   "rightIcon": "download",
-                  "fileName": "data.json"
+                  "fileName": "data.tsv"
                 },
                 {
                   "enabled": true,
@@ -380,7 +380,7 @@
                     "title": "Download Table",
                     "leftIcon": "user",
                     "rightIcon": "download",
-                    "fileName": "data.json"
+                    "fileName": "data.tsv"
                 },
                 {
                     "enabled": true,
