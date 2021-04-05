@@ -1,5 +1,5 @@
 {
   "rules": {
-    "jenkins-niaid": ["qa-niaid.planx-pla.net/"]"
+    "jenkins-niaid": ["qa-niaid.planx-pla.net/"]
   }
 }
