@@ -239,7 +239,7 @@
                 "enabled": true,
                 "fields": [
                     "project_id",
-                    "submitter_id",
+                    "_submitter_id",
                     "race",
                     "alcohol_intensity",
                     "pack_years_smoked",
