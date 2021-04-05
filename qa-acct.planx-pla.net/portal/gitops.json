@@ -267,14 +267,6 @@
                   "rightIcon": "download",
                   "fileName": "data.tsv"
                 },
-#                {
-#                  "enabled": true,
-#                  "type": "file-manifest",
-#                  "title": "Download Manifest",
-#                  "leftIcon": "datafile",
-#                  "rightIcon": "download",
-#                  "fileName": "manifest.json"
-#                },
                 {
                   "enabled": true,
                   "type": "export-files-to-workspace",
