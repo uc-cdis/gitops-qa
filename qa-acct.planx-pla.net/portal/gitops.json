@@ -239,6 +239,7 @@
                 "enabled": true,
                 "fields": [
                     "project_id",
+                    "submitter_id",
                     "race",
                     "alcohol_intensity",
                     "pack_years_smoked",
@@ -265,14 +266,6 @@
                   "leftIcon": "user",
                   "rightIcon": "download",
                   "fileName": "data.tsv"
-                },
-                {
-                  "enabled": true,
-                  "type": "file-manifest",
-                  "title": "Download Manifest",
-                  "leftIcon": "datafile",
-                  "rightIcon": "download",
-                  "fileName": "manifest.json"
                 },
                 {
                   "enabled": true,
