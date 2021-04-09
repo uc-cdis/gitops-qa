@@ -1058,7 +1058,7 @@
       }, 
       {
         "title": "COVID-19 Data Visualization in Illinois",
-        "description": "We provides a snapshot of publicly available data related to COVID-19 in Illinois. Graphics illustrate the demographics, administered vaccine doses, google mobility data and forecasted COVID-19 cases in Illinois.",
+        "description": "This notebook provides a snapshot of publicly available data related to COVID-19 in Illinois. Graphics illustrate the demographics, administered vaccine doses, google mobility data and forecasted COVID-19 cases in Illinois.",
         "link": "/dashboard/Public/notebooks/IL_tab_charts_0402.html",
         "imageUrl": "/dashboard/Public/notebooks/IL_tab_charts_0402.png"
       }
