@@ -1055,6 +1055,12 @@
         "description": "In this notebook, we demonstrate how to query the google mobility data using the BigQuery API client python library, and visualize the mobility changes over time across the United States since February 2020.",
         "link": "/dashboard/Public/notebooks/google_mobility.html",
         "imageUrl": "/dashboard/Public/notebooks/google_mobility.png"
+      }, 
+      {
+        "title": "COVID-19 Data Visualization in Illinois",
+        "description": "This notebook provides a snapshot of publicly available data related to COVID-19 in Illinois. Graphics illustrate the demographics, administered vaccine doses, google mobility data and forecasted COVID-19 cases in Illinois.",
+        "link": "/dashboard/Public/notebooks/IL_tab_charts.html",
+        "imageUrl": "/dashboard/Public/notebooks/IL_tab_charts.png"
       }
     ]
   },
