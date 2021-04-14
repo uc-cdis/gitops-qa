@@ -113,6 +113,7 @@ mappings:
         fn: set
     parent_props:
       - path: studies[studies_submitter_id:submitter_id]
+      - path: programs[programs_name:name]
     joining_props:
       - index: file
         join_on: _subject_id
