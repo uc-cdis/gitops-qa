@@ -1046,7 +1046,7 @@
       },
       {
         "title": "COVID-19 X-ray images classification",
-        "description": "This notebook replicates DarkCovidNet model and performes transfer learning with GoogLeNet model to classify radiological images as indicative of either 'COVID-19', 'Normal' and 'Pneumonia' to assist in the diagnosis of COVID-19.",
+        "description": "This notebook replicates the DarkCovidNet model and performes transfer learning with the GoogLeNet model to classify radiological images as indicative of either 'COVID-19', 'Normal' and 'Pneumonia' to assist in the diagnosis of COVID-19.",
         "link": "/dashboard/Public/notebooks/CNN_XRAY_CF.html",
         "imageUrl": "/dashboard/Public/notebooks/CNN_XRAY_CF.png"
       },
