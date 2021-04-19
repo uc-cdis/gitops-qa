@@ -188,7 +188,6 @@
           "title": "Project",
           "fields": [
             "project_id",
-            "programs_name",
             "consent_codes",
             "studies_submitter_id",
             "geographic_site",
@@ -468,10 +467,6 @@
         {
           "field": "studies_submitter_id",
           "name": "Study"
-        },
-        {
-          "field": "programs_name",
-          "name": "Program"
         }
       ],
       "manifestMapping": {
