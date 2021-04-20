@@ -4,8 +4,8 @@
     "That's all I have to say"
   ],
   "versions": {
-    "dashboard": "quay.io/cdis/gen3-statics:2020.08",
-    "fence": "quay.io/cdis/fence:2020.07",
+    "dashboard": "quay.io/cdis/gen3-statics:master",
+    "fence": "quay.io/cdis/fence:master",
     "revproxy": "quay.io/cdis/nginx:1.17.6-ctds-1.0.1"
   },
   "global": {
