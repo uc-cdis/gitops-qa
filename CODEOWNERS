@@ -4,8 +4,8 @@ qa-canine.planx-pla.net/manifest.json @trevars @themarcelor @haraprasadj @atharv
 qa.planx-pla.net/manifest.json @themarcelor
 qaplanetv2.planx-pla.net
 
-qa-mickey.planx-pla.net/manifest.json @haraprasadj @jingh8
-qa-brain.planx-pla.net/manifest.json @haraprasadj @jingh8
+qa-mickey.planx-pla.net/manifest.json @jingh8
+qa-brain.planx-pla.net/manifest.json @jingh8
 
 qa-anvil.planx-pla.net/manifest.json @themarcelor
 qa-dcf.planx-pla.net/manifest.json @themarcelor
@@ -22,7 +22,8 @@ qa-microbiome.planx-pla.net/manifest.json @atharvar28
 qa-nde.planx-pla.net/manifest.json @atharvar28
 qa-niaid.planx-pla.net/manifest.json @atharvar28
 qa-tb.planx-pla.net/manifest.json @atharvar28
-qa-heal.planx-pla.net/ @atharvar28
+
+qa-heal.planx-pla.net/ @haraprasadj
 
 jenkins-blood.planx-pla.net/manifest.json @themarcelor @haraprasadj @atharvar28 @jingh8
 jenkins-brain.planx-pla.net/manifest.json @themarcelor @haraprasadj @atharvar28 @jingh8
