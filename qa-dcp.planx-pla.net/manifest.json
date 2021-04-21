@@ -26,7 +26,7 @@
     "wts": "quay.io/cdis/workspace-token-service:integration202105",
     "manifestservice": "quay.io/cdis/manifestservice:integration202105",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:integration202105",
-    "metadata": "quay.io/cdis/metadata-service:integration202105",
+    "metadata": "quay.io/cdis/metadata-service:integration202105"
   },
   "google": {
     "enabled": "yes"
