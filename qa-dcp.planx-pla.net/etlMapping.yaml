@@ -137,6 +137,7 @@ mappings:
       - name: md5sum
       - name: file_name
       - name: file_size
+      - name: data_category
       - name: data_format
       - name: data_type
       - name: state
@@ -151,5 +152,3 @@ mappings:
             src: id
             fn: set
           - name: project_id
-
-
