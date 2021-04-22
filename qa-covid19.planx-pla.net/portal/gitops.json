@@ -1262,9 +1262,9 @@
           },
           {
             "title": "Average Rt Over Latest 7 Days Of Observations",
-            "description": "Latest Rt estimates for the IL counties most impacted by COVID-19.",
+            "description": "Latest Rt estimates for 20 of the IL counties most impacted by COVID-19.",
             "type": "image",
-            "path": "bayes-by-county/Rt_All.png"
+            "path": "bayes-by-county/Rt_Top20.svg"
           }
         ]
       ],
