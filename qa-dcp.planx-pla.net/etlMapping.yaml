@@ -112,7 +112,7 @@ mappings:
         src: ever_smoker_baseline
         fn: set
     parent_props:
-      - path: studies[studies_submitter_id:submitter_id]
+      - path: studies[studies_submitter_id:submitter_id].projects[projects_submitter_id:code].programs[programs_name:name]
     joining_props:
       - index: file
         join_on: _subject_id
@@ -127,12 +127,6 @@ mappings:
             src: file_id
             alternate_src: _file_id
             fn: count
-    injecting_props:
-      program:
-        props:
-          - name: programs_name
-            src: name
-            fn: set
   - name: qa-dcp_file
     doc_type: file
     type: collector
