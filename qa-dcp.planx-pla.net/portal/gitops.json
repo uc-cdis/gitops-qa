@@ -187,6 +187,7 @@
         {
           "title": "Project",
           "fields": [
+            "programs_name",
             "project_id",
             "consent_codes",
             "studies_submitter_id",
@@ -467,6 +468,10 @@
         {
           "field": "studies_submitter_id",
           "name": "Study"
+        },
+        {
+          "field": "programs_name",
+          "name": "Program"
         }
       ],
       "manifestMapping": {
@@ -506,6 +511,7 @@
             "file_name"
           ],
           "fields": [
+            "programs_name",
             "project_id",
             "data_category",
             "data_type",
