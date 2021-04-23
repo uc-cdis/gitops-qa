@@ -537,6 +537,10 @@
         {
           "field": "object_id",
           "name": "GUID"
+        },
+        {
+          "field": "programs_name",
+          "name": "Program"
         }
       ],
       "nodeCountTitle": "Files",
