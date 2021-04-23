@@ -107,7 +107,7 @@
     }
   },
   "featureFlags": {
-    "explorer": true
+    "explorer": false
   },
   "studyViewerConfig": [
       {
