@@ -127,6 +127,12 @@ mappings:
             src: file_id
             alternate_src: _file_id
             fn: count
+    injecting_props:
+      program:
+        props:
+          - name: programs_name
+            src: name
+            fn: set
   - name: qa-dcp_file
     doc_type: file
     type: collector
@@ -151,5 +157,8 @@ mappings:
             src: id
             fn: set
           - name: project_id
-
-
+      program:
+        props:
+          - name: programs_name
+            src: name
+            fn: set
