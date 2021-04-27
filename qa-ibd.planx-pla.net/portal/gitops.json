@@ -431,7 +431,7 @@
     "resources": [
       {
         "title": "CD Ileal Single Cell Data",
-        "description": "Data from Martin et al 2019 (https://www.sciencedirect.com/science/article/pii/S0092867419308967) showing differences in distribution of cell types between inflamed and uninflamed ileum in Crohn’s disease.",
+        "description": "Notebook showing differences in distribution of cell types between inflamed and uninflamed ileum in Crohn’s disease.",
         "link": "/dashboard/Public/notebooks/CD.html",
         "imageUrl": "/dashboard/Public/notebooks/CD.png"
       }
