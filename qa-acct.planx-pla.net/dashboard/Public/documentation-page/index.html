@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
-    <link rel='stylesheet' type='text/css' href='index.css' />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap" rel="stylesheet">
-    <link rel='icon' href='img/favicon.ico' type='image/x-icon' />
-    <title>Documentation</title>
-</head>
+    <head>
+        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+        <link rel='stylesheet' type='text/css' href='index.css' />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel='icon' type='image/x-icon' />
+        <title>Documentation</title>
+    </head>
+    <body>
+        <div class="arrow">
+            <a href="#" title="Back to Top"><span class="material-icons">arrow_upward</span></a>
+          </div>
+      
 
-<body>
     <div class="sidenav">
-        <strong>><a href="#Hosted-Data-Overview">Hosted Data Overview</a></strong>
-        <strong><a href="#How-to-get-started">How to get started</a></strong>
+        <strong>><a href="#HostedDataOverview">Hosted Data Overview</a></strong>
+        <strong><a href="#HowToGetStarted">How to get started</a></strong>
         <ul>
            
         <a href="#Login">1. Login to the ACCOuNT Data Commons</a>
-        <a href="#Data-Explorer">2. Data Explorer</a>
+        <a href="#Explorer">2. Data Explorer</a>
         <a href="#Download">3. Downloading Data and Data Files</a>
-        <a href="#Data-Model">4. Understanding the Gen3 data model</a>
+        <a href="#Datamodel">4. Understanding the Gen3 data model</a>
     
         </ul>
 
@@ -46,7 +50,7 @@
                 <h1>User Guide for ACCOuNT Data Commons</h1>
             </div>
             <div class='other-info'>
-            <h2 class="section-title" id="#Hosted-Data-Overview">Hosted Data Overview</h2>
+            <h2 id="HostedDataOverview" class="section-title">Hosted Data Overview</h2>
             <p>ACCOuNT currently hosts genotyping, sequencing, and clinical data from the following programs:</p>
             <p> 
                 <ul>
@@ -191,13 +195,10 @@
                     displayed on the “File Tab”.
                 </figcaption>
             </figure>
-            <h2 class="section-title" id="#How-to-get-started">How to get started</h2>
-
-
-
+            <h2 id="HowToGetStarted" class="section-title">How to get started</h2>
             
 
-            <h3 class="section-title" id="#Login">1. Login to the ACCOuNT Data Commons</h3>
+            <h3 id="Login" class="section-title">1. Login to the ACCOuNT Data Commons</h3>
             <p style="text-align: justify; line-height: 1.5;">
             <h4>
                 a. Homepage
@@ -260,7 +261,7 @@
             
             
 
-            <h3 class="section-title" id="#Data-Explorer">2. Data Explorer</h3>
+            <h3 id="Explorer" class="section-title">2. Data Explorer</h3>
             <p style="text-align: justify">
                 <a href="https://acct.bionimbus.org/explorer">The Exploration Page</a> 
                 provides users with a venue to easily 
@@ -344,8 +345,8 @@
 
 
            
-            <h3 class="section-title" id="#Downloading">3. Downloading Data and Data Files</h3>
-            <p style="text-align: justify">
+            <h3 id="Download" class="section-title">3. Downloading Data and Data Files</h3>
+            <p style="text-align: justify; line-height: 1.5;">
                 Users can download clinical metadata directly from the Data Explorer (section 
                 a below) or download files to their local environment by following 2 different 
                 processes. The first process allows for single-file downloads directly through 
@@ -565,8 +566,8 @@ account_noac_processed.csv  184.89 KiB / 184.89 KiB [======] 100.00%
 
 
 
-            <h3 class="section-title" id="#Data-Model">4. Understanding the Gen3 data model</h3>
-            <p style="text-align: justify">
+            <h3 id="Datamodel" class="section-title">4. Understanding the Gen3 data model</h3>
+            <p style="text-align: justify; line-height: 1.5;">
                 Gen3-powered Data Commons employ a data model which describes, organizes, 
                 and establishes relationships for data across different datasets. The data 
                 model organizes and connects different categories, <i>"nodes"</i>, with experimental 
