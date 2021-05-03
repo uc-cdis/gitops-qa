@@ -80,6 +80,62 @@ SESSION_ALLOWED_SCOPES:
   - "google_link"
 
 # //////////////////////////////////////////////////////////////////////////////////////
+# LOGIN
+#   - Modify based on which OIDC provider(s) you configured above
+#   - NOTE: You can have multiple IDPs for users to login with, but one has to be set
+#           as the default
+# //////////////////////////////////////////////////////////////////////////////////////
+
+# List of enabled login options (used by data-portal to display login buttons).
+# Each option must be configured with a "name" and an "idp".
+# - "idp" must be a configured provider in OPENID_CONNECT section.
+# Multiple options can be configured with the same idp.
+# - if provider_id is "fence", "fence_idp" can be any of the providers
+# supported by the other Fence. If not specified, will default to NIH login.
+# - if provider_id is "fence" and fence_idp is "shibboleth", a list of
+# "shib_idps" can be configured for InCommon login. If not specified, will
+# default to NIH login.
+# - Optional parameters: "desc" (description) and "secondary" (boolean - can
+# be used by the frontend to display secondary buttons differently).
+LOGIN_OPTIONS:  # !!! remove the empty list to enable login options!
+  - name: 'Login from Google'
+    idp: google
+  - name: 'InCommon Login'
+    idp: fence
+    fence_idp: shibboleth
+    shib_idps: '*'
+
+# Default login provider:
+# - must be configured in LOGIN_OPTIONS and OPENID_CONNECT
+# - if several options in LOGIN_OPTIONS are defined for this IDP, will default
+# to the first one.
+# Default login URL:
+# - Google? Use: '{{BASE_URL}}/login/google'
+# - Multi-tenant fence (e.g. another fence instance)? Use: '{{BASE_URL}}/login/fence'
+# - Sibboleth? Use: '{{BASE_URL}}/login/shib'
+DEFAULT_LOGIN_IDP: google
+DEFAULT_LOGIN_URL: '{{BASE_URL}}/login/google'
+
+# `LOGIN_REDIRECT_WHITELIST` is a list of extra whitelisted URLs which can be redirected
+# to by the `/login/*` endpoints. Fence automatically populates this with the redirect
+# URLs for any registered OAuth clients, and its own URL. When validating the redirects,
+# fence chesk whether the domain for the redirect matches a domain in the whitelist (so
+# only the domains for the additional desired redirects are necessary here).
+LOGIN_REDIRECT_WHITELIST: []
+
+### DEPRECATED and replaced by OPENID_CONNECT + LOGIN_OPTIONS configs
+ENABLED_IDENTITY_PROVIDERS: {}
+  # ID for which of the providers to default to
+  # default: 'google'
+  # Information for identity providers
+  # providers:
+#   google:
+#     name: 'Google Login'
+#   fence:
+#     name: 'Fence Multi-Tenant Login'
+
+
+# //////////////////////////////////////////////////////////////////////////////////////
 # LIBRARY CONFIGURATION (authlib & flask)
 #   - Already contains reasonable defaults
 # //////////////////////////////////////////////////////////////////////////////////////
