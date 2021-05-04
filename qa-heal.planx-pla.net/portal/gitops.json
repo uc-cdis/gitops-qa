@@ -94,14 +94,20 @@
   },
   "discoveryConfig": {
     "features": {
+      "advSearchFilters": {
+        "enabled": true,
+        "field": "advSearchFilters",
+        "filters": [
+          { "key": "Study Design" },
+          { "key": "Study Sample" },
+          { "key": "Intervention Type" },
+          { "key": "Target Type" }
+        ]
+      },
       "exportToWorkspaceBETA": {
         "enabled": true,
         "manifestFieldName": "_file_manifest",
-        "enableDownloadManifest": true,
-        "documentationLinks": {
-          "gen3Client": "https://gen3.org/resources/user/gen3-client/",
-          "gen3Workspaces": "https://gen3.org/resources/user/analyze-data/"
-        }
+        "enableDownloadManifest": false
       },
       "pageTitle": {
         "enabled": false
@@ -245,7 +251,7 @@
               "field": "dataset_category"
             }
           ]
-        },       
+        },
         {
           "fields": [
             {

@@ -11,7 +11,7 @@
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
     "cogwheel": "quay.io/cdis/cogwheel:gen3",
     "fence": "quay.io/cdis/fence:2020.10",
-    "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.10.2-debian-cloudwatch-1.0",
+    "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "indexd": "quay.io/cdis/indexd:2020.10",
     "jenkins": "quay.io/cdis/jenkins:2020.10",
     "jupyterhub": "quay.io/occ_data/jupyterhub:master",
