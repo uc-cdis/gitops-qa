@@ -129,10 +129,11 @@ ENABLED_IDENTITY_PROVIDERS: {}
   # default: 'google'
   # Information for identity providers
   # providers:
-  #   google:
-  #     name: 'Google Login'
+#   google:
+#     name: 'Google Login'
 #   fence:
 #     name: 'Fence Multi-Tenant Login'
+
 
 # //////////////////////////////////////////////////////////////////////////////////////
 # LIBRARY CONFIGURATION (authlib & flask)
