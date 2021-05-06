@@ -106,7 +106,7 @@
       },
       "exportToWorkspaceBETA": {
         "enabled": true,
-        "manifestFieldName": "_file_manifest",
+        "manifestFieldName": "__manifest",
         "enableDownloadManifest": false
       },
       "pageTitle": {
