@@ -172,16 +172,7 @@
           "url"
         ]
       },
-      "buttons": [
-        {
-        "enabled": true,
-        "type": "export-pfb-to-workspace",
-        "title": "Export PFB to Workspace",
-        "leftIcon": "datafile",
-        "rightIcon": "download",
-        "dropdownId": "export"
-       }
-      ],
+      "buttons": [],
       "guppyConfig": {
         "dataType": "dataset",
         "nodeCountTitle": "Datasets",
@@ -310,12 +301,20 @@
       },
       "buttons": [
         {
-          "enabled": false,
+          "enabled": true,
           "type": "data",
-          "title": "Download Clinical",
-          "leftIcon": "user",
+          "title": "Download Clinical Data",
+          "leftIcon": "datafile",
           "rightIcon": "download",
           "fileName": "clinical.json"
+        },
+        {
+          "enabled": true,
+          "type": "export-pfb-to-workspace",
+          "title": "Export PFB to Workspace",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "dropdownId": "export"
         }
       ],
       "guppyConfig": {
@@ -379,7 +378,7 @@
           }
         ],
         "manifestMapping": {
-          "referenceIdFieldInResourceIndex": "subject_id"
+          "referenceIdFieldInResourceIndex": "_subject_id"
         },
         "accessibleFieldCheckList": ["project_id"],
         "accessibleValidationField": "project_id"
@@ -425,7 +424,16 @@
           "project_url"
         ]
       },
-      "buttons": [],
+      "buttons": [
+        {
+          "enabled": true,
+          "type": "data",
+          "title": "Download Clinical Data",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "clinical.json"
+        }
+      ],
       "guppyConfig": {
         "dataType": "clinical_trials",
         "nodeCountTitle": "Interventions",
@@ -552,9 +560,17 @@
       "dropdowns": {},
       "buttons": [
         {
-          "enabled": false,
+          "enabled": true,
+          "type": "data",
+          "title": "Download Clinical Data",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "clinical.json"
+        },
+        {
+          "enabled": true,
           "type": "file-manifest",
-          "title": "Download Object Data Manifest",
+          "title": "Download Data Files Manifest",
           "leftIcon": "datafile",
           "rightIcon": "download",
           "fileName": "file-manifest.json",
@@ -563,7 +579,7 @@
         {
           "enabled": true,
           "type": "export-files-to-workspace",
-          "title": "Export to Workspace",
+          "title": "Export Data Files to Workspace",
           "leftIcon": "datafile",
           "rightIcon": "download"
         }
@@ -773,10 +789,10 @@
       "dropdowns": {},
       "buttons": [
         {
-          "enabled": false,
+          "enabled": true,
           "type": "data",
-          "title": "Download Clinical",
-          "leftIcon": "user",
+          "title": "Download Clinical Data",
+          "leftIcon": "datafile",
           "rightIcon": "download",
           "fileName": "clinical.json"
         }
@@ -987,8 +1003,7 @@
         ],
         "nodeCountTitle": "Locations",
         "manifestMapping": {
-          "referenceIdFieldInResourceIndex": "project_id",
-          "referenceIdFieldInDataIndex": "project_id"
+          "referenceIdFieldInResourceIndex": "project_id"
         },
         "accessibleFieldCheckList": ["project_id"],
         "accessibleValidationField": "project_id"
