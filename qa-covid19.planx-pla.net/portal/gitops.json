@@ -233,7 +233,6 @@
           {
             "title": "Clinical",
             "fields": [
-
               "covid_19_status",
               "vital_status",
               "icu_status",
