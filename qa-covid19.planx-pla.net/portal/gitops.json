@@ -172,7 +172,16 @@
           "url"
         ]
       },
-      "buttons": [],
+      "buttons": [
+        {
+        "enabled": true,
+        "type": "export-pfb-to-workspace",
+        "title": "Export PFB to Workspace",
+        "leftIcon": "datafile",
+        "rightIcon": "download",
+        "dropdownId": "export"
+       }
+      ],
       "guppyConfig": {
         "dataType": "dataset",
         "nodeCountTitle": "Datasets",

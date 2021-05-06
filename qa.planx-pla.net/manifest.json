@@ -11,10 +11,9 @@
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
     "cogwheel": "quay.io/cdis/cogwheel:gen3",
     "fence": "quay.io/cdis/fence:2021.04",
-    "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.10.2-debian-cloudwatch-1.0",
+    "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "indexd": "quay.io/cdis/indexd:2021.04",
     "jenkins": "quay.io/cdis/jenkins:master",
-    "jupyterhub": "quay.io/occ_data/jupyterhub:master",
     "peregrine": "quay.io/cdis/peregrine:2021.04",
     "pidgin": "quay.io/cdis/pidgin:2021.04",
     "portal": "quay.io/cdis/data-portal:2021.04",
@@ -51,9 +50,6 @@
     "logs_bucket": "logs-devplanetv1-gen3",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
     "netpolicy": "off-for-jenkins"
-  },
-  "jupyterhub": {
-    "enabled": "no"
   },
   "canary": {
     "default": 0
