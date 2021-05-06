@@ -299,22 +299,45 @@
           "project_url"
         ]
       },
+      "dropdowns": {
+        "download-clinical": {
+          "title": "Download Clinical Data"
+        }
+      },
       "buttons": [
         {
           "enabled": true,
-          "type": "data",
-          "title": "Download Clinical Data",
+          "type": "data-json",
+          "title": "JSON",
+          "dropdownId": "download-clinical",
           "leftIcon": "datafile",
           "rightIcon": "download",
           "fileName": "clinical.json"
         },
         {
           "enabled": true,
+          "type": "data-tsv",
+          "title": "TSV",
+          "dropdownId": "download-clinical",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "clinical.tsv"
+        },
+        {
+          "enabled": true,
+          "type": "data-csv",
+          "title": "CSV",
+          "dropdownId": "download-clinical",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "clinical.csv"
+        },
+        {
+          "enabled": true,
           "type": "export-pfb-to-workspace",
           "title": "Export PFB to Workspace",
           "leftIcon": "datafile",
-          "rightIcon": "download",
-          "dropdownId": "export"
+          "rightIcon": "download"
         }
       ],
       "guppyConfig": {
@@ -424,14 +447,38 @@
           "project_url"
         ]
       },
+      "dropdowns": {
+        "download-clinical": {
+          "title": "Download Clinical Data"
+        }
+      },
       "buttons": [
         {
           "enabled": true,
-          "type": "data",
-          "title": "Download Clinical Data",
+          "type": "data-json",
+          "title": "JSON",
+          "dropdownId": "download-clinical",
           "leftIcon": "datafile",
           "rightIcon": "download",
           "fileName": "clinical.json"
+        },
+        {
+          "enabled": true,
+          "type": "data-tsv",
+          "title": "TSV",
+          "dropdownId": "download-clinical",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "clinical.tsv"
+        },
+        {
+          "enabled": true,
+          "type": "data-csv",
+          "title": "CSV",
+          "dropdownId": "download-clinical",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "clinical.csv"
         }
       ],
       "guppyConfig": {
@@ -557,15 +604,38 @@
           "project_url"
         ]
       },
-      "dropdowns": {},
+      "dropdowns": {
+        "download-clinical": {
+          "title": "Download Clinical Data"
+        }
+      },
       "buttons": [
         {
           "enabled": true,
-          "type": "data",
-          "title": "Download Clinical Data",
+          "type": "data-json",
+          "title": "JSON",
+          "dropdownId": "download-clinical",
           "leftIcon": "datafile",
           "rightIcon": "download",
           "fileName": "clinical.json"
+        },
+        {
+          "enabled": true,
+          "type": "data-tsv",
+          "title": "TSV",
+          "dropdownId": "download-clinical",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "clinical.tsv"
+        },
+        {
+          "enabled": true,
+          "type": "data-csv",
+          "title": "CSV",
+          "dropdownId": "download-clinical",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "clinical.csv"
         },
         {
           "enabled": true,
@@ -573,8 +643,7 @@
           "title": "Download Data Files Manifest",
           "leftIcon": "datafile",
           "rightIcon": "download",
-          "fileName": "file-manifest.json",
-          "dropdownId": "download"
+          "fileName": "file-manifest.json"
         },
         {
           "enabled": true,
@@ -786,15 +855,38 @@
           "project_url"
         ]
       },
-      "dropdowns": {},
+      "dropdowns": {
+        "download-clinical": {
+          "title": "Download Clinical Data"
+        }
+      },
       "buttons": [
         {
           "enabled": true,
-          "type": "data",
-          "title": "Download Clinical Data",
+          "type": "data-json",
+          "title": "JSON",
+          "dropdownId": "download-clinical",
           "leftIcon": "datafile",
           "rightIcon": "download",
           "fileName": "clinical.json"
+        },
+        {
+          "enabled": true,
+          "type": "data-tsv",
+          "title": "TSV",
+          "dropdownId": "download-clinical",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "clinical.tsv"
+        },
+        {
+          "enabled": true,
+          "type": "data-csv",
+          "title": "CSV",
+          "dropdownId": "download-clinical",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "clinical.csv"
         }
       ],
       "guppyConfig": {
