@@ -1,4 +1,5 @@
 version: '3'
+fs_gid: 100
 services:
    webapp:
       image: "quay.io/cdis/jupyter-covid19:jupyter-covid1.2.1"
