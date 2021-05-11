@@ -94,11 +94,7 @@
           { "key": "Research Focus Area" },
           { "key": "Administering IC(s)" },
           { "key": "Year Grant Awarded" },
-          { "key": "Study Description" },
-          { "key": "Study Design" },
-          { "key": "Study Sample" },
-          { "key": "Intervention Type" },
-          { "key": "Target Type" }     
+          { "key": "Study Description" }    
         ]
       },
       "exportToWorkspaceBETA": {
