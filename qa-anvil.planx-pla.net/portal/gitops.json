@@ -213,9 +213,6 @@
           "rightIcon": "download"
         }
       ],
-      "enableLimitedFilePFBExport": {
-        "sourceNodeField": "source_node"
-      },
       "guppyConfig": {
         "dataType": "subject",
         "nodeCountTitle": "Subjects",
