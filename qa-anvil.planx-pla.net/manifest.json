@@ -113,6 +113,10 @@
           {
             "name": "ROOT_NODE",
             "value": "subject"
+          },
+          {
+            "name": "EXTRA_NODES",
+            "value": "reference_file"
           }
         ],
         "volumeMounts": [
