@@ -5,6 +5,7 @@ services:
       volumes:
          - ${DATA_VOLUME}:/data
          - ${USER_VOLUME}:/home/jovyan/pd
+      fs_gid: 100
       environment:
         - NAMESPACE=qa-covid19
         - HOSTNAME=qa-covid19.planx-pla.net
