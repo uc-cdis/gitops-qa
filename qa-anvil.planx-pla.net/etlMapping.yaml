@@ -113,6 +113,7 @@ mappings:
       - name: data_category
       - name: analyte_type
       - name: sequencing_assay
+      - name: source_node
     injecting_props:
       subject:
         props:
