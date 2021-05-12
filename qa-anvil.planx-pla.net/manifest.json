@@ -116,7 +116,7 @@
           },
           {
             "name": "EXTRA_NODES",
-            "value": ""
+            "value": "reference_file"
           }
         ],
         "volumeMounts": [
