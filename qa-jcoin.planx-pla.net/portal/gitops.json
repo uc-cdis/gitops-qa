@@ -434,6 +434,8 @@
         ],
         "nodeCountTitle": "Files",
         "manifestMapping": {
+          "resourceIndexType": "participant",
+          "resourceIdField": "participant_id",
           "referenceIdFieldInResourceIndex": "object_id",
           "referenceIdFieldInDataIndex": "object_id"
         },
@@ -442,8 +444,8 @@
         ],
         "accessibleValidationField": "project_id",
         "downloadAccessor": "object_id"
-      }
-
+      },
+      "dropdowns": {}
     }
   ],
   "showArboristAuthzOnProfile": true,
