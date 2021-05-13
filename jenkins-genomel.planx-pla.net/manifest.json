@@ -293,7 +293,7 @@
     "indices": [
       {
         "index": "jenkins_subject_alias",
-        "type": "subject"
+        "type": "case"
       },
       {
         "index": "jenkins_file_alias",
