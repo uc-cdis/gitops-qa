@@ -442,7 +442,6 @@
         "downloadAccessor": "object_id"
       },
       "dropdowns": {}
-      }
     }
   ],
   "showArboristAuthzOnProfile": true,
