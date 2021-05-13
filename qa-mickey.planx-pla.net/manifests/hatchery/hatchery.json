@@ -37,7 +37,8 @@
       "args": [],
       "path-rewrite": "/",
       "use-tls": "false",
-      "ready-probe": "/"
+      "ready-probe": "/",
+      "fs-gid": 100
     },
     {
       "target-port": 8888,
@@ -141,6 +142,7 @@
       "path-rewrite": "/",
       "use-tls": "false",
       "ready-probe": "/",
+      "fs-gid": 100,
       "use-shared-memory": "true",
       "friends": [
         {
@@ -201,6 +203,7 @@
       ],
       "user-volume-location": "/home/jovyan/pd",
       "use-shared-memory": "true",
+      "fs-gid": 100,
       "friends": [
         {
           "name": "firefox",
