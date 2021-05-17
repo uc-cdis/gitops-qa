@@ -26,7 +26,7 @@
     "wts": "quay.io/cdis/workspace-token-service:2021.05",
     "manifestservice": "quay.io/cdis/manifestservice:2021.05",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:2021.05",
-    "metadata": "quay.io/cdis/metadata-service:2021.05"
+    "metadata": "quay.io/cdis/metadata-service:1.4.0"
   },
   "google": {
     "enabled": "yes"
