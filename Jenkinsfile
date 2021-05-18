@@ -1,5 +1,5 @@
 #!groovy
-@Library('cdis-jenkins-lib@fix/sower_block') _
+@Library('cdis-jenkins-lib@master') _
 testPipeline {
   MANIFEST = "True"
 }
