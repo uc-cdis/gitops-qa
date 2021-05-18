@@ -14,7 +14,7 @@
     "indexd": "quay.io/cdis/indexd:2021.03",
     "peregrine": "quay.io/cdis/peregrine:2021.03",
     "pidgin": "quay.io/cdis/pidgin:2021.03",
-    "portal": "quay.io/cdis/data-portal:feat_discovery-adv-search-filters",
+    "portal": "quay.io/cdis/data-portal:feat_heal-mvp",
     "revproxy": "quay.io/cdis/nginx:2021.03",
     "sheepdog": "quay.io/cdis/sheepdog:2021.03",
     "sower": "quay.io/cdis/sower:2021.03",
