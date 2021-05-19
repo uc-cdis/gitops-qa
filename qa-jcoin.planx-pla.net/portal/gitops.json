@@ -352,12 +352,7 @@
             "title": "Constructs",
             "fields": [
               "cmc_data_type",
-              "cmc_title",
-              "data_category",
-              "data_format"
-            ],
-            "searchFields": [
-              "file_name"
+              "cmc_title"
             ]
           },
           {
@@ -378,20 +373,15 @@
         "fields": [
           "project_id",
           "file_name",
-          "data_format",
-          "data_type",
-          "data_category",
           "file_size",
-          "submitter_id",
-          "object_id",
-          "md5sum"
+          "object_id"
         ]
       },
       "buttons": [
         {
           "enabled": true,
           "type": "export-files-to-workspace",
-          "title": "Export to Workspace",
+          "title": "Export Files to Workspace",
           "leftIcon": "datafile",
           "rightIcon": "download"
         },
