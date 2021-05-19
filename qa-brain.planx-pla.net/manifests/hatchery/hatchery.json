@@ -5,7 +5,7 @@
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "quay.io/cdis/gen3fuse-sidecar:integration202105",
+    "image": "quay.io/cdis/gen3fuse-sidecar:integration202106",
     "env": {
       "NAMESPACE": "qa-brain",
       "HOSTNAME": "qa-brain.planx-pla.net"
