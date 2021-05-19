@@ -47,6 +47,12 @@ mappings:
       - name: data_type
       - name: state
       - name: data_category
-    parent_props:
-      - path: core_metadata_collections[cmc_data_type:data_type]
-      - path: core_metadata_collections[cmc_title:title]
+    injecting_props:
+      core_metadata_collection:
+        props:
+          - name: cmc_data_type
+            src: data_type
+            fn: set
+          - name: cmc_title
+            src: title
+            fn: set
