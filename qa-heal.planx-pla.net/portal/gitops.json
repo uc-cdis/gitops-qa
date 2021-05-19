@@ -29,17 +29,26 @@
         {
           "icon": "query",
           "link": "/discovery",
-          "name": "Discovery"
+          "name": "Discovery",
+          "tooltip": "Browse through study metadata, access data files, and export files to your workspace."
         },
         {
           "icon": "workspace",
           "link": "/workspace",
-          "name": "Workspace"
+          "name": "Workspace",
+          "tooltip": "Gen3 workspaces are secure data analysis environments in the cloud that can access data from one or more data resources."
+        },
+        {
+          "name": "Notebook Browser",
+          "link": "/resource-browser",
+          "icon": "ohif-viewer",
+          "tooltip": "The notebooks pull data from various sources to generate and output useful tables, charts, graphs, and models."
         },
         {
           "icon": "profile",
           "link": "/identity",
-          "name": "Profile"
+          "name": "Profile",
+          "tooltip": "Create API keys and oversee your access to projects."
         }
       ]
     },
@@ -352,6 +361,25 @@
       }
     ]
   },
+    "resourceBrowser": {
+      "title": "HEAL Jupyter Notebooks",
+      "public": true,
+      "description": "The Jupyter notebooks contained in this notebook viewer pull data from various sources to generate and output useful tables, charts, graphs, and models. Each notebook is static, meaning the data being used by the notebooks is not updated in real time. These notebooks are also available in the Gen3 Workspace.",
+      "resources": [
+        {
+          "title": "HEAL Workspace Demo",
+          "description": "In this Jupyter notebook, we used the BACPAC study as an example to demonstrate how to navigate datasets within the workspace in HEAL and conduct data analysis using Python libraries.",
+          "link": "/dashboard/Public/notebooks/HEAL_Workspace_Demo_BACPAC.html",
+          "imageUrl": "/dashboard/Public/notebooks/HEAL_Workspace_Demo_BACPAC.png"
+        },
+        {
+          "title": "Tracking Stigma related to Opioid Use Disorder",
+          "description": "In this Jupyter notebook, we used the JCOIN-MAARC (Justice Community Opioid Innovation Network - Methodology and Advanced Analytics Resource Center) Survey Core Survey Project 1/4 to track stigma related to Opioid Use Disorder (OUD) and public attitudes towards persons with OUD as well as how treatment of/for persons with OUD may impact the effect of OUD interventions.",
+          "link": "/dashboard/Public/notebooks/NORC_JCOIN_notebook.html",
+          "imageUrl": "/dashboard/Public/notebooks/NORC_JCOIN_notebook.png"
+        }
+      ]
+    },
   "useArboristUI": true,
   "showArboristAuthzOnProfile": true,
   "showFenceAuthzOnProfile": false,
