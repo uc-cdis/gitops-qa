@@ -41,7 +41,7 @@
         {
           "name": "Notebook Browser",
           "link": "/resource-browser",
-          "icon": "query",
+          "icon": "analysis",
           "tooltip": "The notebooks pull data from various sources to generate and output useful tables, charts, graphs, and models."
         },
         {
