@@ -367,7 +367,7 @@
       "description": "The Jupyter notebooks contained in this notebook viewer pull data from various sources to generate and output useful tables, charts, graphs, and models. Each notebook is static, meaning the data being used by the notebooks is not updated in real time. These notebooks are also available in the Gen3 Workspace.",
       "resources": [
         {
-          "title": "BACPAC synthetic data analysiso",
+          "title": "BACPAC synthetic data analysis",
           "description": "In this Jupyter notebook, we used synthetic data of the BACPAC study as an example to demonstrate how to navigate datasets within the workspace in HEAL and conduct data analysis using Python libraries.",
           "link": "/dashboard/Public/notebooks/HEAL_Workspace_Demo_BACPAC.html",
           "imageUrl": "/dashboard/Public/notebooks/HEAL_Workspace_Demo_BACPAC.png"
