@@ -30,7 +30,7 @@
           "icon": "query",
           "link": "/discovery",
           "name": "Discovery",
-          "tooltip": "Browse through study metadata, access data files, and export files to your workspace."
+          "tooltip": "Use free-text search and tags to rapidly find relevant studies, discover new datasets across multiple resources, and easily export selected data files to the analysis workspace."
         },
         {
           "icon": "workspace",
@@ -42,13 +42,13 @@
           "name": "Notebook Browser",
           "link": "/resource-browser",
           "icon": "analysis",
-          "tooltip": "The notebooks pull data from various sources to generate and output useful tables, charts, graphs, and models."
+          "tooltip": "Learn how to use Jupyter Notebooks to explore and visualize data available on the HEAL platform by running a tutorial notebook, or use one of these examples as a launching point for your own custom analysis."
         },
         {
           "icon": "profile",
           "link": "/identity",
           "name": "Profile",
-          "tooltip": "Create API keys and oversee your access to projects."
+          "tooltip": "Create API keys for programmatic data access, and review your authorization privileges to datasets and services."
         }
       ]
     },
@@ -103,7 +103,7 @@
           { "key": "Research Focus Area" },
           { "key": "Administering IC(s)" },
           { "key": "Year Grant Awarded" },
-          { "key": "Study Description" }    
+          { "key": "Study Description" }
         ]
       },
       "exportToWorkspaceBETA": {
@@ -367,8 +367,8 @@
       "description": "The Jupyter notebooks contained in this notebook viewer pull data from various sources to generate and output useful tables, charts, graphs, and models. Each notebook is static, meaning the data being used by the notebooks is not updated in real time. These notebooks are also available in the Gen3 Workspace.",
       "resources": [
         {
-          "title": "HEAL Workspace Demo",
-          "description": "In this Jupyter notebook, we used the BACPAC study as an example to demonstrate how to navigate datasets within the workspace in HEAL and conduct data analysis using Python libraries.",
+          "title": "BACPAC synthetic data analysis",
+          "description": "In this Jupyter notebook, we used synthetic data of the BACPAC study as an example to demonstrate how to navigate datasets within the workspace in HEAL and conduct data analysis using Python libraries.",
           "link": "/dashboard/Public/notebooks/HEAL_Workspace_Demo_BACPAC.html",
           "imageUrl": "/dashboard/Public/notebooks/HEAL_Workspace_Demo_BACPAC.png"
         },
