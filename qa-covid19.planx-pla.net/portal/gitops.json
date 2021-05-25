@@ -172,16 +172,7 @@
           "url"
         ]
       },
-      "buttons": [
-        {
-        "enabled": true,
-        "type": "export-pfb-to-workspace",
-        "title": "Export PFB to Workspace",
-        "leftIcon": "datafile",
-        "rightIcon": "download",
-        "dropdownId": "export"
-       }
-      ],
+      "buttons": [],
       "guppyConfig": {
         "dataType": "dataset",
         "nodeCountTitle": "Datasets",
@@ -242,7 +233,6 @@
           {
             "title": "Clinical",
             "fields": [
-
               "covid_19_status",
               "vital_status",
               "icu_status",
@@ -308,14 +298,45 @@
           "project_url"
         ]
       },
+      "dropdowns": {
+        "download-clinical": {
+          "title": "Download Clinical Data"
+        }
+      },
       "buttons": [
         {
-          "enabled": false,
-          "type": "data",
-          "title": "Download Clinical",
-          "leftIcon": "user",
+          "enabled": true,
+          "type": "data-json",
+          "title": "JSON",
+          "dropdownId": "download-clinical",
+          "leftIcon": "datafile",
           "rightIcon": "download",
           "fileName": "clinical.json"
+        },
+        {
+          "enabled": true,
+          "type": "data-tsv",
+          "title": "TSV",
+          "dropdownId": "download-clinical",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "clinical.tsv"
+        },
+        {
+          "enabled": true,
+          "type": "data-csv",
+          "title": "CSV",
+          "dropdownId": "download-clinical",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "clinical.csv"
+        },
+        {
+          "enabled": true,
+          "type": "export-pfb-to-workspace",
+          "title": "Export PFB to Workspace",
+          "leftIcon": "datafile",
+          "rightIcon": "download"
         }
       ],
       "guppyConfig": {
@@ -379,7 +400,7 @@
           }
         ],
         "manifestMapping": {
-          "referenceIdFieldInResourceIndex": "subject_id"
+          "referenceIdFieldInResourceIndex": "_subject_id"
         },
         "accessibleFieldCheckList": ["project_id"],
         "accessibleValidationField": "project_id"
@@ -425,7 +446,40 @@
           "project_url"
         ]
       },
-      "buttons": [],
+      "dropdowns": {
+        "download-clinical": {
+          "title": "Download Clinical Data"
+        }
+      },
+      "buttons": [
+        {
+          "enabled": true,
+          "type": "data-json",
+          "title": "JSON",
+          "dropdownId": "download-clinical",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "clinical.json"
+        },
+        {
+          "enabled": true,
+          "type": "data-tsv",
+          "title": "TSV",
+          "dropdownId": "download-clinical",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "clinical.tsv"
+        },
+        {
+          "enabled": true,
+          "type": "data-csv",
+          "title": "CSV",
+          "dropdownId": "download-clinical",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "clinical.csv"
+        }
+      ],
       "guppyConfig": {
         "dataType": "clinical_trials",
         "nodeCountTitle": "Interventions",
@@ -549,21 +603,51 @@
           "project_url"
         ]
       },
-      "dropdowns": {},
+      "dropdowns": {
+        "download-clinical": {
+          "title": "Download Clinical Data"
+        }
+      },
       "buttons": [
         {
-          "enabled": false,
-          "type": "file-manifest",
-          "title": "Download Object Data Manifest",
+          "enabled": true,
+          "type": "data-json",
+          "title": "JSON",
+          "dropdownId": "download-clinical",
           "leftIcon": "datafile",
           "rightIcon": "download",
-          "fileName": "file-manifest.json",
-          "dropdownId": "download"
+          "fileName": "clinical.json"
+        },
+        {
+          "enabled": true,
+          "type": "data-tsv",
+          "title": "TSV",
+          "dropdownId": "download-clinical",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "clinical.tsv"
+        },
+        {
+          "enabled": true,
+          "type": "data-csv",
+          "title": "CSV",
+          "dropdownId": "download-clinical",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "clinical.csv"
+        },
+        {
+          "enabled": true,
+          "type": "file-manifest",
+          "title": "Download Data Files Manifest",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "file-manifest.json"
         },
         {
           "enabled": true,
           "type": "export-files-to-workspace",
-          "title": "Export to Workspace",
+          "title": "Export Data Files to Workspace",
           "leftIcon": "datafile",
           "rightIcon": "download"
         }
@@ -770,15 +854,38 @@
           "project_url"
         ]
       },
-      "dropdowns": {},
+      "dropdowns": {
+        "download-clinical": {
+          "title": "Download Clinical Data"
+        }
+      },
       "buttons": [
         {
-          "enabled": false,
-          "type": "data",
-          "title": "Download Clinical",
-          "leftIcon": "user",
+          "enabled": true,
+          "type": "data-json",
+          "title": "JSON",
+          "dropdownId": "download-clinical",
+          "leftIcon": "datafile",
           "rightIcon": "download",
           "fileName": "clinical.json"
+        },
+        {
+          "enabled": true,
+          "type": "data-tsv",
+          "title": "TSV",
+          "dropdownId": "download-clinical",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "clinical.tsv"
+        },
+        {
+          "enabled": true,
+          "type": "data-csv",
+          "title": "CSV",
+          "dropdownId": "download-clinical",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "clinical.csv"
         }
       ],
       "guppyConfig": {
@@ -962,7 +1069,7 @@
           },
           {
             "field": "hhinc_mean",
-            "name": "Mean Household Income (US Currency"
+            "name": "Mean Household Income (US Currency)"
           },
           {
             "field": "med_hhinc",
@@ -987,8 +1094,7 @@
         ],
         "nodeCountTitle": "Locations",
         "manifestMapping": {
-          "referenceIdFieldInResourceIndex": "project_id",
-          "referenceIdFieldInDataIndex": "project_id"
+          "referenceIdFieldInResourceIndex": "project_id"
         },
         "accessibleFieldCheckList": ["project_id"],
         "accessibleValidationField": "project_id"
@@ -1065,12 +1171,18 @@
         "description": "In this notebook, we demonstrate how to query the google mobility data using the BigQuery API client python library, and visualize the mobility changes over time across the United States since February 2020.",
         "link": "/dashboard/Public/notebooks/google_mobility.html",
         "imageUrl": "/dashboard/Public/notebooks/google_mobility.png"
-      }, 
+      },
       {
         "title": "COVID-19 Data Visualization in Illinois",
-        "description": "This notebook provides a snapshot of publicly available data related to COVID-19 in Illinois. Graphics illustrate the demographics, administered vaccine doses, google mobility data and forecasted COVID-19 cases in Illinois.",
+        "description": "This notebook provides a snapshot of publicly available data related to COVID-19 in Illinois from the Illinois Department of Public Health, Google and Johns Hopkins CSSE. Graphics illustrate the demographics, administered vaccine doses, google mobility data and forecasted COVID-19 cases in Illinois.",
         "link": "/dashboard/Public/notebooks/IL_tab_charts.html",
         "imageUrl": "/dashboard/Public/notebooks/IL_tab_charts.png"
+      },
+      {
+        "title": "3D Coronavirus SARS-CoV-2 Protein Visualization",
+        "description": "This notebook provides an example to manipulate coronavirus SARS-CoV-2 DNA sequence, amino acid sequence and use visualization tools to present the three-dimensional (3D) structure of SARS-CoV-2 protein structures interactively.",
+        "link": "/dashboard/Public/notebooks/3D_Protein_Vis.html",
+        "imageUrl": "/dashboard/Public/notebooks/3D_Protein_Vis.png"
       }
     ]
   },
@@ -1079,6 +1191,13 @@
   "useArboristUI": true,
   "showArboristAuthzOnProfile": true,
   "showFenceAuthzOnProfile": false,
+  "componentToResourceMapping": {
+    "Workspace": {
+      "resource": "/workspace",
+      "method": "access",
+      "service": "jupyterhub"
+    }
+  },
   "covid19DashboardConfig": {
     "dataUrl": "https://static.planx-pla.net/",
     "chartsConfig": {
@@ -1247,13 +1366,6 @@
           "description": "Here we plot estimated Rt over time; Rt is estimated using Google mobility data."
         }
       }
-    }
-  },
-  "componentToResourceMapping": {
-    "Workspace": {
-      "resource": "/workspace",
-      "method": "access",
-      "service": "jupyterhub"
     }
   }
 }

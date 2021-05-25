@@ -5,7 +5,7 @@
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3fuse-sidecar:2021.03",
+    "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3fuse-sidecar:2021.04",
     "env": {
       "NAMESPACE": "qa-covid19",
       "HOSTNAME": "qa-covid19.planx-pla.net"
@@ -75,10 +75,10 @@
     },
     {
       "target-port": 5800,
-      "cpu-limit": "1.0",
-      "memory-limit": "1024Mi",
+      "cpu-limit": "4.0",
+      "memory-limit": "16Gi",
       "name": "A collection of Jupyter notebooks to explore health outcomes for COVID-19 thru noVNC",
-      "image": "quay.io/cdis/jupyter-covid19:jupyter-covid1.1.12",
+      "image": "quay.io/cdis/jupyter-covid19:jupyter-covid1.2.2",
       "env": {
         "NAMESPACE": "qa-covid19"
       },
@@ -99,6 +99,7 @@
         "-c",
         "export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; ln -s $(pwd) /home/$IAM/pd/dockerHome; mkdir -p /home/$IAM/.jupyter/custom; echo \"define(['base/js/namespace'], function(Jupyter){Jupyter._target = '_self';})\" >/home/$IAM/.jupyter/custom/custom.js; ln -s /data /home/$IAM/pd/; true"
       ],
+      "fs-gid": 100,
       "user-volume-location": "/home/jovyan/pd",
       "use-shared-memory": "true",
       "friends": [

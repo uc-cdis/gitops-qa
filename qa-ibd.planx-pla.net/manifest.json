@@ -4,27 +4,27 @@
     "That's all I have to say"
   ],
   "versions": {
-    "arborist": "quay.io/cdis/arborist:integration202105",
+    "arborist": "quay.io/cdis/arborist:2021.04",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
-    "dashboard": "quay.io/cdis/gen3-statics:integration202103",
-    "fence": "quay.io/cdis/fence:integration202105",
-    "indexd": "quay.io/cdis/indexd:integration202105",
-    "peregrine": "quay.io/cdis/peregrine:integration202105",
-    "pidgin": "quay.io/cdis/pidgin:integration202105",
-    "revproxy": "quay.io/cdis/nginx:integration202105",
-    "sheepdog": "quay.io/cdis/sheepdog:integration202105",
-    "portal": "quay.io/cdis/data-portal:integration202105",
+    "dashboard": "quay.io/cdis/gen3-statics:2021.04",
+    "fence": "quay.io/cdis/fence:2021.04",
+    "indexd": "quay.io/cdis/indexd:2021.04",
+    "peregrine": "quay.io/cdis/peregrine:2021.04",
+    "pidgin": "quay.io/cdis/pidgin:2021.04",
+    "revproxy": "quay.io/cdis/nginx:2021.04",
+    "sheepdog": "quay.io/cdis/sheepdog:2021.04",
+    "portal": "quay.io/cdis/data-portal:2021.04",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
-    "spark": "quay.io/cdis/gen3-spark:integration202105",
-    "tube": "quay.io/cdis/tube:integration202105",
-    "hatchery": "quay.io/cdis/hatchery:integration202105",
-    "wts": "quay.io/cdis/workspace-token-service:integration202105",
+    "spark": "quay.io/cdis/gen3-spark:2021.04",
+    "tube": "quay.io/cdis/tube:2021.04",
+    "hatchery": "quay.io/cdis/hatchery:2021.04",
+    "wts": "quay.io/cdis/workspace-token-service:2021.04",
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
-    "manifestservice": "quay.io/cdis/manifestservice:integration202105",
-    "guppy": "quay.io/cdis/guppy:integration202105",
-    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:integration202105",
-    "metadata": "quay.io/cdis/metadata-service:integration202105",
-    "sower": "quay.io/cdis/sower:integration202105"
+    "manifestservice": "quay.io/cdis/manifestservice:2021.04",
+    "guppy": "quay.io/cdis/guppy:2021.04",
+    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:2021.04",
+    "metadata": "quay.io/cdis/metadata-service:2021.04",
+    "sower": "quay.io/cdis/sower:2021.04"
   },
   "indexd": {
     "arborist": "true"
@@ -37,7 +37,7 @@
       "serviceAccountName": "jobs-qa-ibd-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/metadata-manifest-ingestion:integration202105",
+        "image": "quay.io/cdis/metadata-manifest-ingestion:2021.04",
         "pull_policy": "Always",
         "env": [
           {
@@ -77,7 +77,7 @@
       "serviceAccountName": "jobs-qa-ibd-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/manifest-indexing:integration202105",
+        "image": "quay.io/cdis/manifest-indexing:2021.04",
         "pull_policy": "Always",
         "env": [
           {
@@ -117,7 +117,7 @@
       "serviceAccountName": "jobs-qa-ibd-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/download-indexd-manifest:integration202105",
+        "image": "quay.io/cdis/download-indexd-manifest:2021.04",
         "pull_policy": "Always",
         "env": [
           {
@@ -154,7 +154,7 @@
   ],
   "ssjdispatcher": {
     "job_images": {
-      "indexing": "quay.io/cdis/indexs3client:integration202105"
+      "indexing": "quay.io/cdis/indexs3client:2021.04"
     }
   },
   "global": {
@@ -178,7 +178,7 @@
     "sidecar": {
       "cpu-limit": "1.0",
       "memory-limit": "256Mi",
-      "image": "quay.io/cdis/gen3fuse-sidecar:integration202105",
+      "image": "quay.io/cdis/gen3fuse-sidecar:2021.04",
       "env": {
         "NAMESPACE": "qa-ibd",
         "HOSTNAME": "qa-ibd.planx-pla.net"
@@ -270,3 +270,4 @@
     "deployment_version": "2"
   }
 }
+

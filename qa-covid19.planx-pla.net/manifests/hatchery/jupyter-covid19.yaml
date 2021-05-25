@@ -1,10 +1,11 @@
 version: '3'
 services:
    webapp:
-      image: "quay.io/cdis/jupyter-covid19:jupyter-covid1.2.0"
+      image: "quay.io/cdis/jupyter-covid19:jupyter-covid1.2.2"
       volumes:
          - ${DATA_VOLUME}:/data
          - ${USER_VOLUME}:/home/jovyan/pd
+      fs_gid: 100
       environment:
         - NAMESPACE=qa-covid19
         - HOSTNAME=qa-covid19.planx-pla.net
@@ -26,8 +27,8 @@ services:
       deploy:
         resources:
           limits:
-            cpus: '1.00'
-            memory: 1024M
+            cpus: '4.00'
+            memory: 16Gi
           reservations:
             cpus: '0.5'
             memory: 512M
