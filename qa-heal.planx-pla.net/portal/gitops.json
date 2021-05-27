@@ -116,7 +116,28 @@
       },
       "search": {
         "searchBar": {
-          "enabled": true
+          "enabled": true,
+          "searchableTextFields": [
+            "summary",
+            "location",
+            "study_name",
+            "institutions",
+            "investigators",
+            "project_title",
+            "project_number",
+            "dataset_1_title",
+            "dataset_2_title",
+            "dataset_3_title",
+            "dataset_4_title",
+            "administering_ic",
+            "research_program",
+            "research_question",
+            "dataset_description",
+            "dataset_1_description",
+            "dataset_2_description",
+            "dataset_3_description",
+            "dataset_4_description"
+          ]
         }
       },
       "authorization": {
