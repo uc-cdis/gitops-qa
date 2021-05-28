@@ -509,10 +509,6 @@
           {
             "field": "project_date_collected",
             "name": "Data Collection Status"
-          },
-          {
-            "field": "lastUpdateEt",
-            "name": "Data Source Updated"
           }
         ],
         "manifestMapping": {
@@ -1123,7 +1119,7 @@
           },
           {
             "field": "vaccine_reported_inventory",
-            "name": "Total AAAVaccine Inventory"
+            "name": "Total Vaccine Inventory"
           }
         ],
         "nodeCountTitle": "Locations",
