@@ -87,6 +87,10 @@ mappings:
           - name: data_category
             src: data_category
             fn: set
+          - name: file_count
+            src: file_id
+            alternate_src: _file_id
+            fn: count
     parent_props:
       - path: projects[project_code:code]
       - path: projects[project_name:name]
