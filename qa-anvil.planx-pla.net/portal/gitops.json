@@ -136,7 +136,7 @@
             "fields": [
               "project_id",
               "anvil_project_id",
-              "project_dbgap_accession_number",              
+              "project_dbgap_accession_number",
               "project_dbgap_phs",
               "project_dbgap_consent_text"
             ]
@@ -146,12 +146,12 @@
               "sex",
               "ancestry",
               "age_value",
-              "disease_description", 
-              "phenotype_present", 
-              "phenotype_absent", 
-              "disease_id", 
-              "solve_state", 
-              "congenital_status", 
+              "disease_description",
+              "phenotype_present",
+              "phenotype_absent",
+              "disease_id",
+              "solve_state",
+              "congenital_status",
               "age_of_onset",
               "phenotype_group"
             ]
@@ -167,12 +167,12 @@
           }, {
             "title": "Sequencing",
             "fields": [
-              "sequencing_assay", 
-              "reference_genome_build", 
-              "library_prep_kit_method", 
-              "exome_capture_platform", 
-              "capture_region_bed_file", 
-              "alignment_method", 
+              "sequencing_assay",
+              "reference_genome_build",
+              "library_prep_kit_method",
+              "exome_capture_platform",
+              "capture_region_bed_file",
+              "alignment_method",
               "data_processing_pipeline"
             ]
           }
@@ -216,12 +216,13 @@
       "guppyConfig": {
         "dataType": "subject",
         "nodeCountTitle": "Subjects",
+			  "fileCountField": "file_count",
         "fieldMapping": [
-          { "field": "disease_id", "name": "Disease ID" }, 
+          { "field": "disease_id", "name": "Disease ID" },
           { "field": "age_of_onset", "name": "Age of Onset" },
           { "field": "project_dbgap_accession_number", "name": "Project dbGaP Accession Number" },
           { "field": "project_dbgap_consent_text", "name":"Project dbGaP Consent Text"},
-          { "field": "project_dbgap_phs", "name":"Project dbGaP Phs"}    
+          { "field": "project_dbgap_phs", "name":"Project dbGaP Phs"}
         ],
         "manifestMapping": {
           "resourceIndexType": "file",
@@ -256,7 +257,7 @@
               "data_category",
               "data_type",
               "data_format",
-              "analyte_type", 
+              "analyte_type",
               "sequencing_assay"
             ]
           }
@@ -437,7 +438,7 @@
       "terraExportURL": "https://bvdp-saturn-dev.appspot.com/#import-data"
     }
   ]
-  
+
 }
 
 
