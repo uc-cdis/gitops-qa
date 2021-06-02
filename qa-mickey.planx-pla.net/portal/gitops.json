@@ -42,6 +42,24 @@
         "text": "The VA Data Commons supports the management, and analysis of veteran oncologic data for the research community. The data commons aims to accelerate discovery and development of therapies, diagnostic tests, and other technologies for precision oncology. The data commons supports cross-project analyses by harmonizing data from different projects through the collaborative development of a data dictionary, providing an API for data queries, and providing a cloud-based analysis with rich tools and resources.",
         "link": "/submission"
       },
+      "topBar": {
+        "items": [
+          {
+            "icon": "upload",
+            "link": "/submission",
+            "name": "Submit Data"
+          },
+          {
+            "link": "https://gen3.org/resources/user/",
+            "name": "Documentation"
+          },
+          {
+            "link": "support@datacommons.io",
+            "name": "Email Support"
+          }
+        ],
+        "useProfileDropdown": false
+      },
       "buttons": [
         {
           "name": "Define Data Field",
