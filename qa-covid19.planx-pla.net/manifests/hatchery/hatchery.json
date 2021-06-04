@@ -78,7 +78,7 @@
       "cpu-limit": "4.0",
       "memory-limit": "16Gi",
       "name": "A collection of Jupyter notebooks to explore health outcomes for COVID-19 thru noVNC",
-      "image": "quay.io/cdis/jupyter-covid19:jupyter-covid1.2.3",
+      "image": "quay.io/cdis/jupyter-covid19:jupyter-covid1.2.4",
       "env": {
         "NAMESPACE": "qa-covid19"
       },
