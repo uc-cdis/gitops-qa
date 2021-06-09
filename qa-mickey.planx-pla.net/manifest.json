@@ -34,6 +34,11 @@
   "arborist": {
     "deployment_version": "2"
   },
+  "mariner": {
+    "with_db": "yes",
+    "with_s3": "yes",
+    "with_cache": "no"
+  },
   "indexd": {
     "arborist": "true"
   },
