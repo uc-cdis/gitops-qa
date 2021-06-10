@@ -11,7 +11,7 @@
     "arborist": "quay.io/cdis/arborist:2020.08",
     "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
     "dashboard": "quay.io/cdis/gen3-statics:2020.08",
-    "fence": "quay.io/cdis/fence:4.26.1",
+    "fence": "quay.io/cdis/fence:4.29.1",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "guppy": "quay.io/cdis/guppy:2021.01",
     "hatchery": "quay.io/cdis/hatchery:0.1.3",
