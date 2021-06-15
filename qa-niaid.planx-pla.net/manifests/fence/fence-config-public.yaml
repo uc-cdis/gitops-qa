@@ -182,4 +182,22 @@ STORAGE_CREDENTIALS: []
 #       length restrictions on group names.
 GOOGLE_GROUP_PREFIX: 'gen3'
 
+S3_BUCKETS:
+  'cdis-presigned-url-test':
+    role-arn: 'arn:aws:iam::707767160287:role/bucket_reader_writer_to_cdistest-presigned-url_role'
+    cred: 'cdistest'
+
+  # for data upload:
+  'qaplanetv1-data-bucket':
+    role-arn: 'arn:aws:iam::707767160287:role/bucket_reader_writer_to_qaplanetv1-data-bucket_role'
+    cred: 'cdistest'
+
+  'qaplanetv2-qa-niaid-707767160287-upload':
+    cred: 'cdistest'
+
+# `DATA_UPLOAD_BUCKET` specifies an S3 bucket to which data files are uploaded,
+# using the `/data/upload` endpoint. This must be one of the first keys under
+# `S3_BUCKETS` (since these are the buckets fence has credentials for).
+DATA_UPLOAD_BUCKET: 'qaplanetv2-qa-niaid-707767160287-upload'
+
 ENABLE_DB_MIGRATION: false
