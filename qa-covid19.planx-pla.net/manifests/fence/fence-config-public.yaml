@@ -231,43 +231,6 @@ ITRUST_GLOBAL_LOGOUT: 'https://auth.nih.gov/siteminderagent/smlogout.asp?mode=ni
 PRIVACY_POLICY_URL: null
 
 # //////////////////////////////////////////////////////////////////////////////////////
-# SUPPORT INFO
-# //////////////////////////////////////////////////////////////////////////////////////
-# If you want an email address to show up when an unhandled error occurs, provide one
-# here. Something like: support@example.com
-SUPPORT_EMAIL_FOR_ERRORS: null
-
-# //////////////////////////////////////////////////////////////////////////////////////
-# STORAGE BACKENDS AND CREDENTIALS
-#   - Optional: Used for `/admin` & `/credentials` endpoints for user management.
-#               Also used during User Syncing process to automate managing Storage
-#               access for users.
-# //////////////////////////////////////////////////////////////////////////////////////
-# Configuration for various storage systems for the backend
-# NOTE: Remove the [] and supply backends if needed. Example in comments below
-STORAGE_CREDENTIALS: []
-# Google Cloud Storage backend
-#
-#  'google':
-#    backend: 'google'
-#    # this should be the project id where the Google Groups for data access are managed
-#    google_project_id: 'some-project-id-12378923'
-
-# Cleversafe data storage backend
-#
-#  'cleversafe-server-a':
-#    backend: 'cleversafe'
-#    aws_access_key_id: ''
-#    aws_secret_access_key: ''
-#    host: 'somemanager.osdc.io'
-#    public_host: 'someobjstore.example.com'
-#    port: 443
-#    is_secure: true
-#    username: 'someone'
-#    password: 'somepass'
-#    is_mocked: true
-
-# //////////////////////////////////////////////////////////////////////////////////////
 # AWS BUCKETS AND CREDENTIALS
 #   - Support `/data` endpoints
 # //////////////////////////////////////////////////////////////////////////////////////
