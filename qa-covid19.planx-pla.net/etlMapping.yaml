@@ -156,6 +156,14 @@ mappings:
           - name: vaccine_community_reported_inventory
           - name: vaccine_reported_inventory
         sorted_by: updated_datetime, desc
+        flatten_props:
+          - path: summary_group_demographics
+            props:
+            - name: race
+            - name: gender
+            - name: age_group
+            - name: vaccine_administered_count
+            sorted_by: updated_datetime, desc
       - path: summary_socio_demographics
         props:
          - name: population
