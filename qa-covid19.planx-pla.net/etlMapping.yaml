@@ -157,7 +157,7 @@ mappings:
           - name: vaccine_reported_inventory
         sorted_by: updated_datetime, desc
         flatten_props:
-          - path: summary_group_demographics
+          - path: summary_clinicals.summary_group_demographics
             props:
             - name: race
             - name: gender
