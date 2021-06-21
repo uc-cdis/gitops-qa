@@ -123,7 +123,8 @@
         "export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; ln -s $(pwd) /home/$IAM/pd/dockerHome; mkdir -p /home/$IAM/.jupyter/custom; echo \"define(['base/js/namespace'], function(Jupyter){Jupyter._target = '_self';})\" >/home/$IAM/.jupyter/custom/custom.js; ln -s /data /home/$IAM/pd/; true"
       ],
       "user-uid": 1000,
-      "fs-gid": 100
+      "fs-gid": 100,
+      "user-volume-location": "/home/jovyan/pd"
     },
     {
       "target-port": 8888,
@@ -151,13 +152,14 @@
         "export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; ln -s $(pwd) /home/$IAM/pd/dockerHome; mkdir -p /home/$IAM/.jupyter/custom; echo \"define(['base/js/namespace'], function(Jupyter){Jupyter._target = '_self';})\" >/home/$IAM/.jupyter/custom/custom.js; ln -s /data /home/$IAM/pd/; true"
       ],
       "user-uid": 1000,
-      "fs-gid": 100
+      "fs-gid": 100,
+      "user-volume-location": "/home/jovyan/pd"
     },
     {
       "target-port": 8888,
       "cpu-limit": "1.0",
       "memory-limit": "1024Mi",
-      "name": "JCOIN Notebook",
+      "name": "JCOIN (Tracking Opioid Stigma) Notebook",
       "image": "quay.io/cdis/jupyter-jcoin:master",
       "env": {},
       "args": [
@@ -179,13 +181,14 @@
         "export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; ln -s $(pwd) /home/$IAM/pd/dockerHome; mkdir -p /home/$IAM/.jupyter/custom; echo \"define(['base/js/namespace'], function(Jupyter){Jupyter._target = '_self';})\" >/home/$IAM/.jupyter/custom/custom.js; ln -s /data /home/$IAM/pd/; true"
       ],
       "user-uid": 1000,
-      "fs-gid": 100
+      "fs-gid": 100,
+      "user-volume-location": "/home/jovyan/pd"
     },
     {
       "target-port": 8888,
       "cpu-limit": "1.0",
       "memory-limit": "1024Mi",
-      "name": "Bacpac Notebook",
+      "name": "Bacpac Synthetic Data Analysis Notebook",
       "image": "quay.io/cdis/jupyter-bacpac:master",
       "env": {},
       "args": [
@@ -207,7 +210,8 @@
         "export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; ln -s $(pwd) /home/$IAM/pd/dockerHome; mkdir -p /home/$IAM/.jupyter/custom; echo \"define(['base/js/namespace'], function(Jupyter){Jupyter._target = '_self';})\" >/home/$IAM/.jupyter/custom/custom.js; ln -s /data /home/$IAM/pd/; true"
       ],
       "user-uid": 1000,
-      "fs-gid": 100
+      "fs-gid": 100,
+      "user-volume-location": "/home/jovyan/pd"
     }
   ]
 }
