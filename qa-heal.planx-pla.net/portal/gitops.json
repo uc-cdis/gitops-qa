@@ -141,7 +141,7 @@
         }
       },
       "authorization": {
-        "enabled": false
+        "enabled": true
       }
     },
     "aggregations": [
