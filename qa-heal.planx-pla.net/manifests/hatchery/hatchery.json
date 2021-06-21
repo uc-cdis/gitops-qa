@@ -22,7 +22,7 @@
       "-s",
       "/bin/sh",
       "root"
-    ]
+    ] 
   },
   "containers": [
     {
