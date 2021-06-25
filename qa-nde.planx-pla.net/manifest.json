@@ -43,7 +43,7 @@
       "https://qa-microbiome.planx-pla.net",
       "https://qa-flu.planx-pla.net"
     ],
-    "netpolicy": "off",
+    "netpolicy": "on",
     "cookie_domain": "planx-pla.net",
     "public_datasets": true,
     "tier_access_level": "libre"
