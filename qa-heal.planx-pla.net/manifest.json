@@ -57,6 +57,9 @@
   "canary": {
     "default": 0
   },
+  "portal": {
+    "GEN3_BUNDLE": "heal"
+  },
   "sower": [
     {
       "name": "ingest-metadata-manifest",
