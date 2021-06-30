@@ -43,7 +43,7 @@
     "logs_bucket": "logs-qaplanetv2-gen3",
     "sync_from_dbgap": "False",
     "dispatcher_job_num": "10",
-    "netpolicy": "off",
+    "netpolicy": "on",
     "public_datasets": true,
     "tier_access_level": "regular",
     "tier_access_limit": "2",
