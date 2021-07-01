@@ -60,8 +60,12 @@
           "name": "Submit Data"
         },
         {
+          "link": "https://qa-heal.planx-pla.net/dashboard/Public/documentation/index.html",
+          "name": "HEAL Documentation"
+        },
+        {
           "link": "https://gen3.org/resources/user/",
-          "name": "Documentation"
+          "name": "Gen3 Documentation"
         }
       ]
     },
