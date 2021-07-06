@@ -380,17 +380,17 @@
     },
     "tagCategories": [
       {
-        "name": "Enhancing Pain Management",
+        "name": "Demographic Info",
         "color": "rgba(64, 34, 100, 1)",
         "display": true
       },
       {
-        "name": "Improving Treatments for Opioid Misuse and Addiction",
+        "name": "Study Design",
         "color": "rgba(153, 40, 107, 1)",
         "display": true
       },
       {
-        "name": "Demographics",
+        "name": "HEAL Specific",
         "color": "rgba(161, 36, 46, 1)",
         "display": true
       },
