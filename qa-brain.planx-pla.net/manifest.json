@@ -10,7 +10,7 @@
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
     "manifestservice": "quay.io/cdis/manifestservice:integration202106",
     "arborist": "quay.io/cdis/arborist:integration202106",
-    "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
+    "aws-es-proxy": "quay.io/cdis/aws-es-proxy:0.8",
     "dashboard": "quay.io/cdis/gen3-statics:integration202103",
     "hatchery": "quay.io/cdis/hatchery:integration202106",
     "fence": "quay.io/cdis/fence:integration202106",

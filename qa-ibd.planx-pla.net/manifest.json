@@ -5,7 +5,7 @@
   ],
   "versions": {
     "arborist": "quay.io/cdis/arborist:integration202106",
-    "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
+    "aws-es-proxy": "quay.io/cdis/aws-es-proxy:0.8",
     "dashboard": "quay.io/cdis/gen3-statics:integration202106",
     "fence": "quay.io/cdis/fence:integration202106",
     "indexd": "quay.io/cdis/indexd:integration202106",
