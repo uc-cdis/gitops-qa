@@ -62,7 +62,7 @@
         "cpu-limit": "1.0",
         "memory-limit": "1024Mi",
         "name": "Jupyter - Python/R",
-        "image": "quay.io/occ_data/jupyternotebook:1.7.2",
+        "image": "quay.io/cdis/jupyter-notebook:1.1.0",
         "env": {
           "NAMESPACE": "qa-ibd"
         },
