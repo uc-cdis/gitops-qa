@@ -45,7 +45,7 @@
         "target-port": 8787,
         "cpu-limit": "1.0",
         "memory-limit": "1024Mi",
-        "name": "R Studio 4.1.0 with packages",
+        "name": "RStudio 4.1.0 + base packages",
         "image": "quay.io/cdis/rstudio4.1-with-base-packages:master",
         "env": {
           "DISABLE_AUTH": "true"
