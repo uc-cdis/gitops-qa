@@ -4,7 +4,7 @@
     "works with qa-tb (tb), qa-aids (aids) , qa-microbiome and qa-flu"
   ],
   "versions": {
-    "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
+    "aws-es-proxy": "quay.io/cdis/aws-es-proxy:0.8",
     "arborist": "quay.io/cdis/arborist:2020.08",
     "fence": "quay.io/cdis/fence:2020.08",
     "indexd": "quay.io/cdis/indexd:2020.08",
