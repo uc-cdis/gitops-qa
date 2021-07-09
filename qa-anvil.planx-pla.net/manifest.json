@@ -10,7 +10,7 @@
     "access-backend": "quay.io/cdis/access-backend:2021.06",
     "ambassador": "quay.io/datawire/ambassador:0.60.3",
     "arborist": "quay.io/cdis/arborist:2021.06",
-    "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
+    "aws-es-proxy": "quay.io/cdis/aws-es-proxy:0.8",
     "fence": "quay.io/cdis/fence:2021.06",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "guppy": "quay.io/cdis/guppy:2021.06",

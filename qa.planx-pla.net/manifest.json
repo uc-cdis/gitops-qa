@@ -8,7 +8,7 @@
   },
   "versions": {
     "arborist": "quay.io/cdis/arborist:2.5.0",
-    "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
+    "aws-es-proxy": "quay.io/cdis/aws-es-proxy:0.8",
     "cogwheel": "quay.io/cdis/cogwheel:gen3",
     "fence": "quay.io/cdis/fence:2021.04",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",

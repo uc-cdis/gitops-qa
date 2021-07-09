@@ -156,7 +156,8 @@
         }
     ],
     "tagSelector": {
-      "title": "Tags by category"
+      "title": "Tags by category",
+      "showTagCategoryNames": true
     },
     "studyColumns": [
       {
