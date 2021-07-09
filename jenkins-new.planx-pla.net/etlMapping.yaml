@@ -17,7 +17,7 @@ mappings:
       - name: congenital_status
       - name: age_of_onset
       - name: phenotype_group
-      - name: new_project_id
+      - name: anvil_project_id
 #    flatten_props:
     aggregated_props:
       - name: sample_provider
@@ -129,8 +129,8 @@ mappings:
             fn: set
           - name: project_id
             fn: set
-          - name: new_project_id
-            src: new_project_id
+          - name: anvil_project_id
+            src: anvil_project_id
             fn: set
           - name: sex
             src: sex
