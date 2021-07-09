@@ -1,7 +1,7 @@
 {
   "storage": {
     "s3": {
-      "name": "qaplanetv1--jenkins-brain--mariner-707767160287",
+      "name": "qaplanetv1--jenkins-new--mariner-707767160287",
       "region": "us-east-1"
     }
   },

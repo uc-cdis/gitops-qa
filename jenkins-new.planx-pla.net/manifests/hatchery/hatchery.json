@@ -1,5 +1,5 @@
 {
-  "user-namespace": "jupyter-pods-jenkins-brain",
+  "user-namespace": "jupyter-pods-jenkins-new",
   "sub-dir": "/lw-workspace",
   "user-volume-size": "10Gi",
   "sidecar": {
@@ -7,8 +7,8 @@
     "memory-limit": "256Mi",
     "image": "quay.io/cdis/gen3fuse-sidecar:chore_sidecar",
     "env": {
-      "NAMESPACE": "jenkins-brain",
-      "HOSTNAME": "jenkins-brain.planx-pla.net"
+      "NAMESPACE": "jenkins-new",
+      "HOSTNAME": "jenkins-new.planx-pla.net"
     },
     "args": [],
     "command": [
