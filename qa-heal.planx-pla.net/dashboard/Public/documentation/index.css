@@ -9,7 +9,7 @@
 
 .top-bar {
     width: 100%;
-    height: 40px;
+    height: 3vh;
     background-image: linear-gradient(to right, #532565 ,#982568, #981f32, #bf362e, #e07c3e); 
 }
 
@@ -25,7 +25,7 @@
 
 .nav-bar {
     width: 100%;
-    height: 80px;
+    height: 10vh;
     background-color: #FFFFFF;
     border-bottom: 1px solid #D1D1D1;
 }
@@ -40,19 +40,19 @@
 }
 
 .nav-bar__logo {
-    padding: 8px 0;
+    /* padding: 1vh 0; */
     display: inline-block;
 }
 
 .nav-bar__logo-img {
-    height: 64px;
+    height: 8vh;
     display: block;
-    padding-right: 8px;
+    padding-top: 1vh;
 }
 
 .main-content {
     font-family: 'Montserrat', sans-serif;
-    bottom: 100px;
+    /* bottom: 100px; */
     width: 100%;
     background: #ffffff;
     flex-direction: row;
@@ -61,7 +61,7 @@
 
 .main-content-container {
     font-family: 'Montserrat', sans-serif;
-    bottom: 100px;
+    /* bottom: 100px; */
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -76,19 +76,21 @@
 
 /* sidenavigation */
 .sidenav {
-    width: 350px;
+    width: 25%;
     z-index: 1;
     background-color: #ffffff;
     overflow-x: hidden;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     position: flex;
     overflow-y: auto;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
   }
   
   .sidenav a {
     padding: 6px 6px 6px 32px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 0.9rem;
     color: #1a3057;
     display: block;
   }
@@ -157,7 +159,7 @@
 .footer {
     width: 100%;
     background-image: linear-gradient(to right, #532565 ,#982568, #981f32, #bf362e, #e07c3e); 
-    min-height: 100px;
+    height: 11vh;
     padding: 0 20px;
     align-content: space-around;
     bottom: 0;
@@ -172,18 +174,20 @@
 }
 
 .footer__img {
-    height: 60px;
-    margin: 15px;
+    height: 7vh;
+    margin-top: 1vh;
+    margin-right: 20px;
 }
 
 
 h1 {
-    line-height: 1.5em;
+    /* line-height: 1.5em;*/
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: left;
     color:#373a3c;
     text-align: left;
+    margin-top: 2vh;
     font-family: "Montserrat", bold, sans-serif;
 }
 
@@ -191,7 +195,7 @@ h2 {
     font-weight: bold;
     text-align: left;
     line-height: 1em;
-    font-size: 28px;
+    /* font-size: 28px; */
     color: #373a3c;
     padding-top: 300px;
 }
@@ -233,7 +237,7 @@ h6 {
 }
 
 .section-title {
-    padding-top: 50px;
+    padding-top: 2vh;
 }
 
 html {
