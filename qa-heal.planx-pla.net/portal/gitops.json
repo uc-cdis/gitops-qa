@@ -96,7 +96,8 @@
   "featureFlags": {
     "explorer": false,
     "analysis": false,
-    "discovery": true
+    "discovery": true,
+    "discoveryUseAggMDS": true
   },
   "discoveryConfig": {
     "features": {
@@ -110,7 +111,7 @@
           { "key": "Study Description" }
         ]
       },
-      "exportToWorkspaceBETA": {
+      "exportToWorkspace": {
         "enabled": true,
         "manifestFieldName": "__manifest",
         "enableDownloadManifest": false
