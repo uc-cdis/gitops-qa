@@ -55,11 +55,6 @@
     "topBar": {
       "items": [
         {
-          "icon": "upload",
-          "link": "/submission",
-          "name": "Submit Data"
-        },
-        {
           "link": "https://qa-heal.planx-pla.net/dashboard/Public/documentation/index.html",
           "name": "HEAL Documentation"
         },
