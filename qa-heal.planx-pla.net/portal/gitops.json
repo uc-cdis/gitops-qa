@@ -102,6 +102,7 @@
         "filters": [
           { "key": "Research Focus Area" },
           { "key": "Administering IC(s)" },
+          { "key": "Simulated vs. Real Data" },
           { "key": "Year Grant Awarded" },
           { "key": "Study Description" }
         ]
@@ -136,7 +137,8 @@
             "dataset_1_description",
             "dataset_2_description",
             "dataset_3_description",
-            "dataset_4_description"
+            "dataset_4_description",
+            "data_dictionary"
           ]
         }
       },
