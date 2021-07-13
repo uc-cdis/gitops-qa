@@ -109,6 +109,7 @@
       "exportToWorkspace": {
         "enabled": true,
         "manifestFieldName": "__manifest",
+        "downloadManifestButtonText": "Download",
         "enableDownloadManifest": false
       },
       "pageTitle": {
