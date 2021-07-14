@@ -284,15 +284,15 @@
   "guppy": {
     "indices": [
       {
-        "index": "jenkins_subject_alias",
+        "index": "jenkins.planx-pla.net_subject_alias",
         "type": "subject"
       },
       {
-        "index": "jenkins_file_alias",
+        "index": "jenkins.planx-pla.net_file_alias",
         "type": "file"
       }
     ],
-    "config_index": "jenkins_configs_alias",
+    "config_index": "jenkins.planx-pla.net_configs_alias",
     "auth_filter_field": "auth_resource_path"
   },
   "scaling": {

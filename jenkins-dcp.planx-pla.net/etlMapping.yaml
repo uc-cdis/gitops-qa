@@ -1,5 +1,5 @@
 mappings:
-  - name: jenkins-dcp_etl
+  - name: jenkins.planx-pla.net_etl
     doc_type: subject
     type: aggregator
     root: subject
@@ -128,7 +128,7 @@ mappings:
             src: file_id
             alternate_src: _file_id
             fn: count
-  - name: jenkins-dcp_file
+  - name: jenkins.planx-pla.net_file
     doc_type: file
     type: collector
     root: None
