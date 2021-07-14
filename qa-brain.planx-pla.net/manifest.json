@@ -8,25 +8,25 @@
   },
   "versions": {
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
-    "manifestservice": "quay.io/cdis/manifestservice:integration202106",
-    "arborist": "quay.io/cdis/arborist:integration202106",
+    "manifestservice": "quay.io/cdis/manifestservice:integration202108",
+    "arborist": "quay.io/cdis/arborist:integration202108",
     "aws-es-proxy": "quay.io/cdis/aws-es-proxy:0.8",
-    "dashboard": "quay.io/cdis/gen3-statics:integration202103",
-    "hatchery": "quay.io/cdis/hatchery:integration202106",
-    "fence": "quay.io/cdis/fence:integration202106",
-    "indexd": "quay.io/cdis/indexd:integration202106",
-    "peregrine": "quay.io/cdis/peregrine:integration202106",
-    "pidgin": "quay.io/cdis/pidgin:integration202106",
-    "revproxy": "quay.io/cdis/nginx:integration202106",
-    "sheepdog": "quay.io/cdis/sheepdog:integration202106",
-    "portal": "quay.io/cdis/data-portal:integration202106",
+    "dashboard": "quay.io/cdis/gen3-statics:integration202108",
+    "hatchery": "quay.io/cdis/hatchery:integration202108",
+    "fence": "quay.io/cdis/fence:integration202108",
+    "indexd": "quay.io/cdis/indexd:integration202108",
+    "peregrine": "quay.io/cdis/peregrine:integration202108",
+    "pidgin": "quay.io/cdis/pidgin:integration202108",
+    "revproxy": "quay.io/cdis/nginx:integration202108",
+    "sheepdog": "quay.io/cdis/sheepdog:integration202108",
+    "portal": "quay.io/cdis/data-portal:integration202108",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
-    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:integration202106",
-    "spark": "quay.io/cdis/gen3-spark:integration202106",
-    "tube": "quay.io/cdis/tube:integration202106",
-    "guppy": "quay.io/cdis/guppy:integration202106",
-    "wts": "quay.io/cdis/workspace-token-service:integration202106",
-    "metadata": "quay.io/cdis/metadata-service:integration202106"
+    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:integration202108",
+    "spark": "quay.io/cdis/gen3-spark:integration202108",
+    "tube": "quay.io/cdis/tube:integration202108",
+    "guppy": "quay.io/cdis/guppy:integration202108",
+    "wts": "quay.io/cdis/workspace-token-service:integration202108",
+    "metadata": "quay.io/cdis/metadata-service:integration202108"
   },
   "arborist": {
     "deployment_version": "2"
@@ -66,7 +66,7 @@
   },
   "ssjdispatcher": {
     "job_images": {
-      "indexing": "quay.io/cdis/indexs3client:integration202106"
+      "indexing": "quay.io/cdis/indexs3client:integration202108"
     }
   },
   "canary": {
