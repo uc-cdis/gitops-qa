@@ -1,5 +1,5 @@
 mappings:
-  - name: jenkins.planx-pla.net_etl
+  - name: jenkins-dcp.planx-pla.net_etl
     doc_type: subject
     type: aggregator
     root: subject
