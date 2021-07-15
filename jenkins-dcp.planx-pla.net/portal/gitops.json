@@ -335,18 +335,6 @@
         "rightIcon": "download"
       }
     ],
-    "arrangerConfig": {
-      "projectId": "search",
-      "graphqlField": "subject",
-      "index": "",
-      "manifestMapping": {
-        "resourceIndexType": "file",
-        "resourceIdField": "object_id",
-        "referenceIdFieldInResourceIndex": "_subject_id",
-        "referenceIdFieldInDataIndex": "_subject_id"
-      },
-      "nodeCountField": "_subject_id"
-    },
     "guppyConfig": {
       "dataType": "subject",
       "nodeCountTitle": "Subjects",
