@@ -1,5 +1,5 @@
 #!groovy
-@Library('cdis-jenkins-lib@chore/alternative_cloud_automation') _
+@Library('cdis-jenkins-lib@master') _
 testPipeline {
   MANIFEST = "True"
 }
