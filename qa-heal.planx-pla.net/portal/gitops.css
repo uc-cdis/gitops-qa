@@ -48,6 +48,18 @@
   --g3-font__semi-bold-weight: 600;
 }
 
+h1, h2, h3, h4,
+body,
+.caption,
+.form-h1, .form-h2, .form-caption 
+.introduction,
+.body,
+.special-number,
+.form-body,
+.form-special-number {
+    font-family: 'Montserrat';
+}
+
 /* Buttons */
 
 .data-dictionary__switch-button--active,
