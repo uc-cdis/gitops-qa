@@ -63,7 +63,7 @@
       "memory-limit": "14512Mi",
       "pull_policy": "Always",
       "name": "Jupyter Notebook- TB Ariba and Mykrobe (Lab Edition)",
-      "image": "quay.io/cdis/jupyter-tb:chore_nde_base",
+      "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/jupyter-tb:jupyter-nde1.1.2",
       "env": {
         "NAMESPACE": "qa-nde",
         "FRAME_ANCESTORS": "https://qa-tb.planx-pla.net https://qa-microbiome.planx-pla.net https://qa-aids.planx-pla.net https://qa-flu.planx-pla.net"
@@ -96,7 +96,7 @@
       "memory-limit": "14512Mi",
       "pull_policy": "Always",
       "name": "Jupyter Notebook- DAIDS (Lab Edition)",
-      "image": "quay.io/cdis/jupyter-daids:chore_nde_base",
+      "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/jupyter-daids:jupyter-nde1.1.2",
       "env": {
         "NAMESPACE": "qa-nde",
         "FRAME_ANCESTORS": "https://qa-tb.planx-pla.net https://qa-microbiome.planx-pla.net https://qa-aids.planx-pla.net https://qa-flu.planx-pla.net"
@@ -129,7 +129,7 @@
       "memory-limit": "14512Mi",
       "pull_policy": "Always",
       "name": "Jupyter Notebook- DAIT (Lab Edition)",
-      "image": "quay.io/cdis/jupyter-dait:chore_nde_base",
+      "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/jupyter-dait:jupyter-nde1.1.2",
       "env": {
         "NAMESPACE": "qa-nde",
         "FRAME_ANCESTORS": "https://qa-tb.planx-pla.net https://qa-microbiome.planx-pla.net https://qa-aids.planx-pla.net https://qa-flu.planx-pla.net"
@@ -162,7 +162,7 @@
       "memory-limit": "14512Mi",
       "pull_policy": "Always",
       "name": "Jupyter Notebook- DMID (Lab Edition)",
-      "image": "quay.io/cdis/jupyter-dmid:chore_nde_base",
+      "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/jupyter-dmid:jupyter-nde1.1.2",
       "env": {
         "NAMESPACE": "qa-nde",
         "FRAME_ANCESTORS": "https://qa-tb.planx-pla.net https://qa-microbiome.planx-pla.net https://qa-aids.planx-pla.net https://qa-flu.planx-pla.net"
