@@ -29,7 +29,7 @@
         "target-port": 8885,
         "cpu-limit": "1.0",
         "memory-limit": "1024Mi",
-        "name": "R Studio",
+        "name": "R Studio 3.5.3",
         "image": "quay.io/cdis/rstudio:master",
         "env": {
           "DISABLE_AUTH": "true"
@@ -77,7 +77,7 @@
         "target-port": 8888,
         "cpu-limit": "1.0",
         "memory-limit": "1024Mi",
-        "name": "Jupyter - Python/R",
+        "name": "Jupyter (Python 3.6.7, R 3.6.3)",
         "image": "quay.io/cdis/jupyter-notebook:1.1.0",
         "env": {
           "NAMESPACE": "qa-ibd"
@@ -106,7 +106,7 @@
         "target-port": 8889,
         "cpu-limit": "1.0",
         "memory-limit": "1024Mi",
-        "name": "Jupyter 6.4.0 (Python/R)",
+        "name": "Jupyter (Python 3.9.5, R 4.1.0)",
         "image": "quay.io/cdis/jupyter-6.4.0:latest",
         "env": {
           "NAMESPACE": "qa-ibd"
@@ -135,7 +135,7 @@
         "target-port": 8890,
         "cpu-limit": "1.0",
         "memory-limit": "1024Mi",
-        "name": "Jupyter 6.4.0 (Python/R) + base packages",
+        "name": "Jupyter (Python 3.9.5, R 4.1.0) + base packages",
         "image": "quay.io/cdis/jupyter-6.4.0-with-base-packages:latest",
         "env": {
           "NAMESPACE": "qa-ibd"
