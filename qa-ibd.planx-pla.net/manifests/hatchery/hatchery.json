@@ -29,7 +29,7 @@
         "target-port": 8885,
         "cpu-limit": "1.0",
         "memory-limit": "1024Mi",
-        "name": "R Studio 3.5.3",
+        "name": "RStudio 3.5.3",
         "image": "quay.io/cdis/rstudio:master",
         "env": {
           "DISABLE_AUTH": "true"
