@@ -135,7 +135,7 @@
         "target-port": 8890,
         "cpu-limit": "1.0",
         "memory-limit": "1024Mi",
-        "name": "Jupyter - Python/R",
+        "name": "Jupyter 6.4.0 (Python/R) + base packages",
         "image": "quay.io/cdis/jupyter-6.4.0-with-base-packages:latest",
         "env": {
           "NAMESPACE": "qa-ibd"
