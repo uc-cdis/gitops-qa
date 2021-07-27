@@ -292,7 +292,7 @@
     "indices": [
       {
         "index": "jenkins-blood.planx-pla.net_etl",
-        "type": "subject"
+        "type": "case"
       },
       {
         "index": "jenkins-blood.planx-pla.net_file",
