@@ -392,7 +392,14 @@
           "title": "Export to Workspace",
           "leftIcon": "datafile",
           "rightIcon": "download"
-        }
+        },
+        {
+          "enabled": true,
+          "type": "export-to-pfb",
+          "title": "Export to PFB",
+          "leftIcon": "datafile",
+          "rightIcon": "download"
+        } 
       ],
       "guppyConfig": {
         "dataType": "case",
