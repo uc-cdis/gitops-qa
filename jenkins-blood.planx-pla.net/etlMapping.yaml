@@ -1,5 +1,5 @@
 mappings:
-  - name: jenkins-blood.planx-pla.net_etl
+  - name: jenkins-blood.planx-pla.net_study
     doc_type: study
     type: aggregator
     root: study
@@ -66,7 +66,7 @@ mappings:
         fn: count
     parent_props:
       - path: projects[project_code:code,project_name:name,project_investigator_affiliation:investigator_affiliation]
-  - name: bloodpac_case
+  - name: jenkins-blood.planx-pla.net_etl
     doc_type: case
     type: aggregator
     root: case
@@ -141,7 +141,7 @@ mappings:
           - name: data_type
             src: data_type
             fn: set
-  - name: bloodpac_biospecimen
+  - name: jenkins-blood.planx-pla.net_biospecimen
     doc_type: biospecimen
     type: aggregator
     root: biospecimen
@@ -183,7 +183,7 @@ mappings:
           - name: storage_agitation
           - name: storage_agitation_hours
         sorted_by: updated_datetime, desc
-  - name: bloodpac_aliquot
+  - name: jenkins-blood.planx-pla.net_aliquot
     doc_type: aliquot
     type: aggregator
     root: aliquot
@@ -213,7 +213,7 @@ mappings:
           - name: run_identifier
           - name: days_to_assay
         sorted_by: updated_datetime, desc
-  - name: bloodpac_read_group
+  - name: jenkins-blood.planx-pla.net_read_group
     doc_type: read_group
     type: aggregator
     root: read_group
@@ -240,7 +240,7 @@ mappings:
       - name: adapter_sequence
       - name: library_preparation_kit_catalog_number
       - name: cycles
-  - name: bloodpac_medical_history
+  - name: jenkins-blood.planx-pla.net_medical_history
     doc_type: medical_history
     type: aggregator
     root: case
@@ -308,7 +308,7 @@ mappings:
           - name: dosage
           - name: dosage_units
         sorted_by: updated_datetime, desc
-  - name: bloodpac_publication
+  - name: jenkins-blood.planx-pla.net_publication
     doc_type: publication
     type: aggregator
     root: publication
