@@ -288,11 +288,11 @@
   "guppy": {
     "indices": [
       {
-        "index": "jenkins-dcp.planx-pla.net_etl",
+        "index": "jenkins-brain.planx-pla.net_etl",
         "type": "case"
       },
       {
-        "index": "jenkins-dcp.planx-pla.net_file",
+        "index": "jenkins-brain.planx-pla.net_file",
         "type": "file"
       }
     ],
