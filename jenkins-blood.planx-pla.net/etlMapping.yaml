@@ -66,7 +66,7 @@ mappings:
         fn: count
     parent_props:
       - path: projects[project_code:code,project_name:name,project_investigator_affiliation:investigator_affiliation]
-  - name: jenkins-blood.planx-pla.net_etl
+  - name: jenkins-blood.planx-pla.net_case
     doc_type: case
     type: aggregator
     root: case

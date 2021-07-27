@@ -214,7 +214,7 @@
           },
           {
             "name": "ROOT_NODE",
-            "value": "case"
+            "value": "study"
           }
         ],
         "volumeMounts": [
@@ -291,14 +291,38 @@
   "guppy": {
     "indices": [
       {
-        "index": "jenkins-blood.planx-pla.net_etl",
+        "index": "jenkins-blood.planx-pla.net_study",
+        "type": "study"
+      },
+      {
+        "index": "jenkins-blood.planx-pla.net_case",
         "type": "case"
+      },
+      {
+        "index": "jenkins-blood.planx-pla.net_medical_history",
+        "type": "medical_history"
+      },
+      {
+        "index": "jenkins-blood.planx-pla.net_biospecimen",
+        "type": "biospecimen"
+      },
+      {
+        "index": "jenkins-blood.planx-pla.net_aliquot",
+        "type": "aliquot"
+      },
+      {
+        "index": "jenkins-blood.planx-pla.net_read_group",
+        "type": "read_group"
+      },
+      {
+        "index": "jenkins-blood.planx-pla.net_publication",
+        "type": "publication"
       },
       {
         "index": "jenkins-blood.planx-pla.net_file",
         "type": "file"
       }
-    ],
+    ],    
     "config_index": "jenkins-blood.planx-pla.net_array-config",
     "auth_filter_field": "auth_resource_path"
   },
