@@ -55,12 +55,12 @@
     "topBar": {
       "items": [
         {
-          "link": "https://qa-heal.planx-pla.net/dashboard/Public/documentation/index.html",
-          "name": "HEAL Documentation"
-        },
-        {
           "link": "https://gen3.org/resources/user/",
           "name": "Gen3 Documentation"
+        },
+        {
+          "link": "https://qa-heal.planx-pla.net/dashboard/Public/documentation/index.html",
+          "name": "HEAL Documentation"
         }
       ]
     },
@@ -408,6 +408,7 @@
       },
       {
         "name": "Commons",
+        "displayName": "Data Resources",
         "color": "rgba(21, 6, 76, 1)"
       }
     ]

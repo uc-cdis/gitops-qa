@@ -14,7 +14,7 @@
         "multiLineTexts": [
           "AccessClinicalData@NIAID is a NIAID cloud-based, secure data platform that enables sharing of and access to reports and data sets from NIAID COVID-19 and other sponsored clinical trials for the basic and clinical research community.",
           "<b>How to View Available Data</b>",
-          "Go to <a href='https://accessclinicaldata.niaid.nih.gov/study-viewer/clinical_trials'>View Clinical Trials</a>. For each study listed, open the details and select the \"Learn More\" button to review a description of the clinical trial and data dictionary.",
+          "Go to <a href='https://qa-niaid.planx-pla.net/study-viewer/clinical_trials'>View Clinical Trials</a>. For each study listed, open the details and select the \"Learn More\" button to review a description of the clinical trial and data dictionary.",
           "<b>How to Request Data</b>",
           "Researchers looking to access NIAID COVID-19 and other sponsored clinical trials data may start the request process by completing the following steps:",
           "1. On the study page of the data set you are interested in, select the \"Login to Request Access\" button to login to the AccessClinicalData@NIAID platform and fill in and submit the Data Access Request (DAR) online form.",
