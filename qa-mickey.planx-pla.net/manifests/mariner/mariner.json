@@ -15,7 +15,8 @@
     "engine": {
       "labels": {
         "app": "mariner-engine",
-        "s3": "yes"
+        "s3": "yes",
+        "netnolimit": "yes"
       },
       "serviceaccount": "mariner-service-account",
       "restart_policy": "never"
