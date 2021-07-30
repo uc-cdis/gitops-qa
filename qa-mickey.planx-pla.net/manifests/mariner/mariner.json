@@ -23,7 +23,9 @@
     },
     "task": {
       "labels": {
-        "app": "mariner-task"
+        "app": "mariner-task",
+        "s3": "yes",
+        "netnolimit": "yes"
       },
       "restart_policy": "never"
     }
