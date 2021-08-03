@@ -14,14 +14,18 @@
   "jobs": {
     "engine": {
       "labels": {
-        "app": "mariner-engine"
+        "app": "mariner-engine",
+        "s3": "yes",
+        "netnolimit": "yes"
       },
       "serviceaccount": "mariner-service-account",
       "restart_policy": "never"
     },
     "task": {
       "labels": {
-        "app": "mariner-task"
+        "app": "mariner-task",
+        "s3": "yes",
+        "netnolimit": "yes"
       },
       "restart_policy": "never"
     }
