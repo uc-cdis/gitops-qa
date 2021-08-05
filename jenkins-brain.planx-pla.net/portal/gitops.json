@@ -106,15 +106,20 @@
     "topBar": {
       "items": [
         {
+          "link": "https://www.braincommons.org/",
+          "name": "About"
+        },
+        {
           "icon": "upload",
           "link": "/submission",
           "name": "Submit Data"
         },
         {
-          "link": "https://help.braincommons.org",
+          "link": "https://gen3.org/resources/user/",
           "name": "Documentation"
         }
-      ]
+      ],
+      "useProfileDropdown": true
     },
     "login": {
       "title": "BRAIN Commons",
