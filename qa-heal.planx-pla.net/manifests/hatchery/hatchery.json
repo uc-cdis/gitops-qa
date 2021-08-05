@@ -10,6 +10,12 @@
       "region": "us-east-1"
     },
     {
+      "user": "mshao1@uchicago.edu",
+      "aws_account_id": "354484406138",
+      "name": "rush2",
+      "region": "us-east-1"
+    },
+    {
       "user": "craigrbarnes@uchicago.edu",
       "aws_account_id": "354484406138",
       "name": "rush2",
