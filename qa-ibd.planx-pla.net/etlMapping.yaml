@@ -68,3 +68,21 @@ mappings:
           - name: year
             src: year
             fn: set
+  - name: study_viewer_index
+    doc_type: study_viewer_file
+    type: aggregator
+    root: project
+    props:
+      - name: name
+      - name: code
+      - name: data_available_for_request
+      - name: title
+      - name: description
+      - name: principle_investigator
+      - name: publisher
+      - name: study_design_allocation
+      - name: study_design_primary_purpose
+      - name: study_phase
+      - name: verification_date
+      - name: source
+      - name: rights

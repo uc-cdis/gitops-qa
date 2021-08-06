@@ -18,6 +18,7 @@
     "spark": "quay.io/cdis/gen3-spark:integration202108",
     "tube": "quay.io/cdis/tube:integration202108",
     "hatchery": "quay.io/cdis/hatchery:integration202108",
+    "requestor": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/requestor:1.4.0",
     "wts": "quay.io/cdis/workspace-token-service:integration202108",
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
     "manifestservice": "quay.io/cdis/manifestservice:integration202108",
@@ -161,7 +162,7 @@
     "environment": "qaplanetv2",
     "hostname": "qa-ibd.planx-pla.net",
     "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
-    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/ibdgc-dictionary/1.6.2/schema.json",
+    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/ibdgc-dictionary/1.6.4/schema.json",
     "portal_app": "gitops",
     "kube_bucket": "kube-qaplanetv2-gen3",
     "logs_bucket": "logs-qaplanetv2-gen3",
@@ -178,15 +179,23 @@
     "indices": [
       {
         "index": "qa-ibd",
-        "type": "participant"
+        "type": "participant",
+        "tier_access_level": "private"
       },
       {
         "index": "qa-ibd_file",
-        "type": "file"
+        "type": "file",
+        "tier_access_level": "private"
       },
       {
         "index": "qa-ibd_supplementary_file",
-        "type": "supplementary_file"
+        "type": "supplementary_file",
+        "tier_access_level": "private"
+      },
+      {
+        "index": "study_viewer_index",
+        "type": "study_viewer_file",
+        "tier_access_level": "libre"
       }
     ],
     "config_index": "qa-ibd_array-config",
