@@ -95,7 +95,7 @@
           "name": "Query"
         },
         {
-          "icon": "query",
+          "icon": "analysis",
           "link": "/resource-browser",
           "color": "#a2a2a2",
           "name": "Notebook Browser"
@@ -107,7 +107,7 @@
           "name": "Workspace"
         },
         {
-          "icon": "analysis",
+          "icon": "query",
           "link": "/study-viewer/study_viewer_file",
           "color": "#a2a2a2",
           "name": "Study Viewer"
