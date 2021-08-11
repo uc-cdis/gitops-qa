@@ -36,6 +36,10 @@
   "indexd": {
     "arborist": "true"
   },
+  "metadata": {
+    "USE_AGG_MDS": true,
+    "AGG_MDS_NAMESPACE": "qa-heal"
+  },
   "ssjdispatcher": {
     "job_images": {
       "indexing": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexs3client:2021.07"
