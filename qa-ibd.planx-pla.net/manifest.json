@@ -193,8 +193,8 @@
         "tier_access_level": "private"
       },
       {
-        "index": "study_viewer_index",
-        "type": "study_viewer_file",
+        "index": "qa-ibd_project",
+        "type": "project",
         "tier_access_level": "libre"
       }
     ],

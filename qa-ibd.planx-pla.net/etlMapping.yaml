@@ -68,14 +68,13 @@ mappings:
           - name: year
             src: year
             fn: set
-  - name: study_viewer_index
-    doc_type: study_viewer_file
+  - name: qa-ibd_project
+    doc_type: project
     type: aggregator
     root: project
     props:
       - name: name
       - name: code
-      - name: data_available_for_request
       - name: title
       - name: description
       - name: principle_investigator
