@@ -85,3 +85,5 @@ mappings:
       - name: verification_date
       - name: source
       - name: rights
+    parent_props:
+      - path: programs[program_name:name]

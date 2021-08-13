@@ -435,7 +435,7 @@
       "dataType": "project",
       "title": "Projects",
       "titleField": "title",
-      "rowAccessor": "name",
+      "rowAccessor": "project_id",
       "listItemConfig": {
         "blockFields": ["description"],
         "tableFields": ["name", "code", "title", "principle_investigator", "publisher","study_design_primary_purpose","study_phase","verification_date"]
