@@ -18,7 +18,7 @@
     "indexd": "quay.io/cdis/indexd:2021.01",
     "manifestservice": "quay.io/cdis/manifestservice:0.3.0",
     "metadata": "quay.io/cdis/metadata-service:2020.09",
-    "mariner": "quay.io/cdis/mariner-server:2021.03",
+    "mariner": "quay.io/cdis/mariner-server:2021.04",
     "ohdsi-atlas": "quay.io/cdis/ohdsi-atlas:latest",
     "ohdsi-webapi": "quay.io/cdis/ohdsi-webapi:latest",
     "peregrine": "quay.io/cdis/peregrine:2021.01",
