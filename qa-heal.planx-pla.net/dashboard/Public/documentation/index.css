@@ -78,7 +78,8 @@
 .sidenav {
     width: 25%;
     z-index: 1;
-    background-color: #ffffff;
+    background-color: #f1eeef; 
+
     overflow-x: hidden;
     /* margin-top: 50px; */
     position: flex;
@@ -116,6 +117,7 @@
     padding-left: 30px;
     display: table;
   }
+
   .ul-sidenav-sub {
     padding-left: 15px;
     display: table;
