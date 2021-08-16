@@ -55,10 +55,6 @@
     "topBar": {
       "items": [
         {
-          "link": "https://gen3.org/resources/user/",
-          "name": "Gen3 Documentation"
-        },
-        {
           "link": "https://qa-heal.planx-pla.net/dashboard/Public/documentation/index.html",
           "name": "HEAL Documentation"
         }
@@ -111,7 +107,9 @@
         "enabled": true,
         "manifestFieldName": "__manifest",
         "downloadManifestButtonText": "Download",
-        "enableDownloadManifest": false
+        "enableDownloadManifest": false,
+        "downloadZipButtonText": "Download Zip",
+        "enableDownloadZip": true
       },
       "pageTitle": {
         "enabled": false
