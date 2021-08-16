@@ -1,0 +1,2 @@
+jenkins-niaid:
+- any: ['qa-niaid.planx-pla.net/**/*']
