@@ -107,7 +107,9 @@
         "enabled": true,
         "manifestFieldName": "__manifest",
         "downloadManifestButtonText": "Download",
-        "enableDownloadManifest": false
+        "enableDownloadManifest": false,
+        "downloadZipButtonText": "Download Zip",
+        "downloadManifestButtonText": "Download"
       },
       "pageTitle": {
         "enabled": false
