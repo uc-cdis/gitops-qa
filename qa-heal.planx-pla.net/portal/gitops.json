@@ -93,7 +93,7 @@
   "discoveryConfig": {
     "features": {
       "advSearchFilters": {
-        "enabled": true,
+        "enabled": false,
         "field": "advSearchFilters",
         "filters": [
           { "key": "Research Focus Area" },
