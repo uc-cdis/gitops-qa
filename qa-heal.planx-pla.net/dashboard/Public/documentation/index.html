@@ -95,7 +95,7 @@
                 <a href="#ProfilePage">g) Profile Page</a>
             </div>
             <div class="sidenav-head">
-                <a href="#DownloadingDataFiles">Downloading Data and Data Files</a></strong>
+                <a href="#DownloadingDataFiles">Downloading Data Files</a></strong>
             </div>
                 <div class="ul-sidenav">
                 <a href="#DownloadFilesfromDiscovery">a) Download Data Files from the Discovery Page</a>
@@ -469,7 +469,7 @@
                     <span style="font-weight: bold">From here users</span> can also view <span style="font-weight: bold">current API keys</span> 
                     or create and download new keys. 
                     API keys are required for downloads which require use of the Gen3-client. 
-                    More information in the chapter <a href="#DownloadingDataFiles">“Downloading Data and Data Files”</a>.
+                    More information in the chapter <a href="#DownloadingDataFiles">“Downloading Data Files”</a>.
                 </p>
                 <img class="drop-shadow" src="img/profile_APIkey_active.png" alt="Profile_APIKey" style="width:80%">
                     <figcaption>
@@ -628,43 +628,51 @@
                 </p>
                 <ol>
                     <li>
-                        Log in on <a href="https://healdata.org/login">healdata.org/login</a>.
+                        Log in on <a href="https://healdata.org/login">healdata.org/login</a>.<br><br>
                     </li>
                     <li>
                         Find and select study on the Discovery Page using the checkbox on the left side and clicking on "Open in Workspace". 
-                        See current open-access studies <a href="#CurrentOAStudies">here</a>.
+                        See current open-access studies <a href="#CurrentOAStudies">here</a>.<br><br>
                     </li>
                     <li>
-                        Choose a workspace flavor. This step may take several minutes. 
+                        Choose a workspace flavor. This step may take several minutes. <br><br>
                     </li>
                     <li>
-                        Navigate to the <code>/data</code> folder and find the manifests under 
-                        <code>healdata.org/manifest-xxxxx</code>. Note, that all exported data 
-                        files will be saved in the “data” folder. <br>
-                        Please also note, that the workspace mounts up to a <span style="font-weight: bold">maximum of 5 different manifests</span> while the workspace is 
-                        running but shows only the latest exported manifest in a newly launched workspace. Terminating 
-                        the workspace will result in the <span style="font-weight: bold">loss of all but the latests manifest</span>. 
+                        Navigate to the <code>/pd/data/healdata.org/</code> folder and find the manifests there. <br>
+                        <blockquote>
+                               
+                                - "pd" means persistent directory. Saved files outside this directory will be lost. <br><br>  
+                                - The manifests will capture the file information sorted by name, guid (i.e. digital ID), or filepath. <br><br>
+                                - The manifest folders are named according to the timestamp of creation, such as 
+                                    <code>manifest-YYYY-MM-XXXX-XX-XX.XXXXXX</code>.<br><br>
+                                - Note, that all exported data files will be saved in the <code>/pd/data/healdata.org/</code> folder.<br><br>
+                                - Please also note, that the workspace mounts up to a 
+                                    <span style="font-weight: bold">maximum of 5 different manifests</span> while the workspace is 
+                                    running but shows only the latest exported manifest in a newly launched workspace.<br><br>
+                                - Terminating the workspace will result in the 
+                                    <span style="font-weight: bold">loss of all but the latests manifest</span>.<br><br>
+                        </blockquote>
                     </li>
                     <li>
-                        Users can now start a new notebook when navigating to <code>/data</code>. Click “New” (upper right corner) 
+                        From the directory <code>/pd</code>, users can now start a new notebook. Click “New” (upper right corner) 
                         or open a previously saved notebook on the landing drive to load the files into one of the cells, for example by running <br>
                         <code>
                             import os <br>
                             import pandas as pd <br>
-                            os.chdir('/data') <br>
-                            demo_df = pd.read_csv('/data/new_folder/this_is_a_demo.txt', sep='\t') <br>
+                            os.chdir('/pd') <br>
+                            demo_df = pd.read_csv('pd/this_is_a_demo.txt', sep='\t') <br>
                             demo_df.head() 
                         </code>
                         <br>
-                        More information for instructions on importing data can be found in the section <a href="#Workspaces">"Workspaces"</a>.
+                        More information for instructions on importing data can be found in the section <a href="#Workspaces">"Workspaces"</a>.<br><br>
                     </li>
                     <li>
                         Make sure to terminate the workspace when the work is finished to reduce computational costs.
                     </li>
                 </ol>
+
                 <p>
-                    If users work in the RStudio environment 
-                    (<a href="#RStudioEnvironment">read more here</a>), click 
+                    If users work in the <span style="font-weight: bold">RStudio</span> environment, click 
                     "Terminal" on the left hand side. The home
                     directory is 
                     <code>
@@ -678,11 +686,10 @@
                     <code>
                         ls
                     </code>
-                    to list all manifests.
+                     to list all manifests. 
+                     <a href="#RStudioEnvironment">Read more here</a>.
                 </p>
-                <blockquote>
-                    All exported data will be stored in the <code>pd/data/healdata.org/manifest-xxxx</code> folder.
-                </blockquote>
+
 
 
             <h3 id="Workspaces" class="section-title">e) Workspaces</h3>
@@ -764,19 +771,30 @@
                     </figcaption> <br> 
                 </li><br>
                 <li>
-                    After launching, the home folder is displayed, which is a user's persistent drive. <br><br>
+                    After launching, the home folders are displayed, one of which is the user's persistent drive ("pd"). <br><br>
                     <img class="drop-shadow" src="img/workspace_data_folder.png" alt="Workspace_data_folder" style="width:100%"> 
                     <figcaption style="width:100%">
-                        The home directory is a user’s persistent drive. New files should be saved in the home 
+                        The /pd directory is a user’s persistent drive. 
+                    </figcaption> <br> 
+
+                </li>
+                <li>
+                    Select the /pd folder. Only files saved in the /pd directory will remain available after termination of a workspace session. 
+                    <img class="drop-shadow" src="img/workspace_pd_folder.png" alt="Workspace_pd_folder" style="width:100%"> 
+                    <figcaption style="width:100%">
+                        New files or licenses should be saved in the the /pd
                         directory if users need to access them after restarting the workspaces. 
                     </figcaption> <br> 
 
-                    Only files saved in the home directory will remain available after termination of a workspace session. <br><br>
-                    Do not save files in the "data" and “data/healdata.org” folders.
-                    The folder “healdata.org” in the “data” folder will host the data files you have exported from the Discovery Page. <br><br>
+                    <blockquote>
+                        - Do not save files in the "data" and “data/healdata.org” folders. <br> <br>
+                        - The folder “healdata.org” in the “data” folder will host the data files you have exported from the Discovery Page. <br><br>
+    
+                        - <span style="font-weight: bold">Attention</span>: Any personal files in the folder
+                         “data” will be lost. Personal files in the directory /pd will persist.
+                    </blockquote>
 
-                    <span style="font-weight: bold">Attention</span>: Any personal files in the folder
-                     “data” will be lost. Personal files in the home directory will persist.
+
                 </li><br>
             
                 <li>
@@ -819,7 +837,7 @@
                 local machine to the home directory by 
                 clicking on “Upload” and access them in the Notebook (see below).
             </p>
-            <img class="drop-shadow" src="img/workspace_upload.png" alt="Workspace_upload" style="width:100%"> 
+            <img class="drop-shadow" src="img/workspace_upload.png" alt="Workspace_upload" style="width:80%"> 
             <figcaption style="width:100%">
                 Upload data files or Notebooks to the workspace by clicking on “Upload” in the top right corner. 
                 On the upload screen, find your text file (in this example it is "this_is_a_demo.txt") to upload from your 
@@ -831,7 +849,7 @@
                 import os <br>
                 import pandas as pd <br>
                 os.chdir('/data') <br>
-                demo_df = pd.read_csv('/data/this_is_a_demo.txt', sep='\t') <br>
+                demo_df = pd.read_csv('/this_is_a_demo.txt', sep='\t') <br>
                 demo_df.head() <br>
             </code><br>
 
@@ -902,7 +920,7 @@
                 Users can expect to be able to use typical Python or RStudio packages, such as PyPI or CRAN.
                 For Python and RStudio, users can start a new notebook under "New", as shown below. 
             </p>
-            <img class="drop-shadow" src="img/workspace_new.png" alt="Workspace_new" style="width:100%"> 
+            <img class="drop-shadow" src="img/workspace_new.png" alt="Workspace_new" style="width:80%"> 
             <figcaption style="width:100%">
                 Find Python 3 or RStudio when starting a new notebook under “New”.
             </figcaption> 
@@ -931,7 +949,7 @@
             </p>
             <img class="drop-shadow" src="img/stata_lic.png" alt="stata_lic" style="width:100%"> 
             <figcaption style="width:100%">
-                If the upload was successful, the license appears in the home directory /pd. 
+                If the upload was successful, the license appears in the directory /pd. 
             </figcaption> 
             <p>
                 <em>Note</em>, that uploading the license can also be achieved programmatically by
@@ -1245,7 +1263,7 @@
                     </li>
                 </ul>
                 <blockquote>
-                    All exported data will be stored in the <code>pd/data/healdata.org/manifest-xxxx</code> folder.
+                    All exported data will be stored in the <code>pd/data/healdata.org/manifest-YYYY-MM-XXXX-XX-XX.XXXXXX</code> folder.
                 </blockquote>
                 <ul>
                     <li>
@@ -1299,7 +1317,7 @@
                         <img class="drop-shadow" src="img/static_notebook_bacpac_demo_1.png" alt="static_notebook_bacpac_demo_1" style="width:90%"><br><br>
                     </li>
                     <li>
-                        Find and open the notebook in the home directory.  <br>
+                        Find and open the notebook in the landing directory.  <br>
                         Open the notebook by clicking on “HEAL_Workspace_Demo_BACPAC".<br>
                         <img class="drop-shadow" src="img/static_notebook_bacpac_demo.png" alt="notebook_browser_notebook1" style="width:90%"><br><br>
                     </li>
@@ -1312,11 +1330,14 @@
                         <img class="drop-shadow" src="img/static_notebook_bacpac_manifestname.png" alt="static_notebook_bacpac_manifestname" style="width:90%"><br><br>
                     </li>
                     <li>
-                        Explore the rest of the notebook. Make sure to terminate the workspace when the work is finished to reduce computational costs.
+                        Explore the rest of the notebook. If you want to make changes, make sure to save the notebook as a new file in the directory "pd".<br><br>
+                    </li>
+                    <li>
+                        Make sure to terminate the workspace when the work is finished to reduce computational costs.
                     </li>
                 </ol>
                 <p>
-                    <span style="font-weight: bold">Note</span>: Work must be saved in the home directory in order to remain 
+                    <span style="font-weight: bold">Note</span>: Work must be saved in the directory "/pd" in order to remain 
                     accessible after workspace termination.
                     Note, that Workspaces automatically shut down after 90 minutes of idle time.
                 </p>
@@ -1347,7 +1368,7 @@
 
 
 
-            <h2 id="DownloadingDataFiles" class="section-title">5. Downloading Data and Data Files</h2>
+            <h2 id="DownloadingDataFiles" class="section-title">5. Downloading Data Files</h2>
                 <p>
                     Users can download data files associated with a study by 
                     downloading the files directly from the Discovery page, or leveraging the 
