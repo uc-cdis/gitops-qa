@@ -5,8 +5,8 @@
 			"commons_url": "qa-heal.planx-pla.net"
 		},
 		"JCOIN": {
-			"mds_url": "https://jcoin.datacommons.io/",
-			"commons_url" : "jcoin.datacommons.io",
+			"mds_url": "https://qa-jcoin.planx-pla.net/",
+			"commons_url" : "qa-jcoin.planx-pla.net/",
 			"columns_to_fields": {
 				"short_name": "name",
 				"full_name": "full_name",
