@@ -34,7 +34,11 @@
         "chartType": "image",
         "imageLink": "/custom/sponsors/gitops-sponsors/sars-cov2.png"
       }],
-      "homepageChartNodes": []
+      "homepageChartNodes": [],
+      "emailSignUpForm": {
+        "action": "https://public.govdelivery.com/accounts/USNIAID/subscribers/qualify",
+        "subscribeToTopicId": "USNIAID_185"
+      }
     },
     "navigation": {
       "title": "AccessClinicalData@NIAID",
