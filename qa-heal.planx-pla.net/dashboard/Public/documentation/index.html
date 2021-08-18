@@ -107,6 +107,9 @@
             <div class="sidenav-head">
                 <a href="#Tutorials">Tutorial Videos</a></strong>
             </div>
+            <div class="sidenav-head">
+                <a href="#Contact">Contact</a></strong>
+            </div>
 
     
         </div>
@@ -340,12 +343,12 @@
             <h3 id="AccessCheck" class="section-title">c) How to check and request access</h3>
                 <p>
                     Users can find out to which projects they have access to by navigating to <a href="http://healdata.org/discovery">the Discovery Page</a>
-                    and by selecting “Data Availability" - “Accessible” - ”OK” as shown below. 
+                    and by selecting “Data Availability" - "Available" - ”OK” as shown below. 
                 </p>
 
                 <img class="drop-shadow" src="img/access_box_1.png" alt="Access_Data" style="width:80%">
                 <figcaption>
-                    Accessible data can be found when the box next to “Accessible” is selected. 
+                    Available data can be found when the box next to "Available" is selected. 
                 </figcaption>
 
             
@@ -563,13 +566,13 @@
                 <p>
                     Users can select and filter studies from multiple resources and conduct analyses on the selected datasets 
                     in a workspace. Users can find search only available data they have access to by selecting the data access button 
-                    in the top right corner of the study page and selecting “Data Availability" - "Accessible" as shown below. The Discovery Page will 
+                    in the top right corner of the study page and selecting “Data Availability" - "Available" as shown below. The Discovery Page will 
                     automatically update the list of studies that have available datasets. 
                 </p>
                 <img class="drop-shadow" src="img/access_box_select_window.png" alt="Access_Box_Select_Window" style="width:80%">
                 <figcaption>
-                    Select the symbol next to Data Availability to open all options. Four options are available. 
-                    Find available datasets by clicking on the “Accessible” button.
+                    Select the symbol next to Data Availability to open all options. Three options are available. 
+                    Find available datasets by clicking on the “Available” button.
                 </figcaption>
 
 
@@ -581,12 +584,12 @@
 
                 <img class="drop-shadow" src="img/access_options.png" alt="Access_boxes" style="width:20%">
                 <figcaption>
-                    Four options for Data Availability. 
+                    Three options for Data Availability. 
                 </figcaption>
 
                 <ul>
                     <li>
-                        <span style="font-weight: bold">Accessible:</span> This option will display only studies with datasets users have access to and entails 
+                        <span style="font-weight: bold">Available:</span> This option will display only studies with datasets users have access to and entails 
                         all open-access studies. Studies can be selected and exported to a workspace by clicking on the 
                         associated checkbox on the left-hand side of the study entry and selecting “Open in Workspace” at 
                         the top right corner. A detailed description of how to go from here can be found in the <a href="#Workspaces">"Workspaces" section</a>.<br><br>
@@ -596,17 +599,12 @@
                         </figcaption> <br> <br>
                     </li>
                     <li>
-                        <span style="font-weight: bold">Unaccessible:</span> This option will display only studies with datasets users do not 
-                        have access to. The checkbox next to the study will be greyed out and non-clickable. <br> <br>
+                        <span style="font-weight: bold">Not available:</span> This option will filter out all studies that will only have
+                        metadata but no datasets available. The checkbox next to the study will be greyed out and non-clickable. <br> <br>
                         <img class="drop-shadow" src="img/access_greyed_out_box.png" alt="Access_greyed_out_box" style="width:100%">
                         <figcaption style="width:100%">
-                            Studies will grey out if they're not accessible, have no data attached, or are in pending mode. 
+                            Studies will grey out if they're not available, have no data attached, users have no access to, or are in pending mode. 
                         </figcaption> <br> <br>
-                    </li>
-                    <li>
-                        <span style="font-weight: bold">No Data:</span> This option will filter out all studies that will only have
-                         metadata but no datasets available. 
-                         The checkbox next to the study will be greyed out and non-clickable as shown above.<br> <br>
                     </li>
                     <li>
                         <span style="font-weight: bold">Pending:</span> This option will display studies located on any 
@@ -765,22 +763,22 @@
                     </ul> <br>
                 <li>
                     Click “Launch” on any of the above workspace flavors to spin up a copy of that VM. Note: Launching the VM may take several minutes.<br><br>
-                    <img class="drop-shadow" src="img/workspace_launch.png" alt="Workspace_launch" style="width:100%">
+                    <img class="drop-shadow" src="img/workspace_launch.png" alt="Workspace_launch" style="width:80%">
                     <figcaption style="width:100%">
                         The status of launching the workspace is displayed after clicking on “Launch”.
                     </figcaption> <br> 
                 </li><br>
                 <li>
                     After launching, the home folders are displayed, one of which is the user's persistent drive ("pd"). <br><br>
-                    <img class="drop-shadow" src="img/workspace_data_folder.png" alt="Workspace_data_folder" style="width:100%"> 
+                    <img class="drop-shadow" src="img/workspace_data_folder.png" alt="Workspace_data_folder" style="width:80%"> 
                     <figcaption style="width:100%">
                         The /pd directory is a user’s persistent drive. 
                     </figcaption> <br> 
 
                 </li>
                 <li>
-                    Select the /pd folder. Only files saved in the /pd directory will remain available after termination of a workspace session. 
-                    <img class="drop-shadow" src="img/workspace_pd_folder.png" alt="Workspace_pd_folder" style="width:100%"> 
+                    Select the /pd folder. Only files saved in the /pd directory will remain available after termination of a workspace session. <br><br>
+                    <img class="drop-shadow" src="img/workspace_pd_folder.png" alt="Workspace_pd_folder" style="width:80%"> 
                     <figcaption style="width:100%">
                         New files or licenses should be saved in the the /pd
                         directory if users need to access them after restarting the workspaces. 
@@ -799,7 +797,7 @@
             
                 <li>
                     Start a new workspace by clicking “New” in the top right corner and choose between Python 3 or R Studio as the base programmatic language. <br><br>
-                    <img class="drop-shadow" src="img/workspace_new.png" alt="Workspace_new" style="width:100%"> 
+                    <img class="drop-shadow" src="img/workspace_new.png" alt="Workspace_new" style="width:80%"> 
                     <figcaption style="width:100%">
                         Start a new notebook under “New”.
                     </figcaption> <br> <br>
@@ -816,13 +814,13 @@
                     Users can import data files directly into the Notebook code after selecting files 
                     from the <a href="#SelectBringFilesDiscoveryToWorkspace">"Discovery Page"</a>. An example is shown below. <br><br>
 
-                    <img class="drop-shadow" src="img/workspace_import_manifest.png" alt="workspace_import_manifest" style="width:100%"> 
+                    <img class="drop-shadow" src="img/workspace_import_manifest.png" alt="workspace_import_manifest" style="width:80%"> 
                      <br> <br>
                 <li>
                     Do not forget to terminate your workspace once your work is finished to be mindful of 
                     the cost-intensive computational effort. <span style="font-weight: bold">Note, that Workspaces automatically 
                     shut down after 90 minutes of idle time.</span><br><br>
-                    <img class="drop-shadow" src="img/workspace_terminate_2.png" alt="Workspace_terminate" style="width:60%"> 
+                    <img class="drop-shadow" src="img/workspace_terminate_2.png" alt="Workspace_terminate" style="width:50%"> 
                     <figcaption style="width:100%">
                         Do not forget to terminate your workspace once your work is finished. Unterminated workspaces continue to accrue 
                         computational costs. 
@@ -856,7 +854,7 @@
             <p>
                 Users can <span style="font-weight: bold;">save</span> the notebook by clicking "File" - "Save as", as shown below.
             </p>
-                <img class="drop-shadow" src="img/workspace_notebook_save.png" alt="workspace_notebook_save" style="width:100%"> 
+                <img class="drop-shadow" src="img/workspace_notebook_save.png" alt="workspace_notebook_save" style="width:80%"> 
                 <figcaption style="width:100%">
                     Save the notebook under “File” - "Save as".
                 </figcaption> 
@@ -864,7 +862,7 @@
             <p>
                 Users can <span style="font-weight: bold;">download</span> notebooks by clicking "File" - "Download as", as shown below.
             </p>
-            <img class="drop-shadow" src="img/workspace_notebook_download.png" alt="workspace_notebook_download" style="width:100%"> 
+            <img class="drop-shadow" src="img/workspace_notebook_download.png" alt="workspace_notebook_download" style="width:80%"> 
                 <figcaption style="width:100%">
                     Download the notebook as ".ipynb". 
                 </figcaption> 
@@ -947,7 +945,7 @@
                 Users need to upload a license <code>stata.lic</code> 
                 to the /pd folder by selecting "Upload" (top right). 
             </p>
-            <img class="drop-shadow" src="img/stata_lic.png" alt="stata_lic" style="width:100%"> 
+            <img class="drop-shadow" src="img/stata_lic.png" alt="stata_lic" style="width:80%"> 
             <figcaption style="width:100%">
                 If the upload was successful, the license appears in the directory /pd. 
             </figcaption> 
@@ -975,7 +973,7 @@
             <p>
                 This will return the following:
             </p>
-            <img class="drop-shadow" src="img/stata_setup_imports.png" alt="stata_setup_imports" style="width:100%"> 
+            <img class="drop-shadow" src="img/stata_setup_imports.png" alt="stata_setup_imports" style="width:80%"> 
             <figcaption style="width:100%">
                 Setup the license in the first cell. 
             </figcaption> 
@@ -995,7 +993,7 @@
                 <figcaption style="width:100%">
                     Launch this workspace to enter the RStudio environment. 
                 </figcaption><br><br>
-            <img class="drop-shadow" src="img/workspace_RStudio_env_landing.png" alt="workspace_RStudio_env_landing" style="width:100%"> 
+            <img class="drop-shadow" src="img/workspace_RStudio_env_landing.png" alt="workspace_RStudio_env_landing" style="width:80%"> 
                 <figcaption style="width:100%">
                     Landing page of the RStudio environment. 
                 </figcaption> 
@@ -1029,7 +1027,7 @@
                     of available HEAL datasets.
                 </blockquote>
 
-                <img class="drop-shadow" src="img/static_notebooks_landing.png" alt="static_notebooks_landing" style="width:100%">
+                <img class="drop-shadow" src="img/static_notebooks_landing.png" alt="static_notebooks_landing" style="width:80%">
                 <figcaption>
                     The static HEAL Notebooks provide demo analyses of datasets published on the HEAL platform. 
                 </figcaption>
@@ -1413,7 +1411,7 @@
                 </li>
                 <li>
                     Users will be notified once the download is ready. If the download doesn't start automatically,
-                    please follow the link prompted.
+                    please follow the link prompted.<br>
                     <img class="drop-shadow" src="img/download_discovery_prepared_3.png" alt="download_discovery_prepared_3" style="width:50%">
                     <figcaption>
                         Users will be notified once the download is ready. Save the file(s) 
@@ -1449,7 +1447,7 @@
                     </li>
                     <li>
                         Find and select one or multiple studies of interest on the <a href="http://healdata.org/discovery">Discovery Page</a>. 
-                        For multiple studies, select "Data Availability" in the top right corner, click “Accessible”, and choose multiple studies. 
+                        For multiple studies, select "Data Availability" in the top right corner, click “Available”, and choose multiple studies. 
                     </li> <br>
                     <li>
                         Click on the button “Download". <br>
@@ -1538,7 +1536,7 @@
                         Clicking on an individual study on the Discovery Page will show in the top 
                         right corner if they are accessible to the user. To see all studies 
                         users have access to, users should navigate to the Discovery Page and 
-                        select “Data Availability” - Accessible”. More information
+                        select “Data Availability” - Available”. More information
                          <a href="#AccessCheck">here</a>.  <br><br> 
                     </li>
                     <li>
@@ -1706,10 +1704,22 @@
                         <br>
                         If your Browser does not support watching this video, here's
                         a <a href="videos/Opioid_Ovderdose_Traj_CDCWonder_Demo_2021-07-21.mp4">link to the video</a> instead. <br> <br>
-                    
                     </li>
                 </ul>
-            </div> </div>
+
+                <h2 id="Contact" class="section-title">Contact</h2>
+                <p>
+                    Need help? Please contact our help desk at heal-support@datacommons.io. 
+                </p>
+                <p>
+                    Powered by <br> 
+                    <a href="https://ctds.uchicago.edu/gen3">
+                        <img src="img/gen3_grey.png" alt="Gen3_logo" style="width:10%">
+                    </a>       
+                </p>
+  
+            </div> 
+        </div>
  
         </div>
 
