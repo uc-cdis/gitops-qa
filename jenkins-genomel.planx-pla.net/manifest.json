@@ -40,6 +40,10 @@
   "indexd": {
     "arborist": "true"
   },
+  "metadata": {
+    "USE_AGG_MDS": true,
+    "AGG_MDS_NAMESPACE": "jenkins-genomel"
+  },
   "arranger": {
     "project_id": "jniaid_3",
     "auth_filter_field": "auth_resource_path",

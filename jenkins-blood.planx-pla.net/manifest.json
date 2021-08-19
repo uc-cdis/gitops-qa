@@ -267,6 +267,10 @@
       "case"
     ]
   },
+  "metadata": {
+    "USE_AGG_MDS": true,
+    "AGG_MDS_NAMESPACE": "jenkins-blood"
+  },
   "global": {
     "environment": "qaplanetv1",
     "hostname": "jenkins-blood.planx-pla.net",
