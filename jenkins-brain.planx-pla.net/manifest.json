@@ -275,7 +275,8 @@
     "sync_from_dbgap": "True",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
     "dispatcher_job_num": "5",
-    "netpolicy": "on"
+    "netpolicy": "on",
+    "tier_access_level" : "libre"
   },
   "ssjdispatcher": {
     "job_images": {
@@ -294,6 +295,10 @@
       {
         "index": "jenkins-brain.planx-pla.net_file",
         "type": "file"
+      },
+      {
+        "index": "jenkins_cmc_alias",
+        "type": "clinical_trials"
       }
     ],
     "config_index": "jenkins-brain.planx-pla.net_array-config",
