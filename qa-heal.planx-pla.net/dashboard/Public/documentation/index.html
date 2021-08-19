@@ -236,6 +236,8 @@
                     </li>
                 </ul>
 
+
+
             <h2 id="DataManagementRepositories" class="section-title">3. Data Management and Repositories</h2>
                 <p>
                     The HEAL-funded RENCI/RTI (Renaissance Computing Institute) at the University of North Carolina at Chapel Hill 
@@ -243,6 +245,17 @@
                     to the Platform. The HEAL Platform securely exposes data stored on multiple HEAL-approved repositories. 
                     For more information, see <a href="https://heal.nih.gov/about/public-access-data">https://heal.nih.gov/about/public-access-data</a>. 
                 </p>
+                <p>
+                    Currently, the platform has the following Data Resources:
+                </p>
+                <img class="drop-shadow" src="img/data_resources.png" alt="data_resources" style="width:30%">
+                <figcaption>
+                    Current Data Resources on the HEAL Data Platform. Select each tag to filter for the studies from this
+                    resource on the <a href="#Discovery">Discovery Page</a>. 
+                </figcaption>
+
+
+
 
             <h2 id="HowToGetStarted" class="section-title">4. How to get started</h2>
 
@@ -363,13 +376,11 @@
                     </figcaption>
 
                 <p>
-                    If you have access, a green box will show “You have access to this study”; 
-                    if you do not have access, a yellow box will appear with “You do not have access to the study".
+                    If you have access, a green box will show “You have access to this study”.
                 </p>
-                <img class="drop-shadow" src="img/access_NO.png" alt="No_Access" style="width:80%">
                 <img class="drop-shadow" src="img/access_YES.png" alt="Yes_Access" style="width:80%">
                     <figcaption>
-                        Access vs. no Access is displayed as a green (top) or yellow (bottom) box on top of each Study Page.
+                        Access is displayed as a yellow box on top of each Study Page.
                     </figcaption>
 
 
@@ -378,6 +389,9 @@
                     Current open-access studies will be shown when navigating to the Discovery Page. <br>
                     Users can download and/or export <span style="font-weight: bold">open-access</span> study files after logging in. 
                     Currently, the HEAL Platform hosts the following studies. All are open-access except when noted.
+                </p>
+                <p>
+                    Note, that different studies relate to different <a href="#DataManagementRepositories">Data Resources</a>. 
                 </p>
 
                 <table>
@@ -388,6 +402,9 @@
                         <th>
                             Study Name
                         </th>
+                        <th>
+                            Data Resource
+                        </th>
                     </tr>
                     <tr>
                         <td>
@@ -396,14 +413,19 @@
                         <td>
                             Naloxone Overdose Prevention Laws 
                         </td>
+                        <td>
+                            PDAPS
+                        </td>
                     </tr>
                     <tr>
                         <td>
-                            nmhss
+                            10.3886/ICPSR34945.v3
                         </td>
                         <td>
                             National Mental Health Services Survey (N-MHSS)
                         </td>
+                        <td>
+                            ICPSR
                     </tr>
                     <tr>
                         <td>
@@ -412,13 +434,19 @@
                         <td>
                             A synthetic dataset from the Back Pain Consortium (BACPAC) Research Program Data Integration, Algorithm Development and Operations Management Center 
                         </td>
+                        <td>
+                            HEAL
+                        </td>
                     </tr>
                     <tr>
                         <td>
-                            nssats1
+                            10.3886/ICPSR04256.v5
                         </td>
                         <td>
                             National Survey of Substance Abuse Treatment Services (N-SSATS) 
+                        </td>
+                        <td>
+                            ICPSR
                         </td>
                     </tr>
                     <tr>
@@ -428,6 +456,10 @@
                         <td>
                         CDC Wide-ranging Online Data for Epidemiologic Research (CDC WONDER) Mortality Multiple Cause-of-Death Public Use Record
                         </td>
+                        <td>
+                            HEAL
+                        </td>
+
                     </tr>
                     <tr>
                         <td>
@@ -436,6 +468,9 @@
                         <td>
                         Treatment Episode Data Set: Discharges (TEDS-D)
                         </td>
+                        <td>
+                            ICPSR
+                        </td>
                     </tr>
                     <tr>
                         <td>
@@ -443,6 +478,9 @@
                         </td>
                         <td>
                         Drug Enforcement Administration Controlled Substances Tracking (DEA ARCOS)
+                        </td>
+                        <td>
+                            HEAL
                         </td>
                     </tr>
                     <tr>
@@ -453,6 +491,9 @@
                             JCOIN - Methodology and Advanced Analytics Resource Center: <br>
                             a) JCOIN 026: Amerispeak Brief Stigma Survey <br>
                             b) The Opioid Environment Policy Scan
+                        </td>
+                        <td>
+                            JCOIN
                         </td>
                     </tr>
                 </table>
@@ -590,12 +631,13 @@
                 <ul>
                     <li>
                         <span style="font-weight: bold">Available:</span> This option will display only studies with datasets users have access to and entails 
-                        all open-access studies. Studies can be selected and exported to a workspace by clicking on the 
-                        associated checkbox on the left-hand side of the study entry and selecting “Open in Workspace” at 
-                        the top right corner. A detailed description of how to go from here can be found in the <a href="#Workspaces">"Workspaces" section</a>.<br><br>
-                        <img class="drop-shadow" src="img/discovery_select_and_open_in_workspace.png" alt="Discovery_Select_and_Open_In_Workspace" style="width:100%">
+                        all open-access studies. Studies can be selected and exported to a workspace or downloaded by clicking on the 
+                        associated checkbox on the left-hand side of the study entry and selecting one of the options in the top right. 
+                        
+                        <br><br>
+                        <img class="drop-shadow" src="img/discovery_options.png" alt="discovery_options" style="width:100%">
                         <figcaption style="width:100%">
-                            Export datasets to the workspace by selecting the study and clicking on “Open in workspace”. 
+                            Once available, each study can be selected and exported to workspace or downloaded. 
                         </figcaption> <br> <br>
                     </li>
                     <li>
@@ -1130,7 +1172,7 @@
                             Python
                         </td>
                         <td>
-                            n/a
+                            
                         </td>
                     </tr>
                     <tr>
@@ -1192,7 +1234,7 @@
                             Python
                         </td>
                         <td>
-                            <a href="#LinkingAccessTo">Externaldata</a> 
+                            <a href="#LinkingAccessTo">FAIR</a> 
                         </td>
                     </tr>
                     <tr>
@@ -1242,7 +1284,7 @@
                             Python
                         </td>
                         <td>
-                            n/a
+                            
                         </td>
                     </tr>
                 </table>
@@ -1373,6 +1415,9 @@
                     CTDS-owned python software development kit (SDK) and the tool “Gen3-client” if the file size exceeds 250 MB.
                 </p>
                 <p>
+                    Note that current studies that have datasets of more than 250 MB are those with the following project numbers: a) cdcwonder and b) deaarcos1.
+                </p>
+                <p>
                     Note, that accessing some data files require linked access to FAIR enabled repositories, as described
                     <a href="#LinkingAccessTo">here</a>.
                 </p>
@@ -1438,8 +1483,14 @@
             
             <h3 id="DownloadFilesClientSDK" class="section-title">b) Download Data Files using the Gen3-client</h3>
                 <p>
-                    In order to download data files, users will need to utilize the Gen3-client command 
-                    line tool developed by the University of Chicago’s Center for Translational Data Science. The process consists of the following steps:
+                    In order to download data files above 250 MB, users will need to utilize the Gen3-client command 
+                    line tool developed by the University of Chicago’s Center for Translational Data Science. 
+                </p>
+                <p>
+                    The current studies that have datasets of more than 250 MB are those with the following project numbers: a) cdcwonder and b) deaarcos1.
+                </p>
+                <p>
+                    Find below a guide to download data files using the Gen3-client:
                 </p>
                 <ol>
                     <li>
@@ -1595,7 +1646,9 @@
                     <li>
                         <span style="font-weight: bold;">My download is not working.</span><br><br>
                         Please check if your file size exceeds 250 MB. If yes, please other tools as described 
-                        <a href="#DownloadFilesClientSDK">here</a> to download the files. If errors persist, please 
+                        <a href="#DownloadFilesClientSDK">here</a> to download the files.
+                        Note that the current studies that have datasets of more than 250 MB are those with the following project numbers: a) cdcwonder and b) deaarcos1.
+                        If errors persist, please 
                         contact the <a href="mailto:heal-support@datacommons.io">help desk</a>.
                         <br><br>
                     </li>
