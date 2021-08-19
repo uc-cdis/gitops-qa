@@ -131,6 +131,12 @@
           "name": "Exploration"
         },
         {
+          "icon": "query",
+          "link": "/study-viewer/clinical_trials",
+          "color": "#a2a2a2",
+          "name": "Study Viewer"
+        },
+        {
           "icon": "workspace",
           "link": "/workspace",
           "color": "#a2a2a2",
@@ -205,6 +211,38 @@
     "explorerPublic": true,
     "discovery": true
   },
+  "studyViewerConfig": [
+    {
+    "dataType": "clinical_trials",
+    "title": "Studies",
+    "titleField": "title",
+    "rowAccessor": "cmc_unique_id",
+    "listItemConfig": {
+      "blockFields": ["brief_summary"],
+      "tableFields": ["data_availability_date", "data_available", "creator", "nct_number", "condition", "category", "clinical_trial_website", "publications"]
+    },
+    "fieldMapping": [
+      { "field": "brief_summary", "name": "Brief Study Description" },
+      { "field": "description", "name": "Detailed Description"},
+      { "field": "creator", "name": "Sponsor"},
+      { "field": "category", "name": "Study Type"},
+      { "field": "clinical_trial_website", "name": "Websites"},
+      { "field": "nct_number", "name": "NCT Number"},
+      { "field": "publications", "name": "Study Publications"}
+    ],
+    "openMode": "close-all",
+    "buttons": [
+      {
+        "type": "download"
+      },
+      {
+        "type": "request_access",
+        "resourceDisplayNameField": "title",
+        "accessRequestedText": "DAR In Progress",
+        "accessRequestedTooltipText": "Your recently submitted DAR is being reviewed by NIAID"
+      }]
+    }
+  ],
   "analysisTools": [],
   "explorerConfig": [{
       "tabTitle": "Studies",
