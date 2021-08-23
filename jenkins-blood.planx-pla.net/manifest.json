@@ -30,7 +30,7 @@
     "guppy": "quay.io/cdis/guppy:master",
     "sower": "quay.io/cdis/sower:master",
     "hatchery": "quay.io/cdis/hatchery:master",
-    "metadata": "quay.io/cdis/metadata-service:master",
+    "metadata": "quay.io/cdis/metadata-service:feat_mds-adapter",
     "dashboard": "quay.io/cdis/gen3-statics:master",
     "requestor": "quay.io/cdis/requestor:master"
   },
@@ -266,6 +266,10 @@
     "auth_filter_node_types": [
       "case"
     ]
+  },
+  "metadata": {
+    "USE_AGG_MDS": true,
+    "AGG_MDS_NAMESPACE": "jenkins-blood"
   },
   "global": {
     "environment": "qaplanetv1",
