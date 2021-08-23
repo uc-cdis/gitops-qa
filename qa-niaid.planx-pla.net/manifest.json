@@ -27,7 +27,7 @@
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
     "guppy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/guppy:2021.07",
     "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:2021.07",
-    "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:feat_mds-adapter"
+    "metadata": "quay.io/cdis/metadata-service:feat_mds-adapter"
   },
   "arborist": {
     "deployment_version": "2"
