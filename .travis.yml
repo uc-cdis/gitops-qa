@@ -63,5 +63,5 @@ notifications:
   slack:
     secure: ihz7ERwE43FaXiuKdpzz8CIoK7lcOqm2mblwDs+b2yPiCQeJ2NccPavfxnfa156QicL9Hz2p2biGPyjIhEg/p449+ylY64L3LJFPrOdmbQ6ENPZujrL/N0blyGOkj0gs46Ryq7d1hv/irt6RUkMlLe/3O2ZeF+mcCUO7OXbeR4MXSaKaHaq3hKgzZlv6ZFcMxnA0SDZwepFKq0vG+DLvYTTT0TxEhxKHS56q8jtkKSTQ+++mfHeeeM/GxiAFUJr/WNA03vAaSDhlxZrwzMlJoygGTxXjSOhvSv8QzSWfqqeSTekIxoC6baPGRwB/l+IK7UW6dJCUdpV1Nxv+3qo7sPRnRvvHn7wVrG6ns+wHBQ/BspL+T+U5TwVwZ2c6a1XwsOWrxIxbn6Tk3xqr7GlM697cNqy5jdc0kmgyhRGzfAbcbscZi+76sMj3Mc3J8laUR1XBIi6J5wq/X7aj0erIaUsH3jFEiU+O9rlrPfAMpObf3cBiVX7MDhCTnWOtYagGEGrQC92YDsgy02l2e2wCj6mdhN7cS+zT03G7DCgmG6eSNwCb+HWktHBpgUWP6WBbkcJlwAukeWaEWExeAO8Iz3/rnt+GCZdoT7TCBUM+b9h9W4JmP8WzKGXQXVN7tHNkVfH+Ntul7CVDyw7iIngHVDt4o0xyZSK8iZa/fXqRNNw=
     on_pull_requests: false
-    on_success: always
+    on_success: never
     on_failure: always
