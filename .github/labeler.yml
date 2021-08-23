@@ -1,2 +1,4 @@
 jenkins-niaid:
 - any: ['qa-niaid.planx-pla.net/**/*']
+test-mariner-marinerIntegrationTest:
+- any: ['qa-mickey.planx-pla.net/**/*']
