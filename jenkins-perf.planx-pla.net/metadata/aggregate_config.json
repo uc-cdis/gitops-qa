@@ -1,0 +1,8 @@
+{
+	"gen3_commons": {
+		"HEAL": {
+			"mds_url": "https://jenkins-perf.planx-pla.net",
+			"commons_url": "jenkins-perf.planx-pla.net"
+		}
+	}
+}

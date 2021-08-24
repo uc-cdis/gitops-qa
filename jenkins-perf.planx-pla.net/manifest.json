@@ -42,6 +42,10 @@
       "subject"
     ]
   },
+  "metadata": {
+    "USE_AGG_MDS": true,
+    "AGG_MDS_NAMESPACE": "jenkins-perf"
+  },
   "sower": {
     "name": "pelican-export",
     "container": {

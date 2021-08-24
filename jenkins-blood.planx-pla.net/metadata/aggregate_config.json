@@ -1,0 +1,9 @@
+{
+	"gen3_commons": {
+		"HEAL": {
+			"mds_url": "https://jenkins-blood.planx-pla.net",
+			"commons_url": "jenkins-blood.planx-pla.net"
+		}
+	},
+	"adapter_commons": {}
+}

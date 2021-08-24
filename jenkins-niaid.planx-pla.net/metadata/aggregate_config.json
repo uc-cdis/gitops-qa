@@ -1,0 +1,8 @@
+{
+	"gen3_commons": {
+		"HEAL": {
+			"mds_url": "https://jenkins-niaid.planx-pla.net",
+			"commons_url": "jenkins-niaid.planx-pla.net"
+		}
+	}
+}

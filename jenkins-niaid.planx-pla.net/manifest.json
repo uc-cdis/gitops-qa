@@ -50,6 +50,10 @@
       "file"
     ]
   },
+  "metadata": {
+    "USE_AGG_MDS": true,
+    "AGG_MDS_NAMESPACE": "jenkins-niaid"
+  },
   "sower": [
     {
       "name": "ingest-metadata-manifest",
