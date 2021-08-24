@@ -146,6 +146,126 @@
   },
   "explorerConfig": [
     {
+      "tabTitle": "Quarterly Report",
+      "charts": {
+        "gender": {
+          "chartType": "pie",
+          "title": "Gender"
+        },
+        "race": {
+          "chartType": "pie",
+          "title": "Racial Category"
+        },
+        "hispanic": {
+          "chartType": "pie",
+          "title": "Hispanic ethnicity (Hispanic/latino or not?)"
+        }
+      },
+      "filters": {
+        "tabs": [
+          {
+            "title": "Demographics",
+            "fields": [
+              "gender",
+              "race",
+              "hispanic"
+            ]
+          },
+          {
+            "title": "Hubs",
+            "fields": [
+              "project_name",
+              "protocol",
+              "role_in_project"
+            ]
+          },
+          {
+            "title": "Recruitment Time",
+            "fields": [
+              "quarter_recruited"
+            ]
+          }            
+        ]
+      },
+      "table": {
+        "enabled": false,
+        "fields": [
+          "project_id",
+          "protocol",
+          "gender",
+          "race",
+          "hispanic",
+          "role_in_project",
+          "quarter_recruited"
+        ]
+      },
+      "buttons": [
+        {
+          "enabled": true,
+          "type": "export-to-workspace",
+          "title": "Export Files to Workspace",
+          "leftIcon": "datafile",
+          "rightIcon": "external-link"
+        },
+        {
+          "enabled": true,
+          "type": "data",
+          "title": "Download Staff and Participants",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "quarterly_report.json"
+        }
+      ],
+      "guppyConfig": {
+        "dataType": "participant",
+        "nodeCountTitle": "Total Enrolled",
+        "fieldMapping": [
+          {
+            "field": "project_id",
+            "name": "Hub"
+          },
+          {
+            "field": "hispanic",
+            "name": "Hispanic ethnicity"
+          },
+          {
+            "field": "race",
+            "name": "Racial Category"
+          },
+          {
+            "field": "gender",
+            "name": "Gender"
+          },
+          {
+            "field": "protocol",
+            "name": "Hub Study Protocol"
+          },
+          {
+            "field": "protocol_submitter_id",
+            "name": "Hub Study Protocol ID"
+          },
+          {
+            "field": "project_name",
+            "name": "Hub Name"
+          },
+          {
+            "field": "role_in_project",
+            "name": "Staff or participant?"
+          },
+          {
+            "field": "quarter_recruited",
+            "name": "Year and quarter enrolled"
+          }
+        ],
+        "manifestMapping": {
+          "resourceIndexType": "file",
+          "resourceIdField": "object_id",
+          "referenceIdFieldInResourceIndex": "project_id",
+          "referenceIdFieldInDataIndex": "project_id"
+        }
+      }
+    },
+    {
       "tabTitle": "Data",
       "charts": {
         "project_id": {
@@ -326,8 +446,8 @@
         "downloadAccessor": "object_id"
       },
       "dropdowns": {}
-     },
-     {
+    },
+    {
       "tabTitle": "OEPS",
       "adminAppliedPreFilters": {
         "project_id": {

@@ -10,6 +10,7 @@ mappings:
       - name: role_in_project
     parent_props:
       - path: protocols[protocol,protocol_submitter_id:submitter_id]
+      - path: protocols[protocol_submitter_id:submitter_id].projects[project_name:name]
     flatten_props:
       - path: demographics
         props:
