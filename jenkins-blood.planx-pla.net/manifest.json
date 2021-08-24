@@ -30,7 +30,7 @@
     "guppy": "quay.io/cdis/guppy:master",
     "sower": "quay.io/cdis/sower:master",
     "hatchery": "quay.io/cdis/hatchery:master",
-    "metadata": "quay.io/cdis/metadata-service:feat_mds-adapter",
+    "metadata": "quay.io/cdis/metadata-service:master",
     "dashboard": "quay.io/cdis/gen3-statics:master",
     "requestor": "quay.io/cdis/requestor:master"
   },
