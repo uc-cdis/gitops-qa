@@ -4,28 +4,28 @@
     "That's all I have to say"
   ],
   "versions": {
-    "arborist": "quay.io/cdis/arborist:integration202108",
+    "arborist": "quay.io/cdis/arborist:integration202109",
     "aws-es-proxy": "quay.io/cdis/aws-es-proxy:0.8",
-    "dashboard": "quay.io/cdis/gen3-statics:integration202108",
-    "fence": "quay.io/cdis/fence:integration202108",
-    "indexd": "quay.io/cdis/indexd:integration202108",
-    "peregrine": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/peregrine:3.1.0",
-    "pidgin": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/pidgin:1.2.1",
-    "revproxy": "quay.io/cdis/nginx:integration202108",
-    "sheepdog": "quay.io/cdis/sheepdog:integration202108",
-    "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:3.5.0",
+    "dashboard": "quay.io/cdis/gen3-statics:integration202109",
+    "fence": "quay.io/cdis/fence:integration202109",
+    "indexd": "quay.io/cdis/indexd:integration202109",
+    "peregrine": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/peregrine:integration202109",
+    "pidgin": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/pidgin:integration202109",
+    "revproxy": "quay.io/cdis/nginx:integration202109",
+    "sheepdog": "quay.io/cdis/sheepdog:integration202109",
+    "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:integration202109",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
-    "spark": "quay.io/cdis/gen3-spark:integration202108",
-    "tube": "quay.io/cdis/tube:integration202108",
-    "hatchery": "quay.io/cdis/hatchery:integration202108",
+    "spark": "quay.io/cdis/gen3-spark:integration202109",
+    "tube": "quay.io/cdis/tube:integration202109",
+    "hatchery": "quay.io/cdis/hatchery:integration202109",
     "requestor": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/requestor:1.4.0",
-    "wts": "quay.io/cdis/workspace-token-service:integration202108",
+    "wts": "quay.io/cdis/workspace-token-service:integration202109",
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
-    "manifestservice": "quay.io/cdis/manifestservice:integration202108",
-    "guppy": "quay.io/cdis/guppy:integration202108",
-    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:integration202108",
-    "metadata": "quay.io/cdis/metadata-service:integration202108",
-    "sower": "quay.io/cdis/sower:integration202108"
+    "manifestservice": "quay.io/cdis/manifestservice:integration202109",
+    "guppy": "quay.io/cdis/guppy:integration202109",
+    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:integration202109",
+    "metadata": "quay.io/cdis/metadata-service:integration202109",
+    "sower": "quay.io/cdis/sower:integration202109"
   },
   "indexd": {
     "arborist": "true"
@@ -38,7 +38,7 @@
       "serviceAccountName": "jobs-qa-ibd-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/metadata-manifest-ingestion:integration202108",
+        "image": "quay.io/cdis/metadata-manifest-ingestion:integration202109",
         "pull_policy": "Always",
         "env": [
           {
@@ -78,7 +78,7 @@
       "serviceAccountName": "jobs-qa-ibd-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/manifest-indexing:integration202108",
+        "image": "quay.io/cdis/manifest-indexing:integration202109",
         "pull_policy": "Always",
         "env": [
           {
@@ -118,7 +118,7 @@
       "serviceAccountName": "jobs-qa-ibd-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/download-indexd-manifest:integration202108",
+        "image": "quay.io/cdis/download-indexd-manifest:integration202109",
         "pull_policy": "Always",
         "env": [
           {
@@ -155,7 +155,7 @@
   ],
   "ssjdispatcher": {
     "job_images": {
-      "indexing": "quay.io/cdis/indexs3client:integration202108"
+      "indexing": "quay.io/cdis/indexs3client:integration202109"
     }
   },
   "global": {
