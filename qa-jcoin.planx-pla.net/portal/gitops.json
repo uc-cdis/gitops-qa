@@ -159,6 +159,10 @@
         "hispanic": {
           "chartType": "pie",
           "title": "Hispanic ethnicity (Hispanic/latino or not?)"
+        },
+        "quarter_recruited": {
+          "chartType": "pie",
+          "title": "Quarter recruited"
         }
       },
       "filters": {
@@ -250,7 +254,7 @@
           },
           {
             "field": "role_in_project",
-            "name": "Staff or participant?"
+            "name": "Client or participant?"
           },
           {
             "field": "quarter_recruited",
