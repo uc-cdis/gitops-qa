@@ -254,7 +254,7 @@
           },
           {
             "field": "role_in_project",
-            "name": "Client or participant?"
+            "name": "Client or staff?"
           },
           {
             "field": "quarter_recruited",
