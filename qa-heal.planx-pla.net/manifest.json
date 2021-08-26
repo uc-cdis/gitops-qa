@@ -1,6 +1,6 @@
 {
   "notes": [
-    "This is the dev environment manifest",
+    "This is the dev environment manifest.",
     "That's all I have to say"
   ],
   "jenkins": {
@@ -20,7 +20,7 @@
     "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:2021.07",
     "sower": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sower:2021.07",
     "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:2021.07",
-    "metadata": "quay.io/cdis/metadata-service:master",
+    "metadata": "quay.io/cdis/metadata-service:feat_mds-adapter",
     "spark": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-spark:2021.07",
     "hatchery": "quay.io/cdis/hatchery:feat_decouple_workspaces",
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
