@@ -78,6 +78,12 @@
     "navigation": {
       "items": [
         {
+          "icon": "query",
+          "link": "/discovery",
+          "name": "Discovery",
+          "tooltip": "Use free-text search and tags to rapidly find relevant studies, discover new datasets across multiple resources, and easily export selected data files to the analysis workspace."
+        },
+        {
           "icon": "dictionary",
           "link": "/DD",
           "color": "#a2a2a2",
