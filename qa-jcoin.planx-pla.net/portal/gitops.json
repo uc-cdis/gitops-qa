@@ -149,19 +149,19 @@
       "tabTitle": "Quarterly Report",
       "charts": {
         "gender": {
-          "chartType": "pie",
+          "chartType": "fullPie",
           "title": "Gender"
         },
         "race": {
-          "chartType": "pie",
+          "chartType": "fullPie",
           "title": "Racial Category"
         },
         "hispanic": {
-          "chartType": "pie",
+          "chartType": "fullPie",
           "title": "Hispanic ethnicity (Hispanic/latino or not?)"
         },
         "quarter_recruited": {
-          "chartType": "pie",
+          "chartType": "bar",
           "title": "Quarter recruited"
         }
       },
@@ -277,11 +277,11 @@
           "title": "Projects"
         },
         "gender": {
-          "chartType": "pie",
+          "chartType": "fullPie",
           "title": "Gender"
         },
         "race": {
-          "chartType": "pie",
+          "chartType": "fullPie",
           "title": "Race"
         },
         "center": {
