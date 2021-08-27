@@ -397,6 +397,7 @@
       ]
     },
     "discoveryConfig": {
+      "public": true,
       "features": {
         "advSearchFilters": {
           "enabled": false,
