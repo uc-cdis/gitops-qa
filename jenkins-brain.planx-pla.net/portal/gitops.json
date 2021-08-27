@@ -179,7 +179,9 @@
   },
   "featureFlags": {
     "explorer": true,
-    "noIndex": true
+    "noIndex": true,
+    "discovery": true,
+    "discoveryUseAggMDS": true
   },
   "studyViewerConfig": [
     {
