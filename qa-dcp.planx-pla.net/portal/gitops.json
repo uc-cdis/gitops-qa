@@ -28,6 +28,7 @@
 		],
 		"projectDetails": "boardCounts"
 	},
+	"useArboristUI": true,
 	"components": {
 		"appName": "NHLBI BioData Catalyst",
 		"index": {
