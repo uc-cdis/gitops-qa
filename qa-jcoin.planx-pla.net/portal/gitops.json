@@ -150,31 +150,23 @@
       "charts": {
         "gender": {
           "chartType": "fullPie",
-          "title": "Gender"
+          "title": "Gender identity"
         },
         "race": {
           "chartType": "fullPie",
-          "title": "Racial Category"
+          "title": "Race"
         },
         "hispanic": {
           "chartType": "fullPie",
-          "title": "Hispanic ethnicity (Hispanic/latino or not?)"
+          "title": "Hispanic ethnicity"
         },
         "quarter_recruited": {
           "chartType": "bar",
-          "title": "Quarter recruited"
+          "title": "Quarter enrolled"
         }
       },
       "filters": {
         "tabs": [
-          {
-            "title": "Demographics",
-            "fields": [
-              "gender",
-              "race",
-              "hispanic"
-            ]
-          },
           {
             "title": "Hubs",
             "fields": [
@@ -184,11 +176,19 @@
             ]
           },
           {
-            "title": "Recruitment Time",
+            "title": "Quarter enrolled",
             "fields": [
               "quarter_recruited"
             ]
-          }            
+          }, 
+          {
+            "title": "Demographics",
+            "fields": [
+              "gender",
+              "race",
+              "hispanic"
+            ]
+          }
         ]
       },
       "table": {
@@ -205,14 +205,14 @@
       },
       "buttons": [
         {
-          "enabled": true,
+          "enabled": false,
           "type": "export-to-workspace",
           "title": "Export Files to Workspace",
           "leftIcon": "datafile",
           "rightIcon": "external-link"
         },
         {
-          "enabled": true,
+          "enabled": false,
           "type": "data",
           "title": "Download Staff and Participants",
           "leftIcon": "datafile",
@@ -234,11 +234,11 @@
           },
           {
             "field": "race",
-            "name": "Racial Category"
+            "name": "Race"
           },
           {
             "field": "gender",
-            "name": "Gender"
+            "name": "Gender identity"
           },
           {
             "field": "protocol",
@@ -258,7 +258,7 @@
           },
           {
             "field": "quarter_recruited",
-            "name": "Year and quarter enrolled"
+            "name": "Quarter enrolled"
           }
         ],
         "manifestMapping": {
