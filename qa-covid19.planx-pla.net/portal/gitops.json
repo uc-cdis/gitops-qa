@@ -1409,5 +1409,8 @@
         }
       }
     }
-  }
+  },
+  "connectSrcCSPWhitelist": [
+    "https://covd-map-occ-prc-qa.s3.amazonaws.com"
+  ]
 }
