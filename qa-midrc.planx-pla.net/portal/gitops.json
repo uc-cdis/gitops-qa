@@ -307,6 +307,7 @@
               "rightIcon": "download"
             }
           ],
+          "loginForDownload": true,
           "guppyConfig": {
             "dataType": "case",
             "nodeCountTitle": "Cases",
