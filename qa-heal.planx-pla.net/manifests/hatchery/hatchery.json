@@ -6,31 +6,41 @@
     {
       "user": "qureshi@uchicago.edu",
       "aws_account_id": "354484406138",
-      "name": "rush2",
+      "name": "brhworkspaces",
+      "ecs": "true",
       "region": "us-east-1"
     },
     {
       "user": "mshao1@uchicago.edu",
       "aws_account_id": "354484406138",
-      "name": "rush2",
+      "name": "brhworkspaces",
+      "ecs": "true",
       "region": "us-east-1"
     },
     {
       "user": "craigrbarnes@uchicago.edu",
       "aws_account_id": "354484406138",
-      "name": "rush2",
+      "name": "brhworkspaces",
       "region": "us-east-1"
     },
     {
       "user": "cgmeyer@uchicago.edu",
       "aws_account_id": "354484406138",
-      "name": "rush2",
+      "name": "brhworkspaces",
       "region": "us-east-1"
     },
     {
       "user": "xritter@uchicago.edu",
       "aws_account_id": "354484406138",
-      "name": "rush2",
+      "name": "brhworkspaces",
+      "ecs": "true",
+      "region": "us-east-1"
+    },
+    {
+      "user": "test@example.com",
+      "aws_account_id": "354484406138",
+      "ecs": "true",
+      "name": "brhworkspaces",
       "region": "us-east-1"
     }
   ],
@@ -161,8 +171,10 @@
       "cpu-limit": "1.0",
       "memory-limit": "1024Mi",
       "name": "(Tutorial) JCOIN Tracking Opioid Stigma Notebook",
-      "image": "quay.io/cdis/heal-notebooks:jcoin__74c68bafc3a655def4423d252f9a6ba1e89273fc",
-      "env": {"FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"},
+      "image": "quay.io/cdis/jupyter-jcoin:master",
+      "env": {
+        "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
+      },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",
@@ -188,9 +200,11 @@
       "target-port": 8888,
       "cpu-limit": "1.0",
       "memory-limit": "1024Mi",
-      "name": "(Tutorial) BACPAC Synthetic Data Analysis Notebook",
-      "image": "quay.io/cdis/heal-notebooks:bacpac__3b9ce410d22c92859b827ea8c95dccd521671246",
-      "env": {"FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"},
+      "name": "(Tutorial) Bacpac Synthetic Data Analysis Notebook",
+      "image": "quay.io/cdis/jupyter-bacpac:master",
+      "env": {
+        "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
+      },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",
@@ -217,8 +231,10 @@
       "cpu-limit": "1.0",
       "memory-limit": "1024Mi",
       "name": "(Tutorial) Opioid Prevalence And Overdoses Notebook",
-      "image": "quay.io/cdis/heal-notebooks:cdcdea__f7afc9b185d904bd60a1449e0bfb6d56c50b6ba7",
-      "env": {"FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"},
+      "image": "quay.io/cdis/heal-notebooks:cdcdea__1d2cc4ddf48babb9d86143c8f1f259a98a53e2f5",
+      "env": {
+        "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
+      },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",
@@ -245,8 +261,10 @@
       "cpu-limit": "1.0",
       "memory-limit": "1024Mi",
       "name": "(Tutorial) Opioid Overdose Trajectories Notebook",
-      "image": "quay.io/cdis/heal-notebooks:cdcwonder__8eab157c6c6e07336a4d7a87cc67e4f9979c373c",
-      "env": {"FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"},
+      "image": "quay.io/cdis/heal-notebooks:cdcwonder__ce8feff3d1f4491b47523003fc89df42e233419b",
+      "env": {
+        "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
+      },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",
@@ -272,9 +290,11 @@
       "target-port": 8888,
       "cpu-limit": "1.0",
       "memory-limit": "1024Mi",
-      "name": "(Tutorial) Opioid Environment Toolkit And OEPS R Notebook",
-      "image": "quay.io/cdis/heal-notebooks:test_r-kernel",
-      "env": {"FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"},
+      "name": "(Tutorial) OEPS And Opioid Toolkit Notebook",
+      "image": "quay.io/cdis/heal-notebooks:oeps__a6ce48313afd4f7b43a8c203b52c8394331f166c",
+      "env": {
+        "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
+      },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",
