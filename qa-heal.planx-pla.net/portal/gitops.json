@@ -109,7 +109,8 @@
         "downloadManifestButtonText": "Download",
         "enableDownloadManifest": false,
         "downloadZipButtonText": "Download Zip",
-        "enableDownloadZip": true
+        "enableDownloadZip": true,
+        "verifyExternalLogins": true
       },
       "pageTitle": {
         "enabled": false
