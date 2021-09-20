@@ -385,29 +385,49 @@
     },
     "tagCategories": [
       {
-        "name": "Demographic Info",
-        "color": "rgba(64, 34, 100, 1)",
+        "name": "Study Setting",
+        "color": "#532565",
+        "display": true
+      },
+      {
+        "name": "Subject Characteristics",
+        "color": "#982568",
         "display": true
       },
       {
         "name": "Study Design",
-        "color": "rgba(153, 40, 107, 1)",
+        "color": "#981f32",
         "display": true
       },
       {
-        "name": "HEAL Specific",
-        "color": "rgba(161, 36, 46, 1)",
+        "name": "Intervention/Treatment",
+        "color": "#bf362e",
+        "display": true
+      },
+            {
+        "name": "Pain",
+        "color": "#e07c3e",
         "display": true
       },
       {
-        "name": "Other",
-        "color": "rgba(207, 54, 38, 1)",
+        "name": "Substance Use",
+        "color": "#c0b3c5",
+        "display": true
+      },
+      {
+        "name": "Data Type",
+        "color": "#dabeca",
         "display": true
       },
       {
         "name": "Commons",
         "displayName": "Data Resources",
-        "color": "rgba(21, 6, 76, 1)"
+        "color": "#dbb9b3"
+      },
+      {
+        "name": "Other",
+        "displayName": "Other",
+        "color": "#eecdcba"
       }
     ]
   },
