@@ -68,6 +68,40 @@
   },
   "containers": [
     {
+      "target-port": 8888,
+      "cpu-limit": "1.0",
+      "memory-limit": "2Gi",
+      "name": "Jupyter Notebook (SLIM)",
+      "image": "quay.io/cdis/jupyter-superslim:feat_SDK",
+      "env": {"FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"},
+      "args": [
+        "--NotebookApp.base_url=/lw-workspace/proxy/",
+        "--NotebookApp.password=''",
+        "--NotebookApp.token=''",
+        "--NotebookApp.ip='*'",
+        "--NotebookApp.notebook_dir='/home/jovyan'",
+        "--NotebookApp.quit_button=False",
+        "--Application.log_level=DEBUG",
+        "--NotebookApp.log_level=DEBUG",
+        "--JupyterApp.log_level=DEBUG",
+        "--Session.debug=True"
+      ],
+      "command": [
+        "start-notebook.sh"
+      ],
+      "path-rewrite": "/lw-workspace/proxy/",
+      "use-tls": "false",
+      "ready-probe": "/lw-workspace/proxy/",
+      "lifecycle-post-start": [
+        "/bin/sh",
+        "-c",
+        "export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; ln -s $(pwd) /home/$IAM/pd/dockerHome; mkdir -p /home/$IAM/.jupyter/custom; echo \"define(['base/js/namespace'], function(Jupyter){Jupyter._target = '_self';})\" >/home/$IAM/.jupyter/custom/custom.js; ln -s /data /home/$IAM/pd/; true"
+      ],
+      "user-uid": 1000,
+      "fs-gid": 100,
+      "user-volume-location": "/home/jovyan/pd"
+    },
+    {
       "target-port": 8787,
       "cpu-limit": "1.0",
       "memory-limit": "512Mi",
