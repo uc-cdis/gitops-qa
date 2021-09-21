@@ -391,16 +391,19 @@
       },
       {
         "name": "Subject Characteristics",
+        "displayName": "Subject Characteristics",
         "color": "#982568",
         "display": true
       },
       {
         "name": "Study Design",
+        "displayName": "Study Design",
         "color": "#981f32",
         "display": true
       },
       {
         "name": "Intervention/Treatment",
+        "displayName": "Intervention/Treatment",
         "color": "#bf362e",
         "display": true
       },
@@ -411,23 +414,25 @@
       },
       {
         "name": "Substance Use",
-        "color": "#c0b3c5",
+        "displayName": "Substance Use",
+        "color": "#532565",
         "display": true
       },
       {
         "name": "Data Type",
-        "color": "#dabeca",
+        "displayName": "Data Type",
+        "color": "#982568",
         "display": true
       },
       {
         "name": "Commons",
         "displayName": "Data Resources",
-        "color": "#dbb9b3"
+        "color": "#981f32"
       },
       {
         "name": "Other",
         "displayName": "Other",
-        "color": "#eecdcba"
+        "color": "#bf362e"
       }
     ]
   },
