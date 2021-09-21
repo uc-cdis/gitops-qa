@@ -433,7 +433,7 @@
       {
         "name": "Other",
         "color": "#bf362e",
-        "display": true
+        "display": false
       }
     ]
   },
