@@ -6,31 +6,41 @@
     {
       "user": "qureshi@uchicago.edu",
       "aws_account_id": "354484406138",
-      "name": "rush2",
+      "name": "brhworkspaces",
+      "ecs": "true",
       "region": "us-east-1"
     },
     {
       "user": "mshao1@uchicago.edu",
       "aws_account_id": "354484406138",
-      "name": "rush2",
+      "name": "brhworkspaces",
+      "ecs": "true",
       "region": "us-east-1"
     },
     {
       "user": "craigrbarnes@uchicago.edu",
       "aws_account_id": "354484406138",
-      "name": "rush2",
+      "name": "brhworkspaces",
       "region": "us-east-1"
     },
     {
       "user": "cgmeyer@uchicago.edu",
       "aws_account_id": "354484406138",
-      "name": "rush2",
+      "name": "brhworkspaces",
       "region": "us-east-1"
     },
     {
       "user": "xritter@uchicago.edu",
       "aws_account_id": "354484406138",
-      "name": "rush2",
+      "name": "brhworkspaces",
+      "ecs": "true",
+      "region": "us-east-1"
+    },
+    {
+      "user": "test@example.com",
+      "aws_account_id": "354484406138",
+      "ecs": "true",
+      "name": "brhworkspaces",
       "region": "us-east-1"
     }
   ],
@@ -57,6 +67,40 @@
     ]
   },
   "containers": [
+    {
+      "target-port": 8888,
+      "cpu-limit": "1.0",
+      "memory-limit": "2Gi",
+      "name": "Jupyter Notebook (SLIM)",
+      "image": "quay.io/cdis/jupyter-superslim:feat_SDK",
+      "env": {"FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"},
+      "args": [
+        "--NotebookApp.base_url=/lw-workspace/proxy/",
+        "--NotebookApp.password=''",
+        "--NotebookApp.token=''",
+        "--NotebookApp.ip='*'",
+        "--NotebookApp.notebook_dir='/home/jovyan'",
+        "--NotebookApp.quit_button=False",
+        "--Application.log_level=DEBUG",
+        "--NotebookApp.log_level=DEBUG",
+        "--JupyterApp.log_level=DEBUG",
+        "--Session.debug=True"
+      ],
+      "command": [
+        "start-notebook.sh"
+      ],
+      "path-rewrite": "/lw-workspace/proxy/",
+      "use-tls": "false",
+      "ready-probe": "/lw-workspace/proxy/",
+      "lifecycle-post-start": [
+        "/bin/sh",
+        "-c",
+        "export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; ln -s $(pwd) /home/$IAM/pd/dockerHome; mkdir -p /home/$IAM/.jupyter/custom; echo \"define(['base/js/namespace'], function(Jupyter){Jupyter._target = '_self';})\" >/home/$IAM/.jupyter/custom/custom.js; ln -s /data /home/$IAM/pd/; true"
+      ],
+      "user-uid": 1000,
+      "fs-gid": 100,
+      "user-volume-location": "/home/jovyan/pd"
+    },
     {
       "target-port": 8787,
       "cpu-limit": "1.0",
@@ -161,8 +205,10 @@
       "cpu-limit": "1.0",
       "memory-limit": "1024Mi",
       "name": "(Tutorial) JCOIN Tracking Opioid Stigma Notebook",
-      "image": "quay.io/cdis/heal-notebooks:jcoin__74c68bafc3a655def4423d252f9a6ba1e89273fc",
-      "env": {"FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"},
+      "image": "quay.io/cdis/jupyter-jcoin:master",
+      "env": {
+        "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
+      },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",
@@ -188,9 +234,11 @@
       "target-port": 8888,
       "cpu-limit": "1.0",
       "memory-limit": "1024Mi",
-      "name": "(Tutorial) BACPAC Synthetic Data Analysis Notebook",
-      "image": "quay.io/cdis/heal-notebooks:bacpac__3b9ce410d22c92859b827ea8c95dccd521671246",
-      "env": {"FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"},
+      "name": "(Tutorial) Bacpac Synthetic Data Analysis Notebook",
+      "image": "quay.io/cdis/jupyter-bacpac:master",
+      "env": {
+        "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
+      },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",
@@ -217,8 +265,10 @@
       "cpu-limit": "1.0",
       "memory-limit": "1024Mi",
       "name": "(Tutorial) Opioid Prevalence And Overdoses Notebook",
-      "image": "quay.io/cdis/heal-notebooks:cdcdea__f7afc9b185d904bd60a1449e0bfb6d56c50b6ba7",
-      "env": {"FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"},
+      "image": "quay.io/cdis/heal-notebooks:cdcdea__1d2cc4ddf48babb9d86143c8f1f259a98a53e2f5",
+      "env": {
+        "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
+      },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",
@@ -245,8 +295,10 @@
       "cpu-limit": "1.0",
       "memory-limit": "1024Mi",
       "name": "(Tutorial) Opioid Overdose Trajectories Notebook",
-      "image": "quay.io/cdis/heal-notebooks:cdcwonder__8eab157c6c6e07336a4d7a87cc67e4f9979c373c",
-      "env": {"FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"},
+      "image": "quay.io/cdis/heal-notebooks:cdcwonder__ce8feff3d1f4491b47523003fc89df42e233419b",
+      "env": {
+        "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
+      },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",
@@ -272,9 +324,11 @@
       "target-port": 8888,
       "cpu-limit": "1.0",
       "memory-limit": "1024Mi",
-      "name": "(Tutorial) Opioid Environment Toolkit And OEPS R Notebook",
-      "image": "quay.io/cdis/heal-notebooks:test_r-kernel",
-      "env": {"FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"},
+      "name": "(Tutorial) OEPS And Opioid Toolkit Notebook",
+      "image": "quay.io/cdis/heal-notebooks:oeps__a6ce48313afd4f7b43a8c203b52c8394331f166c",
+      "env": {
+        "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
+      },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",
