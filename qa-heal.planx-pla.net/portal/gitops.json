@@ -386,6 +386,7 @@
     "tagCategories": [
       {
         "name": "Study Setting",
+        "displayName": "Study Setting",
         "color": "#532565",
         "display": true
       },
@@ -433,7 +434,7 @@
       {
         "name": "Other",
         "color": "#bf362e",
-        "display": true
+        "display": false
       }
     ]
   },
