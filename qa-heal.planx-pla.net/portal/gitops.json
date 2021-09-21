@@ -427,11 +427,13 @@
       {
         "name": "Commons",
         "displayName": "Data Resources",
-        "color": "#981f32"
+        "color": "#981f32",
+        "display": true
       },
       {
         "name": "Other",
-        "color": "#bf362e"
+        "color": "#bf362e",
+        "display": true
       }
     ]
   },
