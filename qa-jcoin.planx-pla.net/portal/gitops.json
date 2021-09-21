@@ -90,6 +90,11 @@
           "name": "Query"
         },
         {
+          "name": "Notebook Browser",
+          "link": "/resource-browser",
+          "icon": "analysis"
+        },
+        {
           "icon": "workspace",
           "link": "/workspace",
           "color": "#a2a2a2",
@@ -518,6 +523,16 @@
           "fileName": "file-manifest.json"
         }
       ],
+         "resourceBrowser": {
+        "title": "JCOIN Notebooks",
+        "public": true,
+        "description": "The Jupyter notebooks contained in this notebook viewer pull data from various external sources to generate and output useful tables, charts, graphs, and models. Each notebook is static, meaning the data being used by the notebooks is not updated in real time.",
+        "resources": [
+            {
+            "title": "JCOIN Notebooks coming soon"
+            }
+            ]
+        },
       "guppyConfig": {
         "dataType": "file",
         "fieldMapping": [
