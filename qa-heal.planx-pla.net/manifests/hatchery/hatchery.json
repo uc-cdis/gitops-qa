@@ -50,7 +50,9 @@
     "image": "quay.io/cdis/gen3fuse-sidecar:feat_drs-support",
     "env": {
       "NAMESPACE": "qa-heal",
-      "HOSTNAME": "qa-heal.planx-pla.net"
+      "HOSTNAME": "qa-heal.planx-pla.net",
+      "BASE_URL": "qa-heal.planx-pla.net",
+      "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
     },
     "args": [],
     "command": [
@@ -80,6 +82,7 @@
         "--NotebookApp.token=''",
         "--NotebookApp.ip='*'",
         "--NotebookApp.notebook_dir='/home/jovyan'",
+        "--NotebookApp.shutdown_no_activity_timeout=420",
         "--NotebookApp.quit_button=False",
         "--Application.log_level=DEBUG",
         "--NotebookApp.log_level=DEBUG",
@@ -95,7 +98,7 @@
       "lifecycle-post-start": [
         "/bin/sh",
         "-c",
-        "export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; ln -s $(pwd) /home/$IAM/pd/dockerHome; mkdir -p /home/$IAM/.jupyter/custom; echo \"define(['base/js/namespace'], function(Jupyter){Jupyter._target = '_self';})\" >/home/$IAM/.jupyter/custom/custom.js; ln -s /data /home/$IAM/pd/; true"
+        "export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; rm -rf /home/$IAM/pd/lost+found; ln -s /data /home/$IAM/pd/; true"
       ],
       "user-uid": 1000,
       "fs-gid": 100,
@@ -118,7 +121,7 @@
     {
       "target-port": 8888,
       "cpu-limit": "1.0",
-      "memory-limit": "512Mi",
+      "memory-limit": "2Gi",
       "name": "(Generic) Jupyter Notebook",
       "image": "quay.io/occ_data/jupyternotebook:1.9.0",
       "env": {},
@@ -126,6 +129,7 @@
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",
         "--NotebookApp.token=''",
+        "--NotebookApp.shutdown_no_activity_timeout=420",
         "--NotebookApp.quit_button=False"
       ],
       "command": [
