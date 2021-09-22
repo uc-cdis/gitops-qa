@@ -42,11 +42,14 @@
             <div class="sidenav-head">
                 <a href="#TypesOfHostedData">Types of hosted Data</a>
                 <a href="#DataManagementRepositories">Data Management and Repositories</a>
-
             </div>
                 <div class="ul-sidenav">
+                    <a href="#Repo_heal">a) HEAL</a>
+                    <a href="#Repo_icpsr">b) ICPSR</a>
+                    <a href="#Repo_jcoin">c) JCOIN</a>
+                    <a href="#Repo_pdaps">c) PDAPS</a>
 
-                </div>
+            </div>
 
             <div class="sidenav-head">
                 <a href="#HowToGetStarted">How to get started</a>
@@ -81,6 +84,7 @@
                     <a href="#STATAinNotebooks">STATA in Jupyter</a>
                     <a href="#RStudioEnvironment">RStudio environment</a>
                     <a href="#TroubleshootingWorkspaces">Troubleshooting</a>
+                    <a href="#AutomaticWorkspaceShutdown">Automatic Workspace Shutdown</a>
 
                 </div>
 
@@ -240,19 +244,19 @@
 
             <h2 id="DataManagementRepositories" class="section-title">3. Data Management and Repositories</h2>
                 <p>
-                    As part of the NIH HEAL Initiative, the HEAL Platform securely exposes data stored on multiple HEAL-approved repositories, 
+                    As part of the NIH HEAL Initiative, the HEAL Platform securely exposes data stored on multiple HEAL-approved FAIR repositories, 
                     i.e. data libraries or archives. 
                     Thus, the aim of the platform is to provide an easy way to connect different repositories on one single location.
                 </p>
                 <p>
-                    Data repositories are traditionally a part of a larger institution established for research, data archiving, and, to serve 
+                    FAIR data repositories are traditionally a part of a larger institution established for research, data archiving, and, to serve 
                     data users of that organization.
                 </p>
                 <p>
                     For more information from NIH, see <a href="https://heal.nih.gov/about/public-access-data" target="_blank" rel="noopener noreferrer">https://heal.nih.gov/about/public-access-data</a>.
                 </p>
                 <p>
-                    Currently, the HEAL platform makes data available from the following Data Resources or Repositories:
+                    Currently, the HEAL platform makes data available from the following FAIR Data Resources or Repositories:
                 </p>
                 <img class="drop-shadow" src="img/data_resources.png" alt="data_resources" style="width:60%">
                 <figcaption>
@@ -464,13 +468,12 @@
             <h3 id="Repo_pdaps" class="section-title">e) Prescription Drug Abuse Policy System (PDAPS)</h3>
             <p>
                 PDAPS was created with funding from the National Institute on Drug Abuse to track key state laws related to prescription drug abuse.
-                PDAPS is a source of rigorous legal data for researchers and detailed policy information for the public.
+                PDAPS is a source of rigorous legal data for researchers and detailed policy information for the public. For more information, please click
+                <a href="https://pdaps.org/" target="_blank" rel="noopener noreferrer">here</a>.
             </p>
             <p>
                 Currently, the HEAL platform shares 1 study from the
                 <a href="https://pdaps.org/" target="_blank" rel="noopener noreferrer">Prescription Drug Abuse Policy System (PDAPS)</a> repository.
-                For more information, please click
-                <a href="https://pdaps.org/" target="_blank" rel="noopener noreferrer">here</a>.
             </p>
             <ol>
                 <li>
@@ -762,26 +765,60 @@
 
             <h4 id="LinkingAccessTo" class="section-title">Linking access to FAIR enabled repositories </h4>
                 <p>
-                    Users need to login to access data stored on FAIR enabled repositories in order to run selected
-                    Jupyter Notebooks (see section <a href="#StaticNoteboks">Static Notebooks</a>) that are based on data stored on the FAIR repositories.
+                    The HEAL Platform securely exposes data stored on multiple 
+                    <a href="#DataManagementRepositories">HEAL-approved FAIR repositories</a>.
                 </p>
                 <p>
-                    Users can link their access to another repository when navigating to the
-                     <a href="https://healdata.org/workspace">healdata.org/workspace</a> and clicking on one of the current login options as shown below.
+                    <span style="font-weight: bold">Users need to link their account to the respective FAIR repository in order to: </span>
+                    <ol>
+                        <li>
+                            <em>run</em> <a href="#StaticNoteboks">Jupyter Notebooks</a> that utilize data stored on various 
+                            FAIR repositories.
+                        </li>
+                        <li>
+                            <em>export</em> data that is stored on FAIR repositories from the 
+                            <a href="#SelectBringFilesDiscoveryToWorkspace">Discovery Page to the Workspaces</a>.
+                        </li>
+                        <li>
+                            <em>download</em> data that is stored on FAIR repositories from the 
+                            <a href="#DownloadFilesfromDiscovery">Discovery Page</a>.
+                        </li>
+                    </ol>
+                    In order to link the account to the involved FAIR repositories, 
+                    navigate to the
+                     <a href="https://healdata.org/workspace">healdata.org/workspace</a>, 
+                     thn scroll down to link the account to one of the current login options as shown below.
                 </p>
+
                 <img class="drop-shadow" src="img/workspace_login_other_commons.png" alt="workspace_login_other_commons" style="width:30%">
                 <figcaption>
                     Linking access options on the Workspace tab for data stored on FAIR enabled repositories.
                 </figcaption>
 
                 <p>
-                    The login button will turn grey upon once access is activated. Access needs to be renewed after 30 days.
+                    The login button will turn grey upon once access is activated. 
+                    Access needs to be renewed after 30 days.
                 </p>
                 <img class="drop-shadow" src="img/workspace_login_other_commons_grey.png" alt="workspace_login_other_commons_grey" style="width:30%">
                 <figcaption>
                     The button will turn grey upon activating access and displays the remaining days until access expires.
                 </figcaption>
 
+                <p>
+                    As a reminder, users will be prompted with a banner on <a href="https://healdata.org/workspace">healdata.org/workspace</a> 
+                    and a pop-up window on <a href="https://healdata.org/workspace">healdata.org/discovery</a>.
+                </p>
+                <img class="drop-shadow" src="img/workspace_login_other_commons_top_banner.png" alt="workspace_login_other_commons_top_banner" style="width:70%">
+                <figcaption>
+                    Users are reminded on <a href="https://healdata.org/workspace">healdata.org/workspace</a>
+                    to link the account to other FAIR enabled repositories at the bottom of the page.
+                </figcaption>
+                <p></p>
+                <img class="drop-shadow" src="img/workspace_login_other_commons_discovery.png" alt="workspace_login_other_commons_discovery" style="width:70%">
+                <figcaption>
+                    Users are reminded on <a href="https://healdata.org/discovery">the Discovery Page</a>
+                    to link the account to other FAIR enabled repositories.
+                </figcaption>
 
 
 
@@ -891,7 +928,10 @@
                 </p>
                 <ol>
                     <li>
-                        Log in on <a href="https://healdata.org/login">healdata.org/login</a>.<br><br>
+                        Log in on <a href="https://healdata.org/login">healdata.org/login</a>. 
+                        Link your account to a FAIR repository if necessary as described
+                        <a href="#LinkingAccessTo">here</a>.
+                        <br><br>
                     </li>
                     <li>
                         Find and select study on the Discovery Page using the checkbox on the left side and clicking on "Open in Workspace".
@@ -1083,8 +1123,10 @@
                      <br> <br>
                 <li>
                     Do not forget to terminate your workspace once your work is finished to be mindful of
-                    the cost-intensive computational effort. <span style="font-weight: bold">Note, that Workspaces automatically
-                    shut down after 90 minutes of idle time.</span><br><br>
+                    the cost-intensive computational effort. 
+                    <span style="font-weight: bold">Note, that Workspaces automatically
+                    shut down after 90 minutes of <a href="#AutomaticWorkspaceShutdown">idle time.</span></a>
+                    <br><br>
                     <img class="drop-shadow" src="img/workspace_terminate_2.png" alt="Workspace_terminate" style="width:50%">
                     <figcaption style="width:100%">
                         Do not forget to terminate your workspace once your work is finished. Unterminated workspaces continue to accrue
@@ -1250,7 +1292,7 @@
             </p>
 
 
-            <h4 id="RStudioEnvironment" class="section-title">RStudio environment</h4>
+            <h4 id="RStudioEnvironment" class="section-title">RStudio Environment</h4>
             <p>
                 Users can make use of the preinstalled RStudio environment by launching the following workspace:
             </p>
@@ -1282,13 +1324,34 @@
             </ul>
 
 
+            <h4 id="AutomaticWorkspaceShutdown" class="section-title">Automatic Workspace Shutdown</h4>
+            <p>
+                Workspaces automatically shut down after 90 minutes of idle time
+                 and a pop-up window will remind users before the 
+                workspace shuts down.
+            </p>
+            <img class="drop-shadow" src="img/workspace_shutdown_sign_2.png" alt="workspace_shutdown_sign_2" style="width:50%">
+            <figcaption>
+                A pop-up window will remind users to navigate back to the workspaces page in order to save the data.
+            </figcaption> <br>
+            
+            <p>
+                After the workspace has been shut down, users will be notified with the following pop-up window.
+            </p>
+            <img class="drop-shadow" src="img/workspace_shutdown_sign_1.png" alt="workspace_shutdown_sign_1" style="width:50%">
+            <figcaption>
+                Workspaces automatically shut down after 90 minutes of idle time.
+            </figcaption>
+
+
+
             <h3 id="StaticNoteboks" class="section-title">f) Static Notebooks</h3>
                 <p>
                     <a href="https://healdata.org/resource-browser">The Static Notebooks page</a> contains a collection of view-only
                     tutorial Jupyter Notebooks that provide demo analyses of datasets published on the HEAL platform.
                 </p>
                 <blockquote>
-                    This tab acts as a <span style="font-weight: bold">visual ‘table of contents’</span>
+                    This tab acts as a <span style="font-weight: bold"><a href=#CurrentlyAvailableNotebooks>'visual table of contents’</span></a>
                     of available HEAL datasets.
                 </blockquote>
 
@@ -1620,7 +1683,8 @@
                 <p>
                     <span style="font-weight: bold">Note</span>: Work must be saved in the directory "/pd" in order to remain
                     accessible after workspace termination.
-                    Note, that Workspaces automatically shut down after 90 minutes of idle time.
+                    <span style="font-weight: bold">Note, that Workspaces automatically
+                        shut down after 90 minutes of <a href="#AutomaticWorkspaceShutdown">idle time.</span></a>
                 </p>
 
 
@@ -1659,9 +1723,13 @@
                     Note that current studies that have datasets of more than 250 MB are those with the following project numbers: a) cdcwonder and b) deaarcos1.
                 </p>
                 <p>
-                    Note, that accessing some data files require linked access to FAIR enabled repositories, as described
-                    <a href="#LinkingAccessTo">here</a>.
+                    <span style="font-weight: bold">Note, that accessing some data files requires linked access to FAIR enabled repositories, as described
+                    <a href="#LinkingAccessTo">here</a>.</span> A pop-up window will remind users:
                 </p>
+                <img class="drop-shadow" src="img/workspace_login_other_commons_discovery.png" alt="workspace_login_other_commons_discovery" style="width:50%">
+                <figcaption>
+                    Users are reminded to link the account to other FAIR enabled repositories, as described <a href="#LinkingAccessTo">here</a>.
+                </figcaption>
 
 
             <h3 id="DownloadFilesfromDiscovery" class="section-title">a) Download Data Files from the Discovery Page</h3>
@@ -1993,6 +2061,23 @@
                                     type="video/webm">
 
                             <source src="videos/Opioid_Ovderdose_Traj_CDCWonder_Demo_2021-07-21.webm"
+                                    type="video/webm">
+                        </video>
+                        <br>
+                        If your Browser does not support watching this video, here's
+                        a <a href="videos/Opioid_Ovderdose_Traj_CDCWonder_Demo_2021-07-21.mp4">link to the video</a> instead. <br> <br>
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;">“HEAL Static Notebooks” </span>  <br>
+                        This video introduces users to the Static Notebooks page,
+                        where users can browse Jupyter notebook demos to explore
+                        previous data analyses on the HEAL platform.<br><br>
+                        <video controls width="500">
+
+                            <source src="videos/Static NB HEAL video 2021-08-30.mp4"
+                                    type="video/webm">
+
+                            <source src="videos/Static NB HEAL video 2021-08-30.mp4"
                                     type="video/webm">
                         </video>
                         <br>
