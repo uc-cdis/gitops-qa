@@ -5,7 +5,7 @@
   ],
   "versions": {
     "arborist": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/arborist:2021.09",
-    "audit-service": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/audit-service:2021.09"
+    "audit-service": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/audit-service:2021.09",
     "aws-es-proxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/aws-es-proxy:0.8",
     "dashboard": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-statics:2021.09",
     "fence": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/fence:i707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/",
