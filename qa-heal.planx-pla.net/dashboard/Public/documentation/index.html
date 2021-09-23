@@ -84,7 +84,6 @@
                         <a href="#AvailableWorkspaceTools">Environments, Languages, and Tools</a>
                         <a href="#PythonRInJupyter">Python 3 and RStudio in Jupyter</a>
                         <a href="#STATAinNotebooks">STATA in Jupyter</a>
-                        <a href="#RStudioEnvironment">RStudio environment</a>
                         <a href="#TroubleshootingWorkspaces">Troubleshooting</a>
                         <a href="#AutomaticWorkspaceShutdown">Automatic Workspace Shutdown</a>
 
@@ -629,7 +628,7 @@
                             </li>
                             <li>
                                 <a href="#Workspaces"
-                                    style="background-image: url('img/grid_workspace_color.png');"></a>
+                                    style="background-image: url('img/workspace_flavors.png');"></a>
                                 <div class="details">
                                     <h6><a href="#Workspaces">Workspaces</a></h6>
                                     <p class="image-author">Access data across multiple resources and perform analyses
@@ -1182,24 +1181,6 @@
                                 </li>
                             </ol>
 
-                            <p>
-                                If users work in the <span style="font-weight: bold">RStudio</span> environment, click
-                                "Terminal" on the left hand side. The home
-                                directory is
-                                <code>
-                        /home/rstudio
-                    </code>.
-                                In order to find the files, type in
-                                <code>
-                        cd ../../data/healdata.org
-                    </code>
-                                and
-                                <code>
-                        ls
-                    </code>
-                                to list all manifests.
-                                <a href="#RStudioEnvironment">Read more here</a>.
-                            </p>
 
 
 
@@ -1232,7 +1213,7 @@
                                         href="https://healdata.org/workspace">healdata.org/workspace</a>, users will
                                     discover a list of pre-configured virtual machine (VM) images, as shown below.
                                     <br> <br>
-                                    <img class="drop-shadow" src="img/workspace_flavors__.png" alt="Workspace_flavors"
+                                    <img class="drop-shadow" src="img/workspace_flavors.png" alt="Workspace_flavors"
                                         style="width:80%">
                                     <figcaption style="width:100%">
                                         Available workspaces on the HEAL Platform (top). Users can link accounts from
@@ -1273,13 +1254,13 @@
                                         They are your personal copies! <br><br>
                                         <ul>
                                             <li>
-                                                <em>Notebooks in Python</em>: (1) Bacpac Synthetic Data Analysis,
+                                                <em>Notebooks in Python</em>: (1) BACPAC Synthetic Data Analysis,
                                                 (2) JCOIN Tracking Opioid Stigma,
                                                 (3) Opioid Overdose Trajectories,
                                                 (4) Opioid Prevalence And Overdoses
                                             </li>
                                             <li>
-                                                <em>Notebooks in RStudio</em>: (1) OEPS and Opioid Toolkit
+                                                <em>Notebooks in RStudio</em>: (1) Opioid Environment Toolkit and OEPS
                                             </li>
                                         </ul>
                                     </li>
@@ -1438,7 +1419,7 @@
                                     RStudio<br>
                                     <img src="img/workspace_RStudio_logo.png" alt="workspace_RStudio_logo"
                                         style="width:20%"> <br>
-                                    (<a href="#RStudioEnvironment">read more</a>)
+                                    
 
                                 </li>
                             </ul>
@@ -1547,32 +1528,6 @@
                             </p>
 
 
-                            <h4 id="RStudioEnvironment" class="section-title">RStudio Environment</h4>
-                            <p>
-                                Users can make use of the preinstalled RStudio environment by launching the following
-                                workspace:
-                            </p>
-                            <img class="drop-shadow" src="img/workspace_RStudio_env.png" alt="workspace_RStudio_env"
-                                style="width:20%">
-                            <figcaption style="width:100%">
-                                Launch this workspace to enter the RStudio environment.
-                            </figcaption><br><br>
-                            <img class="drop-shadow" src="img/workspace_RStudio_env_landing.png"
-                                alt="workspace_RStudio_env_landing" style="width:80%">
-                            <figcaption style="width:100%">
-                                Landing page of the RStudio environment.
-                            </figcaption>
-
-                            <p>
-                                Find exported data files in manifests by selecting "Terminal" on the left side, and
-                                typing
-                                <code>
-                    cd ../../data/healdata.org
-                </code>
-                            </p>
-
-
-
                             <h4 id="TroubleshootingWorkspaces" class="section-title">Troubleshooting</h4>
                             <ul>
                                 <li>
@@ -1616,36 +1571,32 @@
                                 platform.
                             </p>
                             <blockquote>
-                                This tab acts as a <span style="font-weight: bold"><a
-                                        href=#CurrentlyAvailableNotebooks>'visual table of contents’</span></a>
+                                This tab acts as a <a
+                                        href=#CurrentlyAvailableNotebooks>'visual table of contents’</a>
                                 of available HEAL datasets.
                             </blockquote>
-                            <p></p>
-                            <img class="drop-shadow" src="img/grid_notebooks_color_.png"
-                                alt="grid_notebooks_color_" style="width:50%">
+                            <p>
+                                <span style="font-weight: bold;">“HEAL Static Notebooks” </span> <br>
+                                This video introduces users to the Static Notebooks page,
+                                where users can browse Jupyter notebook demos to explore
+                                previous data analyses on the HEAL platform.<br><br>
+                                <video controls width="500">
+
+                                    <source src="videos/Static NB HEAL video 2021-08-30.mp4" type="video/webm">
+
+                                    <source src="videos/Static NB HEAL video 2021-08-30.mp4" type="video/webm">
+                                </video>
+                                <br>
+                                If your Browser does not support watching this video, here's
+                                a <a href="videos/Opioid_Ovderdose_Traj_CDCWonder_Demo_2021-07-21.mp4">link to the
+                                    video</a> instead. <br> <br>
+                            </p>
+
+                            <img class="drop-shadow" src="img/grid_notebooks_color.png" alt="grid_notebooks_color"
+                                style="width:50%">
                             <figcaption>
-                                Workspaces automatically shut down after 90 minutes of idle time.
+                                Currently available static Jupter Notebooks.
                             </figcaption>
-
-
-                            <ul>
-                                <li>
-                                    <span style="font-weight: bold;">“HEAL Static Notebooks” </span> <br>
-                                    This video introduces users to the Static Notebooks page,
-                                    where users can browse Jupyter notebook demos to explore
-                                    previous data analyses on the HEAL platform.<br><br>
-                                    <video controls width="500">
-
-                                        <source src="videos/Static NB HEAL video 2021-08-30.mp4" type="video/webm">
-
-                                        <source src="videos/Static NB HEAL video 2021-08-30.mp4" type="video/webm">
-                                    </video>
-                                    <br>
-                                    If your Browser does not support watching this video, here's
-                                    a <a href="videos/Opioid_Ovderdose_Traj_CDCWonder_Demo_2021-07-21.mp4">link to the
-                                        video</a> instead. <br> <br>
-                                </li>
-                            </ul>
 
                             <h4 id="WhyStaticNotebooks" class="section-title">Why static Notebooks?</h4>
 
@@ -1729,7 +1680,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        BACPAC synthetic data analysis
+                                        BACPAC Synthetic Data Analysis
                                     </td>
                                     <td>
                                         Back Pain Consortium (BACPAC) <br>
@@ -1754,7 +1705,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        Tracking Stigma related to Opioid Use Disorder
+                                        JCOIN Tracking Opioid Stigma
                                     </td>
                                     <td>
                                         Methodology and Advanced <br>
@@ -1816,7 +1767,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        OEPS And Opioid Toolkit (<span style="font-weight: bold;"><a
+                                        Opioid Environment Toolkit and OEPS R(<span style="font-weight: bold;"><a
                                                 href="#Tutorials">Watch tutorial</a></span>)
                                     </td>
                                     <td>
@@ -1943,7 +1894,7 @@
                                     </figcaption><br><br>
                                 </li>
                                 <li>
-                                    Go to the Workspace tab and click “Launch” on the “Bacpac Synthetic Data Analysis
+                                    Go to the Workspace tab and click “Launch” on the “BACPAC Synthetic Data Analysis
                                     Notebook”. This may take a few minutes to load.<br>
                                     Note, that depending on the chosen notebook, this step varies to align with the name
                                     of the notebook/workspace.<br>
@@ -1952,7 +1903,7 @@
                                 </li>
                                 <li>
                                     Find and open the notebook in the landing directory. <br>
-                                    Open the notebook by clicking on “HEAL_Workspace_Demo_BACPAC".<br>
+                                    Open the notebook by clicking on “BACPAC_Synthetic_Data_Analysis.ipynb".<br>
                                     <img class="drop-shadow" src="img/static_notebook_bacpac_demo.png"
                                         alt="notebook_browser_notebook1" style="width:90%"><br><br>
                                 </li>
