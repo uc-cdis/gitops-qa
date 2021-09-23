@@ -47,17 +47,14 @@
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "quay.io/cdis/gen3fuse-sidecar:feat_drs-support",
+    "image": "quay.io/cdis/ecs-ws-sidecar:master",
     "env": {
-      "NAMESPACE": "qa-heal",
-      "HOSTNAME": "qa-heal.planx-pla.net",
-      "BASE_URL": "qa-heal.planx-pla.net",
-      "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
+      "NAMESPACE": "qa-heal"
     },
     "args": [],
     "command": [
       "/bin/bash",
-      "/sidecarDockerrun.sh"
+      "/sidecar.sh"
     ],
     "lifecycle-pre-stop": [
       "su",
@@ -73,8 +70,8 @@
       "target-port": 8888,
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
-      "name": "Jupyter Notebook (SLIM)",
-      "image": "quay.io/cdis/jupyter-superslim:feat_SDK",
+      "name": "(Generic) Jupyter Notebook",
+      "image": "quay.io/cdis/jupyter-superslim-r:master",
       "env": {"FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"},
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
@@ -82,55 +79,12 @@
         "--NotebookApp.token=''",
         "--NotebookApp.ip='*'",
         "--NotebookApp.notebook_dir='/home/jovyan'",
-        "--NotebookApp.shutdown_no_activity_timeout=420",
+        "--NotebookApp.shutdown_no_activity_timeout=3600",
         "--NotebookApp.quit_button=False",
         "--Application.log_level=DEBUG",
         "--NotebookApp.log_level=DEBUG",
         "--JupyterApp.log_level=DEBUG",
         "--Session.debug=True"
-      ],
-      "command": [
-        "start-notebook.sh"
-      ],
-      "path-rewrite": "/lw-workspace/proxy/",
-      "use-tls": "false",
-      "ready-probe": "/lw-workspace/proxy/",
-      "lifecycle-post-start": [
-        "/bin/sh",
-        "-c",
-        "export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; rm -rf /home/$IAM/pd/lost+found; ln -s /data /home/$IAM/pd/; true"
-      ],
-      "user-uid": 1000,
-      "fs-gid": 100,
-      "user-volume-location": "/home/jovyan/pd"
-    },
-    {
-      "target-port": 8787,
-      "cpu-limit": "1.0",
-      "memory-limit": "512Mi",
-      "name": "(Generic) R Studio",
-      "image": "heliumdatastage/rstudio-server:1",
-      "env": {
-        "DISABLE_AUTH": "true"
-      },
-      "args": [],
-      "path-rewrite": "/",
-      "use-tls": "false",
-      "ready-probe": "/"
-    },
-    {
-      "target-port": 8888,
-      "cpu-limit": "1.0",
-      "memory-limit": "2Gi",
-      "name": "(Generic) Jupyter Notebook",
-      "image": "quay.io/occ_data/jupyternotebook:1.9.0",
-      "env": {},
-      "args": [
-        "--NotebookApp.base_url=/lw-workspace/proxy/",
-        "--NotebookApp.password=''",
-        "--NotebookApp.token=''",
-        "--NotebookApp.shutdown_no_activity_timeout=420",
-        "--NotebookApp.quit_button=False"
       ],
       "command": [
         "start-notebook.sh"
