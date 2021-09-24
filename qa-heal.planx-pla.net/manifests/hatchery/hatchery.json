@@ -47,17 +47,14 @@
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "quay.io/cdis/gen3fuse-sidecar:feat_drs-support",
+    "image": "quay.io/cdis/ecs-ws-sidecar:master",
     "env": {
-      "NAMESPACE": "qa-heal",
-      "HOSTNAME": "qa-heal.planx-pla.net",
-      "BASE_URL": "qa-heal.planx-pla.net",
-      "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
+      "NAMESPACE": "qa-heal"
     },
     "args": [],
     "command": [
       "/bin/bash",
-      "/sidecarDockerrun.sh"
+      "/sidecar.sh"
     ],
     "lifecycle-pre-stop": [
       "su",
@@ -73,8 +70,8 @@
       "target-port": 8888,
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
-      "name": "Jupyter Notebook (SLIM)",
-      "image": "quay.io/cdis/jupyter-superslim:feat_SDK",
+      "name": "(Generic) Jupyter Notebook with R Kernel",
+      "image": "quay.io/cdis/jupyter-superslim-r:master",
       "env": {"FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"},
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
@@ -82,7 +79,7 @@
         "--NotebookApp.token=''",
         "--NotebookApp.ip='*'",
         "--NotebookApp.notebook_dir='/home/jovyan'",
-        "--NotebookApp.shutdown_no_activity_timeout=420",
+        "--NotebookApp.shutdown_no_activity_timeout=3600",
         "--NotebookApp.quit_button=False",
         "--Application.log_level=DEBUG",
         "--NotebookApp.log_level=DEBUG",
@@ -105,52 +102,9 @@
       "user-volume-location": "/home/jovyan/pd"
     },
     {
-      "target-port": 8787,
-      "cpu-limit": "1.0",
-      "memory-limit": "512Mi",
-      "name": "(Generic) R Studio",
-      "image": "heliumdatastage/rstudio-server:1",
-      "env": {
-        "DISABLE_AUTH": "true"
-      },
-      "args": [],
-      "path-rewrite": "/",
-      "use-tls": "false",
-      "ready-probe": "/"
-    },
-    {
       "target-port": 8888,
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
-      "name": "(Generic) Jupyter Notebook",
-      "image": "quay.io/occ_data/jupyternotebook:1.9.0",
-      "env": {},
-      "args": [
-        "--NotebookApp.base_url=/lw-workspace/proxy/",
-        "--NotebookApp.password=''",
-        "--NotebookApp.token=''",
-        "--NotebookApp.shutdown_no_activity_timeout=420",
-        "--NotebookApp.quit_button=False"
-      ],
-      "command": [
-        "start-notebook.sh"
-      ],
-      "path-rewrite": "/lw-workspace/proxy/",
-      "use-tls": "false",
-      "ready-probe": "/lw-workspace/proxy/",
-      "lifecycle-post-start": [
-        "/bin/sh",
-        "-c",
-        "export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; rm -rf /home/$IAM/pd/lost+found; ln -s /data /home/$IAM/pd/; true"
-      ],
-      "user-uid": 1000,
-      "fs-gid": 100,
-      "user-volume-location": "/home/jovyan/pd"
-    },
-    {
-      "target-port": 8888,
-      "cpu-limit": "1.0",
-      "memory-limit": "1024Mi",
       "name": "(Generic, User-licensed) Stata Notebook ",
       "image": "quay.io/cdis/stata-heal:master",
       "env": {},
@@ -178,7 +132,7 @@
     {
       "target-port": 8888,
       "cpu-limit": "1.0",
-      "memory-limit": "1024Mi",
+      "memory-limit": "2Gi",
       "name": "(Generic, Limited Gen3-licensed) Stata Notebook",
       "image": "quay.io/cdis/stata-heal:gen3-licensed",
       "env": {},
@@ -207,7 +161,7 @@
     {
       "target-port": 8888,
       "cpu-limit": "1.0",
-      "memory-limit": "1024Mi",
+      "memory-limit": "2Gi",
       "name": "(Tutorial) JCOIN Tracking Opioid Stigma Notebook",
       "image": "quay.io/cdis/jupyter-jcoin:master",
       "env": {
@@ -237,7 +191,7 @@
     {
       "target-port": 8888,
       "cpu-limit": "1.0",
-      "memory-limit": "1024Mi",
+      "memory-limit": "2Gi",
       "name": "(Tutorial) Bacpac Synthetic Data Analysis Notebook",
       "image": "quay.io/cdis/jupyter-bacpac:master",
       "env": {
@@ -267,7 +221,7 @@
     {
       "target-port": 8888,
       "cpu-limit": "1.0",
-      "memory-limit": "1024Mi",
+      "memory-limit": "2Gi",
       "name": "(Tutorial) Opioid Prevalence And Overdoses Notebook",
       "image": "quay.io/cdis/heal-notebooks:cdcdea__1d2cc4ddf48babb9d86143c8f1f259a98a53e2f5",
       "env": {
@@ -297,7 +251,7 @@
     {
       "target-port": 8888,
       "cpu-limit": "1.0",
-      "memory-limit": "1024Mi",
+      "memory-limit": "2Gi",
       "name": "(Tutorial) Opioid Overdose Trajectories Notebook",
       "image": "quay.io/cdis/heal-notebooks:cdcwonder__ce8feff3d1f4491b47523003fc89df42e233419b",
       "env": {
@@ -327,7 +281,7 @@
     {
       "target-port": 8888,
       "cpu-limit": "1.0",
-      "memory-limit": "1024Mi",
+      "memory-limit": "2Gi",
       "name": "(Tutorial) OEPS And Opioid Toolkit Notebook",
       "image": "quay.io/cdis/heal-notebooks:oeps__a6ce48313afd4f7b43a8c203b52c8394331f166c",
       "env": {
