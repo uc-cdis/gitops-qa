@@ -290,7 +290,7 @@
                             Currently, the HEAL platform makes data available from the following FAIR Data Resources or
                             Repositories:
                         </p>
-                        <img class="drop-shadow" src="img/data_resources.png" alt="data_resources" style="width:60%">
+                        <img class="drop-shadow" src="img/data_resources.png" alt="data_resources" style="width:30%">
                         <figcaption>
                             Current Data Resources on the HEAL Data Platform.
                         </figcaption>
@@ -627,8 +627,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="#Workspaces"
-                                    style="background-image: url('img/workspace_flavors.png');"></a>
+                                <a href="#Workspaces" style="background-image: url('img/workspace_flavors.png');"></a>
                                 <div class="details">
                                     <h6><a href="#Workspaces">Workspaces</a></h6>
                                     <p class="image-author">Access data across multiple resources and perform analyses
@@ -657,31 +656,50 @@
 
 
                         <h3 id="LoginPage" class="section-title">b) Login Page</h2>
-                            <blockquote>
-                                <p>
-                                    Browsing the study metadata on the Discovery Page, following along the pre-made
-                                    notebooks in the
-                                    “Static Notebooks” tab, and downloading the file manifest with publicly accessible
-                                    data files does not require
-                                    authorization and is <span style="font-weight: bold">open-access.</span>
-                                </p>
-                            </blockquote>
+
+                            <p>
+                                What is <span style="font-weight: bold">open-access</span>?
+                            <ul>
+                                <li>
+                                    Browsing the study metadata on the Discovery Page
+                                </li>
+                                <li>
+                                    following along the pre-made notebooks in the “Static Notebooks” tab
+                                </li>
+                                <li>
+                                    downloading the file manifest with publicly accessible data files from the Discovery
+                                    Page
+                                </li>
+                            </ul>
+                            </p>
+
                             <blockquote>
                                 <p>
                                     Click <a href="#CurrentOAStudies">here</a> to see all open-access studies.
                                 </p>
                             </blockquote>
-                            <blockquote>
-                                <p>
-                                    You will need <span style="font-weight: bold">to log in and obtain authorization
-                                        (access)</span> in order to run analyses in workspaces.
-                                </p>
-                            </blockquote>
+
                             <p>
-                                Clicking on a study containing controlled data will prompt users to log in.
-                                In order to access controlled data available on the HEAL Platform – for which you will
-                                be prompted once clicking on the study –
-                                or perform analyses in the workspace, start by visiting the login page (<a
+                                You will need <span style="font-weight: bold">to log in and obtain authorization
+                                    (access)</span> in order to 
+                                    <ul>
+                                        <li>
+                                            <em>access</em> studies with controlled data
+                                        </li>
+                                        <li>
+                                            <em>perform</em> analyses in workspaces
+                                        </li>
+                                        <li>
+                                            <em>download</em> data files
+                                        </li>
+                                        <li>
+                                            <em>run</em> interactive tutorial notebooks in workspaces
+                                        </li>
+                                    </ul>
+                            </p>
+
+                            <p>
+                                Start by visiting the login page (<a
                                     href="https://healdata.org/login">https://healdata.org/login</a>).
                             </p>
                             <img class="drop-shadow" src="img/healdataorg_login.png" alt="Healdata-Login"
@@ -972,7 +990,7 @@
                                     href="https://healdata.org/workspace">healdata.org/discovery</a>.
                             </p>
                             <img class="drop-shadow" src="img/workspace_login_other_commons_top_banner.png"
-                                alt="workspace_login_other_commons_top_banner" style="width:70%">
+                                alt="workspace_login_other_commons_top_banner" style="width:60%">
                             <figcaption>
                                 Users are reminded on <a
                                     href="https://healdata.org/workspace">healdata.org/workspace</a>
@@ -1015,15 +1033,17 @@
 
                             <h4 id="SearchFeatures" class="section-title">Search Features</h4>
                             <p>
-                                Finding studies is made easy using keywords in the free text-based search bar or using tags. 
+                                Finding studies is made easy using keywords in the free text-based search bar or using
+                                tags.
                             </p>
                             <p>
-                                The free-text search bar can be used to search for study title, 
-                                investigator name, or any keyword that is mentioned in the metadata of the study. 
+                                The free-text search bar can be used to search for study title,
+                                investigator name, or any keyword that is mentioned in the metadata of the study.
                             </p>
                             <p>
-                                Tag names cannot be 
-                                searched in the free-text search bar, but instead selected on top of the Discovery Page, as shown below.
+                                Tag names cannot be
+                                searched in the free-text search bar, but instead selected on top of the Discovery Page,
+                                as shown below.
                             </p>
                             <img class="drop-shadow" src="img/discovery_features.png" alt="DiscoveryFeatures"
                                 style="width:80%">
@@ -1136,13 +1156,13 @@
                             <ol>
                                 <li>
                                     Log in on <a href="https://healdata.org/login">healdata.org/login</a>.
-                                    Link your account to a FAIR repository if necessary as described
-                                    <a href="#LinkingAccessTo">here</a>.
+                                    
                                     <br><br>
                                 </li>
                                 <li>
                                     Find and select study on the Discovery Page using the checkbox on the left side and
-                                    clicking on "Open in Workspace".
+                                    clicking on "Open in Workspace". Link your account to a FAIR repository if necessary as described
+                                    <a href="#LinkingAccessTo">here</a>.
                                     See current open-access studies <a href="#CurrentOAStudies">here</a>.<br><br>
                                 </li>
                                 <li>
@@ -1239,11 +1259,6 @@
                                         Choose this VM if you are familiar with setting up Python-based Notebooks, or
                                         if you just exported one or multiple studies from the Discovery Page and want to
                                         start your custom analysis.
-                                    </li>
-                                    <li>
-                                        <span style="font-weight: bold">(Generic) R Studio</span>:
-                                        Choose this VM if you are familiar with R Studio-based data analysis tools.
-                                        This workspace will offer a RStudio environment.
                                     </li>
                                     <li>
                                         <span style="font-weight: bold">(Generic, User-licensed) Stata Notebook</span>:
@@ -1431,7 +1446,7 @@
                                     RStudio<br>
                                     <img src="img/workspace_RStudio_logo.png" alt="workspace_RStudio_logo"
                                         style="width:20%"> <br>
-                                    
+
 
                                 </li>
                             </ul>
@@ -1583,8 +1598,7 @@
                                 platform.
                             </p>
                             <blockquote>
-                                This tab acts as a <a
-                                        href=#CurrentlyAvailableNotebooks>'visual table of contents’</a>
+                                This tab acts as a <a href=#CurrentlyAvailableNotebooks>'visual table of contents’</a>
                                 of available HEAL datasets.
                             </blockquote>
                             <p>
@@ -1779,7 +1793,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        Opioid Environment Toolkit and OEPS R(<span style="font-weight: bold;"><a
+                                        Opioid Environment Toolkit and OEPS R (<span style="font-weight: bold;"><a
                                                 href="#Tutorials">Watch tutorial</a></span>)
                                     </td>
                                     <td>
@@ -2067,11 +2081,6 @@
                                 </li>
                             </ol>
 
-                            <p>
-
-                            </p>
-
-
 
                             <h3 id="DownloadFilesClientSDK" class="section-title">b) Download Data Files using the
                                 Gen3-client</h3>
@@ -2100,11 +2109,11 @@
                                     “Available”, and choose multiple studies.
                                 </li> <br>
                                 <li>
-                                    Click on the button “Download". <br>
+                                    Click on the button “Download Manifest". <br>
                                     <img class="drop-shadow" src="img/discovery_select_study_download_manifest.png"
                                         alt="discovery_select_study_download_manifest" style="width:90%">
                                     <figcaption>
-                                        Select a study of interest, then click on the button “Download".
+                                        Select a study of interest, then click on the button “Download Manifest".
                                     </figcaption><br><br>
                                 </li>
                                 <li>
@@ -2171,6 +2180,40 @@
                         </code>
                                 </li> <br>
                             </ol>
+
+
+
+
+
+                            <h3 id="DownloadFilesSDKWorkspaces" class="section-title">c) Download Data Files using the
+                                Python SDK in the workspaces</h3>
+
+                            <p>
+                                Users can download data files to the workspaces by leveraging the CTDS-owned python software development kit (SDK).
+                                Follow instructions below.
+                            </p>
+                            <ol>
+                                <li>
+                                    Log in to the Data Commons on <a
+                                        href="https://healdata.org/login">healdata.org/login</a>
+                                </li>
+                                <li>
+                                    Find and select one or multiple studies of interest on the <a
+                                        href="https://healdata.org/discovery">Discovery Page</a>.
+                                    For multiple studies, select "Data Availability" in the top right corner, click
+                                    “Available”, and choose multiple studies.
+                                </li> 
+                                <li>
+                                    Click on the button “Export to Workspace". 
+                                </li>
+                                <li>
+                                    Go to a terminal and use the following commands (Mac) <br>
+                        <code>
+
+
+                        </code>
+                                </li>
+
 
 
 
