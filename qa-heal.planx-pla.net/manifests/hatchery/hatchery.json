@@ -70,7 +70,7 @@
       "target-port": 8888,
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
-      "name": "(Generic) Jupyter Notebook",
+      "name": "(Generic) Jupyter Notebook with R Kernel",
       "image": "quay.io/cdis/jupyter-superslim-r:master",
       "env": {"FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"},
       "args": [
@@ -104,7 +104,7 @@
     {
       "target-port": 8888,
       "cpu-limit": "1.0",
-      "memory-limit": "1024Mi",
+      "memory-limit": "2Gi",
       "name": "(Generic, User-licensed) Stata Notebook ",
       "image": "quay.io/cdis/stata-heal:master",
       "env": {},
@@ -132,7 +132,7 @@
     {
       "target-port": 8888,
       "cpu-limit": "1.0",
-      "memory-limit": "1024Mi",
+      "memory-limit": "2Gi",
       "name": "(Generic, Limited Gen3-licensed) Stata Notebook",
       "image": "quay.io/cdis/stata-heal:gen3-licensed",
       "env": {},
@@ -161,7 +161,7 @@
     {
       "target-port": 8888,
       "cpu-limit": "1.0",
-      "memory-limit": "1024Mi",
+      "memory-limit": "2Gi",
       "name": "(Tutorial) JCOIN Tracking Opioid Stigma Notebook",
       "image": "quay.io/cdis/jupyter-jcoin:master",
       "env": {
@@ -191,7 +191,7 @@
     {
       "target-port": 8888,
       "cpu-limit": "1.0",
-      "memory-limit": "1024Mi",
+      "memory-limit": "2Gi",
       "name": "(Tutorial) Bacpac Synthetic Data Analysis Notebook",
       "image": "quay.io/cdis/jupyter-bacpac:master",
       "env": {
@@ -221,7 +221,7 @@
     {
       "target-port": 8888,
       "cpu-limit": "1.0",
-      "memory-limit": "1024Mi",
+      "memory-limit": "2Gi",
       "name": "(Tutorial) Opioid Prevalence And Overdoses Notebook",
       "image": "quay.io/cdis/heal-notebooks:cdcdea__1d2cc4ddf48babb9d86143c8f1f259a98a53e2f5",
       "env": {
@@ -251,7 +251,7 @@
     {
       "target-port": 8888,
       "cpu-limit": "1.0",
-      "memory-limit": "1024Mi",
+      "memory-limit": "2Gi",
       "name": "(Tutorial) Opioid Overdose Trajectories Notebook",
       "image": "quay.io/cdis/heal-notebooks:cdcwonder__ce8feff3d1f4491b47523003fc89df42e233419b",
       "env": {
@@ -281,7 +281,7 @@
     {
       "target-port": 8888,
       "cpu-limit": "1.0",
-      "memory-limit": "1024Mi",
+      "memory-limit": "2Gi",
       "name": "(Tutorial) OEPS And Opioid Toolkit Notebook",
       "image": "quay.io/cdis/heal-notebooks:oeps__a6ce48313afd4f7b43a8c203b52c8394331f166c",
       "env": {
