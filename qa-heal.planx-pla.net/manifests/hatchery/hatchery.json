@@ -21,12 +21,49 @@
       "user": "craigrbarnes@uchicago.edu",
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
+      "ecs": "true",
       "region": "us-east-1"
     },
     {
       "user": "cgmeyer@uchicago.edu",
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
+      "ecs": "true",
+      "region": "us-east-1"
+    },
+    {
+      "user": "jmontmaxwell@uchicago.edu",
+      "aws_account_id": "354484406138",
+      "name": "brhworkspaces",
+      "ecs": "true",
+      "region": "us-east-1"
+    },
+    {
+      "user": "mcannalte@uchicago.edu",
+      "aws_account_id": "354484406138",
+      "name": "brhworkspaces",
+      "ecs": "true",
+      "region": "us-east-1"
+    },
+    {
+      "user": "haraprasadj@uchicago.edu",
+      "aws_account_id": "354484406138",
+      "name": "brhworkspaces",
+      "ecs": "true",
+      "region": "us-east-1"
+    },
+    {
+      "user": "nmetokishlubsky@uchicago.edu",
+      "aws_account_id": "354484406138",
+      "name": "brhworkspaces",
+      "ecs": "true",
+      "region": "us-east-1"
+    },
+    {
+      "user": "hughestr@uchicago.edu",
+      "aws_account_id": "354484406138",
+      "name": "brhworkspaces",
+      "ecs": "true",
       "region": "us-east-1"
     },
     {
