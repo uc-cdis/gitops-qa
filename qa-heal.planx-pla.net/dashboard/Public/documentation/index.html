@@ -106,6 +106,8 @@
                 <div class="ul-sidenav">
                     <a href="#DownloadFilesfromDiscovery">a) Download Data Files from the Discovery Page</a>
                     <a href="#DownloadFilesClientSDK">b) Download Data Files using the Gen3-client</a>
+                    <a href="#DownloadFilesSDKWorkspaces">c) Download Data Files using the Python SDK in the
+                        Workspaces</a>
                 </div>
                 <div class="sidenav-head">
                     <a href="#FAQ">FAQ</a></strong>
@@ -681,21 +683,21 @@
 
                             <p>
                                 You will need <span style="font-weight: bold">to log in and obtain authorization
-                                    (access)</span> in order to 
-                                    <ul>
-                                        <li>
-                                            <em>access</em> studies with controlled data
-                                        </li>
-                                        <li>
-                                            <em>perform</em> analyses in workspaces
-                                        </li>
-                                        <li>
-                                            <em>download</em> data files
-                                        </li>
-                                        <li>
-                                            <em>run</em> interactive tutorial notebooks in workspaces
-                                        </li>
-                                    </ul>
+                                    (access)</span> in order to
+                            <ul>
+                                <li>
+                                    <em>access</em> studies with controlled data
+                                </li>
+                                <li>
+                                    <em>perform</em> analyses in workspaces
+                                </li>
+                                <li>
+                                    <em>download</em> data files
+                                </li>
+                                <li>
+                                    <em>run</em> interactive tutorial notebooks in workspaces
+                                </li>
+                            </ul>
                             </p>
 
                             <p>
@@ -941,8 +943,8 @@
                                 <a href="#DataManagementRepositories">HEAL-approved FAIR repositories</a>.
                             </p>
                             <p>
-                                <span style="font-weight: bold">Users need to link their account to the respective FAIR
-                                    repository in order to: </span>
+                                <span style="font-weight: bold">Users need to link their account to currently all FAIR
+                                    repositories in order to: </span>
                             <ol>
                                 <li>
                                     <em>run</em> <a href="#StaticNoteboks">Jupyter Notebooks</a> that utilize data
@@ -962,7 +964,7 @@
                             In order to link the account to the involved FAIR repositories,
                             navigate to the
                             <a href="https://healdata.org/workspace">healdata.org/workspace</a>,
-                            thn scroll down to link the account to one of the current login options as shown below.
+                            thn scroll down to link the account to all current login options as shown below.
                             </p>
 
                             <img class="drop-shadow" src="img/workspace_login_other_commons.png"
@@ -994,14 +996,14 @@
                             <figcaption>
                                 Users are reminded on <a
                                     href="https://healdata.org/workspace">healdata.org/workspace</a>
-                                to link the account to other FAIR enabled repositories at the bottom of the page.
+                                to link the account to all other FAIR enabled repositories at the bottom of the page.
                             </figcaption>
                             <p></p>
                             <img class="drop-shadow" src="img/workspace_login_other_commons_discovery.png"
                                 alt="workspace_login_other_commons_discovery" style="width:70%">
                             <figcaption>
                                 Users are reminded on <a href="https://healdata.org/discovery">the Discovery Page</a>
-                                to link the account to other FAIR enabled repositories.
+                                to link the account to all other FAIR enabled repositories.
                             </figcaption>
 
 
@@ -1156,12 +1158,13 @@
                             <ol>
                                 <li>
                                     Log in on <a href="https://healdata.org/login">healdata.org/login</a>.
-                                    
+
                                     <br><br>
                                 </li>
                                 <li>
                                     Find and select study on the Discovery Page using the checkbox on the left side and
-                                    clicking on "Open in Workspace". Link your account to a FAIR repository if necessary as described
+                                    clicking on "Open in Workspace". Link your account to all FAIR repositories as
+                                    described
                                     <a href="#LinkingAccessTo">here</a>.
                                     See current open-access studies <a href="#CurrentOAStudies">here</a>.<br><br>
                                 </li>
@@ -1248,15 +1251,17 @@
                                     <img class="drop-shadow" src="img/workspace_flavors.png" alt="Workspace_flavors"
                                         style="width:80%">
                                     <figcaption style="width:100%">
-                                        Available workspaces on the HEAL Platform (top). Users can link accounts from
+                                        Available workspaces on the HEAL Platform (top). Users may need to link their
+                                        accounts from
                                         other repositories (bottom; click <a href="#LinkingAccessTo">here to see
                                             how</a>).
                                     </figcaption> <br> <br>
                                 </li>
                                 <ul>
                                     <li>
-                                        <span style="font-weight: bold">(Generic) Jupyter Notebook</span>:
-                                        Choose this VM if you are familiar with setting up Python-based Notebooks, or
+                                        <span style="font-weight: bold">(Generic) Jupyter Notebook with R kernel</span>:
+                                        Choose this VM if you are familiar with setting up Python- or R-based Notebooks,
+                                        or
                                         if you just exported one or multiple studies from the Discovery Page and want to
                                         start your custom analysis.
                                     </li>
@@ -1683,6 +1688,12 @@
                                 as a launching point for your own custom analysis.
                             </blockquote>
 
+                            <p>
+                                Please link your account to
+                                <a href="#LinkingAccessTo"> all FAIR repositories</a> before working with the Notebooks
+                                in interactive mode.
+                            </p>
+
                             <table style="width:80%">
                                 <tr>
                                     <th>
@@ -1699,9 +1710,6 @@
                                     </th>
                                     <th>
                                         Language
-                                    </th>
-                                    <th>
-                                        Needs linking access to FAIR (which one)?
                                     </th>
                                 </tr>
                                 <tr>
@@ -1725,9 +1733,6 @@
                                     <td>
                                         Python
                                     </td>
-                                    <td>
-
-                                    </td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -1748,9 +1753,6 @@
                                     </td>
                                     <td>
                                         Python
-                                    </td>
-                                    <td>
-                                        <a href="#LinkingAccessTo">JCOIN</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -1787,9 +1789,6 @@
                                     <td>
                                         Python
                                     </td>
-                                    <td>
-                                        <a href="#LinkingAccessTo">FAIR</a>
-                                    </td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -1810,9 +1809,6 @@
                                     </td>
                                     <td>
                                         RStudio
-                                    </td>
-                                    <td>
-                                        <a href="#LinkingAccessTo">JCOIN</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -1839,9 +1835,6 @@
                                     <td>
                                         Python
                                     </td>
-                                    <td>
-
-                                    </td>
                                 </tr>
                             </table>
 
@@ -1865,12 +1858,9 @@
                             </blockquote>
                             <ul>
                                 <li>
-                                    <span style="font-weight: bold;">Some notebooks require linked access to FAIR
+                                    <span style="font-weight: bold;">Notebooks require linked access to all FAIR
                                         enabled repositories</span>,
                                     as described <a href="#LinkingAccessTo">here</a>.
-                                    <br>
-                                    The <a href="#CurrentlyAvailableNotebooks">previous section</a>
-                                    lists if the notebook needs linking access to FAIR enabled repositories.
                                 </li>
                             </ul>
                             <ul>
@@ -1912,7 +1902,7 @@
                                 <li>
                                     Click the “Open in Workspace” button in the upper right corner. This step will
                                     create a manifest folder which you can find later in the Workspace’s folder
-                                    "data/healdata.org".<br> <br>
+                                    "data/healdata.org".<br>
                                     <img class="drop-shadow" src="img/static_notebook_bacpac.png"
                                         alt="static_notebook_bacpac" style="width:90%">
                                     <figcaption>
@@ -2005,14 +1995,15 @@
                                 following project numbers: a) cdcwonder and b) deaarcos1.
                             </p>
                             <p>
-                                <span style="font-weight: bold">Note, that accessing some data files requires linked
-                                    access to FAIR enabled repositories, as described
+                                <span style="font-weight: bold">Note, that accessing data files requires linked
+                                    access to all FAIR enabled repositories, as described
                                     <a href="#LinkingAccessTo">here</a>.</span> A pop-up window will remind users:
                             </p>
                             <img class="drop-shadow" src="img/workspace_login_other_commons_discovery.png"
                                 alt="workspace_login_other_commons_discovery" style="width:50%">
                             <figcaption>
-                                Users are reminded to link the account to other FAIR enabled repositories, as described
+                                Users are reminded to link the account to all other FAIR enabled repositories, as
+                                described
                                 <a href="#LinkingAccessTo">here</a>.
                             </figcaption>
 
@@ -2186,33 +2177,92 @@
 
 
                             <h3 id="DownloadFilesSDKWorkspaces" class="section-title">c) Download Data Files using the
-                                Python SDK in the workspaces</h3>
+                                Python SDK in the Workspaces</h3>
 
                             <p>
-                                Users can download data files to the workspaces by leveraging the CTDS-owned python software development kit (SDK).
+                                Users can download data files to the workspaces by leveraging the CTDS-owned python
+                                software development kit (SDK).
                                 Follow instructions below.
                             </p>
                             <ol>
                                 <li>
                                     Log in to the Data Commons on <a
-                                        href="https://healdata.org/login">healdata.org/login</a>
+                                        href="https://healdata.org/login">healdata.org/login</a> <br><br>
                                 </li>
                                 <li>
                                     Find and select one or multiple studies of interest on the <a
                                         href="https://healdata.org/discovery">Discovery Page</a>.
-                                    For multiple studies, select "Data Availability" in the top right corner, click
-                                    “Available”, and choose multiple studies.
-                                </li> 
-                                <li>
-                                    Click on the button “Export to Workspace". 
+                                    Select "Data Availability" in the top right corner and click on
+                                    “Available” to see all available studies. <br><br>
                                 </li>
                                 <li>
-                                    Go to a terminal and use the following commands (Mac) <br>
-                        <code>
-
-
-                        </code>
+                                    Select a study and click on "Open in Workspace". <br>
+                                    <img class="drop-shadow" src="img/static_notebook_bacpac.png"
+                                        alt="static_notebook_bacpac" style="width:90%">
+                                    <figcaption>
+                                        Select a study and click on “Open in Workspace”.
+                                    </figcaption><br>
                                 </li>
+                                <li>
+                                    Select a workspace VM and click "Launch". Choose the "(Generic) Jupyter Notebook with R kernel" if you
+                                    are familiar with setting up Python- or R-based Notebooks, or
+                                    if you just exported one or multiple studies from the Discovery Page and want to
+                                    start your custom analysis. Choose a VM with the name of the Notebook if you
+                                    selected the studies relevant to a specific Notebook and want
+                                    to work on the Notebook in interactive mode. <br>
+                                    <img class="drop-shadow" src="img/workspace_flavors.png" alt="Workspace_flavors"
+                                        style="width:80%">
+                                    <figcaption style="width:100%">
+                                        Available workspaces on the HEAL Platform (top). Users need to link accounts
+                                        from
+                                        other repositories (bottom; click <a href="#LinkingAccessTo">here to see
+                                            how</a>).
+                                    </figcaption> <br> <br>
+                                </li>
+                                <li>
+                                    Find all files under /data/healdata.org/ with the ending "PLACEHOLDER": <br>
+                                    <img class="drop-shadow" src="img/workspace_placeholder.png" alt="workspace_placeholder"
+                                    style="width:80%">
+                                <figcaption style="width:100%">
+                                    Placeholder files. 
+                                </figcaption> <br> <br>
+                                </li>
+                                <li>
+                                    Click on one file and copy the command and GUID. <br>
+                                    <img class="drop-shadow" src="img/workspace_placeholder_guid.png" alt="workspace_placeholder_guid"
+                                    style="width:80%">
+                                <figcaption style="width:100%">
+                                    Copy the command.
+                                </figcaption> <br> <br>
+                                </li>
+                                <li>
+                                    Click on "New" - "Terminal".
+                                    <img class="drop-shadow" src="img/workspace_terminal.png" alt="workspace_terminal"
+                                    style="width:80%">
+                                <figcaption style="width:100%">
+                                    Open a new terminal under "New".
+                                </figcaption> <br> <br>
+                                </li>
+                                <li>
+                                    Type in the following command to download the file to the workspace:<br>
+                                    <code>
+                                        gen3 pull_object "guid"
+                                    </code><br><br>
+                                    <img class="drop-shadow" src="img/workspace_terminal_download.png" alt="workspace_terminal_download"
+                                    style="width:80%">
+                                <figcaption style="width:100%">
+                                    Type in the following command to download the file to the workspace.
+                                </figcaption> <br> <br>
+                                </li>
+                                <li>
+                                    The file should be downloaded and is ready to be worked with in your Notebook. <br>
+                                    <img class="drop-shadow" src="img/workspace_terminal_downloaded.png" alt="workspace_terminal_downloaded"
+                                    style="width:80%">
+                                <figcaption style="width:100%">
+                                    Downloaded files can be found in your home directory.
+                                </figcaption> <br> <br>
+                                </li>
+                            </ol>
 
 
 
