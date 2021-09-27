@@ -1,5 +1,5 @@
 {
-  "user-namespace": "jupyter-pods",
+  "user-namespace": "jupyter-pods-qa-ibd",
   "sub-dir": "/lw-workspace",
   "user-volume-size": "10Gi",
   "sidecar": {
@@ -80,7 +80,8 @@
       "name": "Jupyter (Python 3.6.7, R 3.6.3)",
       "image": "quay.io/cdis/jupyter-notebook:1.1.0",
       "env": {
-        "NAMESPACE": "qa-ibd"
+        "NAMESPACE": "qa-ibd",
+        "FRAME_ANCESTORS": "https://qa-ibd.planx-pla.net/"
       },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
@@ -109,7 +110,8 @@
       "name": "Jupyter (Python 3.9.5, R 4.1.0)",
       "image": "quay.io/cdis/jupyter-6.4.0:latest",
       "env": {
-        "NAMESPACE": "qa-ibd"
+        "NAMESPACE": "qa-ibd",
+        "FRAME_ANCESTORS": "https://qa-ibd.planx-pla.net/"
       },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
@@ -138,7 +140,8 @@
       "name": "Jupyter (Python 3.9.5, R 4.1.0) + base packages",
       "image": "quay.io/cdis/jupyter-6.4.0-with-base-packages:latest",
       "env": {
-        "NAMESPACE": "qa-ibd"
+        "NAMESPACE": "qa-ibd",
+        "FRAME_ANCESTORS": "https://qa-ibd.planx-pla.net/"
       },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
