@@ -15,7 +15,7 @@
     "indexd": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexd:2021.09",
     "peregrine": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/peregrine:2021.09",
     "pidgin": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/pidgin:2021.09",
-    "portal": "quay.io/cdis/data-portal:3.12.0",
+    "portal": "quay.io/cdis/data-portal:3.13.0",
     "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:2021.09",
     "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:2021.09",
     "sower": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sower:2021.09",
