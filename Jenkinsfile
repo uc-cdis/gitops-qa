@@ -1,5 +1,5 @@
 #!groovy
-@Library('cdis-jenkins-lib@test/disco-tag-dd') _
+@Library('cdis-jenkins-lib@test/master') _
 testPipeline {
   MANIFEST = "True"
 }
