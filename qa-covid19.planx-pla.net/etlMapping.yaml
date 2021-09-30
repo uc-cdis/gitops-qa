@@ -151,6 +151,14 @@ mappings:
           - name: new_deaths
           - name: positive_rate
           - name: vaccine_administered_count
+          - name: vaccine_administered_count_change
+          - name: vaccine_administered_count_roll_avg
+          - name: vaccine_IL_total_administered_vaccine_doses
+          - name: vaccine_IL_total_persons_fully_vaccinated
+          - name: vaccine_long_term_care_allocated
+          - name: vaccine_long_term_care_administered
+          - name: vaccine_LHDR_reported_inventory
+          - name: vaccine_persons_fully_vaccinated
           - name: vaccine_persons_fully_vaccinated_pct
           - name: vaccine_total_delivered_vaccine_doses
           - name: vaccine_community_reported_inventory
@@ -184,6 +192,14 @@ mappings:
          - name: handwashing_facilities
          - name: stringency_index
         sorted_by: updated_datetime, desc
+    nested_props:
+      - path: summary_clinicals.summary_group_demographics
+        props:
+          - name: age_group
+          - name: gender
+          - name: race
+          - name: vaccine_persons_fully_vaccinated
+          - name: vaccine_persons_fully_vaccinated_pct
     parent_props:
       - path: projects[project_code:code,project_name:name,project_url:url,project_investigator_affiliation:investigator_affiliation,project_date_collected:date_collected]
   - name: qa-covid19_subject
@@ -226,7 +242,7 @@ mappings:
           - name: hospital
           - name: pneumonia_type
           - name: ventilator_status
-        sorted_by: updated_datetime, desc          
+        sorted_by: updated_datetime, desc
       - path: follow_ups
         props:
           - name: extubated
