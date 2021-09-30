@@ -36,6 +36,10 @@
       {
         "index": "jcoin_file",
         "type": "file"
+      },
+      {
+        "index": "jcoin_saes",
+        "type": "serious_adverse_event"
       }
     ],
     "config_index": "jcoin_array-config",
@@ -45,7 +49,7 @@
     "environment": "qa-jcoin",
     "hostname": "qa-jcoin.planx-pla.net",
     "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
-    "dictionary_url": "https://dictionary-artifacts.s3.amazonaws.com/jcoin_datadictionary/1.1.1/schema.json",
+    "dictionary_url": "https://dictionary-artifacts.s3.amazonaws.com/jcoin_datadictionary/1.2.0/schema.json",
     "portal_app": "gitops",
     "kube_bucket": "kube_bucket.devplanetv1.gen3",
     "logs_bucket": "logs-devplanetv1-gen3",
