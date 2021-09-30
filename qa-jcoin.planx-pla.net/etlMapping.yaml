@@ -63,6 +63,7 @@ mappings:
     type: aggregator
     root: serious_adverse_event
     props:
+      - name: project_id
       - name: submitter_id
       - name: quarter_of_sae
       - name: is_related_to_study
