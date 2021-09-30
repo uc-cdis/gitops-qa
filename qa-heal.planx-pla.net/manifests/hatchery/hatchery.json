@@ -200,7 +200,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Tutorial) JCOIN Tracking Opioid Stigma Notebook",
-      "image": "quay.io/cdis/jupyter-jcoin:master",
+      "image": "quay.io/cdis/heal-notebooks:jcoin__177f89f0fab8a13c606c68bab0b953aa3fed4b71",
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
@@ -230,7 +230,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Tutorial) Bacpac Synthetic Data Analysis Notebook",
-      "image": "quay.io/cdis/jupyter-bacpac:master",
+      "image": "quay.io/cdis/heal-notebooks:bacpac__ee9b633f80525f98e809199584d9072437215ee4",
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
@@ -260,7 +260,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Tutorial) Opioid Prevalence And Overdoses Notebook",
-      "image": "quay.io/cdis/heal-notebooks:cdcdea__1d2cc4ddf48babb9d86143c8f1f259a98a53e2f5",
+      "image": "quay.io/cdis/heal-notebooks:cdcdea__d79f640e135c6d863304f5f9fbd689886fb9fead",
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
@@ -290,7 +290,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Tutorial) Opioid Overdose Trajectories Notebook",
-      "image": "quay.io/cdis/heal-notebooks:cdcwonder__ce8feff3d1f4491b47523003fc89df42e233419b",
+      "image": "quay.io/cdis/heal-notebooks:cdcwonder__ffca5fadbed66648bdd1de93ff81801e9e2764ad",
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
