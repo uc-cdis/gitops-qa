@@ -320,7 +320,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Tutorial) OEPS And Opioid Toolkit Notebook",
-      "image": "quay.io/cdis/heal-notebooks:oeps__fb6ca7fb86c62445e44f959d3905dcf0d2a0aae1",
+      "image": "quay.io/cdis/heal-notebooks:oeps__69567adc7583405788eafc39ae8af51a6a5d7690",
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
