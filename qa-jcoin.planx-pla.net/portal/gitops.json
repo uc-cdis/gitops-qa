@@ -576,6 +576,115 @@
         "downloadAccessor": "object_id"
       },
       "dropdowns": {}
+    },
+    {
+      "tabTitle": "SAEs",
+      "charts": {
+        "projeect_id": {
+          "chartType": "count",
+          "title": "Total Serious Adverse Events"
+        }
+      },
+      "filters": {
+        "tabs": [
+          {
+            "title": "Hubs",
+            "fields": [
+              "project_name",
+              "protocol"
+            ]
+          },
+          {
+            "title": "Demographics",
+            "fields": [
+              "gender",
+              "race",
+              "hispanic"
+            ]
+          }
+        ]
+      },
+      "table": {
+        "enabled": true,
+        "fields": [
+          "project_id",
+          "project_name",
+          "protocol",
+          "gender",
+          "race",
+          "hispanic",
+          "quarter_of_sae",
+          "is_related_to_study",
+          "was_expected",
+          "on_opioid_medication"
+        ]
+      },
+      "buttons": [
+        {
+          "enabled": false,
+          "type": "data",
+          "title": "Download SAEs",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "saes.json"
+        }
+      ],
+      "guppyConfig": {
+        "dataType": "participant",
+        "nodeCountTitle": "Total Enrolled",
+        "fieldMapping": [
+          {
+            "field": "project_id",
+            "name": "Hub"
+          },
+          {
+            "field": "hispanic",
+            "name": "Hispanic ethnicity"
+          },
+          {
+            "field": "race",
+            "name": "Race"
+          },
+          {
+            "field": "gender",
+            "name": "Gender identity"
+          },
+          {
+            "field": "protocol",
+            "name": "Hub Study Protocol"
+          },
+          {
+            "field": "protocol_submitter_id",
+            "name": "Hub Study Protocol ID"
+          },
+          {
+            "field": "project_name",
+            "name": "Hub Name"
+          },
+          {
+            "field": "quarter_of_sae",
+            "name": "Quarter of SAE"
+          },
+          {
+            "field": "is_related_to_study",
+            "name": "Related to study?"
+          },
+          {
+            "field": "was_expected",
+            "name": "Was it expected?"
+          },
+          {
+            "field":"on_opioid_medication",
+            "name": "On MOUD?"
+          }
+        ],
+        "manifestMapping": {
+          "resourceIndexType": "file",
+          "resourceIdField": "object_id",
+          "referenceIdFieldInResourceIndex": "project_id",
+          "referenceIdFieldInDataIndex": "project_id"
+        }
+      }
     }
   ],
   "showArboristAuthzOnProfile": true,
