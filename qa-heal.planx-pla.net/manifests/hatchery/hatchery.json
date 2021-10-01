@@ -8,6 +8,7 @@
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
+      "subnet": 0, 
       "region": "us-east-1"
     },
     {
@@ -15,6 +16,7 @@
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
+      "subnet": 1,
       "region": "us-east-1"
     },
     {
@@ -22,6 +24,7 @@
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
+      "subnet": 2,
       "region": "us-east-1"
     },
     {
@@ -29,6 +32,7 @@
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
+      "subnet": 3,
       "region": "us-east-1"
     },
     {
@@ -36,6 +40,7 @@
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
+      "subnet": 4,
       "region": "us-east-1"
     },
     {
@@ -43,6 +48,7 @@
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
+      "subnet": 5,
       "region": "us-east-1"
     },
     {
@@ -50,6 +56,7 @@
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
+      "subnet": 6,
       "region": "us-east-1"
     },
     {
@@ -57,6 +64,7 @@
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
+      "subnet": 7,
       "region": "us-east-1"
     },
     {
@@ -64,6 +72,7 @@
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
+      "subnet": 8,
       "region": "us-east-1"
     },
     {
@@ -71,12 +80,14 @@
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
+      "subnet": 9,
       "region": "us-east-1"
     },
     {
       "user": "test@example.com",
       "aws_account_id": "354484406138",
       "ecs": "true",
+      "subnet": 10,
       "name": "brhworkspaces",
       "region": "us-east-1"
     }
