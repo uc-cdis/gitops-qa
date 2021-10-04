@@ -23,7 +23,7 @@
     "ohdsi-webapi": "quay.io/cdis/ohdsi-webapi:latest",
     "peregrine": "quay.io/cdis/peregrine:2021.01",
     "pidgin": "quay.io/cdis/pidgin:2021.01",
-    "portal": "quay.io/cdis/data-portal:2.46.0",
+    "portal": "quay.io/cdis/data-portal:feat_system_use_warning",
     "revproxy": "quay.io/cdis/nginx:2020.08",
     "sheepdog": "quay.io/cdis/sheepdog:2021.01",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:2021.07",
