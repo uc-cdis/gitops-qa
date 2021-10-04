@@ -630,8 +630,8 @@
         }
       ],
       "guppyConfig": {
-        "dataType": "participant",
-        "nodeCountTitle": "Total Enrolled",
+        "dataType": "serious_adverse_event",
+        "nodeCountTitle": "Total Serious Adverse Events",
         "fieldMapping": [
           {
             "field": "project_id",
