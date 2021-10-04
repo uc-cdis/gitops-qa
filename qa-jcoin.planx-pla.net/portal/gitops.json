@@ -580,30 +580,60 @@
     {
       "tabTitle": "SAEs",
       "charts": {
-        "projeect_id": {
+        "project_id": {
           "chartType": "count",
           "title": "Total Serious Adverse Events"
-        }
-      },
-      "filters": {
-        "tabs": [
-          {
-            "title": "Hubs",
-            "fields": [
-              "project_name",
-              "protocol"
-            ]
+        },
+        "gender": {
+            "chartType": "fullPie",
+            "title": "Gender identity"
           },
-          {
-            "title": "Demographics",
-            "fields": [
-              "gender",
-              "race",
-              "hispanic"
-            ]
+          "race": {
+            "chartType": "fullPie",
+            "title": "Race"
+          },
+          "hispanic": {
+            "chartType": "fullPie",
+            "title": "Hispanic ethnicity"
+          },
+          "quarter_recruited": {
+            "chartType": "bar",
+            "title": "Quarter of SAE"
           }
-        ]
-      },
+        },
+        "filters": {
+          "tabs": [
+            {
+              "title": "Hubs",
+              "fields": [
+                "project_name",
+                "protocol"
+              ]
+            },
+            {
+              "title": "Quarter of SAE",
+              "fields": [
+                "quarter_of_sae"
+              ]
+            }, 
+            {
+              "title": "Demographics",
+              "fields": [
+                "gender",
+                "race",
+                "hispanic"
+              ]
+            },
+            {
+              "title": "SAE type",
+              "fields": [
+                "is_related_to_study",
+                "was_expected",
+                "on_opioid_medication"
+              ]
+            }
+          ]
+        },
       "table": {
         "enabled": true,
         "fields": [
