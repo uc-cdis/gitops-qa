@@ -8,6 +8,7 @@
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
+      "subnet": 0, 
       "region": "us-east-1"
     },
     {
@@ -15,6 +16,7 @@
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
+      "subnet": 1,
       "region": "us-east-1"
     },
     {
@@ -22,6 +24,7 @@
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
+      "subnet": 2,
       "region": "us-east-1"
     },
     {
@@ -29,6 +32,7 @@
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
+      "subnet": 3,
       "region": "us-east-1"
     },
     {
@@ -36,6 +40,7 @@
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
+      "subnet": 4,
       "region": "us-east-1"
     },
     {
@@ -43,6 +48,7 @@
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
+      "subnet": 5,
       "region": "us-east-1"
     },
     {
@@ -50,6 +56,7 @@
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
+      "subnet": 6,
       "region": "us-east-1"
     },
     {
@@ -57,6 +64,7 @@
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
+      "subnet": 7,
       "region": "us-east-1"
     },
     {
@@ -64,6 +72,7 @@
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
+      "subnet": 8,
       "region": "us-east-1"
     },
     {
@@ -71,12 +80,14 @@
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
+      "subnet": 9,
       "region": "us-east-1"
     },
     {
       "user": "test@example.com",
       "aws_account_id": "354484406138",
       "ecs": "true",
+      "subnet": 10,
       "name": "brhworkspaces",
       "region": "us-east-1"
     }
@@ -290,7 +301,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Tutorial) Opioid Overdose Trajectories Notebook",
-      "image": "quay.io/cdis/heal-notebooks:cdcwonder__ffca5fadbed66648bdd1de93ff81801e9e2764ad",
+      "image": "quay.io/cdis/heal-notebooks:cdcwonder__c7354ce26e2302dba64152f749753295b4918762",
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
@@ -320,7 +331,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Tutorial) OEPS And Opioid Toolkit Notebook",
-      "image": "quay.io/cdis/heal-notebooks:oeps__a6ce48313afd4f7b43a8c203b52c8394331f166c",
+      "image": "quay.io/cdis/heal-notebooks:oeps__69567adc7583405788eafc39ae8af51a6a5d7690",
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
