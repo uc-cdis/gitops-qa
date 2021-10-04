@@ -635,7 +635,7 @@
           ]
         },
       "table": {
-        "enabled": true,
+        "enabled": false,
         "fields": [
           "project_id",
           "project_name",
