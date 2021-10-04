@@ -192,7 +192,7 @@
             ]
           },
           {
-            "title": "Recruitment Time",
+            "title": "Quarter enrolled",
             "fields": [
               "quarter_recruited"
             ]
