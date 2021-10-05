@@ -1,4 +1,4 @@
- {
+{
   "user-namespace": "jupyter-pods-qa-covid19",
   "sub-dir": "/lw-workspace",
   "user-volume-size": "10Gi",
