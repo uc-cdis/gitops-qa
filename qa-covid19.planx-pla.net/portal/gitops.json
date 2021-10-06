@@ -756,6 +756,10 @@
               "region_vents_available",
               "state_total_beds",
               "total_in_use_beds_covid",
+              "icu_beds",
+              "icu_In_use_beds_covid",
+              "ventilator_available",
+              "ventilator_in_use_covid",
               "vaccine_administered_count",
               "vaccine_persons_fully_vaccinated_pct",
               "vaccine_total_delivered_vaccine_doses",
@@ -811,6 +815,12 @@
           "state_total_beds",
           "total_in_use_beds_non_covid",
           "total_in_use_beds_covid",
+          "icu_beds",
+          "icu_in_use_beds_non_covid",
+          "icu_In_use_beds_covid",
+          "ventilator_capacity",
+          "ventilator_in_use_non_covid",
+          "ventilator_in_use_covid",
           "population_density",
           "completed_high_school",
           "college_degree",
@@ -947,11 +957,35 @@
           },
           {
             "field": "total_in_use_beds_non_covid",
-            "name": "IL Total In Use Non-COVID-19 Beds "
+            "name": "IL Total In Use Non-COVID-19 Beds"
           },
           {
             "field": "total_in_use_beds_covid",
             "name": "IL Total In Use COVID-19 Beds"
+          },
+          {
+            "field": "icu_beds",
+            "name": "IL Total ICU Beds"
+          },
+          {
+            "field": "icu_in_use_beds_non_covid",
+            "name": "IL Total In Use Non-COVID-19 ICU Beds"
+          },
+          {
+            "field": "icu_In_use_beds_covid",
+            "name": "IL Total In Use COVID-19 ICU Beds"
+          },
+          {
+            "field": "ventilator_capacity",
+            "name": "IL Total Ventilators"
+          },
+          {
+            "field": "ventilator_in_use_non_covid",
+            "name": "IL Total In Use Non-COVID-19 Ventilators"
+          },
+          {
+            "field": "ventilator_in_use_covid",
+            "name": "IL Total In Use COVID-19 Ventilators"
           },
           {
             "field": "hhinc_mean",
