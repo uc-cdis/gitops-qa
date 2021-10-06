@@ -757,7 +757,7 @@
               "state_total_beds",
               "total_in_use_beds_covid",
               "icu_beds",
-              "icu_In_use_beds_covid",
+              "icu_in_use_beds_covid",
               "ventilator_available",
               "ventilator_in_use_covid",
               "vaccine_administered_count",
@@ -817,7 +817,7 @@
           "total_in_use_beds_covid",
           "icu_beds",
           "icu_in_use_beds_non_covid",
-          "icu_In_use_beds_covid",
+          "icu_in_use_beds_covid",
           "ventilator_capacity",
           "ventilator_in_use_non_covid",
           "ventilator_in_use_covid",
@@ -972,7 +972,7 @@
             "name": "IL Total In Use Non-COVID-19 ICU Beds"
           },
           {
-            "field": "icu_In_use_beds_covid",
+            "field": "icu_in_use_beds_covid",
             "name": "IL Total In Use COVID-19 ICU Beds"
           },
           {
