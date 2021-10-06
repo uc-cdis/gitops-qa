@@ -756,25 +756,12 @@
               "region_vents_available",
               "state_vent_covid_patients",
               "state_icu_covid_patients",
-              "state_covid_patients_non_icu",
-              "state_covid_pui_patients",
-              "state_total_covid_pui_in_hospital",
               "state_icu_capacity",
               "state_icu_available",
               "state_vent_capacity",
               "state_vents_available",
-              "state_Ventilators_open_pct",
-              "state_ventilators_in_use",
-              "state_ventilators_in_use_covid",
-              "state_ventilators_covid_patients_pct",
               "state_total_beds",
-              "state_total_beds_available",
               "total_in_use_beds_covid",
-              "state_pct_beds_covid_pui",
-              "state_pct_hospital_beds_available",
-              "state_icu_open_beds",
-              "state_icu_beds_used",
-              "state_icu_open_beds_pct",
               "vaccine_administered_count",
               "vaccine_persons_fully_vaccinated_pct",
               "vaccine_total_delivered_vaccine_doses",
@@ -829,28 +816,13 @@
           "region_vents_capacity",
           "state_vent_covid_patients",
           "state_icu_covid_patients",
-          "state_covid_patients_non_icu",
-          "state_covid_pui_patients",
-          "state_total_covid_pui_in_hospital",
-          "state_total_covid_pui_in_icu",
           "state_icu_capacity",
           "state_icu_available",
           "state_vent_capacity",
           "state_vents_available",
-          "state_Ventilators_open_pct",
-          "state_ventilators_in_use",
-          "state_ventilators_in_use_covid",
-          "state_ventilators_covid_patients_pct",
           "state_total_beds",
-          "state_total_beds_available",
-          "state_total_beds_used",
           "total_in_use_beds_non_covid",
           "total_in_use_beds_covid",
-          "state_pct_beds_covid_pui",
-          "state_pct_hospital_beds_available",
-          "state_icu_open_beds",
-          "state_icu_beds_used",
-          "state_icu_open_beds_pct",
           "population_density",
           "completed_high_school",
           "college_degree",
@@ -998,10 +970,6 @@
             "name": "IL Ventilator COVID-19 Patients"
           },
           {
-            "field": "state_ventilators_in_use_covid",
-            "name": "IL Ventilators In Use COVID-19"
-          },
-          {
             "field": "state_icu_available",
             "name": "IL ICU Available"
           },
@@ -1012,62 +980,6 @@
           {
             "field": "state_total_beds",
             "name": "IL Total Beds"
-          },
-          {
-            "field": "state_total_beds_available",
-            "name": "IL Total Beds Available "
-          },
-          {
-            "field": "state_total_beds_used",
-            "name": "IL Total Beds Used"
-          },
-          {
-            "field": "state_pct_hospital_beds_available",
-            "name": "IL Hospital Bed Available (percent)"
-          },
-          {
-            "field": "state_icu_open_beds",
-            "name": "IL ICU Open Beds"
-          },
-          {
-            "field": "state_icu_beds_used",
-            "name": "IL ICU Beds in Use"
-          },
-          {
-            "field": "state_icu_open_beds_pct",
-            "name": "IL ICU Open Beds (percent)"
-          },
-          {
-            "field": "state_covid_pui_patients",
-            "name": "IL COVID-19 PUI Patients"
-          },
-          {
-            "field": "state_Ventilators_open_pct",
-            "name": "IL Ventilators Open (percent)"
-          },
-          {
-            "field": "state_ventilators_in_use",
-            "name": "IL Ventilators In Use"
-          },
-          {
-            "field": "state_ventilators_covid_patients_pct",
-            "name": "IL Ventilators COVID-19 Patients (percent)"
-          },
-          {
-            "field": "state_covid_patients_non_icu",
-            "name": "IL COVID-19 Patients Non ICU"
-          },
-          {
-            "field": "state_total_covid_pui_in_icu",
-            "name": "IL Total COVID-19 PUI ICU"
-          },
-          {
-            "field": "state_total_covid_pui_in_hospital",
-            "name": "IL COVID-19 PUI Hospitalized"
-          },
-          {
-            "field": "state_pct_beds_covid_pui",
-            "name": "IL Percentage Beds COVID-19 PUI"
           },
           {
             "field": "total_in_use_beds_non_covid",
