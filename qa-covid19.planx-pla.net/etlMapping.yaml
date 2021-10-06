@@ -119,9 +119,6 @@ mappings:
           - name: state_total_beds
           - name: total_in_use_beds_non_covid
           - name: total_in_use_beds_covid
-          - name: icu_beds
-          - name: icu_in_use_beds_non_covid
-          - name: icu_In_use_beds_covid
           - name: ventilator_capacity
           - name: ventilator_in_use_non_covid
           - name: ventilator_in_use_covid
