@@ -117,9 +117,15 @@ mappings:
           - name: staffed_icu_beds_per_1000_gtr_20
           - name: staffed_icu_beds_per_1000_gtr_65
           - name: state_total_beds
-          - name: testing
           - name: total_in_use_beds_non_covid
           - name: total_in_use_beds_covid
+          - name: icu_beds
+          - name: icu_in_use_beds_non_covid
+          - name: icu_In_use_beds_covid
+          - name: ventilator_capacity
+          - name: ventilator_in_use_non_covid
+          - name: ventilator_in_use_covid
+          - name: testing
           - name: totalTestsViral
           - name: provider_subtype
           - name: detailed_specialty
