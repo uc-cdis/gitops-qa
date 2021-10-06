@@ -754,12 +754,6 @@
               "region_icu_avail",
               "region_vents_capacity",
               "region_vents_available",
-              "state_vent_covid_patients",
-              "state_icu_covid_patients",
-              "state_icu_capacity",
-              "state_icu_available",
-              "state_vent_capacity",
-              "state_vents_available",
               "state_total_beds",
               "total_in_use_beds_covid",
               "vaccine_administered_count",
@@ -814,12 +808,6 @@
           "region_icu_capacity",
           "region_vents_available",
           "region_vents_capacity",
-          "state_vent_covid_patients",
-          "state_icu_covid_patients",
-          "state_icu_capacity",
-          "state_icu_available",
-          "state_vent_capacity",
-          "state_vents_available",
           "state_total_beds",
           "total_in_use_beds_non_covid",
           "total_in_use_beds_covid",
@@ -952,30 +940,6 @@
           {
             "field": "region_vents_capacity",
             "name": "IL Region Ventilators Capacity"
-          },
-          {
-            "field": "state_icu_capacity",
-            "name": "IL ICU Capacity"
-          },
-          {
-            "field": "state_icu_covid_patients",
-            "name": "IL ICU COVID-19 Patients"
-          },
-          {
-            "field": "state_vent_capacity",
-            "name": "IL Ventilator Capacity"
-          },
-          {
-            "field": "state_vent_covid_patients",
-            "name": "IL Ventilator COVID-19 Patients"
-          },
-          {
-            "field": "state_icu_available",
-            "name": "IL ICU Available"
-          },
-          {
-            "field": "state_vents_available",
-            "name": "IL Ventilators Available"
           },
           {
             "field": "state_total_beds",
