@@ -758,7 +758,7 @@
               "total_in_use_beds_covid",
               "icu_beds",
               "icu_in_use_beds_covid",
-              "ventilator_available",
+              "ventilator_capacity",
               "ventilator_in_use_covid",
               "vaccine_administered_count",
               "vaccine_persons_fully_vaccinated_pct",
