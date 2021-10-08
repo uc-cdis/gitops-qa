@@ -3,6 +3,19 @@
 
 <head>
     <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <script src="https://www.datadoghq-browser-agent.com/datadog-rum-v3.js" type="text/javascript">
+    </script>
+    <script>
+        window.DD_RUM && window.DD_RUM.init({
+            applicationId: '56c2da45-6766-4699-a782-316cb15ff8f8',
+            clientToken: 'pubb074188785e5c14e7bb80e6df4229368',
+            site: 'datadoghq.com',
+            service: 'heal-documentation',
+            env: 'qa-heal',
+            sampleRate: 100,
+            trackInteractions: true
+        });
+    </script>
     <link rel='stylesheet' type='text/css' href='index.css' />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:bold, regular, italic" rel="stylesheet">
@@ -106,7 +119,8 @@
                 <div class="ul-sidenav">
                     <a href="#DownloadFilesfromDiscovery">a) Download Data Files from the Discovery Page</a>
                     <a href="#DownloadFilesClientSDK">b) Download Data Files using the Gen3-client</a>
-                    <a href="#DownloadFilesSDKWorkspaces">c) Download Data Files in Workspaces using the Python SDK in the
+                    <a href="#DownloadFilesSDKWorkspaces">c) Download Data Files in Workspaces using the Python SDK in
+                        the
                         Workspaces</a>
                 </div>
                 <div class="sidenav-head">
@@ -1153,14 +1167,14 @@
                             </p>
                             <ol>
                                 <li>
-                                    Log in on <a href="https://healdata.org/login">healdata.org/login</a>. 
+                                    Log in on <a href="https://healdata.org/login">healdata.org/login</a>.
                                     Link your account to all FAIR repositories as
                                     described <a href="#LinkingAccessTo">here</a>.
                                     <br><br>
                                 </li>
                                 <li>
                                     Find and select the study by the project number (in this example: 1U24AR076730-01)
-                                    on the <a href="https://healdata.org/discovery">Discovery Page</a>. 
+                                    on the <a href="https://healdata.org/discovery">Discovery Page</a>.
                                     Find other current open-access studies <a href="#CurrentOAStudies">here</a>.<br><br>
                                 </li>
                                 <li>
@@ -1174,7 +1188,8 @@
                                     </figcaption><br><br>
                                 </li>
                                 <li>
-                                    Choose a workspace flavor and click "Launch". This step may take several minutes. <br><br>
+                                    Choose a workspace flavor and click "Launch". This step may take several minutes.
+                                    <br><br>
                                 </li>
                                 <li>
                                     Navigate to the <code>/pd/data/healdata.org/</code> folder and find the manifests
@@ -1391,8 +1406,8 @@
                             </ol>
 
                             <p>
-                                Further reading: read more about how to download data files into the Workspaces 
-                                <a href="#DownloadFilesSDKWorkspaces">here</a>. 
+                                Further reading: read more about how to download data files into the Workspaces
+                                <a href="#DownloadFilesSDKWorkspaces">here</a>.
                             </p>
 
 
@@ -1877,15 +1892,17 @@
                                 BACPAC_Synthetic_Data_Analysis.ipynb (“BACPAC synthetic data analysis”)
                             </p>
                             <p>
-                                <span style="font-weight: bold;">Users must be logged in and have their accounts linked to the 
-                                    <a href="#LinkingAccessTo">FAIR repositories</a> 
+                                <span style="font-weight: bold;">Users must be logged in and have their accounts linked
+                                    to the
+                                    <a href="#LinkingAccessTo">FAIR repositories</a>
                                     in order to follow the steps
                                     below.</span>
                             </p>
                             <ol>
                                 <li>
-                                    Go to the <a href="https://healdata.org/workspace">Workspace tab</a> and click “Launch” on the 
-                                    “BACPAC Synthetic Data Analysis 
+                                    Go to the <a href="https://healdata.org/workspace">Workspace tab</a> and click
+                                    “Launch” on the
+                                    “BACPAC Synthetic Data Analysis
                                     Notebook”. This may take a few minutes to load.<br>
                                     Note, that depending on the chosen notebook, this step varies to align with the name
                                     of the notebook/workspace.<br>
@@ -1893,13 +1910,15 @@
                                         alt="static_notebook_bacpac_demo_1" style="width:90%"><br><br>
                                 </li>
                                 <li>
-                                    Find and open the notebook in the landing directory by clicking on “BACPAC_Synthetic_Data_Analysis.ipynb".<br>
+                                    Find and open the notebook in the landing directory by clicking on
+                                    “BACPAC_Synthetic_Data_Analysis.ipynb".<br>
                                     <img class="drop-shadow" src="img/static_notebook_bacpac_demo.png"
                                         alt="notebook_browser_notebook1" style="width:90%"><br><br>
                                 </li>
                                 <li>
                                     Click the first two cells and run them by clicking into the cell and either using
-                                    shift+enter on the keyboard or selecting “Run”. Uncomment the commands as displayed below to install necessary packages.<br>
+                                    shift+enter on the keyboard or selecting “Run”. Uncomment the commands as displayed
+                                    below to install necessary packages.<br>
                                     <img class="drop-shadow" src="img/notebook_browser_run_cell.png"
                                         alt="notebook_browser_run_cell" style="width:90%"><br><br>
                                 </li>
@@ -2149,7 +2168,8 @@
 
 
 
-                            <h3 id="DownloadFilesSDKWorkspaces" class="section-title">c) Download Data Files in Workspaces using the
+                            <h3 id="DownloadFilesSDKWorkspaces" class="section-title">c) Download Data Files in
+                                Workspaces using the
                                 Python SDK</h3>
 
                             <p>
@@ -2175,7 +2195,8 @@
                                     <br> <br>
                                 </li>
                                 <li>
-                                    Select a workspace VM and click "Launch". Choose the "(Generic) Jupyter Notebook with R kernel" if you
+                                    Select a workspace VM and click "Launch". Choose the "(Generic) Jupyter Notebook
+                                    with R kernel" if you
                                     are familiar with setting up Python- or R-based Notebooks, or
                                     if you just exported one or multiple studies from the Discovery Page and want to
                                     start your custom analysis. Choose a VM with the name of the Notebook if you
@@ -2191,23 +2212,24 @@
                                     </figcaption> <br> <br>
                                 </li>
                                 <li>
-                                    Find all files under /data/healdata.org/ with the ending "PLACEHOLDER". 
-                                    These files can be directly downloaded either in the terminal or in a notebook cell. <br>
-                                    <img class="drop-shadow" src="img/workspace_placeholder.png" alt="workspace_placeholder"
-                                    style="width:80%">
-                                     <br> <br>
+                                    Find all files under /data/healdata.org/ with the ending "PLACEHOLDER".
+                                    These files can be directly downloaded either in the terminal or in a notebook cell.
+                                    <br>
+                                    <img class="drop-shadow" src="img/workspace_placeholder.png"
+                                        alt="workspace_placeholder" style="width:80%">
+                                    <br> <br>
                                 </li>
                                 <li>
                                     Click on one file and copy the command and GUID.
                                     <br>
-                                    <img class="drop-shadow" src="img/workspace_placeholder_guid.png" alt="workspace_placeholder_guid"
-                                    style="width:80%">
-                                     <br><br>
+                                    <img class="drop-shadow" src="img/workspace_placeholder_guid.png"
+                                        alt="workspace_placeholder_guid" style="width:80%">
+                                    <br><br>
                                 </li>
                                 <li>
                                     Open a new terminal under "New".
                                     <img class="drop-shadow" src="img/workspace_terminal.png" alt="workspace_terminal"
-                                    style="width:80%">
+                                        style="width:80%">
                                     <br><br>
                                 </li>
                                 <li>
@@ -2215,29 +2237,29 @@
                                     <code>
                                         gen3 pull_object "guid"
                                     </code><br><br>
-                                    <img class="drop-shadow" src="img/workspace_terminal_download.png" alt="workspace_terminal_download"
-                                    style="width:80%">
-                                <figcaption style="width:100%">
-                                    Type in the following command to download the file to the workspace. 
-                                </figcaption> <br> <br>
+                                    <img class="drop-shadow" src="img/workspace_terminal_download.png"
+                                        alt="workspace_terminal_download" style="width:80%">
+                                    <figcaption style="width:100%">
+                                        Type in the following command to download the file to the workspace.
+                                    </figcaption> <br> <br>
                                 </li>
                                 <li>
                                     The file should be downloaded and is ready to be worked with in your Notebook. <br>
-                                    <img class="drop-shadow" src="img/workspace_terminal_downloaded.png" alt="workspace_terminal_downloaded"
-                                    style="width:80%">
-                                <figcaption style="width:100%">
-                                    Downloaded files can be found in your home directory.
-                                </figcaption> <br> <br>
+                                    <img class="drop-shadow" src="img/workspace_terminal_downloaded.png"
+                                        alt="workspace_terminal_downloaded" style="width:80%">
+                                    <figcaption style="width:100%">
+                                        Downloaded files can be found in your home directory.
+                                    </figcaption> <br> <br>
                                 </li>
                             </ol>
                             <blockquote>
-                                <span style="font-weight: bold;">Note, that the command above can be used either in the 
+                                <span style="font-weight: bold;">Note, that the command above can be used either in the
                                     terminal or in a code cell </span>
-                                from within the notebook with 
+                                from within the notebook with
                                 <code>
                                     !gen3 pull_object "guid"
-                                </code>. 
-                                If you use the R kernel, change the command into 
+                                </code>.
+                                If you use the R kernel, change the command into
                                 <code>
                                     system("gen3 pull_object 'guid'")
                                 </code>
@@ -2550,11 +2572,6 @@
                 moreText.style.display = "inline";
             }
         }
-
-
     </script>
-
-
 </body>
-
 </html>
