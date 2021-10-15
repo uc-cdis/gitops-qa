@@ -177,7 +177,6 @@
                             <a href="https://ctds.uchicago.edu/gen3">
                                 <img src="img/gen3_grey.png" alt="Gen3_logo" style="width:10%">
                             </a>
-
                         </p>
                         <p>
                             <span style="font-weight: bold;">Watch the introduction video to the HEAL Platform
@@ -662,17 +661,13 @@
                         <h3 id="LoginPage" class="section-title">b) Login Page</h2>
 
                             <p>
-                                What is <span style="font-weight: bold">open-access</span>?
+                                You will <span style="font-weight: bold">not </span>need to log in in order to:
                             <ul>
                                 <li>
-                                    Browsing the study metadata on the Discovery Page
+                                    Browse the study metadata on the Discovery Page
                                 </li>
                                 <li>
-                                    following along the pre-made notebooks in the “Static Notebooks” tab
-                                </li>
-                                <li>
-                                    downloading the file manifest with publicly accessible data files from the Discovery
-                                    Page
+                                    follow along the pre-made tutorial notebooks in the “Static Notebooks” tab
                                 </li>
                             </ul>
                             </p>
@@ -694,7 +689,7 @@
                                     <em>perform</em> analyses in workspaces
                                 </li>
                                 <li>
-                                    <em>download</em> data files
+                                    <em>download</em> data files and file manifests
                                 </li>
                                 <li>
                                     <em>run</em> interactive tutorial notebooks in workspaces
@@ -999,7 +994,7 @@
                                     href="https://healdata.org/workspace">healdata.org/discovery</a>.
                             </p>
                             <img class="drop-shadow" src="img/workspace_login_other_commons_top_banner.png"
-                                alt="workspace_login_other_commons_top_banner" style="width:60%">
+                                alt="workspace_login_other_commons_top_banner" style="width:50%">
                             <figcaption>
                                 Users are reminded on <a
                                     href="https://healdata.org/workspace">healdata.org/workspace</a>
@@ -1007,7 +1002,7 @@
                             </figcaption>
                             <p></p>
                             <img class="drop-shadow" src="img/workspace_login_other_commons_discovery.png"
-                                alt="workspace_login_other_commons_discovery" style="width:70%">
+                                alt="workspace_login_other_commons_discovery" style="width:50%">
                             <figcaption>
                                 Users are reminded on <a href="https://healdata.org/discovery">the Discovery Page</a>
                                 to link the account to all other FAIR enabled repositories.
@@ -1056,7 +1051,8 @@
                                     using
                                     tags. The free-text search bar can be used to search for study title,
                                     investigator name, or any keyword that is mentioned in the metadata of the study.
-                                    Type in any keyword mentioned in the metadata, except for what is stored as Tags in "Study Characteristics".
+                                    Type in any keyword mentioned in the metadata, except for what is stored as Tags in
+                                    "Study Characteristics".
                                 </li>
                                 <li>
                                     <span style="font-weight: bold">Study Characteristics</span>. Click "Study
@@ -1222,28 +1218,10 @@
                                     Choose a workspace flavor and click "Launch". This step may take several minutes.
                                     <br><br>
                                 </li>
-                                <li>
-                                    Navigate to the <code>/pd/data/healdata.org/</code> folder and find the manifests
-                                    there. <br>
-                                    <blockquote>
 
-                                        - "pd" means persistent directory. Saved files outside this directory will be
-                                        lost. <br><br>
-                                        - The manifests will capture the file information sorted by name, guid (i.e.
-                                        digital ID), or filepath. <br><br>
-                                        - The manifest folders are named according to the timestamp of creation, such as
-                                        <code>manifest-YYYY-MM-XXXX-XX-XX.XXXXXX</code>.<br><br>
-                                        - Note, that all exported data files will be saved in the
-                                        <code>/pd/data/healdata.org/</code> folder.<br><br>
-                                        - Please also note, that the workspace mounts up to a
-                                        <span style="font-weight: bold">maximum of 5 different manifests</span> while
-                                        the workspace is
-                                        running but shows only the latest exported manifest in a newly launched
-                                        workspace.<br><br>
-                                        - Terminating the workspace will result in the
-                                        <span style="font-weight: bold">loss of all but the latests
-                                            manifest</span>.<br><br>
-                                    </blockquote>
+                                <li>
+                                    Navigate to the <code>/pd/data/healdata.org/</code> folder and find the placeholder files
+                                    there. Click on those placeholder files to find instructions how to download the files or see below. <br><br>
                                 </li>
                                 <li>
                                     From the directory <code>/pd</code>, users can now start a new notebook. Click “New”
@@ -1251,20 +1229,40 @@
                                     or open a previously saved notebook on the landing drive to load the files into one
                                     of the cells, for example by running <br>
                                     <code>
-                            import os <br>
+                            ! gen3 pull_object "guid""<br>
                             import pandas as pd <br>
                             os.chdir('/pd') <br>
-                            demo_df = pd.read_csv('pd/this_is_a_demo.txt', sep='\t') <br>
+                            demo_df = pd.read_csv('pd/demo_file.txt', sep='\t') <br>
                             demo_df.head()
                         </code>
-                                    <br>
-                                    More information for instructions on importing data can be found in the section <a
+                                    <br><br>
+                                    More information for instructions on importing data can be found in the sections
+                                    <a
+                                        href="#DownloadFilesSDKWorkspaces">"Download Files to Workspaces"</a> and <a
                                         href="#Workspaces">"Workspaces"</a>.<br><br>
                                 </li>
                                 <li>
                                     Make sure to terminate the workspace when the work is finished to reduce
                                     computational costs.
                                 </li>
+                                <blockquote>
+                                    - "pd" means persistent directory. Saved files outside this directory will be
+                                    lost. <br><br>
+                                    - The manifest.json lists metadata of all exported files and can be used to download in 
+                                    <a href="#DownloadFilesSDKWorkspaces">batches</a><br><br>
+                                    - Note, that all exported data files will be saved in the
+                                    <code>/pd/data/healdata.org/</code> folder.<br><br>
+                                    - Please also note, that the workspace mounts up to a
+                                    <span style="font-weight: bold">maximum of 5 different manifests</span> while
+                                    the workspace is
+                                    running but shows only the latest exported manifest in a newly launched
+                                    workspace.<br><br>
+                                    - Terminating the workspace will result in the
+                                    <span style="font-weight: bold">loss of all but the latests
+                                        manifest</span>.<br><br>
+                                </blockquote>
+
+
                             </ol>
 
 
@@ -1379,7 +1377,8 @@
 
                                     <blockquote>
                                         - <span style="font-weight: bold">Attention</span>: Any personal files in the
-                                        folder “data” will be lost. Personal files in the directory /pd will persist.  <br> <br>
+                                        folder “data” will be lost. Personal files in the directory /pd will persist.
+                                        <br> <br>
                                         - Do not save files in the "data" and “data/healdata.org” folders. <br> <br>
                                         - The folder “healdata.org” in the “data” folder will host the data files you
                                         have exported from the Discovery Page. <br><br>
@@ -1389,7 +1388,7 @@
                                 </li><br>
 
                                 <li>
-                                    Start a new workspace by clicking “New” in the top right corner and choose between
+                                    Start a new notebook by clicking “New” in the top right corner and choose between
                                     Python 3 or R Studio as the base programmatic language. <br><br>
                                     <img class="drop-shadow" src="img/workspace_new.png" alt="Workspace_new"
                                         style="width:80%">
@@ -2038,7 +2037,8 @@
                             </p>
                             <ol>
                                 <li>
-                                    Navigate to the <a href="#Discovery">Discovery Page</a>.<br><br>
+                                    Navigate to the <a href="#Discovery">Discovery Page</a>.
+                                    Link your accounts to FAIR repositories as described <a href="#LinkingAccessTo">here</a>.<br><br>
                                 </li>
                                 <li>
                                     Find the study of interest by using the <a href="#SearchFeatures">search
@@ -2111,8 +2111,9 @@
                             </p>
                             <ol>
                                 <li>
-                                    Log in to the Data Commons on <a
-                                        href="https://healdata.org/login">healdata.org/login</a> <br><br>
+                                    Log in to the HEAL Platform on <a
+                                        href="https://healdata.org/login">healdata.org/login</a>. 
+                                        Link your accounts to FAIR repositories as described <a href="#LinkingAccessTo">here</a>.<br><br>
                                 </li>
                                 <li>
                                     Find and select one or multiple studies of interest on the <a
@@ -2209,7 +2210,8 @@
                             <ol>
                                 <li>
                                     Log in to the Data Commons on <a
-                                        href="https://healdata.org/login">healdata.org/login</a> <br><br>
+                                        href="https://healdata.org/login">healdata.org/login</a>.
+                                        Link your accounts to FAIR repositories as described <a href="#LinkingAccessTo">here</a>. <br><br>
                                 </li>
                                 <li>
                                     Find and select one or multiple studies of interest on the <a
@@ -2262,18 +2264,42 @@
                                     <br><br>
                                 </li>
                                 <li>
-                                    Type in the following command to download the file to the workspace:<br>
-                                    <code>
+                                    <ul>
+                                        <li>Type in the following command to download the file to the terminal:<br>
+                                            <code>
                                         gen3 pull_object "guid"
                                     </code><br><br>
-                                    <img class="drop-shadow" src="img/workspace_terminal_download.png"
-                                        alt="workspace_terminal_download" style="width:80%">
-                                    <figcaption style="width:100%">
-                                        Type in the following command to download the file to the workspace.
-                                    </figcaption> <br> <br>
+                                            <img class="drop-shadow" src="img/workspace_terminal_download.png"
+                                                alt="workspace_terminal_download" style="width:100%"><br><br>
+                                        </li>
+                                        <li>
+                                            If you are working in a notebook, type in the following command into a code cell to download
+                                            the file:<br>
+                                            <code>
+                                        !gen3 pull_object "guid"
+                                    </code><br><br>
+                                    <img class="drop-shadow" src="img/workspace_download_one_file_sdk.png"
+                                                alt="workspace_download_one_file_sdk" style="width:100%"><br><br>
+                                        </li>
+                                        <li>
+                                            If you use the R kernel, change the command into
+                                            <code>
+                                        system("gen3 pull_object 'guid'")
+                                    </code><br><br>
+
+                                        <li>
+                                            <span style="font-weight: bold;">Note, that you can also use the
+                                                manifest.json to download in batches, see below: </span>
+                                            <img class="drop-shadow" src="img/workspace_download_from_manifest_sdk.png"
+                                                alt="workspace_download_from_manifest_sdk" style="width:100%">
+                                            <figcaption style="width:100%">
+                                                Download files in batches with a file manifest using the commands shown above.
+                                            </figcaption> <br><br>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
-                                    The file should be downloaded and is ready to be worked with in your Notebook. <br>
+                                    The file(s) should be downloaded and is ready to be worked with in your Notebook. <br>
                                     <img class="drop-shadow" src="img/workspace_terminal_downloaded.png"
                                         alt="workspace_terminal_downloaded" style="width:80%">
                                     <figcaption style="width:100%">
@@ -2281,17 +2307,10 @@
                                     </figcaption> <br> <br>
                                 </li>
                             </ol>
+
+
                             <blockquote>
-                                <span style="font-weight: bold;">Note, that the command above can be used either in the
-                                    terminal or in a code cell </span>
-                                from within the notebook with
-                                <code>
-                                    !gen3 pull_object "guid"
-                                </code>.
-                                If you use the R kernel, change the command into
-                                <code>
-                                    system("gen3 pull_object 'guid'")
-                                </code>
+
                             </blockquote>
 
 
