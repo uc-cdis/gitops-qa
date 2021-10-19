@@ -8,30 +8,30 @@
   },
   "versions": {
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
-    "arborist": "quay.io/cdis/arborist:2020.08",
-    "aws-es-proxy": "quay.io/cdis/aws-es-proxy:0.8",
-    "dashboard": "quay.io/cdis/gen3-statics:2020.08",
-    "fence": "quay.io/cdis/fence:4.29.1",
+    "arborist": "quay.io/cdis/arborist:2021.10",
+    "aws-es-proxy": "quay.io/cdis/aws-es-proxy:1.3",
+    "dashboard": "quay.io/cdis/gen3-statics:2021.10",
+    "fence": "quay.io/cdis/fence:2021.10",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
-    "guppy": "quay.io/cdis/guppy:2021.01",
-    "hatchery": "quay.io/cdis/hatchery:0.1.3",
-    "indexd": "quay.io/cdis/indexd:2021.01",
-    "manifestservice": "quay.io/cdis/manifestservice:0.3.0",
-    "metadata": "quay.io/cdis/metadata-service:2020.09",
-    "mariner": "quay.io/cdis/mariner-server:2020.12",
+    "guppy": "quay.io/cdis/guppy:2021.10",
+    "hatchery": "quay.io/cdis/hatchery:2021.10",
+    "indexd": "quay.io/cdis/indexd:2021.10",
+    "manifestservice": "quay.io/cdis/manifestservice:2021.10",
+    "mariner": "quay.io/cdis/mariner-server:2021.10",
+    "metadata": "quay.io/cdis/metadata-service:2021.10",
     "ohdsi-atlas": "quay.io/cdis/ohdsi-atlas:latest",
     "ohdsi-webapi": "quay.io/cdis/ohdsi-webapi:latest",
-    "peregrine": "quay.io/cdis/peregrine:2021.01",
-    "pidgin": "quay.io/cdis/pidgin:2021.01",
-    "portal": "quay.io/cdis/data-portal:chore_fix_feat_use_msg",
-    "revproxy": "quay.io/cdis/nginx:2020.08",
-    "sheepdog": "quay.io/cdis/sheepdog:2021.01",
-    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:2021.07",
-    "sower": "quay.io/cdis/sower:2020.08",
-    "spark": "quay.io/cdis/gen3-spark:2020.08",
-    "tube": "quay.io/cdis/tube:2020.08",
-    "ws-storage": "quay.io/cdis/ws-storage:master",
-    "wts": "quay.io/cdis/workspace-token-service:2020.08"
+    "peregrine": "quay.io/cdis/peregrine:2021.10",
+    "pidgin": "quay.io/cdis/pidgin:2021.10",
+    "portal": "quay.io/cdis/data-portal:2021.10",
+    "revproxy": "quay.io/cdis/nginx:2021.10",
+    "sheepdog": "quay.io/cdis/sheepdog:2021.10",
+    "sower": "quay.io/cdis/sower:2021.10",
+    "spark": "quay.io/cdis/gen3-spark:2021.10",
+    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:2021.10",
+    "tube": "quay.io/cdis/tube:2021.10",
+    "ws-storage": "quay.io/cdis/ws-storage:2021.10",
+    "wts": "quay.io/cdis/workspace-token-service:2021.10"
   },
   "arborist": {
     "deployment_version": "2"
@@ -41,18 +41,10 @@
   },
   "ssjdispatcher": {
     "job_images": {
-      "indexing": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexs3client:2021.05"
+      "indexing": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexs3client:2021.10"
     }
   },
-  "sower": {
-    "container": {
-      "name": "job-task",
-      "image": "quay.io/cdis/mickey-demo:master",
-      "pull_policy": "always",
-      "env": []
-    },
-    "restart_policy": "never"
-  },
+  "sower": [],
   "global": {
     "environment": "qaplanetv1",
     "hostname": "qa-mickey.planx-pla.net",
