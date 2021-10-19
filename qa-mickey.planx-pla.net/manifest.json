@@ -17,13 +17,13 @@
     "hatchery": "quay.io/cdis/hatchery:2021.10",
     "indexd": "quay.io/cdis/indexd:2021.10",
     "manifestservice": "quay.io/cdis/manifestservice:2021.10",
-    "mariner": "quay.io/cdis/mariner-server:2021.10",
+    "mariner": "quay.io/cdis/mariner-server:feat_initwkdir-commons",
     "metadata": "quay.io/cdis/metadata-service:2021.10",
-    "ohdsi-atlas": "quay.io/cdis/ohdsi-atlas:latest",
-    "ohdsi-webapi": "quay.io/cdis/ohdsi-webapi:latest",
+    "ohdsi-atlas": "quay.io/cdis/ohdsi-atlas:master-2.8-manconf",
+    "ohdsi-webapi": "quay.io/cdis/ohdsi-webapi:master-2.8",
     "peregrine": "quay.io/cdis/peregrine:2021.10",
     "pidgin": "quay.io/cdis/pidgin:2021.10",
-    "portal": "quay.io/cdis/data-portal:2021.10",
+    "portal": "quay.io/cdis/data-portal:feat_system_use_warning",
     "revproxy": "quay.io/cdis/nginx:2021.10",
     "sheepdog": "quay.io/cdis/sheepdog:2021.10",
     "sower": "quay.io/cdis/sower:2021.10",
@@ -38,6 +38,11 @@
   },
   "indexd": {
     "arborist": "true"
+  },
+  "mariner": {
+    "with_db": "yes",
+    "with_s3": "yes",
+    "with_cache": "no"
   },
   "ssjdispatcher": {
     "job_images": {
