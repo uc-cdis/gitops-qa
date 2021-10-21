@@ -9,7 +9,7 @@
   "versions": {
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
     "arborist": "quay.io/cdis/arborist:2021.10",
-    "aws-es-proxy": "quay.io/cdis/aws-es-proxy:1.3",
+    "aws-es-proxy": "quay.io/cdis/aws-es-proxy:v1.1",
     "dashboard": "quay.io/cdis/gen3-statics:2021.10",
     "fence": "quay.io/cdis/fence:2021.10",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
