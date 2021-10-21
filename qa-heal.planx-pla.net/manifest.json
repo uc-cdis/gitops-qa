@@ -1,261 +1,232 @@
 {
-  "notes": [
-    "This is the dev environment manifest",
-    "That's all I have to say"
-  ],
-  "jenkins": {
-    "autodeploy": "yes"
-  },
-  "versions": {
-    "ambassador": "quay.io/datawire/ambassador:1.4.2",
-    "arborist": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/arborist:2021.09",
-    "audit-service": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/audit-service:2021.09",
-    "aws-es-proxy": "quay.io/cdis/aws-es-proxy:1.1",
-    "dashboard": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-statics:2021.09",
-    "fence": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/fence:2021.09",
-    "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
-    "hatchery": "quay.io/cdis/hatchery:feat_ecs_transitgw",
-    "indexd": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexd:2021.09",
-    "manifestservice": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifestservice:2021.09",
-    "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:1.6.1",
-    "peregrine": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/peregrine:2021.09",
-    "pidgin": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/pidgin:2021.09",
-    "portal": "quay.io/cdis/data-portal:3.16.0",
-    "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:2021.09",
-    "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:2021.09",
-    "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:2021.09",
-    "sower": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sower:2021.09",
-    "spark": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-spark:2021.09",
-    "tube": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/tube:2021.09",
-    "wts": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/workspace-token-service:2021.09"
-  },
-  "arborist": {
-    "deployment_version": "2"
-  },
-  "indexd": {
-    "arborist": "true"
-  },
-  "metadata": {
-    "USE_AGG_MDS": true,
-    "AGG_MDS_NAMESPACE": "qa-heal"
-  },
-  "ssjdispatcher": {
-    "job_images": {
-      "indexing": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexs3client:2021.09"
-    }
-  },
-  "global": {
-    "environment": "qa-heal",
-    "hostname": "qa-heal.planx-pla.net",
-    "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
-    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/heal_dictionary/1.1.0/schema.json",
-    "portal_app": "gitops",
-    "kube_bucket": "kube-qaplanetv2-gen3",
-    "logs_bucket": "logs-qaplanetv2-gen3",
-    "sync_from_dbgap": "False",
-    "useryaml_s3path": "s3://cdis-gen3-users/qa-heal/user.yaml",
-    "dispatcher_job_num": "10",
-    "netpolicy": "on"
-  },
-  "canary": {
-    "default": 0
-  },
-  "portal": {
-    "GEN3_BUNDLE": "heal"
-  },
-  "sower": [
-    {
-      "name": "ingest-metadata-manifest",
-      "action": "ingest-metadata-manifest",
-      "activeDeadlineSeconds": 86400,
-      "serviceAccountName": "jobs-qa-heal-planx-pla-net",
-      "container": {
-        "name": "job-task",
-        "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-manifest-ingestion:2021.09",
-        "pull_policy": "Always",
-        "env": [
-          {
-            "name": "GEN3_HOSTNAME",
-            "valueFrom": {
-              "configMapKeyRef": {
-                "name": "manifest-global",
-                "key": "hostname"
-              }
-            }
-          }
-        ],
-        "volumeMounts": [
-          {
-            "name": "creds-volume",
-            "readOnly": true,
-            "mountPath": "/creds.json",
-            "subPath": "creds.json"
-          }
-        ],
-        "cpu-limit": "1",
-        "memory-limit": "1Gi"
-      },
-      "volumes": [
-        {
-          "name": "creds-volume",
-          "secret": {
-            "secretName": "sower-jobs-g3auto"
-          }
-        }
-      ],
-      "restart_policy": "Never"
+    "notes": [
+        "This is the dev environment manifest",
+        "That's all I have to say"
+    ],
+    "jenkins": {
+        "autodeploy": "yes"
     },
-    {
-      "name": "get-dbgap-metadata",
-      "action": "get-dbgap-metadata",
-      "serviceAccountName": "jobs-qa-heal-planx-pla-net",
-      "container": {
-        "name": "job-task",
-        "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/get-dbgap-metadata:2021.09",
-        "pull_policy": "Always",
-        "env": [],
-        "volumeMounts": [
-          {
-            "name": "creds-volume",
-            "readOnly": true,
-            "mountPath": "/creds.json",
-            "subPath": "creds.json"
-          }
-        ],
-        "cpu-limit": "1",
-        "memory-limit": "1Gi"
-      },
-      "volumes": [
-        {
-          "name": "creds-volume",
-          "secret": {
-            "secretName": "sower-jobs-g3auto"
-          }
-        }
-      ],
-      "restart_policy": "Never"
+    "versions": {
+        "ambassador": "quay.io/datawire/ambassador:1.4.2",
+        "arborist": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/arborist:2021.09",
+        "audit-service": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/audit-service:2021.09",
+        "aws-es-proxy": "quay.io/cdis/aws-es-proxy:1.1",
+        "dashboard": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-statics:2021.09",
+        "fence": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/fence:2021.09",
+        "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
+        "hatchery": "quay.io/cdis/hatchery:feat_ecs_transitgw",
+        "indexd": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexd:2021.09",
+        "manifestservice": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifestservice:2021.09",
+        "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:1.6.1",
+        "peregrine": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/peregrine:2021.09",
+        "pidgin": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/pidgin:2021.09",
+        "portal": "quay.io/cdis/data-portal:3.16.2",
+        "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:2021.09",
+        "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:2021.09",
+        "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:2021.09",
+        "sower": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sower:2021.09",
+        "spark": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-spark:2021.09",
+        "tube": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/tube:2021.09",
+        "wts": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/workspace-token-service:2021.09"
     },
-    {
-      "name": "manifest-indexing",
-      "action": "index-object-manifest",
-      "activeDeadlineSeconds": 86400,
-      "serviceAccountName": "jobs-qa-heal-planx-pla-net",
-      "container": {
-        "name": "job-task",
-        "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifest-indexing:2021.09",
-        "pull_policy": "Always",
-        "env": [
-          {
-            "name": "GEN3_HOSTNAME",
-            "valueFrom": {
-              "configMapKeyRef": {
-                "name": "manifest-global",
-                "key": "hostname"
-              }
-            }
-          }
-        ],
-        "volumeMounts": [
-          {
-            "name": "sower-jobs-creds-volume",
-            "readOnly": true,
-            "mountPath": "/creds.json",
-            "subPath": "creds.json"
-          }
-        ],
-        "cpu-limit": "1",
-        "memory-limit": "1Gi"
-      },
-      "volumes": [
-        {
-          "name": "sower-jobs-creds-volume",
-          "secret": {
-            "secretName": "sower-jobs-g3auto"
-          }
-        }
-      ],
-      "restart_policy": "Never"
+    "arborist": {
+        "deployment_version": "2"
     },
-    {
-      "name": "indexd-manifest",
-      "action": "download-indexd-manifest",
-      "activeDeadlineSeconds": 86400,
-      "serviceAccountName": "jobs-qa-heal-planx-pla-net",
-      "container": {
-        "name": "job-task",
-        "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/download-indexd-manifest:2021.09",
-        "pull_policy": "Always",
-        "env": [
-          {
-            "name": "GEN3_HOSTNAME",
-            "valueFrom": {
-              "configMapKeyRef": {
-                "name": "manifest-global",
-                "key": "hostname"
-              }
-            }
-          }
-        ],
-        "volumeMounts": [
-          {
-            "name": "sower-jobs-creds-volume",
-            "readOnly": true,
-            "mountPath": "/creds.json",
-            "subPath": "creds.json"
-          }
-        ],
-        "cpu-limit": "1",
-        "memory-limit": "1Gi"
-      },
-      "volumes": [
-        {
-          "name": "sower-jobs-creds-volume",
-          "secret": {
-            "secretName": "sower-jobs-g3auto"
-          }
-        }
-      ],
-      "restart_policy": "Never"
+    "indexd": {
+        "arborist": "true"
     },
-    {
-      "name": "batch-export",
-      "action": "batch-export",
-      "activeDeadlineSeconds": 600,
-      "container": {
-        "name": "job-task",
-        "image": "quay.io/cdis/batch-export:feat_zip",
-        "pull_policy": "Always",
-        "env": [
-          {
-            "name": "GEN3_HOSTNAME",
-            "valueFrom": {
-              "configMapKeyRef": {
-                "name": "manifest-global",
-                "key": "hostname"
-              }
-            }
-          }
-        ],
-        "volumeMounts": [
-          {
-            "name": "batch-export-creds-volume",
-            "readOnly": true,
-            "mountPath": "/batch-export-creds.json",
-            "subPath": "config.json"
-          }
-        ],
-        "cpu-limit": "1",
-        "memory-limit": "1Gi"
-      },
-      "volumes": [
-        {
-          "name": "batch-export-creds-volume",
-          "secret": {
-            "secretName": "batch-export-g3auto"
-          }
+    "metadata": {
+        "USE_AGG_MDS": true,
+        "AGG_MDS_NAMESPACE": "qa-heal"
+    },
+    "ssjdispatcher": {
+        "job_images": {
+            "indexing": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexs3client:2021.09"
         }
-      ],
-      "restart_policy": "Never"
-    }
-  ]
+    },
+    "global": {
+        "environment": "qa-heal",
+        "hostname": "qa-heal.planx-pla.net",
+        "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
+        "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/heal_dictionary/1.1.0/schema.json",
+        "portal_app": "gitops",
+        "kube_bucket": "kube-qaplanetv2-gen3",
+        "logs_bucket": "logs-qaplanetv2-gen3",
+        "sync_from_dbgap": "False",
+        "useryaml_s3path": "s3://cdis-gen3-users/qa-heal/user.yaml",
+        "dispatcher_job_num": "10",
+        "netpolicy": "on"
+    },
+    "canary": {
+        "default": 0
+    },
+    "portal": {
+        "GEN3_BUNDLE": "heal"
+    },
+    "sower": [{
+            "name": "ingest-metadata-manifest",
+            "action": "ingest-metadata-manifest",
+            "activeDeadlineSeconds": 86400,
+            "serviceAccountName": "jobs-qa-heal-planx-pla-net",
+            "container": {
+                "name": "job-task",
+                "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-manifest-ingestion:2021.09",
+                "pull_policy": "Always",
+                "env": [{
+                    "name": "GEN3_HOSTNAME",
+                    "valueFrom": {
+                        "configMapKeyRef": {
+                            "name": "manifest-global",
+                            "key": "hostname"
+                        }
+                    }
+                }],
+                "volumeMounts": [{
+                    "name": "creds-volume",
+                    "readOnly": true,
+                    "mountPath": "/creds.json",
+                    "subPath": "creds.json"
+                }],
+                "cpu-limit": "1",
+                "memory-limit": "1Gi"
+            },
+            "volumes": [{
+                "name": "creds-volume",
+                "secret": {
+                    "secretName": "sower-jobs-g3auto"
+                }
+            }],
+            "restart_policy": "Never"
+        },
+        {
+            "name": "get-dbgap-metadata",
+            "action": "get-dbgap-metadata",
+            "serviceAccountName": "jobs-qa-heal-planx-pla-net",
+            "container": {
+                "name": "job-task",
+                "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/get-dbgap-metadata:2021.09",
+                "pull_policy": "Always",
+                "env": [],
+                "volumeMounts": [{
+                    "name": "creds-volume",
+                    "readOnly": true,
+                    "mountPath": "/creds.json",
+                    "subPath": "creds.json"
+                }],
+                "cpu-limit": "1",
+                "memory-limit": "1Gi"
+            },
+            "volumes": [{
+                "name": "creds-volume",
+                "secret": {
+                    "secretName": "sower-jobs-g3auto"
+                }
+            }],
+            "restart_policy": "Never"
+        },
+        {
+            "name": "manifest-indexing",
+            "action": "index-object-manifest",
+            "activeDeadlineSeconds": 86400,
+            "serviceAccountName": "jobs-qa-heal-planx-pla-net",
+            "container": {
+                "name": "job-task",
+                "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifest-indexing:2021.09",
+                "pull_policy": "Always",
+                "env": [{
+                    "name": "GEN3_HOSTNAME",
+                    "valueFrom": {
+                        "configMapKeyRef": {
+                            "name": "manifest-global",
+                            "key": "hostname"
+                        }
+                    }
+                }],
+                "volumeMounts": [{
+                    "name": "sower-jobs-creds-volume",
+                    "readOnly": true,
+                    "mountPath": "/creds.json",
+                    "subPath": "creds.json"
+                }],
+                "cpu-limit": "1",
+                "memory-limit": "1Gi"
+            },
+            "volumes": [{
+                "name": "sower-jobs-creds-volume",
+                "secret": {
+                    "secretName": "sower-jobs-g3auto"
+                }
+            }],
+            "restart_policy": "Never"
+        },
+        {
+            "name": "indexd-manifest",
+            "action": "download-indexd-manifest",
+            "activeDeadlineSeconds": 86400,
+            "serviceAccountName": "jobs-qa-heal-planx-pla-net",
+            "container": {
+                "name": "job-task",
+                "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/download-indexd-manifest:2021.09",
+                "pull_policy": "Always",
+                "env": [{
+                    "name": "GEN3_HOSTNAME",
+                    "valueFrom": {
+                        "configMapKeyRef": {
+                            "name": "manifest-global",
+                            "key": "hostname"
+                        }
+                    }
+                }],
+                "volumeMounts": [{
+                    "name": "sower-jobs-creds-volume",
+                    "readOnly": true,
+                    "mountPath": "/creds.json",
+                    "subPath": "creds.json"
+                }],
+                "cpu-limit": "1",
+                "memory-limit": "1Gi"
+            },
+            "volumes": [{
+                "name": "sower-jobs-creds-volume",
+                "secret": {
+                    "secretName": "sower-jobs-g3auto"
+                }
+            }],
+            "restart_policy": "Never"
+        },
+        {
+            "name": "batch-export",
+            "action": "batch-export",
+            "activeDeadlineSeconds": 600,
+            "container": {
+                "name": "job-task",
+                "image": "quay.io/cdis/batch-export:feat_zip",
+                "pull_policy": "Always",
+                "env": [{
+                    "name": "GEN3_HOSTNAME",
+                    "valueFrom": {
+                        "configMapKeyRef": {
+                            "name": "manifest-global",
+                            "key": "hostname"
+                        }
+                    }
+                }],
+                "volumeMounts": [{
+                    "name": "batch-export-creds-volume",
+                    "readOnly": true,
+                    "mountPath": "/batch-export-creds.json",
+                    "subPath": "config.json"
+                }],
+                "cpu-limit": "1",
+                "memory-limit": "1Gi"
+            },
+            "volumes": [{
+                "name": "batch-export-creds-volume",
+                "secret": {
+                    "secretName": "batch-export-g3auto"
+                }
+            }],
+            "restart_policy": "Never"
+        }
+    ]
 }
