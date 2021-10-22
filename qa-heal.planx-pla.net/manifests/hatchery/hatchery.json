@@ -4,7 +4,7 @@
   "user-volume-size": "10Gi",
   "pay-models": [
     {
-      "user": "qureshi@uchicago.edu",
+      "user_id": "qureshi@uchicago.edu",
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
@@ -12,7 +12,7 @@
       "region": "us-east-1"
     },
     {
-      "user": "mshao1@uchicago.edu",
+      "user_id": "mshao1@uchicago.edu",
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
@@ -20,7 +20,7 @@
       "region": "us-east-1"
     },
     {
-      "user": "craigrbarnes@uchicago.edu",
+      "user_id": "craigrbarnes@uchicago.edu",
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
@@ -28,7 +28,7 @@
       "region": "us-east-1"
     },
     {
-      "user": "cgmeyer@uchicago.edu",
+      "user_id": "cgmeyer@uchicago.edu",
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
@@ -36,7 +36,7 @@
       "region": "us-east-1"
     },
     {
-      "user": "jmontmaxwell@uchicago.edu",
+      "user_id": "jmontmaxwell@uchicago.edu",
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
@@ -44,7 +44,7 @@
       "region": "us-east-1"
     },
     {
-      "user": "mcannalte@uchicago.edu",
+      "user_id": "mcannalte@uchicago.edu",
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
@@ -52,7 +52,7 @@
       "region": "us-east-1"
     },
     {
-      "user": "haraprasadj@uchicago.edu",
+      "user_id": "haraprasadj@uchicago.edu",
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
@@ -60,7 +60,7 @@
       "region": "us-east-1"
     },
     {
-      "user": "nmetokishlubsky@uchicago.edu",
+      "user_id": "nmetokishlubsky@uchicago.edu",
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
@@ -68,7 +68,7 @@
       "region": "us-east-1"
     },
     {
-      "user": "hughestr@uchicago.edu",
+      "user_id": "hughestr@uchicago.edu",
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
@@ -76,7 +76,7 @@
       "region": "us-east-1"
     },
     {
-      "user": "xritter@uchicago.edu",
+      "user_id": "xritter@uchicago.edu",
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
@@ -84,7 +84,7 @@
       "region": "us-east-1"
     },
     {
-      "user": "test@example.com",
+      "user_id": "test@example.com",
       "aws_account_id": "354484406138",
       "ecs": "true",
       "subnet": 10,
