@@ -7,6 +7,7 @@
     "autodeploy": "yes"
   },
   "versions": {
+    "acronymbot": "quay.io/cdis/acronym-bot:master",
     "arborist": "quay.io/cdis/arborist:2.5.0",
     "aws-es-proxy": "quay.io/cdis/aws-es-proxy:0.8",
     "cogwheel": "quay.io/cdis/cogwheel:gen3",
