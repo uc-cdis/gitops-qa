@@ -127,7 +127,7 @@
         "--NotebookApp.token=''",
         "--NotebookApp.ip='*'",
         "--NotebookApp.notebook_dir='/home/jovyan'",
-        "--NotebookApp.shutdown_no_activity_timeout=3600",
+        "--NotebookApp.shutdown_no_activity_timeout=240",
         "--NotebookApp.quit_button=False",
         "--Application.log_level=DEBUG",
         "--NotebookApp.log_level=DEBUG",
