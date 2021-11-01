@@ -54,7 +54,8 @@
     "netpolicy": "on",
     "tier_access_level": "private",
     "public_datasets": true,
-    "maintenance_mode": "off"
+    "maintenance_mode": "off",
+    "lb_type": "internal"
   },
   "canary": {
     "default": 0
@@ -63,7 +64,8 @@
     "GEN3_BUNDLE": "nct"
   },
   "guppy": {
-    "indices": [{
+    "indices": [
+      {
         "index": "qa-niaid_cmc",
         "type": "clinical_trials"
       },

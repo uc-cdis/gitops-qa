@@ -46,7 +46,8 @@
     ],
     "netpolicy": "off",
     "cookie_domain": "planx-pla.net",
-    "des_namespace": "qa-nde"
+    "des_namespace": "qa-nde",
+    "lb_type": "internal"
   },
   "arborist": {
     "deployment_version": "2"

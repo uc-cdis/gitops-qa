@@ -62,7 +62,8 @@
     "netpolicy": "on",
     "tier_access_level": "regular",
     "tier_access_limit": "50",
-    "public_datasets": true
+    "public_datasets": true,
+    "lb_type": "internal"
   },
   "ssjdispatcher": {
     "job_images": {

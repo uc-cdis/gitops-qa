@@ -26,7 +26,6 @@
     "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:2021.06",
     "metadata": "quay.io/cdis/metadata-service:2021.06",
     "dashboard": "quay.io/cdis/gen3-statics:2021.06"
-    
   },
   "arborist": {
     "deployment_version": "2"
@@ -48,7 +47,8 @@
     "sync_from_dbgap": "False",
     "dispatcher_job_num": "10",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
-    "netpolicy": "on"
+    "netpolicy": "on",
+    "lb_type": "internal"
   },
   "ssjdispatcher": {
     "job_images": {

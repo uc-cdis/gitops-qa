@@ -46,7 +46,8 @@
     "netpolicy": "off",
     "cookie_domain": "planx-pla.net",
     "public_datasets": true,
-    "tier_access_level": "libre"
+    "tier_access_level": "libre",
+    "lb_type": "internal"
   },
   "ssjdispatcher": {
     "job_images": {
