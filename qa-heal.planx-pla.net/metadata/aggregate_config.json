@@ -90,7 +90,8 @@
 					],
 					"data_availability": "available",
 					"authz": "/programs/open",
-					"source_url": "https://www.icpsr.umich.edu/web/ICPSR/studies/30122"
+					"source_url": "https://www.icpsr.umich.edu/web/ICPSR/studies/30122",
+					"dataset_1_title": "TEDS-D-2018-DS0001-bndl-data-spss.zip"
 				},
 				"10.3886/ICPSR37841.v1": {
 					"data_availability": "pending",
@@ -128,7 +129,8 @@
 						}
 					],
 					"data_availability": "available",
-					"authz": "/programs/open"
+					"authz": "/programs/open",
+					"dataset_1_title": "N-MHSS-2019-DS0001-bndl-data-tsv.zip"
 				},
 				"10.3886/ICPSR04256.v5": {
 					"__manifest": [
@@ -211,7 +213,8 @@
 						}
 					],
 					"data_availability": "available",
-					"authz": "/programs/open/projects/Preventing_Opioid_Use_Disorder"
+					"authz": "/programs/open/projects/Preventing_Opioid_Use_Disorder",
+					"dataset_1_title": "N-SSATS-2017-DS0001-bndl-data-spss.zip, N-SSATS-2009-DS0001-bndl-data-spss.zip, N-SSATS-2011-DS0001-bndl-data-spss.zip, N-SSATS-2013-DS0001-bndl-data-spss.zip, N-SSATS-2015-DS0001-bndl-data-spss.zip, N-SSATS-2017-DS0001-bndl-data-spss.zip, N-SSATS-2019-DS0001-bndl-data-spss.zip, N-SSATS-2003.sav, N-SSATS-2004.sav, N-SSATS-2005.sav, NSSATS_PUF_2019_SAV.sav"
 				}
 			}
 		},
@@ -493,7 +496,8 @@
 					],
 					"data_availability": "available",
 					"authz": "/programs/open",
-					"study_url": "https://pdaps.org/datasets/laws-regulating-administration-of-naloxone-1501695139"
+					"study_url": "https://pdaps.org/datasets/laws-regulating-administration-of-naloxone-1501695139",
+					"dataset_1_title": "Naloxone_Data_09112020.xlsx, 20180810_Good_Samaritan_Law_Stat_Data.xlsx, 20170216-RM-Stat-Data.xlsx"
 				}
 			}
 		}
