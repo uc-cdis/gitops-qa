@@ -447,12 +447,8 @@
       },
       "fieldMapping": [
         { "field": "title", "name": "Study Title" },
-        { "field": "principle_investigator", "name": "Principle Investigator"},
         { "field": "study_design_allocation", "name": "Design Allocation"},
-        { "field": "study_design_primary_purpose", "name": "Primary Purpose"},
-        { "field": "verification_date", "name": "Verification Date"},
-        { "field": "estimated_study_completion", "name": "Estimated Study Completion Date"},
-        { "field": "data_type", "name": "Data Type"}
+        { "field": "study_design_primary_purpose", "name": "Primary Purpose"}
 
       ],
     "buttons": [
