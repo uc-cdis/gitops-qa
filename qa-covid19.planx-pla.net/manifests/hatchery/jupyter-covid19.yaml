@@ -15,6 +15,7 @@ services:
       command:
         - "--NotebookApp.base_url=/lw-workspace/proxy"
         - "--NotebookApp.default_url=/lab/tree/welcome.html"
+        - "--NotebookApp.shutdown_no_activity_timeout=240"
         - "--NotebookApp.password=''"
         - "--NotebookApp.token=''"
       ports: 
