@@ -436,13 +436,14 @@
       "title": "Projects",
       "titleField": "title",
       "rowAccessor": "project_id",
+      "openMode": "close-all",
       "listItemConfig": {
         "blockFields": ["description"],
-        "tableFields": ["name", "code", "title", "principle_investigator","estimated_study_completion", "data_type", "publisher","study_design_primary_purpose","study_phase","verification_date"]
+        "tableFields": ["name", "code", "title", "principle_investigator", "estimated_study_completion", "data_type", "publisher","study_design_primary_purpose","study_phase","verification_date"]
       },
       "singleItemConfig": {
         "blockFields": ["description"],
-        "tableFields": ["name", "code", "title", "principle_investigator","estimated_study_completion", "data_type", "publisher","study_design_allocation","study_design_primary_purpose","study_phase","verification_date","source","rights"],
+        "tableFields": ["name", "code", "title", "principle_investigator", "estimated_study_completion", "data_type", "publisher","study_design_allocation","study_design_primary_purpose","study_phase","verification_date","source","rights"],
         "sideBoxes": []
       },
       "fieldMapping": [
