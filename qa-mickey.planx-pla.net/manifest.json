@@ -46,7 +46,9 @@
     "with_cache": "no"
   },
   "awsstoragegateway": {
-    "mariner_ip": "172.24.211.63"
+    "mariner_ip": "172.24.211.63",
+    "mariner_prod_ip": "172.31.52.158",
+    "mariner_prod_s3_bucket": "/va-storagegw-bucket"
   },
   "ssjdispatcher": {
     "job_images": {
