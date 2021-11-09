@@ -338,7 +338,8 @@
     "public_datasets": true,
     "netpolicy": "on",
     "tier_access_level": "regular",
-    "tier_access_limit": 50
+    "tier_access_limit": 50,
+    "lb_type": "internal"
   },
   "indexd": {
     "arborist": "true"
