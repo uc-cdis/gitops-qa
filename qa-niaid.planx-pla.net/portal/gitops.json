@@ -136,6 +136,10 @@
           "accessRequestedTooltipText": "Your recently submitted DAR is being reviewed by NIAID",
           "enableButtonField": "data_available_for_request",
           "disableButtonTooltipText": "This dataset is coming soon"
+        },
+        {
+          "type": "export-pfb-to-workspace",
+          "root_node": "ctfile"
         }
       ]
     }
