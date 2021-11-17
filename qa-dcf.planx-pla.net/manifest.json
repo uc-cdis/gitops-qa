@@ -192,6 +192,20 @@
       "indexing": "quay.io/cdis/indexs3client:2021.11"
     }
   },
+  "guppy": {
+    "indices": [
+      {
+        "index": "qa-dcf_etl",
+        "type": "subject"
+      },
+      {
+        "index": "qa-dcf_file",
+        "type": "file"
+      }
+    ],
+    "config_index": "qa-dcf_array-config",
+    "auth_filter_field": "auth_resource_path"
+  },
   "global": {
     "environment": "dcfqav1",
     "hostname": "qa-dcf.planx-pla.net",
