@@ -22,8 +22,6 @@
     "sower": "quay.io/cdis/sower:2021.11",
     "metadata": "quay.io/cdis/metadata-service:2021.11",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:2021.11",
-    "dashboard": "quay.io/cdis/gen3-statics:2021.11",
-    "status-api": "quay.io/cdis/status-dashboard:2021.11",
     "guppy": "quay.io/cdis/status-dashboard:2021.11"
   },
   "sower": [
