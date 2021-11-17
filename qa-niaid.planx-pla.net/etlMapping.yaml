@@ -14,6 +14,7 @@ mappings:
       - name: study_design_primary_purpose
       - name: responsible_party
       - name: study_start_date
+      - name: most_recent_update
       - name: study_completion_date
       - name: data_available
       - name: data_availability_date
