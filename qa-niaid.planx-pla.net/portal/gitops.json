@@ -117,7 +117,7 @@
         { "field": "category", "name": "Study Type"},
         { "field": "clinical_trial_website", "name": "Websites"},
         { "field": "nct_number", "name": "NCT Number"},
-        { "field": "data_availability_date", "name": "Date First Available"},
+        { "field": "data_availability_date", "name": "Data First Available"},
         { "field": "publications", "name": "Study Publications"}
       ],
       "fileDataType": "ctfile",
