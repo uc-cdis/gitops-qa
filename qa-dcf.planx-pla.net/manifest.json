@@ -219,7 +219,6 @@
     "tier_access_level": "regular",
     "tier_access_limit": 50,
     "public_datasets": true,
-    "lb_type": "internal",
     "dd_enabled": true
   },
   "canary": {
