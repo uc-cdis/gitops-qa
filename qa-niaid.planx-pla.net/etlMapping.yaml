@@ -18,6 +18,7 @@ mappings:
       - name: data_available
       - name: data_availability_date
       - name: most_recent_update
+      - name: previous_versions
       - name: data_available_for_request
       - name: clinical_trial_website
       - name: publications
