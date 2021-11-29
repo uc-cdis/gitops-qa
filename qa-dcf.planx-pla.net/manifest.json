@@ -21,8 +21,7 @@
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "sower": "quay.io/cdis/sower:2021.11",
     "metadata": "quay.io/cdis/metadata-service:2021.11",
-    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:2021.11",
-    "guppy": "quay.io/cdis/guppy:2021.11"
+    "ssjdispatcher": "quay.io/cdis/ssjdispatcher:2021.11"
   },
   "sower": [
     {
@@ -206,10 +205,10 @@
   },
   "global": {
     "environment": "dcfqav1",
-    "hostname": "qa-dcf.planx-pla.net",
+    "hostname": "ctds-test-env.planx-pla.net",
     "revproxy_arn": "arn:aws:acm:us-east-1:733512436101:certificate/2137c4c4-3513-4f89-b763-7b6edf2f229f",
     "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/datadictionary/develop/schema.json",
-    "portal_app": "dev",
+    "portal_app": "gitops",
     "kube_bucket": "kube-qaplanetv1-gen3",
     "logs_bucket": "logs-qaplanetv1-gen3",
     "sync_from_dbgap": "False",
@@ -219,7 +218,6 @@
     "tier_access_level": "regular",
     "tier_access_limit": 50,
     "public_datasets": true,
-    "lb_type": "internal",
     "dd_enabled": true
   },
   "canary": {

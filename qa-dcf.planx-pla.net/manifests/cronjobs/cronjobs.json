@@ -1,0 +1,8 @@
+{
+  "usersync": "20 * * * *",
+  "arborist-rm-expired-access": "@hourly",
+  "es-garbage": "@daily",
+  "google-delete-expired-service-account": "10 * * * *",
+  "google-init-proxy-groups": "5 * * * *",
+  "google-manage-account-access": "15 * * * *"
+}
