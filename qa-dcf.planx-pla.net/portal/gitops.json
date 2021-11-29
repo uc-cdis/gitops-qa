@@ -7,7 +7,7 @@
         "projectDetails": "boardCounts"
     },
     "components": {
-        "appName": "NHLBI BioData Catalyst",
+        "appName": "CTDS Test Environment",
         "index": {
             "introduction": {
                 "heading": "",
