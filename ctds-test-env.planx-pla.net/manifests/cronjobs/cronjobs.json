@@ -1,8 +1,10 @@
 {
   "usersync": "20 * * * *",
-  "arborist-rm-expired-access": "@hourly",
+  "arborist-rm-expired-access": "*/5 * * * *",
+  "google-delete-expired-access": "*/5 * * * *",
   "es-garbage": "@daily",
-  "google-delete-expired-service-account": "10 * * * *",
   "google-init-proxy-groups": "5 * * * *",
-  "google-manage-account-access": "15 * * * *"
+  "google-delete-expired-service-account": "10 * * * *",
+  "google-manage-account-access": "15 * * * *",
+  "fence-visa-update": "30 * * * *"
 }
