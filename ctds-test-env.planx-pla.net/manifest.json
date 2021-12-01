@@ -11,7 +11,7 @@
     "arborist": "quay.io/cdis/arborist:3.3.0",
     "aws-es-proxy": "quay.io/cdis/aws-es-proxy:0.8",
     "datareplicate": "quay.io/cdis/dcf-dataservice:2021.11",
-    "fence": "quay.io/cdis/fence:a64f1677bca09110c583c4376ec8b115c69360fc",
+    "fence": "quay.io/cdis/fence:feat_passport",
     "indexd": "quay.io/cdis/indexd:2021.11",
     "peregrine": "quay.io/cdis/peregrine:2021.11",
     "pidgin": "quay.io/cdis/pidgin:2021.11",
