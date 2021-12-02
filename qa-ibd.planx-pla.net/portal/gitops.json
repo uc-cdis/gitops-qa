@@ -449,8 +449,7 @@
       "fieldMapping": [
         { "field": "title", "name": "Study Title" },
         { "field": "study_design_allocation", "name": "Design Allocation"},
-        { "field": "study_design_primary_purpose", "name": "Primary Purpose"},
-        { "field": "brief_summary", "name": "Brief Summary"}
+        { "field": "study_design_primary_purpose", "name": "Primary Purpose"}
       ],
     "buttons": [
         {
