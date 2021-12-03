@@ -44,8 +44,7 @@
     "tier_access_level": "regular",
     "tier_access_limit": 50,
     "public_datasets": true,
-    "netpolicy": "on",
-    "lb_type": "internal"
+    "netpolicy": "on"
   },
   "metadata": {
     "USE_AGG_MDS": true,
