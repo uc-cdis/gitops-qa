@@ -218,7 +218,8 @@
     "tier_access_level": "regular",
     "tier_access_limit": 50,
     "public_datasets": true,
-    "dd_enabled": true
+    "dd_enabled": true,
+    "uwsgi-timeout": "60"
   },
   "canary": {
     "default": 0
