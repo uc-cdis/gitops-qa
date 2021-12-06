@@ -448,6 +448,7 @@
       },
       "fieldMapping": [
         { "field": "title", "name": "Study Title" },
+        { "field": "brief_summary", "name": "Brief Description" },
         { "field": "principle_investigator", "name": "Principle Investigator(s)" },
         { "field": "availability_type", "name": "Data Accessibility" },
         { "field": "name", "name": "Project Name" },
