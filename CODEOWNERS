@@ -1,32 +1,32 @@
-qa-acct.planx-pla.net/manifest.json @ac3eb @themarcelor @haraprasadj @atharvar28
-qa-bloodpac.planx-pla.net/manifest.json @fantix @themarcelor @haraprasadj @atharvar28
-qa-canine.planx-pla.net/manifest.json @trevars @themarcelor @haraprasadj @atharvar28
-qa.planx-pla.net/manifest.json @themarcelor
+qa-acct.planx-pla.net @ac3eb @themarcelor @haraprasadj @atharvar28
+qa-bloodpac.planx-pla.net @fantix @themarcelor @haraprasadj @atharvar28
+qa-canine.planx-pla.net @trevars @themarcelor @haraprasadj @atharvar28
+qa.planx-pla.net @themarcelor
 qaplanetv2.planx-pla.net
 
-qa-mickey.planx-pla.net/manifest.json @jingh8
-qa-brain.planx-pla.net/manifest.json @jingh8
+qa-mickey.planx-pla.net @jingh8
+qa-brain.planx-pla.net @jingh8
 
-qa-anvil.planx-pla.net/manifest.json @themarcelor
-qa-dcf.planx-pla.net/manifest.json @themarcelor
-qa-dcfdemo.planx-pla.net/manifest.json @themarcelor
-qa-dcp.planx-pla.net/manifest.json @themarcelor
+qa-anvil.planx-pla.net @themarcelor
+qa-dcf.planx-pla.net @themarcelor
+qa-dcfdemo.planx-pla.net @themarcelor
+qa-dcp.planx-pla.net @themarcelor
 
-qa-aids.planx-pla.net/manifest.json @atharvar28
-qa-covid19.planx-pla.net/manifest.json @atharvar28
-qa-flu.planx-pla.net/manifest.json @atharvar28
-qa-ibd.planx-pla.net/manifest.json @atharvar28
-qa-jcoin.planx-pla.net/manifest.json @atharvar28
-qa-kidsfirst.planx-pla.net/manifest.json @atharvar28
-qa-microbiome.planx-pla.net/manifest.json @atharvar28
-qa-nde.planx-pla.net/manifest.json @atharvar28
-qa-niaid.planx-pla.net/manifest.json @atharvar28
-qa-tb.planx-pla.net/manifest.json @atharvar28
+qa-aids.planx-pla.net @atharvar28
+qa-covid19.planx-pla.net @atharvar28
+qa-flu.planx-pla.net @atharvar28
+qa-ibd.planx-pla.net @atharvar28
+qa-jcoin.planx-pla.net @atharvar28
+qa-kidsfirst.planx-pla.net @atharvar28
+qa-microbiome.planx-pla.net @atharvar28
+qa-nde.planx-pla.net @atharvar28
+qa-niaid.planx-pla.net @atharvar28
+qa-tb.planx-pla.net @atharvar28
 
-qa-heal.planx-pla.net/ @haraprasadj
+qa-heal.planx-pla.net @haraprasadj
 
-jenkins-blood.planx-pla.net/manifest.json @themarcelor @haraprasadj @atharvar28 @jingh8
-jenkins-brain.planx-pla.net/manifest.json @themarcelor @haraprasadj @atharvar28 @jingh8
-jenkins-dcp.planx-pla.net/manifest.json @themarcelor @haraprasadj @atharvar28 @jingh8
-jenkins-genomel.planx-pla.net/manifest.json @themarcelor @haraprasadj @atharvar28 @jingh8
-jenkins-niaid.planx-pla.net/manifest.json @themarcelor @haraprasadj @atharvar28 @jingh8
+jenkins-blood.planx-pla.net @themarcelor @haraprasadj @atharvar28 @jingh8
+jenkins-brain.planx-pla.net @themarcelor @haraprasadj @atharvar28 @jingh8
+jenkins-dcp.planx-pla.net @themarcelor @haraprasadj @atharvar28 @jingh8
+jenkins-genomel.planx-pla.net @themarcelor @haraprasadj @atharvar28 @jingh8
+jenkins-niaid.planx-pla.net @themarcelor @haraprasadj @atharvar28 @jingh8
