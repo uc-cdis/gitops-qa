@@ -733,8 +733,8 @@
   "showFenceAuthzOnProfile": false,
   "componentToResourceMapping": {
     "Dashboard": {
-      "resource": "/secure_dashboard",
-      "method": "read",
+      "resource": "/dashboard",
+      "method": "access",
       "service": "dashboard"
     }
   }
