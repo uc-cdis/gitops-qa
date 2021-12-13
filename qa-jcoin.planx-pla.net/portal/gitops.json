@@ -91,6 +91,12 @@
           "name": "Query"
         },
         {
+          "icon": "dictionary",
+          "link": "qa-jcoin.planx-pla.net/dashboard/Secure/index.html",
+          "color": "#a2a2a2",
+          "name": "HUB Documentation"
+        },
+        {
           "name": "Notebook Browser",
           "link": "/resource-browser",
           "icon": "analysis"
@@ -724,5 +730,12 @@
     }
   ],
   "showArboristAuthzOnProfile": true,
-  "showFenceAuthzOnProfile": false
+  "showFenceAuthzOnProfile": false,
+  "componentToResourceMapping": {
+    "Dashboard": {
+      "resource": "/dashboard",
+      "method": "access",
+      "service": "dashboard"
+    }
+  }
 }
