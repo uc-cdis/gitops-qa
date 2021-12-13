@@ -730,5 +730,12 @@
     }
   ],
   "showArboristAuthzOnProfile": true,
-  "showFenceAuthzOnProfile": false
+  "showFenceAuthzOnProfile": false,
+  "componentToResourceMapping": {
+    "Dashboard": {
+      "resource": "/secure_dashboard",
+      "method": "read",
+      "service": "dashboard"
+    }
+  },
 }
