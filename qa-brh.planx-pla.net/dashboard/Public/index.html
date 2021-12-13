@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel='icon' type='image/image/png' href="img/hub-logo.png" />
-    <title>Documentation</title>
+    <title>BRH Documentation</title>
 </head>
 
 <body>
@@ -71,17 +71,22 @@
                 </div>
                 <div class="ul-sidenav">
                     <a href="#PlatformOverview">a) BRH Overview</a>
-                    <a href="#LoginPage">b) Login Page</a>
-                    <a href="#AccessCheck">c) How to check and request Access</a>
+                    <a href="#RegisterForWorkspaces">b) Register for Workspaces - STRIDES</a>
+                    <div class="ul-sidenav-sub-sub">
+                        <a href="#HowToRegisterGuideline">Guideline how to register for Workspace Access</a>
+                    </div>
+
+                    <a href="#LoginPage">c) Login Page</a>
+                    <a href="#AccessCheck">d) How to check and request Access</a>
                     <div class="ul-sidenav-sub-sub">
                         <a href="#AccessToIndividualStudies">Access to individual Studies</a>
                         <!-- <a href="#CurrentOAStudies">Current (open-access) studies</a> -->
                         <!-- <a href="#OverviewOfAccessProfilePage">Overview of access to Datasets and Studies</a> -->
-                        <a href="#LinkingAccessTo">Linking Access to FAIR enabled Repositories</a>
+                        <a href="#LinkingAccessTo">Linking Access to FAIR enabled Repositories/Resources</a>
 
                     </div>
 
-                    <a href="#Discovery">d) Discovery Page</a>
+                    <a href="#Discovery">e) Discovery Page</a>
                     <div class="ul-sidenav-sub-sub">
                         <a href="#SearchFeatures">Search Features</a>
                         <a href="#FindStudyMetadata">Find available Study-level Metadata</a>
@@ -91,9 +96,9 @@
                             them to the Workspace</a> -->
                     </div>
 
-                    <a href="#Workspaces">e) Workspaces</a>
+
+                    <a href="#Workspaces">f) Workspaces</a>
                     <div class="ul-sidenav-sub-sub">
-                        <a href="#RegisterForWorkspaces">Register for Workspaces - STRIDES</a>
                         <a href="#GuidelineToGetStarted">Guideline to get started in Workspaces</a>
                         <a href="#UploadSaveDownload">Upload, save, and download Files/Notebooks</a>
                         <a href="#AvailableWorkspaceTools">Environments, Languages, and Tools</a>
@@ -101,8 +106,15 @@
                         <a href="#STATAinNotebooks">STATA in Jupyter</a>
                         <!-- <a href="#TroubleshootingWorkspaces">Troubleshooting</a> -->
                         <a href="#AutomaticWorkspaceShutdown">Automatic Workspace Shutdown</a>
-
                     </div>
+
+                    
+
+                   
+
+                    
+
+                   
 
                     <!-- <a href="#StaticNoteboks">f) Example Analysis</a>
                     <div class="ul-sidenav-sub-sub">
@@ -113,7 +125,7 @@
                         <a href="#DemoHEALNotebookBACPAC">Demo - How to find data and work on the Tutorial Notebooks</a>
                     </div> -->
 
-                    <a href="#ProfilePage">f) Profile Page</a>
+                    <a href="#ProfilePage">g) Profile Page</a>
                 </div>
                 <div class="sidenav-head">
                     <a href="#DownloadingDataFiles">Downloading Data Files</a></strong>
@@ -239,15 +251,15 @@
                             <h2 id="DataManagementRepositories" class="section-title">3. Data Management and Repositories
                             </h2>
                             <p>
-                                The BRH securely exposes data stored on multiple FAIR repositories and Data Commons, i.e. data libraries or archives, to provide an easy way to connect different repositories on one single location.
+                                The BRH securely exposes study metadata and data files stored on multiple FAIR repositories and Data Commons, i.e. data libraries or archives, to provide an easy way to connect different repositories on one single location.
                             </p>
                             <p>
-                                FAIR data repositories are traditionally a part of a larger institution established for research, data archiving, and, to serve data users of that organization.
+                                FAIR data repositories are traditionally a part of a larger institution/working group established for research, data archiving, and, to serve data users of that organization.
                             </p>
                             <p>
-                                Currently, the BRH shares data from the following resources/Data Commons:
+                                The list of currently shared resources/Data Commons on BRH are accessible <a href="list_of_commons.html">here</a>.
                             </p>
-                            <ul>
+                            <!-- <ul>
                                 <li>
                                     <a href="https://gen3.biodatacatalyst.nhlbi.nih.gov/">BioData Catalyst</a>
                                 </li>
@@ -288,7 +300,7 @@
                             <img class="drop-shadow" src="img/data_resources_tags.png" alt="data_resources_tags" style="width:20%">
                             <figcaption>
                                 Studies can be filtered by Data Resource using tags.
-                            </figcaption>
+                            </figcaption> -->
 
                             <!-- <p>
                                 In the following, we list a short summary of datasets shared from each repository.
@@ -399,10 +411,24 @@
 
                                 <ul class="image-list-small">
                                     <li>
+                                        <a href="#RegisterForWorkspaces" style="background-image: url('img/brh-portal-login-strides.png');"></a>
+                                        <div class="details">
+                                            <h6><a href="#RegisterForWorkspaces">Register for Workspaces - STRIDES</a></h6>
+                                            <p class="image-author">Register workspace access with NIH STRIDES to start your journey on the Biomedical Research Hub.</p>
+                                        </div>
+                                    </li>
+                                    <li>
                                         <a href="#LoginPage" style="background-image: url('img/brh-login.png');"></a>
                                         <div class="details">
                                             <h6><a href="#LoginPage">Login Page</a></h6>
                                             <p class="image-author">Log in here to unlock controlled-access data and workspace access with your credentials.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#AccessCheck" style="background-image: url('img/workspace_login_other_commons.png');"></a>
+                                        <div class="details">
+                                            <h6><a href="#AccessCheck">Check access and link accounts</a></h6>
+                                            <p class="image-author">Check study access, request access, and connect your account to other resources to access all studies.</p>
                                         </div>
                                     </li>
                                     <li>
@@ -419,6 +445,9 @@
                                             <p class="image-author">Access data across multiple resources and perform analyses in a secure, cloud-based environment.</p>
                                         </div>
                                     </li>
+                                    
+                                  
+                                    
                                     <!-- <li>
                                         <a href="#StaticNoteboks" style="background-image: url('img/grid_notebooks_color.png');"></a>
                                         <div class="details">
@@ -436,8 +465,85 @@
                                 </ul>
                             </p>
 
+                            <h3 id="RegisterForWorkspaces" class="section-title">b) Register for Workspaces - STRIDES</h3>
+                            <p>
+                                After receiving an invitation via email, users need to request for a <span style="font-weight: bold;">workspace account</span> to work in the workspaces of the BRH, see below for a guideline.
+                            </p>
+                            <p>
+                                The workspace account is handled with the help of <span style="font-weight: bold;">NIH STRIDES</span> (NIH <span style="font-weight: bold;">S</span>cience and
+                                <span style="font-weight: bold;">T</span>echnology <span style="font-weight: bold;">R</span>esearch <span style="font-weight: bold;">I</span>nfrastructure for <span style="font-weight: bold;">D</span>iscovery,
+                                <span style="font-weight: bold;">E</span>xperimentation, and <span style="font-weight: bold;">S</span>ustainability). The NIH STRIDES Initiative allows NIH to explore the use of cloud environments to streamline NIH
+                                data use by partnering with commercial providers.
+                            </p>
+                            <p>
+                                By leveraging the STRIDES Initiative, NIH and NIH-funded institutions can begin to create a robust, interconnected ecosystem that breaks down silos related to generating, analyzing, and sharing research data.
+                            </p>
+                            <p>
+                                NIH-funded researchers with an active NIH award may take advantage of the STRIDES Initiative for their NIH-funded research projects. Eligible researchers include NIH intramural researchers and awardees of NIH contracts, other transaction agreements, grants,
+                                cooperative agreements, and other agreements. More information on NIH STRIDES and how to gain access can be found <a href="https://datascience.nih.gov/strides">here</a>.
+                            </p>
 
-                            <h3 id="LoginPage" class="section-title">b) Login Page</h2>
+
+
+
+                            <h4 id="HowToRegisterGuideline" class="section-title">Guideline how to register for Workspace Access</h4>
+                            <ol>
+                                <li>
+                                    Click the link in the invitation email or start requesting a workspace account by visiting <a href="https://brh-portal.org/">https://brh-portal.org/</a> and logging in.
+                                    <br> <br>
+                                    <img class="drop-shadow" src="img/brh-portal-login.png" alt="brh-portal-login" style="width:80%">
+                                    <figcaption style="width:100%">
+                                        Log in on the BRH Admin Portal.
+                                    </figcaption> <br> <br>
+                                </li>
+                                <li>
+                                    After authorization, users will see the landing page, which displays current workspace accounts and credits once workspaces access and credits/grants have been approved. <br> <br>To start the process of requesting
+                                    a new workspace account, users need to select "Request New Workspace" on the landing page.
+                                    <br> <br>
+                                    <img class="drop-shadow" src="img/brh-portal-request.png" alt="brh-portal-request" style="width:80%">
+                                    <figcaption style="width:100%">
+                                        <!-- Log in on the BRH Admin Portal. -->
+                                    </figcaption> <br> <br>
+                                </li>
+                                <li>
+                                    Choose one of the two options a) STRIDES Grant/Award Funded or b) STRIDES Credits to request a workspace account.
+                                    <br> <br>
+                                    <img class="drop-shadow" src="img/brh-portal-options.png" alt="brh-portal-options" style="width:80%">
+                                    <figcaption style="width:100%">
+                                        <!-- Log in on the BRH Admin Portal. -->
+                                    </figcaption>
+                                    <blockquote>
+                                        For information on the NIH STRIDES options, please refer to <a href="https://datascience.nih.gov/strides">the official page</a>.
+                                    </blockquote>
+                                </li>
+                                <ul>
+                                    <li>
+                                        The <span style="font-weight: bold;">STRIDES Grant/Award Funded</span> form can be selected if researchers have received NIH funding (e.g. a grant, contract, cooperative agreement, or other transaction agreement)
+                                        and intend to use these funds for the BRH account. With this option, the researchers' organization will be responsible for payment.<br><br>
+                                        <img class="drop-shadow" src="img/brh-portal-strides-grant.png" alt="brh-portal-strides-grant" style="width:80%">
+                                        <figcaption style="width:100%">
+                                            Request form for "STRIDES Grant/Award Funded".
+                                        </figcaption> <br> <br>
+                                    </li>
+                                    <li>
+                                        The <span style="font-weight: bold;">STRIDES Credits</span> form can be selected if users are requesting credits from the NIH STRIDES Initiative for the BRH account. With this option, once the request is approved,
+                                        a new account with a spending limit of $XXX will be provisioned for usage.<br><br>
+                                        <img class="drop-shadow" src="img/brh-portal-strides-credits.png" alt="brh-portal-strides-credits" style="width:80%">
+                                        <figcaption style="width:100%">
+                                            Request form for "STRIDES Credits".
+                                        </figcaption> <br> <br>
+                                    </li>
+                                </ul>
+
+                                <li>
+                                    Submit the request. Note that the process of granting access for a workspace account can take up to two weeks and users will be notified. Following the approval, users will see the current workspace accounts and credits on the landing page.
+                                </li>
+
+
+                            </ol>
+
+
+                            <h3 id="LoginPage" class="section-title">c) Login Page</h2>
 
                                 <p>
                                     You will <span style="font-weight: bold">not </span>need to log in in order to:
@@ -487,12 +593,13 @@
                                 <ul>
                                     <li>
                                         <span style="font-weight: bold">Login from Google:</span> You may login using any Google account credentials, or a G-suite enabled institutional email. This option may or may not be available depending on the institution
-                                        or organization the user is associated with. Users should contact the IT support to verify if this option is available. For staff, students, and faculty of the University of Chicago, more information can be found
-                                        <a href="https://its.uchicago.edu/g-suite/">here</a>.
+                                        or organization the user is associated with. 
+                                        <!-- Users should contact the IT support to verify if this option is available. For staff, students, and faculty of the University of Chicago, more information can be found
+                                        <a href="https://its.uchicago.edu/g-suite/">here</a>. -->
                                     </li>
                                     <li>
-                                        <span style="font-weight: bold">Login via NIH RAS/eRA Commons/dbGaP:</span> You will need an eRA Commons account as well as access permissions through the <a href="https://www.ncbi.nlm.nih.gov/gap/">Database of Genotypes and Phenotypes (dbGaP)</a>.
-                                        If you are a researcher, log in by selecting NIH Login and using your <a href="https://public.era.nih.gov/commons/public/login.do">eRA Commons account</a>.
+                                        <span style="font-weight: bold">Login via InCommons --> NIH eRA:</span> When selecting the NIH/eRA (electronic Research Administration) login using InCommons, you will need access permissions through the <a href="https://era.nih.gov/">eRA Commons account</a>. 
+                                        <!-- If you are a researcher, log in by selecting NIH Login and using your <a href="https://public.era.nih.gov/commons/public/login.do">eRA Commons account</a>. -->
                                     </li>
                                     <!-- <li>
                                         <span style="font-weight: bold">ORCID Login:</span> Users with an ORCID account can log in using their ORCID credentials.
@@ -507,7 +614,7 @@
                                 </p>
 
 
-                                <h3 id="AccessCheck" class="section-title">c) How to check and request Access</h3>
+                                <h3 id="AccessCheck" class="section-title">d) How to check and request Access</h3>
                                 <p>
                                     Users can find out to which projects they have access to by navigating to <a href="https://healdata.org/discovery">the Discovery Page</a> and by selecting “Data Availability" - "Available" - ”OK” as shown below.
                                 </p>
@@ -685,14 +792,13 @@
                                 </ul> -->
 
 
-                                <h4 id="LinkingAccessTo" class="section-title">Linking Access to FAIR enabled Repositories
+                                <h4 id="LinkingAccessTo" class="section-title">Linking Access to FAIR enabled Repositories/Resources
                                 </h4>
                                 <p>
-                                    BRH securely exposes data stored on multiple FAIR repositories and Data Commons</a>.
+                                    BRH securely exposes data stored on multiple FAIR repositories, resources, and Data Commons</a>.
                                 </p>
                                 <p>
-                                    <span style="font-weight: bold">Users need to link their account to currently all FAIR
-                                    repositories in order to: </span>
+                                    <span style="font-weight: bold">Users need to link their account to currently all resources/repositories in order to: </span>
                                     <ol>
                                         <li>
                                             <em>run</em> Jupyter Notebooks that utilize data stored on various FAIR repositories.
@@ -704,8 +810,8 @@
                                             <em>download</em> data that is stored on FAIR repositories from the Discovery Page.
                                         </li>
                                     </ol>
-                                    In order to link the account to the involved FAIR repositories, navigate to the
-                                    <a href="https://brh.data-commons.org/workspace">Workspace Page</a> and link the account to <span style="font-weight: bold">all</span> current login options by clicking on the "Refresh [..] Google Login" buttons as
+                                    In order to link the account to the involved repositories, navigate to the
+                                    <a href="https://brh.data-commons.org/workspace">Workspace Page</a> and link the account to <span style="font-weight: bold">all</span> current login options by clicking on the the respective buttons as
                                     shown below.
                                 </p>
 
@@ -733,569 +839,504 @@
 
 
 
-                                <h3 id="Discovery" class="section-title">d) Discovery Page</h3>
-                                <p>
-                                    <a href="https://brh.data-commons.org/discovery">The Discovery Page</a> provides users a venue to search and find studies and datasets displayed on the Biomedical Research Hub. Users <span style="font-weight: bold">can browse through the publicly accessible
-                                    study-level metadata</span> without requiring authorization.
-                                </p>
+                                
 
+
+
+
+
+                            <h3 id="Discovery" class="section-title">e) Discovery Page</h3>
+                            <p>
+                                <a href="https://brh.data-commons.org/discovery">The Discovery Page</a> provides users a venue to search and find studies and datasets displayed on the Biomedical Research Hub. Users <span style="font-weight: bold">can browse through the publicly accessible
+                                study-level metadata</span> without requiring authorization.
+                            </p>
+
+                            <blockquote>
+                                <p>
+                                    Use text-based search, faceted search, and tags to rapidly and efficiently find relevant studies, discover new datasets across multiple resources, and easily export selected data files to the analysis workspace.
+                                </p>
+                            </blockquote>
+
+                            <img class="drop-shadow" src="img/grid_discovery_color.png" alt="grid_discovery_color" style="width:80%">
+                            <figcaption>
+                                The Discovery Page of the Biomedical Research Hub. Browse through datasets and study-level metadata and find studies using tags, advanced search, or the free text search field.
+                            </figcaption>
+
+                            <h4 id="SearchFeatures" class="section-title">Search Features</h4>
+
+                            <img class="drop-shadow" src="img/discovery_features.png" alt="DiscoveryFeatures" style="width:80%">
+                            <figcaption>
+                                Different features such as free text search bar and tags on the Discovery Page help navigating and refining the search.
+                            </figcaption>
+
+                            <ol>
+
+                                <li>
+                                    <span style="font-weight: bold">The total number of studies</span>. Shows the amount of studies the BRH is currently displaying.
+                                </li>
+                                <li>
+                                    <span style="font-weight: bold">The total number of subjects</span>. Shows the amount of subjects the BRH is currently displaying.
+                                </li>
+                                <li>
+                                    <span style="font-weight: bold">Data Resources/Data Commons Tags</span>. Click on a tag to filter for a Data Resource/Data Commons. Selecting multiple tags work in an "OR" logic.
+                                </li>
+                                <li>
+                                    <span style="font-weight: bold">Free Text Search</span>. Finding studies is made easy using keywords in the free text-based search bar or using tags. The free-text search bar can be used to search for study name,
+                                    ID number, Data Commons, or any keyword that is mentioned in the metadata of the study.
+                                </li>
+                                <li>
+                                    <span style="font-weight: bold">Advanced Search</span>. Narrow down your search using checkbox selections in Advanced Search.
+                                </li>
+
+
+                                <li>
+                                    <span style="font-weight: bold">Export Options</span>. Login first to leverage the export options. Select one or multiple studies and download a file manifest or export the data files to a secure cloud environment
+                                    "Workspaces" to start your custom data analysis in Python, R, or STATA.
+                                </li>
+                                <li>
+                                    <span style="font-weight: bold">Data Availability</span>. Filter on available, pending, and not-yet-available datasets.
+                                    <a href="#DataAvailabilityOptions">Read further here</a>.
+                                </li>
+                                <li>
+                                    <span style="font-weight: bold">Studies</span>. This table feature presents all current studies on BRH. Click on any study to show useful information about the study (metadata).
+                                    <a href="#FindStudyMetadata">Read further here</a>.
+                                </li>
+
+                                <!-- <li>
+                                    <span style="font-weight: bold">Documentation</span>. This brings you to this page you are currently on.
+                                </li>
+                                <li>
+                                    <span style="font-weight: bold">Login Page</span>. Login on the BRH to leverage all features.
+                                    <a href="#LoginPage">Read further here</a>.
+                                </li> -->
+
+                            </ol>
+
+
+
+                            <h4 id="FindStudyMetadata" class="section-title">Find available Study-level Metadata</h4>
+                            <p>
+                                Finding available study-level metadata on BRH is made easy by clicking on a study.
+                            </p>
+                            <img class="drop-shadow" src="img/discovery_study_page_datafiles.png" alt="DiscoveryStudyPageDatafiles" style="width:80%">
+                            <figcaption>
+                                Clicking on any study will display the available study-level and dataset metadata.
+                            </figcaption>
+
+
+                            <h4 id="FindAvailableDatasets" class="section-title">Find accessible Datasets</h4>
+                            <p>
+                                Users can select and filter studies from multiple resources and conduct analyses on the selected datasets in a workspace. Users can find search only available data they have access to by selecting the data access button in the top right corner of the
+                                study page and selecting “Data Availability" - "Available" as shown below. The Discovery Page will automatically update the list of studies that have available datasets.
+                            </p>
+                            <img class="drop-shadow" src="img/access_box_select_window.png" alt="Access_Box_Select_Window" style="width:80%">
+                            <figcaption>
+                                Select the symbol next to Data Availability to open all options. Three options are available. Find available datasets by clicking on the “Available” button.
+                            </figcaption>
+
+
+
+                            <h4 id="DataAvailabilityOptions" class="section-title">Data Availability Options</h4>
+                            <p>
+                                Different options for Data Availability exist and will be explained below.
+                            </p>
+
+                            <img class="drop-shadow" src="img/access_options.png" alt="Access_boxes" style="width:20%">
+                            <figcaption>
+                                Three options for Data Availability.
+                            </figcaption>
+
+                            <ul>
+                                <li>
+                                    <span style="font-weight: bold">Available:</span> This option will display only studies with datasets users have access to and entails all open-access studies. Studies can be selected and exported to a workspace
+                                    or downloaded as a manifest by clicking on the associated checkbox on the left-hand side of the study entry and selecting one of the options in the top right.
+
+                                    <!-- <br><br>
+                                    <img class="drop-shadow" src="img/discovery_options.png" alt="discovery_options" style="width:100%">
+                                    <figcaption style="width:100%">
+                                        Once available, each study can be selected and exported to workspace or downloaded.
+                                    </figcaption> <br> <br> -->
+                                </li>
+                                <li>
+                                    <span style="font-weight: bold">Not available:</span> This option will filter out all studies that will only have metadata but no datasets available. The checkbox next to the study will be greyed out and non-clickable.
+                                    <!-- <br> <br>
+                                    <img class="drop-shadow" src="img/access_greyed_out_box.png" alt="Access_greyed_out_box" style="width:100%">
+                                    <figcaption style="width:100%">
+                                        Studies will grey out if they're not available, have no data attached, users have no access to, or are in pending mode.
+                                    </figcaption> <br> <br> -->
+                                </li>
+                                <li>
+                                    <span style="font-weight: bold">Pending:</span> This option will display studies located on any data resource or repository, for which attached datasets will be added in the near future. The checkbox next to the
+                                    study will be greyed out and non-clickable.
+                                    <br> <br>
+                                </li>
+                            </ul>
+
+                            <!-- <h4 id="SelectBringFilesDiscoveryToWorkspace" class="section-title">Select Files on the Discovery Page and bring them to the Workspace</h4>
+                            <img class="drop-shadow" src="img/discovery_exporting_to_workspace.gif" alt="Discovery_exporting_to_workspace" style="width:80%">
+
+                            <p>
+                                The above gif shows the workflow used to select data files from the Discovery Page and bring them into the workspace using Jupyter Notebooks. <br>
+                            </p>
+                            <ol>
+                                <li>
+                                    Log in on <a href="https://healdata.org/login">healdata.org/login</a>. Link your account to all FAIR repositories as described <a href="#LinkingAccessTo">here</a>.
+                                    <br><br>
+                                </li>
+                                <li>
+                                    Find and select the study by the project number (in this example: 1U2CDA050098-01_a) on the <a href="https://healdata.org/discovery">Discovery Page</a>. Find other current open-access studies <a href="#CurrentOAStudies">here</a>.<br><br>
+                                </li>
+                                <li>
+                                    Click the “Open in Workspace” button in the upper right corner. This step will create a manifest folder which you can find later in the Workspace’s folder "data/healdata.org".
+                                    <br>
+                                    <img class="drop-shadow" src="img/static_notebook_bacpac.png" alt="static_notebook_bacpac" style="width:90%">
+                                    <figcaption>
+                                        Select the study and click on “Open in Workspace”.
+                                    </figcaption><br><br>
+                                </li>
+                                <li>
+                                    Choose a workspace flavor and click "Launch". This step may take several minutes.
+                                    <br><br>
+                                </li>
+
+                                <li>
+                                    Navigate to the <code>/pd/data/healdata.org/</code> folder and find the placeholder files there. Click on those placeholder files to find instructions how to download the files or see below. <br><br>
+                                </li>
+                                <li>
+                                    From the directory <code>/pd</code>, users can now start a new notebook. Click “New” (upper right corner) or open a previously saved notebook on the landing drive to load the files into one of the cells, for example
+                                    by running <br>
+                                    <code>
+                        ! gen3 pull_object "guid""<br>
+                        import pandas as pd <br>
+                        os.chdir('/pd') <br>
+                        demo_df = pd.read_csv('pd/demo_file.txt', sep='\t') <br>
+                        demo_df.head()
+                    </code>
+                                    <br><br> More information for instructions on importing data can be found in the sections
+                                    <a href="#DownloadFilesSDKWorkspaces">"Download Files to Workspaces"</a> and <a href="#Workspaces">"Workspaces"</a>.<br><br>
+                                </li>
+                                <li>
+                                    Make sure to terminate the workspace when the work is finished to reduce computational costs.
+                                </li>
                                 <blockquote>
-                                    <p>
-                                        Use text-based search, faceted search, and tags to rapidly and efficiently find relevant studies, discover new datasets across multiple resources, and easily export selected data files to the analysis workspace.
-                                    </p>
+                                    - "pd" means persistent directory. Saved files outside this directory will be lost.
+                                    <br><br> - The manifest.json lists metadata of all exported files and can be used to download in
+                                    <a href="#DownloadFilesSDKWorkspaces">batches</a><br><br> - Note, that all exported data files will be saved in the
+                                    <code>/pd/data/healdata.org/</code> folder.<br><br> - Please also note, that the workspace mounts up to a
+                                    <span style="font-weight: bold">maximum of 5 different manifests</span> while the workspace is running but shows only the latest exported manifest in a newly launched workspace.
+                                    <br><br> - Terminating the workspace will result in the
+                                    <span style="font-weight: bold">loss of all but the latests
+                                    manifest</span>.<br><br>
                                 </blockquote>
 
-                                <img class="drop-shadow" src="img/grid_discovery_color.png" alt="grid_discovery_color" style="width:80%">
-                                <figcaption>
-                                    The Discovery Page of the Biomedical Research Hub. Browse through datasets and study-level metadata and find studies using tags, advanced search, or the free text search field.
-                                </figcaption>
 
-                                <h4 id="SearchFeatures" class="section-title">Search Features</h4>
-
-                                <img class="drop-shadow" src="img/discovery_features.png" alt="DiscoveryFeatures" style="width:80%">
-                                <figcaption>
-                                    Different features such as free text search bar and tags on the Discovery Page help navigating and refining the search.
-                                </figcaption>
-
-                                <ol>
-
-                                    <li>
-                                        <span style="font-weight: bold">The total number of studies</span>. Shows the amount of studies the BRH is currently displaying.
-                                    </li>
-                                    <li>
-                                        <span style="font-weight: bold">The total number of subjects</span>. Shows the amount of subjects the BRH is currently displaying.
-                                    </li>
-                                    <li>
-                                        <span style="font-weight: bold">Data Resources/Data Commons Tags</span>. Click on a tag to filter for a Data Resource/Data Commons. Selecting multiple tags work in an "OR" logic.
-                                    </li>
-                                    <li>
-                                        <span style="font-weight: bold">Free Text Search</span>. Finding studies is made easy using keywords in the free text-based search bar or using tags. The free-text search bar can be used to search for study name,
-                                        ID number, Data Commons, or any keyword that is mentioned in the metadata of the study.
-                                    </li>
-                                    <li>
-                                        <span style="font-weight: bold">Advanced Search</span>. Narrow down your search using checkbox selections in Advanced Search.
-                                    </li>
-
-
-                                    <li>
-                                        <span style="font-weight: bold">Export Options</span>. Login first to leverage the export options. Select one or multiple studies and download a file manifest or export the data files to a secure cloud environment
-                                        "Workspaces" to start your custom data analysis in Python, R, or STATA.
-                                    </li>
-                                    <li>
-                                        <span style="font-weight: bold">Data Availability</span>. Filter on available, pending, and not-yet-available datasets.
-                                        <a href="#DataAvailabilityOptions">Read further here</a>.
-                                    </li>
-                                    <li>
-                                        <span style="font-weight: bold">Studies</span>. This table feature presents all current studies on BRH. Click on any study to show useful information about the study (metadata).
-                                        <a href="#FindStudyMetadata">Read further here</a>.
-                                    </li>
-
-                                    <!-- <li>
-                                        <span style="font-weight: bold">Documentation</span>. This brings you to this page you are currently on.
-                                    </li>
-                                    <li>
-                                        <span style="font-weight: bold">Login Page</span>. Login on the BRH to leverage all features.
-                                        <a href="#LoginPage">Read further here</a>.
-                                    </li> -->
-
-                                </ol>
+                            </ol> -->
 
 
 
-                                <h4 id="FindStudyMetadata" class="section-title">Find available Study-level Metadata</h4>
-                                <p>
-                                    Finding available study-level metadata on BRH is made easy by clicking on a study.
-                                </p>
-                                <img class="drop-shadow" src="img/discovery_study_page_datafiles.png" alt="DiscoveryStudyPageDatafiles" style="width:80%">
-                                <figcaption>
-                                    Clicking on any study will display the available study-level and dataset metadata.
-                                </figcaption>
 
+                            <h3 id="Workspaces" class="section-title">f) Workspaces</h3>
+                            <p>
+                                <span style="font-weight: bold;">To use the workspace, users need to register for workspace accounts to use the workspaces, as described <a href="#RegisterForWorkspaces">above</a>.</span>
+                            </p>
+                            <p>
+                                BRH workspaces are secure data analysis environments in the cloud that can access data from one or more data resources. By default, Workspaces include Jupyter notebooks, Python and RStudio, but can be configured to host virtually any application, including
+                                analysis workflows, data processing pipelines, or data visualization apps.
+                            </p>
+                            <blockquote>
+                                <span style="font-weight: bold;">New to Jupyter?</span> Learn more about the popular tool for data scientists on <a href="https://jupyter.org/">Jupyter.org</a> (disclaimer: CTDS is not responsible for the content).
+                            </blockquote>
+                            
+                            
 
-                                <h4 id="FindAvailableDatasets" class="section-title">Find accessible Datasets</h4>
-                                <p>
-                                    Users can select and filter studies from multiple resources and conduct analyses on the selected datasets in a workspace. Users can find search only available data they have access to by selecting the data access button in the top right corner of the
-                                    study page and selecting “Data Availability" - "Available" as shown below. The Discovery Page will automatically update the list of studies that have available datasets.
-                                </p>
-                                <img class="drop-shadow" src="img/access_box_select_window.png" alt="Access_Box_Select_Window" style="width:80%">
-                                <figcaption>
-                                    Select the symbol next to Data Availability to open all options. Three options are available. Find available datasets by clicking on the “Available” button.
-                                </figcaption>
-
-
-
-                                <h4 id="DataAvailabilityOptions" class="section-title">Data Availability Options</h4>
-                                <p>
-                                    Different options for Data Availability exist and will be explained below.
-                                </p>
-
-                                <img class="drop-shadow" src="img/access_options.png" alt="Access_boxes" style="width:20%">
-                                <figcaption>
-                                    Three options for Data Availability.
-                                </figcaption>
-
+                            <h4 id="GuidelineToGetStarted" class="section-title">Guideline to get started in Workspaces</h4>
+                            <p>
+                                Once users have access to workspaces, find below a guide of how to get started with analysis work in workspaces.
+                            </p>
+                            <ol>
+                                <li>
+                                    Users need to log in via <a href="https://brh.data-commons.org//login">https://brh.data-commons.org/login</a> to access workspaces.
+                                </li> <br>
+                                <li>
+                                    After navigating to <a href="https://brh.data-commons.org/workspace">https://brh.data-commons.org/workspace</a>, users will discover a list of pre-configured virtual machine (VM) images, as shown below.
+                                    <br> <br>
+                                    <img class="drop-shadow" src="img/workspace_flavors.png" alt="Workspace_flavors" style="width:80%">
+                                    <figcaption style="width:100%">
+                                        Available workspaces on BRH.
+                                        <!-- Users may need to link their accounts from other repositories (bottom; click <a href="#LinkingAccessTo">here
+                                        to see
+                                        how</a>). -->
+                                    </figcaption> <br> <br>
+                                </li>
                                 <ul>
                                     <li>
-                                        <span style="font-weight: bold">Available:</span> This option will display only studies with datasets users have access to and entails all open-access studies. Studies can be selected and exported to a workspace
-                                        or downloaded as a manifest by clicking on the associated checkbox on the left-hand side of the study entry and selecting one of the options in the top right.
+                                        <span style="font-weight: bold">(Generic) Jupyter Notebook with R kernel</span>: Choose this VM if you are familiar with setting up Python- or R-based Notebooks, or if you just exported one or multiple studies
+                                        from the Discovery Page and want to start your custom analysis.
+                                    </li>
+                                    <li>
+                                        <span style="font-weight: bold">(Generic, User-licensed) Stata Notebook</span>: Choose this VM if you are familiar with STATA-based data analysis. This notebook requires a STATA license.
+                                    </li>
+                                    <li>
+                                        <span style="font-weight: bold">Tutorial Notebooks</span>: Explore our Jupyter Notebook tutorials written in Python or RStudio, which pull data from various sources of the Biomedical Research Hub to leverage
+                                        statistical programs and data analysis tools.
+                                        <!-- <br><br> All interactive tutorial notebooks can be also found as
+                                        <a href="https://healdata.org/resource-browser">static version on the
+                                        Notebook Browser tab</a>; read more in the section <a href="#StaticNotebooks">"Example Analysis"</a>.
+                                        <br> <br> Feel free to edit and experiment with this collection of notebooks. They are your personal copies! <br><br> -->
+                                        <!-- <ul>
+                                            <li>
+                                                <em>Notebooks in Python</em>: (1) BACPAC Synthetic Data Analysis, (2) JCOIN Tracking Opioid Stigma, (3) Opioid Overdose Trajectories, (4) Opioid Prevalence And Overdoses
+                                            </li>
+                                            <li>
+                                                <em>Notebooks in RStudio</em>: (1) Opioid Environment Toolkit and OEPS
+                                            </li>
+                                        </ul> -->
+                                    </li>
+                                </ul> <br>
+                                <li>
+                                    Click “Launch” on any of the above workspace flavors to spin up a copy of that VM. Note: Launching the VM may take several minutes.<br><br>
+                                    <img class="drop-shadow" src="img/workspace_launch.png" alt="Workspace_launch" style="width:80%">
+                                    <figcaption style="width:100%">
+                                        The status of launching the workspace is displayed after clicking on “Launch”.
+                                    </figcaption> <br>
+                                </li><br>
+                                <li>
+                                    After launching, the home folders are displayed, one of which is the user's persistent drive ("pd"). <br><br>
+                                    <img class="drop-shadow" src="img/workspace_data_folder.png" alt="Workspace_data_folder" style="width:80%">
+                                    <figcaption style="width:100%">
+                                        The /pd directory is a user’s persistent drive.
+                                    </figcaption> <br>
 
-                                        <!-- <br><br>
-                                        <img class="drop-shadow" src="img/discovery_options.png" alt="discovery_options" style="width:100%">
-                                        <figcaption style="width:100%">
-                                            Once available, each study can be selected and exported to workspace or downloaded.
-                                        </figcaption> <br> <br> -->
-                                    </li>
-                                    <li>
-                                        <span style="font-weight: bold">Not available:</span> This option will filter out all studies that will only have metadata but no datasets available. The checkbox next to the study will be greyed out and non-clickable.
-                                        <!-- <br> <br>
-                                        <img class="drop-shadow" src="img/access_greyed_out_box.png" alt="Access_greyed_out_box" style="width:100%">
-                                        <figcaption style="width:100%">
-                                            Studies will grey out if they're not available, have no data attached, users have no access to, or are in pending mode.
-                                        </figcaption> <br> <br> -->
-                                    </li>
-                                    <li>
-                                        <span style="font-weight: bold">Pending:</span> This option will display studies located on any data resource or repository, for which attached datasets will be added in the near future. The checkbox next to the
-                                        study will be greyed out and non-clickable.
-                                        <br> <br>
-                                    </li>
-                                </ul>
+                                </li>
+                                <li>
+                                    Select the /pd folder. Only files saved in the /pd directory will remain available after termination of a workspace session. <br><br>
+                                    <img class="drop-shadow" src="img/workspace_pd_folder.png" alt="Workspace_pd_folder" style="width:80%">
+                                    <figcaption style="width:100%">
+                                        New files or licenses should be saved in the the /pd directory if users need to access them after restarting the workspaces.
+                                    </figcaption> <br>
 
-                                <!-- <h4 id="SelectBringFilesDiscoveryToWorkspace" class="section-title">Select Files on the Discovery Page and bring them to the Workspace</h4>
-                                <img class="drop-shadow" src="img/discovery_exporting_to_workspace.gif" alt="Discovery_exporting_to_workspace" style="width:80%">
-
-                                <p>
-                                    The above gif shows the workflow used to select data files from the Discovery Page and bring them into the workspace using Jupyter Notebooks. <br>
-                                </p>
-                                <ol>
-                                    <li>
-                                        Log in on <a href="https://healdata.org/login">healdata.org/login</a>. Link your account to all FAIR repositories as described <a href="#LinkingAccessTo">here</a>.
-                                        <br><br>
-                                    </li>
-                                    <li>
-                                        Find and select the study by the project number (in this example: 1U2CDA050098-01_a) on the <a href="https://healdata.org/discovery">Discovery Page</a>. Find other current open-access studies <a href="#CurrentOAStudies">here</a>.<br><br>
-                                    </li>
-                                    <li>
-                                        Click the “Open in Workspace” button in the upper right corner. This step will create a manifest folder which you can find later in the Workspace’s folder "data/healdata.org".
-                                        <br>
-                                        <img class="drop-shadow" src="img/static_notebook_bacpac.png" alt="static_notebook_bacpac" style="width:90%">
-                                        <figcaption>
-                                            Select the study and click on “Open in Workspace”.
-                                        </figcaption><br><br>
-                                    </li>
-                                    <li>
-                                        Choose a workspace flavor and click "Launch". This step may take several minutes.
-                                        <br><br>
-                                    </li>
-
-                                    <li>
-                                        Navigate to the <code>/pd/data/healdata.org/</code> folder and find the placeholder files there. Click on those placeholder files to find instructions how to download the files or see below. <br><br>
-                                    </li>
-                                    <li>
-                                        From the directory <code>/pd</code>, users can now start a new notebook. Click “New” (upper right corner) or open a previously saved notebook on the landing drive to load the files into one of the cells, for example
-                                        by running <br>
-                                        <code>
-                            ! gen3 pull_object "guid""<br>
-                            import pandas as pd <br>
-                            os.chdir('/pd') <br>
-                            demo_df = pd.read_csv('pd/demo_file.txt', sep='\t') <br>
-                            demo_df.head()
-                        </code>
-                                        <br><br> More information for instructions on importing data can be found in the sections
-                                        <a href="#DownloadFilesSDKWorkspaces">"Download Files to Workspaces"</a> and <a href="#Workspaces">"Workspaces"</a>.<br><br>
-                                    </li>
-                                    <li>
-                                        Make sure to terminate the workspace when the work is finished to reduce computational costs.
-                                    </li>
                                     <blockquote>
-                                        - "pd" means persistent directory. Saved files outside this directory will be lost.
-                                        <br><br> - The manifest.json lists metadata of all exported files and can be used to download in
-                                        <a href="#DownloadFilesSDKWorkspaces">batches</a><br><br> - Note, that all exported data files will be saved in the
-                                        <code>/pd/data/healdata.org/</code> folder.<br><br> - Please also note, that the workspace mounts up to a
-                                        <span style="font-weight: bold">maximum of 5 different manifests</span> while the workspace is running but shows only the latest exported manifest in a newly launched workspace.
-                                        <br><br> - Terminating the workspace will result in the
-                                        <span style="font-weight: bold">loss of all but the latests
-                                        manifest</span>.<br><br>
+                                        - <span style="font-weight: bold">Attention</span>: Any personal files in the folder “data” will be lost. Personal files in the directory /pd will persist.
+                                        <br> <br> - Do not save files in the "data" and “data/brh.data-commons.org” folders.
+                                        <br> <br> - The folder “brh.data-commons.org” in the “data” folder will host the data files you have exported from the Discovery Page. <br><br>
                                     </blockquote>
 
 
-                                </ol> -->
+                                </li><br>
 
+                                <li>
+                                    Start a new notebook by clicking “New” in the top right corner and choose between Python 3 or R Studio as the base programmatic language. <br><br>
+                                    <img class="drop-shadow" src="img/workspace_new.png" alt="Workspace_new" style="width:80%">
+                                    <figcaption style="width:100%">
+                                        Start a new notebook under “New”.
+                                    </figcaption> <br> <br>
+                                </li>
 
+                                <li>
+                                    <span style="font-weight: bold">Experiment away!</span> Code blocks are entered in cells, which can be executed individually or all at once. Code documentation and comments can also be entered in cells, and the
+                                    cell type can be set to support Markdown.
+                                    <br><br> Results, including plots, tables, and graphics, can be generated in the workspace and downloaded as files.
+                                    <!-- <br><br> Users can import data files directly into the Notebook code after selecting files from the <a href="#SelectBringFilesDiscoveryToWorkspace">"Discovery Page"</a>. An example is shown below. <br><br>
 
-
-                                <h3 id="Workspaces" class="section-title">e) Workspaces</h3>
-                                <p>
-                                    BRH workspaces are secure data analysis environments in the cloud that can access data from one or more data resources. By default, Workspaces include Jupyter notebooks, Python and RStudio, but can be configured to host virtually any application, including
-                                    analysis workflows, data processing pipelines, or data visualization apps.
-                                </p>
-                                <blockquote>
-                                    <span style="font-weight: bold;">New to Jupyter?</span> Learn more about the popular tool for data scientists on <a href="https://jupyter.org/">Jupyter.org</a> (disclaimer: CTDS is not responsible for the content).
-                                </blockquote>
-                                <p>
-                                    Users need to register for workspace accounts to use the workspaces, as described below.
-                                </p>
-
-
-
-
-                                <h4 id="RegisterForWorkspaces" class="section-title">Register for Workspaces - STRIDES</h4>
-                                <p>
-                                    Users need to request for a <span style="font-weight: bold;">workspace account</span> to work in the workspaces of the BRH, see below for a guideline.
-                                </p>
-                                <p>
-                                    The workspace account is handled with the help of <span style="font-weight: bold;">NIH STRIDES</span> (NIH <span style="font-weight: bold;">S</span>cience and
-                                    <span style="font-weight: bold;">T</span>echnology <span style="font-weight: bold;">R</span>esearch <span style="font-weight: bold;">I</span>nfrastructure for <span style="font-weight: bold;">D</span>iscovery,
-                                    <span style="font-weight: bold;">E</span>xperimentation, and <span style="font-weight: bold;">S</span>ustainability). The NIH STRIDES Initiative allows NIH to explore the use of cloud environments to streamline NIH
-                                    data use by partnering with commercial providers.
-                                </p>
-                                <p>
-                                    By leveraging the STRIDES Initiative, NIH and NIH-funded institutions can begin to create a robust, interconnected ecosystem that breaks down silos related to generating, analyzing, and sharing research data.
-                                </p>
-                                <p>
-                                    NIH-funded researchers with an active NIH award may take advantage of the STRIDES Initiative for their NIH-funded research projects. Eligible researchers include NIH intramural researchers and awardees of NIH contracts, other transaction agreements, grants,
-                                    cooperative agreements, and other agreements. More information on NIH STRIDES and how to gain access can be found <a href="https://datascience.nih.gov/strides">here</a>.
-                                </p>
-
-
-
-
-                                <h5 id="HowToRegisterGuideline" class="section-title">Guideline how to register for Workspace Access</h5>
-                                <ol>
+                                    <img class="drop-shadow" src="img/workspace_import_manifest.png" alt="workspace_import_manifest" style="width:80%">-->
+                                    <br> <br>
                                     <li>
-                                        Start requesting a workspace account by visiting <a href="https://brh-portal.org/">https://brh-portal.org/</a> and logging in.
-                                        <br> <br>
-                                        <img class="drop-shadow" src="img/brh-portal-login.png" alt="brh-portal-login" style="width:80%">
+                                        Do not forget to terminate your workspace once your work is finished to be mindful of the cost-intensive computational effort.
+                                        <span style="font-weight: bold">Note, that Workspaces automatically
+                                    shut down after 90 minutes of <a href="#AutomaticWorkspaceShutdown">idle
+                                        time.</span></a>
+                                        <br><br>
+                                        <img class="drop-shadow" src="img/workspace_terminate_2.png" alt="Workspace_terminate" style="width:50%">
                                         <figcaption style="width:100%">
-                                            Log in on the BRH Admin Portal.
-                                        </figcaption> <br> <br>
+                                            Do not forget to terminate your workspace once your work is finished. Unterminated workspaces continue to accrue computational costs.
+                                        </figcaption> <br><br>
                                     </li>
-                                    <li>
-                                        After authorization, users will see the landing page, which displays current workspace accounts and credits once workspaces access and credits/grants have been approved. <br> <br>To start the process of requesting
-                                        a new workspace account, users need to select "Request New Workspace" on the landing page.
-                                        <br> <br>
-                                        <img class="drop-shadow" src="img/brh-portal-request.png" alt="brh-portal-request" style="width:80%">
-                                        <figcaption style="width:100%">
-                                            <!-- Log in on the BRH Admin Portal. -->
-                                        </figcaption> <br> <br>
-                                    </li>
-                                    <li>
-                                        Choose one of the two options a) STRIDES Grant/Award Funded or b) STRIDES Credits to request a workspace account.
-                                        <br> <br>
-                                        <img class="drop-shadow" src="img/brh-portal-options.png" alt="brh-portal-options" style="width:80%">
-                                        <figcaption style="width:100%">
-                                            <!-- Log in on the BRH Admin Portal. -->
-                                        </figcaption>
-                                        <blockquote>
-                                            For information on the NIH STRIDES options, please refer to <a href="https://datascience.nih.gov/strides">the official page</a>.
-                                        </blockquote>
-                                    </li>
-                                    <ul>
-                                        <li>
-                                            The <span style="font-weight: bold;">STRIDES Grant/Award Funded</span> form can be selected if researchers have received NIH funding (e.g. a grant, contract, cooperative agreement, or other transaction agreement)
-                                            and intend to use these funds for the BRH account. With this option, the researchers' organization will be responsible for payment.<br><br>
-                                            <img class="drop-shadow" src="img/brh-portal-strides-grant.png" alt="brh-portal-strides-grant" style="width:80%">
-                                            <figcaption style="width:100%">
-                                                Request form for "STRIDES Grant/Award Funded".
-                                            </figcaption> <br> <br>
-                                        </li>
-                                        <li>
-                                            The <span style="font-weight: bold;">STRIDES Credits</span> form can be selected if users are requesting credits from the NIH STRIDES Initiative for the BRH account. With this option, once the request is approved,
-                                            a new account with a spending limit of $XXX will be provisioned for usage.<br><br>
-                                            <img class="drop-shadow" src="img/brh-portal-strides-credits.png" alt="brh-portal-strides-credits" style="width:80%">
-                                            <figcaption style="width:100%">
-                                                Request form for "STRIDES Credits".
-                                            </figcaption> <br> <br>
-                                        </li>
-                                    </ul>
+                            </ol>
 
-                                    <li>
-                                        Submit the request. Note that the process of granting access for a workspace account can take up to two weeks and users will be notified. Following the approval, users will see the current workspace accounts and credits on the landing page.
-                                    </li>
+                            <p>
+                                Further reading: read more about how to download data files into the Workspaces
+                                <a href="#DownloadFilesSDKWorkspaces">here</a>.
+                            </p>
 
 
-                                </ol>
+                            <h4 id="UploadSaveDownload" class="section-title">Upload, save, and download Files/Notebooks
+                            </h4>
+                            <p>
+                                Users can <span style="font-weight: bold;">upload</span> data files or Notebooks from the local machine to the home directory by clicking on “Upload” and access them in the Notebook (see below).
+                            </p>
+                            <img class="drop-shadow" src="img/workspace_upload.png" alt="Workspace_upload" style="width:80%">
+                            <figcaption style="width:100%">
+                                Upload data files or Notebooks to the workspace by clicking on “Upload” in the top right corner.
+                                <!-- On the upload screen, find your text file (in this example it is "this_is_a_demo.txt") to upload from your local computer. -->
+                            </figcaption> <br> Then run in the cells, for example:<br>
+                            <code>
+            import os <br>
+            import pandas as pd <br>
+            os.chdir('/data') <br>
+            demo_df = pd.read_csv('/this_is_a_demo.txt', sep='\t') <br>
+            demo_df.head() <br>
+        </code><br>
+
+                            <p>
+                                Users can <span style="font-weight: bold;">save</span> the notebook by clicking "File" - "Save as", as shown below.
+                            </p>
+                            <img class="drop-shadow" src="img/workspace_notebook_save.png" alt="workspace_notebook_save" style="width:80%">
+                            <figcaption style="width:100%">
+                                Save the notebook under “File” - "Save as".
+                            </figcaption>
+
+                            <p>
+                                Users can <span style="font-weight: bold;">download</span> notebooks by clicking "File" - "Download as", as shown below.
+                            </p>
+                            <img class="drop-shadow" src="img/workspace_notebook_download.png" alt="workspace_notebook_download" style="width:80%">
+                            <figcaption style="width:100%">
+                                Download the notebook for example as ".ipynb".
+                            </figcaption>
 
 
-                                <h4 id="GuidelineToGetStarted" class="section-title">Guideline to get started in Workspaces</h4>
-                                <p>
-                                    Once users have access to workspaces, find below a guide of how to get started with analysis work in workspaces.
-                                </p>
-                                <ol>
-                                    <li>
-                                        Users need to log in via <a href="https://brh.data-commons.org//login">https://brh.data-commons.org/login</a> to access workspaces.
-                                    </li> <br>
-                                    <li>
-                                        After navigating to <a href="https://brh.data-commons.org/workspace">https://brh.data-commons.org/workspace</a>, users will discover a list of pre-configured virtual machine (VM) images, as shown below.
-                                        <br> <br>
-                                        <img class="drop-shadow" src="img/workspace_flavors.png" alt="Workspace_flavors" style="width:80%">
-                                        <figcaption style="width:100%">
-                                            Available workspaces on BRH.
-                                            <!-- Users may need to link their accounts from other repositories (bottom; click <a href="#LinkingAccessTo">here
-                                            to see
-                                            how</a>). -->
-                                        </figcaption> <br> <br>
-                                    </li>
-                                    <ul>
-                                        <li>
-                                            <span style="font-weight: bold">(Generic) Jupyter Notebook with R kernel</span>: Choose this VM if you are familiar with setting up Python- or R-based Notebooks, or if you just exported one or multiple studies
-                                            from the Discovery Page and want to start your custom analysis.
-                                        </li>
-                                        <li>
-                                            <span style="font-weight: bold">(Generic, User-licensed) Stata Notebook</span>: Choose this VM if you are familiar with STATA-based data analysis. This notebook requires a STATA license.
-                                        </li>
-                                        <li>
-                                            <span style="font-weight: bold">Tutorial Notebooks</span>: Explore our Jupyter Notebook tutorials written in Python or RStudio, which pull data from various sources of the Biomedical Research Hub to leverage
-                                            statistical programs and data analysis tools.
-                                            <!-- <br><br> All interactive tutorial notebooks can be also found as
-                                            <a href="https://healdata.org/resource-browser">static version on the
-                                            Notebook Browser tab</a>; read more in the section <a href="#StaticNotebooks">"Example Analysis"</a>.
-                                            <br> <br> Feel free to edit and experiment with this collection of notebooks. They are your personal copies! <br><br> -->
-                                            <!-- <ul>
-                                                <li>
-                                                    <em>Notebooks in Python</em>: (1) BACPAC Synthetic Data Analysis, (2) JCOIN Tracking Opioid Stigma, (3) Opioid Overdose Trajectories, (4) Opioid Prevalence And Overdoses
-                                                </li>
-                                                <li>
-                                                    <em>Notebooks in RStudio</em>: (1) Opioid Environment Toolkit and OEPS
-                                                </li>
-                                            </ul> -->
-                                        </li>
-                                    </ul> <br>
-                                    <li>
-                                        Click “Launch” on any of the above workspace flavors to spin up a copy of that VM. Note: Launching the VM may take several minutes.<br><br>
-                                        <img class="drop-shadow" src="img/workspace_launch.png" alt="Workspace_launch" style="width:80%">
-                                        <figcaption style="width:100%">
-                                            The status of launching the workspace is displayed after clicking on “Launch”.
-                                        </figcaption> <br>
-                                    </li><br>
-                                    <li>
-                                        After launching, the home folders are displayed, one of which is the user's persistent drive ("pd"). <br><br>
-                                        <img class="drop-shadow" src="img/workspace_data_folder.png" alt="Workspace_data_folder" style="width:80%">
-                                        <figcaption style="width:100%">
-                                            The /pd directory is a user’s persistent drive.
-                                        </figcaption> <br>
 
-                                    </li>
-                                    <li>
-                                        Select the /pd folder. Only files saved in the /pd directory will remain available after termination of a workspace session. <br><br>
-                                        <img class="drop-shadow" src="img/workspace_pd_folder.png" alt="Workspace_pd_folder" style="width:80%">
-                                        <figcaption style="width:100%">
-                                            New files or licenses should be saved in the the /pd directory if users need to access them after restarting the workspaces.
-                                        </figcaption> <br>
-
-                                        <blockquote>
-                                            - <span style="font-weight: bold">Attention</span>: Any personal files in the folder “data” will be lost. Personal files in the directory /pd will persist.
-                                            <br> <br> - Do not save files in the "data" and “data/brh.data-commons.org” folders.
-                                            <br> <br> - The folder “brh.data-commons.org” in the “data” folder will host the data files you have exported from the Discovery Page. <br><br>
-                                        </blockquote>
+                            <h4 id="AvailableWorkspaceTools" class="section-title">Environments, Languages, and Tools
+                            </h4>
+                            <p>
+                                The following <span style="font-weight: bold">environments</span> are available in the workspaces:
+                            </p>
+                            <ul>
+                                <li>
+                                    Jupyter<br>
+                                    <img src="img/workspace_jupyter_logo.png" alt="workspace_jupyter_logo" style="width:20%">
+                                </li>
+                                <li>
+                                    RStudio<br>
+                                    <img src="img/workspace_RStudio_logo.png" alt="workspace_RStudio_logo" style="width:20%"> <br>
 
 
-                                    </li><br>
+                                </li>
+                            </ul>
+                            </hp>
+                            <p>
+                                The following <span style="font-weight: bold">programmatic languages</span> are available in Jupyter Notebooks:
+                            </p>
+                            <ul>
+                                <li>
+                                    RStudio (<a href="#PythonRInJupyter">read more</a>)
+                                </li>
+                                <li>
+                                    Python 3 (<a href="#PythonRInJupyter">read more</a>)
+                                </li>
+                                <li>
+                                    STATA (<a href="#STATAinNotebooks">read more</a>)
+                                </li>
+                            </ul>
+                            </p>
 
-                                    <li>
-                                        Start a new notebook by clicking “New” in the top right corner and choose between Python 3 or R Studio as the base programmatic language. <br><br>
-                                        <img class="drop-shadow" src="img/workspace_new.png" alt="Workspace_new" style="width:80%">
-                                        <figcaption style="width:100%">
-                                            Start a new notebook under “New”.
-                                        </figcaption> <br> <br>
-                                    </li>
-
-                                    <li>
-                                        <span style="font-weight: bold">Experiment away!</span> Code blocks are entered in cells, which can be executed individually or all at once. Code documentation and comments can also be entered in cells, and the
-                                        cell type can be set to support Markdown.
-                                        <br><br> Results, including plots, tables, and graphics, can be generated in the workspace and downloaded as files.
-                                        <!-- <br><br> Users can import data files directly into the Notebook code after selecting files from the <a href="#SelectBringFilesDiscoveryToWorkspace">"Discovery Page"</a>. An example is shown below. <br><br>
-
-                                        <img class="drop-shadow" src="img/workspace_import_manifest.png" alt="workspace_import_manifest" style="width:80%">-->
-                                        <br> <br>
-                                        <li>
-                                            Do not forget to terminate your workspace once your work is finished to be mindful of the cost-intensive computational effort.
-                                            <span style="font-weight: bold">Note, that Workspaces automatically
-                                        shut down after 90 minutes of <a href="#AutomaticWorkspaceShutdown">idle
-                                            time.</span></a>
-                                            <br><br>
-                                            <img class="drop-shadow" src="img/workspace_terminate_2.png" alt="Workspace_terminate" style="width:50%">
-                                            <figcaption style="width:100%">
-                                                Do not forget to terminate your workspace once your work is finished. Unterminated workspaces continue to accrue computational costs.
-                                            </figcaption> <br><br>
-                                        </li>
-                                </ol>
-
-                                <p>
-                                    Further reading: read more about how to download data files into the Workspaces
-                                    <a href="#DownloadFilesSDKWorkspaces">here</a>.
-                                </p>
+                            <p>
+                                The following <span style="font-weight: bold">tools</span> are available in Jupyter Notebooks:
+                            </p>
+                            <ul>
+                                <li>
+                                    GitHub (<a href="https://docs.github.com/en">read GitHub documentation</a>)
+                                </li>
+                            </ul>
 
 
-                                <h4 id="UploadSaveDownload" class="section-title">Upload, save, and download Files/Notebooks
-                                </h4>
-                                <p>
-                                    Users can <span style="font-weight: bold;">upload</span> data files or Notebooks from the local machine to the home directory by clicking on “Upload” and access them in the Notebook (see below).
-                                </p>
-                                <img class="drop-shadow" src="img/workspace_upload.png" alt="Workspace_upload" style="width:80%">
-                                <figcaption style="width:100%">
-                                    Upload data files or Notebooks to the workspace by clicking on “Upload” in the top right corner.
-                                    <!-- On the upload screen, find your text file (in this example it is "this_is_a_demo.txt") to upload from your local computer. -->
-                                </figcaption> <br> Then run in the cells, for example:<br>
+                            <h4 id="PythonRInJupyter" class="section-title">Python 3 and RStudio in Jupyter</h4>
+                            <p>
+                                Both Python 3 and RStudio are available in Jupyter Notebooks.<br> Users can expect to be able to use typical Python or RStudio packages, such as PyPI or CRAN. For Python and RStudio, users can start a new notebook under
+                                "New", as shown below.
+                            </p>
+                            <img class="drop-shadow" src="img/workspace_new.png" alt="Workspace_new" style="width:80%">
+                            <figcaption style="width:100%">
+                                Find Python 3 or RStudio when starting a new notebook under “New”.
+                            </figcaption>
+
+
+
+                            <h4 id="STATAinNotebooks" class="section-title">STATA in Jupyter </h4>
+                            <p>
+                                STATA is available as language in Jupyter notebooks (either in Python or R kernels), but requires a license and a specific workspace.
+                            </p>
+                            <p>
+                                Users need to first choose the following workspace "(Generic, User-licensed) Stata Notebook" in order to be able to use STATA:
+                            </p>
+                            <img class="drop-shadow" src="img/stata_user_licensed.png" alt="stata_user_licensed" style="width:30%">
+                            <figcaption style="width:100%">
+                                Select this workspace to use STATA in the notebook.
+                            </figcaption>
+
+
+                            <p>
+                                Users need to upload a license <code>stata.lic</code> to the /pd folder by selecting "Upload" (top right).
+                            </p>
+                            <img class="drop-shadow" src="img/stata_lic.png" alt="stata_lic" style="width:80%">
+                            <figcaption style="width:100%">
+                                If the upload was successful, the license appears in the directory /pd.
+                            </figcaption>
+                            <p>
+                                <em>Note</em>, that uploading the license can also be achieved programmatically by opening a new terminal window under "New" - "Terminal", finding the directory /pd by typing:
                                 <code>
-                import os <br>
-                import pandas as pd <br>
-                os.chdir('/data') <br>
-                demo_df = pd.read_csv('/this_is_a_demo.txt', sep='\t') <br>
-                demo_df.head() <br>
-            </code><br>
+                cd pd
+            </code>. Then, create a file using vim:
+                                <code>
+                vim stata.lic
+            </code>. This will open the file in the terminal. Users can copy the license, then hit <code>:</code> +
+                                <code>wq</code>.
+                            </p>
+                            <p>
+                                Then, users need to start a new notebook under "New" (choose either R or Python). Run the following code in the first cell: <br>
+                                <code>
+                import stata_setup <br>
+                stata_setup.config("/usr/local/stata17", "mp")<br>
+            </code>
+                            </p>
+                            <p>
+                                This will return the following:
+                            </p>
+                            <img class="drop-shadow" src="img/stata_setup_imports.png" alt="stata_setup_imports" style="width:80%">
+                            <figcaption style="width:100%">
+                                Setup the license in the first cell.
+                            </figcaption>
 
-                                <p>
-                                    Users can <span style="font-weight: bold;">save</span> the notebook by clicking "File" - "Save as", as shown below.
-                                </p>
-                                <img class="drop-shadow" src="img/workspace_notebook_save.png" alt="workspace_notebook_save" style="width:80%">
-                                <figcaption style="width:100%">
-                                    Save the notebook under “File” - "Save as".
-                                </figcaption>
-
-                                <p>
-                                    Users can <span style="font-weight: bold;">download</span> notebooks by clicking "File" - "Download as", as shown below.
-                                </p>
-                                <img class="drop-shadow" src="img/workspace_notebook_download.png" alt="workspace_notebook_download" style="width:80%">
-                                <figcaption style="width:100%">
-                                    Download the notebook for example as ".ipynb".
-                                </figcaption>
-
-
-
-                                <h4 id="AvailableWorkspaceTools" class="section-title">Environments, Languages, and Tools
-                                </h4>
-                                <p>
-                                    The following <span style="font-weight: bold">environments</span> are available in the workspaces:
-                                </p>
-                                <ul>
-                                    <li>
-                                        Jupyter<br>
-                                        <img src="img/workspace_jupyter_logo.png" alt="workspace_jupyter_logo" style="width:20%">
-                                    </li>
-                                    <li>
-                                        RStudio<br>
-                                        <img src="img/workspace_RStudio_logo.png" alt="workspace_RStudio_logo" style="width:20%"> <br>
+                            <p> Users can then begin using the notebook by typing in known STATA commands, for example
+                                <code>
+                %% stata . describe
+            </code>.
+                            </p>
 
 
-                                    </li>
-                                </ul>
-                                </hp>
-                                <p>
-                                    The following <span style="font-weight: bold">programmatic languages</span> are available in Jupyter Notebooks:
-                                </p>
-                                <ul>
-                                    <li>
-                                        RStudio (<a href="#PythonRInJupyter">read more</a>)
-                                    </li>
-                                    <li>
-                                        Python 3 (<a href="#PythonRInJupyter">read more</a>)
-                                    </li>
-                                    <li>
-                                        STATA (<a href="#STATAinNotebooks">read more</a>)
-                                    </li>
-                                </ul>
-                                </p>
-
-                                <p>
-                                    The following <span style="font-weight: bold">tools</span> are available in Jupyter Notebooks:
-                                </p>
-                                <ul>
-                                    <li>
-                                        GitHub (<a href="https://docs.github.com/en">read GitHub documentation</a>)
-                                    </li>
-                                </ul>
+                            <!-- <h4 id="TroubleshootingWorkspaces" class="section-title">Troubleshooting</h4>
+                            <ul>
+                                <li>
+                                    If the kernel died, make sure to be logged in on 1) <a href="#LoginPage">the Login
+                                    Page</a> 2) <a href="#LinkingAccessTo">have enabled access to the FAIR enabled
+                                    repository</a>
+                                </li>
+                            </ul> -->
 
 
-                                <h4 id="PythonRInJupyter" class="section-title">Python 3 and RStudio in Jupyter</h4>
-                                <p>
-                                    Both Python 3 and RStudio are available in Jupyter Notebooks.<br> Users can expect to be able to use typical Python or RStudio packages, such as PyPI or CRAN. For Python and RStudio, users can start a new notebook under
-                                    "New", as shown below.
-                                </p>
-                                <img class="drop-shadow" src="img/workspace_new.png" alt="Workspace_new" style="width:80%">
-                                <figcaption style="width:100%">
-                                    Find Python 3 or RStudio when starting a new notebook under “New”.
-                                </figcaption>
+                            <h4 id="AutomaticWorkspaceShutdown" class="section-title">Automatic Workspace Shutdown</h4>
+                            <p>
+                                <em>Warning</em>: When a BRH Workspace reaches the STRIDES Credits limit for STRIDES Credits Workspaces or reaches the Hard Limit for STRIDES Grant Workspaces, the Workspace will be automatically terminated. Please be sure to save any work before reaching the STRIDES Credit or Hard Limit.
+                            </p>
+                            <p>
+                                <em>Warning</em>: Workspaces will also automatically shut down after 90 minutes of idle time and a pop-up window will remind users before the workspace shuts down.
+                            </p>
+                            <img class="drop-shadow" src="img/workspace_shutdown_sign_2.png" alt="workspace_shutdown_sign_2" style="width:90%">
+                            <figcaption>
+                                A pop-up window will remind users to navigate back to the workspaces page in order to save the data.
+                            </figcaption> <br>
+
+
+                            <!-- <p>
+                                After the workspace has been shut down, users will be notified with the following pop-up window.
+                            </p>
+                            <img class="drop-shadow" src="img/workspace_shutdown_sign_1.png" alt="workspace_shutdown_sign_1" style="width:50%">
+                            <figcaption>
+                                Workspaces automatically shut down after 90 minutes of idle time.
+                            </figcaption> -->
 
 
 
-                                <h4 id="STATAinNotebooks" class="section-title">STATA in Jupyter </h4>
-                                <p>
-                                    STATA is available as language in Jupyter notebooks (either in Python or R kernels), but requires a license and a specific workspace.
-                                </p>
-                                <p>
-                                    Users need to first choose the following workspace "(Generic, User-licensed) Stata Notebook" in order to be able to use STATA:
-                                </p>
-                                <img class="drop-shadow" src="img/stata_user_licensed.png" alt="stata_user_licensed" style="width:30%">
-                                <figcaption style="width:100%">
-                                    Select this workspace to use STATA in the notebook.
-                                </figcaption>
 
-
-                                <p>
-                                    Users need to upload a license <code>stata.lic</code> to the /pd folder by selecting "Upload" (top right).
-                                </p>
-                                <img class="drop-shadow" src="img/stata_lic.png" alt="stata_lic" style="width:80%">
-                                <figcaption style="width:100%">
-                                    If the upload was successful, the license appears in the directory /pd.
-                                </figcaption>
-                                <p>
-                                    <em>Note</em>, that uploading the license can also be achieved programmatically by opening a new terminal window under "New" - "Terminal", finding the directory /pd by typing:
-                                    <code>
-                    cd pd
-                </code>. Then, create a file using vim:
-                                    <code>
-                    vim stata.lic
-                </code>. This will open the file in the terminal. Users can copy the license, then hit <code>:</code> +
-                                    <code>wq</code>.
-                                </p>
-                                <p>
-                                    Then, users need to start a new notebook under "New" (choose either R or Python). Run the following code in the first cell: <br>
-                                    <code>
-                    import stata_setup <br>
-                    stata_setup.config("/usr/local/stata17", "mp")<br>
-                </code>
-                                </p>
-                                <p>
-                                    This will return the following:
-                                </p>
-                                <img class="drop-shadow" src="img/stata_setup_imports.png" alt="stata_setup_imports" style="width:80%">
-                                <figcaption style="width:100%">
-                                    Setup the license in the first cell.
-                                </figcaption>
-
-                                <p> Users can then begin using the notebook by typing in known STATA commands, for example
-                                    <code>
-                    %% stata . describe
-                </code>.
-                                </p>
-
-
-                                <!-- <h4 id="TroubleshootingWorkspaces" class="section-title">Troubleshooting</h4>
-                                <ul>
-                                    <li>
-                                        If the kernel died, make sure to be logged in on 1) <a href="#LoginPage">the Login
-                                        Page</a> 2) <a href="#LinkingAccessTo">have enabled access to the FAIR enabled
-                                        repository</a>
-                                    </li>
-                                </ul> -->
-
-
-                                <h4 id="AutomaticWorkspaceShutdown" class="section-title">Automatic Workspace Shutdown</h4>
-                                <p>
-                                    Workspaces automatically shut down after 90 minutes of idle time and a pop-up window will remind users before the workspace shuts down.
-                                </p>
-                                <img class="drop-shadow" src="img/workspace_shutdown_sign_2.png" alt="workspace_shutdown_sign_2" style="width:90%">
-                                <figcaption>
-                                    A pop-up window will remind users to navigate back to the workspaces page in order to save the data.
-                                </figcaption> <br>
-
-                                <!-- <p>
-                                    After the workspace has been shut down, users will be notified with the following pop-up window.
-                                </p>
-                                <img class="drop-shadow" src="img/workspace_shutdown_sign_1.png" alt="workspace_shutdown_sign_1" style="width:50%">
-                                <figcaption>
-                                    Workspaces automatically shut down after 90 minutes of idle time.
-                                </figcaption> -->
 
 
 
@@ -1562,7 +1603,7 @@
 
  -->
 
-                                <h3 id="ProfilePage" class="section-title">f) Profile Page</h3>
+                                <h3 id="ProfilePage" class="section-title">g) Profile Page</h3>
                                 <p>
                                     On the profile page users will find information regarding their access to projects, access to Gen3-specific tools (e.g. access to the /workspace), and the function to create API keys for credential downloads. API keys are necessary for the download of
                                     files using the Gen3-client; for more information see chapter 5.
