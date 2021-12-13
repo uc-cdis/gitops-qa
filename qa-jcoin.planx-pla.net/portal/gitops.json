@@ -737,5 +737,5 @@
       "method": "read",
       "service": "dashboard"
     }
-  },
+  }
 }
