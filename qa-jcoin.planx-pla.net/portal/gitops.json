@@ -732,7 +732,7 @@
   "showArboristAuthzOnProfile": true,
   "showFenceAuthzOnProfile": false,
   "componentToResourceMapping": {
-    "Dashboard": {
+    "HUB Documentation": {
       "resource": "/dashboard",
       "method": "access",
       "service": "dashboard"
