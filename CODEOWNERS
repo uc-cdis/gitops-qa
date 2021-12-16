@@ -1,16 +1,16 @@
-qa-acct.planx-pla.net @ac3eb @themarcelor @haraprasadj @atharvar28
-qa-bloodpac.planx-pla.net @fantix @themarcelor @haraprasadj @atharvar28
-qa-canine.planx-pla.net @trevars @themarcelor @haraprasadj @atharvar28
-qa.planx-pla.net @themarcelor
-qaplanetv2.planx-pla.net
+qa-acct.planx-pla.net @haraprasadj @atharvar28 @jingh8
+qa-bloodpac.planx-pla.net @haraprasadj @atharvar28 @jingh8
+qa-canine.planx-pla.net @trevars @haraprasadj @atharvar28 @jingh8
+qa.planx-pla.net @haraprasadj @atharvar28 @jingh8
+qaplanetv2.planx-pla.net @haraprasadj @atharvar28 @jingh8
 
 qa-mickey.planx-pla.net @jingh8
 qa-brain.planx-pla.net @jingh8
 
-qa-anvil.planx-pla.net @themarcelor
-qa-dcf.planx-pla.net @themarcelor
-qa-dcfdemo.planx-pla.net @themarcelor
-qa-dcp.planx-pla.net @themarcelor
+qa-anvil.planx-pla.net @atharvar28
+qa-dcf.planx-pla.net @atharvar28
+qa-dcfdemo.planx-pla.net @atharvar28
+qa-dcp.planx-pla.net @jingh8
 
 qa-aids.planx-pla.net @atharvar28
 qa-covid19.planx-pla.net @atharvar28
@@ -25,8 +25,10 @@ qa-tb.planx-pla.net @atharvar28
 
 qa-heal.planx-pla.net @haraprasadj
 
-jenkins-blood.planx-pla.net @themarcelor @haraprasadj @atharvar28 @jingh8
-jenkins-brain.planx-pla.net @themarcelor @haraprasadj @atharvar28 @jingh8
-jenkins-dcp.planx-pla.net @themarcelor @haraprasadj @atharvar28 @jingh8
-jenkins-genomel.planx-pla.net @themarcelor @haraprasadj @atharvar28 @jingh8
-jenkins-niaid.planx-pla.net @themarcelor @haraprasadj @atharvar28 @jingh8
+jenkins-blood.planx-pla.net @haraprasadj @atharvar28 @jingh8
+jenkins-brain.planx-pla.net @haraprasadj @atharvar28 @jingh8
+jenkins-dcp.planx-pla.net @haraprasadj @atharvar28 @jingh8
+jenkins-genomel.planx-pla.net @haraprasadj @atharvar28 @jingh8
+jenkins-niaid.planx-pla.net @haraprasadj @atharvar28 @jingh8
+jenkins-new.planx-pla.net @haraprasadj @atharvar28 @jingh8
+jenkins-perf.planx-pla.net @haraprasadj @atharvar28 @jingh8
