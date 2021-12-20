@@ -8,7 +8,7 @@
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
-      "subnet": 0, 
+      "subnet": 0,
       "region": "us-east-1"
     },
     {
@@ -95,7 +95,7 @@
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "quay.io/cdis/ecs-ws-sidecar:master",
+    "image": "quay.io/cdis/ecs-ws-sidecar:integration202201",
     "env": {
       "NAMESPACE": "qa-heal"
     },
@@ -120,7 +120,9 @@
       "memory-limit": "2Gi",
       "name": "(Generic) Jupyter Notebook with R Kernel",
       "image": "quay.io/cdis/jupyter-superslim-r:master",
-      "env": {"FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"},
+      "env": {
+        "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
+      },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",
