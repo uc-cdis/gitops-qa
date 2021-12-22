@@ -4,15 +4,15 @@
   "user-volume-size": "10Gi",
   "pay-models": [
     {
-      "user": "qureshi@uchicago.edu",
+      "user_id": "qureshi@uchicago.edu",
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
-      "subnet": 0, 
+      "subnet": 0,
       "region": "us-east-1"
     },
     {
-      "user": "mshao1@uchicago.edu",
+      "user_id": "mshao1@uchicago.edu",
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
@@ -20,7 +20,7 @@
       "region": "us-east-1"
     },
     {
-      "user": "craigrbarnes@uchicago.edu",
+      "user_id": "craigrbarnes@uchicago.edu",
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
@@ -28,7 +28,7 @@
       "region": "us-east-1"
     },
     {
-      "user": "cgmeyer@uchicago.edu",
+      "user_id": "cgmeyer@uchicago.edu",
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
@@ -36,7 +36,7 @@
       "region": "us-east-1"
     },
     {
-      "user": "jmontmaxwell@uchicago.edu",
+      "user_id": "jmontmaxwell@uchicago.edu",
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
@@ -44,7 +44,7 @@
       "region": "us-east-1"
     },
     {
-      "user": "mcannalte@uchicago.edu",
+      "user_id": "mcannalte@uchicago.edu",
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
@@ -52,7 +52,7 @@
       "region": "us-east-1"
     },
     {
-      "user": "haraprasadj@uchicago.edu",
+      "user_id": "haraprasadj@uchicago.edu",
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
@@ -60,7 +60,7 @@
       "region": "us-east-1"
     },
     {
-      "user": "nmetokishlubsky@uchicago.edu",
+      "user_id": "nmetokishlubsky@uchicago.edu",
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
@@ -68,7 +68,7 @@
       "region": "us-east-1"
     },
     {
-      "user": "hughestr@uchicago.edu",
+      "user_id": "hughestr@uchicago.edu",
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
@@ -76,7 +76,7 @@
       "region": "us-east-1"
     },
     {
-      "user": "xritter@uchicago.edu",
+      "user_id": "xritter@uchicago.edu",
       "aws_account_id": "354484406138",
       "name": "brhworkspaces",
       "ecs": "true",
@@ -84,7 +84,7 @@
       "region": "us-east-1"
     },
     {
-      "user": "test@example.com",
+      "user_id": "test@example.com",
       "aws_account_id": "354484406138",
       "ecs": "true",
       "subnet": 10,
@@ -95,7 +95,7 @@
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "quay.io/cdis/ecs-ws-sidecar:master",
+    "image": "quay.io/cdis/ecs-ws-sidecar:integration202201",
     "env": {
       "NAMESPACE": "qa-heal"
     },
@@ -120,7 +120,9 @@
       "memory-limit": "2Gi",
       "name": "(Generic) Jupyter Notebook with R Kernel",
       "image": "quay.io/cdis/jupyter-superslim-r:master",
-      "env": {"FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"},
+      "env": {
+        "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
+      },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",
@@ -241,7 +243,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Tutorial) Bacpac Synthetic Data Analysis Notebook",
-      "image": "quay.io/cdis/heal-notebooks:bacpac__ee9b633f80525f98e809199584d9072437215ee4",
+      "image": "quay.io/cdis/heal-notebooks:bacpac__10670ad79b4488cfa9f1b3681ce52bc3f1139b5a",
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
@@ -271,7 +273,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Tutorial) Opioid Prevalence And Overdoses Notebook",
-      "image": "quay.io/cdis/heal-notebooks:cdcdea__d79f640e135c6d863304f5f9fbd689886fb9fead",
+      "image": "quay.io/cdis/heal-notebooks:cdcdea__2c94886708fbf7454b6e54f64eb844886d0c3a93",
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
@@ -301,7 +303,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Tutorial) Opioid Overdose Trajectories Notebook",
-      "image": "quay.io/cdis/heal-notebooks:cdcwonder__c7354ce26e2302dba64152f749753295b4918762",
+      "image": "quay.io/cdis/heal-notebooks:cdcwonder__fd15dab0198c6dd0da71e6806ac690c7c8632fa7",
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },

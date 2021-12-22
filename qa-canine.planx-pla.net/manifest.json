@@ -117,7 +117,8 @@
     "sync_from_dbgap": "False",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
     "dispatcher_job_num": "10",
-    "netpolicy": "on"
+    "netpolicy": "on",
+    "lb_type": "internal"
   },
   "canary": {
     "default": 0

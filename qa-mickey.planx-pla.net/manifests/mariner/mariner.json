@@ -29,7 +29,7 @@
   "containers": {
     "engine": {
       "name": "mariner-engine",
-      "image": "quay.io/cdis/mariner-engine:2020.12",
+      "image": "quay.io/cdis/mariner-engine:feat_initwkdir-commons",
       "pull_policy": "always",
       "command": [
         "/mariner",
@@ -41,11 +41,14 @@
           "memory": "8Gi",
           "cpu": "800m"
         }
+      },
+      "securitycontext": {
+        "privileged": true
       }
     },
     "s3sidecar": {
       "name": "mariner-s3sidecar",
-      "image": "quay.io/cdis/mariner-s3sidecar:2020.12",
+      "image": "quay.io/cdis/mariner-s3sidecar:feat_initwkdir-commons",
       "pull_policy": "always",
       "command": [
         "/sidecar"
@@ -62,7 +65,7 @@
     },
     "gen3fusesidecar": {
       "name": "mariner-gen3fusesidecar",
-      "image": "quay.io/cdis/gen3fuse-sidecar:2020.12",
+      "image": "quay.io/cdis/gen3fuse-sidecar:feat_initwkdir-commons",
       "pull_policy": "always",
       "command": [
         "/bin/bash",

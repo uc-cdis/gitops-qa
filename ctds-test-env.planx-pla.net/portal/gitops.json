@@ -1,0 +1,201 @@
+{
+    "graphql": {
+        "boardCounts": [
+        ],
+        "chartCounts": [
+        ],
+        "projectDetails": "boardCounts"
+    },
+    "components": {
+        "appName": "CTDS Test Environment",
+        "index": {
+            "introduction": {
+                "heading": "",
+                "text": "This is a test environment for in-progress features. It is populated with non-controlled access data (some of which requires controlled access authorization for testing). It is connected RAS's Staging Environment so production eRA Commons login credentials will NOT work. You must work with RAS to obtain credentials for their staging environment for use here. As a final note, there are many buttons, links, & UI-focused operations that may not work here. The UI is minimally set up as the primary focus for testing is against the API.",
+                "link": "."
+            },
+            "buttons": [
+            ],
+            "homepageChartNodes": [
+            ]
+        },
+        "navigation": {
+            "items": [
+                {
+                    "icon": "query",
+                    "link": "/discovery",
+                    "color": "#a2a2a2",
+                    "name": "Discovery"
+                },
+                {
+                    "icon": "profile",
+                    "link": "/identity",
+                    "color": "#a2a2a2",
+                    "name": "Profile"
+                }
+            ]
+        },
+        "topBar": {
+            "items": [
+            ]
+        },
+        "login": {
+            "title": "Gen3 Test Environment",
+            "subTitle": "Explore, Analyze, and Share Data",
+            "text": "This is a test environment for in-progress features. It is populated with non-controlled access data (some of which requires controlled access authorization for testing). It is connected RAS's Staging Environment so production eRA Commons login credentials will NOT work. You must work with RAS to obtain credentials for their staging environment for use here. As a final note, there are many buttons, links, & UI-focused operations that may not work here. The UI is minimally set up as the primary focus for testing is against the API.",
+            "contact": "If you have any questions about access or the registration process, please contact ",
+            "contact_link": {
+                "href": ""
+            },
+            "image": "stage-icons/stage-gene"
+        },
+        "footerLogos": [{
+                "src": "/src/img/gen3.png",
+                "href": "https://ctds.uchicago.edu/gen3",
+                "alt": "Gen3 Data Commons"
+            },
+            {
+                "src": "/src/img/createdby.png",
+                "href": "https://ctds.uchicago.edu/",
+                "alt": "Center for Translational Data Science at the University of Chicago"
+            },
+            {
+                "src": "/src/img/sponsors/nhlbi.png",
+                "href": "https://www.nhlbi.nih.gov",
+                "alt": "NHLBI"
+            }
+        ],
+        "footer": {
+            "links": [{
+                    "href": "https://biodatacatalyst.nhlbi.nih.gov/privacy/",
+                    "text": "Privacy Policy"
+                },
+                {
+                    "href": "https://osp.od.nih.gov/scientific-sharing/policies/",
+                    "text": "Data Sharing Policy"
+                },
+                {
+                    "text": "Freedom of Information Act (FOIA)",
+                    "href": "https://www.nhlbi.nih.gov/about/foia-fee-for-service-office"
+                },
+                {
+                    "text": "Accessibility Information",
+                    "href": "https://biodatacatalyst.nhlbi.nih.gov/accessibility"
+                },
+                {
+                    "text": "U.S. Department of Health & Human Services",
+                    "href": "https://www.hhs.gov"
+                },
+                {
+                    "text": "National Institutes of Health",
+                    "href": "https://www.nih.gov"
+                },
+                {
+                    "text": "National Heart, Lung, and Blood Institute",
+                    "href": "https://www.nhlbi.nih.gov"
+                },
+                {
+                    "text": "USA.gov",
+                    "href": "https://www.usa.gov"
+                }
+            ]
+        },
+        "categorical9Colors": [
+            "#c0143c",
+            "#616265",
+            "#59CD90",
+            "#F2DC5D",
+            "#40476D",
+            "#FFA630",
+            "#AE8799",
+            "#1A535C",
+            "#462255"
+        ],
+        "categorical2Colors": [
+            "#616265",
+            "#c0143c"
+        ]
+    },
+    "requiredCerts": [],
+    "featureFlags": {
+        "explorer": false
+    },
+    "dataExplorerConfig": {
+        "charts": {
+        },
+        "filters": {
+            "tabs": [
+            ]
+        },
+        "table": {
+            "enabled": false,
+            "fields": [
+
+            ]
+        },
+        "dropdowns": {
+            "download": {
+                "title": "Download"
+            }
+        },
+        "buttons": [
+            {
+                "enabled": false,
+                "type": "export-to-pfb",
+                "title": "Export to PFB",
+                "leftIcon": "datafile",
+                "rightIcon": "download"
+            }
+        ],
+        "getAccessButtonLink": "https://dbgap.ncbi.nlm.nih.gov/",
+        "terraExportURL": "",
+        "terraTemplate": [
+            "bdc",
+            "gen3"
+        ],
+        "sevenBridgesExportURL": ""
+    },
+    "fileExplorerConfig": {
+        "charts": {
+            "data_type": {
+                "chartType": "stackedBar",
+                "title": "File Type"
+            },
+            "data_format": {
+                "chartType": "stackedBar",
+                "title": "File Format"
+            }
+        },
+        "filters": {
+            "tabs": []
+        },
+        "table": {
+            "enabled": false,
+            "fields": [
+            ]
+        },
+        "buttons": [
+            {
+                "enabled": false,
+                "type": "export-files-to-pfb",
+                "title": "Export All to PFB",
+                "rightIcon": "external-link"
+            }
+        ],
+        "terraExportURL": "",
+        "terraTemplate": [
+            "bdc",
+            "gen3"
+        ],
+        "sevenBridgesExportURL": "",
+        "enableLimitedFilePFBExport": {
+            "sourceNodeField": "source_node"
+        },
+        "dropdowns": {}
+    },
+    "terraExportWarning": {
+        "subjectThreshold": 120000,
+        "title": "Warning: Data Transfer May Fail in Terra",
+        "message": "Warning: Your selected cohort contains more subjects than are currently supported for import by Terra. It is recommended that you slice your data into segments of no more than 120,000 subjects and then export each segment separately. Would you like to continue anyway?"
+    }
+}

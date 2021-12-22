@@ -1,4 +1,4 @@
- {
+{
   "user-namespace": "jupyter-pods-qa-covid19",
   "sub-dir": "/lw-workspace",
   "user-volume-size": "10Gi",
@@ -78,13 +78,14 @@
       "cpu-limit": "4.0",
       "memory-limit": "16Gi",
       "name": "A collection of Jupyter notebooks to explore health outcomes for COVID-19 thru noVNC",
-      "image": "quay.io/cdis/jupyter-covid19:jupyter-covid1.2.4",
+      "image": "quay.io/cdis/jupyter-covid19:jupyter-covid1.2.6",
       "env": {
         "NAMESPACE": "qa-covid19"
       },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy",
         "--NotebookApp.default_url=/lab/tree/welcome.html",
+        "--NotebookApp.shutdown_no_activity_timeout=240",
         "--NotebookApp.password=''",
         "--NotebookApp.token=''"
       ],

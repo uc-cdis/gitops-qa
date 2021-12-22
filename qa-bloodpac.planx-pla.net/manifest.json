@@ -132,7 +132,8 @@
     "public_datasets": true,
     "netpolicy": "on",
     "kube_bucket": "kube-qaplanetv1-gen3",
-    "logs_bucket": "logs-qaplanetv1-gen3"
+    "logs_bucket": "logs-qaplanetv1-gen3",
+    "lb_type": "internal"
   },
   "canary": {
     "default": 0
