@@ -118,13 +118,13 @@
       "target-port": 8888,
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
-      "name": "(Generic) Jupyter Notebook with R Kernel",
-      "image": "quay.io/cdis/jupyter-superslim-r:jupyter_lab_switch",
+      "name": "(Generic) Jupyter Lab Notebook with R Kernel",
+      "image": "quay.io/cdis/jupyter-superslim-r:master",
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
       "args": [
-        "--NotebookApp.base_url=/lw-workspace/proxy/",
+        "--NotebookApp.base_url=/lw-workspace/proxy/lab",
         "--NotebookApp.password=''",
         "--NotebookApp.token=''",
         "--NotebookApp.ip='*'",
@@ -139,9 +139,9 @@
       "command": [
         "start-notebook.sh"
       ],
-      "path-rewrite": "/lw-workspace/proxy/",
+      "path-rewrite": "/lw-workspace/proxy/lab",
       "use-tls": "false",
-      "ready-probe": "/lw-workspace/proxy/",
+      "ready-probe": "/lw-workspace/proxy/lab",
       "lifecycle-post-start": [
         "/bin/sh",
         "-c",
