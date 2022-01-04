@@ -124,7 +124,8 @@
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
       "args": [
-        "--NotebookApp.base_url=/lw-workspace/proxy/lab",
+        "--NotebookApp.base_url=/lw-workspace/proxy/",
+        "--NotebookApp.default_url=/lab",
         "--NotebookApp.password=''",
         "--NotebookApp.token=''",
         "--NotebookApp.ip='*'",
@@ -139,9 +140,9 @@
       "command": [
         "start-notebook.sh"
       ],
-      "path-rewrite": "/lw-workspace/proxy/lab",
+      "path-rewrite": "/lw-workspace/proxy/",
       "use-tls": "false",
-      "ready-probe": "/lw-workspace/proxy/lab",
+      "ready-probe": "/lw-workspace/proxy/",
       "lifecycle-post-start": [
         "/bin/sh",
         "-c",
