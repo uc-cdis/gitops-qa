@@ -144,16 +144,22 @@ body,
   height: 50px;
 }
 
-.footer__version-area {
-  width: 300px;
+ .footer__version-area {
+  display: none;
 }
 
 .footer {
+  background-color: #000;
+}
+
+.footer-container {
   align-items: center;
+  background-color: #000;
 }
 
 .footer__nav {
   align-items: center;
+  background-color: #000;
 }
 
 /* Data Explorer */
