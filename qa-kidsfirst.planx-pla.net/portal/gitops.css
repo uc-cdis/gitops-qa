@@ -17,3 +17,9 @@ a:focus {
   background-color: #F6921E;
   border-color: #F6921E;
   }
+  
+/* adjust spacing for added footer links */
+.protected-content,
+.login-page__side-box {
+  min-height: ~"calc(100vh - 264px)";
+}
