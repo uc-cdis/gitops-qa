@@ -503,8 +503,8 @@
           { "field": "title",
             "name": "Intervention Name"
           },
-          {  "field": "nct_number",
-             "name": "NCT Number"
+          { "field": "nct_number",
+            "name": "NCT Number"
           },
           {
             "field": "project_date_collected",
