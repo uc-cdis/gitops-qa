@@ -214,7 +214,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "Tutorial Jupyter Lab Notebooks",
-      "image": "quay.io/cdis/heal-notebooks:quay.io/cdis/heal-notebooks:combined_heal__9b37df1e9086c270e98490e93946a2d9c03d136d",
+      "image": "quay.io/cdis/heal-notebooks:combined_heal__9b37df1e9086c270e98490e93946a2d9c03d136d",
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
