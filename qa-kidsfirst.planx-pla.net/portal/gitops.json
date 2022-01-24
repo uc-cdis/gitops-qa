@@ -1,31 +1,16 @@
 {
-  "gaTrackingId": "UA-119127212-3",
   "graphql": {
     "boardCounts": [
       {
         "graphql": "_participant_count",
         "name": "Participant",
         "plural": "Participants"
-      },
-      {
-        "graphql": "_family_relationship_count",
-        "name": "Family relationship",
-        "plural": "Family relationships"
-      },
-      {
-        "graphql": "_aliquot_count",
-        "name": "Aliquot",
-        "plural": "Aliquots"
       }
     ],
     "chartCounts": [
       {
         "graphql": "_participant_count",
-        "name": "Case"
-      },
-      {
-        "graphql": "_family_relationship_count",
-        "name": "Sample"
+        "name": "Participant"
       }
     ],
     "projectDetails": "boardCounts"
@@ -69,19 +54,19 @@
           "icon": "dictionary",
           "link": "/DD",
           "color": "#a2a2a2",
-          "name": "dictionary"
+          "name": "Dictionary"
         },
         {
           "icon": "query",
           "link": "/query",
           "color": "#a2a2a2",
-          "name": "query"
+          "name": "Query"
         },
         {
           "icon": "profile",
           "link": "/identity",
           "color": "#a2a2a2",
-          "name": "profile"
+          "name": "Profile"
         }
       ]
     },
@@ -91,6 +76,14 @@
       "text": "The Kids First Data Catalog supports the Kids First Data Resource Center by providing a digital object services that allow interoperability between data commons, including authentication and authorization for controlled access data. For more information about the overall Kids First Data Resource Center see https://kidsfirstdrc.org.",
       "contact": "If you have any questions about access or the registration process, please contact ",
       "email": "support@kidsfirstdrc.org"
+    },
+    "footer": {
+      "links": [
+        {
+          "text": "HHS Responsible Disclosure Form",
+          "href": "https://hhs.responsibledisclosure.com/hc/en-us"
+        }
+      ]
     }
   }
 }

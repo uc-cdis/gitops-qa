@@ -5,7 +5,7 @@
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "quay.io/cdis/gen3fuse-sidecar:2022.01",
+    "image": "quay.io/cdis/gen3fuse-sidecar:2021.12",
     "env": {
       "NAMESPACE": "qa-ibd",
       "HOSTNAME": "qa-ibd.planx-pla.net"
@@ -29,8 +29,8 @@
       "target-port": 8787,
       "cpu-limit": "1.0",
       "memory-limit": "1024Mi",
-      "name": "RStudio 3.5.3",
-      "image": "quay.io/cdis/rstudio:master",
+      "name": "RStudio 3.6.3",
+      "image": "quay.io/cdis/rstudio3.6:master",
       "env": {
         "DISABLE_AUTH": "true"
       },
