@@ -506,6 +506,7 @@
           {
             "title": "Constructs",
             "fields": [
+              "cmc_data_type",
               "cmc_subject",
               "cmc_title"
             ]
