@@ -1,12 +1,13 @@
 {
 	"gen3_commons": {
 		"HEAL": {
-			"mds_url": "https://qa-heal.planx-pla.net",
-			"commons_url": "qa-heal.planx-pla.net"
+			"mds_url": "https://preprod.healdata.org",
+			"commons_url": "preprod.healdata.org"
+
 		},
 		"JCOIN": {
-			"mds_url": "https://qa-jcoin.planx-pla.net/",
-			"commons_url" : "qa-jcoin.planx-pla.net/",
+			"mds_url": "https://jcoin.datacommons.io/",
+			"commons_url" : "jcoin.datacommons.io",
 			"columns_to_fields": {
 				"short_name": "name",
 				"full_name": "full_name",
