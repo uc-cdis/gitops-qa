@@ -34,6 +34,10 @@
 					"path":"description",
 					"filters": ["strip_html"]
 				},
+				"study_description_summary": {
+					"path":"description",
+					"filters": ["strip_html"]
+				},
 				"study_url" : {
 					"path":"ipcsr_study_id",
 					"filters": ["add_icpsr_source_url"]
@@ -42,10 +46,12 @@
 				"subjects": "",
 				"__manifest": "",
 				"study_name": "",
+				"study_name_title": "",
 				"study_type": "",
 				"institutions": "path:contributor",
 				"year_awarded": "",
 				"investigators": "path:creator",
+				"investigators_name": "path:creator",
 				"project_title": "path:title",
 				"protocol_name": "",
 				"study_summary": "",
@@ -121,7 +127,8 @@
 					"project_title": "Test Title",
 					"research_focus_area": "Test Research Focus Ara",
 					"study_summary": "Test Study Summary",
-					"summary": "Test Summary"
+					"summary": "Test Summary",
+					"study_description_summary": "Test Summary"
 				},
 				"10.3886/ICPSR37841.v1": {
 					"data_availability": "pending",
@@ -262,6 +269,7 @@
 				"authz": "/programs/open",
 				"sites": "",
 				"summary": "path:BriefSummary",
+				"study_description_summary": "path:BriefSummary",
 				"study_url" : {
 					"path":"NCTId",
 					"filters": ["add_clinical_trials_source_url"]
@@ -270,10 +278,12 @@
 				"subjects": "path:EnrollmentCount",
 				"__manifest": "",
 				"study_name": "",
+				"study_name_title": "",
 				"study_type": "",
 				"institutions": "path:LeadSponsorName",
 				"year_awarded": "",
 				"investigators": "path:OverallOfficial[0].OverallOfficialName",
+				"investigators_name": "path:OverallOfficial[0].OverallOfficialName",
 				"project_title": "path:BriefTitle",
 				"protocol_name": "",
 				"study_summary": "",
@@ -452,14 +462,20 @@
 					"path":" preview[0].description",
 					"filters": ["strip_html"]
 				},
+				"study_description_summary": {
+					"path":" preview[0].description",
+					"filters": ["strip_html"]
+				},
 				"location": "United States",
 				"subjects": "",
 				"__manifest": "",
 				"study_name": "",
+				"study_name_title": "",
 				"study_type": "",
 				"institutions": "Temple University",
 				"year_awarded": "",
 				"investigators": "path:preview[0].created_by",
+				"investigators_name": "path:preview[0].created_by",
 				"project_title": "path:preview[0].title",
 				"protocol_name": "",
 				"study_summary": { "path":" preview[0].description", "filters": ["strip_html"] },
@@ -553,14 +569,20 @@
 					"path":"description",
 					"filters": ["strip_html"]
 				},
+				"study_description_summary": {
+					"path":"description",
+					"filters": ["strip_html"]
+				},
 				"location": "United States",
 				"subjects": "",
 				"__manifest": "",
 				"study_name": "",
+				"study_name_title": "",
 				"study_type": "",
 				"institutions": "Center for Public Health Law Research at the Temple University Beasley School of Law",
 				"year_awarded": "",
-				"investigators": "see https://pdaps.org/about",
+				"investigators": "",
+				"investigators_name": "",
 				"project_title": "path:title",
 				"protocol_name": "",
 				"study_summary": { "path":"description", "filters": ["strip_html"] },
@@ -570,7 +592,7 @@
 				"dataset_3_type": "",
 				"dataset_4_type": "",
 				"dataset_5_type": "",
-				"project_number": "id",
+				"project_number": "path: id",
 				"dataset_1_title": "",
 				"dataset_2_title": "",
 				"dataset_3_title": "",
@@ -654,6 +676,7 @@
                         }
                     ],
                     "data_availability": "available",
+		    "authz": "/programs/open",
                     "study_url": "https://pdaps.org/datasets/laws-regulating-administration-of-naloxone-1501695139",
                     "dataset_1_type": "codebook",
                     "dataset_3_type": "protocol",
@@ -696,6 +719,7 @@
                         }
                     ],
                     "data_availability": "available",
+		    "authz": "/programs/open",
                     "study_url": "https://pdaps.org/datasets/recreational-marijuana-laws",
                     "dataset_3_type": "protocol",
                     "dataset_4_type": "report",
@@ -738,6 +762,7 @@
                         }
                     ],
                     "data_availability": "available",
+	    	    "authz": "/programs/open",
                     "study_url": "https://pdaps.org/datasets/pain-management-clinic-laws",
                     "dataset_4_type": "report",
                     "dataset_2_type": "data",
@@ -780,6 +805,7 @@
                         }
                     ],
                     "data_availability": "available",
+		    "authz": "/programs/open",
                     "study_url": "https://pdaps.org/datasets/good-samaritan-overdose-laws-1501695153",
                     "dataset_1_type": "codebook",
                     "dataset_4_type": "report",
@@ -829,6 +855,7 @@
                         }
                     ],
                     "data_availability": "available",
+		    "authz": "/programs/open",
                     "study_url": "https://pdaps.org/datasets/medication-assisted-treatment-with-methadone-mat-laws",
                     "dataset_5_type": "report",
                     "dataset_1_type": "codebook",
@@ -873,6 +900,7 @@
                         }
                     ],
                     "data_availability": "available",
+		    "authz": "/programs/open",
                     "study_url": "https://pdaps.org/datasets/opioid-prescribing-guidelines-for-acute-and-emergency-care",
                     "dataset_2_type": "data",
                     "dataset_1_type": "codebook",
@@ -922,6 +950,7 @@
                         }
                     ],
                     "data_availability": "available",
+		    "authz": "/programs/open",
                     "study_url": "https://pdaps.org/datasets/direct-dispensing-of-controlled-substances-laws",
                     "dataset_1_type": "codebook",
                     "dataset_4_type": "protocol",
@@ -966,6 +995,7 @@
                         }
                     ],
                     "data_availability": "available",
+		    "authz": "/programs/open",
                     "study_url": "https://pdaps.org/datasets/civil-commitment-for-substance-users-1562936854",
                     "dataset_4_type": "report",
                     "dataset_1_type": "codebook",
@@ -1008,6 +1038,7 @@
                         }
                     ],
                     "data_availability": "available",
+		    "authz": "/programs/open",
                     "study_url": "https://pdaps.org/datasets/medicaid-funded-mat-for-justice-involved-persons-1565019015",
                     "dataset_2_type": "data",
                     "dataset_1_type": "codebook",
@@ -1050,6 +1081,7 @@
                         }
                     ],
                     "data_availability": "available",
+		    "authz": "/programs/open",
                     "study_url": "https://pdaps.org/datasets/medicaid-funded-mat-for-justice-involved-persons-1565019237",
                     "dataset_1_type": "codebook",
                     "dataset_4_type": "report",
@@ -1092,6 +1124,7 @@
                         }
                     ],
                     "data_availability": "available",
+		    "authz": "/programs/open",
                     "study_url": "https://pdaps.org/datasets/medication-assisted-treatment-in-correctional-facilities",
                     "dataset_1_type": "codebook",
                     "dataset_3_type": "protocol",
@@ -1134,6 +1167,7 @@
                         }
                     ],
                     "data_availability": "available",
+		    "authz": "/programs/open",
                     "study_url": "https://pdaps.org/datasets/medication-assisted-treatment-licensure-and-operations-1580241579",
                     "dataset_1_type": "codebook",
                     "dataset_2_type": "data",
@@ -1176,6 +1210,7 @@
                         }
                     ],
                     "data_availability": "available",
+		    "authz": "/programs/open",
                     "study_url": "https://pdaps.org/datasets/medication-assisted-treatment-coverage-1580241551",
                     "dataset_1_type": "codebook",
                     "dataset_3_type": "protocol",
