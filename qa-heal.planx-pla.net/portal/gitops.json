@@ -160,10 +160,12 @@
           "inputSubtitle": "Examples: pain, buprenorphine, intervention",
           "searchableTextFields": [
             "summary",
+            "study_description_summary",
             "location",
             "study_name",
+            "study_name_title",
             "institutions",
-            "investigators",
+            "investigators_name",
             "project_title",
             "project_number",
             "dataset_1_title",
@@ -218,11 +220,18 @@
         "field": "investigators",
         "errorIfNotAvailable": false,
         "valueIfNotAvailable": "n/a"
-      }
+      },
+       {
+        "name": "Investigator(s)",
+        "field": "investigators_name",
+        "errorIfNotAvailable": false,
+        "valueIfNotAvailable": "n/a"
+      }      
     ],
     "studyPreviewField": {
       "name": "Summary",
       "field": "summary",
+       "field": "study_description_summary",
       "contentType": "string",
       "includeName": false,
       "includeIfNotAvailable": true,
@@ -274,6 +283,10 @@
               "field": "investigators"
             },
             {
+              "name": "Investigator(s)",
+              "field": "investigators_name"
+            },
+            {
               "name": "Administering IC(s)",
               "field": "administering_ic"
             },
@@ -295,6 +308,10 @@
             {
               "name": "Study Name",
               "field": "study_name"
+            },
+            {
+              "name": "Study Name",
+              "field": "study_name_title"
             },
             {
               "name": "Study URL",
@@ -350,6 +367,7 @@
             {
               "name": "Summary",
               "field": "summary",
+              "field": "study_description_summary",
               "contentType": "paragraphs",
               "includeName": true,
               "includeIfNotAvailable": true,
