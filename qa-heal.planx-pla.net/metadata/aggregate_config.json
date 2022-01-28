@@ -40,12 +40,6 @@
                 "tags": [],
                 "authz": "",
                 "sites": "",
-                "summary": {
-                    "path": "description",
-                    "filters": [
-                        "strip_html"
-                    ]
-                },
                 "study_description_summary": {
                     "path": "description",
                     "filters": [
@@ -141,7 +135,6 @@
                     "project_title": "Test Title",
                     "research_focus_area": "Test Research Focus Ara",
                     "study_summary": "Test Study Summary",
-                    "summary": "Test Summary",
                     "study_description_summary": "Test Summary"
                 },
                 "10.3886/ICPSR37841.v1": {
@@ -282,7 +275,6 @@
                 "tags": [],
                 "authz": "/programs/open",
                 "sites": "",
-                "summary": "path:BriefSummary",
                 "study_description_summary": "path:BriefSummary",
                 "study_url": {
                     "path": "NCTId",
@@ -483,12 +475,6 @@
                 "tags": [],
                 "authz": "",
                 "sites": "",
-                "summary": {
-                    "path": "description",
-                    "filters": [
-                        "strip_html"
-                    ]
-                },
                 "study_description_summary": {
                     "path": "description",
                     "filters": [
