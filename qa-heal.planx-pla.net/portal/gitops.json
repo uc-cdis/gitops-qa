@@ -159,7 +159,6 @@
           "enabled": true,
           "inputSubtitle": "Examples: pain, buprenorphine, intervention",
           "searchableTextFields": [
-            "summary",
             "study_description_summary",
             "location",
             "study_name_title",
