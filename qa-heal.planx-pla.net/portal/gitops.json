@@ -223,8 +223,7 @@
     ],
     "studyPreviewField": {
       "name": "Summary",
-      "field": "summary",
-       "field": "study_description_summary",
+      "field": "study_description_summary",
       "contentType": "string",
       "includeName": false,
       "includeIfNotAvailable": true,
@@ -351,7 +350,6 @@
           "fields": [
             {
               "name": "Summary",
-              "field": "summary",
               "field": "study_description_summary",
               "contentType": "paragraphs",
               "includeName": true,
