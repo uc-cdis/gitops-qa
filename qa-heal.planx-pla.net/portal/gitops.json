@@ -162,7 +162,6 @@
             "summary",
             "study_description_summary",
             "location",
-            "study_name",
             "study_name_title",
             "institutions",
             "investigators_name",
@@ -304,10 +303,6 @@
             {
               "name": "Study Type",
               "field": "study_type"
-            },
-            {
-              "name": "Study Name",
-              "field": "study_name"
             },
             {
               "name": "Study Name",
