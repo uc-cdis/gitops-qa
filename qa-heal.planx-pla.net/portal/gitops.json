@@ -214,12 +214,6 @@
         "errorIfNotAvailable": false,
         "valueIfNotAvailable": "n/a"
       },
-      {
-        "name": "Investigator(s)",
-        "field": "investigators",
-        "errorIfNotAvailable": false,
-        "valueIfNotAvailable": "n/a"
-      },
        {
         "name": "Investigator(s)",
         "field": "investigators_name",
@@ -276,10 +270,6 @@
             {
               "name": "Location",
               "field": "location"
-            },
-            {
-              "name": "Investigator(s)",
-              "field": "investigators"
             },
             {
               "name": "Investigator(s)",
