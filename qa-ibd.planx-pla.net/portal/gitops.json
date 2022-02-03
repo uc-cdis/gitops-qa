@@ -148,6 +148,10 @@
           "src": "/../../../../custom/sponsors/gitops-sponsors/attribution",
           "href": "https://www.niddk.nih.gov",
           "alt": "Funded by the NIDDK"
+        },
+        {
+          "text": "HHS Responsible Disclosure Form",
+          "href": "https://www.hhs.gov/vulnerability-disclosure-policy/index.html"
         }
       ]
     }
