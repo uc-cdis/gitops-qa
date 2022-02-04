@@ -346,7 +346,7 @@
                 "dataset_4_description": "",
                 "dataset_5_description": "",
                 "data_availability": "pending",
-				"data_resource": "ClinicalTrials"
+				"data_resource": "clinicaltrials.gov"
             },
             "per_item_values": {
                 "STU-2019-0743": {
