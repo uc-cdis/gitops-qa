@@ -219,6 +219,7 @@
     "tier_access_limit": 50,
     "public_datasets": true,
     "dd_enabled": true,
+    "mtls": "on",
     "uwsgi-timeout": "60"
   },
   "canary": {
