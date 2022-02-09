@@ -339,7 +339,8 @@
     "netpolicy": "on",
     "tier_access_level": "regular",
     "tier_access_limit": 50,
-    "lb_type": "internal"
+    "lb_type": "internal",
+    "dd_enabled": true
   },
   "indexd": {
     "arborist": "true"
