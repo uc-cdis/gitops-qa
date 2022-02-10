@@ -79,7 +79,7 @@
           "name": "Discovery",
           "link": "/discovery",
           "icon": "query",
-          "tooltip": "Discovery page where one can take a detailed look at studies."
+          "tooltip": "Discovery page where one can take a detailed look at publications."
         },
         {
           "name": "Profile",
