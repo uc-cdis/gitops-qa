@@ -19,8 +19,8 @@
 			"adapter": "gen3"
 		},
 		"HEAL": {
-			"mds_url": "https://healdata.org/",
-			"commons_url": "healdata.org",
+			"mds_url": "https://qa-heal.planx-pla.net/",
+			"commons_url": "qa-heal.planx-pla.net",
 			"adapter": "gen3",
 			"config" : {
 				"guid_type": "discovery_metadata",
