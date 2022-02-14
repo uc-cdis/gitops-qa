@@ -30,15 +30,16 @@
       "introduction": {
         "heading": "NIDDK IBD Genetics Consortium Data Commons",
         "text": "The Inflammatory Bowel Disease Genetics Consortium Data Commons supports the management, analysis, and sharing of genetic data to support the vision and mission of the IBD genetics consortium.",
-        "link": "/submission"
+        "buttonText": "Browse Studies",
+        "link": "/study-viewer/project"
       },
       "buttons": [
         {
-          "name": "Define Data Field",
-          "icon": "data-field-define",
-          "body": "The data are defined in a generic way by the dictionary. Please study the dictionary before you start browsing.",
-          "link": "/DD",
-          "label": "Learn more"
+          "name": "Browse Studies",
+          "icon": "data-files",
+          "body": "The Studies page provides summary and detailed information about studies on the platform.",
+          "link": "/study-viewer/project",
+          "label": "Browse studies"
         },
         {
           "name": "Explore Data",
@@ -77,45 +78,38 @@
       "title": "NIDDK IBD Genetics Consortium Data Commons",
       "items": [
         {
+          "icon": "query",
+          "link": "/study-viewer/project",
+          "name": "Browse Studies"
+        },
+        {
           "icon": "dictionary",
           "link": "/DD",
-          "color": "#a2a2a2",
           "name": "Dictionary"
         },
         {
           "icon": "exploration",
           "link": "/explorer",
-          "color": "#a2a2a2",
           "name": "Exploration"
         },
         {
           "icon": "query",
           "link": "/query",
-          "color": "#a2a2a2",
           "name": "Query"
         },
         {
           "icon": "analysis",
           "link": "/resource-browser",
-          "color": "#a2a2a2",
           "name": "Notebook Browser"
         },
         {
           "icon": "workspace",
           "link": "#hostname#workspace/",
-          "color": "#a2a2a2",
           "name": "Workspace"
-        },
-        {
-          "icon": "query",
-          "link": "/study-viewer/project",
-          "color": "#a2a2a2",
-          "name": "Study Viewer"
         },
         {
           "icon": "profile",
           "link": "/identity",
-          "color": "#a2a2a2",
           "name": "Profile"
         }
       ]
@@ -148,6 +142,10 @@
           "src": "/../../../../custom/sponsors/gitops-sponsors/attribution",
           "href": "https://www.niddk.nih.gov",
           "alt": "Funded by the NIDDK"
+        },
+        {
+          "text": "HHS Responsible Disclosure Form",
+          "href": "https://www.hhs.gov/vulnerability-disclosure-policy/index.html"
         }
       ]
     }
@@ -429,7 +427,7 @@
   "studyViewerConfig": [
     {
       "dataType": "project",
-      "title": "Projects",
+      "title": "Studies",
       "titleField": "title",
       "rowAccessor": "project_id",
       "openMode": "close-all",
