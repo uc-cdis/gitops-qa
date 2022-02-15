@@ -215,12 +215,6 @@
         "errorIfNotAvailable": false,
         "valueIfNotAvailable": "n/a"
       },
-      {
-        "name": "Investigator(s)",
-        "field": "investigators",
-        "errorIfNotAvailable": false,
-        "valueIfNotAvailable": "n/a"
-      },
        {
         "name": "Investigator(s)",
         "field": "investigators_name",
@@ -230,8 +224,7 @@
     ],
     "studyPreviewField": {
       "name": "Summary",
-      "field": "summary",
-       "field": "study_description_summary",
+      "field": "study_description_summary",
       "contentType": "string",
       "includeName": false,
       "includeIfNotAvailable": true,
@@ -307,10 +300,6 @@
             },
             {
               "name": "Study Name",
-              "field": "study_name"
-            },
-            {
-              "name": "Study Name",
               "field": "study_name_title"
             },
             {
@@ -366,7 +355,6 @@
           "fields": [
             {
               "name": "Summary",
-              "field": "summary",
               "field": "study_description_summary",
               "contentType": "paragraphs",
               "includeName": true,
