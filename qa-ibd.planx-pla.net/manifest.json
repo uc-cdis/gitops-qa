@@ -4,29 +4,29 @@
     "That's all I have to say"
   ],
   "versions": {
-    "arborist": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/arborist:integration202202",
-    "audit-service": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/audit-service:integration202202",
+    "arborist": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/arborist:integration202203",
+    "audit-service": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/audit-service:integration202203",
     "aws-es-proxy": "quay.io/cdis/aws-es-proxy:0.8",
-    "dashboard": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-statics:integration202202",
-    "fence": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/fence:integration202202",
-    "indexd": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexd:integration202202",
-    "peregrine": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/peregrine:integration202202",
-    "pidgin": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/pidgin:integration202202",
-    "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:integration202202",
-    "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:integration202202",
-    "portal": "quay.io/cdis/data-portal:3.19.5",
+    "dashboard": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-statics:integration202203",
+    "fence": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/fence:integration202203",
+    "indexd": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexd:integration202203",
+    "peregrine": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/peregrine:integration202203",
+    "pidgin": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/pidgin:integration202203",
+    "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:integration202203",
+    "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:integration202203",
+    "portal": "quay.io/cdis/data-portal:integration202203",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
-    "spark": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-spark:integration202202",
-    "tube": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/tube:integration202202",
-    "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:integration202202",
-    "requestor": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/requestor:integration202202",
-    "wts": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/workspace-token-service:integration202202",
+    "spark": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-spark:integration202203",
+    "tube": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/tube:integration202203",
+    "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:integration202203",
+    "requestor": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/requestor:integration202203",
+    "wts": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/workspace-token-service:integration202203",
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
-    "manifestservice": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifestservice:integration202202",
-    "guppy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/guppy:integration202202",
-    "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:integration202202",
-    "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:integration202202",
-    "sower": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sower:integration202202"
+    "manifestservice": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifestservice:integration202203",
+    "guppy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/guppy:integration202203",
+    "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:integration202203",
+    "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:integration202203",
+    "sower": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sower:integration202203"
   },
   "indexd": {
     "arborist": "true"
@@ -39,7 +39,7 @@
       "serviceAccountName": "jobs-qa-ibd-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-manifest-ingestion:integration202202",
+        "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-manifest-ingestion:integration202203",
         "pull_policy": "Always",
         "env": [
           {
@@ -79,7 +79,7 @@
       "serviceAccountName": "jobs-qa-ibd-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifest-indexing:integration202202",
+        "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifest-indexing:integration202203",
         "pull_policy": "Always",
         "env": [
           {
@@ -119,7 +119,7 @@
       "serviceAccountName": "jobs-qa-ibd-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/download-indexd-manifest:integration202202",
+        "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/download-indexd-manifest:integration202203",
         "pull_policy": "Always",
         "env": [
           {
@@ -156,7 +156,7 @@
   ],
   "ssjdispatcher": {
     "job_images": {
-      "indexing": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexs3client:integration202202"
+      "indexing": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexs3client:integration202203"
     }
   },
   "global": {
