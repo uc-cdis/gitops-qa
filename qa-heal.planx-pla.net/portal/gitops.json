@@ -185,7 +185,7 @@
         },
         "tagSearchDropdown": {
           "enabled": true,
-          "collapsibleButtonText": "Study Characteristics"
+          "collapsibleButtonText": "Study Filters"
         }
       },
       "authorization": {
