@@ -30,12 +30,12 @@
       "introduction": {
         "heading": "NIDDK IBD Genetics Consortium Data Commons",
         "text": "The Inflammatory Bowel Disease Genetics Consortium Data Commons supports the management, analysis, and sharing of genetic data to support the vision and mission of the IBD genetics consortium.",
-        "buttonText": "Browse Studies",
+        "buttonText": "Browse Studies/Request Access",
         "link": "/study-viewer/project"
       },
       "buttons": [
         {
-          "name": "Browse Studies",
+          "name": "Browse Studies and Request Access",
           "icon": "data-files",
           "body": "The Studies page provides summary and detailed information about studies on the platform.",
           "link": "/study-viewer/project",
