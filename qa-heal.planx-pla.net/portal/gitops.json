@@ -221,12 +221,12 @@
         "errorIfNotAvailable": false,
         "valueIfNotAvailable": "n/a"
       },
-       {
+      {
         "name": "Investigator(s)",
         "field": "investigators_name",
         "errorIfNotAvailable": false,
         "valueIfNotAvailable": "n/a"
-      }      
+      }
     ],
     "studyPreviewField": {
       "name": "Summary",
