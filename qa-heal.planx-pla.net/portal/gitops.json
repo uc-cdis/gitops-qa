@@ -185,7 +185,7 @@
         },
         "tagSearchDropdown": {
           "enabled": true,
-          "collapsibleButtonText": "Study Characteristics"
+          "collapsibleButtonText": "Study Filters"
         }
       },
       "authorization": {
@@ -221,17 +221,17 @@
         "errorIfNotAvailable": false,
         "valueIfNotAvailable": "n/a"
       },
-       {
+      {
         "name": "Investigator(s)",
         "field": "investigators_name",
         "errorIfNotAvailable": false,
         "valueIfNotAvailable": "n/a"
-      }      
+      }
     ],
     "studyPreviewField": {
       "name": "Summary",
       "field": "summary",
-       "field": "study_description_summary",
+      "field": "study_description_summary",
       "contentType": "string",
       "includeName": false,
       "includeIfNotAvailable": true,
@@ -442,9 +442,9 @@
             }
           ]
         }
-      ],
-      "tagsDisplayName": "Study Characteristics"
+      ]
     },
+    "tagsDisplayName": "Study Characteristics",
     "minimalFieldMapping": {
       "authzField": "authz",
       "tagsListFieldName": "tags",
