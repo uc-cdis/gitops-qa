@@ -1,5 +1,5 @@
 {
-  "user-namespace": "jupyter-pod-jenkins-niaid",
+  "user-namespace": "jupyter-pods-jenkins-niaid",
   "sub-dir": "/lw-workspace",
   "user-volume-size": "10Gi",
   "sidecar": {
