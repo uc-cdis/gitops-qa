@@ -159,8 +159,10 @@
           "enabled": true,
           "inputSubtitle": "Examples: pain, buprenorphine, intervention",
           "searchableTextFields": [
+            "summary",
             "study_description_summary",
             "location",
+            "study_name",
             "study_name_title",
             "institutions",
             "investigators_name",
@@ -215,6 +217,12 @@
       },
       {
         "name": "Investigator(s)",
+        "field": "investigators",
+        "errorIfNotAvailable": false,
+        "valueIfNotAvailable": "n/a"
+      },
+      {
+        "name": "Investigator(s)",
         "field": "investigators_name",
         "errorIfNotAvailable": false,
         "valueIfNotAvailable": "n/a"
@@ -222,6 +230,7 @@
     ],
     "studyPreviewField": {
       "name": "Summary",
+      "field": "summary",
       "field": "study_description_summary",
       "contentType": "string",
       "includeName": false,
@@ -271,6 +280,10 @@
             },
             {
               "name": "Investigator(s)",
+              "field": "investigators"
+            },
+            {
+              "name": "Investigator(s)",
               "field": "investigators_name"
             },
             {
@@ -291,6 +304,10 @@
             {
               "name": "Study Type",
               "field": "study_type"
+            },
+            {
+              "name": "Study Name",
+              "field": "study_name"
             },
             {
               "name": "Study Name",
@@ -349,6 +366,7 @@
           "fields": [
             {
               "name": "Summary",
+              "field": "summary",
               "field": "study_description_summary",
               "contentType": "paragraphs",
               "includeName": true,

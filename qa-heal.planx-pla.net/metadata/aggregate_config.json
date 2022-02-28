@@ -48,6 +48,12 @@
                 "tags": [],
                 "authz": "",
                 "sites": "",
+                "summary": {
+                    "path": "description",
+                    "filters": [
+                        "strip_html"
+                    ]
+                },
                 "study_description_summary": {
                     "path": "description",
                     "filters": [
@@ -63,10 +69,12 @@
                 "location": "path:coverage[0]",
                 "subjects": "",
                 "__manifest": "",
+                "study_name": "",
                 "study_name_title": "",
                 "study_type": "",
                 "institutions": "path:contributor",
                 "year_awarded": "",
+                "investigators": "path:creator",
                 "investigators_name": "path:creator",
                 "project_title": "path:title",
                 "protocol_name": "",
@@ -144,6 +152,7 @@
                     "project_title": "Test Title",
                     "research_focus_area": "Test Research Focus Ara",
                     "study_summary": "Test Study Summary",
+                    "summary": "Test Summary",
                     "study_description_summary": "Test Summary"
                 },
                 "10.3886/ICPSR37841.v1": {
@@ -284,6 +293,7 @@
                 "tags": [],
                 "authz": "/programs/open",
                 "sites": "",
+                "summary": "path:BriefSummary",
                 "study_description_summary": "path:BriefSummary",
                 "study_url": {
                     "path": "NCTId",
@@ -294,10 +304,12 @@
                 "location": "",
                 "subjects": "path:EnrollmentCount",
                 "__manifest": "",
+                "study_name": "",
                 "study_name_title": "",
                 "study_type": "",
                 "institutions": "path:LeadSponsorName",
                 "year_awarded": "",
+                "investigators": "path:OverallOfficial[0].OverallOfficialName",
                 "investigators_name": "path:OverallOfficial[0].OverallOfficialName",
                 "project_title": "path:BriefTitle",
                 "protocol_name": "",
@@ -485,6 +497,12 @@
                 "tags": [],
                 "authz": "",
                 "sites": "",
+                "summary": {
+                    "path": "description",
+                    "filters": [
+                        "strip_html"
+                    ]
+                },
                 "study_description_summary": {
                     "path": "description",
                     "filters": [
@@ -494,10 +512,12 @@
                 "location": "United States",
                 "subjects": "",
                 "__manifest": "",
+                "study_name": "",
                 "study_name_title": "",
                 "study_type": "",
                 "institutions": "Center for Public Health Law Research at the Temple University Beasley School of Law",
                 "year_awarded": "",
+                "investigators": "",
                 "investigators_name": "",
                 "project_title": "path:title",
                 "protocol_name": "",
