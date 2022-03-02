@@ -1197,7 +1197,7 @@
                     "dataset_2_type": "data",
                     "dataset_1_type": "codebook",
                     "dataset_4_type": "report",
-                    "dataset_3_type": "protocol",
+                    "dataset_3_type": "Protocol",
                     "dataset_2_title": "covid-19-state-medicaid-waivers-data-020222.xlsx",
                     "dataset_1_title": "covid-19-state-medicaid-waivers-for-sud-codebook-020222.pdf",
                     "dataset_4_title": "covid-19-state-medicaid-waivers-for-sud-report-02102022.pdf",
