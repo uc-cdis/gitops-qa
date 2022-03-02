@@ -1196,7 +1196,7 @@
                     "study_url": "https://pdaps.org/datasets/covid-19-state-medicaid-waivers",
                     "dataset_2_type": "data",
                     "dataset_1_type": "codebook",
-                    "dataset_4_type": "report",
+                    "dataset_4_type": "Report",
                     "dataset_3_type": "Protocol",
                     "dataset_2_title": "covid-19-state-medicaid-waivers-data-020222.xlsx",
                     "dataset_1_title": "covid-19-state-medicaid-waivers-for-sud-codebook-020222.pdf",
