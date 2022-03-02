@@ -461,7 +461,7 @@
         },
         "PDAPS": {
             "mds_url": "https://api.monqcle.com/",
-            "commons_url": "https://externaldata.healprod.org",
+            "commons_url": "https://pdaps.org",
             "adapter": "pdaps",
             "filters": {
                 "datasets": [
@@ -477,7 +477,10 @@
                     "pain-management-clinic-laws",
                     "medicaid-funded-mat-for-justice-involved-persons-1565019237",
                     "medication-assisted-treatment-with-methadone-mat-laws",
-                    "recreational-marijuana-laws"
+                    "recreational-marijuana-laws",
+                    "covid-19-mitigation-laws-at-state-correctional-facilities-relating-to-opioi",
+                    "covid-19-state-medicaid-waivers",
+                    "increasing-access-to-buprenorphine-and-methadone-during-covid-19"
                 ]
             },
             "keep_original_fields": false,
