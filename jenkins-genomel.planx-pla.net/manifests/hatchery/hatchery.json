@@ -1,7 +1,7 @@
 {
   "user-namespace": "jupyter-pods-jenkins-genomel",
   "sub-dir": "/lw-workspace",
-  "user-volume-size": "10Gi",
+  "user-volume-size": "512Mi",
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
@@ -42,7 +42,7 @@
     {
       "target-port": 8888,
       "cpu-limit": "1.0",
-      "memory-limit": "2Gi",
+      "memory-limit": "512Mi",
       "name": "(Tutorial) Bacpac Synthetic Data Analysis Notebook",
       "image": "quay.io/cdis/heal-notebooks:bacpac__10670ad79b4488cfa9f1b3681ce52bc3f1139b5a",
       "env": {
@@ -63,11 +63,10 @@
       "lifecycle-post-start": [
         "/bin/sh",
         "-c",
-        "export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; rm -rf /home/$IAM/pd/lost+found; ln -s /data /home/$IAM/pd/; true"
+        "export IAM=`whoami`; rm -rf /home/$IAM/pd/lost+found; true"
       ],
       "user-uid": 1000,
-      "fs-gid": 100,
-      "user-volume-location": "/home/jovyan/pd"
+      "fs-gid": 100
     }
   ]
 }
