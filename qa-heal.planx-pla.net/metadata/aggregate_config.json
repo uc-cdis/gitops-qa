@@ -1151,7 +1151,7 @@
                     "authz": "/programs/NIDA/projects/PDAPS",
                     "data_availability": "available",
                     "study_url": "https://pdaps.org/datasets/covid-19-mitigation-laws-at-state-correctional-facilities-relating-to-opioi",
-                    "dataset_1_type": "codebook",
+                    "dataset_1_type": "Codebook",
                     "dataset_2_type": "data",
                     "dataset_4_type": "report",
                     "dataset_3_type": "protocol",
