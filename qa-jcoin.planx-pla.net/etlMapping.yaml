@@ -67,6 +67,14 @@ mappings:
           - name: cmc_relation
             src: relation
             fn: set
+      project:
+        props:
+          - name: project_code
+            src: code
+            fn: set
+          - name: project_name
+            src: name
+            fn: set
   - name: jcoin_saes
     doc_type: serious_adverse_event
     type: aggregator
