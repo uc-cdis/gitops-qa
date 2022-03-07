@@ -7,7 +7,7 @@
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
     "arborist": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/arborist:2022.01",
     "audit-service": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/audit-service:2022.01",
-    "auspice": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-auspice:v2.25.gen3.2.12",
+    "auspice": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-auspice:v2.25.gen3.2.13",
     "aws-es-proxy": "quay.io/cdis/aws-es-proxy:0.8",
     "awshelper": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/awshelper:2022.01",
     "covid19-bayes": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/covid19-bayes:4.12.1",
