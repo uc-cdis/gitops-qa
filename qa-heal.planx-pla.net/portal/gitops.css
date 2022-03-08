@@ -162,6 +162,15 @@ body,
   background-color: #373a3c;
 }
 
+.footer__link-area {
+  font-size: 0.625rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  margin: auto;
+}
+
 /* Data Explorer */
 
 .filter-group__tab,
