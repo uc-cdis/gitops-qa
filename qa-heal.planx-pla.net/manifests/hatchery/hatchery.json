@@ -3,14 +3,15 @@
   "sub-dir": "/lw-workspace",
   "user-volume-size": "10Gi",
   "default-pay-model": {
-    "aws_account_id": "354484406138",
-    "name": "brhworkspaces",
+    "account_id": "354484406138",
+    "workspace_type": "brhworkspaces",
     "region": "us-east-1"
   },
+  "pay-models-dynamodb-table": "bmh-admin-portal-backend-bmhworkspacetableD4D73E43-4U08KIUG3YW3",
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "quay.io/cdis/ecs-ws-sidecar:2022.03",
+    "image": "quay.io/cdis/ecs-ws-sidecar:feat_datamounting",
     "env": {
       "NAMESPACE": "qa-heal"
     },
