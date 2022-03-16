@@ -787,7 +787,7 @@
                   },
                   {
                     "field": "submitter_id",
-                    "name": "Imaging Study ID"
+                    "name": "Browse in DICOM viewer"
                   }
               ],
               "manifestMapping": {
