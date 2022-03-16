@@ -747,7 +747,9 @@
                 "race",
                 "zip",
                 "project_id"
-              ]
+              ],
+              "dicomViewerId": "submitter_id",
+              "linkFields": ["submitter_id"]
             },
             "buttons": [
               {
