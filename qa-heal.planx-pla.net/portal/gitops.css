@@ -105,6 +105,12 @@ body,
   border-color: rgb(139, 51, 105);
 }
 
+.discovery-action-bar-button:hover {
+  color: #fff;
+  border-color: #fff;
+  background-color: var(--primary-color);
+}
+
 .discovery-header__dropdown-tags-control-button  {
   color: rgb(139, 51, 105);
   border-color: rgb(139, 51, 105);
