@@ -426,44 +426,6 @@
         }
       ]
     },
-    "studyPageTabs": [
-      {
-        "selector": {
-          "key": "project_number",
-          "value": "xxxx/test/dummy/tab"
-        },
-        "tabs": [
-          {
-            "name": "Study",
-            "components": ["dataFiles"]
-          },
-          {
-            "name": "Datasets",
-            "components": []
-          },
-          {
-            "name": "Analysis",
-            "components": []
-          },
-          {
-            "name": "Publications",
-            "components": []
-          },
-          {
-            "name": "Tags",
-            "components": []
-          },
-          {
-            "name": "Repositories",
-            "components": []
-          },
-          {
-            "name": "Access",
-            "components": []
-          }
-        ]
-      }
-    ],
     "detailView": {
       "headerField": "project_title",
       "tabs":[
