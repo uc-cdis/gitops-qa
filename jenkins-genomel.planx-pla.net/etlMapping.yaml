@@ -37,9 +37,4 @@ mappings:
           - name: case_id
             src: id
           - name: project_id
-    target_nodes:
-      - name: submitted_aligned_reads
-        path: read_groups.aliquots.samples.cases
-      - name: submitted_unaligned_reads
-        path: read_groups.aliquots.samples.cases
  
