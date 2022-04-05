@@ -44,6 +44,7 @@ mappings:
         props:
           - name: bp_systolic
           - name: bp_diastolic
+        sorted_by: updated_datetime, desc
       - path: medication_records
         props:
           - name: hypertension_meds
