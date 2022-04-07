@@ -1,5 +1,5 @@
 mappings:
-  - name: jenkins_cmc_alias
+  - name: jenkins-niaid.planx-pla.net_clinical_trials
     doc_type: clinical_trials
     type: aggregator
     root: core_metadata_collection
@@ -26,7 +26,7 @@ mappings:
       - name: project_id
       - name: cmc_unique_id
         src: submitter_id
-  - name: jenkins_ct_file
+  - name: jenkins-niaid.planx-pla.net_ctfile
     doc_type: ctfile
     type: aggregator
     root: clinical_trial_file
@@ -40,7 +40,7 @@ mappings:
       - name: project_id
     parent_props:
       - path: core_metadata_collections[cmc_unique_id:submitter_id]
-  - name: jenkins_oa_file
+  - name: jenkins-niaid.planx-pla.net_oafile
     doc_type: oafile
     type: aggregator
     root: open_access_doc

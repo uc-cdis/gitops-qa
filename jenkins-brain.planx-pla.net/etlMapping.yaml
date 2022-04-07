@@ -1,5 +1,5 @@
 mappings:
-  - name: jenkins-brain.planx-pla.net_etl
+  - name: jenkins-brain.planx-pla.net_case
     doc_type: case
     type: aggregator
     root: case
