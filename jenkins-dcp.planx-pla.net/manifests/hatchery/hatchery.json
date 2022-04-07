@@ -1,7 +1,7 @@
 {
   "user-namespace": "jupyter-pods-jenkins-dcp",
   "sub-dir": "/lw-workspace",
-  "user-volume-size": "10Gi",
+  "user-volume-size": "512Mi",
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
@@ -52,7 +52,6 @@
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",
         "--NotebookApp.token=''",
-        "--NotebookApp.notebook_dir='/home/jovyan/pd'",
         "--NotebookApp.quit_button=False"
       ],
       "command": [
@@ -64,11 +63,38 @@
       "lifecycle-post-start": [
         "/bin/sh",
         "-c",
-        "export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; ln -s $(pwd) /home/$IAM/pd/dockerHome; mkdir -p /home/$IAM/.jupyter/custom; echo \"define(['base/js/namespace'], function(Jupyter){Jupyter._target = '_self';})\" >/home/$IAM/.jupyter/custom/custom.js; ln -s /data /home/$IAM/pd/; true"
+        "export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; mkdir -p /home/$IAM/.jupyter/custom; echo \"define(['base/js/namespace'], function(Jupyter){Jupyter._target = '_self';})\" >/home/$IAM/.jupyter/custom/custom.js; true"
       ],
       "user-uid": 1000,
-      "fs-gid": 100,
-      "user-volume-location": "/home/jovyan/pd"
-    }
+      "fs-gid": 100
+    },
+    {
+      "target-port": 8888,
+      "cpu-limit": "1.0",
+      "memory-limit": "512Mi",
+      "name": "(Tutorial) Bacpac Synthetic Data Analysis Notebook",
+      "image": "quay.io/cdis/heal-notebooks:bacpac__10670ad79b4488cfa9f1b3681ce52bc3f1139b5a",
+      "env": {
+        "FRAME_ANCESTORS": "https://jenkins-dcp.planx-pla.net"
+      },
+      "args": [
+        "--NotebookApp.base_url=/lw-workspace/proxy/",
+        "--NotebookApp.password=''",
+        "--NotebookApp.token=''",
+        "--NotebookApp.quit_button=False"
+      ],
+      "command": [
+        "start-notebook.sh"
+      ],
+      "path-rewrite": "/lw-workspace/proxy/",
+      "use-tls": "false",
+      "ready-probe": "/lw-workspace/proxy/",
+      "lifecycle-post-start": [
+        "/bin/sh",
+        "-c",
+        "export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; rm -rf /home/$IAM/pd/lost+found; ln -s /data /home/$IAM/; true"
+      ],
+      "user-uid": 1000,
+      "fs-gid": 100    }
   ]
 }

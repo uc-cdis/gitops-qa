@@ -21,7 +21,7 @@
   },
   "presigned-url-fence": {
     "min": 1,
-    "max": 1,
+    "max": 10,
     "strategy": "auto"
   },
   "indexd": {
