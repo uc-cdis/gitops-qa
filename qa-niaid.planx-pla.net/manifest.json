@@ -28,7 +28,7 @@
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
     "guppy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/guppy:2022.04",
     "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:2022.04",
-    "manifestservice": "quay.io/cdis/manifestservice:2022.04",
+    "manifestservice": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifestservice:2022.04",
     "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:2022.04"
   },
   "arborist": {
