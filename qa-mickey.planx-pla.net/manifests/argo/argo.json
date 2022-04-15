@@ -8,5 +8,7 @@
         "Craig.Teerlink@va.gov": "workflow4"
     },
     "bucket": "second-argo-bucket",
-    "internal-s3-bucket": "gen3-argo-707767160287-devplanetv1"
+    "internal-s3-bucket": "gen3-argo-707767160287-devplanetv1",
+    "indexd_admin_user": "fence",
+    "environment": "qa-mickey"
 }

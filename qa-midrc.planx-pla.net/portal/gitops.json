@@ -698,7 +698,6 @@
                 "study_body_site",
                 "manufacturer",
                 "manufacturer_model_name",
-                "study_description",
                 "series_description",
                 "slice_thickness",
                 "spacing_between_slices",
