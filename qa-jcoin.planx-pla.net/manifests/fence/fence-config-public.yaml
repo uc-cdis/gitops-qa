@@ -136,6 +136,8 @@ ITRUST_GLOBAL_LOGOUT: 'https://auth.nih.gov/siteminderagent/smlogout.asp?mode=ni
 LOGIN_OPTIONS:
   - name: 'Login from Google'
     idp: google
+  - name: "Dev login - set username in 'dev_login' cookie"
+    idp: mock_login
 
 # Default login provider:
 # - must be configured in LOGIN_OPTIONS and OPENID_CONNECT
