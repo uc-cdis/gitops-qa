@@ -931,6 +931,12 @@
         "description": "In this notebook we used data from NIDA-PDAPS and CDC WONDER mortality data to visualize the relationship between statewide changes in opioid treatment policy and opioid overdose mortality rates in 2020.",
         "imageUrl": "/dashboard/Public/notebooks/VisualizingChangesInOpioidTreatmentPolicy.png",
         "link": "/dashboard/Public/notebooks/VisualizingChangesInOpioidTreatmentPolicy.html"
+      },
+      {
+        "title": "Rates Of Opioid Overdose Deaths And COVID-19 In 2020",
+        "description": "In this notebook we examine correlations between statewide rates of opioid overdose deaths and COVID-19 cases and deaths.",
+        "imageUrl": "/dashboard/Public/notebooks/COVID-19_and_Opioids_part1.png",
+        "link": "/dashboard/Public/notebooks/COVID-19_and_Opioids_part1.html"
       }
     ]
   },
