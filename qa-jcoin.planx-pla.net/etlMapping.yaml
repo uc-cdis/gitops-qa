@@ -15,26 +15,54 @@ mappings:
         props:
           - name: gender
           - name: race
-          - name: jewish
           - name: hispanic
-      - path: follow_ups
+      - path: time_points
         props:
-          - name: age_at_visit
-          - name: age_at_visit_gt89
-          - name: drug_used
-          - name: ever_transferred
-          - name: health_insurance
-          - name: height
-          - name: weight
-          - name: weight_percentage
-          - name: bmi
-          - name: pregnancy_status
+          - name: days_from_baseline_session
+          - name: visit_name
+          - name: visit_type
+          - name: visit_number
         sorted_by: updated_datetime, desc
-    aggregated_props:
-      - name: center
-        path: follow_ups.centers
-        src: submitter_id
-        fn: set
+      - path: time_points.substance_uses
+        props:
+          - name: S1a
+          - name: S1b
+          - name: S2a
+          - name: S2b
+          - name: S2c
+          - name: S3a
+          - name: S3b
+          - name: S4a
+          - name: S4b
+          - name: S4f
+          - name: S4g
+          - name: S4h
+          - name: S4j
+          - name: S4k
+        sorted_by: updated_datetime, desc
+      - path: time_points.justice_involvements
+        props:
+          - name: J1
+          - name: J2
+          - name: J3d
+          - name: J3e
+          - name: J3f
+          - name: J4a
+          - name: J4b
+      - path: time_points.demographic_households
+        props:
+          - name: D7a
+          - name: D7c
+          - name: D7d
+          - name: D9a
+      - path: time_points.moud_uses
+        props:
+          - name: U15
+      - path: time_points.risk_of_harm_and_consequences
+        props:
+          - name: R1d
+          - name: R1g
+        sorted_by: updated_datetime, desc
   - name: jcoin_file
     doc_type: file
     type: collector
