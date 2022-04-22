@@ -1,5 +1,5 @@
 mappings:
-  - name: jenkins-genomel_etl
+  - name: jenkins-genomel.planx-pla.net_case
     doc_type: case
     type: aggregator
     root: case
@@ -20,7 +20,7 @@ mappings:
       - name: _aliquots_count
         path: samples.aliquots
         fn: count
-  - name: jenkins-genomel_file
+  - name: jenkins-genomel.planx-pla.net_file
     doc_type: file
     type: collector
     root: None
@@ -37,9 +37,4 @@ mappings:
           - name: case_id
             src: id
           - name: project_id
-    target_nodes:
-      - name: submitted_aligned_reads
-        path: read_groups.aliquots.samples.cases
-      - name: submitted_unaligned_reads
-        path: read_groups.aliquots.samples.cases
  

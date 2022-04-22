@@ -15,7 +15,6 @@
     "fence": "quay.io/cdis/fence:master",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "indexd": "quay.io/cdis/indexd:master",
-    "mariner": "quay.io/cdis/mariner-server:master",
     "ws-storage": "quay.io/cdis/ws-storage:master",
     "peregrine": "quay.io/cdis/peregrine:master",
     "pidgin": "quay.io/cdis/pidgin:master",
@@ -289,11 +288,11 @@
   "guppy": {
     "indices": [
       {
-        "index": "jenkins-dcp.planx-pla.net_etl",
+        "index": "jenkins_subject_alias",
         "type": "subject"
       },
       {
-        "index": "jenkins-dcp.planx-pla.net_file",
+        "index": "jenkins_file_alias",
         "type": "file"
       },
       {
@@ -301,7 +300,7 @@
         "type": "clinical_trials"
       }
     ],
-    "config_index": "jenkins-dcp.planx-pla.net_array-config",
+    "config_index": "jenkins_configs_alias",
     "auth_filter_field": "auth_resource_path"
   },
   "scaling": {

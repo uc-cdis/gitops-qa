@@ -1,5 +1,5 @@
 mappings:
-  - name: jenkins-dcp.planx-pla.net_etl
+  - name: jenkins-dcp.planx-pla.net_subject
     doc_type: subject
     type: aggregator
     root: subject
@@ -44,6 +44,7 @@ mappings:
         props:
           - name: bp_systolic
           - name: bp_diastolic
+        sorted_by: updated_datetime, desc
       - path: medication_records
         props:
           - name: hypertension_meds
@@ -128,7 +129,7 @@ mappings:
             src: file_id
             alternate_src: _file_id
             fn: count
-  - name: jenkins.planx-pla.net_file
+  - name: jenkins-dcp.planx-pla.net_file
     doc_type: file
     type: collector
     root: None
