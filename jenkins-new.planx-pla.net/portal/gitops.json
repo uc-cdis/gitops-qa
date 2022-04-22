@@ -2,22 +2,8 @@
   "gaTrackingId": "UA-119127212-3",
   "graphql": {
     "boardCounts": [
-      {
-        "graphql": "_subject_count",
-        "name": "Subject",
-        "plural": "Subjects"
-      },
-      {
-        "graphql": "_sample_count",
-        "name": "Sample",
-        "plural": "Samples"
-      }
     ],
     "chartCounts": [
-      {
-        "graphql": "_subject_count",
-        "name": "Subject"
-      }
     ],
     "projectDetails": "boardCounts"
   },
@@ -83,7 +69,7 @@
         },
         {
           "icon": "query",
-          "link": "/study-viewer/clinical_trials",
+          "link": "/study-viewer/subject",
           "color": "#a2a2a2",
           "name": "Study Viewer"
         },
@@ -445,22 +431,21 @@
   },
   "studyViewerConfig": [
     {
-    "dataType": "clinical_trials",
+    "dataType": "subject",
     "title": "Studies",
-    "titleField": "title",
-    "rowAccessor": "cmc_unique_id",
+    "titleField": "project_id",
+    "rowAccessor": "submitter_id",
     "listItemConfig": {
-      "blockFields": ["brief_summary"],
-      "tableFields": ["data_availability_date", "data_available", "creator", "nct_number", "condition", "category", "clinical_trial_website", "publications"]
+      "blockFields": ["breed"],
+      "tableFields": ["data_type", "auth_resource_path", "disease_type"]
     },
     "fieldMapping": [
-      { "field": "brief_summary", "name": "Brief Study Description" },
-      { "field": "description", "name": "Detailed Description"},
-      { "field": "creator", "name": "Sponsor"},
-      { "field": "category", "name": "Study Type"},
-      { "field": "clinical_trial_website", "name": "Websites"},
-      { "field": "nct_number", "name": "NCT Number"},
-      { "field": "publications", "name": "Study Publications"}
+      { "field": "breed", "name": "Breed" },
+      { "field": "project_id", "name": "Project_ID"},
+      { "field": "submitter_id", "name": "Submitter_ID"},
+      { "field": "data_type", "name": "Data_Type"},
+      { "field": "auth_resource_path", "name": "Resource Path"},
+      { "field": "disease_type", "name": "Disease"}
     ],
     "openMode": "close-all",
     "buttons": [
