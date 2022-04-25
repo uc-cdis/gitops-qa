@@ -1,5 +1,5 @@
 {
-    "scaling_groups" : {
+    "qa_scaling_groups" : {
         "zchen138@uchicago.edu": "workflow",
         "aprokh@uchicago.edu": "workflow",
         "kmhernan@uchicago.edu": "workflow",
