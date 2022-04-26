@@ -173,7 +173,8 @@
           "date_collected",
           "investigator_affiliation",
           "name",
-          "data_description"
+          "data_description",
+          "disclaimer"
         ],
         "linkFields": [
           "url"
