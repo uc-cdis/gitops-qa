@@ -2,16 +2,10 @@
   "user-namespace": "jupyter-pods-jenkins-genomel",
   "sub-dir": "/lw-workspace",
   "user-volume-size": "512Mi",
-  "default-pay-model": {
-    "account_id": "354484406138",
-    "workspace_type": "brhworkspaces",
-    "region": "us-east-1"
-  },
-  "pay-models-dynamodb-table": "bmh-admin-portal-backend-bmhworkspacetableD4D73E43-4U08KIUG3YW3",
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "quay.io/cdis/ecs-ws-sidecar:feat_datamounting",
+    "image": "quay.io/cdis/gen3fuse-sidecar:chore_sidecar",
     "env": {
       "NAMESPACE": "jenkins-genomel",
       "HOSTNAME": "jenkins-genomel.planx-pla.net"
