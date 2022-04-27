@@ -15,7 +15,7 @@
     "pidgin": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/pidgin:integration202205",
     "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:integration202205",
     "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:integration202205",
-    "portal": "quay.io/cdis/data-portal:integration202205",
+    "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/portal:integration202205",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "spark": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-spark:integration202205",
     "tube": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/tube:integration202205",
