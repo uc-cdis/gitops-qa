@@ -25,6 +25,12 @@ mappings:
         sorted_by: updated_datetime, desc
       - path: time_points.substance_uses
         props:
+          - name: S3a_category
+          - name: S4a_category
+          - name: S4f_category
+          - name: S4g_category
+          - name: S4h_category
+          - name: S4j_category
           - name: S1a
           - name: S1b
           - name: S2a
@@ -42,6 +48,13 @@ mappings:
         sorted_by: updated_datetime, desc
       - path: time_points.justice_involvements
         props:
+          - name: J1_category
+          - name: J1a_category
+          - name: J2_category
+          - name: J2a_category
+          - name: J2d_category
+          - name: J3c_and_d_category
+          - name: J5a_category
           - name: J1
           - name: J2
           - name: J3d
