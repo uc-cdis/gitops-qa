@@ -27,6 +27,9 @@ mappings:
       - name: title
       - name: project_id
       - name: cmc_unique_id
+      - name: study_registration
+      - name: study_registration_id
+      - name: required_idp
         src: submitter_id
   - name: qa-niaid_ct-file
     doc_type: ctfile
