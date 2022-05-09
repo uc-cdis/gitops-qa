@@ -112,7 +112,7 @@
     "systemUse": {
       "systemUseTitle" : "Data Use Agreement",
       "systemUseText" : [
-      "Data Use Agreement - Non-Commercial Research Use Only"
+      "Data Use Agreement - Non-Commercial Research Use Only",
       "This Data Use Agreement for Academic and Institutional Users (this “Agreement”) is by and between you and the University of Chicago (the “University”) and governs your access to and use of the deidentified imaging and associated demographic and clinical data provided to you by the University (“MIDRC Data”). By accessing, using, or downloading any MIDRC Data, you are agreeing to be bound by the terms and conditions of this Agreement.",
           "1. The University is the legal entity that hosts Medical Imaging and Data Resource Center (MIDRC) data",
           "2. The University grants you a limited, personal, worldwide, non-exclusive, non-transferable, royalty-free license to view and use the MIDRC Data solely for your personal, Non-Commercial Research Purposes. Any commercial use, sale, or other monetization is prohibited. “Non-Commercial Research Purposes” means academic research or other not-for-profit scholarly purposes which are undertaken at a non-profit or government institution and publishing in connection therewith.",
