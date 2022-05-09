@@ -9,7 +9,7 @@
   "versions": {
     "acronymbot": "quay.io/cdis/acronym-bot:2022.03",
     "arborist": "quay.io/cdis/arborist:2022.03",
-    "aws-es-proxy": "quay.io/cdis/aws-es-proxy:0.8",
+    "aws-es-proxy": "quay.io/cdis/aws-es-proxy:v1.3.1",
     "cogwheel": "quay.io/cdis/cogwheel:2022.03",
     "fence": "quay.io/cdis/fence:2022.03",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
