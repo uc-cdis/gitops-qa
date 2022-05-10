@@ -373,7 +373,7 @@
             },
             "accessibleFieldCheckList": ["project_id"],
             "accessibleValidationField": "project_id"
-          },
+          }
         },
         {
             "tabTitle": "Datasets",
