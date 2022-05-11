@@ -2,31 +2,8 @@
   "gaTrackingId": "UA-119127212-12",
   "graphql": {
     "boardCounts": [
-      {
-        "graphql": "_case_count",
-        "name": "Case",
-        "plural": "Cases"
-      },
-      {
-        "graphql": "_sample_count",
-        "name": "Sample",
-        "plural": "Samples"
-      },
-      {
-        "graphql": "_family_count",
-        "name": "Family",
-        "plural": "Families"
-      }
     ],
     "chartCounts": [
-      {
-        "graphql": "_case_count",
-        "name": "Case"
-      },
-      {
-        "graphql": "_sample_count",
-        "name": "Sample"
-      }
     ],
     "projectDetails": "boardCounts"
   },
@@ -106,6 +83,12 @@
           "link": "/identity",
           "color": "#a2a2a2",
           "name": "Profile"
+        },
+        {
+          "icon": "query",
+          "link": "/study-viewer/clinical_trials",
+          "color": "#a2a2a2",
+          "name": "Study Viewer"
         }
       ]
     },
