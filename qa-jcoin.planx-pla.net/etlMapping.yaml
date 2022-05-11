@@ -16,14 +16,17 @@ mappings:
           - name: gender
           - name: race
           - name: hispanic
-      - path: time_points
-        props:
-          - name: days_from_baseline_session
-          - name: visit_name
-          - name: visit_type
-          - name: visit_number
-        sorted_by: updated_datetime, desc
-      - path: time_points.substance_uses
+    nested_props:
+    - name: time_points
+      path: time_points
+      props:
+        - name: days_from_baseline_session
+        - name: visit_name
+        - name: visit_type
+        - name: visit_number
+      nested_props:
+      - name: substance_uses
+        path: substance_uses
         props:
           - name: S3a_category
           - name: S4a_category
@@ -45,8 +48,8 @@ mappings:
           - name: S4h
           - name: S4j
           - name: S4k
-        sorted_by: updated_datetime, desc
-      - path: time_points.justice_involvements
+      - name: justice_involvements
+        path: justice_involvements
         props:
           - name: J1_category
           - name: J1a_category
@@ -62,16 +65,19 @@ mappings:
           - name: J3f
           - name: J4a
           - name: J4b
-      - path: time_points.demographic_households
+      - name: demographic_households
+        path: demographic_households
         props:
           - name: D7a
           - name: D7c
           - name: D7d
           - name: D9a
-      - path: time_points.moud_uses
+      - name: moud_uses
+        path: moud_uses
         props:
           - name: U15
-      - path: time_points.risk_of_harm_and_consequences
+      - name: risk_of_harm_and_consequences
+        path: risk_of_harm_and_consequences
         props:
           - name: R1d
           - name: R1g
