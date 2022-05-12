@@ -16,6 +16,9 @@ mappings:
           - name: gender
           - name: race
           - name: hispanic
+      - path: moud_uses
+        props:
+          - name: U15
     nested_props:
     - name: time_points
       path: time_points
@@ -72,10 +75,6 @@ mappings:
           - name: D7c
           - name: D7d
           - name: D9a
-      - name: moud_uses
-        path: moud_uses
-        props:
-          - name: U15
       - name: risk_of_harm_and_consequences
         path: risk_of_harm_and_consequences
         props:
