@@ -944,5 +944,6 @@
   "showArboristAuthzOnProfile": true,
   "showFenceAuthzOnProfile": false,
   "showExternalLoginsOnProfile": true,
-  "componentToResourceMapping": {}
+  "componentToResourceMapping": {},
+  "stridesPortalURL": "https://brh-test.planx-pla.net"
 }
