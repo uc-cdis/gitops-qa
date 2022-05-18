@@ -53,10 +53,10 @@
         "image": "quay.io/cdis/pelican:master",
         "pull_policy": "always",
         "env": []
-      }
-    ],  
-    "restart_policy": "never"
-  },
+      } 
+      "restart_policy": "never"
+    }
+  ],  
   "peregrine": {
     "sidecar": "True"
   },
