@@ -123,7 +123,7 @@
           "name": "Submit Data"
         },
         {
-          "link": "https://qa-jcoin.planx-pla.net/dashboard/Public/index.html",
+          "link": "https://jcoin-maarc.github.io/jdc-docs-public/",
           "name": "Documentation"
         }
       ]
@@ -316,10 +316,6 @@
         "race": {
           "chartType": "fullPie",
           "title": "Race"
-        },
-        "center": {
-          "chartType": "bar",
-          "title": "center"
         }
       },
       "filters": {
@@ -331,12 +327,7 @@
               "gender",
               "race",
               "hispanic",
-              "drug_used",
-              "ever_transferred",
-              "pregnancy_status",
-              "protocol",
-              "health_insurance",
-              "center"
+              "protocol"
             ]
           }
         ]
@@ -347,18 +338,7 @@
           "project_id",
           "gender",
           "race",
-          "jewish",
-          "hispanic",
-          "drug_used",
-          "ever_transferred",
-          "pregnancy_status",
-          "protocol",
-          "height",
-          "weight",
-          "weight_percentage",
-          "bmi",
-          "health_insurance",
-          "center"
+          "protocol"
         ]
       },
       "buttons": [
@@ -393,18 +373,6 @@
           {
             "field": "project_id",
             "name": "Project ID"
-          },
-          {
-            "field": "bmi",
-            "name": "BMI (kg/m^2)"
-          },
-          {
-            "field": "height",
-            "name": "Height (cm)"
-          },
-          {
-            "field": "weight",
-            "name": "Weight (g)"
           }
         ],
         "manifestMapping": {
