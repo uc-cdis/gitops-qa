@@ -25,6 +25,8 @@ mappings:
     type: aggregator
     root: time_point         
     props:
+      - name: submitter_id
+      - name: project_id
       - name: days_from_baseline_session
       - name: visit_name
       - name: visit_type
