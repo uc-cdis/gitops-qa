@@ -71,16 +71,16 @@ mappings:
           - name: J3f
           - name: J4a
           - name: J4b
-    - path: demographic_households
-      props:
-        - name: D7a
-        - name: D7c
-        - name: D7d
-        - name: D9a
-    - path: risk_of_harm_and_consequences
-      props:
-        - name: R1d
-        - name: R1g
+      - path: demographic_households
+        props:
+          - name: D7a
+          - name: D7c
+          - name: D7d
+          - name: D9a
+      - path: risk_of_harm_and_consequences
+        props:
+          - name: R1d
+          - name: R1g
 
   - name: jcoin_file
     doc_type: file
