@@ -30,8 +30,8 @@ mappings:
       - name: visit_type
       - name: visit_number
     parent_props:
-      - path: participants[participant].protocols[protocol,protocol_submitter_id:submitter_id].projects[project_name:name]
-      - path: participants[participant,quarter_recruited,role_in_project]
+      - path: participants.protocols[protocol,protocol_submitter_id:submitter_id].projects[project_name:name]
+      - path: participants[quarter_recruited,role_in_project,current_client_status]
     flatten_props:
       - path: substance_uses
         props:
