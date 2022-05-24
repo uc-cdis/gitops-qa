@@ -138,6 +138,9 @@ LOGIN_OPTIONS:
     idp: google
   - name: "Dev login - set username in 'dev_login' cookie"
     idp: mock_login
+  - name: 'ORCID Login'
+    idp: fence
+    fence_idp: orcid
 
 # Default login provider:
 # - must be configured in LOGIN_OPTIONS and OPENID_CONNECT
