@@ -130,7 +130,8 @@
       "defaultOrderBy": ["title", "asc"],
       "buttons": [
         {
-          "type": "download"
+          "type": "download",
+          "overrideUrlField": "external_url"
         },
         {
           "type": "request_access",
