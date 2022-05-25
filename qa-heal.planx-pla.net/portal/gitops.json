@@ -113,7 +113,8 @@
     "explorer": false,
     "analysis": false,
     "discovery": true,
-    "discoveryUseAggMDS": true
+    "discoveryUseAggMDS": true,
+    "studyRegistration": true
   },
   "discoveryConfig": {
     "features": {
@@ -884,6 +885,9 @@
         "display": false
       }
     ]
+  },
+  "studyRegistrationConfig": {
+    "studyRegistrationValidationField": "registrant_username"
   },
   "resourceBrowser": {
     "title": "Static HEAL Jupyter Notebooks",
