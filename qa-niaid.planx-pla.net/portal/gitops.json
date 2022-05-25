@@ -135,7 +135,7 @@
         },
         {
           "type": "request_access",
-          "required_idp_field": "required_idp",
+          "requiredIdpField": "required_idp",
           "resourceDisplayNameField": "title",
           "redirectModalText": "the NIAID Data Access Request Form",
           "singleItemView": false,
