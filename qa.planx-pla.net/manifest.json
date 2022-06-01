@@ -24,7 +24,7 @@
     "sheepdog": "quay.io/cdis/sheepdog:2022.03",
     "dashboard": "quay.io/cdis/gen3-statics:2022.03",
     "metadata": "quay.io/cdis/metadata-service:2022.03",
-    "tube": "quay.io/cdis/tube:2202.03"
+    "tube": "quay.io/cdis/tube:2022.03"
   },
   "arborist": {
     "deployment_version": "2"
