@@ -59,7 +59,7 @@
     "dispatcher_job_num": "10",
     "netpolicy": "on",
     "lb_type": "internal",
-    "frontend_root": "gen3ff"
+    "frontend_root": "portal"
   },
   "canary": {
     "default": 0
