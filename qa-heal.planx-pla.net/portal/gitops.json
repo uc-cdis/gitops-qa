@@ -1,5 +1,6 @@
 {
   "gaTrackingId": "UA-119127212-3",
+  "homepageHref": "https://qa-heal.planx-pla.net",
   "graphql": {
     "boardCounts": [],
     "chartCounts": [],
@@ -83,29 +84,8 @@
       "#99286B",
       "#402264"
     ],
-    "footerLogos": [
-      {
-        "src": "/src/img/gen3.png",
-        "href": "https://ctds.uchicago.edu/gen3",
-        "alt": "Gen3 Data Commons"
-      },
-      {
-        "src": "/src/img/createdby.png",
-        "href": "https://ctds.uchicago.edu/",
-        "alt": "Center for Translational Data Science at the University of Chicago"
-      }
-    ],
     "footer": {
-      "links": [
-        {
-          "text": "HEAL Initiative",
-          "href": "https://heal.nih.gov/"
-        },
-        {
-          "text": "HHS Responsible Disclosure Form",
-          "href": "https://hhs.responsibledisclosure.com/hc/en-us"
-        }
-      ]
+      "externalURL": "/external/footer"
     }
   },
   "requiredCerts": [],
@@ -113,7 +93,8 @@
     "explorer": false,
     "analysis": false,
     "discovery": true,
-    "discoveryUseAggMDS": true
+    "discoveryUseAggMDS": true,
+    "studyRegistration": true
   },
   "discoveryConfig": {
     "features": {
@@ -884,6 +865,10 @@
         "display": false
       }
     ]
+  },
+  "studyRegistrationConfig": {
+      "studyRegistrationTrackingField": "registrant_username",
+      "studyRegistrationValidationField": "is_registered"
   },
   "resourceBrowser": {
     "title": "Static HEAL Jupyter Notebooks",
