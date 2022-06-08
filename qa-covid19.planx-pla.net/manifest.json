@@ -12,7 +12,7 @@
     "awshelper": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/awshelper:2022.05",
     "covid19-bayes": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/covid19-bayes:5.1.4",
     "covid19-etl": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/covid19-etl:5.1.5",
-    "covid19-notebook-etl": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/covid19-notebook-etl:5.1.1",
+    "covid19-notebook-etl": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/covid19-notebook-etl:5.1.6",
     "dashboard": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-statics:2022.05",
     "fence": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/fence:2022.05",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
