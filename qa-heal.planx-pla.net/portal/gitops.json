@@ -209,208 +209,10 @@
       "includeIfNotAvailable": true,
       "valueIfNotAvailable": "No summary has been provided for this study."
     },
-    "studyPageFields": {
-      "header": {
-        "field": "project_title"
-      },
-      "fieldsToShow": [
-        {
-          "groupName": "HEAL Research Initiatives",
-          "groupWidth": "full",
-          "includeName": false,
-          "fields": [
-            {
-              "name": "Project Number",
-              "field": "project_number"
-            },
-            {
-              "name": "Research Focus Area",
-              "field": "research_focus_area"
-            },
-            {
-              "name": "Research Program",
-              "field": "research_program"
-            },
-            {
-              "name": "Research Question",
-              "field": "research_question"
-            }
-          ]
-        },
-        {
-          "groupName": "Host Institution",
-          "groupWidth": "full",
-          "includeName": false,
-          "fields": [
-            {
-              "name": "Institution(s)",
-              "field": "institutions"
-            },
-            {
-              "name": "Location",
-              "field": "location"
-            },
-            {
-              "name": "Investigator(s)",
-              "field": "investigators_name"
-            },
-            {
-              "name": "Administering IC(s)",
-              "field": "administering_ic"
-            },
-            {
-              "name": "Year Grant Awarded",
-              "field": "year_awarded"
-            }
-          ]
-        },
-        {
-          "groupName": "Clinical Trial",
-          "groupWidth": "full",
-          "includeName": false,
-          "fields": [
-            {
-              "name": "Study Type",
-              "field": "study_type"
-            },
-            {
-              "name": "Study Name",
-              "field": "study_name_title"
-            },
-            {
-              "name": "Study URL",
-              "field": "study_url",
-              "contentType": "link"
-            },
-            {
-              "name": "Study Description",
-              "field": "study_description"
-            },
-            {
-              "name": "Number of Subjects",
-              "field": "subjects"
-            },
-            {
-              "name": "Number of Sites",
-              "field": "sites"
-            },
-            {
-              "name": "Clinical Trial Link",
-              "field": "clinical_trial_link"
-            },
-            {
-              "name": "Protocol Name",
-              "field": "protocol_name"
-            },
-            {
-              "name": "Dataset Description",
-              "field": "dataset_description"
-            },
-            {
-              "name": "Dataset Category",
-              "field": "dataset_category"
-            }
-          ]
-        },
-        {
-          "groupName": "Tags",
-          "includeName": false,
-          "groupWidth": "full",
-          "fields": [
-            {
-              "name": "Study Characteristics",
-              "field": "tags",
-              "contentType": "tags",
-              "includeIfNotAvailable": false
-            }
-          ]
-        },
-        {
-          "groupWidth": "full",
-          "fields": [
-            {
-              "name": "Summary",
-              "field": "study_description_summary",
-              "contentType": "paragraphs",
-              "includeName": true,
-              "includeIfNotAvailable": true,
-              "valueIfNotAvailable": "No summary has been provided for this study."
-            }
-          ]
-        },
-        {
-          "groupName": "Datasets",
-          "groupWidth": "full",
-          "includeName": false,
-          "fields": [
-            {
-              "name": "Dataset 1 - Title",
-              "field": "dataset_1_title"
-            },
-            {
-              "name": "Dataset 1 - Description",
-              "field": "dataset_1_description"
-            },
-            {
-              "name": "Dataset 1 - Type",
-              "field": "dataset_1_type"
-            },
-            {
-              "name": "Dataset 2 - Title",
-              "field": "dataset_2_title"
-            },
-            {
-              "name": "Dataset 2 - Description",
-              "field": "dataset_2_description"
-            },
-            {
-              "name": "Dataset 2 - Type",
-              "field": "dataset_2_type"
-            },
-            {
-              "name": "Dataset 3 - Title",
-              "field": "dataset_3_title"
-            },
-            {
-              "name": "Dataset 3 - Description",
-              "field": "dataset_3_description"
-            },
-            {
-              "name": "Dataset 3 - Type",
-              "field": "dataset_3_type"
-            },
-            {
-              "name": "Dataset 4 - Title",
-              "field": "dataset_4_title"
-            },
-            {
-              "name": "Dataset 4 - Description",
-              "field": "dataset_4_description"
-            },
-            {
-              "name": "Dataset 4 - Type",
-              "field": "dataset_4_type"
-            },
-            {
-              "name": "Dataset 5 - Title",
-              "field": "dataset_5_title"
-            },
-            {
-              "name": "Dataset 5 - Description",
-              "field": "dataset_5_description"
-            },
-            {
-              "name": "Dataset 5 - Type",
-              "field": "dataset_5_type"
-            }
-          ]
-        }
-      ]
-    },
     "detailView": {
       "headerField": "project_title",
-      "tabs":[
-        { 
+      "tabs": [
+        {
           "tabName": "Study",
           "groups": [
             {
@@ -569,9 +371,9 @@
                 }
               ]
             }
-          ] 
-        }, 
-        { 
+          ]
+        },
+        {
           "tabName": "Datasets",
           "groups": [
             {
@@ -745,8 +547,8 @@
               ]
             }
           ]
-        }, 
-        { 
+        },
+        {
           "tabName": "Repositories",
           "groups": [
             {
@@ -774,13 +576,15 @@
                 },
                 {
                   "type": "tags",
-                  "categories": ["Commons"]
+                  "categories": [
+                    "Commons"
+                  ]
                 }
               ]
             }
           ]
-        }, 
-        { 
+        },
+        {
           "tabName": "Access",
           "groups": [
             {
@@ -867,8 +671,8 @@
     ]
   },
   "studyRegistrationConfig": {
-      "studyRegistrationTrackingField": "registrant_username",
-      "studyRegistrationValidationField": "is_registered"
+    "studyRegistrationTrackingField": "registrant_username",
+    "studyRegistrationValidationField": "is_registered"
   },
   "resourceBrowser": {
     "title": "Static HEAL Jupyter Notebooks",
