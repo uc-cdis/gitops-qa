@@ -279,6 +279,6 @@
       }
     }
   ],
-  "showArboristAuthzOnProfile": true,
+  "showArboristAuthzOnProfile": false,
   "showFenceAuthzOnProfile": false
 }
