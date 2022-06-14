@@ -1,5 +1,6 @@
 {
   "gaTrackingId": "UA-119127212-3",
+  "argoTempalte": "gwas-template",
   "graphql": {
     "boardCounts": [
       {
