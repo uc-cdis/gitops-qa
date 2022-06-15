@@ -1,5 +1,5 @@
 #!groovy
-@Library('cdis-jenkins-lib@dummy_pr_frontent_root_negative') _
+@Library('cdis-jenkins-lib@chore/global_frontend_root') _
 testPipeline {
   MANIFEST = "True"
 }
