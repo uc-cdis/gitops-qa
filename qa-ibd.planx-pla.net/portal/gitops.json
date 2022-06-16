@@ -243,7 +243,7 @@
       ],
       "guppyConfig": {
         "dataType": "participant",
-        "tierAccessLevel": "private",
+        "tierAccessLevel": "regular",
         "nodeCountTitle": "Participants",
         "fieldMapping": [
           { "field": "project_id", "name": "Project ID" },
@@ -328,7 +328,7 @@
       ],
       "guppyConfig": {
         "dataType": "file",
-        "tierAccessLevel": "private",
+        "tierAccessLevel": "regular",
         "fieldMapping": [
           { "field": "object_id", "name": "GUID" },
           { "field": "project_id", "name": "Project ID" }
@@ -409,7 +409,7 @@
       ],
       "guppyConfig": {
         "dataType": "supplementary_file",
-        "tierAccessLevel": "private",
+        "tierAccessLevel": "regular",
         "fieldMapping": [
           { "field": "object_id", "name": "GUID" },
           { "field": "project_id", "name": "Project ID" },
