@@ -184,17 +184,17 @@
       {
         "index": "qa-ibd",
         "type": "participant",
-        "tier_access_level": "private"
+        "tier_access_level": "regular"
       },
       {
         "index": "qa-ibd_file",
         "type": "file",
-        "tier_access_level": "private"
+        "tier_access_level": "regular"
       },
       {
         "index": "qa-ibd_supplementary_file",
         "type": "supplementary_file",
-        "tier_access_level": "private"
+        "tier_access_level": "regular"
       },
       {
         "index": "qa-ibd_project",
