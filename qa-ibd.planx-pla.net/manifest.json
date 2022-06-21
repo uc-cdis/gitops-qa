@@ -170,6 +170,7 @@
     "sync_from_dbgap": "False",
     "dispatcher_job_num": "10",
     "netpolicy": "on",
+    "tier_access_limit": "5",
     "useryaml_s3path": "s3://cdis-gen3-users/qa-ibd/user.yaml",
     "maintenance_mode": "off",
     "lb_type": "internal",
@@ -183,17 +184,17 @@
       {
         "index": "qa-ibd",
         "type": "participant",
-        "tier_access_level": "private"
+        "tier_access_level": "regular"
       },
       {
         "index": "qa-ibd_file",
         "type": "file",
-        "tier_access_level": "private"
+        "tier_access_level": "regular"
       },
       {
         "index": "qa-ibd_supplementary_file",
         "type": "supplementary_file",
-        "tier_access_level": "private"
+        "tier_access_level": "regular"
       },
       {
         "index": "qa-ibd_project",
