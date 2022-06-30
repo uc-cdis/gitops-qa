@@ -16,7 +16,7 @@ DEBUG: false
 # if true, will automatically login a user with username "test"
 MOCK_AUTH: false
 # if true, will only fake a successful login response from Google in /login/google
-MOCK_GOOGLE_AUTH: true
+MOCK_GOOGLE_AUTH: false
 # if true, will ignore anything configured in STORAGE_CREDENTIALS
 MOCK_STORAGE: true
 # allow OIDC traffic on http for development. By default it requires https.
@@ -54,8 +54,10 @@ LOGIN_OPTIONS:
     shib_idps: '*'
   - name: 'ImmPort Login'
     idp: immport
-  - name: 'Dev Google Login'
+  - name: 'Google Login'
     idp: google
+  - name: "Dev login - set username in 'dev_login' cookie"
+    idp: mock_login
     secondary: true
 
 # //////////////////////////////////////////////////////////////////////////////////////
