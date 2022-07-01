@@ -2,10 +2,16 @@
   "user-namespace": "jupyter-pods-jenkins-new",
   "sub-dir": "/lw-workspace",
   "user-volume-size": "512Mi",
+  "default-pay-model": {
+    "bmh_workspace_id": "blanket_billing_eks",
+    "region": "us-east-1",
+    "account_id": "707767160287",
+    "workspace_type": "qaplanetv1"
+  },
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "quay.io/cdis/gen3fuse-sidecar:chore_sidecar",
+    "image": "quay.io/cdis/ecs-ws-sidecar:master",
     "env": {
       "NAMESPACE": "jenkins-new",
       "HOSTNAME": "jenkins-new.planx-pla.net"
