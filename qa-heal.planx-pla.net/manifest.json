@@ -17,7 +17,7 @@
     "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:1.0.0",
     "indexd": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexd:2022.06",
     "manifestservice": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifestservice:2022.06",
-    "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:2022.06",
+    "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:feat_serial-id2",
     "peregrine": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/peregrine:2022.06",
     "pidgin": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/pidgin:2022.06",
     "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:feat_study-reg",
@@ -30,7 +30,7 @@
     "tube": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/tube:2022.06",
     "wts": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/workspace-token-service:2022.06",
     "frontend-framework": "quay.io/cdis/frontend-framework:0.3.0",
-    "cedar-wrapper": "quay.io/cdis/cedar-wrapper-service:feat_init"
+    "cedar-wrapper": "quay.io/cdis/cedar-wrapper-service:master"
   },
   "arborist": {
     "deployment_version": "2"
