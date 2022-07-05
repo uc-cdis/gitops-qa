@@ -677,7 +677,7 @@
   "resourceBrowser": {
     "title": "Static HEAL Jupyter Notebooks",
     "public": true,
-    "description": "The Jupyter notebooks contained in this notebook viewer pull data from various sources to generate and output useful tables, charts, graphs, and models. Each notebook is static, meaning the data being used by the notebooks is not updated in real time. These notebooks are also available in the Gen3 Workspace.",
+    "description": "The notebooks available here are intended to serve as examples of how to access, manipulate and analyze data available through the Platform.  As such, they are intended primarily for users who wish to access and analyze data themselves, either by downloading them or by using them in a workspace (the notebooks are also available in the workspaces where they may be used as templates).  Despite this, several of the notebooks include interesting results and substantive annotations, and thus may also be of interest to users wishing to learn more about a particular topic.",
     "resources": [
       {
         "title": "BACPAC Synthetic Data Analysis",
