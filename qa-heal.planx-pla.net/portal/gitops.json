@@ -608,7 +608,7 @@
         }
       ]
     },
-    "tagsDisplayName": "Study Characteristics",
+    "tagsDisplayName": "Study Filters",
     "minimalFieldMapping": {
       "authzField": "authz",
       "tagsListFieldName": "tags",
