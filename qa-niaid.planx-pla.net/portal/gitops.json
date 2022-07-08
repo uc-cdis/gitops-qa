@@ -7,7 +7,6 @@
   },
   "components": {
     "appName": "NIAID Clinical Trials Repository",
-    "metaDescription": "The HEAL Platform shares data from the NIH HEAL Initiative&reg; with the community of researchers, healthcare providers, community leaders, policy makers, and other stakeholders.",
     "homepageAltText": "NIH: National Institute of Allergy and Infectious Diseases logo",
     "index": {
       "introduction": {
