@@ -147,6 +147,7 @@
             "investigators_name",
             "project_title",
             "project_number",
+            "appl_id",
             "dataset_1_title",
             "dataset_2_title",
             "dataset_3_title",
