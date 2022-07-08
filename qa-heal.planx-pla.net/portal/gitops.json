@@ -608,7 +608,8 @@
         }
       ]
     },
-    "tagsDisplayName": "Study Characteristics",
+    "tagsDisplayName": "Study Filters",
+    "tagColumnWidth": "500px",
     "minimalFieldMapping": {
       "authzField": "authz",
       "tagsListFieldName": "tags",
