@@ -673,7 +673,8 @@
   },
   "studyRegistrationConfig": {
     "studyRegistrationTrackingField": "registrant_username",
-    "studyRegistrationValidationField": "is_registered"
+    "studyRegistrationValidationField": "is_registered",
+    "studyRegistrationAccessCheckField": "registration_authz"
   },
   "resourceBrowser": {
     "title": "Static HEAL Jupyter Notebooks",
