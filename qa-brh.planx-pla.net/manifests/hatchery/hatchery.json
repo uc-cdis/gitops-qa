@@ -1,5 +1,5 @@
 {
-  "user-namespace": "jupyter-pods",
+  "user-namespace": "jupyter-pods-qa-brh",
   "sub-dir": "/lw-workspace",
   "user-volume-size": "10Gi",
   "default-pay-model": {
@@ -7,14 +7,14 @@
     "workspace_type": "brhworkspaces",
     "region": "us-east-1"
   },
-  "pay-models-dynamodb-table": "bmh-admin-portal-backend-bmhworkspacetableD4D73E43-34AAJOR7A5AG",
+  "pay-models": [],
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
     "image": "quay.io/cdis/ecs-ws-sidecar:feat_datamounting",
     "env": {
-      "NAMESPACE": "default",
-      "HOSTNAME": "brh.data-commons.org"
+      "NAMESPACE": "qa-brh",
+      "HOSTNAME": "qa-brh.planx-pla.net"
     },
     "args": [],
     "command": [
@@ -38,7 +38,7 @@
       "name": "(Generic) Jupyter Lab Notebook with R Kernel",
       "image": "quay.io/cdis/jupyter-superslim-r:1.0.1",
       "env": {
-        "FRAME_ANCESTORS": "https://brh.data-commons.org"
+        "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
       },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
@@ -73,7 +73,7 @@
       "name": "(Generic, User-licensed) Stata Notebook ",
       "image": "quay.io/cdis/stata-heal:master",
       "env": {
-        "FRAME_ANCESTORS": "https://brh.data-commons.org"
+        "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
       },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
@@ -104,7 +104,7 @@
       "name": "(Generic, Limited Gen3-licensed) Stata Notebook",
       "image": "quay.io/cdis/stata-heal:gen3-licensed",
       "env": {
-        "FRAME_ANCESTORS": "https://brh.data-commons.org"
+        "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
       },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
@@ -137,7 +137,7 @@
       "name": "(Tutorials) Example Analysis Jupyter Lab Notebooks",
       "image": "quay.io/cdis/brh-notebooks:combined_demos__14134d952882c3db1d25cd54a453316927aa5e7c",
       "env": {
-        "FRAME_ANCESTORS": "https://brh.data-commons.org"
+        "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
       },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
