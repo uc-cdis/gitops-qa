@@ -116,7 +116,7 @@
   "analysisTools": [
     {
       "title": "OHDSI Atlas",
-      "description": "Use this App for cohort creation. These will be automatically populated in the Gen3 GWAS App",
+      "description": "Use this app to create cohorts that you can use in the Gen3 GWAS app",
       "applicationUrl": "https://atlas-qa-mickey.planx-pla.net/atlas/",
       "image": "/custom/sponsors/gitops-sponsors/atlas-logo.png"
     },
