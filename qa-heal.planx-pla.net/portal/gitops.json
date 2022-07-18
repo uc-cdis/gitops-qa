@@ -8,6 +8,7 @@
   },
   "components": {
     "appName": "HEAL QA Data Commons Portal",
+    "metaDescription": "The HEAL Platform shares data from the NIH HEAL Initiative&reg; with the community of researchers, healthcare providers, community leaders, policy makers, and other stakeholders.",
     "index": {
       "introduction": {
         "heading": "Data Commons",
@@ -31,13 +32,13 @@
           "icon": "query",
           "link": "/discovery",
           "name": "Discovery",
-          "tooltip": "Use free-text search and tags to rapidly find relevant studies, discover new datasets across multiple resources, and easily export selected data files to the analysis workspace."
+          "tooltip": "Use free-text search and tags to find studies, discover datasets, and export selected data files to an analysis workspace."
         },
         {
           "icon": "workspace",
           "link": "/workspace",
           "name": "Workspace",
-          "tooltip": "Gen3 workspaces are secure data analysis environments in the cloud that can access data from one or more data resources."
+          "tooltip": "Gen3 workspaces are secure cloud environments where users can analyze data from one or more data resources."
         },
         {
           "name": "Example Analysis",
@@ -64,7 +65,7 @@
     "login": {
       "title": "HEAL QA Data Commons",
       "subTitle": "Explore, Analyze, and Share Data",
-      "text": "This website supports the management, analysis and sharing of data for the research community and aims to accelerate discovery and development of therapies, diagnostic tests, and other technologies.",
+      "text": "This website supports the discovery, analysis and sharing of data and aims to support the accelerated discovery and development of therapies, diagnostic tests, and other technologies.",
       "contact": "If you have any questions about access or the registration process, please contact ",
       "email": "heal-support@datacommons.io",
       "image": "/../../../../custom/sponsors/gitops-sponsors/heal_login_color_sides"
@@ -147,6 +148,7 @@
             "investigators_name",
             "project_title",
             "project_number",
+            "appl_id",
             "dataset_1_title",
             "dataset_2_title",
             "dataset_3_title",
@@ -189,7 +191,7 @@
         "valueIfNotAvailable": "n/a"
       },
       {
-        "name": "Research Focus Area",
+        "name": "HEAL Research Focus Area",
         "field": "research_focus_area",
         "errorIfNotAvailable": false,
         "valueIfNotAvailable": "n/a"
@@ -608,7 +610,8 @@
         }
       ]
     },
-    "tagsDisplayName": "Study Characteristics",
+    "tagsDisplayName": "Study Filters",
+    "tagColumnWidth": "500px",
     "minimalFieldMapping": {
       "authzField": "authz",
       "tagsListFieldName": "tags",
@@ -672,12 +675,13 @@
   },
   "studyRegistrationConfig": {
     "studyRegistrationTrackingField": "registrant_username",
-    "studyRegistrationValidationField": "is_registered"
+    "studyRegistrationValidationField": "is_registered",
+    "studyRegistrationAccessCheckField": "registration_authz"
   },
   "resourceBrowser": {
     "title": "Static HEAL Jupyter Notebooks",
     "public": true,
-    "description": "The Jupyter notebooks contained in this notebook viewer pull data from various sources to generate and output useful tables, charts, graphs, and models. Each notebook is static, meaning the data being used by the notebooks is not updated in real time. These notebooks are also available in the Gen3 Workspace.",
+    "description": "The notebooks available here are intended to serve as examples of how to access, manipulate and analyze data available through the Platform.  As such, they are intended primarily for users who wish to access and analyze data themselves, either by downloading them or by using them in a workspace (the notebooks are also available in the workspaces where they may be used as templates).  Despite this, several of the notebooks include interesting results and substantive annotations, and thus may also be of interest to users wishing to learn more about a particular topic.",
     "resources": [
       {
         "title": "BACPAC Synthetic Data Analysis",

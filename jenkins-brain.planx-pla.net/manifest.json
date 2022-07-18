@@ -304,6 +304,22 @@
       {
         "index": "jenkins_cmc_alias",
         "type": "clinical_trials"
+      },
+      {
+        "index": "midrc_dataset",
+        "type": "dataset"
+      },
+      {
+        "index": "midrc_case",
+        "type": "case"
+      },
+      {
+        "index": "midrc_imaging_data_file",
+        "type": "imaging_data_file"
+      },
+      {
+        "index": "midrc_imaging_study",
+        "type": "imaging_study"
       }
     ],
     "config_index": "jenkins_configs_alias",

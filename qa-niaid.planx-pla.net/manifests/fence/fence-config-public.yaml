@@ -54,8 +54,10 @@ LOGIN_OPTIONS:
     shib_idps: '*'
   - name: 'ImmPort Login'
     idp: immport
-  - name: 'Dev Google Login'
+  - name: 'Google Login'
     idp: google
+  - name: "Dev login - set username in 'dev_login' cookie"
+    idp: mock_login
     secondary: true
 
 # //////////////////////////////////////////////////////////////////////////////////////
