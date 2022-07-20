@@ -200,20 +200,12 @@ vocabulary and selecting the set of terms for your analyses. Here you
 select all concepts (variables) that you would like to use for criteria
 that define your study population cohort.
 
-.. raw:: html
-
-   <!---
-   [Note - Insert image form slide 10 here]: #
-   -->
+.. image:: _static/Image_from_slide_10.png
 
 Select Concept Sets in the menu and click the blue box for “New Concept
 Set”.
 
-.. raw:: html
-
-   <!---
-   [Note - Insert image form slide 11 here]: #
-   -->
+.. image:: _static/Image_from_slide_11.png
 
 In the box above the tabs, enter a name for the Concept Set you are
 creating.
@@ -221,29 +213,17 @@ creating.
 Click the green box “Add concepts” to view the list of concept
 variables.
 
-.. raw:: html
-
-   <!---
-   [Note - Insert image form slide 13 here]: #
-   -->
+.. image:: _static/Image_from_slide_13.png
 
 Enter the concept name or code into the search bar to find relevant
 concept variables.
 
-.. raw:: html
-
-   <!---
-   [Note - Insert image from slide 14 here]: #
-   -->
+.. image:: _static/Image_from_slide_14.png
 
 Select desired concepts, click “Add To Concept Set”, then click “Concept
 Sets”.
 
-.. raw:: html
-
-   <!---
-   [Note - Insert image from slide 15 here]: #
-   -->
+.. image:: _static/Image_from_slide_15.png
 
 Make sure all desired concepts are included, then click the save icon to
 the right of the name of the Concept Set.
@@ -258,65 +238,37 @@ defining the study population cohort. A cohort is defined as a Person
 with an entry and exit date. Thus, a person can be in a cohort multiple
 times if they meet the criteria.
 
-.. raw:: html
-
-   <!---
-   [Note - Insert image from slide 17 here]: #
-   -->
+.. image:: _static/Image_from_slide_17.png
 
 Select “Cohort Definitions” in the menu, you can begin to create a
 cohort by clicking the “New Cohort” button.
 
-.. raw:: html
-
-   <!---
-   [Note - Insert image from slide 18 here]: #
-   -->
+.. image:: _static/Image_from_slide_18.png
 
 In the boxes above and below the tabs, enter a name and description for
 the Cohort.
 
-.. raw:: html
-
-   <!---
-   [Note - Insert image from slide 19 here]: #
-   -->
+.. image:: _static/Image_from_slide_19.png
 
 To establish the duration for your cohort, click “+ Add Initial Event”,
 then in the dropdown menu click “Add Observation”.
 
-.. raw:: html
-
-   <!---
-   [Note - Insert image from slide 20 here]: #
-   -->
+.. image:: _static/Image_from_slide_20.png
 
 Click the blue box “Any Observation”, select “Import Concept Set” from
 the dropdown menu.
 
-.. raw:: html
-
-   <!---
-   [Note - Insert image from slide 21 here]: #
-   -->
+.. image:: _static/Image_from_slide_21.png
 
 Select the Concept Set you just made. This establishes your Concept Set
 as inclusion criteria for your cohort.
 
-.. raw:: html
-
-   <!---
-   [Note - Insert image from slide 22 here]: #
-   -->
+.. image:: _static/Image_from_slide_22.png
 
 To access the table in the MVP harmonization database, click “+ Add
 attribute…”, then click “Add Value as Number Criteria”.
 
-.. raw:: html
-
-   <!---
-   [Note - Insert image from slide 23 here]: #
-   -->
+.. image:: _static/Image_from_slide_23.png
 
 Select “Greater or Equal To” and enter 2. This will allow for the
 collection of data from the Observation table of the MVP harmonization
@@ -333,11 +285,7 @@ subsequent analyses. Use the cohort definition to identify how many
 people are in the cohort. This is the initial number that will be used
 in the GWAS app when this cohort is selected.
 
-.. raw:: html
-
-   <!---
-   [Note - Insert image from slide 26 here]: #
-   -->
+.. image:: _static/Image_from_slide_26.png
 
 To complete the creation of the Cohort Definition, click “Generation”,
 then “Generate”.
