@@ -1,5 +1,5 @@
 #!groovy
-@Library('cdis-jenkins-lib@fix/eltTask_cleanUp_jenkins') _
+@Library('cdis-jenkins-lib@master') _
 testPipeline {
   MANIFEST = "True"
 }
