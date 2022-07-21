@@ -346,6 +346,6 @@ mappings:
     injecting_props:
       case:
         props:
-          - name: case_id
+          - name: _case_id
             src: id
           - name: project_id

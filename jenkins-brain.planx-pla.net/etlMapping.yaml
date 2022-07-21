@@ -201,7 +201,7 @@ mappings:
     injecting_props:
       case:
         props:
-          - name: case_id
+          - name: _case_id
             src: id
             fn: set
           - name: project_id
