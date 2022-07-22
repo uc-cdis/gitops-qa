@@ -57,7 +57,7 @@
     "topBar": {
       "items": [
         {
-          "link": "https://qa-heal.planx-pla.net/dashboard/Public/documentation/index.html",
+          "link": "https://qa-heal.planx-pla.net/documentation",
           "name": "HEAL Documentation"
         }
       ]
