@@ -37,8 +37,8 @@
 	},
 	"adapter_commons": {
 		"IBD Commons": {
-			"mds_url": "https://ibdgc.datacommons.io/",
-			"commons_url" : "ibdgc.datacommons.io",
+			"mds_url": "https://qa-ibd.planx-pla.net/",
+			"commons_url" : "qa-ibd.planx-pla.net",
 			"adapter": "gen3",
 			"config" : {
 				"guid_type": "my_metadata",
@@ -57,11 +57,11 @@
 				"study_url": "path:link",
 				"_subjects_count" : "path:subjects_count",
 				"__manifest": "path:__manifest",
-				"commons_url" : "ibdgc.datacommons.io"
+				"commons_url" : "qa-ibd.planx-pla.net"
 			}
 		},
 		"BioData Catalyst": {
-			"mds_url": "https://gen3.biodatacatalyst.nhlbi.nih.gov/",
+			"mds_url": "https://qa-dcp.planx-pla.net/",
 			"commons_url" : "gen3.biodatacatalyst.nhlbi.nih.gov",
 			"adapter": "gen3",
 			"config" : {
@@ -81,12 +81,12 @@
 				"study_url": "path:dbgap_url",
 				"_subjects_count" : {"path":"_subjects_count", "default" : 0 },
 				"__manifest": "path:__manifest",
-				"commons_url" : "gen3.biodatacatalyst.nhlbi.nih.gov"
+				"commons_url" : "qa-dcp.planx-pla.net"
 			}
 		},
 		"MIDRC": {
-			"mds_url": "https://data.midrc.org/",
-			"commons_url" : "data.midrc.org",
+			"mds_url": "https://qa-midrc.planx-pla.net/",
+			"commons_url" : "qa-midrc.planx-pla.net",
 			"adapter": "gen3",
 			"config" : {
 				"guid_type": "discovery_metadata",
@@ -109,8 +109,8 @@
 			}
 		},
 		"NIAID ClinicalData": {
-			"mds_url": "https://accessclinicaldata.niaid.nih.gov/",
-			"commons_url" : "accessclinicaldata.niaid.nih.gov",
+			"mds_url": "https://qa-niaid.planx-pla.net/",
+			"commons_url" : "qa-niaid.planx-pla.net",
 			"adapter": "gen3",
 			"config" : {
 				"guid_type": "my_metadata",
@@ -136,8 +136,8 @@
 			}
 		},
 		"JCOIN": {
-			"mds_url": "https://jcoin.datacommons.io/",
-			"commons_url" : "jcoin.datacommons.io/",
+			"mds_url": "https://qa-jcoin.planx-pla.net/",
+			"commons_url" : "qa-jcoin.planx-pla.net/",
 			"adapter": "gen3",
 			"keep_original_fields": false,
 			"field_mappings" : {
@@ -160,8 +160,8 @@
 			}
 		},
 		"AnVIL": {
-			"mds_url": "https://internalstaging.theanvil.io/",
-			"commons_url" : "gen3.theanvil.io",
+			"mds_url": "http://qa-anvil.planx-pla.net/",
+			"commons_url" : "qa-anvil.planx-pla.net",
 			"config" : {
 				"guid_type": "discovery_metadata",
 				"study_field": "gen3_discovery"
@@ -184,7 +184,7 @@
 			}
 		},
 		"Genomic Data Commons": {
-			"mds_url": "https://brh.data-commons.org/",
+			"mds_url": "https://qa-brh.planx-pla.net/",
 			"commons_url" : "portal.gdc.cancer.gov",
 			"config" : {
 				"guid_type": "discovery_metadata",
@@ -209,7 +209,7 @@
 			}
 		},
 		"Proteomic Data Commons": {
-			"mds_url": "https://brh.data-commons.org/",
+			"mds_url": "https://qa-brh.planx-pla.net/",
 			"commons_url" : "proteomic.datacommons.cancer.gov/pdc",
 			"config" : {
 				"guid_type": "discovery_metadata",
@@ -234,7 +234,7 @@
 			}
 		},
 		"Cancer Imaging Data Commons": {
-			"mds_url": "https://brh.data-commons.org/",
+			"mds_url": "https://qa-brh.planx-pla.net/",
 			"commons_url" : "imaging.datacommons.cancer.gov",
 			"config" : {
 				"guid_type": "discovery_metadata",
@@ -259,8 +259,8 @@
 			}
 		},
 		"Kids First": {
-			"mds_url": "https://gen3staging.kidsfirstdrc.org/",
-			"commons_url": "kidsfirstdrc.org",
+			"mds_url": "http://qa-kidsfirst.planx-pla.net/",
+			"commons_url": "qa-kidsfirst.planx-pla.net",
 			"adapter": "gen3",
 			"config" : {
 				"guid_type": "metadata_object",
@@ -278,7 +278,7 @@
 				"commons": "Kids First Data Resource Center",
 				"study_url": "path:link",
 				"__manifest": "path:__manifest",
-				"commons_url" : "kidsfirstdrc.org"
+				"commons_url" : "qa-kidsfirst.planx-pla.net"
 			}
 		}
 	}
