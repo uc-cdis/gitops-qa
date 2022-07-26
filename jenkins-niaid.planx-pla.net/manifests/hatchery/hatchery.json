@@ -13,7 +13,7 @@
     "args": [],
     "command": [
       "/bin/bash",
-      "/sidecarDockerrun.sh"
+      "./sidecarDockerrun.sh"
     ],
     "lifecycle-pre-stop": [
       "su",
