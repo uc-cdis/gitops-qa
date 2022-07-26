@@ -308,19 +308,19 @@
         "type": "clinical_trials"
       },
       {
-        "index": "midrc_dataset",
+        "index": "jenkins_midrc_dataset_alias",
         "type": "dataset"
       },
       {
-        "index": "midrc_case",
+        "index": "jenkins_midrc_case_alias",
         "type": "case"
       },
       {
-        "index": "midrc_imaging_data_file",
+        "index": "jenkins_midrc_imaging_data_file_alias",
         "type": "imaging_data_file"
       },
       {
-        "index": "midrc_imaging_study",
+        "index": "jenkins_midrc_imaging_study_alias",
         "type": "imaging_study"
       }
     ],
