@@ -18,6 +18,7 @@
     "peregrine": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/peregrine:2022.06",
     "pidgin": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/pidgin:2022.06",
     "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:2022.06",
+    "frontend-framework": "quay.io/cdis/frontend-framework:feat_n3c_mt_v5",
     "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:2022.06",
     "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:2022.06",
     "spark": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-spark:2022.06",
@@ -79,6 +80,7 @@
     "dispatcher_job_num": "10",
     "dictionary_url": "http://s3.amazonaws.com/dictionary-artifacts/midrc_dictionary/0.7.6/schema.json",
     "sync_from_dbgap": "False",
+    "frontend_root": "portal",
     "lb_type": "internal"
   },
   "canary": {
