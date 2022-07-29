@@ -28,7 +28,7 @@
     "wts": "quay.io/cdis/workspace-token-service:master",
     "guppy": "quay.io/cdis/guppy:master",
     "sower": "quay.io/cdis/sower:master",
-    "hatchery": "quay.io/cdis/hatchery:master",
+    "hatchery": "quay.io/cdis/hatchery:fix_ecs_ct_length",
     "metadata": "quay.io/cdis/metadata-service:master",
     "requestor": "quay.io/cdis/requestor:master"
   },
