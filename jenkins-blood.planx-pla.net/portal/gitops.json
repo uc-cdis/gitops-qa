@@ -666,8 +666,8 @@
         "manifestMapping": {
           "resourceIndexType": "file",
           "resourceIdField": "object_id",
-          "referenceIdFieldInResourceIndex": "case_id",
-          "referenceIdFieldInDataIndex": "case_id"
+          "referenceIdFieldInResourceIndex": "_case_id",
+          "referenceIdFieldInDataIndex": "_case_id"
         },
         "accessibleFieldCheckList": ["project_id"],
         "accessibleValidationField": "project_id"
