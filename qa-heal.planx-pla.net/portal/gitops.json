@@ -95,7 +95,7 @@
     "analysis": false,
     "discovery": true,
     "discoveryUseAggMDS": true,
-    "studyRegistration": false
+    "studyRegistration": true
   },
   "discoveryConfig": {
     "features": {
