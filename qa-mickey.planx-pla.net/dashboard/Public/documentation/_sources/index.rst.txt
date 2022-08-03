@@ -335,7 +335,7 @@ side of the table. To browse the table please scroll down to the bottom.
 
 You may also see a button to create a new cohort. This button will open
 a new tab in your browser, outside of the Gen3 GWAS App and send you to
-the OHDSIto OHDSI Atlas App.
+the OHDSI Atlas App.
 
 **Step 2 Select harmonized variables for phenotypes and covariates**
 
@@ -347,7 +347,8 @@ in this step)
 Please choose as many variables as you wish (need to choose at least
 two), you may remove them later in the pipeline. Currently, only
 continuous variables can be selected. All variables are harmonized. To
-browse the table, please scroll down to the bottom.
+browse the table, please scroll down to the bottom. To search the table
+please enter free text in the search box to search by cohort name.
 
 **Step 3 Select which variable is your phenotype**
 
@@ -360,9 +361,27 @@ different projects through the collaborative development of a data
 dictionary. In the right hand side of the table a missing % is
 calculated. This is to reflect how many subjects of the chosen
 population do not have this information available. To browse the table
-please scroll down to the bottom.
+please scroll down to the bottom.To search the table please enter free
+text in the search box to search by cohort name.
 
-**Step 4 Set workflow parameters and remove unwanted covariates**
+**Step 4 Add custom dichotomous covariates**
+
+In this step, you may add custom dichotomous covariates by selecting two
+cohorts. Please combine a cohort for YES and a cohort for NO. Once
+cohorts are selected you may enter a name for the covariate. To commit
+the changes please press ‘Add’ at the bottom (You must ‘Add’ the
+variable before moving to the next screen if you want it to be a part of
+your analysis). You may repeat this action as many times as you need, or
+choose to not add any custom dichotomous covariates at all.
+
+As you add covariates you may see them populate on the right hand side
+of the screen as cards. The card contains the following information:
+Your given name at the top of the card, Cohorts [X,Y] represents the
+cohort’s ID number of the X-No/0 and Y-Yes/1 chosen as they intersect
+with your initial population selected, and the ability to remove the
+created covariate at the bottom of the card.
+
+**Step 5 Set workflow parameters and remove unwanted covariates**
 
 In this step, you will determine workflow parameters. Please adjust the
 number of population principal components (PCs) to control for
@@ -377,6 +396,10 @@ structure/stratification (select up to 10 PCs)
 Covariates- Please review the chosen covariates. You may remove unwanted
 covariates, or go back (at the bottom of the page) to step 2 to choose
 different ones.
+
+Dichotomous Covariates- Please review the created covariates. You may
+remove unwanted covariates, or go back (at the bottom of the page) to
+step 4 to adjust/add different ones.
 
 Phenotype- Please see here the phenotype chosen in step 3. To adjust
 please go back (at the bottom of the page) to step 3 to choose a
@@ -395,7 +418,7 @@ Rrace/Eethnicity) codes.
 Imputation Score Cutoff- This value reflects the quality of imputed SNPs
 and can be used to remove low-quality imputed markers (scale of 0-1)
 
-**Step 5 Submit GWAS job**
+**Step 6 Submit GWAS job**
 
 In this step, you may review the metadata selected for the study, give a
 name to the study, and submit the GWAS for analysis. To commit any
@@ -406,14 +429,14 @@ changes please go back to the relevant step.
 Once your GWAS analysis is submitted, click the arrow in the **Submitted
 Job Statuses** box to activate the drop- down menu and see the status of
 your analysis. This menu will display a history of your submitted jobs
-including: the Run ID of your analysis, the user given name forof the
-analysisanaylsis, the start time, and the finish time for when the run
-is completed. This menu will also display whether the analysis was a
-success or failed. Once completed, you may download the results of the
-GWAS analysis from this menu. By pressing the ‘Download’ link, a tar.gz
-file will start downloading to your computer. The file contains the
-following: Manhattan plot, QQ plot, metadata file containing all of your
-selections, attrition table, and per-chromosome GWAS summary statistics.
+including: Run ID of your analysis, user given name for the analysis,
+start time, and finish time for when the run is completed. This menu
+will also display whether the analysis was a success or failed. Once
+completed, you may download the results of the GWAS analysis from this
+menu. By pressing the ‘Download’ link, a tar.gz file will start
+downloading to your computer. The file contains the following: Manhattan
+plot, QQ plot, metadata file containing all of your selections,
+attrition table, and per-chromosome GWAS summary statistics.
 
 **Genome-wide association studies (GWAS) for a case-control study.**
 --------------------------------------------------------------------
@@ -443,7 +466,9 @@ select the cohort that you would like to define as your study “control”
 population. You may only see cohorts that you have access to. Please
 select only one cohort. The size of the cohort population is indicated
 in the right hand side of the table. To browse the table please scroll
-down to the bottom.
+down to the bottom. To search the table please enter free text in the
+search box to search by cohort name. To search the table please enter
+free text in the search box to search by cohort name.
 
 You may also see a button to create a new cohort. This button will open
 a new tab in your browser, outside of the Gen3 GWAS App and send you to
@@ -453,9 +478,11 @@ OHDSI Atlas App.
 
 In this step, you will select covariates for your study. Please choose
 as many covariates as you wish, you may remove them later in the
-pipeline. Currently, only continuous covariates are presentedcan be
-selected. All variables are harmonized. To browse the table please
-scroll down to the bottom. You must select at least one covariate in
+pipeline. Currently, only continuous covariates are presented. All
+variables are harmonized. To browse the table please scroll down to the
+bottom. You must select at least one covariate in order to move to the
+next step. To search the table please enter free text in the search box
+to search by cohort name. You must select at least one covariate in
 order to move to the next step.
 
 **Step 4 Assess % missing in selected covariates**
@@ -463,7 +490,24 @@ order to move to the next step.
 In this step, you can review the covariates selection based on % missing
 metrics. To adjust covariates please return to Step 3.
 
-**Step 5 Set workflow parameters and remove unwanted covariates**
+**Step 5 Add custom dichotomous covariates**
+
+In this step, you may add custom dichotomous covariates by selecting two
+cohorts. Please combine a cohort for YES and a cohort for NO. Once
+cohorts are selected you may enter a name for the covariate. To commit
+the changes please press ‘Add’ at the bottom (You must ‘Add’ the
+variable before moving to the next screen if you want it to be a part of
+your analysis). You may repeat this action as many times as you need, or
+choose to not add any custom dichotomous covariates at all.
+
+As you add covariates you may see them populate on the right hand side
+of the screen as cards. The card contains the following information:
+Your given name at the top of the card, Cohorts [X,Y] represents the
+population size of the Yes and No cohorts chosen as they intersect with
+your initial population selected, and the ability to remove the created
+covariate at the bottom of the card.
+
+**Step 6 Set workflow parameters and remove unwanted covariates**
 
 In this step, you will determine workflow parameters. Please adjust the
 number of population principal components to control for population
@@ -479,9 +523,9 @@ Covariates- Please review the chosen covariates. You may remove unwanted
 covariates, or go back (at the bottom of the page) to step 2 to choose
 different ones.
 
-Phenotype- Please see here the phenotype chosen in step 3. To adjust
-please go back (at the bottom of the page) to step 3 to choose a
-different one.
+Dichotomous Covariates- Please review the created covariates. You may
+remove unwanted covariates, or go back (at the bottom of the page) to
+step 4 to adjust/add different ones.
 
 HARE dropdowns- Please choose the ancestry population on which you would
 like to perform your study. The numbers appearing in the dropdown
@@ -502,7 +546,7 @@ race/ethnicity) codes.
 Imputation Score Cutoff- This value reflects the quality of imputed SNPs
 and can be used to remove low-quality imputed markers (scale of 0-1)
 
-**Step 6 Submit GWAS job**
+**Step 7 Submit GWAS job**
 
 In this step, you may review the metadata selected for the study, give a
 name to the study, and submit the GWAS for analysis.
