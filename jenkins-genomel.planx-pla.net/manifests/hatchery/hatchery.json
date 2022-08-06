@@ -1,11 +1,18 @@
 {
   "user-namespace": "jupyter-pods-jenkins-genomel",
   "sub-dir": "/lw-workspace",
-  "user-volume-size": "512Mi",
+  "user-volume-size": "2Gi",
+  "default-pay-model": {
+    "bmh_workspace_id": "blanket_billing_eks",
+    "region": "us-east-1",
+    "account_id": "354484406138",
+    "workspace_type": "STRIDES test",
+    "ecs": true
+  },
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "quay.io/cdis/gen3fuse-sidecar:chore_sidecar",
+    "image": "quay.io/cdis/ecs-ws-sidecar:master",
     "env": {
       "NAMESPACE": "jenkins-genomel",
       "HOSTNAME": "jenkins-genomel.planx-pla.net"
@@ -13,7 +20,7 @@
     "args": [],
     "command": [
       "/bin/bash",
-      "/sidecarDockerrun.sh"
+      "./sidecar.sh"
     ],
     "lifecycle-pre-stop": [
       "su",
@@ -28,7 +35,7 @@
     {
       "target-port": 8787,
       "cpu-limit": "1.0",
-      "memory-limit": "512Mi",
+      "memory-limit": "2Gi",
       "name": "R Studio",
       "image": "heliumdatastage/rstudio-server:1",
       "env": {
@@ -42,7 +49,7 @@
     {
       "target-port": 8888,
       "cpu-limit": "1.0",
-      "memory-limit": "512Mi",
+      "memory-limit": "2Gi",
       "name": "(Tutorial) Bacpac Synthetic Data Analysis Notebook",
       "image": "quay.io/cdis/heal-notebooks:bacpac__10670ad79b4488cfa9f1b3681ce52bc3f1139b5a",
       "env": {
