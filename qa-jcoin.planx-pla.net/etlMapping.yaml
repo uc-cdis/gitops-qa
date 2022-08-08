@@ -8,6 +8,7 @@ mappings:
       - name: project_id
       - name: quarter_recruited
       - name: role_in_project
+      - name: current_client_status
     parent_props:
       - path: protocols[protocol,protocol_submitter_id:submitter_id].projects[project_name:name]
     flatten_props:
