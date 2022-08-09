@@ -56,11 +56,11 @@
       "homepageChartNodes": [
         {
           "node": "participant",
-          "name": "Participants"
+          "name": "Total Participants"
         },
         {
-          "node": "follow_up",
-          "name": "Follow Ups"
+          "node": "time_point",
+          "name": "Total Time Points"
         }
       ]
     },
@@ -303,87 +303,6 @@
       }
     },
     {
-      "tabTitle": "Data",
-      "charts": {
-        "project_id": {
-          "chartType": "count",
-          "title": "Projects"
-        },
-        "gender": {
-          "chartType": "fullPie",
-          "title": "Gender"
-        },
-        "race": {
-          "chartType": "fullPie",
-          "title": "Race"
-        }
-      },
-      "filters": {
-        "tabs": [
-          {
-            "title": "Participant",
-            "fields": [
-              "project_id",
-              "gender",
-              "race",
-              "hispanic",
-              "protocol"
-            ]
-          }
-        ]
-      },
-      "table": {
-        "enabled": false,
-        "fields": [
-          "project_id",
-          "gender",
-          "race",
-          "protocol"
-        ]
-      },
-      "buttons": [
-        {
-          "enabled": true,
-          "type": "export-to-workspace",
-          "title": "Export Files to Workspace",
-          "leftIcon": "datafile",
-          "rightIcon": "external-link"
-        },
-        {
-          "enabled": true,
-          "type": "manifest",
-          "title": "Download File Manifest",
-          "leftIcon": "datafile",
-          "rightIcon": "download",
-          "fileName": "file-manifest.json"
-        },
-        {
-          "enabled": true,
-          "type": "data",
-          "title": "Download Clinical Data",
-          "leftIcon": "datafile",
-          "rightIcon": "download",
-          "fileName": "clinical-data.json"
-        }
-      ],
-      "guppyConfig": {
-        "dataType": "participant",
-        "nodeCountTitle": "Participants",
-        "fieldMapping": [
-          {
-            "field": "project_id",
-            "name": "Project ID"
-          }
-        ],
-        "manifestMapping": {
-          "resourceIndexType": "file",
-          "resourceIdField": "object_id",
-          "referenceIdFieldInResourceIndex": "project_id",
-          "referenceIdFieldInDataIndex": "project_id"
-        }
-      }
-    },
-    {
       "tabTitle": "Files",
       "charts": {
         "data_type": {
@@ -476,7 +395,6 @@
           {
             "title": "Constructs",
             "fields": [
-              "cmc_data_type",
               "cmc_subject",
               "cmc_title"
             ]
@@ -708,12 +626,5 @@
     }
   ],
   "showArboristAuthzOnProfile": true,
-  "showFenceAuthzOnProfile": false,
-  "componentToResourceMapping": {
-    "HUB Documentation": {
-      "resource": "/dashboard",
-      "method": "access",
-      "service": "dashboard"
-    }
-  }
+  "showFenceAuthzOnProfile": false
 }
