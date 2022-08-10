@@ -179,7 +179,7 @@
     },
   "explorerConfig": [
     {
-      "tabTitle": "Quarterly Report",
+      "tabTitle": "Participants (Staff and Clients)",
       "charts": {
         "gender": {
           "chartType": "fullPie",
@@ -310,7 +310,7 @@
       }
     },
     {
-      "tabTitle": "Time points",
+      "tabTitle": "Time points (Clients)",
       "charts": {
         "visit_type": {
           "chartType": "fullPie",
