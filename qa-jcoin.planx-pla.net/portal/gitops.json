@@ -426,46 +426,6 @@
           {
             "field": "gender",
             "name": "Gender identity"
-          },
-          {
-            "field":"D7a",
-            "name":"People in household"
-          },
-          {
-            "field":"D7c",
-            "name":"Total household income"
-          },
-          {
-            "field":"D7d",
-            "name":"Total household income from legal sources"
-          },
-          {
-            "field":"D9a",
-            "name":"Currently covered by health insurance"
-          },
-          {
-            "field":"J1",
-            "name":"Activities against law besides drugs"
-          },
-          {
-            "field":"J2",
-            "name":"Overall charged arrests"
-          },
-          {
-            "field":"U15",
-            "name":"Medication ever prescribed for opioid use disorder?"
-          },
-          {
-            "field":"S3a",
-            "name": "Substance Use:\nOpioid Overdoses"
-          },
-          {
-            "field":"S4a",
-            "name": "Substance Use:\nDrug Use"
-          },
-          {
-            "field":"S4f",
-            "name": "Substance Use:\nOpioid Use"
           }
         ],
         "manifestMapping": {
