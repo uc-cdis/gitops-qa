@@ -1,5 +1,5 @@
 #!groovy
-@Library('cdis-jenkins-lib@test/test_registeruser') _
+@Library('cdis-jenkins-lib@test/dicom_viewer') _
 testPipeline {
   MANIFEST = "True"
 }
