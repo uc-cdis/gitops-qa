@@ -314,7 +314,7 @@
       "charts": {
         "visit_type": {
           "chartType": "fullPie",
-          "title": "Gender identity"
+          "title": "Visit Type"
         }
       },
       "filters": {
