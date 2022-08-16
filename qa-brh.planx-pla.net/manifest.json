@@ -22,7 +22,7 @@
     "portal": "quay.io/cdis/data-portal:test_aggmds_counts",
     "revproxy": "quay.io/cdis/nginx:2022.06",
     "sheepdog": "quay.io/cdis/sheepdog:2022.06",
-    "wts": "quay.io/cdis/workspace-token-service:2022.06"
+    "wts": "quay.io/cdis/workspace-token-service:add-aggregate-authz-endpoint"
   },
   "arborist": {
     "deployment_version": "2"
@@ -48,7 +48,7 @@
   },
   "metadata": {
     "USE_AGG_MDS": true,
-    "AGG_MDS_NAMESPACE": "brh"
+    "AGG_MDS_NAMESPACE": "qa-brh"
   },
   "portal": {
     "GEN3_BUNDLE": "ecosystem"
