@@ -24,6 +24,9 @@
 			"study_url": {},
 			"project_id": {},
 			"short_name": {},
+			"_subjects_count": {
+				"type": "integer"
+			},
 			"full_name": {},
 			"commons_url": {},
 			"commons" : {},
@@ -55,7 +58,7 @@
 				"short_name": "path:dataset_code",
 				"commons": "NIDDK IBD Genetics Consortium Data Commons",
 				"study_url": "path:link",
-				"_subjects_count" : "path:subjects_count",
+				"_subjects_count" : {"path":"subjects_count", "default" : 0 },
 				"__manifest": "path:__manifest",
 				"commons_url" : "ibdgc.datacommons.io"
 			}
@@ -129,7 +132,7 @@
 				"study_url": "path:publications",
 				"_subjects_count" : {
 					"path":"subjects_count",
-					"default_value": 0
+					"default": 0
 				},
 				"__manifest": "path:__manifest",
 				"commons_url" : "accessclinicaldata.niaid.nih.gov"
@@ -151,10 +154,7 @@
 				"commons": "JCOIN",
 				"study_url": "path:publications",
 				"data_availability": "path:data_availability",
-				"_subjects_count" : {
-					"path":"subjects",
-					"default_value": 0
-				},
+				"_subjects_count" : { "path":"subjects", "default": 0 },
 				"__manifest": "path:__manifest",
 				"commons_url" : "jcoin.datacommons.io"
 			}
@@ -277,6 +277,7 @@
 				"short_name": "path:full_name",
 				"commons": "Kids First Data Resource Center",
 				"study_url": "path:link",
+				"_subjects_count" : {"path":"subjects_count", "default" : 0 },
 				"__manifest": "path:__manifest",
 				"commons_url" : "kidsfirstdrc.org"
 			}
