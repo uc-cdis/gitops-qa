@@ -8,6 +8,8 @@
     "arborist": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/arborist:2022.08",
     "aws-es-proxy": "quay.io/cdis/aws-es-proxy:v1.3.1",
     "dashboard": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-statics:2022.08",
+    "dicom-viewer": "quay.io/cdis/ohif-viewer:master",
+    "dicom-server": "quay.io/cdis/gen3-orthanc:master",
     "fence": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/fence:2022.08",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "guppy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/guppy:2022.08",
@@ -40,7 +42,7 @@
   },
   "ssjdispatcher": {
     "job_images": {
-      "indexing": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexs3client:2022.06"
+      "indexing": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexs3client:2022.08"
     }
   },
   "guppy": {
