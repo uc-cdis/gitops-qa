@@ -115,7 +115,8 @@
   "featureFlags": {
     "explorer": false,
     "discovery": true,
-    "discoveryUseAggMDS": true
+    "discoveryUseAggMDS": true,
+    "workspaceRegistration": true
   },
   "discoveryConfig": {
     "features": {
@@ -450,5 +451,13 @@
   "showArboristAuthzOnProfile": true,
   "showFenceAuthzOnProfile": false,
   "showExternalLoginsOnProfile": true,
-  "stridesPortalURL": "https://brh-portal.org"
+  "stridesPortalURL": "https://brh-portal.org",
+  "resourceRegistrationConfig":{
+    "workspaceRegistrationConfig":{
+      "workspacePolicyId": "workspace"
+    },
+    "kayakoConfig":{
+      "kayakoDepartmentId": 22
+    }
+  }
 }
