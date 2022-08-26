@@ -43,7 +43,6 @@
       "indexing": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexs3client:2021.10"
     }
   },
-  "sower": [],
   "global": {
     "environment": "qaplanetv1",
     "hostname": "qa-mickey.planx-pla.net",
