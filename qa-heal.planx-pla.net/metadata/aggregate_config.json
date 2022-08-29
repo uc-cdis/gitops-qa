@@ -13,7 +13,7 @@
             }
         }
     },
-    "adapter_commons": {
+    "adapter_commons": {	
         "ICPSR": {
             "mds_url": "https://www.icpsr.umich.edu/icpsrweb/neutral/oai/studies",
             "commons_url": "https://www.icpsr.umich.edu",
