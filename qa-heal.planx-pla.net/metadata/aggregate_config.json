@@ -20,6 +20,71 @@
         "type": "array",
         "default": []
       },
+      "data_dictionary": {
+        "type": "object"
+      },
+      "_file_manifest": {
+        "type": "object"
+      },
+      "Data": {
+        "type": "object"
+      },
+      "Data Availability": {
+        "type": "object",
+        "properties": {
+          "data_collection_finish_date": {
+            "type": "date"
+          },
+          "data_collection_start_date": {
+            "type": "date"
+          },
+          "data_release_finish_date": {
+            "type": "date"
+          },
+          "data_release_start_date": {
+            "type": "date"
+          }
+        }
+      },
+      "Human Condition Applicability": {
+        "type": "object"
+      },
+      "Human Subject Applicability": {
+        "type": "object"
+      },
+      "Human Treatment Applicability": {
+        "type": "object"
+      },
+      "Metadata Location": {
+        "type": "object"
+      },
+      "Minimal Info": {
+        "type": "object"
+      },
+      "Study Translational Focus": {
+        "type": "object"
+      },
+      "Study Type": {
+        "type": "object"
+      },
+      "budget_start": {
+        "type": "date"
+      },
+      "budget_end": {
+        "type": "date"
+      },
+      "project_end_date": {
+        "type": "date"
+      },
+      "date_added": {
+        "type": "date"
+      },
+      "award_notice_date": {
+        "type": "date"
+      },
+      "project_start_date": {
+        "type": "date"
+      },
       "study_description_summary": {},
       "project_title": {}
     },
@@ -28,38 +93,13 @@
     }
   },
   "adapter_commons": {
-    "HEAL": {
-      "mds_url": "https://qa-heal.planx-pla.net/",
-      "commons_url": "https://qa-heal.planx-pla.net/",
-      "adapter": "gen3",
-      "config" : {
-        "guid_type": "unregistered_discovery_metadata",
-        "study_field": "gen3_discovery"
-      },
-      "keep_original_fields": true,
-      "field_mappings": {
-        "authz": "path:authz",
-        "tags": { "path":"tags",
-          "default": [] },
-        "__manifest": { "path":"__manifest",
-          "default": [] },
-        "advSearchFilters": {
-          "path":"advSearchFilters"
-        },
-        "study_description_summary": "path:study_description_summary",
-        "manifest": "path:__manifest",
-        "project_title": "path:project_title",
-        "commons_url": "https://qa-heal.planx-pla.net/"
-      }
-    },
     "SAMHDA": {
       "mds_url": "https://qa-heal.planx-pla.net/",
       "commons_url": "https://qa-heal.planx-pla.net",
       "adapter": "gen3",
-      "keep_original_fields": false,
-      "select_field": {
-        "field_name": "data_resource",
-        "field_value": "SAMHDA"
+      "keep_original_fields": true,
+      "config": {
+        "filters": "gen3_discovery.data_resource=SAMHDA"
       },
       "field_mappings": {
         "authz": "path:authz",
@@ -68,6 +108,83 @@
         "manifest": "path:__manifest",
         "project_title": "path:project_title",
         "commons_url": "https://qa-heal.planx-pla.net/"
+      }
+    },
+    "HEAL": {
+      "mds_url": "https://qa-heal.planx-pla.net/",
+      "commons_url": "https://qa-heal.planx-pla.net/",
+      "adapter": "gen3",
+      "commons_name": "HEAL",
+      "config": {
+        "guid_type": "discovery_metadata",
+        "study_field": "gen3_discovery"
+      },
+      "keep_original_fields": true,
+      "field_mappings": {
+        "authz": "path:authz",
+        "tags": {
+          "path": "tags",
+          "default": []
+        },
+        "__manifest": {
+          "path": "__manifest",
+          "default": []
+        },
+        "advSearchFilters": {
+          "path": "advSearchFilters"
+        },
+        "study_description_summary": "path:study_description_summary",
+        "manifest": "path:__manifest",
+        "project_title": "path:project_title",
+        "commons_url": "https://qa-heal.planx-pla.net/"
+      },
+      "per_item_values": {
+        "9898044": {
+          "__manifest": [
+            {
+              "md5sum": "459b157ad875428cda0c85e53b38eae9",
+              "file_name": "physical_function_SMART.tsv",
+              "file_size": 105534,
+              "object_id": "dg.H34L/654d7f1f-b61c-49a9-8a74-c82400fa4c27"
+            },
+            {
+              "md5sum": "487c433493e3f89c0c65fc5c6ff62467",
+              "file_name": "substance_use_SMART.tsv",
+              "file_size": 37823,
+              "object_id": "dg.H34L/530fd95c-48b6-488e-a699-9377180bd82d"
+            },
+            {
+              "md5sum": "1fce3aabc9a6cc94687d8de295a15f11",
+              "file_name": "participant_SMART.tsv",
+              "file_size": 17471,
+              "object_id": "dg.H34L/80f0a338-18e0-48de-b70f-cdabd63f67d9"
+            },
+            {
+              "md5sum": "34a00cb6013c20cc037db2ea5754c80d",
+              "file_name": "visit_SMART.tsv",
+              "file_size": 18380,
+              "object_id": "dg.H34L/809ce13a-4004-407f-9ea8-97ceff0ea398"
+            },
+            {
+              "md5sum": "d56323fb6d56b833462a0e47a5c45b9b",
+              "file_name": "data_dictionary.tsv",
+              "file_size": 5801,
+              "object_id": "dg.H34L/0cefb9a4-73d3-4186-9205-da7458959719"
+            },
+            {
+              "md5sum": "5a70a05e0f3911f2b1452bab3af03302",
+              "file_name": "subject_characteristics_SMART.tsv",
+              "file_size": 83518,
+              "object_id": "dg.H34L/ac14daf4-4820-401d-a121-cffc10d23042"
+            },
+            {
+              "md5sum": "735b3010623f6328be8fa0f054f67ad1",
+              "file_name": "pain_SMART.tsv",
+              "file_size": 22328,
+              "object_id": "dg.H34L/802a8ca4-dd69-492b-b0e4-c1e8710a4bde"
+            }
+          ]
+        }
       }
     },
     "ICPSR": {
@@ -376,45 +493,15 @@
         "data_resource": "CinicalTrials.gov"
       },
       "per_item_values": {
-        "842717": {
+        "STU-2019-0743": {
           "data_availability": "pending",
           "authz": "/programs/open",
-          "source_url": "https://clinicaltrials.gov/ct2/show/NCT04401917?titles=FNOS+in+HIV+Subjects&draw=2&rank=1"
-        },
-        "999920014": {
-          "data_availability": "pending",
-          "authz": "/programs/open",
-          "source_url": "https://clinicaltrials.gov/ct2/show/NCT04316559?titles=Biased+Opioid+Agonists+for+Treatment+of+Opioid+Withdrawal+in+OUD&draw=2&rank=1"
+          "source_url": "https://clinicaltrials.gov/ct2/show/NCT04059016?titles=Innovatively+Increasing+PCP+Prescribing+of+Buprenorphine%3A+Measurement+Based+Care+and+Integrated+Electronic+Solution&draw=2&rank=1"
         },
         "1903499841": {
           "data_availability": "pending",
           "authz": "/programs/open",
           "source_url": "https://clinicaltrials.gov/ct2/show/NCT03950492?titles=Feasibility+of+Deep+Brain+Stimulation+as+a+Novel+Treatment+for+Refractory+Opioid+Use+Disorder&draw=2&rank=1"
-        },
-        "1906002463": {
-          "data_availability": "pending",
-          "authz": "/programs/open",
-          "source_url": "https://clinicaltrials.gov/ct2/show/NCT04240093?titles=CoMBAT+Opioid+Use+Disorder&draw=2&rank=1"
-        },
-        "2000026223": {
-          "data_availability": "pending",
-          "authz": "/programs/open",
-          "source_url": "https://clinicaltrials.gov/ct2/show/NCT04180020?titles=Coordinating+Opioid+Use+Treatment+Through+Medical+Management+With+Infection+Treatment+%28Project+COMMIT%29&draw=2&rank=1"
-        },
-        "2000027031": {
-          "data_availability": "pending",
-          "authz": "/programs/open",
-          "source_url": "https://clinicaltrials.gov/ct2/show/NCT04240392?titles=Treatment+of+Pregnant+Women+With+OUD&draw=2&rank=1"
-        },
-        "2000030168": {
-          "data_availability": "pending",
-          "authz": "/programs/open",
-          "source_url": "https://clinicaltrials.gov/ct2/show/NCT04982627?titles=A+Brief+Negotiation+Interview+Chatbot+to+Improve+Buprenorphine+Engagement+Among+Justice-Involved+Individuals&draw=2&rank=1"
-        },
-        "STU-2019-0743": {
-          "data_availability": "pending",
-          "authz": "/programs/open",
-          "source_url": "https://clinicaltrials.gov/ct2/show/NCT04059016?titles=Innovatively+Increasing+PCP+Prescribing+of+Buprenorphine%3A+Measurement+Based+Care+and+Integrated+Electronic+Solution&draw=2&rank=1"
         },
         "2018-1-100-OUD": {
           "data_availability": "pending",
@@ -426,10 +513,25 @@
           "authz": "/programs/open",
           "source_url": "https://clinicaltrials.gov/ct2/show/NCT03605342?titles=Optimal+Treatment+of+Veterans+With+PTSD+and+Comorbid+OUD&draw=2&rank=1"
         },
+        "999920014": {
+          "data_availability": "pending",
+          "authz": "/programs/open",
+          "source_url": "https://clinicaltrials.gov/ct2/show/NCT04316559?titles=Biased+Opioid+Agonists+for+Treatment+of+Opioid+Withdrawal+in+OUD&draw=2&rank=1"
+        },
+        "2000026223": {
+          "data_availability": "pending",
+          "authz": "/programs/open",
+          "source_url": "https://clinicaltrials.gov/ct2/show/NCT04180020?titles=Coordinating+Opioid+Use+Treatment+Through+Medical+Management+With+Infection+Treatment+%28Project+COMMIT%29&draw=2&rank=1"
+        },
         "2019-131-DCYF": {
           "data_availability": "pending",
           "authz": "/programs/open",
           "source_url": "https://clinicaltrials.gov/ct2/show/NCT04901312?titles=Preventing+OUD+in+Justice-Involved+Youth&draw=2&rank=1"
+        },
+        "842717": {
+          "data_availability": "pending",
+          "authz": "/programs/open",
+          "source_url": "https://clinicaltrials.gov/ct2/show/NCT04401917?titles=FNOS+in+HIV+Subjects&draw=2&rank=1"
         },
         "HIC 2000023783": {
           "data_availability": "pending",
@@ -481,6 +583,16 @@
           "authz": "/programs/open",
           "source_url": "https://clinicaltrials.gov/ct2/show/NCT03559179?titles=Clinical+Decision+Support+for+Opioid+Use+Disorders+in+Medical+Settings%3A+Usability+Testing+in+an+EMR&draw=2&rank=1"
         },
+        "1906002463": {
+          "data_availability": "pending",
+          "authz": "/programs/open",
+          "source_url": "https://clinicaltrials.gov/ct2/show/NCT04240093?titles=CoMBAT+Opioid+Use+Disorder&draw=2&rank=1"
+        },
+        "2000030168": {
+          "data_availability": "pending",
+          "authz": "/programs/open",
+          "source_url": "https://clinicaltrials.gov/ct2/show/NCT04982627?titles=A+Brief+Negotiation+Interview+Chatbot+to+Improve+Buprenorphine+Engagement+Among+Justice-Involved+Individuals&draw=2&rank=1"
+        },
         "CTN-0074": {
           "data_availability": "pending",
           "authz": "/programs/open",
@@ -490,6 +602,11 @@
           "data_availability": "pending",
           "authz": "/programs/open",
           "source_url": "https://clinicaltrials.gov/ct2/show/NCT04197921?titles=Exablate+for+LIFU+Neuromodulation+in+Patients+With+Opioid+Use+Disorder+%28OUD%29&draw=2&rank=1"
+        },
+        "2000027031": {
+          "data_availability": "pending",
+          "authz": "/programs/open",
+          "source_url": "https://clinicaltrials.gov/ct2/show/NCT04240392?titles=Treatment+of+Pregnant+Women+With+OUD&draw=2&rank=1"
         },
         "A20-042": {
           "data_availability": "pending",
