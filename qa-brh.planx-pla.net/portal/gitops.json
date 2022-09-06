@@ -455,7 +455,7 @@
   "registrationConfigs": {
     "features": {
       "workspaceRegistrationConfig" : {
-        "workspacePolicyId": "workspace",
+        "workspacePolicyId": "workspace_strides_integrated",
         "workspaceInfoMessage": "The BRH workspace provides a standardized computational environment for accessing and analyzing data from multiple data commons. Please fill out this form to request access to the workspace and start computing!",
         "successRedirect" : {
           "link": "/discovery",
