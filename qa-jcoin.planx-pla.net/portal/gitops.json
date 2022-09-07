@@ -648,12 +648,5 @@
     }
   ],
   "showArboristAuthzOnProfile": true,
-  "showFenceAuthzOnProfile": false,
-  "componentToResourceMapping": {
-    "HUB Documentation": {
-      "resource": "/dashboard",
-      "method": "access",
-      "service": "dashboard"
-    }
-  }
+  "showFenceAuthzOnProfile": false
 }
