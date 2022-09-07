@@ -21,7 +21,7 @@
     "peregrine": "quay.io/cdis/peregrine:2022.06",
     "pidgin": "quay.io/cdis/pidgin:2022.06",
     "portal": "quay.io/cdis/data-portal:feat_workspace-registration",
-    "requestor": "quay.io/cdis/requestor:integration202209",
+    "requestor": "quay.io/cdis/requestor:1.7.1",
     "revproxy": "quay.io/cdis/nginx:2022.06",
     "sheepdog": "quay.io/cdis/sheepdog:2022.06",
     "wts": "quay.io/cdis/workspace-token-service:0.4.0"
