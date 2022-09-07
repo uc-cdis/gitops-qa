@@ -96,12 +96,6 @@
           "name": "Query"
         },
         {
-          "icon": "dictionary",
-          "link": "https://qa-jcoin.planx-pla.net/dashboard/Secure/index.html",
-          "color": "#a2a2a2",
-          "name": "HUB Documentation"
-        },
-        {
           "name": "Notebook Browser",
           "link": "/resource-browser",
           "icon": "analysis"
