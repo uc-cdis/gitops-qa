@@ -116,6 +116,7 @@
     "explorer": false,
     "discovery": true,
     "discoveryUseAggMDS": true,
+    "discoveryUseAggWTS": true,
     "workspaceRegistration": true
   },
   "discoveryConfig": {
