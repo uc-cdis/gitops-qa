@@ -43,7 +43,7 @@
       "name": "ingest-metadata-manifest",
       "action": "ingest-metadata-manifest",
       "activeDeadlineSeconds": 86400,
-      "serviceAccountName": "jobs-data-bloodpac-org",
+      "serviceAccountName": "jobs-qa-bloodpac-planx-pla-net",
       "container": {
         "name": "job-task",
         "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-manifest-ingestion:2022.08",
@@ -83,7 +83,7 @@
     {
       "name": "get-dbgap-metadata",
       "action": "get-dbgap-metadata",
-      "serviceAccountName": "jobs-data-bloodpac-org",
+      "serviceAccountName": "jobs-qa-bloodpac-planx-pla-net",
       "container": {
         "name": "job-task",
         "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/get-dbgap-metadata:2022.08",
@@ -114,7 +114,7 @@
       "name": "manifest-indexing",
       "action": "index-object-manifest",
       "activeDeadlineSeconds": 86400,
-      "serviceAccountName": "jobs-data-bloodpac-org",
+      "serviceAccountName": "jobs-qa-bloodpac-planx-pla-net",
       "container": {
         "name": "job-task",
         "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifest-indexing:2022.08",
@@ -155,7 +155,7 @@
       "name": "manifest-merging",
       "action": "merge-manifests",
       "activeDeadlineSeconds": 86400,
-      "serviceAccountName": "jobs-data-bloodpac-org",
+      "serviceAccountName": "jobs-qa-bloodpac-planx-pla-net",
       "container": {
         "name": "job-task",
         "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/cdis/manifest-merging:2022.08",
@@ -196,7 +196,7 @@
       "name": "indexd-manifest",
       "action": "download-indexd-manifest",
       "activeDeadlineSeconds": 86400,
-      "serviceAccountName": "jobs-data-bloodpac-org",
+      "serviceAccountName": "jobs-qa-bloodpac-planx-pla-net",
       "container": {
         "name": "job-task",
         "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/download-indexd-manifest:2022.08",
@@ -283,39 +283,39 @@
   "guppy": {
     "indices": [
       {
-        "index": "bloodpac_study",
+        "index": "qa-bloodpac.planx-pla.net_study",
         "type": "study"
       },
       {
-        "index": "bloodpac_case",
+        "index": "qa-bloodpac.planx-pla.net_case",
         "type": "case"
       },
       {
-        "index": "bloodpac_medical_history",
+        "index": "qa-bloodpac.planx-pla.net_medical_history",
         "type": "medical_history"
       },
       {
-        "index": "bloodpac_biospecimen",
+        "index": "qa-bloodpac.planx-pla.net_biospecimen",
         "type": "biospecimen"
       },
       {
-        "index": "bloodpac_aliquot",
+        "index": "qa-bloodpac.planx-pla.net_aliquot",
         "type": "aliquot"
       },
       {
-        "index": "bloodpac_read_group",
+        "index": "qa-bloodpac.planx-pla.net_read_group",
         "type": "read_group"
       },
       {
-        "index": "bloodpac_publication",
+        "index": "qa-bloodpac.planx-pla.net_publication",
         "type": "publication"
       },
       {
-        "index": "bloodpac_file",
+        "index": "qa-bloodpac.planx-pla.net_file",
         "type": "file"
       }
     ],
-    "config_index": "bloodpac_array-config",
+    "config_index": "qa-bloodpac.planx-pla.net_array-config",
     "auth_filter_field": "auth_resource_path"
   },
   "global": {
@@ -328,7 +328,10 @@
     "dispatcher_job_num": "10",
     "sync_from_dbgap": "False",
     "public_datasets": true,
-    "netpolicy": "on"
+    "netpolicy": "on",
+    "kube_bucket": "kube-qaplanetv1-gen3",
+    "logs_bucket": "logs-qaplanetv1-gen3",
+    "lb_type": "internal"
   },
   "canary": {
     "default": 0
