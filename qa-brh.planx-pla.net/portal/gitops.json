@@ -165,8 +165,30 @@
         }
       },
       "authorization": {
-        "enabled": true
+        "enabled": true,
+	"columnTooltip": "Filter by data access",
+        "supportedValues": {
+          "accessible": {
+            "enabled": true,
+            "menuText": "Available"
+          },
+          "unaccessible": {
+            "enabled": false,
+            "menuText": "Not Accessible"
+          },
+          "pending": {
+            "enabled": false,
+            "menuText": "Pending"
+          },
+          "notAvailable": {
+            "enabled": true,
+            "menuText": "Not Available"
+          }
+        }
       }
+    },
+    "discoveryUseAggWTS": {
+	    "enabled": true
     },
     "aggregations": [
       {
