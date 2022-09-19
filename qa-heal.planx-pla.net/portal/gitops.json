@@ -1,18 +1,26 @@
+// 20220919093900
+// https://raw.githubusercontent.com/uc-cdis/cdis-manifest/016390fa6851b82d5109095418cf46e98baa40cc/healdata.org/portal/gitops.json
+
 {
-  "gaTrackingId": "UA-119127212-3",
-  "homepageHref": "https://qa-heal.planx-pla.net",
+  "gaTrackingId": "UA-119127212-20",
+  "ddEnv": "healprod",
+  "homepageHref": "https://healdata.org",
   "graphql": {
-    "boardCounts": [],
-    "chartCounts": [],
+    "boardCounts": [
+      
+    ],
+    "chartCounts": [
+      
+    ],
     "projectDetails": "boardCounts"
   },
   "components": {
-    "appName": "HEAL QA Data Commons Portal",
+    "appName": "HEAL Data Platform",
     "metaDescription": "The HEAL Platform shares data from the NIH HEAL Initiative&reg; with the community of researchers, healthcare providers, community leaders, policy makers, and other stakeholders.",
     "index": {
       "introduction": {
-        "heading": "Data Commons",
-        "text": "The HEAL QA Data Commons supports the management, analysis and sharing of data for the research community.",
+        "heading": "HEAL Data Platform",
+        "text": "The HEAL Data Platform supports the management, analysis and sharing of data for the research community.",
         "link": "/submission"
       },
       "buttons": [
@@ -26,19 +34,19 @@
       ]
     },
     "navigation": {
-      "title": "HEAL QA Data Commons",
+      "title": "HEAL Data Platform",
       "items": [
         {
           "icon": "query",
           "link": "/discovery",
           "name": "Discovery",
-          "tooltip": "Use free-text search and tags to find studies, discover datasets, and export selected data files to an analysis workspace."
+          "tooltip": "Use free-text search and tags to rapidly find relevant studies, discover new datasets across multiple resources, and easily export selected data files to the analysis workspace."
         },
         {
           "icon": "workspace",
           "link": "/workspace",
           "name": "Workspace",
-          "tooltip": "Gen3 workspaces are secure cloud environments where users can analyze data from one or more data resources."
+          "tooltip": "Gen3 workspaces are secure data analysis environments in the cloud that can access data from one or more data resources."
         },
         {
           "name": "Example Analysis",
@@ -57,13 +65,13 @@
     "topBar": {
       "items": [
         {
-          "link": "https://qa-heal.planx-pla.net/documentation",
+          "link": "https://healdata.org/documentation",
           "name": "Help and Guidance"
         }
       ]
     },
     "login": {
-      "title": "HEAL QA Data Commons",
+      "title": "HEAL Data Platform",
       "subTitle": "Explore, Analyze, and Share Data",
       "text": "This website supports the discovery, analysis and sharing of data and aims to support the accelerated discovery and development of therapies, diagnostic tests, and other technologies.",
       "contact": "If you have any questions about access or the registration process, please contact ",
@@ -89,7 +97,9 @@
       "externalURL": "/external/footer"
     }
   },
-  "requiredCerts": [],
+  "requiredCerts": [
+    
+  ],
   "featureFlags": {
     "explorer": false,
     "analysis": false,
@@ -679,17 +689,10 @@
       }
     ]
   },
-  "studyRegistrationConfig": {
-    "studyRegistrationTrackingField": "registrant_username",
-    "studyRegistrationValidationField": "is_registered",
-    "studyRegistrationAccessCheckField": "registration_authz",
-    "studyRegistrationFormDisclaimerField": "Information provided on this page will be used for correspondence regarding your request and may be shared with the NIH and/or the HEAL Data Stewards",
-    "clinicalTrialFields": ["NCTId", "OfficialTitle", "BriefTitle", "Acronym", "StudyType", "OverallStatus", "StartDate", "StartDateType", "CompletionDate", "CompletionDateType", "IsFDARegulatedDrug", "IsFDARegulatedDevice", "IsPPSD", "BriefSummary", "DetailedDescription", "Condition", "DesignPrimaryPurpose", "Phase", "DesignInterventionModel", "EnrollmentCount", "EnrollmentType", "DesignObservationalModel", "InterventionType", "PrimaryOutcomeMeasure", "SecondaryOutcomeMeasure", "OtherOutcomeMeasure", "Gender", "GenderBased", "MaximumAge", "MinimumAge", "IPDSharing", "IPDSharingTimeFrame", "IPDSharingAccessCriteria", "IPDSharingURL", "SeeAlsoLinkURL", "AvailIPDURL", "AvailIPDId", "AvailIPDComment"]
-  },
   "resourceBrowser": {
     "title": "Static HEAL Jupyter Notebooks",
     "public": true,
-    "description": "The notebooks available here are intended to serve as examples of how to access, manipulate and analyze data available through the Platform.  As such, they are intended primarily for users who wish to access and analyze data themselves, either by downloading them or by using them in a workspace (the notebooks are also available in the workspaces where they may be used as templates).  Despite this, several of the notebooks include interesting results and substantive annotations, and thus may also be of interest to users wishing to learn more about a particular topic.",
+    "description": "The Jupyter notebooks contained in this notebook viewer pull data from various sources to generate and output useful tables, charts, graphs, and models. Each notebook is static, meaning the data being used by the notebooks is not updated in real time. These notebooks are also available in the Gen3 Workspace.",
     "resources": [
       {
         "title": "BACPAC Synthetic Data Analysis",
@@ -745,7 +748,21 @@
   "showArboristAuthzOnProfile": true,
   "showFenceAuthzOnProfile": false,
   "showExternalLoginsOnProfile": true,
-  "componentToResourceMapping": {},
-  "stridesPortalURL": "https://brh-test.planx-pla.net"
+  "componentToResourceMapping": {
+    
+  },
+  "stridesPortalURL": "https://healportal.org",
+  "registrationConfigs": {
+    "features": {
+      "studyRegistrationConfig": {
+        "studyRegistrationTrackingField": "registrant_username",
+        "studyRegistrationValidationField": "is_registered",
+        "studyRegistrationAccessCheckField": "registration_authz",
+        "studyRegistrationFormDisclaimerField": "Information provided on this page will be used for correspondence regarding your request and may be shared with the NIH and/or the HEAL Data Stewards"
+      }
+    },
+    "kayakoConfig": {
+      "kayakoDepartmentId": 21
+    }
+  }
 }
-
