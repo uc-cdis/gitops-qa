@@ -390,6 +390,118 @@
             "tutorial_notebook_link": "/dashboard/Public/notebooks/JCOIN_MOUD_accessibility_jupyter_notebook_BRH.html"
           }
         ]
+      },
+      {
+        "match": {
+          "full_name": "Prescription Drug Abuse Policy System (NIDA)"
+        },
+        "fieldsToValues": [
+          {
+            "data_access_method": "API, Single File"
+          },
+          {
+            "tutorial_notebook": "YES"
+          },
+          {
+            "tutorial_notebook_link": "/dashboard/Public/notebooks/JCOIN_PDAPS_Public_Policy_Changes.html"
+          }
+        ]
+      },
+      {
+        "match": {
+          "full_name": "Cholangiocarcinoma"
+        },
+        "fieldsToValues": [
+          {
+            "data_access_method": "API"
+          },
+          {
+            "tutorial_notebook": "YES"
+          },
+          {
+            "tutorial_notebook_link": "/dashboard/Public/notebooks/GDC_TCGA-CHOL_RNA_analysis_BRH_040722.html"
+          }
+        ]
+      },
+      {
+        "match": {
+          "full_name": "CPTAC CCRCC Discovery Study - Proteome"
+        },
+        "fieldsToValues": [
+          {
+            "data_access_method": "API"
+          },
+          {
+            "tutorial_notebook": "YES"
+          },
+          {
+            "tutorial_notebook_link": "/dashboard/Public/notebooks/PDC_clustergram.html"
+          }
+        ]
+      },
+      {
+        "match": {
+          "study_id": "tutorial-biolincc_framingham"
+        },
+        "fieldsToValues": [
+          {
+            "data_access_method": "API, Single File"
+          },
+          {
+            "tutorial_notebook": "YES"
+          },
+          {
+            "tutorial_notebook_link": "/dashboard/Public/notebooks/BDCat_Biolincc_Framingham_study_exploration.html"
+          }
+        ]
+      },
+      {
+        "match": {
+          "full_name": "Amerispeak Brief Stigma Survey (JCOIN 026)"
+        },
+        "fieldsToValues": [
+          {
+            "data_access_method": "API, Manifest"
+          },
+          {
+            "tutorial_notebook": "YES"
+          },
+          {
+            "tutorial_notebook_link": "/dashboard/Public/notebooks/JCOIN_Tracking_Opioid_Stigma.html"
+          }
+        ]
+      },
+      {
+        "match": {
+          "full_name": "Adaptive COVID-19 Treatment Trial (ACTT-1)"
+        },
+        "fieldsToValues": [
+          {
+            "data_access_method": "API, Single File"
+          },
+          {
+            "tutorial_notebook": "YES"
+          },
+          {
+            "tutorial_notebook_link": "/dashboard/Public/notebooks/ACTT1_accessclinical_notebook.html"
+          }
+        ]
+      },
+      {
+        "match": {
+          "full_name": "Prostate Adenocarcinoma"
+        },
+        "fieldsToValues": [
+          {
+            "data_access_method": "API"
+          },
+          {
+            "tutorial_notebook": "YES"
+          },
+          {
+            "tutorial_notebook_link": "/dashboard/Public/notebooks/TCGA_PRAD_Analysis.html"
+          }
+        ]
       }
     ]
   },
