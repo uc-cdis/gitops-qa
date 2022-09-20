@@ -208,6 +208,7 @@
     "tagSelector": {
       "showTagCategoryNames": true
     },
+    "studies": [],
     "studyColumns": [
       {
         "name": "Project Title",
