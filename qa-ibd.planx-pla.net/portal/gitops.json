@@ -455,7 +455,12 @@
     "buttons": [
         {
           "type": "request_access",
-          "resourceDisplayNameField": "title"
+          "resourceDisplayNameField": "title",
+          "redirectModalText": "the IBDGC Data Access Request Form",
+          "singleItemView": false,
+          "accessRequestedText": "DAR In Progress",
+          "accessRequestedTooltipText": "Your recently submitted DAR is being reviewed by IBDGC",
+          "disableButtonTooltipText": "This dataset is coming soon"
         }
       ]
     }
