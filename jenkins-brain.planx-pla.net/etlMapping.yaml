@@ -176,7 +176,7 @@ mappings:
         path: samples.aliquots.read_groups.submitted_unaligned_reads_files
         fn: count
     joining_props:
-      - index: file
+      - index: jenkins-brain.planx-pla.net_file
         join_on: _case_id
         props:
           - name: data_format

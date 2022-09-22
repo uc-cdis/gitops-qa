@@ -116,7 +116,7 @@ mappings:
       - path: studies[studies_submitter_id:submitter_id].projects[code]
       - path: studies[studies_submitter_id:submitter_id].projects[code].programs[programs_name:name]
     joining_props:
-      - index: file
+      - index: jenkins-dcp.planx-pla.net_file
         join_on: _subject_id
         props:
           - name: data_format

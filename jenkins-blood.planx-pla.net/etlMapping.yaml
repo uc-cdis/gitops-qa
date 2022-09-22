@@ -132,7 +132,7 @@ mappings:
         path: biospecimens.samples.aliquots.analytes.read_groups.submitted_unaligned_reads_files
         fn: count
     joining_props:
-      - index: file
+      - index: jenkins-blood.planx-pla.net_file
         join_on: _case_id
         props:
           - name: data_format
