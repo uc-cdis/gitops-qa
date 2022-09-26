@@ -2,37 +2,8 @@
   "gaTrackingId": "UA-119127212-3",
   "argoTemplate": "gwas-template",
   "graphql": {
-    "boardCounts": [
-      {
-        "graphql": "_case_count",
-        "name": "Patient",
-        "plural": "Patients"
-      },
-      {
-        "graphql": "_unaligned_reads_file_count",
-        "name": "Submitted Unaligned Reads",
-        "plural": "Submitted Unaligned Reads Files"
-      },
-      {
-        "graphql": "_imaging_file_count",
-        "name": "Image File",
-        "plural": "Image Files"
-      }
-    ],
-    "chartCounts": [
-      {
-        "graphql": "_case_count",
-        "name": "Patient"
-      },
-      {
-        "graphql": "_unaligned_reads_file_count",
-        "name": "Submitted Unaligned Reads"
-      },
-      {
-        "graphql": "_imaging_file_count",
-        "name": "Image Exam File"
-      }
-    ],
+    "boardCounts": [],
+    "chartCounts": [], 
     "projectDetails": "boardCounts"
   },
   "components": {
@@ -42,7 +13,9 @@
         "heading": "VA Data Commons",
         "text": "The VA Data Commons supports the management, and analysis of veteran oncologic data for the research community. The data commons aims to accelerate discovery and development of therapies, diagnostic tests, and other technologies for precision oncology. The data commons supports cross-project analyses by harmonizing data from different projects through the collaborative development of a data dictionary, providing an API for data queries, and providing a cloud-based analysis with rich tools and resources."
       },
-      "buttons": []
+      "buttons": [],
+      "customHomepageChartConfig": [],
+      "homepageChartNodes": []
     },
     "navigation": {
       "items": [
@@ -121,7 +94,8 @@
       "applicationUrl": "https://atlas.qa-mickey.planx-pla.net/atlas/",
       "image": "/custom/sponsors/gitops-sponsors/atlas-logo.png"
     },
-    "GWASUIApp"
+    "GWASUIApp",
+    "GWASResults"
   ],
   "explorerConfig": [
     {
