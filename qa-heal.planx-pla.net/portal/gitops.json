@@ -177,7 +177,7 @@
       },
       "authorization": {
         "enabled": true,
-	"columnTooltip": "Filter by data access",
+        "columnTooltip": "Filter by data access",
         "supportedValues": {
           "accessible": {
             "enabled": true,
@@ -187,7 +187,7 @@
             "enabled": false,
             "menuText": "Not Accessible"
           },
-	 "pending": {
+          "pending": {
             "enabled": true,
             "menuText": "Pending"
           },
@@ -704,7 +704,46 @@
     "studyRegistrationValidationField": "is_registered",
     "studyRegistrationAccessCheckField": "registration_authz",
     "studyRegistrationFormDisclaimerField": "Information provided on this page will be used for correspondence regarding your request and may be shared with the NIH and/or the HEAL Data Stewards",
-    "clinicalTrialFields": ["NCTId", "OfficialTitle", "BriefTitle", "Acronym", "StudyType", "OverallStatus", "StartDate", "StartDateType", "CompletionDate", "CompletionDateType", "IsFDARegulatedDrug", "IsFDARegulatedDevice", "IsPPSD", "BriefSummary", "DetailedDescription", "Condition", "DesignPrimaryPurpose", "Phase", "DesignInterventionModel", "EnrollmentCount", "EnrollmentType", "DesignObservationalModel", "InterventionType", "PrimaryOutcomeMeasure", "SecondaryOutcomeMeasure", "OtherOutcomeMeasure", "Gender", "GenderBased", "MaximumAge", "MinimumAge", "IPDSharing", "IPDSharingTimeFrame", "IPDSharingAccessCriteria", "IPDSharingURL", "SeeAlsoLinkURL", "AvailIPDURL", "AvailIPDId", "AvailIPDComment"]
+    "clinicalTrialFields": [
+      "NCTId",
+      "OfficialTitle",
+      "BriefTitle",
+      "Acronym",
+      "StudyType",
+      "OverallStatus",
+      "StartDate",
+      "StartDateType",
+      "CompletionDate",
+      "CompletionDateType",
+      "IsFDARegulatedDrug",
+      "IsFDARegulatedDevice",
+      "IsPPSD",
+      "BriefSummary",
+      "DetailedDescription",
+      "Condition",
+      "DesignPrimaryPurpose",
+      "Phase",
+      "DesignInterventionModel",
+      "EnrollmentCount",
+      "EnrollmentType",
+      "DesignObservationalModel",
+      "InterventionType",
+      "PrimaryOutcomeMeasure",
+      "SecondaryOutcomeMeasure",
+      "OtherOutcomeMeasure",
+      "Gender",
+      "GenderBased",
+      "MaximumAge",
+      "MinimumAge",
+      "IPDSharing",
+      "IPDSharingTimeFrame",
+      "IPDSharingAccessCriteria",
+      "IPDSharingURL",
+      "SeeAlsoLinkURL",
+      "AvailIPDURL",
+      "AvailIPDId",
+      "AvailIPDComment"
+    ]
   },
   "resourceBrowser": {
     "title": "Static HEAL Jupyter Notebooks",
@@ -768,4 +807,3 @@
   "componentToResourceMapping": {},
   "stridesPortalURL": "https://brh-test.planx-pla.net"
 }
-
