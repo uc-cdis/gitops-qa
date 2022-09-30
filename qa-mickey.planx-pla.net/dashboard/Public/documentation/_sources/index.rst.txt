@@ -183,7 +183,7 @@ have access to.
 
 ATLAS is an open source software application developed as a part of
 `OHDSI <https://www.ohdsi.org/>`__ community intended to provide a
-unified interface to patient level data and analytics. Atlas software us
+unified interface to patient level data and analytics. Atlas software
 used to define cohorts, typically dichotomous variables, for analysis.
 
 ATLAS currently includes functionality for searching and navigating the
@@ -237,13 +237,22 @@ concept variables.
 
 .. image:: _static/slide_14.png
 
-Select desired concepts, click “Add To Concept Set”. Repat Search and
+Select desired concepts, click “Add To Concept Set”. Repeat Search and
 Add steps as needed, then click “Concept Sets”.
 
 .. image:: _static/slide_15.png
 
 Make sure all desired concepts are included, then click the save icon to
 the right of the name of the Concept Set.
+
+To add new concepts, please use the “Add Concepts” button again as
+described above.
+
+.. image:: _static/atlas_remove_concepts.png
+
+To delete the concepts from the concept set, select the concepts and
+click on the “Remove Selected” button, then click the save icon to save
+your changes.
 
 **Step 2 Create Cohort Definition**
 
@@ -312,10 +321,16 @@ Cohort size will be displayed under the column “People”. Use View
 Reports to see if you have inclusion criteria that causes cohort
 attrition.
 
+.. image:: _static/atlas_export_cohort.png
+
+The “Export” tab provides a text version of how a cohort was created.
+Click on the “Export” tab and then on the “Copy to clipboard” to copy
+the cohort’s information.
+
 We expect that this documentation in addition to the OHDSI tutorials are
 sufficient for most analyses that users will attempt. If your phenotype
 and analysis variables are more complex than this documentation covers,
-please contact us for consultation at- craig.teerlink@va.gov
+please contact us for consultation at craig.teerlink@va.gov
 
 **Gen3 GWAS**
 -------------
