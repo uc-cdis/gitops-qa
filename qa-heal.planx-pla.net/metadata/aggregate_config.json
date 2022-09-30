@@ -13,6 +13,9 @@
                 }
             },
             "commons_url": {},
+            "apple_id": {
+                "type": "string"
+            },
             "tags": {
                 "type": "array"
             },
