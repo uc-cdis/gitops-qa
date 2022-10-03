@@ -26,9 +26,6 @@
             "data_dictionary": {
                 "type": "object"
             },
-            "_file_manifest": {
-                "type": "object"
-            },
             "Data": {
                 "type": "object"
             },
@@ -235,7 +232,6 @@
                 "project_title": "path:title",
                 "protocol_name": "",
                 "study_summary": "",
-                "_file_manifest": "",
                 "dataset_1_type": "",
                 "dataset_2_type": "",
                 "dataset_3_type": "",
@@ -466,7 +462,6 @@
                 "project_title": "path:BriefTitle",
                 "protocol_name": "",
                 "study_summary": "",
-                "_file_manifest": "",
                 "dataset_1_type": "",
                 "dataset_2_type": "",
                 "dataset_3_type": "",
@@ -674,7 +669,6 @@
                         "strip_html"
                     ]
                 },
-                "_file_manifest": "",
                 "dataset_1_type": "",
                 "dataset_2_type": "",
                 "dataset_3_type": "",
