@@ -23,9 +23,6 @@
                 "type": "array",
                 "default": []
             },
-            "data_dictionary": {
-                "type": "object"
-            },
             "Data": {
                 "type": "object"
             },
@@ -185,6 +182,16 @@
                         }
                     ]
                 }
+            }
+        },
+        "JCOIN": {
+            "mds_url": "https://qa-jcoin.planx-pla.net/",
+            "commons_url": "qa-jcoin.planx-pla.net",
+            "adapter": "gen3",
+            "commons_name": "JCOIN",
+            "columns_to_fields": {
+                "short_name": "name",
+                "_unique_id": "study_id"
             }
         },
         "ICPSR": {
