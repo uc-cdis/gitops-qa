@@ -79,6 +79,12 @@
       "items": [
         {
           "icon": "query",
+          "link": "/discovery",
+          "color": "#a2a2a2",
+          "name": "Discovery"
+        },
+        {
+          "icon": "query",
           "link": "/study-viewer/project",
           "name": "Browse Studies"
         },
@@ -150,9 +156,20 @@
       ]
     }
   },
-  "categorical9Colors": ["#67B49D", "#616265", "#59CD90", "#F2DC5D", "#40476D", "#FFA630", "#AE8799", "#1A535C", "#462255"],
+  "categorical9Colors": [
+    "#67B49D",
+    "#616265",
+    "#59CD90",
+    "#F2DC5D",
+    "#40476D",
+    "#FFA630",
+    "#AE8799",
+    "#1A535C",
+    "#462255"
+  ],
   "featureFlags": {
-    "explorer": true
+    "explorer": true,
+    "discovery": true
   },
   "explorerConfig": [
     {
@@ -246,9 +263,18 @@
         "tierAccessLevel": "regular",
         "nodeCountTitle": "Participants",
         "fieldMapping": [
-          { "field": "project_id", "name": "Project ID" },
-          { "field": "ibd_affection_status", "name": "IBD Affection Status"},
-          { "field": "name", "name": "Center Name"}
+          {
+            "field": "project_id",
+            "name": "Project ID"
+          },
+          {
+            "field": "ibd_affection_status",
+            "name": "IBD Affection Status"
+          },
+          {
+            "field": "name",
+            "name": "Center Name"
+          }
         ],
         "manifestMapping": {
           "resourceIndexType": "file",
@@ -264,15 +290,14 @@
           "mainFieldTitle": "Diagnosis",
           "mainFieldIsNumeric": false,
           "aggFields": [
-              "gender",
-              "race",
-              "jewish",
-              "hispanic",
-              "ibd_affection_status",
-              "control"
+            "gender",
+            "race",
+            "jewish",
+            "hispanic",
+            "ibd_affection_status",
+            "control"
           ],
-          "fieldMapping": [
-          ]
+          "fieldMapping": []
         }
       }
     },
@@ -330,8 +355,14 @@
         "dataType": "file",
         "tierAccessLevel": "regular",
         "fieldMapping": [
-          { "field": "object_id", "name": "GUID" },
-          { "field": "project_id", "name": "Project ID" }
+          {
+            "field": "object_id",
+            "name": "GUID"
+          },
+          {
+            "field": "project_id",
+            "name": "Project ID"
+          }
         ],
         "nodeCountTitle": "Files",
         "manifestMapping": {
@@ -365,7 +396,7 @@
               "year",
               "pmid",
               "doi"
-            ] 
+            ]
           },
           {
             "title": "Files",
@@ -373,7 +404,6 @@
               "data_category",
               "data_type",
               "data_format"
-              
             ]
           }
         ]
@@ -411,13 +441,24 @@
         "dataType": "supplementary_file",
         "tierAccessLevel": "regular",
         "fieldMapping": [
-          { "field": "object_id", "name": "GUID" },
-          { "field": "project_id", "name": "Project ID" },
-          { "field": "pmid", "name": "PMID"},
-          { "field": "doi", "name": "DOI"}
+          {
+            "field": "object_id",
+            "name": "GUID"
+          },
+          {
+            "field": "project_id",
+            "name": "Project ID"
+          },
+          {
+            "field": "pmid",
+            "name": "PMID"
+          },
+          {
+            "field": "doi",
+            "name": "DOI"
+          }
         ],
         "nodeCountTitle": "Files",
-        
         "manifestMapping": {
           "referenceIdFieldInResourceIndex": "object_id",
           "referenceIdFieldInDataIndex": "object_id"
@@ -435,24 +476,64 @@
       "rowAccessor": "project_id",
       "openMode": "close-all",
       "listItemConfig": {
-        "blockFields": ["brief_summary"],
-        "tableFields": ["title", "principle_investigator", "data_type", "availability_type"]
+        "blockFields": [
+          "brief_summary"
+        ],
+        "tableFields": [
+          "title",
+          "principle_investigator",
+          "data_type",
+          "availability_type"
+        ]
       },
       "singleItemConfig": {
-        "blockFields": ["description"],
-        "tableFields": ["title", "principle_investigator", "data_type", "availability_type", "name", "estimated_study_completion", "publisher","study_design_allocation","study_phase"],
+        "blockFields": [
+          "description"
+        ],
+        "tableFields": [
+          "title",
+          "principle_investigator",
+          "data_type",
+          "availability_type",
+          "name",
+          "estimated_study_completion",
+          "publisher",
+          "study_design_allocation",
+          "study_phase"
+        ],
         "sideBoxes": []
       },
       "fieldMapping": [
-        { "field": "title", "name": "Study Title" },
-        { "field": "brief_summary", "name": "Brief Description" },
-        { "field": "principle_investigator", "name": "Principle Investigator(s)" },
-        { "field": "availability_type", "name": "Data Accessibility" },
-        { "field": "name", "name": "Project Name" },
-        { "field": "publisher", "name": "Publications" },
-        { "field": "study_design_allocation", "name": "Design Allocation"}
+        {
+          "field": "title",
+          "name": "Study Title"
+        },
+        {
+          "field": "brief_summary",
+          "name": "Brief Description"
+        },
+        {
+          "field": "principle_investigator",
+          "name": "Principle Investigator(s)"
+        },
+        {
+          "field": "availability_type",
+          "name": "Data Accessibility"
+        },
+        {
+          "field": "name",
+          "name": "Project Name"
+        },
+        {
+          "field": "publisher",
+          "name": "Publications"
+        },
+        {
+          "field": "study_design_allocation",
+          "name": "Design Allocation"
+        }
       ],
-    "buttons": [
+      "buttons": [
         {
           "type": "request_access",
           "resourceDisplayNameField": "title",
@@ -476,6 +557,118 @@
         "description": "Notebook showing differences in distribution of cell types between inflamed and uninflamed ileum in Crohn’s disease.",
         "link": "/dashboard/Public/notebooks/CD.html",
         "imageUrl": "/dashboard/Public/notebooks/CD.png"
+      }
+    ]
+  },
+  "discoveryConfig": {
+    "features": {
+      "pageTitle": {
+        "enabled": true,
+        "text": "Publications"
+      },
+      "search": {
+        "tagSearchDropdown": {
+          "enabled": true,
+          "collapsibleButtonText": "Filters"
+        },
+        "searchBar": {
+          "enabled": true
+        }
+      },
+      "authorization": {
+        "enabled": false
+      }
+    },
+    "aggregations": [
+      {
+        "name": "Publications",
+        "field": "_publication_id",
+        "type": "count"
+      }
+    ],
+    "tagSelector": {
+      "title": "Tags by category"
+    },
+    "studyColumns": [
+      {
+        "name": "Title",
+        "field": "title",
+        "contentType": "string",
+        "width": 200
+      },
+      {
+        "name": "Journal",
+        "field": "journal",
+        "contentType": "string"
+      },
+      {
+        "name": "Publication URL",
+        "field": "publication_url",
+        "contentType": "link"
+      }
+    ],
+    "studyPreviewField": {
+      "name": "Abstract",
+      "field": "abstract",
+      "contentType": "string",
+      "includeName": true,
+      "includeIfNotAvailable": false
+    },
+    "studyPageFields": {
+      "header": {
+        "field": "title"
+      },
+      "fieldsToShow": [
+        {
+          "groupName": "Publication Identifiers",
+          "includeName": false,
+          "fields": [
+            {
+              "name": "Authors",
+              "field": "authors",
+              "contentType": "string"
+            },
+            {
+              "name": "Affiliations",
+              "field": "author_affiliations",
+              "contentType": "string"
+            },
+            {
+              "name": "Journal",
+              "field": "journal",
+              "contentType": "string"
+            },
+            {
+              "name": "Publication URL",
+              "field": "publication_url",
+              "contentType": "link"
+            }
+          ]
+        },
+        {
+          "fields": [
+            {
+              "name": "Abstract",
+              "field": "abstract",
+              "contentType": "paragraphs",
+              "includeName": false,
+              "includeIfNotAvailable": false
+            }
+          ]
+        }
+      ]
+    },
+    "minimalFieldMapping": {
+      "tagsListFieldName": "tags",
+      "authzField": "auth_resource_path",
+      "uid": "_publication_id"
+    },
+    "tagCategories": [
+      {
+        "name": "Category",
+        "displayName": "Category",
+        "color": "#532565",
+        "display": true
       }
     ]
   },
