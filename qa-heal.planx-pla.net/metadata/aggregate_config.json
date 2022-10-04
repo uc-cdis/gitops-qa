@@ -13,7 +13,7 @@
                 }
             },
             "commons_url": {},
-            "apple_id": {
+            "appl_id": {
                 "type": "string"
             },
             "tags": {
