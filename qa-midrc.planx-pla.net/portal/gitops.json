@@ -519,6 +519,10 @@
                     "field": "project_id",
                     "name": "Project ID"
                 },
+                  {
+                    "field": "submitter_id",
+                    "name": "Browse in DICOM viewer"
+                 },
                 {
                     "field": "case_ids",
                     "name": "Patient ID"
