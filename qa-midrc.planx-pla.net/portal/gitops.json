@@ -285,7 +285,11 @@
               "_cr_series_file_count",
               "_mr_series_file_count",
               "project_id"
-            ]
+            ],
+              "dicomViewerId": "submitter_id",
+                "linkFields": [
+                "submitter_id"
+                ]
           },
           "dropdowns": {
             "download-table": {
@@ -433,6 +437,7 @@
               "enabled": true,
               "fields": [
                 "study_modality",
+                "submitter_id",
                 "study_description",
                 "body_part_examined",
                 "age_at_imaging",
