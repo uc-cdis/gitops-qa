@@ -271,7 +271,6 @@
           "table": {
             "enabled": true,
             "fields": [
-              "submitter_id",
               "sex",
               "age_at_index",
               "index_event",
@@ -285,11 +284,7 @@
               "_cr_series_file_count",
               "_mr_series_file_count",
               "project_id"
-            ],
-              "dicomViewerId": "submitter_id",
-                "linkFields": [
-                "submitter_id"
-                ]
+            ]
           },
           "dropdowns": {
             "download-table": {
