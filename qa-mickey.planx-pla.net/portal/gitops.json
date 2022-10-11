@@ -85,7 +85,8 @@
   },
   "featureFlags": {
     "explorer": true,
-    "analysis": true
+    "analysis": true,
+    "workspaceTokenServiceRefreshTokenAtLogin": true
   },
   "analysisTools": [
     {
