@@ -1,7 +1,7 @@
 language: python
 
 before_script:
-  - pip install gen3utils --upgrade
+  - pip install git+https://github.com/uc-cdis/gen3utils.git@7722b845ee40d7008f5b53fe2ab645ee86b28f11
 
 script:
   # validate manifest.json, etlMapping.yaml and gitops.json:
