@@ -271,7 +271,6 @@
           "table": {
             "enabled": true,
             "fields": [
-              "submitter_id",
               "sex",
               "age_at_index",
               "index_event",
@@ -433,6 +432,7 @@
               "enabled": true,
               "fields": [
                 "study_modality",
+                "submitter_id",
                 "study_description",
                 "body_part_examined",
                 "age_at_imaging",
@@ -459,6 +459,10 @@
                 "file_name",
                 "object_id",
                 "project_id"
+              ],
+                "dicomViewerId": "submitter_id",
+                "linkFields": [
+                "submitter_id"
               ]
             },
             "dropdowns": {
@@ -519,6 +523,10 @@
                     "field": "project_id",
                     "name": "Project ID"
                 },
+                  {
+                    "field": "submitter_id",
+                    "name": "Browse in DICOM viewer"
+                 },
                 {
                     "field": "case_ids",
                     "name": "Patient ID"
@@ -623,6 +631,7 @@
             "table": {
               "enabled": true,
               "fields": [
+                "submitter_id",
                 "modality",
                 "study_description",
                 "acquisition_type",
@@ -729,6 +738,10 @@
                     "field": "project_id",
                     "name": "Project ID"
                 },
+                {
+                  "field": "submitter_id",
+                  "name": "Browse in DICOM viewer"
+              },
                 {
                     "field": "case_ids",
                     "name": "Patient ID"

@@ -115,7 +115,9 @@
   "featureFlags": {
     "explorer": false,
     "discovery": true,
-    "discoveryUseAggMDS": true
+    "discoveryUseAggMDS": true,
+    "discoveryUseAggWTS": true,
+    "workspaceRegistration": true
   },
   "discoveryConfig": {
     "features": {
@@ -160,11 +162,28 @@
         },
         "tagSearchDropdown": {
           "enabled": true,
-          "collapsibleButtonText": "Study Characteristics"
+          "collapsibleButtonText": "Data Commons"
         }
       },
       "authorization": {
-        "enabled": true
+        "enabled": true,
+        "columnTooltip": "Filter by data access. Accessible indicates you are authorized to access. Not accessible indicates you are not authorized to access.",
+        "supportedValues": {
+          "accessible": {
+            "enabled": true,
+            "menuText": "Accessible"
+          },
+          "unaccessible": {
+            "enabled": true,
+            "menuText": "Not Accessible"
+          },
+          "pending": {
+            "enabled": false
+          },
+          "notAvailable": {
+            "enabled": false
+          }
+        }
       }
     },
     "aggregations": [
@@ -219,6 +238,12 @@
         "errorIfNotAvailable": false,
         "valueIfNotAvailable": "n/a",
         "hrefValueFromField": "commons_url"
+      },
+      {
+        "name": "DATA ACCESS METHOD",
+        "field": "data_access_method",
+        "errorIfNotAvailable": false,
+        "valueIfNotAvailable": "API"
       }
     ],
     "studyPreviewField": {
@@ -276,6 +301,13 @@
               "field": "commons",
               "contentType": "string",
               "includeIfNotAvailable": false
+            },
+            {
+              "name": "Tutorial Notebook",
+              "field": "tutorial_notebook",
+              "contentType": "string",
+              "includeIfNotAvailable": true,
+              "valueIfNotAvailable": "NO"
             }
           ]
         },
@@ -340,6 +372,24 @@
         "name": "clinical_study_type",
         "color": "rgba(112, 182, 3, 1)",
         "display": false
+      }
+    ],
+    "studies": [
+      {
+        "match": {
+          "short_name": "Methodology and Advanced Analytics Resource Center"
+        },
+        "fieldsToValues": [
+          {
+            "data_access_method": "API, Manifest"
+          },
+          {
+            "tutorial_notebook": "YES"
+          },
+          {
+            "tutorial_notebook_link": "/dashboard/Public/notebooks/JCOIN_MOUD_accessibility_jupyter_notebook_BRH.html"
+          }
+        ]
       }
     ]
   },
@@ -450,5 +500,20 @@
   "showArboristAuthzOnProfile": true,
   "showFenceAuthzOnProfile": false,
   "showExternalLoginsOnProfile": true,
-  "stridesPortalURL": "https://brh-portal.org"
+  "stridesPortalURL": "https://brh-portal.org",
+  "registrationConfigs": {
+    "features": {
+      "workspaceRegistrationConfig" : {
+        "workspacePolicyId": "workspace_strides_integrated",
+        "workspaceInfoMessage": "The BRH workspace provides a standardized computational environment for accessing and analyzing data from multiple data commons. Please fill out this form to request access to the workspace and start computing!",
+        "successRedirect" : {
+          "link": "/discovery",
+          "text": "Go to Discovery Page"
+        }
+      }
+    },
+    "kayakoConfig": {
+      "kayakoDepartmentId": 22
+    }
+  }
 }

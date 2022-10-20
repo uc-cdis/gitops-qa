@@ -7,24 +7,24 @@
     "autodeploy": "yes"
   },
   "versions": {
-    "acronymbot": "quay.io/cdis/acronym-bot:2022.03",
-    "arborist": "quay.io/cdis/arborist:2022.03",
+    "acronymbot": "quay.io/cdis/acronym-bot:2022.08",
+    "arborist": "quay.io/cdis/arborist:2022.08",
     "aws-es-proxy": "quay.io/cdis/aws-es-proxy:v1.3.1",
-    "cogwheel": "quay.io/cdis/cogwheel:2022.03",
-    "fence": "quay.io/cdis/fence:2022.03",
+    "fence": "quay.io/cdis/fence:2022.08",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
-    "indexd": "quay.io/cdis/indexd:2022.03",
+    "indexd": "quay.io/cdis/indexd:2022.08",
     "jenkins": "quay.io/cdis/jenkins:master",
     "jenkins-worker": "quay.io/cdis/gen3-qa-worker:master",
     "jenkins-ci-worker": "quay.io/cdis/gen3-ci-worker:master",
-    "peregrine": "quay.io/cdis/peregrine:2022.03",
-    "pidgin": "quay.io/cdis/pidgin:2022.03",
-    "portal": "quay.io/cdis/data-portal:2022.03",
-    "revproxy": "quay.io/cdis/nginx:2022.03",
-    "sheepdog": "quay.io/cdis/sheepdog:2022.03",
-    "dashboard": "quay.io/cdis/gen3-statics:2022.03",
-    "metadata": "quay.io/cdis/metadata-service:2022.03",
-    "tube": "quay.io/cdis/tube:2022.03"
+    "peregrine": "quay.io/cdis/peregrine:2022.08",
+    "pidgin": "quay.io/cdis/pidgin:2022.08",
+    "portal": "quay.io/cdis/data-portal:2022.08",
+    "revproxy": "quay.io/cdis/nginx:2022.08",
+    "sheepdog": "quay.io/cdis/sheepdog:2022.08",
+    "dashboard": "quay.io/cdis/gen3-statics:2022.08",
+    "metadata": "quay.io/cdis/metadata-service:2022.08",
+    "tube": "quay.io/cdis/tube:2022.08",
+    "thor": "quay.io/cdis/thor:master"
   },
   "arborist": {
     "deployment_version": "2"
