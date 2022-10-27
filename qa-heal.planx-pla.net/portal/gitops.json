@@ -177,7 +177,7 @@
       },
       "authorization": {
         "enabled": true,
-	"columnTooltip": "Filter by data access",
+        "columnTooltip": "Filter by data access",
         "supportedValues": {
           "accessible": {
             "enabled": true,
@@ -187,7 +187,7 @@
             "enabled": false,
             "menuText": "Not Accessible"
           },
-	 "pending": {
+          "pending": {
             "enabled": true,
             "menuText": "Pending"
           },
