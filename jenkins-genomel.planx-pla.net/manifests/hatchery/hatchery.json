@@ -7,7 +7,8 @@
     "region": "us-east-1",
     "account_id": "354484406138",
     "workspace_type": "STRIDES test",
-    "ecs": true
+    "ecs": true,
+    "subnet": 3
   },
   "sidecar": {
     "cpu-limit": "1.0",
