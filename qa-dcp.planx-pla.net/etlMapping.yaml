@@ -126,7 +126,7 @@ mappings:
             src: data_type
             fn: set
           - name: file_count
-            src: file_id
+            src: id
             fn: count
   - name: qa-dcp_file
     doc_type: file
