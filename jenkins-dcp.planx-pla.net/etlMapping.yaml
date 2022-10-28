@@ -127,7 +127,6 @@ mappings:
             fn: set
           - name: file_count
             src: file_id
-            alternate_src: _file_id
             fn: count
   - name: jenkins-dcp.planx-pla.net_file
     doc_type: file
