@@ -17,6 +17,9 @@
             "appl_id": {
                 "type": "string"
             },
+            "_hdp_uid": {
+                "type": "string"
+            },
             "tags": {
                 "type": "array"
             },
@@ -100,11 +103,8 @@
                 "filters": "gen3_discovery.data_resource=SAMHDA"
             },
             "field_mappings": {
-                "authz": "path:authz",
-                "tags": "path:tags",
-                "study_description_summary": "path:study_description_summary",
                 "manifest": "path:__manifest",
-                "project_title": "path:project_title",
+                "_hdp_uid": "path:project_number",
                 "commons_url": "https://qa-heal.planx-pla.net/"
             }
         },
@@ -119,7 +119,6 @@
             },
             "keep_original_fields": true,
             "field_mappings": {
-                "authz": "path:authz",
                 "tags": {
                     "path": "tags",
                     "default": []
@@ -131,9 +130,6 @@
                 "advSearchFilters": {
                     "path": "advSearchFilters"
                 },
-                "study_description_summary": "path:study_description_summary",
-                "manifest": "path:__manifest",
-                "project_title": "path:project_title",
                 "commons_url": "https://qa-heal.planx-pla.net/"
             },
             "per_item_values": {
@@ -192,8 +188,8 @@
             "commons_name": "JCOIN",
             "keep_original_fields": true,
             "field_mappings": {
-                "short_name": "path:name",
-                "_unique_id": "path:study_id",
+                "_unique_id": "path:project_number",
+                "_hdp_uid": "path:project_number",
                 "__manifest": "path:__manifest"
             }
         },
@@ -248,6 +244,7 @@
                 "dataset_4_type": "",
                 "dataset_5_type": "",
                 "project_number": "path:identifier",
+                "_hdp_uid": "path:identifier",
                 "dataset_1_title": "",
                 "dataset_2_title": "",
                 "dataset_3_title": "",
@@ -478,6 +475,7 @@
                 "dataset_4_type": "",
                 "dataset_5_type": "",
                 "project_number": "path:OrgStudyId",
+                "_hdp_uid": "path:OrgStudyId",
                 "dataset_1_title": "",
                 "dataset_2_title": "",
                 "dataset_3_title": "",
@@ -684,7 +682,8 @@
                 "dataset_3_type": "",
                 "dataset_4_type": "",
                 "dataset_5_type": "",
-                "project_number": "path: id",
+                "project_number": "path:id",
+                "_hdp_uid": "path:id",
                 "dataset_1_title": "",
                 "dataset_2_title": "",
                 "dataset_3_title": "",
