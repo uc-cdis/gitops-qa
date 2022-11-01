@@ -87,32 +87,8 @@
   "guppy": {
     "indices": [
       {
-        "index": "qa-bloodpac.planx-pla.net_study",
-        "type": "study"
-      },
-      {
         "index": "qa-bloodpac.planx-pla.net_case",
         "type": "case"
-      },
-      {
-        "index": "qa-bloodpac.planx-pla.net_medical_history",
-        "type": "medical_history"
-      },
-      {
-        "index": "qa-bloodpac.planx-pla.net_biospecimen",
-        "type": "biospecimen"
-      },
-      {
-        "index": "qa-bloodpac.planx-pla.net_aliquot",
-        "type": "aliquot"
-      },
-      {
-        "index": "qa-bloodpac.planx-pla.net_read_group",
-        "type": "read_group"
-      },
-      {
-        "index": "qa-bloodpac.planx-pla.net_publication",
-        "type": "publication"
       },
       {
         "index": "qa-bloodpac.planx-pla.net_file",
