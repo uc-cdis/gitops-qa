@@ -241,7 +241,23 @@
         }
       },
       "authorization": {
-        "enabled": true
+        "enabled": true,
+        "supportedValues": {
+          "accessible": {
+            "enabled": true,
+            "menuText": "Accessible"
+          },
+          "unaccessible": {
+            "enabled": true,
+            "menuText": "Not Accessible"
+          },
+          "pending": {
+            "enabled": false
+          },
+          "notAvailable": {
+            "enabled": false
+          }
+        }
       }
     },
     "aggregations": [
@@ -255,6 +271,7 @@
       "title": "Tags by category",
       "showTagCategoryNames": true
     },
+    "studies": [],
     "studyColumns": [
       {
         "name": "Project Title",
