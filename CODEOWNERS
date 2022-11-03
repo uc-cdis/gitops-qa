@@ -1,16 +1,16 @@
-qa-acct.planx-pla.net @haraprasadj @atharvar28 @jingh8
-qa-bloodpac.planx-pla.net @haraprasadj @atharvar28 @jingh8
-qa-canine.planx-pla.net @trevars @haraprasadj @atharvar28 @jingh8
-qa.planx-pla.net @haraprasadj @atharvar28 @jingh8
-qaplanetv2.planx-pla.net @haraprasadj @atharvar28 @jingh8
+qa-acct.planx-pla.net @haraprasadj @atharvar28 @tyro-ops
+qa-bloodpac.planx-pla.net @haraprasadj @atharvar28 @tyro-ops
+qa-canine.planx-pla.net @trevars @haraprasadj @atharvar28 @tyro-ops
+qa.planx-pla.net @haraprasadj @atharvar28 @tyro-ops
+qaplanetv2.planx-pla.net @haraprasadj @atharvar28 @tyro-ops
 
-qa-mickey.planx-pla.net @jingh8
-qa-brain.planx-pla.net @jingh8
+qa-mickey.planx-pla.net @tyro-ops
+qa-brain.planx-pla.net @tyro-ops
 
-qa-anvil.planx-pla.net @atharvar28
+qa-anvil.planx-pla.net @tyro-ops
 qa-dcf.planx-pla.net @atharvar28
 qa-dcfdemo.planx-pla.net @atharvar28
-qa-dcp.planx-pla.net @jingh8
+qa-dcp.planx-pla.net @atharvar28
 
 qa-aids.planx-pla.net @atharvar28
 qa-covid19.planx-pla.net @atharvar28
@@ -24,11 +24,12 @@ qa-niaid.planx-pla.net @atharvar28
 qa-tb.planx-pla.net @atharvar28
 
 qa-heal.planx-pla.net @haraprasadj
+qa-brh.planx-pla.net @haraprasadj
 
-jenkins-blood.planx-pla.net @haraprasadj @atharvar28 @jingh8
-jenkins-brain.planx-pla.net @haraprasadj @atharvar28 @jingh8
-jenkins-dcp.planx-pla.net @haraprasadj @atharvar28 @jingh8
-jenkins-genomel.planx-pla.net @haraprasadj @atharvar28 @jingh8
-jenkins-niaid.planx-pla.net @haraprasadj @atharvar28 @jingh8
-jenkins-new.planx-pla.net @haraprasadj @atharvar28 @jingh8
-jenkins-perf.planx-pla.net @haraprasadj @atharvar28 @jingh8
+jenkins-blood.planx-pla.net @haraprasadj @atharvar28 @tyro-ops
+jenkins-brain.planx-pla.net @haraprasadj @atharvar28 @tyro-ops
+jenkins-dcp.planx-pla.net @haraprasadj @atharvar28 @tyro-ops
+jenkins-genomel.planx-pla.net @haraprasadj @atharvar28 @tyro-ops
+jenkins-niaid.planx-pla.net @haraprasadj @atharvar28 @tyro-ops
+jenkins-new.planx-pla.net @haraprasadj @atharvar28 @tyro-ops
+jenkins-perf.planx-pla.net @haraprasadj @atharvar28 @tyro-ops

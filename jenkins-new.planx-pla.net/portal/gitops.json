@@ -160,7 +160,23 @@
         }
       },
       "authorization": {
-        "enabled": true
+        "enabled": true,
+        "supportedValues": {
+          "accessible": {
+            "enabled": true,
+            "menuText": "Accessible"
+          },
+          "unaccessible": {
+            "enabled": true,
+            "menuText": "Not Accessible"
+          },
+          "pending": {
+            "enabled": false
+          },
+          "notAvailable": {
+            "enabled": false
+          }
+        }
       }
     },
     "aggregations": [
@@ -202,6 +218,7 @@
       "includeIfNotAvailable": true,
       "valueIfNotAvailable": "No summary has been provided for this study."
     },
+    "studies": [],
     "studyPageFields": {
       "header": {
         "field": "project_title"
