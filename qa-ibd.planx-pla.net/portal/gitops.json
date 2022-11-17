@@ -58,10 +58,6 @@
         {
           "node": "participant",
           "name": "Participants"
-        },
-        {
-          "node": "sample",
-          "name": "Samples"
         }
       ]
     },
