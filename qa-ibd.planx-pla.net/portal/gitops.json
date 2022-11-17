@@ -84,7 +84,7 @@
       "expireUseMsgDays" : 7
     },
     "navigation": {
-      "title": "NIDDK IBD Genetics Consortium Data Commons",
+      "title": "IBDGC Data Commons",
       "items": [
         {
           "icon": "query",
