@@ -166,5 +166,3 @@ mappings:
           - name: subject_submitter_id
             src: submitter_id
             fn: set
-          - name: project_id
-            fn: set
