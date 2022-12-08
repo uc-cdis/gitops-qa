@@ -45,16 +45,18 @@
     "USE_AGG_MDS": true,
     "AGG_MDS_NAMESPACE": "jenkins-perf"
   },
-  "sower": {
-    "name": "pelican-export",
-    "container": {
-      "name": "job-task",
-      "image": "quay.io/cdis/pelican:master",
-      "pull_policy": "always",
-      "env": []
-    },
-    "restart_policy": "never"
-  },
+  "sower": [
+    {
+      "name": "pelican-export",
+      "container": {
+        "name": "job-task",
+        "image": "quay.io/cdis/pelican:master",
+        "pull_policy": "always",
+        "env": []
+      } 
+      "restart_policy": "never"
+    }
+  ],  
   "peregrine": {
     "sidecar": "True"
   },
@@ -68,6 +70,7 @@
     "kube_bucket": "kube_bucket.devplanetv1.gen3",
     "logs_bucket": "logs-devplanetv1-gen3",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
+    "dispatcher_job_num": "5",
     "netpolicy": "on"
   },
   "canary": {
