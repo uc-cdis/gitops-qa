@@ -10,8 +10,11 @@ mappings:
       - name: lost_to_followup
     joining_props:
       - index: file
-        join_on: case_id
+        join_on: _case_id
         props:
+          - name: object_id
+            src: object_id
+            fn: set
           - name: data_format
             src: data_format
             fn: set
@@ -32,10 +35,9 @@ mappings:
       - name: data_format
       - name: data_type
       - name: data_category
-      - name: state
     injecting_props:
       case:
         props:
-          - name: case_id
+          - name: _case_id
             src: id
-          - name: project_id
+            fn: set
