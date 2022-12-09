@@ -111,7 +111,15 @@
       "env": {
         "DISABLE_AUTH": "true"
       },
-      "ready-probe": "/lw-workspace/proxy/"
+      "path-rewrite": "/",
+      "ready-probe": "/"
+    }
+  ],
+  "more-configs": [
+    {
+      "name": "Browser App 2",
+      "type": "dockstore-compose:1.0.0",
+      "path": "/hatchery-more-configs/jcoin-browser-app.yaml"
     }
   ]
 }
