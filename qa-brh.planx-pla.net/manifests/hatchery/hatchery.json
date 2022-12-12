@@ -11,7 +11,7 @@
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "quay.io/cdis/ecs-ws-sidecar:2022.09",
+    "image": "quay.io/cdis/ecs-ws-sidecar:2022.11",
     "env": {
       "NAMESPACE": "qa-brh",
       "HOSTNAME": "qa-brh.planx-pla.net"
@@ -33,8 +33,8 @@
   "containers": [
     {
       "target-port": 8888,
-      "cpu-limit": "8.0",
-      "memory-limit": "32Gi",
+      "cpu-limit": "2.0",
+      "memory-limit": "8Gi",
       "name": "(Generic) Jupyter Lab Notebook with R Kernel",
       "image": "quay.io/cdis/jupyter-superslim-r:1.0.1",
       "env": {
@@ -68,8 +68,8 @@
     },
     {
       "target-port": 8888,
-      "cpu-limit": "8.0",
-      "memory-limit": "32Gi",
+      "cpu-limit": "2.0",
+      "memory-limit": "8Gi",
       "name": "(Tutorials) Example Analysis Jupyter Lab Notebooks",
       "image": "quay.io/cdis/brh-notebooks:combined_demos__d7e3cdca922bc972267513eedfe6ee041de9bd7f",
       "env": {
