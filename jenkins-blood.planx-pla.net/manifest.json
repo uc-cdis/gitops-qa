@@ -19,7 +19,7 @@
     "pidgin": "quay.io/cdis/pidgin:master",
     "revproxy": "quay.io/cdis/nginx:1.17.6-ctds-1.0.1",
     "sheepdog": "quay.io/cdis/sheepdog:master",
-    "portal": "qa.planx-pla.net-feat-qa",
+    "portal": "quay.io/cdis/data-portal-prebuilt:qa.planx-pla.net-feat-qa",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
     "spark": "quay.io/cdis/gen3-spark:master",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:master",
