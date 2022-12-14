@@ -112,7 +112,8 @@
         "DISABLE_AUTH": "true"
       },
       "path-rewrite": "/",
-      "ready-probe": "/"
+      "ready-probe": "/",
+      "use-tls": "false"
     }
   ],
   "more-configs": [
