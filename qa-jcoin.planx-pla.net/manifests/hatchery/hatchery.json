@@ -109,7 +109,8 @@
       "cpu-limit": "0.50",
       "memory-limit": "256Mi",
       "env": {
-        "DISABLE_AUTH": "true"
+        "DISABLE_AUTH": "true",
+        "NAMESPACE": "qa-jcoin"
       },
       "path-rewrite": "/",
       "ready-probe": "/",
