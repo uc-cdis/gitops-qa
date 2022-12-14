@@ -109,8 +109,9 @@
       "cpu-limit": "0.50",
       "memory-limit": "256Mi",
       "env": {
-        "DISABLE_AUTH": "true",
-        "NAMESPACE": "qa-jcoin"
+        "NAMESPACE": "qa-jcoin",
+        "HOSTNAME": "qa-jcoin.planx-pla.net",
+        "DISABLE_AUTH": "true"
       },
       "path-rewrite": "/",
       "ready-probe": "/",
