@@ -101,6 +101,20 @@
       "fs-gid": 100,
       "user-volume-location": "/home/jovyan/pd",
       "gen3-volume-location": "/home/jovyan/.gen3"
+    },
+    {
+      "name": "Browser App",
+      "image": "quay.io/cdis/jcoin-browser-app:jcoin-app",
+      "target-port": 8888,
+      "cpu-limit": "0.50",
+      "memory-limit": "256Mi",
+      "env": {
+        "DISABLE_AUTH": "true",
+        "NAMESPACE": "qa-jcoin"
+      },
+      "path-rewrite": "/",
+      "ready-probe": "/",
+      "use-tls": "false"
     }
   ]
 }
