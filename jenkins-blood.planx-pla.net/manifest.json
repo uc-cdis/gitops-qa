@@ -31,8 +31,7 @@
     "hatchery": "quay.io/cdis/hatchery:master",
     "metadata": "quay.io/cdis/metadata-service:master",
     "dashboard": "quay.io/cdis/gen3-statics:master",
-    "requestor": "quay.io/cdis/requestor:master",
-    "metadata-delete-expired-objects": "quay.io/cdis/metadata-delete-expired-objects:master"
+    "requestor": "quay.io/cdis/requestor:master"
   },
   "sower": [
     {
