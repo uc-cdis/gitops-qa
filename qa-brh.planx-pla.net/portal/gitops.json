@@ -189,7 +189,7 @@
     "aggregations": [
       {
         "name": "Studies",
-        "field": "_unique_id",
+        "field": "frontend_uid",
         "type": "count"
       },
       {
