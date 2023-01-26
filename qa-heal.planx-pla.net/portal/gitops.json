@@ -778,7 +778,7 @@
         "studyRegistrationFormDisclaimerField": "Information provided on this page will be used for correspondence regarding your request and may be shared with the NIH and/or the HEAL Data Stewards",
         "clinicalTrialFields": ["NCTId", "OfficialTitle", "BriefTitle", "Acronym", "StudyType", "OverallStatus", "StartDate", "StartDateType", "CompletionDate", "CompletionDateType", "IsFDARegulatedDrug", "IsFDARegulatedDevice", "IsPPSD", "BriefSummary", "DetailedDescription", "Condition", "DesignAllocation", "DesignPrimaryPurpose", "Phase", "DesignInterventionModel", "EnrollmentCount", "EnrollmentType", "DesignObservationalModel", "InterventionType", "PrimaryOutcomeMeasure", "SecondaryOutcomeMeasure", "OtherOutcomeMeasure", "Gender", "GenderBased", "MaximumAge", "MinimumAge", "IPDSharing", "IPDSharingTimeFrame", "IPDSharingAccessCriteria", "IPDSharingURL", "SeeAlsoLinkURL", "AvailIPDURL", "AvailIPDId", "AvailIPDComment"],
         "dataDictionarySubmissionBucket": "",
-        "dataDictionarySubmissionDisclaimerField": "Data dictionaries must conform to the HEAL VLMD schema. View more information and VLMD templates <a href=\"https://github.com/HEAL/heal-metadata-schemas\" target=\"_blank\" rel=\"noreferrer\">here</a>. All submitted data dictionaries will be available to public."
+        "dataDictionarySubmissionDisclaimerField": "All submitted data dictionaries will be available to public."
       },
       "workspaceRegistrationConfig" : {
         "workspacePolicyId": "workspace_strides_integrated",
