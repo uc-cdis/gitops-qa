@@ -1,11 +1,11 @@
-qa-acct.planx-pla.net @trevars @uc-cdis/planx-qa
-qa-bloodpac.planx-pla.net @trevars @uc-cdis/planx-qa
-qa-canine.planx-pla.net @trevars @uc-cdis/planx-qa
+qa-acct.planx-pla.net @uc-cdis/planx-qa
+qa-bloodpac.planx-pla.net @uc-cdis/planx-qa
+qa-canine.planx-pla.net @uc-cdis/planx-qa
 qa.planx-pla.net @uc-cdis/planx-qa
 qaplanetv2.planx-pla.net @uc-cdis/planx-qa
 
-qa-mickey.planx-pla.net @nmetokishlubsky
-qa-anvil.planx-pla.net @radhrreddy
+qa-mickey.planx-pla.net @nmetokishlubsky @haraprasadj
+qa-anvil.planx-pla.net @atharvar28
 qa-dcp.planx-pla.net @uc-cdis/planx-qa
 
 qa-covid19.planx-pla.net @hughestr @atharvar28
