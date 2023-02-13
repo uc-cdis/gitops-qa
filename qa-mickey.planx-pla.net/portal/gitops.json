@@ -3,8 +3,9 @@
   "argoTemplate": "gwas-template",
   "graphql": {
     "boardCounts": [],
-    "chartCounts": [], 
-    "projectDetails": "boardCounts"
+    "chartCounts": [],
+    "projectDetails": "boardCounts",
+    "chartNodesExcludeFiles": true
   },
   "components": {
     "appName": "VA Data Commons",
