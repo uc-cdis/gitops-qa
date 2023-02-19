@@ -12,36 +12,15 @@
     "aws-es-proxy": "quay.io/cdis/aws-es-proxy:v1.3.1",
     "fence": "quay.io/cdis/fence:2022.08",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
-    "indexd": "quay.io/cdis/indexd:2022.08",
     "jenkins": "quay.io/cdis/jenkins:master",
     "jenkins-worker": "quay.io/cdis/gen3-qa-worker:master",
     "jenkins-ci-worker": "quay.io/cdis/gen3-ci-worker:master",
-    "peregrine": "quay.io/cdis/peregrine:2022.08",
-    "pidgin": "quay.io/cdis/pidgin:2022.08",
     "portal": "quay.io/cdis/data-portal:2022.08",
     "revproxy": "quay.io/cdis/nginx:2022.08",
-    "sheepdog": "quay.io/cdis/sheepdog:2022.08",
-    "dashboard": "quay.io/cdis/gen3-statics:2022.08",
-    "metadata": "quay.io/cdis/metadata-service:2022.08",
-    "tube": "quay.io/cdis/tube:2022.08",
-    "thor": "quay.io/cdis/thor:master",
-    "metadata-delete-expired-objects": "quay.io/cdis/metadata-delete-expired-objects:master"
+    "thor": "quay.io/cdis/thor:master"
   },
   "arborist": {
     "deployment_version": "2"
-  },
-  "indexd": {
-    "arborist": "true"
-  },
-  "arranger": {
-    "project_id": "dev",
-    "auth_filter_field": "gen3_resource_path",
-    "auth_filter_node_types": [
-      "subject"
-    ]
-  },
-  "peregrine": {
-    "sidecar": "True"
   },
   "global": {
     "environment": "qaplanetv1",
