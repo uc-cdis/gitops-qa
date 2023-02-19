@@ -17,7 +17,6 @@
     "jenkins-ci-worker": "quay.io/cdis/gen3-ci-worker:master",
     "portal": "quay.io/cdis/data-portal:2023.02",
     "revproxy": "quay.io/cdis/nginx:2023.02",
-    "sheepdog": "quay.io/cdis/sheepdog:2023.02",
     "thor": "quay.io/cdis/thor:master"
   },
   "arborist": {
@@ -27,11 +26,10 @@
     "environment": "qaplanetv1",
     "hostname": "qa.planx-pla.net",
     "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
-    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/datadictionary/develop/schema.json",
-    "portal_app": "dev",
+    "portal_app": "gitops",
     "sync_from_dbgap": "False",
-    "kube_bucket": "kube_bucket.devplanetv1.gen3",
-    "logs_bucket": "logs-devplanetv1-gen3",
+    "kube_bucket": "kube-qaplanetv1-gen3",
+    "logs_bucket": "logs-qaplanetv1-gen3",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
     "netpolicy": "off-for-jenkins",
     "lb_type": "internal",
