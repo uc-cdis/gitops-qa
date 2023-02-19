@@ -1,0 +1,27 @@
+{
+  "gaTrackingId": "UA-119127212-3", 
+  "components": {
+    "appName": "Generic Data Commons",
+    "navigation": {
+      "title": "Generic Data Commons",
+      "items": [
+        {
+          "icon": "profile",
+          "link": "/identity",
+          "color": "#a2a2a2",
+          "name": "Profile"
+        }
+      ]
+    },
+    "login": {
+      "title": "Generic Data Commons",
+      "subTitle": "explore, analyze, and share research data",
+      "text": "The Generic Data Commons supports the management, analysis and sharing of many different types of biomedical data for the research community with the goal of accelerating research in the molecular basis for disease and matching targeted therapies that factor in each patient's unique biology.",
+      "contact": "If you have any questions about access or the registration process, please contact ",
+      "email": "support@datacommons.io"
+    }
+  },
+  "featureFlags": {
+    "explorer": false
+  }
+}
