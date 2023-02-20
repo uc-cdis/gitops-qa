@@ -1,5 +1,5 @@
 #!groovy
-@Library('cdis-jenkins-lib@chore/reduce_smaller_jenkins_images') _
+@Library('cdis-jenkins-lib@master') _
 testPipeline {
   MANIFEST = "True"
 }
