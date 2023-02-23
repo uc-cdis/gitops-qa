@@ -133,7 +133,6 @@
       },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
-        "--NotebookApp.default_url=/lab",
         "--NotebookApp.password=''",
         "--NotebookApp.token=''",
         "--NotebookApp.quit_button=False"
