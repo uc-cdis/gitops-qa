@@ -405,8 +405,8 @@ would like to perform your study.
    imputed SNPs and can be used to remove low-quality imputed markers
    (scale of 0-1). Once you have selected your values please press Next.
 
-**Step 5 Submission Modal**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Submission Modal and Additional Options**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Once step 4 is concluded, you may review your details in a modal. This
 will present to you the configurable selections made in every step of
