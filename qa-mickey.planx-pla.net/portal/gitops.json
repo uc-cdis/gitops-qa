@@ -97,7 +97,8 @@
       "image": "/custom/sponsors/gitops-sponsors/atlas-logo.png"
     },
     "GWASUIApp",
-    "GWASResults"
+    "GWASResults",
+    "GWASResultsV2"
   ],
   "showArboristAuthzOnProfile": false,
   "showFenceAuthzOnProfile": false

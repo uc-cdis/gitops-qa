@@ -9,7 +9,7 @@
   "versions": {
     "ambassador": "quay.io/datawire/ambassador:0.60.3",
     "arborist": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/arborist:2022.08",
-    "argo-wrapper": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/argo-wrapper:vadc-427_workflow_status",
+    "argo-wrapper": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/argo-wrapper:master",
     "awshelper": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/awshelper:2022.08",
     "cohort-middleware": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/cohort-middleware:master",
     "dashboard": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-statics:2022.08",
@@ -23,7 +23,7 @@
     "ohdsi-webapi": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ohdsi-webapi:master-2.12",
     "peregrine": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/peregrine:2022.08",
     "pidgin": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/pidgin:2022.08",
-    "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:VA-TEST-01",
+    "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:feat_vadc_sprint04",
     "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:2022.08",
     "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:2022.08",
     "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:2022.08",
