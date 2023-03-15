@@ -483,7 +483,7 @@
   "showArboristAuthzOnProfile": true,
   "showFenceAuthzOnProfile": false,
   "showExternalLoginsOnProfile": true,
-  "stridesPortalURL": "https://brh-portal.org",
+  "stridesPortalURL": "https://brh-test.planx-pla.net",
   "registrationConfigs": {
     "features": {
       "workspaceRegistrationConfig" : {
