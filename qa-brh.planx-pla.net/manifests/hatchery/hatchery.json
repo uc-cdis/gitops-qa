@@ -8,6 +8,7 @@
     "region": "us-east-1"
   },
   "pay-models": [],
+  "pay-models-dynamodb-table": "bmh-admin-portal-backend-bmhworkspacetableD4D73E43-4U08KIUG3YW3",
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
@@ -71,7 +72,7 @@
       "cpu-limit": "2.0",
       "memory-limit": "8Gi",
       "name": "(Tutorials) Example Analysis Jupyter Lab Notebooks",
-      "image": "quay.io/cdis/brh-notebooks:combined_demos__887221800628b5fa3fbc501e39499ae7a66c219f",
+      "image": "quay.io/cdis/brh-notebooks:combined_demos__80284b8e1b1c7f05b73570d15476af4bb8c999cb",
       "env": {
         "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
       },
