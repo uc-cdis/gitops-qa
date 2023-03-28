@@ -37,7 +37,7 @@
       "cpu-limit": "2.0",
       "memory-limit": "8Gi",
       "name": "(Generic) Jupyter Lab Notebook with R Kernel",
-      "image": "quay.io/cdis/jupyter-superslim-r:1.0.1",
+      "image": "quay.io/cdis/jupyter-superslim-r:1.0.4",
       "env": {
         "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
       },
@@ -72,7 +72,7 @@
       "cpu-limit": "2.0",
       "memory-limit": "8Gi",
       "name": "(Tutorials) Example Analysis Jupyter Lab Notebooks",
-      "image": "quay.io/cdis/brh-notebooks:combined_demos__80284b8e1b1c7f05b73570d15476af4bb8c999cb",
+      "image": "quay.io/cdis/brh-notebooks:combined_demos__9fb27859472d5018fb0fc2fcc94ae60b122dfdfd",
       "env": {
         "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
       },
