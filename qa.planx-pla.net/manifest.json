@@ -10,6 +10,7 @@
     "acronymbot": "quay.io/cdis/acronym-bot:2023.02",
     "arborist": "quay.io/cdis/arborist:2023.02",
     "aws-es-proxy": "quay.io/cdis/aws-es-proxy:v1.3.1",
+    "dashboard": "quay.io/cdis/gen3-statics:2023.02",
     "fence": "quay.io/cdis/fence:2023.02",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
     "jenkins": "quay.io/cdis/jenkins:master",
