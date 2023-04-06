@@ -1,5 +1,5 @@
 #!groovy
-@Library('cdis-jenkins-lib@chore/support_annotation_based_labels') _
+@Library('cdis-jenkins-lib@haraprasadj-patch-1') _
 testPipeline {
   MANIFEST = "True"
 }
