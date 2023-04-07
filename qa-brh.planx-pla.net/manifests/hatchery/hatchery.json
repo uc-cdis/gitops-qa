@@ -2,11 +2,6 @@
   "user-namespace": "jupyter-pods-qa-brh",
   "sub-dir": "/lw-workspace",
   "user-volume-size": "10Gi",
-  "default-pay-model": {
-    "account_id": "354484406138",
-    "workspace_type": "brhworkspaces",
-    "region": "us-east-1"
-  },
   "pay-models": [],
   "pay-models-dynamodb-table": "bmh-admin-portal-backend-bmhworkspacetableD4D73E43-4U08KIUG3YW3",
   "sidecar": {
