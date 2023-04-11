@@ -1,5 +1,8 @@
 {
-  "notes": ["This is the dev environment manifest", "That's all I have to say"],
+  "notes": [
+    "This is the dev environment manifest",
+    "That's all I have to say"
+  ],
   "jenkins": {
     "autodeploy": "yes"
   },
