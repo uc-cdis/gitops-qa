@@ -2,17 +2,12 @@
   "user-namespace": "jupyter-pods-qa-brh",
   "sub-dir": "/lw-workspace",
   "user-volume-size": "10Gi",
-  "default-pay-model": {
-    "account_id": "354484406138",
-    "workspace_type": "brhworkspaces",
-    "region": "us-east-1"
-  },
   "pay-models": [],
   "pay-models-dynamodb-table": "bmh-admin-portal-backend-bmhworkspacetableD4D73E43-4U08KIUG3YW3",
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "quay.io/cdis/ecs-ws-sidecar:2023.03",
+    "image": "quay.io/cdis/ecs-ws-sidecar:2023.04",
     "env": {
       "NAMESPACE": "qa-brh",
       "HOSTNAME": "qa-brh.planx-pla.net"
@@ -72,7 +67,7 @@
       "cpu-limit": "2.0",
       "memory-limit": "8Gi",
       "name": "(Tutorials) Example Analysis Jupyter Lab Notebooks",
-      "image": "quay.io/cdis/brh-notebooks:combined_demos__9fb27859472d5018fb0fc2fcc94ae60b122dfdfd",
+      "image": "quay.io/cdis/brh-notebooks:combined_demos__daa9f51080cb3aacdd171b29cd2ff902ad707586",
       "env": {
         "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
       },
