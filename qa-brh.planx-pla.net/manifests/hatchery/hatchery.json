@@ -2,6 +2,10 @@
   "user-namespace": "jupyter-pods-qa-brh",
   "sub-dir": "/lw-workspace",
   "user-volume-size": "10Gi",
+  "default-pay-model": {
+    "workspace_type": "Trial Workspace",
+    "local":true
+  },
   "pay-models": [],
   "pay-models-dynamodb-table": "bmh-admin-portal-backend-bmhworkspacetableD4D73E43-4U08KIUG3YW3",
   "sidecar": {
