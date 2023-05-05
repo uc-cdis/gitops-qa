@@ -47,12 +47,12 @@
   "guppy": {
     "indices": [
       {
-        "index": "midrc_dataset",
-        "type": "dataset"
-      },
-      {
         "index": "midrc_case",
         "type": "case"
+      },
+      {
+        "index": "midrc_measurement",
+        "type": "measurement"
       },
       {
         "index": "midrc_imaging_data_file",
@@ -79,7 +79,7 @@
     "tier_access_limit": "2",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
     "dispatcher_job_num": "10",
-    "dictionary_url": "http://s3.amazonaws.com/dictionary-artifacts/midrc_dictionary/1.1.5/schema.json",
+    "dictionary_url": "http://s3.amazonaws.com/dictionary-artifacts/midrc_dictionary/1.1.4/schema.json",
     "sync_from_dbgap": "False",
     "frontend_root": "portal",
     "lb_type": "internal"
