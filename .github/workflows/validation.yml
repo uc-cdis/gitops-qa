@@ -7,11 +7,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: 'PR commits + 1'
+        run: echo "PR_FETCH_DEPTH=$(( ${{ github.event.pull_request.commits }} + 1 ))" >> "${GITHUB_ENV}"
+
+      - name: 'Checkout PR branch and all PR commits'
         uses: actions/checkout@v3
         with:
-          ref: [${{ github.event.pull_request.head.sha }}, ${{ github.event.pull_request.base.sha }}]
-          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: ${{ env.PR_FETCH_DEPTH }}
 
       - name: Set up Python 3.9
         uses: actions/setup-python@v2
