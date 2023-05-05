@@ -8,10 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
-        with:
-          ref: ${{ github.event.pull_request.head.sha }}
-          fetch-depth: 0
+        uses: actions/checkout@v3
 
       - name: Set up Python 3.9
         uses: actions/setup-python@v2
@@ -32,8 +29,8 @@ jobs:
           done
 
           # remove duplicates
-          envs=($(printf "%s\n" "${envs[@]}" | sort -u));
-          echo  "${uniq[@]}"
+          envs=($(printf "%s\n" "${envs[@]}" | sort -u))
+          echo "${uniq[@]}"
           echo "Updated: ${envs[@]}"
 
           PR_LABELS=$(curl -s "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/labels")
@@ -59,8 +56,6 @@ jobs:
             # validate portal configuration
             if [ -f $man ] && [ -f $etl ] && [ -f $ptlcfg ]; then
               gen3utils validate-portal-config $etl $man $ptlcfg ${{ github.repository }} ${{ github.event.pull_request.number }} || exit 1
-            else
-              gen3utils validate-portal-config $etl $man $ptlcfg || exit 1
             fi
           done
 
