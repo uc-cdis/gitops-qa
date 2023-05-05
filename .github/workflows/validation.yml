@@ -25,6 +25,24 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install gen3utils --upgrade
+      
+      - name: Remove comments from github-actions
+        uses: actions/github-script@v5
+        with:
+          script: |
+            async function removeComments() {
+              const { owner, repo, number } = context.issue;
+              const commentsResponse = await github.rest.issues.listComments({ owner, repo, issue_number: number });
+              const comments = commentsResponse.data;
+
+              for (const comment of comments) {
+                if (comment.user.login === 'github-actions[bot]') {
+                  await github.rest.issues.deleteComment({ owner, repo, comment_id: comment.id });
+                }
+              }
+            }
+
+            await removeComments();
 
       - name: Validate manifest.json, etlMapping.yaml, and gitops.json
         run: |
