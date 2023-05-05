@@ -64,6 +64,8 @@ jobs:
               gen3utils validate-portal-config $etl $man $ptlcfg ${{ github.repository }} ${{ github.event.pull_request.number }} || exit 1
             fi
           done
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Comment on PRs with relevant deployment changes
         run: |
