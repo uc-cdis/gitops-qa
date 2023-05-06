@@ -26,7 +26,7 @@
     "index": {
       "introduction": {
         "heading": "The AnVIL",
-        "text": "The AnVIL supports the management, analysis and sharing of human disease data for the research community and aims to advance basic understanding of the genetic basis of complex traits and accelerate discovery and development of therapies, diagnostic tests, and other technologies for diseases like cancer. The data commons supports cross-project analyses by harmonizing data from different projects through the collaborative development of a data dictionary, providing an API for data queries and download, and providing a cloud-based analysis workspace with rich tools and resources.",
+        "text": "The AnVIL supports the management, analysis and sharing of human disease data for the research community and aims to advance basic understanding of the genetic basis of complex traits and accelerate discovery and development of therapies, diagnostic tests, and other technologies for diseases like cancer. The data commons supports cross-project analyses by harmonizing data from different projects through the collaborative development of a data dictionary and providing an API for data queries and download.",
         "link": "/submission"
       },
       "buttons": [
@@ -44,14 +44,6 @@
           "body": "The Exploration Page gives you insights and a clear overview under selected factors.",
           "link": "/explorer",
           "label": "Explore data",
-          "color": "#035C94"
-        },
-        {
-          "name": "Analyze Data",
-          "icon": "anvil-analyze",
-          "body": "Analyze your selected subjects using Jupyter Notebooks in our secure cloud environment",
-          "link": "#hostname#workspace/",
-          "label": "Run analysis",
           "color": "#035C94"
         }
       ],
@@ -80,12 +72,6 @@
           "link": "/explorer",
           "color": "#035C94",
           "name": "Exploration"
-        },
-        {
-          "icon": "workspace",
-          "link": "#hostname#workspace/",
-          "color": "#035C94",
-          "name": "Workspace"
         },
         {
           "icon": "profile",
@@ -204,13 +190,6 @@
           "title": "Export to PFB",
           "leftIcon": "datafile",
           "rightIcon": "download"
-        },
-        {
-          "enabled": true,
-          "type": "export-to-workspace",
-          "title": "Export to Workspace",
-          "leftIcon": "datafile",
-          "rightIcon": "download"
         }
       ],
       "guppyConfig": {
@@ -295,13 +274,6 @@
         "downloadAccessor": "object_id"
       },
       "buttons": [
-        {
-          "enabled": true,
-          "type": "export-files-to-workspace",
-          "title": "Export to Workspace",
-          "leftIcon": "datafile",
-          "rightIcon": "download"
-        },
         {
           "enabled": true,
           "type": "export-files-to-pfb",
@@ -394,12 +366,6 @@
           "leftIcon": "datafile",
           "rightIcon": "download",
           "fileName": "file-manifest.json"
-        },
-        {
-          "enabled": true,
-          "type": "export-files-to-workspace",
-          "title": "Export to Workspace",
-          "leftIcon": "datafile"
         },
         {
           "enabled": true,
