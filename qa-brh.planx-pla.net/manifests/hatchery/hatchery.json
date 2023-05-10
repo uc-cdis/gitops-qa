@@ -4,14 +4,14 @@
   "user-volume-size": "10Gi",
   "default-pay-model": {
     "workspace_type": "Trial Workspace",
-    "local":true
+    "local": true
   },
   "pay-models": [],
   "pay-models-dynamodb-table": "bmh-admin-portal-backend-bmhworkspacetableD4D73E43-4U08KIUG3YW3",
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "quay.io/cdis/ecs-ws-sidecar:2023.04",
+    "image": "quay.io/cdis/ecs-ws-sidecar:2023.05",
     "env": {
       "NAMESPACE": "qa-brh",
       "HOSTNAME": "qa-brh.planx-pla.net"
