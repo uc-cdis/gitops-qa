@@ -200,6 +200,10 @@
         "diagnosis": {
           "chartType": "fullPie",
           "title": "Diagnosis"
+        },
+        "submitter_id": {
+          "chartType": "count",
+          "title": "Submitters"
         }
       },
       "filters": {
