@@ -201,9 +201,9 @@
           "chartType": "fullPie",
           "title": "Diagnosis"
         },
-        "submitter_id": {
+        "consortium_id": {
           "chartType": "count",
-          "title": "Submitters"
+          "title": "Unique participants"
         }
       },
       "filters": {
@@ -271,7 +271,7 @@
       "guppyConfig": {
         "dataType": "participant",
         "tierAccessLevel": "regular",
-        "nodeCountTitle": "Participants",
+        "nodeCountTitle": "Data points",
         "fieldMapping": [
           {
             "field": "project_id",
