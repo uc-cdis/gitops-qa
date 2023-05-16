@@ -100,6 +100,10 @@
           "name": "Submit Data"
         },
         {
+          "link": "https://uc-cdis.github.io/platform-citation/prc-cite/",
+          "name": "Cite"
+        },
+        {
           "link": "https://gen3.org/resources/user/",
           "name": "Documentation"
         },

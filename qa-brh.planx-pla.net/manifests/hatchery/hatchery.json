@@ -4,14 +4,14 @@
   "user-volume-size": "10Gi",
   "default-pay-model": {
     "workspace_type": "Trial Workspace",
-    "local":true
+    "local": true
   },
   "pay-models": [],
   "pay-models-dynamodb-table": "bmh-admin-portal-backend-bmhworkspacetableD4D73E43-4U08KIUG3YW3",
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "quay.io/cdis/ecs-ws-sidecar:2023.04",
+    "image": "quay.io/cdis/ecs-ws-sidecar:2023.05",
     "env": {
       "NAMESPACE": "qa-brh",
       "HOSTNAME": "qa-brh.planx-pla.net"
@@ -71,7 +71,7 @@
       "cpu-limit": "2.0",
       "memory-limit": "8Gi",
       "name": "(Tutorials) Example Analysis Jupyter Lab Notebooks",
-      "image": "quay.io/cdis/brh-notebooks:combined_demos__87ec7438bd7f42ac7ddf96ad4b5855ed8439fee3",
+      "image": "quay.io/cdis/brh-notebooks:combined_demos__78c355a776f58b883ce2c8ccc7a38e2d5d0edfdd",
       "env": {
         "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
       },
