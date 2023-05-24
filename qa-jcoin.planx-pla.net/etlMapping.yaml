@@ -10,7 +10,7 @@ mappings:
       - name: role_in_project
       - name: current_study_status
     parent_props:
-      - path: protocols.projects[protocol,project_name:name]
+      - path: projects[protocol,project_name:name]
     flatten_props:
       - path: demographics
         props:
