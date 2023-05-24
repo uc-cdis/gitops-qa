@@ -183,7 +183,7 @@
           "chartType": "fullPie",
           "title": "Race"
         },
-        "hispanic_latino": {
+        "hispanic": {
           "chartType": "fullPie",
           "title": "Hispanic ethnicity"
         },
@@ -219,7 +219,7 @@
             "fields": [
               "gender",
               "race",
-              "hispanic_latino"
+              "hispanic"
             ]
           }
         ]
@@ -231,7 +231,7 @@
           "protocol",
           "gender",
           "race",
-          "hispanic_latino",
+          "hispanic",
           "role_in_project",
           "quarter_enrolled",
           "current_study_status"
@@ -263,7 +263,7 @@
             "name": "Hub"
           },
           {
-            "field": "hispanic_latino",
+            "field": "hispanic",
             "name": "Hispanic ethnicity"
           },
           {
@@ -271,7 +271,7 @@
             "name": "Race"
           },
           {
-            "field": "gender_id_condensed",
+            "field": "gender",
             "name": "Gender identity"
           },
           {
@@ -407,7 +407,7 @@
             "name": "Visit Type"
           },
           {
-            "field": "hispanic_latino",
+            "field": "hispanic",
             "name": "Hispanic ethnicity"
           },
           {
