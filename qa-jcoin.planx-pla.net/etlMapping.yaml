@@ -14,9 +14,9 @@ mappings:
     flatten_props:
       - path: demographics
         props:
-          - name: gender_id_condensed
+          - name: gender
           - name: race
-          - name: hispanic_latino
+          - name: hispanic
 
   - name: jcoin_etl_time_points
     doc_type: time_point
