@@ -1,5 +1,5 @@
 #!groovy
-@Library('cdis-jenkins-lib@chore/debug_data_simulator') _
+@Library('cdis-jenkins-lib@master') _
 testPipeline {
   MANIFEST = "True"
 }
