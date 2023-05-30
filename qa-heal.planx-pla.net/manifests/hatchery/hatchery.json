@@ -68,8 +68,10 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Generic, User-licensed) Stata Notebook ",
-      "image": "quay.io/cdis/stata-heal:master",
-      "env": {},
+      "image": "quay.io/cdis/stata-heal:george-portal",
+      "env": {
+        "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
+      },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",
@@ -97,8 +99,10 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Generic, Limited Gen3-licensed) Stata Notebook",
-      "image": "quay.io/cdis/stata-heal:gen3-licensed",
-      "env": {},
+      "image": "quay.io/cdis/stata-heal:jupyter_pystata_licensed__latest",
+      "env": {
+        "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
+      },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",
