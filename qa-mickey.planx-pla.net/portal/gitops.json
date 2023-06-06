@@ -100,5 +100,8 @@
     "GWASResults"
   ],
   "showArboristAuthzOnProfile": false,
-  "showFenceAuthzOnProfile": false
+  "showFenceAuthzOnProfile": false,
+  "connectSrcCSPWhitelist": [
+    "https://second-argo-bucket.s3.amazonaws.com"
+  ]
 }
