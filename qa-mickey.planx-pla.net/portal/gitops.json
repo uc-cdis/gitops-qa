@@ -97,9 +97,11 @@
       "image": "/custom/sponsors/gitops-sponsors/atlas-logo.png"
     },
     "GWASUIApp",
-    "GWASResults",
-    "GWASResultsV2"
+    "GWASResults"
   ],
   "showArboristAuthzOnProfile": false,
-  "showFenceAuthzOnProfile": false
+  "showFenceAuthzOnProfile": false,
+  "connectSrcCSPWhitelist": [
+    "https://second-argo-bucket.s3.amazonaws.com"
+  ]
 }
