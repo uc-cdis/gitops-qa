@@ -68,7 +68,7 @@
     },
     {
       "target-port": 8888,
-      "cpu-limit": "2.0",
+      "cpu-limit": "4.0",
       "memory-limit": "12Gi",
       "name": "(Tutorials) Example Analysis Jupyter Lab Notebooks",
       "image": "quay.io/cdis/brh-notebooks:combined_demos__78c355a776f58b883ce2c8ccc7a38e2d5d0edfdd",
