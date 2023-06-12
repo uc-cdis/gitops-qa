@@ -24,7 +24,7 @@
     "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:2023.05",
     "spark": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-spark:2023.05",
     "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:2023.05",
-    "tube": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/tube:2023.05",
+    "tube": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/tube:0.7.5",
     "wts": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/workspace-token-service:2023.05"
   },
   "arborist": {
@@ -55,8 +55,16 @@
         "type": "measurement"
       },
       {
+        "index": "midrc_annotation",
+        "type": "annotation"
+      },
+      {
         "index": "midrc_imaging_data_file",
         "type": "imaging_data_file"
+      },
+      {
+        "index": "midrc_annotation_data_file",
+        "type": "annotation_data_file"
       },
       {
         "index": "midrc_imaging_study",
@@ -79,7 +87,7 @@
     "tier_access_limit": "2",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
     "dispatcher_job_num": "10",
-    "dictionary_url": "http://s3.amazonaws.com/dictionary-artifacts/midrc_dictionary/1.1.6/schema.json",
+    "dictionary_url": "http://s3.amazonaws.com/dictionary-artifacts/midrc_dictionary/1.2.0/schema.json",
     "sync_from_dbgap": "False",
     "frontend_root": "portal",
     "lb_type": "internal"

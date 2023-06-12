@@ -380,6 +380,16 @@
               "conditions.days_to_condition_start",
               "conditions.days_to_condition_end"
             ]
+          },
+          {
+            "title": "Annotations",
+            "fields": [
+              "case_annotations.airspace_disease_grading",
+              "case_annotations.class_covid19_pneumonia",
+              "case_annotations.midrc_mRALE_score",
+              "case_annotations.annotation_method",
+              "case_annotations.annotator_id"
+            ]
           }
         ]
       },
@@ -416,6 +426,12 @@
           "conditions.condition_code",
           "conditions.days_to_condition_start",
           "conditions.days_to_condition_end",
+          "case_annotations.airspace_disease_grading",
+          "case_annotations.class_covid19_pneumonia",
+          "case_annotations.midrc_mRALE_score",
+          "case_annotations.annotation_method",
+          "case_annotations.annotator_id",
+          "case_annotations.instance_uids",
           "_imaging_studies_count",
           "_ct_series_file_count",
           "_dx_series_file_count",
@@ -513,6 +529,96 @@
           "referenceIdFieldInResourceIndex": "_case_id",
           "referenceIdFieldInDataIndex": "_case_id"
         },
+        "accessibleFieldCheckList": [
+          "project_id"
+        ],
+        "accessibleValidationField": "project_id"
+      }
+    },
+    {
+      "tabTitle": "Annotations",
+      "charts": {},
+      "filters": {
+        "tabs": [
+          {
+            "title": "Annotations",
+            "fields": [
+              "airspace_disease_grading",
+              "class_covid19_pneumonia",
+              "midrc_mRALE_score",
+              "annotation_method",
+              "annotator_id",
+              "project_id"
+            ]
+          }
+        ]
+      },
+      "table": {
+        "enabled": true,
+        "fields": [
+          "case_ids",
+          "airspace_disease_grading",
+          "class_covid19_pneumonia",
+          "midrc_mRALE_score",
+          "annotation_method",
+          "annotator_id",
+          "instance_uids",
+          "submitter_id",
+          "project_id"
+        ]
+      },
+      "dropdowns": {
+        "download-table": {
+          "title": "Download Table"
+        }
+      },
+      "buttons": [
+        {
+          "enabled": true,
+          "type": "data-json",
+          "title": "JSON",
+          "dropdownId": "download-table",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "MIDRC_Annotations_table.json"
+        },
+        {
+          "enabled": true,
+          "type": "data-tsv",
+          "title": "TSV",
+          "dropdownId": "download-table",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "MIDRC_Annotations_table.tsv"
+        },
+        {
+          "enabled": true,
+          "type": "data-csv",
+          "title": "CSV",
+          "dropdownId": "download-table",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "MIDRC_Annotations_table.csv"
+        }
+      ],
+      "loginForDownload": true,
+      "guppyConfig": {
+        "dataType": "annotation",
+        "nodeCountTitle": "Annotations",
+        "fieldMapping": [
+          {
+            "field": "project_id",
+            "name": "Project ID"
+          },
+          {
+            "field": "submitter_id",
+            "name": "Annotation ID"
+          },
+          {
+            "field": "case_ids",
+            "name": "Case ID"
+          }
+        ],
         "accessibleFieldCheckList": [
           "project_id"
         ],
@@ -677,6 +783,16 @@
               "zip",
               "index_event"
             ]
+          },
+          {
+            "title": "Annotations",
+            "fields": [
+              "imaging_study_annotations.airspace_disease_grading",
+              "imaging_study_annotations.class_covid19_pneumonia",
+              "imaging_study_annotations.midrc_mRALE_score",
+              "imaging_study_annotations.annotation_method",
+              "imaging_study_annotations.annotator_id"
+            ]
           }
         ]
       },
@@ -706,6 +822,12 @@
           "race",
           "ethnicity",
           "zip",
+          "imaging_study_annotations.airspace_disease_grading",
+          "imaging_study_annotations.class_covid19_pneumonia",
+          "imaging_study_annotations.midrc_mRALE_score",
+          "imaging_study_annotations.annotation_method",
+          "imaging_study_annotations.annotator_id",
+          "imaging_study_annotations.instance_uids",
           "_ct_series_file_count",
           "_dx_series_file_count",
           "_cr_series_file_count",
