@@ -1180,6 +1180,175 @@
         ],
         "accessibleValidationField": "project_id"
       }
+    },
+    {
+      "tabTitle": "Annotation Files",
+      "charts": {},
+      "filters": {
+        "tabs": [
+          {
+            "title": "Annotation Properties",
+            "fields": [
+                "annotation_method",
+                "annotation_name",
+                "annotator_id",
+                "manufacturer",
+                "manufacturer_model_name",
+                "modality",
+                "series_description",
+                "software_versions",
+                "data_format",
+                "data_category",
+                "data_type"
+            ]
+          },
+          {
+            "title": "Study Properties",
+            "fields": [
+              "age_at_imaging",
+              "body_part_examined",
+              "days_from_study_to_neg_covid_test",
+              "days_from_study_to_pos_covid_test",
+              "days_to_study",
+              "study_description",
+              "study_modality",
+              "study_location",
+              "study_year",
+              "study_year_shifted",
+              "project_id"
+            ]
+          },
+          {
+            "title": "Case Demographics",
+            "fields": [
+              "age_at_index",
+              "covid19_positive",
+              "index_event",
+              "race",
+              "sex",
+              "zip"
+            ]
+          }
+        ]
+      },
+      "table": {
+        "enabled": true,
+        "fields": [
+            "annotation_method",
+            "annotation_name",
+            "annotator_id",
+            "manufacturer",
+            "manufacturer_model_name",
+            "modality",
+            "series_description",
+            "software_versions",
+            "age_at_imaging",
+            "body_part_examined",
+            "days_to_study",
+            "days_from_study_to_neg_covid_test",
+            "days_from_study_to_pos_covid_test",
+            "study_description",
+            "study_modality",
+            "study_location",
+            "study_year",
+            "study_year_shifted",
+            "age_at_index",
+            "covid19_positive",
+            "index_event",
+            "race",
+            "sex",
+            "zip",
+            "data_format",
+            "data_category",
+            "data_type",
+            "series_uid",
+            "study_uid",
+            "case_ids",
+            "object_id",
+            "file_name",
+            "file_size",
+            "instance_uids",
+            "submitter_id",
+            "project_id"
+        ],
+        "dicomViewerId": "submitter_id",
+        "linkFields": [
+          "submitter_id"
+        ]
+      },
+      "dropdowns": {
+        "download-table": {
+          "title": "Download Table"
+        }
+      },
+      "buttons": [
+        {
+          "enabled": true,
+          "type": "data-json",
+          "title": "JSON",
+          "dropdownId": "download-table",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "MIDRC_Annotations_table.json"
+        },
+        {
+          "enabled": true,
+          "type": "data-tsv",
+          "title": "TSV",
+          "dropdownId": "download-table",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "MIDRC_Annotations_table.tsv"
+        },
+        {
+          "enabled": true,
+          "type": "data-csv",
+          "title": "CSV",
+          "dropdownId": "download-table",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "MIDRC_Annotations_table.csv"
+        },
+        {
+          "enabled": true,
+          "type": "file-manifest",
+          "title": "Download File Manifest",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "MIDRC_Annotations_manifest.json"
+        },
+        {
+          "enabled": false,
+          "type": "export-to-workspace",
+          "title": "Export to Workspace",
+          "leftIcon": "datafile",
+          "rightIcon": "download"
+        }
+      ],
+      "loginForDownload": true,
+      "guppyConfig": {
+        "dataType": "annotation_data_file",
+        "nodeCountTitle": "Annotation Files",
+        "fieldMapping": [
+          {
+            "field": "project_id",
+            "name": "Project ID"
+          },
+          {
+            "field": "case_ids",
+            "name": "Patient ID"
+          }
+        ],
+        "manifestMapping": {
+          "referenceIdFieldInResourceIndex": "object_id",
+          "referenceIdFieldInDataIndex": "object_id"
+        },
+        "downloadAccessor": "object_id",
+        "accessibleFieldCheckList": [
+          "project_id"
+        ],
+        "accessibleValidationField": "project_id"
+      }
     }
   ],
   "discoveryConfig": {
