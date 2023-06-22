@@ -485,6 +485,7 @@
       },
       {
         "type": "request_access",
+        "requiredIdpField": "required_idp",
         "resourceDisplayNameField": "title",
         "accessRequestedText": "DAR In Progress",
         "accessRequestedTooltipText": "Your recently submitted DAR is being reviewed by NIAID"
