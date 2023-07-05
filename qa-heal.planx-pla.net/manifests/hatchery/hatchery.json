@@ -69,7 +69,6 @@
       "memory-limit": "2Gi",
       "name": "(Generic, User-licensed) Stata Notebook ",
       "image": "quay.io/cdis/stata-heal:feat_stata-license",
-
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
