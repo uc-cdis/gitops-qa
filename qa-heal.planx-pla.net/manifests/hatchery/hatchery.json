@@ -68,15 +68,11 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Generic, User-licensed) Stata Notebook ",
-<<<<<<< HEAD
       "image": "quay.io/cdis/stata-heal:feat_stata-license",
-      "env": {},
-=======
-      "image": "quay.io/cdis/stata-heal:george-portal",
+
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
->>>>>>> 9c5e6cc91ce95657fb671bf65a6ac4dc529cbdec
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",
