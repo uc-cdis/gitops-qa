@@ -30,7 +30,9 @@
     "sower": "quay.io/cdis/sower:master",
     "hatchery": "quay.io/cdis/hatchery:fix_ecs_ct_length",
     "metadata": "quay.io/cdis/metadata-service:master",
-    "requestor": "quay.io/cdis/requestor:master"
+    "requestor": "quay.io/cdis/requestor:master",
+    "cedar-wrapper": "quay.io/cdis/cedar-wrapper-service:0.2.0",
+    "kayako-wrapper": "quay.io/cdis/kayako-wrapper-service:0.1.1"
   },
   "portal": {
     "GEN3_BUNDLE": "nct"
