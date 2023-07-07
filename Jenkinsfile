@@ -1,5 +1,5 @@
 #!groovy
-@Library('cdis-jenkins-lib@chore/add_label_to_prevent_cleanup') _
+@Library('cdis-jenkins-lib@master') _
 testPipeline {
   MANIFEST = "True"
 }
