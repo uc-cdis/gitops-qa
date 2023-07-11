@@ -16,6 +16,7 @@
     "hatchery": "quay.io/cdis/hatchery:2020.08",
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
     "guppy": "quay.io/cdis/guppy:feat_es7",
+    "tube": "quay.io/cdis/tube:feat_new-es-7",
     "sheepdog": "quay.io/cdis/sheepdog:2020.08",
     "peregrine": "quay.io/cdis/peregrine:2020.08",
     "pidgin": "quay.io/cdis/pidgin:2020.08"
