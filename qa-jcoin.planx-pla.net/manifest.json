@@ -15,8 +15,8 @@
     "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:2023.05",
     "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:2023.05",
     "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:2023.05",
-    "tube": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/tube:2023.05",
-    "guppy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/guppy:2023.05",
+    "tube": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/tube:feat_new-es-7",
+    "guppy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/guppy:feat_es7",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
     "spark": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-spark:2023.05",
     "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:2023.05",
@@ -62,7 +62,8 @@
     "dispatcher_job_num": "10",
     "netpolicy": "on",
     "maintenance_mode": "off",
-    "lb_type": "internal"
+    "lb_type": "internal",
+    "es7": true
   },
   "canary": {
     "default": 0

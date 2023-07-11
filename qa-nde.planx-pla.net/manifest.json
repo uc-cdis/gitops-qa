@@ -15,7 +15,7 @@
     "manifestservice": "quay.io/cdis/manifestservice:2020.08",
     "hatchery": "quay.io/cdis/hatchery:2020.08",
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
-    "guppy": "quay.io/cdis/guppy:2020.08",
+    "guppy": "quay.io/cdis/guppy:feat_es7",
     "sheepdog": "quay.io/cdis/sheepdog:2020.08",
     "peregrine": "quay.io/cdis/peregrine:2020.08",
     "pidgin": "quay.io/cdis/pidgin:2020.08"
@@ -47,7 +47,8 @@
     "cookie_domain": "planx-pla.net",
     "public_datasets": true,
     "tier_access_level": "libre",
-    "lb_type": "internal"
+    "lb_type": "internal",
+    "es7": true
   },
   "ssjdispatcher": {
     "job_images": {

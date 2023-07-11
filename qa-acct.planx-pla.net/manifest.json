@@ -19,8 +19,8 @@
     "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:2021.06",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
     "spark": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-spark:2021.06",
-    "tube": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/tube:2021.06",
-    "guppy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/guppy:2021.06",
+    "tube": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/tube:feat_new-es-7",
+    "guppy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/guppy:feat_es7",
     "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:2021.06",
     "wts": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/workspace-token-service:2021.06",
     "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:2021.06",
@@ -48,7 +48,8 @@
     "dispatcher_job_num": "10",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
     "netpolicy": "on",
-    "lb_type": "internal"
+    "lb_type": "internal",
+    "es7": true
   },
   "ssjdispatcher": {
     "job_images": {
