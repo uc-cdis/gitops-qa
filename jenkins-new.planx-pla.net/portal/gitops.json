@@ -106,7 +106,8 @@
   "featureFlags": {
     "explorer": true,
     "discovery": true,
-    "discoveryUseAggMDS": true
+    "discoveryUseAggMDS": true,
+    "studyRegistration": true
   },
   "discoveryConfig": {
     "features": {
