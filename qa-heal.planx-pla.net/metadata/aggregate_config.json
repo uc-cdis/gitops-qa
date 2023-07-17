@@ -250,6 +250,11 @@
                 "dataset_category": "path:type",
                 "research_program": "",
                 "research_focus_area": "",
+                "dataset_1_title": "",
+                "dataset_2_title": "",
+                "dataset_3_title": "",
+                "dataset_4_title": "",
+                "dataset_5_title": "",
                 "data_availability": "pending",
                 "data_resource": "ICPSR"
             },
@@ -652,6 +657,11 @@
                 "research_program": "",
                 "study_description": "Observational",
                 "research_focus_area": "",
+                "dataset_1_title": "",
+                "dataset_2_title": "",
+                "dataset_3_title": "",
+                "dataset_4_title": "",
+                "dataset_5_title": "",
                 "data_availability": "pending",
                 "data_resource": "PDAPS"
             },
