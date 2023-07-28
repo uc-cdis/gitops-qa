@@ -18,7 +18,7 @@
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
     "spark": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-spark:integration202308",
     "tube": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/tube:integration202308",
-    "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:integration202308",
+    "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:feat_nextflow",
     "requestor": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/requestor:integration202308",
     "wts": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/workspace-token-service:integration202308",
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
