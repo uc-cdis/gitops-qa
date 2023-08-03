@@ -204,7 +204,7 @@
       "memory-limit": "1024Mi",
       "name": "Jupyter with Nextflow",
       "enable-nextflow": true,
-      "image": "quay.io/cdis/jupyter-notebook:feat_nextflow",
+      "image": "quay.io/cdis/jupyter-notebook:nextflow-master",
       "env": {
         "NAMESPACE": "qa-ibd",
         "FRAME_ANCESTORS": "https://qa-ibd.planx-pla.net/"
