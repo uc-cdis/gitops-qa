@@ -133,7 +133,8 @@
     "explorer": true,
     "discovery": true,
     "discoveryUseAggMDS": true,
-    "studyRegistration": true
+    "studyRegistration": true,
+    "analysis": true
   },
   "analysisTools": [
     {
