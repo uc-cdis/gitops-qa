@@ -601,6 +601,13 @@
         "rightIcon": "download",
         "fileName": "file-manifest.json",
         "dropdownId": "download"
+      },
+      {
+        "enabled": true,
+        "type": "export-to-workspace",
+        "title": "Export Files to Workspace",
+        "leftIcon": "datafile",
+        "rightIcon": "download"
       }
     ],
     "dropdowns": {}
