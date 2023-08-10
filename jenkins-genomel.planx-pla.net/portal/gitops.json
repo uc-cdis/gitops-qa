@@ -543,7 +543,7 @@
         "referenceIdFieldInDataIndex": "case_id"
       }
     },
-    "buttons": {
+    "buttons": [
       {
         "enabled": true,
         "type": "export-to-workspace",
@@ -551,7 +551,7 @@
         "leftIcon": "datafile",
         "rightIcon": "download"
       },
-    }
+    ]
   },
   "fileExplorerConfig": {
     "charts": {
