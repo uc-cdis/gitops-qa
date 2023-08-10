@@ -542,6 +542,15 @@
         "referenceIdFieldInResourceIndex": "case_id",
         "referenceIdFieldInDataIndex": "case_id"
       }
+    },
+    "buttons": {
+      {
+        "enabled": true,
+        "type": "export-to-workspace",
+        "title": "Export File to Workspace",
+        "leftIcon": "datafile",
+        "rightIcon": "download"
+      },
     }
   },
   "fileExplorerConfig": {
