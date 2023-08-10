@@ -550,7 +550,7 @@
         "title": "Export File to Workspace",
         "leftIcon": "datafile",
         "rightIcon": "download"
-      },
+      }
     ]
   },
   "fileExplorerConfig": {
