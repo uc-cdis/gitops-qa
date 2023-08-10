@@ -59,12 +59,8 @@
         "type": "annotation"
       },
       {
-        "index": "midrc_imaging_data_file",
-        "type": "imaging_data_file"
-      },
-      {
-        "index": "midrc_annotation_data_file",
-        "type": "annotation_data_file"
+        "index": "midrc_data_file",
+        "type": "data_file"
       },
       {
         "index": "midrc_imaging_study",
@@ -87,7 +83,7 @@
     "tier_access_limit": "2",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
     "dispatcher_job_num": "10",
-    "dictionary_url": "http://s3.amazonaws.com/dictionary-artifacts/midrc_dictionary/1.2.0/schema.json",
+    "dictionary_url": "http://s3.amazonaws.com/dictionary-artifacts/midrc_dictionary/1.2.1_data_file/schema.json",
     "sync_from_dbgap": "False",
     "frontend_root": "portal",
     "lb_type": "internal"
