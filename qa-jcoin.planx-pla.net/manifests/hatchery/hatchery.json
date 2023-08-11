@@ -81,7 +81,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Generic, User-licensed) Stata Notebook ",
-      "image": "quay.io/cdis/stata-heal:feat_stata-license",
+      "image": "quay.io/cdis/jupyter-pystata-user-licensed:1.2.0",
       "env": {
         "FRAME_ANCESTORS": "https://qa-jcoin.planx-pla.net"
       },
@@ -113,7 +113,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Generic, Limited Gen3-licensed) Stata Notebook",
-      "image": "quay.io/cdis/stata-heal:jupyter_pystata_licensed__latest",
+      "image": "quay.io/cdis/jupyter-pystata-gen3-licensed:1.2.0",
       "env": {
         "FRAME_ANCESTORS": "https://qa-jcoin.planx-pla.net"
       },
