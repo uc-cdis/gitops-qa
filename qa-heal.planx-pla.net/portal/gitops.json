@@ -167,7 +167,9 @@
             "dataset_2_description",
             "dataset_3_description",
             "dataset_4_description",
-            "data_dictionary"
+            "data_dictionary",
+            "doi_identifier",
+            "doi_resolvable_link"
           ]
         },
         "tagSearchDropdown": {
@@ -376,6 +378,23 @@
                   "label": "Dataset Category",
                   "sourceField": "dataset_category",
                   "default": "Not specified"
+                }
+              ]
+            },
+            {
+              "header": "DOI",
+              "fields": [
+                {
+                  "type": "text",
+                  "label": "DOI",
+                  "sourceField": "doi_identifier",
+                  "default": ""
+                },
+                {
+                  "type": "link",
+                  "label": "DOI Link",
+                  "sourceField": "doi_resolvable_link",
+                  "default": ""
                 }
               ]
             },
