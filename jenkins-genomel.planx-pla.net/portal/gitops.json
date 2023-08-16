@@ -1,5 +1,6 @@
 {
   "gaTrackingId": "UA-119127212-12",
+  "argoTemplate": "gwas-template",
   "graphql": {
     "boardCounts": [
       {
@@ -60,6 +61,12 @@
           "label": "Query data"
         },
         {
+          "icon": "analysis",
+          "link": "/analysis",
+          "color": "#a2a2a2",
+          "name": "Apps"
+        },
+        {
           "name": "Analyze Data",
           "icon": "data-analyze",
           "body": "Analyze your selected cases using Jupyter Notebooks in our secure cloud environment",
@@ -96,6 +103,12 @@
           "name": "Query"
         },
         {
+          "icon": "analysis",
+          "link": "/analysis",
+          "color": "#a2a2a2",
+          "name": "Apps"
+        },
+        {
           "icon": "workspace",
           "link": "/workspace",
           "color": "#a2a2a2",
@@ -119,8 +132,20 @@
   "featureFlags": {
     "explorer": true,
     "discovery": true,
-    "discoveryUseAggMDS": true
+    "discoveryUseAggMDS": true,
+    "studyRegistration": true,
+    "analysis": true
   },
+  "analysisTools": [
+    {
+      "title": "OHDSI Atlas",
+      "description": "Use this App for cohort creation. These will be automatically populated in the Gen3 GWAS App",
+      "applicationUrl": "https://atlas.qa-mickey.planx-pla.net/atlas/",
+      "image": "/custom/sponsors/gitops-sponsors/atlas-logo.png"
+    },
+    "GWASUIApp",
+    "GWASResults"
+  ],
   "discoveryConfig": {
     "features": {
       "advSearchFilters": {
@@ -517,7 +542,16 @@
         "referenceIdFieldInResourceIndex": "case_id",
         "referenceIdFieldInDataIndex": "case_id"
       }
-    }
+    },
+    "buttons": [
+      {
+        "enabled": true,
+        "type": "export-to-workspace",
+        "title": "Export File to Workspace",
+        "leftIcon": "datafile",
+        "rightIcon": "download"
+      }
+    ]
   },
   "fileExplorerConfig": {
     "charts": {
@@ -576,6 +610,13 @@
         "rightIcon": "download",
         "fileName": "file-manifest.json",
         "dropdownId": "download"
+      },
+      {
+        "enabled": true,
+        "type": "export-to-workspace",
+        "title": "Export Files to Workspace",
+        "leftIcon": "datafile",
+        "rightIcon": "download"
       }
     ],
     "dropdowns": {}

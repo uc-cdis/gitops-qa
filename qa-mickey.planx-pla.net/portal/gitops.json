@@ -3,8 +3,9 @@
   "argoTemplate": "gwas-template",
   "graphql": {
     "boardCounts": [],
-    "chartCounts": [], 
-    "projectDetails": "boardCounts"
+    "chartCounts": [],
+    "projectDetails": "boardCounts",
+    "chartNodesExcludeFiles": true
   },
   "components": {
     "appName": "VA Data Commons",
@@ -85,7 +86,8 @@
   },
   "featureFlags": {
     "explorer": true,
-    "analysis": true
+    "analysis": true,
+    "workspaceTokenServiceRefreshTokenAtLogin": true
   },
   "analysisTools": [
     {
@@ -95,9 +97,11 @@
       "image": "/custom/sponsors/gitops-sponsors/atlas-logo.png"
     },
     "GWASUIApp",
-    "GWASResults",
-    "GWAS++"
+    "GWASResults"
   ],
   "showArboristAuthzOnProfile": false,
-  "showFenceAuthzOnProfile": false
+  "showFenceAuthzOnProfile": false,
+  "connectSrcCSPWhitelist": [
+    "https://second-argo-bucket.s3.amazonaws.com"
+  ]
 }

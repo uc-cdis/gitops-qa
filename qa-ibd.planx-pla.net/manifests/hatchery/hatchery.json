@@ -5,7 +5,7 @@
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3fuse-sidecar:2022.11",
+    "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3fuse-sidecar:integration202308",
     "env": {
       "NAMESPACE": "qa-ibd",
       "HOSTNAME": "qa-ibd.planx-pla.net"
@@ -174,6 +174,37 @@
       "memory-limit": "1024Mi",
       "name": "Jupyter (Python 3.9.5, R 4.1.0) + base packages",
       "image": "quay.io/cdis/jupyter-6.4.0-with-base-packages:latest",
+      "env": {
+        "NAMESPACE": "qa-ibd",
+        "FRAME_ANCESTORS": "https://qa-ibd.planx-pla.net/"
+      },
+      "args": [
+        "--NotebookApp.base_url=/lw-workspace/proxy/",
+        "--NotebookApp.password=''",
+        "--NotebookApp.token=''"
+      ],
+      "command": [
+        "start-notebook.sh"
+      ],
+      "path-rewrite": "/lw-workspace/proxy/",
+      "use-tls": "false",
+      "ready-probe": "/lw-workspace/proxy/",
+      "lifecycle-post-start": [
+        "/bin/sh",
+        "-c",
+        "export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; ln -s $(pwd) /home/$IAM/pd/dockerHome; mkdir -p /home/$IAM/.jupyter/custom; echo \"define(['base/js/namespace'], function(Jupyter){Jupyter._target = '_self';})\" >/home/$IAM/.jupyter/custom/custom.js; ln -s /data /home/$IAM/pd/; true"
+      ],
+      "user-uid": 1000,
+      "fs-gid": 100,
+      "user-volume-location": "/home/jovyan/pd"
+    },
+    {
+      "target-port": 8888,
+      "cpu-limit": "1.0",
+      "memory-limit": "1024Mi",
+      "name": "Jupyter with Nextflow",
+      "enable-nextflow": true,
+      "image": "quay.io/cdis/jupyter-notebook:nextflow-master",
       "env": {
         "NAMESPACE": "qa-ibd",
         "FRAME_ANCESTORS": "https://qa-ibd.planx-pla.net/"

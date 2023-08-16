@@ -160,12 +160,15 @@ LOGIN_REDIRECT_WHITELIST: []
 ### DEPRECATED and replaced by OPENID_CONNECT + LOGIN_OPTIONS configs
 ENABLED_IDENTITY_PROVIDERS: {}
 
-S3_BUCKETS: {}
+S3_BUCKETS: 
+  qaplanetv2-qa-jcoin-707767160287-upload:
+    cred: fence_bot
+    region: us-east-1
 
 # `DATA_UPLOAD_BUCKET` specifies an S3 bucket to which data files are uploaded,
 # using the `/data/upload` endpoint. This must be one of the first keys under
 # `S3_BUCKETS` (since these are the buckets fence has credentials for).
-DATA_UPLOAD_BUCKET: ''
+DATA_UPLOAD_BUCKET: 'qaplanetv2-qa-jcoin-707767160287-upload'
 
 # Prefix to namespace Google Groups on a single Cloud Identity (see cirrus
 # setup for more info on Cloud Identity)

@@ -5,6 +5,7 @@ mappings:
     root: participant
     props:
       - name: submitter_id
+      - name: consortium_id
       - name: project_id
     parent_props:
       - path: centers[country]
@@ -40,6 +41,12 @@ mappings:
       - name: data_format
       - name: data_type
       - name: state
+    injecting_props:
+      core_metadata_collection:
+        props:
+          - name: site
+            src: creator
+            fn: set
   - name: qa-ibd_supplementary_file
     doc_type: supplementary_file
     type: collector

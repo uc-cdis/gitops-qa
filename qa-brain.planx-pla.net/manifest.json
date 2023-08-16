@@ -20,7 +20,7 @@
     "revproxy": "quay.io/cdis/nginx:integration202106",
     "sheepdog": "quay.io/cdis/sheepdog:integration202106",
     "portal": "quay.io/cdis/data-portal:integration202106",
-    "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
+    "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:integration202106",
     "spark": "quay.io/cdis/gen3-spark:integration202106",
     "tube": "quay.io/cdis/tube:integration202106",
