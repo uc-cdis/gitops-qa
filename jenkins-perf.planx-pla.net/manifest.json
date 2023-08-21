@@ -44,16 +44,18 @@
     "USE_AGG_MDS": true,
     "AGG_MDS_NAMESPACE": "jenkins-perf"
   },
-  "sower": {
-    "name": "pelican-export",
-    "container": {
-      "name": "job-task",
-      "image": "quay.io/cdis/pelican:master",
-      "pull_policy": "always",
-      "env": []
-    },
-    "restart_policy": "never"
-  },
+  "sower": [
+    {
+      "name": "pelican-export",
+      "container": {
+        "name": "job-task",
+        "image": "quay.io/cdis/pelican:master",
+        "pull_policy": "always",
+        "env": []
+      },
+      "restart_policy": "never"
+    }
+  ],
   "peregrine": {
     "sidecar": "True"
   },
