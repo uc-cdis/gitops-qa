@@ -5,10 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>VA Data Commons &#8212; va-doc 1.0.0 documentation</title>
+    <title>VA Data Commons &#8212; va-doc 2.1.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=af2ce170"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=0218eca2"></script>
     <script src="_static/doctools.js?v=888ff710"></script>
     <script src="_static/sphinx_highlight.js?v=4825356b"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -433,32 +433,40 @@ wish to re-run your job, you can do so by selecting “retry” from the
 Actions Menu. The job status column provides information about the
 execution status of your job. The displayed values are:</p>
 <ul class="simple">
-<li><p>Pending - your analysis was placed in the queue to run, depending on
-the length of the queue your analysis could start in the range of
+<li><p><strong>Pending</strong> - your analysis was placed in the queue to run, depending
+on the length of the queue your analysis could start in the range of
 several minutes to several hours</p></li>
-<li><p>In Progress - your analysis is started and running, depending on your
-selection of cohort and variables it could finish in the range of
-half an hour to three hours</p></li>
-<li><p>Failed - your analysis returned the error, it is advised that you
-review/change your GWAS parameters which can be reviewed by clicking
-on the ‘input’ button under details and review the ‘execution’ of
-your job. If you need further support, contact our help desk at
-<a class="reference external" href="mailto:vadc&#37;&#52;&#48;lists&#46;uchicago&#46;edu">vadc<span>&#64;</span>lists<span>&#46;</span>uchicago<span>&#46;</span>edu</a></p></li>
-<li><p>Completed - your analysis was successfully completed and you may
+<li><p><strong>In Progress</strong> - your analysis has started and is running, depending
+on your selection of cohort and variables it could finish in the
+range of half an hour to three hours</p></li>
+<li><p><strong>Failed</strong> - your analysis returned an error and could not run to
+completion. Please review your GWAS parameters (can be reviewed by
+clicking on the ‘input’ button under details and review the
+‘execution’ of your job) and error logs. If you need further support,
+contact our help desk at <a class="reference external" href="mailto:vadc&#37;&#52;&#48;lists&#46;uchicago&#46;edu">vadc<span>&#64;</span>lists<span>&#46;</span>uchicago<span>&#46;</span>edu</a></p></li>
+<li><p><strong>Completed</strong> - your analysis was successfully completed and you may
 download the results of the GWAS analysis from this menu</p></li>
 </ul>
 <p>Once completed, you may review the output from your submission by
 clicking on the “Results” button in the details column. The results
-landing includes an interactive Manhattan chart, viewable QQ plot, and a
-searchable table of the Top Loci. The Manhattan chart may be downloaded
-separately as a png format file and the Top Loci table as a tsv file. A
-button at the top of the results page enables downloading of all
-results. This will be a zip format file which will be downloaded to your
-computer. Depending on your cohort and variables selection, the file
-size can vary in the range of 700MB up to 1.3GB. The file contains the
-following: Manhattan plot, QQ plot, metadata file containing all of your
-selections, your study’s attrition table, and per-chromosome GWAS
-summary statistics.</p>
+landing page includes an interactive Manhattan plot, viewable QQ plot,
+and a searchable table of the Top Loci. The Manhattan plot may be
+downloaded separately as a png format file and the Top Loci table as a
+tsv file. Clicking on the <em>Download All Results</em> button at the top of
+the results page will prompt the creation and download of your workflow
+results to your computer. Depending on your cohort and variables
+selection, the file size can vary in the range of 700MB up to 1.3GB. The
+file contains the following:</p>
+<ul class="simple">
+<li><p>Manhattan plot (.png)</p></li>
+<li><p>QQ plot (.png)</p></li>
+<li><p>100 top hits (.csv.gz)</p></li>
+<li><p>per-chromosome GWAS summary statistics (folder of .csv.gz’s)</p></li>
+<li><p>all hits below p-value 5e-8 (.csv.gz)</p></li>
+<li><p>your study’s attrition tables (folder of .csv’s)</p></li>
+<li><p>a metadata file containing all of your selections
+(gwas_metadata.yaml)</p></li>
+</ul>
 </section>
 </section>
 <section id="frequently-asked-questions">
@@ -565,7 +573,7 @@ Commons</a>.</p>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2022, phyllis pischl, zuyi chen.
+      &copy;2021, Center for Translational Data Science at the University of Chicago.
       
       |
       Powered by <a href="http://sphinx-doc.org/">Sphinx 7.1.2</a>
