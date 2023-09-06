@@ -203,7 +203,6 @@
       "cpu-limit": "1.0",
       "memory-limit": "1024Mi",
       "name": "Jupyter with Nextflow",
-      "enable-nextflow": true,
       "image": "quay.io/cdis/jupyter-notebook:nextflow-master",
       "env": {
         "NAMESPACE": "qa-ibd",
@@ -227,7 +226,20 @@
       ],
       "user-uid": 1000,
       "fs-gid": 100,
-      "user-volume-location": "/home/jovyan/pd"
+      "user-volume-location": "/home/jovyan/pd",
+      "nextflow": {
+          "enabled": true,
+          "job-image-whitelist": [
+              "*"
+          ],
+          "s3-bucket-whitelist": [
+              "ngi-igenomes"
+          ],
+          "instance-ami": "ami-03392f075059ae3ba",
+          "instance-type": "SPOT",
+          "instance-min-vcpus": 0,
+          "instance-max-vcpus": 9
+      }
     }
   ]
 }
