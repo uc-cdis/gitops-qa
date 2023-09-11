@@ -8,14 +8,15 @@ qa-mickey.planx-pla.net @nmetokishlubsky @haraprasadj
 qa-anvil.planx-pla.net @atharvar28
 qa-dcp.planx-pla.net @uc-cdis/planx-qa
 
-qa-covid19.planx-pla.net @hughestr @atharvar28
-qa-ibd.planx-pla.net @hughestr @atharvar28
-qa-jcoin.planx-pla.net @hughestr @atharvar28
+qa-covid19.planx-pla.net @atharvar28
+qa-ibd.planx-pla.net @atharvar28
+qa-jcoin.planx-pla.net @atharvar28
 qa-kidsfirst.planx-pla.net @radhrreddy @atharvar28
 qa-niaid.planx-pla.net @hughestr @atharvar28
 
-qa-heal.planx-pla.net @hughestr @haraprasadj
+qa-heal.planx-pla.net @briennal @haraprasadj
 qa-brh.planx-pla.net @briennal @haraprasadj
+
 qa-midrc.planx-pla.net @frankliuao @cgmeyer
 
 jenkins-blood.planx-pla.net @uc-cdis/planx-qa
