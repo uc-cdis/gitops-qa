@@ -17,15 +17,15 @@
     "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:integration202309",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
     "spark": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-spark:integration202309",
-    "tube": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/tube:integration202309",
-    "guppy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/guppy:integration202309",
+    "tube": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/tube:feat_new-es-7",
+    "guppy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/guppy:feat_es7",
     "sower": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sower:integration202309",
     "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:integration202309",
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
     "wts": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/workspace-token-service:integration202309",
     "manifestservice": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifestservice:integration202309",
     "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:integration202309",
-    "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:integration202309"
+    "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:feat_es-7"
   },
   "google": {
     "enabled": "yes"
@@ -339,7 +339,8 @@
     "tier_access_level": "regular",
     "tier_access_limit": 50,
     "lb_type": "internal",
-    "dd_enabled": true
+    "dd_enabled": true,
+    "es7": true
   },
   "indexd": {
     "arborist": "true"

@@ -20,7 +20,7 @@
     "indexd": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexd:2023.09",
     "kayako-wrapper": "quay.io/cdis/kayako-wrapper-service:0.2.0",
     "manifestservice": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifestservice:2023.09",
-    "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:2023.09",
+    "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:feat_es-7",
     "peregrine": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/peregrine:2023.09",
     "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:2023.09",
     "requestor": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/requestor:2023.09",
@@ -59,7 +59,8 @@
     "netpolicy": "on",
     "lb_type": "internal",
     "document_url": "https://heal.github.io/platform-documentation",
-    "frontend_root": "gen3ff"
+    "frontend_root": "gen3ff",
+    "es7": true
   },
   "canary": {
     "default": 0

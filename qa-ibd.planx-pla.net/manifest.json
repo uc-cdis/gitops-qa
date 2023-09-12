@@ -24,7 +24,7 @@
     "manifestservice": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifestservice:integration202309",
     "guppy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/guppy:feat_es7",
     "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:integration202309",
-    "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:integration202309",
+    "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:feat_es-7",
     "sower": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sower:integration202309"
   },
   "indexd": {

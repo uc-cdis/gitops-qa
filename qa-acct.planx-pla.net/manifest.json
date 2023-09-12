@@ -24,7 +24,7 @@
     "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:2021.06",
     "wts": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/workspace-token-service:2021.06",
     "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:2021.06",
-    "metadata": "quay.io/cdis/metadata-service:2021.06",
+    "metadata": "quay.io/cdis/metadata-service:feat_es-7",
     "dashboard": "quay.io/cdis/gen3-statics:2021.06"
   },
   "arborist": {

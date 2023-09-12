@@ -23,10 +23,10 @@
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:integration202106",
     "spark": "quay.io/cdis/gen3-spark:integration202106",
-    "tube": "quay.io/cdis/tube:integration202106",
-    "guppy": "quay.io/cdis/guppy:integration202106",
+    "tube": "quay.io/cdis/tube:feat_new-es-7",
+    "guppy": "quay.io/cdis/guppy:feat_es7",
     "wts": "quay.io/cdis/workspace-token-service:integration202106",
-    "metadata": "quay.io/cdis/metadata-service:integration202106"
+    "metadata": "quay.io/cdis/metadata-service:feat_es-7"
   },
   "arborist": {
     "deployment_version": "2"
@@ -63,7 +63,8 @@
     "tier_access_level": "regular",
     "tier_access_limit": "50",
     "public_datasets": true,
-    "lb_type": "internal"
+    "lb_type": "internal",
+    "es7": true
   },
   "ssjdispatcher": {
     "job_images": {
