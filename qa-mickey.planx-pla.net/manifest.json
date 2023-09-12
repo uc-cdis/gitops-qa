@@ -18,7 +18,7 @@
     "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:2023.06",
     "indexd": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexd:2023.06",
     "manifestservice": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifestservice:2023.06",
-    "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:2023.06",
+    "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:feat_es-7",
     "ohdsi-atlas": "707767160287.dkr.ecr.us-east-1.amazonaws.com/ohdsi/atlas:2.13.0",
     "ohdsi-webapi": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ohdsi-webapi:feat_prototype_teamproject_parser",
     "peregrine": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/peregrine:2023.06",
@@ -52,7 +52,8 @@
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
     "dispatcher_job_num": "10",
     "netpolicy": "on",
-    "lb_type": "internal"
+    "lb_type": "internal",
+    "es7": true
   },
   "canary": {
     "default": 0

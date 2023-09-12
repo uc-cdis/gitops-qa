@@ -19,10 +19,10 @@
     "revproxy": "quay.io/cdis/nginx:1.17.6-ctds-1.0.1",
     "sheepdog": "quay.io/cdis/sheepdog:2020.03",
     "spark": "quay.io/cdis/gen3-spark:2020.03",
-    "tube": "quay.io/cdis/tube:2020.03",
+    "tube": "quay.io/cdis/tube:feat_new-es-7",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:2020.03",
     "dashboard": "quay.io/cdis/gen3-statics:master",
-    "guppy": "quay.io/cdis/guppy:2020.03",
+    "guppy": "quay.io/cdis/guppy:feat_es7",
     "hatchery": "quay.io/cdis/hatchery:2020.03",
     "ambassador": "quay.io/datawire/ambassador:0.60.3",
     "wts": "quay.io/cdis/workspace-token-service:2020.03",
@@ -129,7 +129,8 @@
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
     "dispatcher_job_num": "10",
     "netpolicy": "on",
-    "lb_type": "internal"
+    "lb_type": "internal",
+    "es7": true
   },
   "canary": {
     "default": 0

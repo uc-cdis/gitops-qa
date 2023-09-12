@@ -17,8 +17,8 @@
     "sheepdog": "quay.io/cdis/sheepdog:2020.08",
     "sower": "quay.io/cdis/sower:2020.08",
     "spark": "quay.io/cdis/gen3-spark:2020.08",
-    "tube": "quay.io/cdis/tube:2020.08",
-    "guppy": "quay.io/cdis/guppy:2020.08",
+    "tube": "quay.io/cdis/tube:feat_new-es-7",
+    "guppy": "quay.io/cdis/guppy:feat_es7",
     "dashboard": "quay.io/cdis/gen3-statics:2020.08"
   },
   "global": {
@@ -46,7 +46,8 @@
     "netpolicy": "off",
     "cookie_domain": "planx-pla.net",
     "des_namespace": "qa-nde",
-    "lb_type": "internal"
+    "lb_type": "internal",
+    "es7": true
   },
   "arborist": {
     "deployment_version": "2"
