@@ -17,7 +17,6 @@
     "indexd": "quay.io/cdis/indexd:master",
     "ws-storage": "quay.io/cdis/ws-storage:master",
     "peregrine": "quay.io/cdis/peregrine:master",
-    "pidgin": "quay.io/cdis/pidgin:master",
     "portal": "quay.io/cdis/data-portal:master",
     "revproxy": "quay.io/cdis/nginx:master",
     "sheepdog": "quay.io/cdis/sheepdog:master",
@@ -33,7 +32,9 @@
     "dashboard": "quay.io/cdis/gen3-statics:master",
     "requestor": "quay.io/cdis/requestor:master",
     "cedar-wrapper": "quay.io/cdis/cedar-wrapper-service:master",
-    "kayako-wrapper": "quay.io/cdis/kayako-wrapper-service:master"
+    "kayako-wrapper": "quay.io/cdis/kayako-wrapper-service:master",
+    "argo-wrapper": "quay.io/cdis/argo-wrapper:master",
+    "cohort-middleware": "quay.io/cdis/cohort-middleware:master"
   },
   "arborist": {
     "deployment_version": "2"

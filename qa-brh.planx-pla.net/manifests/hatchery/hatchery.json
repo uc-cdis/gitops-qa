@@ -11,7 +11,7 @@
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "quay.io/cdis/ecs-ws-sidecar:2023.06",
+    "image": "quay.io/cdis/ecs-ws-sidecar:2023.09",
     "env": {
       "NAMESPACE": "qa-brh",
       "HOSTNAME": "qa-brh.planx-pla.net"
@@ -36,7 +36,7 @@
       "cpu-limit": "2.0",
       "memory-limit": "8Gi",
       "name": "(Generic) Jupyter Lab Notebook with R Kernel",
-      "image": "quay.io/cdis/jupyter-superslim-r:1.0.4",
+      "image": "quay.io/cdis/brh-notebooks:generic_rkernel__74bc13c4cf39a164daec18234d9adfd4678a50e5",
       "env": {
         "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
       },
