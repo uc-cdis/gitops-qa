@@ -468,32 +468,39 @@ wish to re-run your job, you can do so by selecting “retry” from the
 Actions Menu. The job status column provides information about the
 execution status of your job. The displayed values are:
 
--  Pending - your analysis was placed in the queue to run, depending on
-   the length of the queue your analysis could start in the range of
+-  **Pending** - your analysis was placed in the queue to run, depending
+   on the length of the queue your analysis could start in the range of
    several minutes to several hours
--  In Progress - your analysis is started and running, depending on your
-   selection of cohort and variables it could finish in the range of
-   half an hour to three hours
--  Failed - your analysis returned the error, it is advised that you
-   review/change your GWAS parameters which can be reviewed by clicking
-   on the ‘input’ button under details and review the ‘execution’ of
-   your job. If you need further support, contact our help desk at
-   vadc@lists.uchicago.edu
--  Completed - your analysis was successfully completed and you may
+-  **In Progress** - your analysis has started and is running, depending
+   on your selection of cohort and variables it could finish in the
+   range of half an hour to three hours
+-  **Failed** - your analysis returned an error and could not run to
+   completion. Please review your GWAS parameters (can be reviewed by
+   clicking on the ‘input’ button under details and review the
+   ‘execution’ of your job) and error logs. If you need further support,
+   contact our help desk at vadc@lists.uchicago.edu
+-  **Completed** - your analysis was successfully completed and you may
    download the results of the GWAS analysis from this menu
 
 Once completed, you may review the output from your submission by
 clicking on the “Results” button in the details column. The results
-landing includes an interactive Manhattan chart, viewable QQ plot, and a
-searchable table of the Top Loci. The Manhattan chart may be downloaded
-separately as a png format file and the Top Loci table as a tsv file. A
-button at the top of the results page enables downloading of all
-results. This will be a zip format file which will be downloaded to your
-computer. Depending on your cohort and variables selection, the file
-size can vary in the range of 700MB up to 1.3GB. The file contains the
-following: Manhattan plot, QQ plot, metadata file containing all of your
-selections, your study’s attrition table, and per-chromosome GWAS
-summary statistics.
+landing page includes an interactive Manhattan plot, viewable QQ plot,
+and a searchable table of the Top Loci. The Manhattan plot may be
+downloaded separately as a png format file and the Top Loci table as a
+tsv file. Clicking on the *Download All Results* button at the top of
+the results page will prompt the creation and download of your workflow
+results to your computer. Depending on your cohort and variables
+selection, the file size can vary in the range of 700MB up to 1.3GB. The
+file contains the following:
+
+-  Manhattan plot (.png)
+-  QQ plot (.png)
+-  100 top hits (.csv.gz)
+-  per-chromosome GWAS summary statistics (folder of .csv.gz’s)
+-  all hits below p-value 5e-8 (.csv.gz)
+-  your study’s attrition tables (folder of .csv’s)
+-  a metadata file containing all of your selections
+   (gwas_metadata.yaml)
 
 Frequently Asked Questions
 ==========================

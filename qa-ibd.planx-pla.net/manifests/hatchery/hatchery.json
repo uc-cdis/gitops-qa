@@ -5,7 +5,7 @@
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3fuse-sidecar:integration202308",
+    "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3fuse-sidecar:integration202310",
     "env": {
       "NAMESPACE": "qa-ibd",
       "HOSTNAME": "qa-ibd.planx-pla.net"
@@ -203,7 +203,6 @@
       "cpu-limit": "1.0",
       "memory-limit": "1024Mi",
       "name": "Jupyter with Nextflow",
-      "enable-nextflow": true,
       "image": "quay.io/cdis/jupyter-notebook:nextflow-master",
       "env": {
         "NAMESPACE": "qa-ibd",
@@ -227,7 +226,20 @@
       ],
       "user-uid": 1000,
       "fs-gid": 100,
-      "user-volume-location": "/home/jovyan/pd"
+      "user-volume-location": "/home/jovyan/pd",
+      "nextflow": {
+        "enabled": true,
+        "job-image-whitelist": [
+          "*"
+        ],
+        "s3-bucket-whitelist": [
+          "ngi-igenomes"
+        ],
+        "instance-ami": "ami-04268d8155d11010c",
+        "instance-type": "SPOT",
+        "instance-min-vcpus": 0,
+        "instance-max-vcpus": 9
+      }
     }
   ]
 }

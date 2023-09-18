@@ -1280,63 +1280,115 @@
         "enabled": false,
         "text": "Publication Discovery"
       },
+      "exportToWorkspace": {
+        "enabled": false,
+        "manifestFieldName": "_medical_sample_id",
+        "enableFillRequestForm" : true,
+        "openFillRequestForm": "Request Access",
+        "fillRequestFormURL" : "https://pandemicresponsecommons.org/access-for-samples",
+        "documentationLinks": {
+          "gen3Client": "https://gen3.org/resources/user/gen3-client/",
+          "gen3Workspaces": "https://gen3.org/resources/user/analyze-data/"
+        },
+        "verifyExternalLogins": true
+      },
       "search": {
+        "tagSearchDropdown": {
+          "enabled": true,
+          "collapsibleButtonText": "Sample Filters"
+        },
         "searchBar": {
           "enabled": true
         }
       },
       "authorization": {
-        "enabled": true
+        "enabled": true,
+        "columnTooltip": "Filter by data access",
+        "supportedValues": {
+          "accessible": {
+            "enabled": true,
+            "menuText": "Available"
+          },
+          "unaccessible": {
+            "enabled": false,
+            "menuText": "Not Accessible"
+          },
+          "pending": {
+            "enabled": true,
+            "menuText": "Pending"
+          },
+          "notAvailable": {
+            "enabled": true,
+            "menuText": "Not Available"
+          }
+        }
       }
     },
     "aggregations": [{
-        "name": "Publications",
-        "field": "accession_id",
-        "type": "count"
-      }
-    ],
+      "name": "Samples",
+      "field": "_medical_sample_id",
+      "type": "count"
+    }],
     "tagSelector": {
       "title": "Tags by category"
     },
     "studyColumns": [{
-        "name": "Title",
-        "field": "title",
-        "contentType": "string",
-        "width": 200
-      },
-      {
-        "name": "Authors",
-        "field": "authors",
-        "contentType": "string",
-        "width": 300
-      },
-      {
-        "name": "Affiliations",
-        "field": "author_affiliations",
-        "contentType": "string",
-        "ellipsis": true
-      },
-      {
-        "name": "Journal",
-        "field": "journal",
-        "contentType": "string"
-      },
-      {
-        "name": "Publication URL",
-        "field": "publication_url",
-        "contentType": "string"
-      },
-      {
-        "name": "Condition",
-        "field": "condition",
-        "contentType": "string"
-      },
-      {
-        "name": "Websites",
-        "field": "websites",
-        "contentType": "string"
-      }
-    ],
+      "name": "Sample Type",
+      "field": "sample_type",
+      "contentType": "string",
+      "errorIfNotAvailable": false,
+      "valueIfNotAvailable": "n/a"
+    },
+    {
+      "name": "SARS-CoV-2 Infection Status",
+      "field": "SARS_CoV2_Infection_Status",
+      "contentType": "string",
+      "errorIfNotAvailable": false,
+      "valueIfNotAvailable": "n/a"
+    },
+    {
+      "name": "SARS_CoV-2 Vaccination Status",
+      "field": "CoVID_Vaccination_Status",
+      "contentType": "string",
+      "errorIfNotAvailable": false,
+      "valueIfNotAvailable": "n/a"
+    },
+    {
+      "name": "Immune status",
+      "field": "Immune_Status",
+      "contentType": "string",
+      "errorIfNotAvailable": false,
+      "valueIfNotAvailable": "n/a"
+    },
+    {
+      "name": "Age",
+      "field": "demographics__age",
+      "contentType": "string",
+      "errorIfNotAvailable": false,
+      "valueIfNotAvailable": "n/a"
+    },
+    {
+      "name": "Gender",
+      "field": "demographics__gender",
+      "contentType": "string",
+      "errorIfNotAvailable": false,
+      "valueIfNotAvailable": "n/a"
+    },
+    {
+      "name": "Race/Ethnicity",
+      "field": "demographics__race_enthnicity",
+      "contentType": "string",
+      "errorIfNotAvailable": false,
+      "valueIfNotAvailable": "n/a"
+    },
+    {
+      "name": "Available Data",
+      "field": "Available_Data",
+      "contentType": "string",
+      "errorIfNotAvailable": false,
+      "valueIfNotAvailable": "n/a"
+    }
+  ],
     "studyPreviewField": {
       "name": "Abstract",
       "field": "abstract",
@@ -1345,68 +1397,109 @@
       "includeIfNotAvailable": false
     },
     "studyPageFields": {
+      "showAllAvailableFields": false,
       "header": {
         "field": "title"
       },
       "fieldsToShow": [{
           "groupName": "Publication Identifiers",
           "includeName": false,
-          "fields": [
-          {
-            "name": "Authors",
-            "field": "authors",
-            "contentType": "string"
-          },
-          {
-            "name": "Affiliations",
-            "field": "author_affiliations",
-            "contentType": "string"
-          },
-          {
-            "name": "Journal",
-            "field": "journal",
-            "contentType": "string"
-          },
-          {
-            "name": "Publication URL",
-            "field": "publication_url",
-            "contentType": "string"
-          },
-          {
-            "name": "Data Availability Date",
-            "field": "data_availability_date",
-            "contentType": "string"
-          },
-          {
-            "name": "Brief Description of Data Available",
-            "field": "data_description",
-            "contentType": "string"
-          },
-          {
-            "name": "Sponsors/Acknowledgements",
-            "field": "sponsors",
-            "contentType": "string"
-          },
-          {
-            "name": "Study Number/Codes",
-            "field": "study_codes",
-            "contentType": "string"
-          },
-          {
-            "name": "Condition",
-            "field": "condition",
-            "contentType": "string"
-          },
-          {
-            "name": "Study Type",
-            "field": "study_type",
-            "contentType": "string"
-          },
-          {
-            "name": "Websites",
-            "field": "websites",
-            "contentType": "string"
-          }
+          "fields": [{
+            "name": "Sample ID",
+            "field": "_medical_sample_id",
+            "contentType": "string",
+            "includeIfNotAvailable": false
+            },
+            {
+              "name": "Sample Type",
+              "field": "sample_type",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "Demographics Age",
+              "field": "demographics__age",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "Demographics Gender",
+              "field": "demographics__gender",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "Demographics_race",
+              "field": "demographics__race",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "Demographics_ethnicity",
+              "field": "demographics__ethnicity",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "SARS CoV2 Infection Status",
+              "field": "SARS_CoV2_Infection_Status",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "CoVID Vaccination Status_status",
+              "field": "CoVID_Vaccination_Status__status",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "CoVID Vaccination Status_antigen",
+              "field": "CoVID_Vaccination_Status__antigen",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "CoVID Vaccination Status_manufacturer",
+              "field": "CoVID_Vaccination_Status__manufacturer",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "Immune Status",
+              "field": "Immune_Status",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "Available Data",
+              "field": "Available_Data",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "Data Availability Date",
+              "field": "data_availability_date",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "Description of Data Available",
+              "field": "data_description",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "Condition",
+              "field": "condition",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "Websites",
+              "field": "websites",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            }
           ]
         },
         {
@@ -1423,15 +1516,59 @@
     "minimalFieldMapping": {
       "tagsListFieldName": "tags",
       "authzField": "auth_resource_path",
-      "uid": "_publication_id"
+      "uid": "_medical_sample_id"
     },
-    "tagCategories": [{
-        "name": "Condition",
-        "color": "rgba(129, 211, 248, 1)",
+    "tagCategories": [
+      {
+        "name": "Sample Type",
+        "field": "Sample Type",
+        "color": "#532565",
+        "display": true
+      },
+      {
+        "name": "SARS-CoV2 Infection Status",
+        "field": "SARS-CoV2 Infection Status",
+        "color": "#981f32",
+        "display": true
+      },
+      {
+        "name": "SARS_CoV-2 Vaccination Status",
+        "field": "SARS_CoV-2 Vaccination Status",
+        "color": "#532565",
+        "display": true
+      },
+      {
+        "name": "Immune Status",
+        "field": "Immune Status",
+        "color": "#bf362e",
+        "display": true
+      },
+      {
+        "name": "Age",
+        "field": "Age",
+        "color": "#982568",
+        "display": true
+      },
+      {
+        "name": "Gender",
+        "field": "Gender",
+        "color": "#982568",
+        "display": true
+      },
+      {
+        "name": "Race/Ethnicity",
+        "field": "Race/Ethnicity",
+        "color": "#982568",
+        "display": true
+      },
+      {
+        "name": "Available Data",
+        "field": "Available Data",
+        "color": "#982568",
         "display": true
       }
     ]
-  },
+    },
   "connectSrcCSPWhitelist": [
     "https://covd-map-occ-prc-qa.s3.amazonaws.com"
   ]
