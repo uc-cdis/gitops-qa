@@ -104,7 +104,7 @@
       "cpu-limit": "4.0",
       "memory-limit": "10Gi",
       "name": "(Nextflow) Test Nextflow in qa-brh",
-      "image": "quay.io/cdis/jupyter-notebook:feat_nextflow",
+      "image": "quay.io/cdis/jupyter-notebook:nextflow-master",
       "env": {
         "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
       },
