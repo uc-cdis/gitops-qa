@@ -130,7 +130,20 @@
       "user-uid": 1000,
       "fs-gid": 100,
       "user-volume-location": "/home/jovyan/pd",
-      "gen3-volume-location": "/home/jovyan/.gen3"
+      "gen3-volume-location": "/home/jovyan/.gen3",
+      "nextflow": {
+        "enabled": true,
+        "job-image-whitelist": [
+          "*"
+        ],
+        "s3-bucket-whitelist": [
+          "ngi-igenomes"
+        ],
+        "instance-ami": "ami-04268d8155d11010c",
+        "instance-type": "SPOT",
+        "instance-min-vcpus": 0,
+        "instance-max-vcpus": 9
+      }
     },
     {
       "target-port": 8888,
@@ -163,7 +176,20 @@
       "user-uid": 1000,
       "fs-gid": 100,
       "user-volume-location": "/home/jovyan/pd",
-      "gen3-volume-location": "/home/jovyan/.gen3"
+      "gen3-volume-location": "/home/jovyan/.gen3",
+      "nextflow": {
+        "enabled": true,
+        "job-image-whitelist": [
+          "*"
+        ],
+        "s3-bucket-whitelist": [
+          "ngi-igenomes"
+        ],
+        "instance-ami": "ami-04268d8155d11010c",
+        "instance-type": "SPOT",
+        "instance-min-vcpus": 0,
+        "instance-max-vcpus": 9
+      }
     }
   ]
 }
