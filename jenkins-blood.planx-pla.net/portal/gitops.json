@@ -225,7 +225,7 @@
     "explorerPublic": true,
     "discovery": true,
     "discoveryUseAggMDS": true,
-    "studyRegistration": true,
+    "studyRegistration": true
   },
   "analysisTools": [
     {
