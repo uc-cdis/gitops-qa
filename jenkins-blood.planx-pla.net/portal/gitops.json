@@ -1,5 +1,6 @@
 {
   "gaTrackingId": "UA-119127212-2",
+  "argoTemplate": "gwas-template",
   "graphql": {
     "boardCounts": [{
         "graphql": "_study_count",
@@ -113,6 +114,12 @@
           "body": "Build and send your own custom GraphQL queries to the database to pinpoint specific data.",
           "link": "/query",
           "label": "Send Queries"
+        },
+        {
+          "icon": "analysis",
+          "link": "/analysis",
+          "color": "#a2a2a2",
+          "name": "Apps"
         }
       ]
     },
@@ -148,6 +155,12 @@
           "link": "/DD",
           "color": "#a2a2a2",
           "name": "Dictionary"
+        },
+        {
+          "icon": "analysis",
+          "link": "/analysis",
+          "color": "#a2a2a2",
+          "name": "Apps"
         },
         {
           "icon": "query",
@@ -212,8 +225,18 @@
     "explorerPublic": true,
     "discovery": true,
     "discoveryUseAggMDS": true,
-    "studyRegistration": true
+    "studyRegistration": true,
   },
+  "analysisTools": [
+    {
+      "title": "OHDSI Atlas",
+      "description": "Use this App for cohort creation. These will be automatically populated in the Gen3 GWAS App",
+      "applicationUrl": "https://atlas.qa-mickey.planx-pla.net/atlas/",
+      "image": "/custom/sponsors/gitops-sponsors/atlas-logo.png"
+    },
+    "GWASUIApp",
+    "GWASResults"
+  ],
   "discoveryConfig": {
     "features": {
       "advSearchFilters": {
@@ -584,7 +607,6 @@
       }]
     }
   ],
-  "analysisTools": [],
   "explorerConfig": [{
       "tabTitle": "Studies",
       "charts": {
