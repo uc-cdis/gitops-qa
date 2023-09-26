@@ -14,7 +14,7 @@
         "multiLineTexts": [
           "AccessClinicalData@NIAID is a NIAID cloud-based, secure data platform that enables sharing of and access to reports and data sets from NIAID COVID-19 and other sponsored clinical trials for the basic and clinical research community.",
           "<h2>New dataset!</h2>",
-          "Dataset for ACTIV-1 IM - Immune Modulators for Treating COVID-19 (<a href='/study-viewer/clinical_trials/NCT04593940'>ACTIV-1 IM</a>), sponsored by U.S. Department of Health and Human Services Biomedical Advanced Research and Development Authority and the National Center for Advancing Translational Sciences, National Institutes of Health, is now available.",
+          "<strong>NOW AVAILABLE,</strong> <a href='/study-viewer/clinical_trials/NCT04593940'>ACTIV-1 IM - Immune Modulators for Treating COVID-19</a>, sponsored by U.S. Department of Health and Human Services Biomedical Advanced Research and Development Authority and the National Center for Advancing Translational Sciences, National Institutes of Health.",
           "<h2>How to View Available Data</h2>",
           "Go to <a href='https://qa-niaid.planx-pla.net/study-viewer/clinical_trials'>View Clinical Trials</a>. For each study listed, open the details and select the \"Learn More\" button to review a description of the clinical trial and data dictionary.",
           "<h2>How to Request Data</h2>",
