@@ -33,6 +33,8 @@ Table of Contents
       Steps <#genome-wide-association-studies-gwas-steps>`__
    -  `GWAS Results <#gwas-results>`__
 
+      -  `Troubleshooting GWAS Errors <#troubleshooting-gwas-errors>`__
+
 -  `Frequently Asked Questions <#frequently-asked-questions>`__
 
    -  `Where can I find more documentation on the OHDSI Atlas
@@ -44,6 +46,8 @@ Table of Contents
    -  `How long will my GWAS take? <#how-long-will-my-gwas-take>`__
    -  `Why does the workspaces page give me an
       error? <#why-does-the-workspaces-page-give-me-an-error>`__
+   -  `Why do my re-tried GWAS results differ from a prior
+      run? <#why-do-my-re-tried-gwas-results-differ-from-a-prior-run>`__
 
 Getting Started
 ===============
@@ -475,10 +479,8 @@ execution status of your job. The displayed values are:
    on your selection of cohort and variables it could finish in the
    range of half an hour to three hours
 -  **Failed** - your analysis returned an error and could not run to
-   completion. Please review your GWAS parameters (can be reviewed by
-   clicking on the ‘input’ button under details and review the
-   ‘execution’ of your job) and error logs. If you need further support,
-   contact our help desk at vadc@lists.uchicago.edu
+   completion. Please see `Troubleshooting GWAS
+   Errors <#troubleshooting-gwas-errors>`__ below.
 -  **Completed** - your analysis was successfully completed and you may
    download the results of the GWAS analysis from this menu
 
@@ -501,6 +503,80 @@ file contains the following:
 -  your study’s attrition tables (folder of .csv’s)
 -  a metadata file containing all of your selections
    (gwas_metadata.yaml)
+
+**Troubleshooting GWAS Errors**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In the Results Viewer App we are beginning to add meaningful error
+messages. The messages will appear in the execution logs and will be as
+follow:
+
+-  `failed run-null-model: Small cohort size or unbalanced cohort
+   sizes <#failed-run-null-model-small-cohort-size-or-unbalanced-cohort-sizes>`__.
+-  `failed run-plots: Small cohort size or unbalanced cohort
+   sizes <#failed-run-plots-small-cohort-size-or-unbalanced-cohort-sizes>`__
+-  `failed run-single-assoc: Unbalanced cohort
+   sizes <#failed-run-single-assoc-unbalanced-cohort-sizes>`__
+-  `failed generate-attrition-csv: Timeout occurred while fetching
+   attrition table information. Please
+   retry <#failed-generate-attrition-csv-timeout-occurred-while-fetching-attrition-table-information-please-retry>`__
+-  `Step failed with an uncategorized
+   error <#step-failed-with-an-uncategorized-error>`__
+
+**failed run-null-model: Small cohort size or unbalanced cohort sizes**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The cohort size chosen did not produce enough statistical power. As a
+rule of thumb, for continuous workflows a cohort size of about 700 or
+below may fail for this reason. If the user ran a dichotomous workflow,
+they should check that both the case and control cohort sizes are large
+enough, and are not vastly different in size (for example by two orders
+of magnitude or more). This can be checked through the attrition table
+in the GWAS App, prior to submission. The cohort size will reflect in
+the column where the chosen HARE is presented. A user may also see the
+choice they made in the GWAS Results by clicking on “Input”.
+
+**failed run-plots: Small cohort size or unbalanced cohort sizes**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The cohort size chosen did not produce enough statistical power. As a
+rule of thumb, for continuous workflows a cohort size of about 700 or
+below may fail for these reasons. If the user ran a dichotomous
+workflow, they should check that both the case and control cohort sizes
+are large enough, and are not vastly different in size (for example by
+two orders of magnitude or more). This can be checked through the
+attrition table in the GWAS App, prior to submission. The cohort size
+will reflect in the column where the chosen HARE is presented. A user
+may also see the choice they made in the GWAS Results by clicking on
+“Input”.
+
+**failed run-single-assoc: Unbalanced cohort sizes**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The cohort size chosen did not produce enough statistical power. As a
+rule of thumb, a cohort size of about 700 or below may fail for these
+reasons. If the user ran a dichotomous workflow, they should check that
+both the case and control cohort sizes are large enough. This can be
+checked through the attrition table in the GWAS App, prior to
+submission. The cohort size will reflect in the column where the chosen
+HARE is presented. A user may also see the choice they made in the GWAS
+Results by clicking on “Input”.
+
+**failed generate-attrition-csv: Timeout occurred while fetching attrition table information. Please retry**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A timeout error implies that an internal service was temporarily not
+available while fetching the information presented to the user on the
+UI. The user may retry the workflow using the “retry button”.
+
+**Step failed with an uncategorized error**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Many reasons can cause workflows to fail, and some of them may be
+transient. Please reach out to vadc@lists.uchicago.edu with any further
+questions. In your message please provide us with the serial name of
+your workflow and the step in which your GWAS failed (mentioned in your
+error message). A response should be expected with 2 business days.
 
 Frequently Asked Questions
 ==========================
@@ -561,6 +637,18 @@ Workspace, you may refer to `Gen3
 Workspaces <https://gen3.org/products/workspaces/>`__ and `Data Analysis
 in a Gen3 Data
 Commons <https://gen3.org/resources/user/analyze-data/>`__.
+
+**Why do my re-tried GWAS results differ from a prior run?**
+------------------------------------------------------------
+
+Please note, that we are constantly improving the GWAS pipeline. The
+retry action will re-run your analysis based on the most recent data
+available in the database and the most recent GWAS pipeline implemented.
+These may differ from the analysis you ran initially, and these
+differences might affect the outcome. For these reasons, the retry
+action is only applicable to failed workflows. If you have any
+questions, please feel free to contact us via email
+vadc@lists.uchicago.edu.
 
 .. |image1| image:: _static/slide_10.png
 .. |image2| image:: _static/slide_11.png
