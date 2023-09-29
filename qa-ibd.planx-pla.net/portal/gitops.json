@@ -17,6 +17,13 @@
   },
   "components": {
     "appName": "IBDGC Portal",
+    "banner": [
+      {
+        "type": "info",
+        "message": "I'm a banner",
+        "resetMsgDays": 1
+      }
+    ],
     "index": {
       "introduction": {
         "heading": "NIDDK IBD Genetics Consortium Data Commons",
