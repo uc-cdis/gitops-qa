@@ -19,7 +19,7 @@
     "appName": "IBDGC Portal",
     "banner": [
       {
-        "type": "info",
+        "type": "warning",
         "message": "I'm a banner",
         "resetMsgDays": 1
       }
