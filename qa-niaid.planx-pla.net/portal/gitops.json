@@ -7,6 +7,13 @@
   },
   "components": {
     "appName": "NIAID Clinical Trials Repository",
+    "banner": [
+      {
+        "type": "warning",
+        "message": "I'm a banner",
+        "resetMsgDays": 1
+      }
+    ],
     "homepageAltText": "NIH: National Institute of Allergy and Infectious Diseases logo",
     "index": {
       "introduction": {
