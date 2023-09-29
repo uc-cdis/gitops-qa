@@ -10,8 +10,6 @@ services:
         - NAMESPACE=qa-covid19
         - HOSTNAME=qa-covid19.planx-pla.net
         - FRAME_ANCESTORS=https://qa-covid19.planx-pla.net
-      entrypoint:
-        - "start-notebook.sh"
       command:
         - "--NotebookApp.base_url=/lw-workspace/proxy"
         - "--NotebookApp.default_url=/lab/tree/welcome.html"
