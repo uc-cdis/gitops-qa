@@ -139,7 +139,7 @@
         "s3-bucket-whitelist": [
           "ngi-igenomes"
         ],
-        "instance-ami": "ami-03392f075059ae3ba",
+        "instance-ami": "ami-037963b5486a5071f",
         "instance-type": "SPOT",
         "instance-min-vcpus": 0,
         "instance-max-vcpus": 9
@@ -185,7 +185,7 @@
         "s3-bucket-whitelist": [
           "ngi-igenomes"
         ],
-        "instance-ami": "ami-03392f075059ae3ba",
+        "instance-ami": "ami-037963b5486a5071f",
         "instance-type": "SPOT",
         "instance-min-vcpus": 0,
         "instance-max-vcpus": 9

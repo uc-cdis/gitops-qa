@@ -162,12 +162,6 @@
             "dataset_4_title",
             "administering_ic",
             "research_program",
-            "dataset_description",
-            "dataset_1_description",
-            "dataset_2_description",
-            "dataset_3_description",
-            "dataset_4_description",
-            "data_dictionary",
             "doi_identifier",
             "doi_resolvable_link"
           ]
@@ -401,44 +395,33 @@
     },
     "tagCategories": [
       {
-        "name": "Study Setting",
-        "displayName": "Study Setting",
-        "color": "#532565",
-        "display": false
-      },
-      {
-        "name": "Subject Characteristics",
-        "displayName": "Subject Characteristics",
-        "color": "#982568",
-        "display": false
-      },
-      {
-        "name": "Study Design",
-        "displayName": "Study Design",
-        "color": "#981f32",
-        "display": false
-      },
-      {
-        "name": "Intervention/Treatment",
-        "displayName": "Intervention/Treatment",
-        "color": "#bf362e",
-        "display": false
-      },
-      {
-        "name": "Pain",
-        "color": "#e07c3e",
-        "display": false
-      },
-      {
-        "name": "Substance Use",
-        "displayName": "Substance Use",
+        "name": "Study Type",
         "color": "#532565",
         "display": false
       },
       {
         "name": "Data Type",
-        "displayName": "Data Type",
         "color": "#982568",
+        "display": false
+      },
+      {
+        "name": "Subject Type",
+        "color": "#981f32",
+        "display": false
+      },
+      {
+        "name": "Gender",
+        "color": "#bf362e",
+        "display": false
+      },
+      {
+        "name": "Age",
+        "color": "#e07c3e",
+        "display": false
+      },
+      {
+        "name": "Research Program",
+        "color": "#532565",
         "display": false
       },
       {
@@ -454,7 +437,6 @@
       },
       {
         "name": "Data Repository",
-        "displayName": "Data Repository",
         "color": "#bf362e",
         "display": true
       }
