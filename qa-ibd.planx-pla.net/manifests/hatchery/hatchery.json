@@ -5,7 +5,7 @@
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3fuse-sidecar:integration202310",
+    "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3fuse-sidecar:2023.10",
     "env": {
       "NAMESPACE": "qa-ibd",
       "HOSTNAME": "qa-ibd.planx-pla.net"
@@ -235,7 +235,7 @@
         "s3-bucket-whitelist": [
           "ngi-igenomes"
         ],
-        "instance-ami": "ami-04268d8155d11010c",
+        "instance-ami": "ami-037963b5486a5071f",
         "instance-type": "SPOT",
         "instance-min-vcpus": 0,
         "instance-max-vcpus": 9
