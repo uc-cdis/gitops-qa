@@ -152,8 +152,8 @@ body,
   .pl-8 {
     padding-left: 2rem;
   }
-  .border-heal-magenta {
-    border-left: 8px solid rgba(152, 37, 104);
+  .border-heal-red {
+    border-left: 8px solid #BC3231;
   }
   .border-l-8 {
     border-left-width: 8px;
