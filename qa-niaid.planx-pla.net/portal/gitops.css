@@ -149,10 +149,12 @@ body,
   padding: 5px 0;
 }
 
+/* Style for indents and attention */
+
   .pl-8 {
     padding-left: 2rem;
   }
-  .border-heal-red {
+  .border-nct-red {
     border-left: 8px solid #BC3231;
   }
   .border-l-8 {
@@ -193,7 +195,7 @@ body,
   .nct-btn-rev,
   .nct-btn:focus,
   .nct-btn:hover {
-    background-color: #fff;
-    border-color: #982568;
-    color: #982568;
+    background-color: #6ea6dd;
+    border-color: #6ea6dd;
+    color: #6ea6dd;
   }
