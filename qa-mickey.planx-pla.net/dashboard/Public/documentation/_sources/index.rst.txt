@@ -34,6 +34,7 @@ Table of Contents
    -  `GWAS Results <#gwas-results>`__
 
       -  `Troubleshooting GWAS Errors <#troubleshooting-gwas-errors>`__
+      -  `Data Update Disclaimer <#data-update-disclaimer>`__
 
 -  `Frequently Asked Questions <#frequently-asked-questions>`__
 
@@ -562,16 +563,8 @@ Results by clicking on “Input”.
 
 A timeout error implies that an internal service was temporarily not
 available while fetching the information presented to the user on the
-UI. The user may retry the workflow using the “retry button”.
-
-Please note that we are constantly improving the GWAS pipeline. The
-retry action will re-run your analysis based on the most recent data
-available in the database and the most recent GWAS pipeline implemented.
-These may differ from the analysis you ran initially, and these
-differences might affect the outcome. For these reasons, the retry
-action is only applicable to failed workflows. If you have any
-questions, please feel free to contact us via email
-vadc@lists.uchicago.edu.
+UI. If you wish to re-run your job, you can do so by selecting “retry”
+from the Actions Menu.
 
 **Step failed with an uncategorized error**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -581,6 +574,18 @@ transient. Please reach out to vadc@lists.uchicago.edu with any further
 questions. In your message please provide us with the serial name of
 your workflow and the step in which your GWAS failed (mentioned in your
 error message). A response should be expected with 2 business days.
+
+**Data Update Disclaimer**
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Please note that we are constantly improving the GWAS pipeline. The
+retry action will re-run your analysis based on the most recent data
+available in the database and the most recent GWAS pipeline implemented.
+These may differ from the analysis you ran initially, and these
+differences might affect the outcome. For these reasons, the retry
+action is only applicable to failed workflows. If you have any
+questions, please feel free to contact us via email
+vadc@lists.uchicago.edu.
 
 Frequently Asked Questions
 ==========================
