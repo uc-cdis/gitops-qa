@@ -1,5 +1,5 @@
 #!groovy
-@Library('cdis-jenkins-lib@chore/add_GWAS_jenkins_env') _
+@Library('cdis-jenkins-lib@test/skip_secrets_setup') _
 testPipeline {
   MANIFEST = "True"
 }
