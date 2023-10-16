@@ -1,0 +1,13 @@
+{
+    "qa_scaling_groups" : {
+        "zchen138@uchicago.edu": "workflow",
+        "aprokh@uchicago.edu": "workflow",
+        "Scott.DuVall@va.gov": "workflow2",
+        "Hamid.Saoudian@va.gov": "workflow3",
+        "Craig.Teerlink@va.gov": "workflow4"
+    },
+    "bucket": "second-argo-bucket",
+    "internal-s3-bucket": "gen3-argo-707767160287-devplanetv1",
+    "indexd_admin_user": "fence",
+    "environment": "jenkins-dcp"
+}
