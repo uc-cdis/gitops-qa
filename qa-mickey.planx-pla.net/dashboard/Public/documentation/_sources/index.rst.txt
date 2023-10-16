@@ -34,6 +34,7 @@ Table of Contents
    -  `GWAS Results <#gwas-results>`__
 
       -  `Troubleshooting GWAS Errors <#troubleshooting-gwas-errors>`__
+      -  `Data Update Disclaimer <#data-update-disclaimer>`__
 
 -  `Frequently Asked Questions <#frequently-asked-questions>`__
 
@@ -46,8 +47,6 @@ Table of Contents
    -  `How long will my GWAS take? <#how-long-will-my-gwas-take>`__
    -  `Why does the workspaces page give me an
       error? <#why-does-the-workspaces-page-give-me-an-error>`__
-   -  `Why do my re-tried GWAS results differ from a prior
-      run? <#why-do-my-re-tried-gwas-results-differ-from-a-prior-run>`__
 
 Getting Started
 ===============
@@ -321,7 +320,7 @@ Dichotomous Outcome Phenotype.
 -  **Continuous Outcome**
 
 Here, you may choose your continuous phenotype. GWAS App provides over
-5,000 variables for your selection, for example, height, weight, blood
+500 variables for your selection, for example, height, weight, blood
 pressure, white blood cell, and other clinical observations. Please
 select the outcome phenotype you wish to use in your model. All data are
 harmonized from different projects through the collaborative development
@@ -355,7 +354,7 @@ corresponding button.
 
 -  **Add Continuous Covariate**
 
-GWAS App provides over 5,000 variables for your selection, for example,
+GWAS App provides over 500 variables for your selection, for example,
 height, weight, blood pressure, white blood cell, and other clinical
 observations. Please select all covariates you wish to use in your
 model. You may choose as many covariates as you wish in this step. To
@@ -465,12 +464,9 @@ Three additional columns are displayed by default: job status, details,
 and actions. The details columns lists additional information about your
 submitted job. The Input button links to your GWAS job configuration
 options and the execution button presents information about the
-execution of your GWAS job including messages from log files. If your
-job has completed successfully, you can review your output using the
-Results Button or download it directly from the Actions menu. If you
-wish to re-run your job, you can do so by selecting “retry” from the
-Actions Menu. The job status column provides information about the
-execution status of your job. The displayed values are:
+execution of your GWAS job including messages from log files. The job
+status column provides information about the execution status of your
+job. The displayed values are:
 
 -  **Pending** - your analysis was placed in the queue to run, depending
    on the length of the queue your analysis could start in the range of
@@ -511,19 +507,19 @@ In the Results Viewer App we are beginning to add meaningful error
 messages. The messages will appear in the execution logs and will be as
 follow:
 
--  `failed run-null-model: Small cohort size or unbalanced cohort
+-  `Failed run-null-model: Small cohort size or unbalanced cohort
    sizes <#failed-run-null-model-small-cohort-size-or-unbalanced-cohort-sizes>`__.
--  `failed run-plots: Small cohort size or unbalanced cohort
+-  `Failed run-plots: Small cohort size or unbalanced cohort
    sizes <#failed-run-plots-small-cohort-size-or-unbalanced-cohort-sizes>`__
--  `failed run-single-assoc: Unbalanced cohort
+-  `Failed run-single-assoc: Unbalanced cohort
    sizes <#failed-run-single-assoc-unbalanced-cohort-sizes>`__
--  `failed generate-attrition-csv: Timeout occurred while fetching
+-  `Failed generate-attrition-csv: Timeout occurred while fetching
    attrition table information. Please
    retry <#failed-generate-attrition-csv-timeout-occurred-while-fetching-attrition-table-information-please-retry>`__
 -  `Step failed with an uncategorized
    error <#step-failed-with-an-uncategorized-error>`__
 
-**failed run-null-model: Small cohort size or unbalanced cohort sizes**
+**Failed run-null-model: Small cohort size or unbalanced cohort sizes**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The cohort size chosen did not produce enough statistical power. As a
@@ -536,7 +532,7 @@ in the GWAS App, prior to submission. The cohort size will reflect in
 the column where the chosen HARE is presented. A user may also see the
 choice they made in the GWAS Results by clicking on “Input”.
 
-**failed run-plots: Small cohort size or unbalanced cohort sizes**
+**Failed run-plots: Small cohort size or unbalanced cohort sizes**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The cohort size chosen did not produce enough statistical power. As a
@@ -550,7 +546,7 @@ will reflect in the column where the chosen HARE is presented. A user
 may also see the choice they made in the GWAS Results by clicking on
 “Input”.
 
-**failed run-single-assoc: Unbalanced cohort sizes**
+**Failed run-single-assoc: Unbalanced cohort sizes**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The cohort size chosen did not produce enough statistical power. As a
@@ -562,12 +558,13 @@ submission. The cohort size will reflect in the column where the chosen
 HARE is presented. A user may also see the choice they made in the GWAS
 Results by clicking on “Input”.
 
-**failed generate-attrition-csv: Timeout occurred while fetching attrition table information. Please retry**
+**Failed generate-attrition-csv: Timeout occurred while fetching attrition table information. Please retry**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A timeout error implies that an internal service was temporarily not
 available while fetching the information presented to the user on the
-UI. The user may retry the workflow using the “retry button”.
+UI. If you wish to re-run your job, you can do so by selecting “retry”
+from the Actions Menu.
 
 **Step failed with an uncategorized error**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -577,6 +574,18 @@ transient. Please reach out to vadc@lists.uchicago.edu with any further
 questions. In your message please provide us with the serial name of
 your workflow and the step in which your GWAS failed (mentioned in your
 error message). A response should be expected with 2 business days.
+
+**Data Update Disclaimer**
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Please note that we are constantly improving the GWAS pipeline. The
+retry action will re-run your analysis based on the most recent data
+available in the database and the most recent GWAS pipeline implemented.
+These may differ from the analysis you ran initially, and these
+differences might affect the outcome. For these reasons, the retry
+action is only applicable to failed workflows. If you have any
+questions, please feel free to contact us via email
+vadc@lists.uchicago.edu.
 
 Frequently Asked Questions
 ==========================
@@ -637,18 +646,6 @@ Workspace, you may refer to `Gen3
 Workspaces <https://gen3.org/products/workspaces/>`__ and `Data Analysis
 in a Gen3 Data
 Commons <https://gen3.org/resources/user/analyze-data/>`__.
-
-**Why do my re-tried GWAS results differ from a prior run?**
-------------------------------------------------------------
-
-Please note, that we are constantly improving the GWAS pipeline. The
-retry action will re-run your analysis based on the most recent data
-available in the database and the most recent GWAS pipeline implemented.
-These may differ from the analysis you ran initially, and these
-differences might affect the outcome. For these reasons, the retry
-action is only applicable to failed workflows. If you have any
-questions, please feel free to contact us via email
-vadc@lists.uchicago.edu.
 
 .. |image1| image:: _static/slide_10.png
 .. |image2| image:: _static/slide_11.png
