@@ -1,5 +1,6 @@
 {
   "gaTrackingId": "UA-119127212-4",
+  "argoTemplate": "gwas-template",
   "graphql": {
     "boardCounts": [
       {
@@ -67,6 +68,12 @@
           "label": "Query data"
         },
         {
+          "icon": "analysis",
+          "link": "/analysis",
+          "color": "#a2a2a2",
+          "name": "Apps"
+        },
+        {
           "name": "Analyze Data",
           "icon": "data-analyze",
           "body": "Perform analysis on the BRAIN Commons data using Jupyter Notebooks.",
@@ -112,6 +119,12 @@
           "link": "/workspace",
           "color": "#a2a2a2",
           "name": "Workspace"
+        },
+        {
+          "icon": "analysis",
+          "link": "/analysis",
+          "color": "#a2a2a2",
+          "name": "Apps"
         },
         {
           "icon": "profile",
@@ -188,8 +201,19 @@
     "noIndex": true,
     "discovery": true,
     "discoveryUseAggMDS": true,
-    "studyRegistration": true
+    "studyRegistration": true,
+    "analysis": true
   },
+  "analysisTools": [
+    {
+      "title": "OHDSI Atlas",
+      "description": "Use this App for cohort creation. These will be automatically populated in the Gen3 GWAS App",
+      "applicationUrl": "https://atlas.qa-mickey.planx-pla.net/atlas/",
+      "image": "/custom/sponsors/gitops-sponsors/atlas-logo.png"
+    },
+    "GWASUIApp",
+    "GWASResults"
+  ],
   "discoveryConfig": {
     "features": {
       "advSearchFilters": {
