@@ -1,5 +1,5 @@
 #!groovy
-@Library('cdis-jenkins-lib@test/skip_secrets_setup') _
+@Library('cdis-jenkins-lib@master') _
 testPipeline {
   MANIFEST = "True"
 }
