@@ -1,5 +1,6 @@
 {
   "gaTrackingId": "UA-119127212-3",
+  "argoTemplate": "gwas-template",
   "graphql": {
     "boardCounts": [
     ],
@@ -36,6 +37,12 @@
           "body": "Use our selected tool to filter out the data you need.",
           "link": "/query",
           "label": "Query data"
+        },
+        {
+          "icon": "analysis",
+          "link": "/analysis",
+          "color": "#a2a2a2",
+          "name": "Apps"
         },
         {
           "name": "Analyze Data",
@@ -91,6 +98,12 @@
           "name": "Query"
         },
         {
+          "icon": "analysis",
+          "link": "/analysis",
+          "color": "#a2a2a2",
+          "name": "Apps"
+        },
+        {
           "icon": "workspace",
           "link": "/workspace",
           "color": "#a2a2a2",
@@ -116,8 +129,19 @@
     "explorer": false,
     "discovery": true,
     "discoveryUseAggMDS": true,
-    "studyRegistration": true
+    "studyRegistration": true,
+    "analysis": true
   },
+  "analysisTools": [
+    {
+      "title": "OHDSI Atlas",
+      "description": "Use this App for cohort creation. These will be automatically populated in the Gen3 GWAS App",
+      "applicationUrl": "https://atlas.qa-mickey.planx-pla.net/atlas/",
+      "image": "/custom/sponsors/gitops-sponsors/atlas-logo.png"
+    },
+    "GWASUIApp",
+    "GWASResults"
+  ],
   "discoveryConfig": {
     "features": {
       "advSearchFilters": {
