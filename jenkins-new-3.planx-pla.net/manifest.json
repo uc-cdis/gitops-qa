@@ -30,7 +30,9 @@
     "hatchery": "quay.io/cdis/hatchery:fix_ecs_ct_length",
     "metadata": "quay.io/cdis/metadata-service:master",
     "dashboard": "quay.io/cdis/gen3-statics:master",
-    "requestor": "quay.io/cdis/requestor:master"
+    "requestor": "quay.io/cdis/requestor:master",
+    "argo-wrapper": "quay.io/cdis/argo-wrapper:master",
+    "cohort-middleware": "quay.io/cdis/cohort-middleware:master"
   },
   "arborist": {
     "deployment_version": "2"
