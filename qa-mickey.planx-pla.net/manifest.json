@@ -20,7 +20,7 @@
     "manifestservice": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifestservice:2023.10",
     "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:2023.10",
     "ohdsi-atlas": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ohdsi-atlas:2.14.0_PRE",
-    "ohdsi-webapi": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ohdsi-webapi:feat_prototype_teamproject_parser_rebased_2.14",
+    "ohdsi-webapi": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ohdsi-webapi:feat_add_arborist_validation",
     "peregrine": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/peregrine:2023.10",
     "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:revert-1431-feat_remove_atlas_starter_prototype",
     "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:2023.10",
