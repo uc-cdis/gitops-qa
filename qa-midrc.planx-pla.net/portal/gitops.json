@@ -328,6 +328,9 @@
         "tabs": [
           {
             "title": "Demographics",
+            "searchFields": [
+              "submitter_id"
+            ],
             "fields": [
               "sex",
               "race",
@@ -337,6 +340,22 @@
               "zip",
               "covid19_positive",
               "project_id"
+            ]
+          },
+          {
+            "title": "Imaging Studies",
+            "fields": [
+              "imaging_studies.study_modality",
+              "imaging_studies.study_description",
+              "imaging_studies.loinc_code",
+              "imaging_studies.loinc_contrast",
+              "imaging_studies.loinc_long_common_name",
+              "imaging_studies.loinc_method",
+              "imaging_studies.loinc_system",
+              "imaging_studies.study_location",
+              "imaging_studies.age_at_imaging",
+              "imaging_studies.body_part_examined",
+              "imaging_studies.days_to_study"
             ]
           },
           {
@@ -384,11 +403,11 @@
           {
             "title": "Annotations",
             "fields": [
-              "case_annotations.airspace_disease_grading",
-              "case_annotations.class_covid19_pneumonia",
-              "case_annotations.midrc_mRALE_score",
-              "case_annotations.annotation_method",
-              "case_annotations.annotator_id"
+              "imaging_study_annotations.airspace_disease_grading",
+              "imaging_study_annotations.class_covid19_pneumonia",
+              "imaging_study_annotations.midrc_mRALE_score",
+              "imaging_study_annotations.annotation_method",
+              "imaging_study_annotations.annotator_id"
             ]
           }
         ]
@@ -404,6 +423,18 @@
           "ethnicity",
           "zip",
           "covid19_positive",
+          "imaging_studies.age_at_imaging",
+          "imaging_studies.body_part_examined",
+          "imaging_studies.days_to_study",
+          "imaging_studies.loinc_code",
+          "imaging_studies.loinc_contrast",
+          "imaging_studies.loinc_long_common_name",
+          "imaging_studies.loinc_method",
+          "imaging_studies.loinc_system",
+          "imaging_studies.study_description",
+          "imaging_studies.study_location",
+          "imaging_studies.study_modality",
+          "imaging_studies.study_uid",
           "measurements.test_name",
           "measurements.test_result_text",
           "measurements.test_method",
@@ -426,12 +457,12 @@
           "conditions.condition_code",
           "conditions.days_to_condition_start",
           "conditions.days_to_condition_end",
-          "case_annotations.airspace_disease_grading",
-          "case_annotations.class_covid19_pneumonia",
-          "case_annotations.midrc_mRALE_score",
-          "case_annotations.annotation_method",
-          "case_annotations.annotator_id",
-          "case_annotations.instance_uids",
+          "imaging_study_annotations.airspace_disease_grading",
+          "imaging_study_annotations.class_covid19_pneumonia",
+          "imaging_study_annotations.midrc_mRALE_score",
+          "imaging_study_annotations.annotation_method",
+          "imaging_study_annotations.annotator_id",
+          "imaging_study_annotations.instance_uids",
           "_imaging_studies_count",
           "_ct_series_file_count",
           "_dx_series_file_count",
@@ -442,7 +473,7 @@
       },
       "dropdowns": {
         "download-table": {
-          "title": "Download Case Metadata Table"
+          "title": "Download Table"
         }
       },
       "buttons": [
@@ -501,6 +532,174 @@
           {
             "field": "submitter_id",
             "name": "Case ID"
+          },
+          {
+            "field": "imaging_studies.age_at_imaging",
+            "name": "Age at Imaging"
+          },
+          {
+            "field": "imaging_studies.body_part_examined",
+            "name": "Body Part Examined"
+          },
+          {
+            "field": "imaging_studies.days_from_study_to_neg_covid_test",
+            "name": "Days from Study to Negative COVID Test"
+          },
+          {
+            "field": "imaging_studies.days_from_study_to_pos_covid_test",
+            "name": "Days from Study to Positive COVID Test"
+          },
+          {
+            "field": "imaging_studies.days_to_study",
+            "name": "Days to Study"
+          },
+          {
+            "field": "imaging_studies.loinc_code",
+            "name": "LOINC Code"
+          },
+          {
+            "field": "imaging_studies.loinc_contrast",
+            "name": "LOINC Contrast"
+          },
+          {
+            "field": "imaging_studies.loinc_long_common_name",
+            "name": "LOINC Long Common Name"
+          },
+          {
+            "field": "imaging_studies.loinc_method",
+            "name": "LOINC Method"
+          },
+          {
+            "field": "imaging_studies.loinc_system",
+            "name": "LOINC System"
+          },
+          {
+            "field": "imaging_studies.study_description",
+            "name": "Study Description"
+          },
+          {
+            "field": "imaging_studies.study_location",
+            "name": "Study Location"
+          },
+          {
+            "field": "imaging_studies.study_modality",
+            "name": "Study Modality"
+          },
+          {
+            "field": "imaging_studies.study_uid",
+            "name": "Study UID"
+          },
+          {
+            "field": "measurements.test_name",
+            "name": "Test Name"
+          },
+          {
+            "field": "measurements.test_result_text",
+            "name": "Test Result"
+          },
+          {
+            "field": "measurements.test_method",
+            "name": "Test Method"
+          },
+          {
+            "field": "measurements.test_days_from_index",
+            "name": "Test Days from Index"
+          },
+          {
+            "field": "medications.days_to_medication_start",
+            "name": "Days to Medication Start"
+          },
+          {
+            "field": "medications.days_to_medication_end",
+            "name": "Days to Medication End"
+          },
+          {
+            "field": "medications.dose_sequence_number",
+            "name": "Dose Sequence Number"
+          },
+          {
+            "field": "medications.medication_code",
+            "name": "Medication Code"
+          },
+          {
+            "field": "medications.medication_code_system",
+            "name": "Medication Code System"
+          },
+          {
+            "field": "medications.medication_manufacturer",
+            "name": "Medication Manufacturer"
+          },
+          {
+            "field": "medications.medication_name",
+            "name": "Medication Name"
+          },
+          {
+            "field": "medications.medication_status",
+            "name": "Medication Status"
+          },
+          {
+            "field": "medications.medication_type",
+            "name": "Medication Type"
+          },
+          {
+            "field": "procedures.breathing_support_type",
+            "name": "Breathing Support Type"
+          },
+          {
+            "field": "procedures.days_to_procedure_start",
+            "name": "Days to Procedure Start"
+          },
+          {
+            "field": "procedures.days_to_procedure_end",
+            "name": "Days to Procedure End"
+          },
+          {
+            "field": "procedures.procedure_name",
+            "name": "Procedure Name"
+          },
+          {
+            "field": "conditions.condition_name",
+            "name": "Condition Name"
+          },
+          {
+            "field": "conditions.condition_code_system",
+            "name": "Condition Code System"
+          },
+          {
+            "field": "conditions.condition_code",
+            "name": "Condition Code"
+          },
+          {
+            "field": "conditions.days_to_condition_start",
+            "name": "Days to Condition Start"
+          },
+          {
+            "field": "conditions.days_to_condition_end",
+            "name": "Days to Condition End"
+          },
+          {
+            "field": "case_annotations.airspace_disease_grading",
+            "name": "Airspace Disease Grading"
+          },
+          {
+            "field": "case_annotations.class_covid19_pneumonia",
+            "name": "Class COVID-19 Pneumonia"
+          },
+          {
+            "field": "case_annotations.midrc_mRALE_score",
+            "name": "MIDRC mRALE Score"
+          },
+          {
+            "field": "case_annotations.annotation_method",
+            "name": "Annotation Method"
+          },
+          {
+            "field": "case_annotations.annotator_id",
+            "name": "Annotator ID"
+          },
+          {
+            "field": "case_annotations.instance_uids",
+            "name": "Instance UIDs"
           },
           {
             "field": "_imaging_studies_count",
@@ -564,7 +763,6 @@
           "annotator_id",
           "instance_uids",
           "submitter_id",
-          "imaging_study_submitter_id",
           "project_id"
         ]
       },
@@ -614,10 +812,6 @@
           {
             "field": "submitter_id",
             "name": "Annotation ID"
-          },
-          {
-            "field": "imaging_study_submitter_id",
-            "name": "Imaging Study UID"
           },
           {
             "field": "case_ids",
@@ -674,7 +868,7 @@
       },
       "dropdowns": {
         "download-table": {
-          "title": "Download Measurements Metadata Table"
+          "title": "Download Table"
         }
       },
       "buttons": [
@@ -732,20 +926,14 @@
     },
     {
       "tabTitle": "Imaging Studies",
-      "charts": {
-        "study_modality": {
-          "chartType": "fullPie",
-          "title": "Study Modality"
-        },
-        "sex": {
-          "chartType": "fullPie",
-          "title": "Case Sex"
-        }
-      },
+      "charts": {},
       "filters": {
         "tabs": [
           {
             "title": "Study Properties",
+            "searchFields": [
+              "study_uid"
+            ],
             "fields": [
               "study_modality",
               "study_description",
@@ -819,6 +1007,7 @@
           "loinc_code",
           "days_from_study_to_pos_covid_test",
           "days_from_study_to_neg_covid_test",
+          "data_format",
           "covid19_positive",
           "age_at_index",
           "index_event",
@@ -845,13 +1034,14 @@
           "project_id"
         ],
         "dicomViewerId": "submitter_id",
+        "dicomViewerUrl": "ohif-viewer",
         "linkFields": [
           "submitter_id"
         ]
       },
       "dropdowns": {
         "download-table": {
-          "title": "Download Imaging Studies Table"
+          "title": "Download Table"
         }
       },
       "buttons": [
@@ -908,12 +1098,40 @@
             "name": "Project ID"
           },
           {
+            "field": "study_uid",
+            "name": "Study UID"
+          },
+          {
             "field": "submitter_id",
             "name": "Browse in DICOM viewer"
           },
           {
             "field": "case_ids",
             "name": "Patient ID"
+          },
+          {
+            "field": "imaging_study_annotations.airspace_disease_grading",
+            "name": "Airspace Disease Grading"
+          },
+          {
+            "field": "imaging_study_annotations.class_covid19_pneumonia",
+            "name": "Class COVID-19 Pneumonia"
+          },
+          {
+            "field": "imaging_study_annotations.midrc_mRALE_score",
+            "name": "MIDRC mRALE Score"
+          },
+          {
+            "field": "imaging_study_annotations.annotation_method",
+            "name": "Annotation Method"
+          },
+          {
+            "field": "imaging_study_annotations.annotator_id",
+            "name": "Annotator ID"
+          },
+          {
+            "field": "imaging_study_annotations.instance_uids",
+            "name": "Instance UIDs"
           },
           {
             "field": "_ct_series_file_count",
@@ -957,7 +1175,7 @@
           "resourceIdField": "object_id",
           "referenceIdFieldInResourceIndex": "_imaging_study_id",
           "referenceIdFieldInDataIndex": "_imaging_study_id",
-          "useFilterForCounts": true
+          "useFilterForCounts": false
         },
         "accessibleFieldCheckList": [
           "project_id"
@@ -972,6 +1190,10 @@
         "tabs": [
           {
             "title": "File Properties",
+            "searchFields": [
+              "file_name",
+              "object_id"
+            ],
             "fields": [
               "source_node",
               "data_format",
@@ -989,12 +1211,19 @@
               "study_location",
               "days_from_study_to_pos_covid_test",
               "days_from_study_to_neg_covid_test",
-              "project_id",
-              "study_uid"
+              "loinc_code",
+              "loinc_contrast",
+              "loinc_long_common_name",
+              "loinc_method",
+              "loinc_system",
+              "project_id"
             ]
           },
           {
             "title": "Series Properties",
+            "searchFields": [
+              "series_uid"
+            ],
             "fields": [
               "source_node",
               "acquisition_type",
@@ -1015,7 +1244,6 @@
               "manufacturer",
               "manufacturer_model_name",
               "modality",
-              "multiframe_images",
               "number_of_temporal_positions",
               "patient_position",
               "pixel_spacing",
@@ -1043,8 +1271,7 @@
               "sex",
               "race",
               "zip",
-              "index_event",
-              "case_ids"
+              "index_event"
             ]
           },
           {
@@ -1088,7 +1315,6 @@
             "manufacturer",
             "manufacturer_model_name",
             "modality",
-            "multiframe_images",
             "number_of_temporal_positions",
             "patient_position",
             "pixel_spacing",
@@ -1110,6 +1336,11 @@
             "study_year_shifted",
             "days_from_study_to_pos_covid_test",
             "days_from_study_to_neg_covid_test",
+            "loinc_code",
+            "loinc_contrast",
+            "loinc_long_common_name",
+            "loinc_method",
+            "loinc_system",
             "covid19_positive",
             "age_at_index",
             "index_event",
@@ -1131,6 +1362,7 @@
             "project_id"
         ],
         "dicomViewerId": "submitter_id",
+        "dicomViewerUrl": "ohif-viewer",
         "linkFields": [
           "submitter_id"
         ]
@@ -1196,6 +1428,14 @@
           {
             "field": "case_ids",
             "name": "Patient ID"
+          },
+          {
+            "field": "study_uid",
+            "name": "Study UID"
+          },
+          {
+            "field": "series_UID",
+            "name": "Series UID"
           }
         ],
         "manifestMapping": {
