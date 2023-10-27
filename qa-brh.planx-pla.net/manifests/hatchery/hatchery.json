@@ -131,6 +131,13 @@
       "fs-gid": 100,
       "user-volume-location": "/home/jovyan/pd",
       "gen3-volume-location": "/home/jovyan/.gen3",
+      "authz": {
+        "version": 0.1,
+        "or": [
+            {"resource_paths": ["/workspace/jupyter-nextflow"]},
+            {"pay_models": ["Direct Pay"]}
+        ]
+      },
       "nextflow": {
         "enabled": true,
         "job-image-whitelist": [
@@ -177,6 +184,13 @@
       "fs-gid": 100,
       "user-volume-location": "/home/jovyan/pd",
       "gen3-volume-location": "/home/jovyan/.gen3",
+      "authz": {
+        "version": 0.1,
+        "or": [
+            {"resource_paths": ["/workspace/jupyter-nextflow"]},
+            {"pay_models": ["Direct Pay"]}
+        ]
+      },
       "nextflow": {
         "enabled": true,
         "job-image-whitelist": [
