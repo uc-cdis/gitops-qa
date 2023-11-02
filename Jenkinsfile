@@ -1,5 +1,5 @@
 #!groovy
-@Library('cdis-jenkins-lib@EliseCastle23-es7global-change') _
+@Library('cdis-jenkins-lib@master') _
 testPipeline {
   MANIFEST = "True"
 }
