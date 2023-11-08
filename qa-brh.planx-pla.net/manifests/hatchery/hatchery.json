@@ -131,52 +131,13 @@
       "fs-gid": 100,
       "user-volume-location": "/home/jovyan/pd",
       "gen3-volume-location": "/home/jovyan/.gen3",
-      "nextflow": {
-        "enabled": true,
-        "job-image-whitelist": [
-          "*"
-        ],
-        "s3-bucket-whitelist": [
-          "ngi-igenomes"
-        ],
-        "instance-ami": "ami-037963b5486a5071f",
-        "instance-type": "SPOT",
-        "instance-min-vcpus": 0,
-        "instance-max-vcpus": 9
-      }
-    },
-    {
-      "target-port": 8888,
-      "cpu-limit": "4.0",
-      "memory-limit": "10Gi",
-      "name": "(AzLinux-Nextflow) Test Nextflow in qa-brh",
-      "image": "quay.io/cdis/azlinux-jupyter-nextflow:nextflow-chore_change_nf_base_img",
-      "env": {
-        "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
+      "authz": {
+        "version": 0.1,
+        "or": [
+            {"resource_paths": ["/workspace/jupyter-nextflow"]},
+            {"pay_models": ["Direct Pay"]}
+        ]
       },
-      "args": [
-        "--NotebookApp.base_url=/lw-workspace/proxy/",
-        "--NotebookApp.default_url=/lab",
-        "--NotebookApp.password=''",
-        "--NotebookApp.token=''",
-        "--NotebookApp.shutdown_no_activity_timeout=5400",
-        "--NotebookApp.quit_button=False"
-      ],
-      "command": [
-        "start-notebook.sh"
-      ],
-      "path-rewrite": "/lw-workspace/proxy/",
-      "use-tls": "false",
-      "ready-probe": "/lw-workspace/proxy/",
-      "lifecycle-post-start": [
-        "/bin/sh",
-        "-c",
-        "export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; rm -rf /home/$IAM/pd/lost+found; ln -s /data /home/$IAM/pd/; true"
-      ],
-      "user-uid": 1000,
-      "fs-gid": 100,
-      "user-volume-location": "/home/jovyan/pd",
-      "gen3-volume-location": "/home/jovyan/.gen3",
       "nextflow": {
         "enabled": true,
         "job-image-whitelist": [

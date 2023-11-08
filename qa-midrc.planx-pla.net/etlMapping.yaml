@@ -35,6 +35,11 @@ mappings:
       - name: case_annotations
         path: annotations
         props:
+          - name: annotation_method
+          - name: annotator_id
+      - name: imaging_study_annotations
+        path: imaging_studies.annotations
+        props:
           - name: airspace_disease_grading
           - name: class_covid19_pneumonia
           - name: midrc_mRALE_score
@@ -75,6 +80,24 @@ mappings:
           - name: days_to_procedure_end
           - name: days_to_procedure_start
           - name: procedure_name
+      - name: imaging_studies
+        path: imaging_studies
+        props:
+          - name: age_at_imaging
+          - name: body_part_examined
+          - name: days_from_study_to_neg_covid_test
+          - name: days_from_study_to_pos_covid_test
+          - name: days_to_study
+          - name: loinc_code
+          - name: loinc_contrast
+          - name: loinc_long_common_name
+          - name: loinc_method
+          - name: loinc_system
+          - name: study_description
+          - name: study_location
+          - name: study_modality
+          - name: study_year
+          - name: study_uid
     joining_props:
       - index: data_file
         join_on: _case_id
@@ -117,27 +140,6 @@ mappings:
       - name: annotation_method
       - name: annotator_id
       - name: instance_uids
-    parent_props:
-      - path: imaging_studies[imaging_study_submitter_id:submitter_id].cases[sex,race,age_at_index,index_event,zip,covid19_positive,ethnicity].datasets[dataset_submitter_id:submitter_id]
-    joining_props:
-      - index: data_file
-        join_on: _annotation_id
-        props:
-          - name: object_id
-            src: object_id
-            fn: set
-          - name: data_format
-            src: data_format
-            fn: set
-          - name: data_type
-            src: data_type
-            fn: set
-          - name: data_category
-            src: data_category
-            fn: set
-          - name: data_file_submitter_ids
-            src: submitter_id
-            fn: set
   - name: midrc_imaging_study
     doc_type: imaging_study
     type: aggregator
@@ -244,7 +246,6 @@ mappings:
       - name: manufacturer
       - name: manufacturer_model_name
       - name: modality
-      - name: multiframe_images
       - name: number_of_temporal_positions
       - name: patient_position
       - name: pixel_spacing
@@ -280,6 +281,9 @@ mappings:
             fn: set
           - name: covid19_positive
             src: covid19_positive
+            fn: set
+          - name: ethnicity
+            src: ethnicity
             fn: set
           - name: index_event
             src: index_event
@@ -330,4 +334,19 @@ mappings:
             fn: set
           - name: study_uid
             src: study_uid
+            fn: set
+          - name: loinc_code
+            src: loinc_code
+            fn: set
+          - name: loinc_contrast
+            src: loinc_contrast
+            fn: set
+          - name: loinc_long_common_name
+            src: loinc_long_common_name
+            fn: set
+          - name: loinc_method
+            src: loinc_method
+            fn: set
+          - name: loinc_system
+            src: loinc_system
             fn: set
