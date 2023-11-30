@@ -339,7 +339,8 @@
     "tier_access_level": "regular",
     "tier_access_limit": 50,
     "lb_type": "internal",
-    "dd_enabled": true
+    "dd_enabled": true,
+    "es7": true
   },
   "indexd": {
     "arborist": "true"
