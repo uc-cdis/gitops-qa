@@ -59,7 +59,8 @@
     "netpolicy": "on",
     "lb_type": "internal",
     "document_url": "https://heal.github.io/platform-documentation",
-    "frontend_root": "gen3ff"
+    "frontend_root": "gen3ff",
+    "es7": true
   },
   "canary": {
     "default": 0

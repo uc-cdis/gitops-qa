@@ -175,7 +175,8 @@
     "lb_type": "internal",
     "public_datasets": true,
     "karpenter": true,
-    "argocd": true
+    "argocd": true,
+    "es7": true
   },
   "canary": {
     "default": 0
