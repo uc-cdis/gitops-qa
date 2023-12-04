@@ -114,7 +114,7 @@
     {
       "appId": "DataDictionary",
       "title": "Data Dictionary",
-      "description": "Use this App to view a tabluar representation of VADC data dictionary",
+      "description": "Use this App to view a tabluar representation of the data dictionary",
       "image": "/src/img/analysis-icons/default-app.png",
       "needsTeamProject": false
     }
