@@ -40,19 +40,19 @@
         }
       ]
     },
-      "topBar": {
-        "items": [
-          {
-            "link": "https://qa-mickey.planx-pla.net/dashboard/Public/documentation/index.html",
-            "name": "Help and Guidance"
-          },
-          {
-            "link": "support@datacommons.io",
-            "name": "Email Support"
-          }
-        ],
-        "useProfileDropdown": false
-      },
+    "topBar": {
+      "items": [
+        {
+          "link": "https://qa-mickey.planx-pla.net/dashboard/Public/documentation/index.html",
+          "name": "Help and Guidance"
+        },
+        {
+          "link": "support@datacommons.io",
+          "name": "Email Support"
+        }
+      ],
+      "useProfileDropdown": false
+    },
     "login": {
       "title": "VA Data Commons",
       "subTitle": "search, compare, and analyze data",
@@ -60,11 +60,13 @@
       "contact": "If you have any questions about access or the registration process, please contact ",
       "email": "support@datacommons.io"
     },
-    "systemUse" : {
-      "systemUseTitle" : "VA systems are intended for Academic and Institutional Users",
-      "systemUseText" : ["VA systems are intended to be used by authorized VA network users for viewing and retrieving information; except as otherwise authorized for official business and limited personal use under VA policy. Information from this system resides on and transmits through computer systems and networks funded by VA. Access or use constitutes understanding and acceptance that there is no reasonable expectation of privacy in the use of Government networks or systems. Access or use of this system constitutes user understanding and acceptance of these terms and constitutes unconditional consent to review and action includes but is not limited to: monitoring; recording; copying; auditing; inspecting; investigating; restricting access; blocking; tracking; disclosing to authorized personnel; or other authorized actions by authorized VA and law enforcement personnel. Unauthorized user attempts or acts to (1) access; upload; download; change; or delete information on this system; (2) modify this system; (3) deny access to this system; (4) accrue resources for unauthorized use; or (5) otherwise misuse this system are strictly prohibited. Such attempts or acts are subject to action that result in criminal; civil; or administrative penalties."],
+    "systemUse": {
+      "systemUseTitle": "VA systems are intended for Academic and Institutional Users",
+      "systemUseText": [
+        "VA systems are intended to be used by authorized VA network users for viewing and retrieving information; except as otherwise authorized for official business and limited personal use under VA policy. Information from this system resides on and transmits through computer systems and networks funded by VA. Access or use constitutes understanding and acceptance that there is no reasonable expectation of privacy in the use of Government networks or systems. Access or use of this system constitutes user understanding and acceptance of these terms and constitutes unconditional consent to review and action includes but is not limited to: monitoring; recording; copying; auditing; inspecting; investigating; restricting access; blocking; tracking; disclosing to authorized personnel; or other authorized actions by authorized VA and law enforcement personnel. Unauthorized user attempts or acts to (1) access; upload; download; change; or delete information on this system; (2) modify this system; (3) deny access to this system; (4) accrue resources for unauthorized use; or (5) otherwise misuse this system are strictly prohibited. Such attempts or acts are subject to action that result in criminal; civil; or administrative penalties."
+      ],
       "displayUseMsg": "cookie",
-      "expireUseMsgDays" : 365
+      "expireUseMsgDays": 365
     },
     "footerLogos": [
       {
@@ -110,11 +112,16 @@
       "description": "Use this App to view status & results of submitted workflows",
       "image": "/src/img/analysis-icons/gwasResults.svg",
       "needsTeamProject": true
+    },
+    {
+      "appId": "DataDictionary",
+      "title": "Data Dictionary",
+      "description": "Use this App to view a tabluar representation of VADC data dictionary",
+      "image": "/src/img/analysis-icons/default-app.png",
+      "needsTeamProject": false
     }
   ],
   "showArboristAuthzOnProfile": false,
   "showFenceAuthzOnProfile": false,
-  "connectSrcCSPWhitelist": [
-    "https://second-argo-bucket.s3.amazonaws.com"
-  ]
+  "connectSrcCSPWhitelist": ["https://second-argo-bucket.s3.amazonaws.com"]
 }
