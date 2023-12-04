@@ -110,6 +110,13 @@
       "description": "Use this App to view status & results of submitted workflows",
       "image": "/src/img/analysis-icons/gwasResults.svg",
       "needsTeamProject": true
+    },
+    {
+      "appId": "DataDictionary",
+      "title": "Data Dictionary",
+      "description": "Use this App to view a tabluar representation of the data dictionary",
+      "image": "/src/img/analysis-icons/default-app.png",
+      "needsTeamProject": false
     }
   ],
   "showArboristAuthzOnProfile": false,
