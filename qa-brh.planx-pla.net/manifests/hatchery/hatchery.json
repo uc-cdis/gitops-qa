@@ -11,7 +11,7 @@
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "quay.io/cdis/ecs-ws-sidecar:2023.12",
+    "image": "quay.io/cdis/ecs-ws-sidecar:feat_nextflow-file",
     "env": {
       "NAMESPACE": "qa-brh",
       "HOSTNAME": "qa-brh.planx-pla.net"
@@ -104,13 +104,13 @@
       "cpu-limit": "4.0",
       "memory-limit": "10Gi",
       "name": "(Nextflow) Test Nextflow in qa-brh",
-      "image": "quay.io/cdis/jupyter-notebook:nextflow-master",
+      "image": "quay.io/cdis/jupyter-notebook:nextflow-feat_nextflow-welcome",
       "env": {
         "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
       },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
-        "--NotebookApp.default_url=/lab",
+        "--LabApp.default_url=/lab/tree/nextflow-welcome.html",
         "--NotebookApp.password=''",
         "--NotebookApp.token=''",
         "--NotebookApp.shutdown_no_activity_timeout=5400",
@@ -122,11 +122,6 @@
       "path-rewrite": "/lw-workspace/proxy/",
       "use-tls": "false",
       "ready-probe": "/lw-workspace/proxy/",
-      "lifecycle-post-start": [
-        "/bin/sh",
-        "-c",
-        "export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; rm -rf /home/$IAM/pd/lost+found; ln -s /data /home/$IAM/pd/; true"
-      ],
       "user-uid": 1000,
       "fs-gid": 100,
       "user-volume-location": "/home/jovyan/pd",
