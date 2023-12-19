@@ -103,7 +103,7 @@
       "target-port": 8888,
       "cpu-limit": "4.0",
       "memory-limit": "10Gi",
-      "name": "(Nextflow) Test Nextflow in qa-brh",
+      "name": "(Beta) Nextflow with CPU instances",
       "image": "quay.io/cdis/jupyter-notebook:nextflow-feat_nextflow-welcome",
       "env": {
         "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
@@ -150,6 +150,62 @@
           "ngi-igenomes"
         ],
         "instance-ami": "ami-037963b5486a5071f",
+        "instance-type": "SPOT",
+        "instance-min-vcpus": 0,
+        "instance-max-vcpus": 9
+      }
+    },
+    {
+      "target-port": 8888,
+      "cpu-limit": "4.0",
+      "memory-limit": "10Gi",
+      "name": "(Beta) Nextflow with GPU instances",
+      "image": "quay.io/cdis/jupyter-notebook:nextflow-feat_nextflow-welcome",
+      "env": {
+        "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
+      },
+      "args": [
+        "--NotebookApp.base_url=/lw-workspace/proxy/",
+        "--LabApp.default_url=/lab/tree/nextflow-welcome.html",
+        "--NotebookApp.password=''",
+        "--NotebookApp.token=''",
+        "--NotebookApp.shutdown_no_activity_timeout=5400",
+        "--NotebookApp.quit_button=False"
+      ],
+      "command": [
+        "start-notebook.sh"
+      ],
+      "path-rewrite": "/lw-workspace/proxy/",
+      "use-tls": "false",
+      "ready-probe": "/lw-workspace/proxy/",
+      "user-uid": 1000,
+      "fs-gid": 100,
+      "user-volume-location": "/home/jovyan/pd",
+      "gen3-volume-location": "/home/jovyan/.gen3",
+      "authz": {
+        "version": 0.1,
+        "or": [
+          {
+            "resource_paths": [
+              "/workspace/jupyter-nextflow"
+            ]
+          },
+          {
+            "pay_models": [
+              "Direct Pay"
+            ]
+          }
+        ]
+      },
+      "nextflow": {
+        "enabled": true,
+        "job-image-whitelist": [
+          "*"
+        ],
+        "s3-bucket-whitelist": [
+          "ngi-igenomes"
+        ],
+        "instance-ami": "ami-0cff796b355bbe395",
         "instance-type": "SPOT",
         "instance-min-vcpus": 0,
         "instance-max-vcpus": 9
