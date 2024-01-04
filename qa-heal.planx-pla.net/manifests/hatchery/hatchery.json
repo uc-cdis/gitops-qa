@@ -105,7 +105,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Generic, Limited Gen3-licensed) Stata Notebook",
-      "image": "quay.io/cdis/jupyter-pystata-gen3-licensed:1.2.0",
+      "image": "quay.io/cdis/jupyter-pystata-gen3-licensed:chore_get-stata-license-from-sidecar",
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
