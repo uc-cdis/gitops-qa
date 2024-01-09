@@ -30,7 +30,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "512Mi",
       "name": "R Studio",
-      "image": "heliumdatastage/rstudio-server:1",
+      "image": "rstudio/r-base:4.2-focal",
       "env": {
         "DISABLE_AUTH": "true"
       },
