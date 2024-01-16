@@ -7,23 +7,17 @@
   },
   "components": {
     "appName": "NIAID Clinical Trials Repository",
-    "banner": [
-      {
-        "type": "warning",
-        "message": "I'm a banner",
-        "resetMsgDays": 1
-      }
-    ],
     "homepageAltText": "NIH: National Institute of Allergy and Infectious Diseases logo",
     "index": {
       "introduction": {
         "heading": "Accessing  NIAID  Clinical Trials Data",
         "multiLineTexts": [
           "AccessClinicalData@NIAID is a NIAID cloud-based, secure data platform that enables sharing of and access to reports and data sets from NIAID COVID-19 and other sponsored clinical trials for the basic and clinical research community.",
+          "AccessClinicalData@NIAID can help support your Data Management Plan (DMP) to share clinical research data in compliance with the 2023 NIH Data Management and Sharing Policy.",
           "<h2 style=color:#BC3231>New Data</h2>",
            "<div class='border-l-8 border-nct-red ml-1 pl-8 mb-4'><p class='prose sm:prose-base 2xl:prose-lg !mt-0'><strong>Now Available:</strong> ACTIV-1 IM - Immune Modulators for Treating COVID-19, sponsored by U.S. Department of Health and Human Services Biomedical Advanced Research and Development Authority and the National Center for Advancing Translational Sciences, National Institutes of Health</p><div class='nct-btn mr-5'><a class='flex flex-row items-center' href='/study-viewer/clinical_trials/NCT04593940'>Click here!</a></div></div><br />",
           "<h3>How to View Available Data</h3>",
-          "Go to <a href='https://qa-niaid.planx-pla.net/study-viewer/clinical_trials'>View Clinical Trials</a>. For each study listed, open the details and select the \"Learn More\" button to review a description of the clinical trial and data dictionary.",
+          "<p>Click the button below and for each study listed, open the details and select the \"Learn More\" button to review a description of the clinical trial and data dictionary.</p><div class='nct-btn mr-5'><a class='flex flex-row items-center' href='https://qa-niaid.planx-pla.net/study-viewer/clinical_trials'>View Clinical Trials</a></div></div><br />",
           "<h3>How to Request Data</h3>",
           "Researchers looking to access NIAID COVID-19 and other sponsored clinical trials data may start the request process by completing the following steps:",
           "1. On the study page of the data set you are interested in, select the \"Login to Request Access\" button to login to the AccessClinicalData@NIAID platform and fill in and submit the Data Access Request (DAR) online form.",
@@ -51,7 +45,7 @@
           "icon": "query",
           "link": "/study-viewer/clinical_trials",
           "color": "#a2a2a2",
-          "name": "Study Viewer"
+          "name": "View Clinical Trials"
         },
         {
           "icon": "workspace",
