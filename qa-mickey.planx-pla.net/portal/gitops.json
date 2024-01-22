@@ -113,7 +113,7 @@
     },
     {
       "appId": "AtlasDataDictionary",
-      "title": "AtlasDataDictionary",
+      "title": "Atlas Data Dictionary",
       "description": "Use this App to view a tabluar representation of the Atlas data dictionary",
       "image": "/src/img/analysis-icons/default-app.png",
       "needsTeamProject": false
