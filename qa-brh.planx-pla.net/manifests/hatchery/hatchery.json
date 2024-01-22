@@ -149,7 +149,7 @@
         "s3-bucket-whitelist": [
           "ngi-igenomes"
         ],
-        "compute-environment-type": "EC2",
+        "compute-environment-type": "SPOT",
         "instance-ami": "ami-037963b5486a5071f",
         "instance-type": "optimal",
         "instance-min-vcpus": 0,
@@ -206,7 +206,7 @@
         "s3-bucket-whitelist": [
           "ngi-igenomes"
         ],
-        "compute-environment-type": "EC2",
+        "compute-environment-type": "SPOT",
         "instance-ami": "ami-0f8fe124b6d65015d",
         "instance-type": "g4dn.xlarge",
         "instance-min-vcpus": 0,
