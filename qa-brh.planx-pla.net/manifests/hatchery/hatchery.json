@@ -71,7 +71,7 @@
       "cpu-limit": "2.0",
       "memory-limit": "16Gi",
       "name": "(Tutorials) Example Analysis Jupyter Lab Notebooks",
-      "image": "quay.io/cdis/brh-notebooks:combined_demos__8f562190843559054baaa7a5604d13455f467c4d",
+      "image": "quay.io/cdis/brh-notebooks:combined_demos__97e141f998c1d96e79fad3bfbc0c9c81726bd582",
       "env": {
         "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
       },
@@ -144,7 +144,7 @@
       "nextflow": {
         "enabled": true,
         "job-image-whitelist": [
-          "*"
+          "143731057154.dkr.ecr.us-east-1.amazonaws.com/nextflow-approved/{{username}}:*"
         ],
         "s3-bucket-whitelist": [
           "ngi-igenomes"
