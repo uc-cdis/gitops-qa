@@ -71,7 +71,7 @@
       "cpu-limit": "2.0",
       "memory-limit": "16Gi",
       "name": "(Tutorials) Example Analysis Jupyter Lab Notebooks",
-      "image": "quay.io/cdis/brh-notebooks:combined_demos__8f562190843559054baaa7a5604d13455f467c4d",
+      "image": "quay.io/cdis/brh-notebooks:combined_demos__97e141f998c1d96e79fad3bfbc0c9c81726bd582",
       "env": {
         "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
       },
@@ -103,7 +103,7 @@
       "target-port": 8888,
       "cpu-limit": "4.0",
       "memory-limit": "10Gi",
-      "name": "(Nextflow) Test Nextflow in qa-brh",
+      "name": "(Beta) Nextflow with CPU instances",
       "image": "quay.io/cdis/jupyter-notebook:nextflow-feat_nextflow-welcome",
       "env": {
         "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
@@ -144,13 +144,71 @@
       "nextflow": {
         "enabled": true,
         "job-image-whitelist": [
-          "*"
+          "143731057154.dkr.ecr.us-east-1.amazonaws.com/nextflow-approved/{{username}}:*"
         ],
         "s3-bucket-whitelist": [
           "ngi-igenomes"
         ],
+        "compute-environment-type": "SPOT",
         "instance-ami": "ami-037963b5486a5071f",
-        "instance-type": "SPOT",
+        "instance-type": "optimal",
+        "instance-min-vcpus": 0,
+        "instance-max-vcpus": 9
+      }
+    },
+    {
+      "target-port": 8888,
+      "cpu-limit": "4.0",
+      "memory-limit": "10Gi",
+      "name": "(Beta) Nextflow with GPU instances",
+      "image": "quay.io/cdis/jupyter-notebook:nextflow-feat_nextflow-welcome",
+      "env": {
+        "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
+      },
+      "args": [
+        "--NotebookApp.base_url=/lw-workspace/proxy/",
+        "--LabApp.default_url=/lab/tree/nextflow-welcome.html",
+        "--NotebookApp.password=''",
+        "--NotebookApp.token=''",
+        "--NotebookApp.shutdown_no_activity_timeout=5400",
+        "--NotebookApp.quit_button=False"
+      ],
+      "command": [
+        "start-notebook.sh"
+      ],
+      "path-rewrite": "/lw-workspace/proxy/",
+      "use-tls": "false",
+      "ready-probe": "/lw-workspace/proxy/",
+      "user-uid": 1000,
+      "fs-gid": 100,
+      "user-volume-location": "/home/jovyan/pd",
+      "gen3-volume-location": "/home/jovyan/.gen3",
+      "authz": {
+        "version": 0.1,
+        "or": [
+          {
+            "resource_paths": [
+              "/workspace/jupyter-nextflow"
+            ]
+          },
+          {
+            "pay_models": [
+              "Direct Pay"
+            ]
+          }
+        ]
+      },
+      "nextflow": {
+        "enabled": true,
+        "job-image-whitelist": [
+          "143731057154.dkr.ecr.us-east-1.amazonaws.com/nextflow-approved/{{username}}:*"
+        ],
+        "s3-bucket-whitelist": [
+          "ngi-igenomes"
+        ],
+        "compute-environment-type": "SPOT",
+        "instance-ami": "ami-0f8fe124b6d65015d",
+        "instance-type": "g4dn.xlarge",
         "instance-min-vcpus": 0,
         "instance-max-vcpus": 9
       }

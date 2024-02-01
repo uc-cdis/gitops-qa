@@ -32,6 +32,7 @@ mappings:
       - name: study_registration_id
       - name: required_idp
       - name: external_url
+      - name: created_datetime
         
   - name: qa-niaid_ct-file
     doc_type: ctfile
