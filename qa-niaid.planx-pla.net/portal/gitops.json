@@ -87,7 +87,7 @@
     {
       "dataType": "clinical_trials",
       "title": "Studies",
-      "titleField": "title",
+      "titleFields": ["title", "most_recent_update"],
       "rowAccessor": "cmc_unique_id",
       "listItemConfig": {
         "blockFields": ["brief_summary"],
