@@ -201,7 +201,7 @@
       "nextflow": {
         "enabled": true,
         "job-image-whitelist": [
-          "*"
+          "143731057154.dkr.ecr.us-east-1.amazonaws.com/nextflow-approved/{{username}}:*"
         ],
         "s3-bucket-whitelist": [
           "ngi-igenomes"
