@@ -131,7 +131,7 @@
       "fileDataType": "ctfile",
       "docDataType": "oafile",
       "openMode": "close-all",
-      "defaultOrderBy": ["created_datetime", "desc"],
+      "defaultOrderBy": ["most_recent_update_datetime", "desc"],
       "buttons": [
         {
           "type": "download",
