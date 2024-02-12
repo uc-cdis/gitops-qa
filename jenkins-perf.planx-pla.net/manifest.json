@@ -1,32 +1,29 @@
 {
   "notes": [
-    "This is the dev environment manifest",
+    "This is the jenkins-perf environment manifest",
     "That's all I have to say"
   ],
   "jenkins": {
     "autodeploy": "yes"
   },
   "versions": {
-    "arborist": "quay.io/cdis/arborist:integration202403",
-    "aws-es-proxy": "quay.io/cdis/aws-es-proxy:v1.3.1",
-    "fence": "quay.io/cdis/fence:integration202403",
+    "arborist": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/arborist:integration202403",
+    "aws-es-proxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/aws-es-proxy:v1.3.1",
+    "fence": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/fence:integration202403",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
-    "indexd": "quay.io/cdis/indexd:integration202403",
-    "ws-storage": "quay.io/cdis/ws-storage:integration202403",
-    "peregrine": "quay.io/cdis/peregrine:integration202403",
-    "pidgin": "quay.io/cdis/pidgin:integration202403",
-    "portal": "quay.io/cdis/data-portal:integration202403",
-    "revproxy": "quay.io/cdis/nginx:1.17.6-ctds-1.0.1",
-    "sheepdog": "quay.io/cdis/sheepdog:integration202403",
-    "spark": "quay.io/cdis/gen3-spark:integration202403",
-    "tube": "quay.io/cdis/tube:integration202403",
-    "manifestservice": "quay.io/cdis/manifestservice:integration202403",
-    "wts": "quay.io/cdis/workspace-token-service:integration202403",
-    "guppy": "quay.io/cdis/guppy:integration202403",
-    "sower": "quay.io/cdis/sower:integration202403",
-    "hatchery": "quay.io/cdis/hatchery:integration202403",
-    "metadata": "quay.io/cdis/metadata-service:integration202403",
-    "dashboard": "quay.io/cdis/gen3-statics:integration202403"
+    "indexd": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexd:integration202403",
+    "peregrine": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/peregrine:integration202403",
+    "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:integration202403",
+    "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:integration202403",
+    "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:integration202403",
+    "spark": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-spark:integration202403",
+    "tube": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/tube:integration202403",
+    "manifestservice": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifestservice:integration202403",
+    "wts": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/workspace-token-service:integration202403",
+    "guppy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/guppy:integration202403",
+    "sower": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sower:integration202403",
+    "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:integration202403",
+    "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:integration202403",
   },
   "arborist": {
     "deployment_version": "2"
@@ -55,9 +52,6 @@
     },
     "restart_policy": "never"
   },
-  "peregrine": {
-    "sidecar": "True"
-  },
   "global": {
     "environment": "qaplanetv1",
     "hostname": "jenkins-perf.planx-pla.net",
@@ -69,9 +63,6 @@
     "logs_bucket": "logs-devplanetv1-gen3",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
     "es7": true
-  },
-  "canary": {
-    "default": 0
   },
   "guppy": {
     "indices": [
@@ -102,36 +93,5 @@
     ],
     "config_index": "jenkins_configs_alias",
     "auth_filter_field": "auth_resource_path"
-  },
-  "scaling": {
-    "arborist": {
-      "strategy": "auto"
-    },
-    "portal": {
-      "strategy": "auto",
-      "min": 1,
-      "max": 2
-    },
-    "fence": {
-      "strategy": "auto"
-    },
-    "presigned-url-fence": {
-      "strategy": "auto"
-    },
-    "indexd": {
-      "strategy": "auto"
-    },
-    "peregrine": {
-      "strategy": "auto"
-    },
-    "revproxy": {
-      "strategy": "auto"
-    },
-    "sheepdog": {
-      "strategy": "auto"
-    },
-    "guppy": {
-      "strategy": "auto"
-    }
   }
 }

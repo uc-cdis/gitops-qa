@@ -1,0 +1,31 @@
+{
+    "arborist": {
+      "strategy": "auto"
+    },
+    "portal": {
+      "strategy": "auto",
+      "min": 1,
+      "max": 2
+    },
+    "fence": {
+      "strategy": "auto"
+    },
+    "presigned-url-fence": {
+      "strategy": "auto"
+    },
+    "indexd": {
+      "strategy": "auto"
+    },
+    "peregrine": {
+      "strategy": "auto"
+    },
+    "revproxy": {
+      "strategy": "auto"
+    },
+    "sheepdog": {
+      "strategy": "auto"
+    },
+    "guppy": {
+      "strategy": "auto"
+    }
+  }
