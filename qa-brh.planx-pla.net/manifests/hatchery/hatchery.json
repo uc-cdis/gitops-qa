@@ -71,7 +71,7 @@
       "cpu-limit": "2.0",
       "memory-limit": "16Gi",
       "name": "(Tutorials) Example Analysis Jupyter Lab Notebooks",
-      "image": "quay.io/cdis/brh-notebooks:combined_demos__97e141f998c1d96e79fad3bfbc0c9c81726bd582",
+      "image": "quay.io/cdis/brh-notebooks:combined_demos__ac58320468729a6f02930e2fe6d4913c0a3f418d",
       "env": {
         "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
       },
@@ -104,7 +104,7 @@
       "cpu-limit": "4.0",
       "memory-limit": "10Gi",
       "name": "(Beta) Nextflow with CPU instances",
-      "image": "quay.io/cdis/jupyter-notebook:nextflow-feat_nextflow-welcome",
+      "image": "quay.io/cdis/jupyter-notebook:nextflow-1.3.1",
       "env": {
         "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
       },
@@ -146,9 +146,7 @@
         "job-image-whitelist": [
           "143731057154.dkr.ecr.us-east-1.amazonaws.com/nextflow-approved/{{username}}:*"
         ],
-        "s3-bucket-whitelist": [
-          "ngi-igenomes"
-        ],
+        "s3-bucket-whitelist": [],
         "compute-environment-type": "SPOT",
         "instance-ami": "ami-037963b5486a5071f",
         "instance-type": "optimal",
@@ -161,7 +159,7 @@
       "cpu-limit": "4.0",
       "memory-limit": "10Gi",
       "name": "(Beta) Nextflow with GPU instances",
-      "image": "quay.io/cdis/jupyter-notebook:nextflow-feat_nextflow-welcome",
+      "image": "quay.io/cdis/jupyter-notebook:nextflow-1.3.1",
       "env": {
         "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
       },
@@ -203,9 +201,7 @@
         "job-image-whitelist": [
           "143731057154.dkr.ecr.us-east-1.amazonaws.com/nextflow-approved/{{username}}:*"
         ],
-        "s3-bucket-whitelist": [
-          "ngi-igenomes"
-        ],
+        "s3-bucket-whitelist": [],
         "compute-environment-type": "SPOT",
         "instance-ami": "ami-0f8fe124b6d65015d",
         "instance-type": "g4dn.xlarge",
