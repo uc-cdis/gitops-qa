@@ -208,7 +208,7 @@
             "menuText": "Not Accessible"
           },
           "pending": {
-            "enabled": true,
+            "enabled": false,
             "menuText": "Pending"
           },
           "notAvailable": {

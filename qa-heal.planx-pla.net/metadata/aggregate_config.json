@@ -264,7 +264,6 @@
                 "dataset_3_title": "",
                 "dataset_4_title": "",
                 "dataset_5_title": "",
-                "data_availability": "pending",
                 "data_resource": "ICPSR"
             },
             "per_item_values": {
@@ -284,28 +283,18 @@
                     "dataset_1_title": "ICPSR 30122/30122.zip"
                 },
                 "10.3886/ICPSR37841.v1": {
-                    "data_availability": "pending",
-                    "authz": "/programs/open",
                     "source_url": "https://www.icpsr.umich.edu/web/ICPSR/studies/37841"
                 },
                 "10.3886/ICPSR37842.v1": {
-                    "data_availability": "pending",
-                    "authz": "/programs/open",
                     "source_url": "https://www.icpsr.umich.edu/web/ICPSR/studies/37842"
                 },
                 "10.3886/ICPSR37887.v2": {
-                    "data_availability": "pending",
-                    "authz": "/programs/open",
                     "source_url": "https://www.icpsr.umich.edu/web/ICPSR/studies/37887"
                 },
                 "10.3886/ICPSR37833.v1": {
-                    "data_availability": "pending",
-                    "authz": "/programs/open",
                     "source_url": "https://www.icpsr.umich.edu/web/ICPSR/studies/37833"
                 },
                 "10.3886/ICPSR35197.v7": {
-                    "data_availability": "pending",
-                    "authz": "/programs/open",
                     "source_url": "https://www.icpsr.umich.edu/web/ICPSR/studies/35197"
                 },
                 "10.3886/ICPSR34945.v3": {
@@ -412,7 +401,7 @@
                 "research_program": "",
                 "research_focus_area": "",
                 "data_availability": "pending",
-                "data_resource": "CinicalTrials.gov"
+                "data_resource": "ClinicalTrials.gov"
             },
             "per_item_values": {
                 "STU-2019-0743": {
@@ -603,7 +592,6 @@
                 "dataset_3_title": "",
                 "dataset_4_title": "",
                 "dataset_5_title": "",
-                "data_availability": "pending",
                 "data_resource": "PDAPS"
             },
             "per_item_values": {
