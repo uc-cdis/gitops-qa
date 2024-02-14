@@ -204,11 +204,11 @@
             "menuText": "Available"
           },
           "unaccessible": {
-            "enabled": false,
+            "enabled": true,
             "menuText": "Not Accessible"
           },
           "pending": {
-            "enabled": true,
+            "enabled": false,
             "menuText": "Pending"
           },
           "notAvailable": {
