@@ -46,7 +46,7 @@
     "name": "pelican-export",
     "container": {
       "name": "job-task",
-      "image": "quay.io/cdis/pelican:integration202403",
+      "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/pelican-export:integration202403",
       "pull_policy": "always",
       "env": []
     },
