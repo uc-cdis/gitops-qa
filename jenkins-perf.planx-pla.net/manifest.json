@@ -23,7 +23,7 @@
     "guppy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/guppy:integration202403",
     "sower": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sower:integration202403",
     "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:integration202403",
-    "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:integration202403",
+    "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:integration202403"
   },
   "arborist": {
     "deployment_version": "2"
