@@ -52,7 +52,8 @@
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",
-        "--NotebookApp.token=''"
+        "--NotebookApp.token=''",
+	"--NotebookApp.shutdown_no_activity_timeout=5400"
       ],
       "command": [
         "start-notebook.sh"
