@@ -21,7 +21,6 @@
     "manifestservice": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifestservice:integration202403",
     "wts": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/workspace-token-service:integration202403",
     "guppy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/guppy:integration202403",
-    "sower": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sower:integration202403",
     "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:integration202403",
     "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:integration202403"
   },
@@ -41,16 +40,6 @@
   "metadata": {
     "USE_AGG_MDS": true,
     "AGG_MDS_NAMESPACE": "jenkins-perf"
-  },
-  "sower": {
-    "name": "pelican-export",
-    "container": {
-      "name": "job-task",
-      "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/pelican-export:integration202403",
-      "pull_policy": "always",
-      "env": []
-    },
-    "restart_policy": "never"
   },
   "global": {
     "environment": "qaplanetv1",
