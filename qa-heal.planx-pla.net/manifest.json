@@ -77,6 +77,9 @@
         "name": "job-task",
         "image": "quay.io/cdis/batch-export:2024.03",
         "pull_policy": "Always",
+        "labels": {
+          "internet": "yes"
+        },
         "env": [
           {
             "name": "GEN3_HOSTNAME",
