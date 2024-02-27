@@ -1,6 +1,6 @@
 {
   "gaTrackingId": "UA-119127212-3",
-  "argoTemplate": "gwas-template",
+  "argoTemplate": "gwas-template-integration-buckets",
   "graphql": {
     "boardCounts": [],
     "chartCounts": [],
