@@ -9,6 +9,13 @@
   },
   "components": {
     "appName": "VA Data Commons",
+    "banner": [
+      {
+        "type": "error",
+        "message": "I'm a banner",
+        "resetMsgDays": 1
+      }
+    ],
     "index": {
       "introduction": {
         "heading": "VA Data Commons",
