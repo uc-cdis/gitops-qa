@@ -59,7 +59,7 @@
     "peregrine": {
       "sidecar": "True"
     }
-  ]
+  ],
   "global": {
     "environment": "qaplanetv1",
     "hostname": "jenkins-perf.planx-pla.net",
