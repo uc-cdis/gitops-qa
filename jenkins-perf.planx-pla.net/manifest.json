@@ -45,19 +45,21 @@
     "USE_AGG_MDS": true,
     "AGG_MDS_NAMESPACE": "jenkins-perf"
   },
-  "sower": {
-    "name": "pelican-export",
-    "container": {
-      "name": "job-task",
-      "image": "quay.io/cdis/pelican:integration202404",
-      "pull_policy": "always",
-      "env": []
+  "sower": [
+    {
+      "name": "pelican-export",
+      "container": {
+        "name": "job-task",
+        "image": "quay.io/cdis/pelican:integration202404",
+        "pull_policy": "always",
+        "env": []
+      },
+      "restart_policy": "never"
     },
-    "restart_policy": "never"
-  },
-  "peregrine": {
-    "sidecar": "True"
-  },
+    "peregrine": {
+      "sidecar": "True"
+    }
+  ]
   "global": {
     "environment": "qaplanetv1",
     "hostname": "jenkins-perf.planx-pla.net",
