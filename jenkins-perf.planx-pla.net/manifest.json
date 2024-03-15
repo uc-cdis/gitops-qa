@@ -7,26 +7,24 @@
     "autodeploy": "yes"
   },
   "versions": {
-    "arborist": "quay.io/cdis/arborist:master",
+    "arborist": "quay.io/cdis/arborist:integration202404",
     "aws-es-proxy": "quay.io/cdis/aws-es-proxy:v1.3.1",
-    "fence": "quay.io/cdis/fence:master",
+    "fence": "quay.io/cdis/fence:integration202404",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
-    "indexd": "quay.io/cdis/indexd:master",
-    "ws-storage": "quay.io/cdis/ws-storage:master",
-    "peregrine": "quay.io/cdis/peregrine:master",
-    "pidgin": "quay.io/cdis/pidgin:master",
-    "portal": "quay.io/cdis/data-portal:master",
-    "revproxy": "quay.io/cdis/nginx:1.17.6-ctds-1.0.1",
-    "sheepdog": "quay.io/cdis/sheepdog:master",
-    "spark": "quay.io/cdis/gen3-spark:master",
-    "tube": "quay.io/cdis/tube:master",
-    "manifestservice": "quay.io/cdis/manifestservice:master",
-    "wts": "quay.io/cdis/workspace-token-service:master",
-    "guppy": "quay.io/cdis/guppy:master",
-    "sower": "quay.io/cdis/sower:master",
-    "hatchery": "quay.io/cdis/hatchery:master",
-    "metadata": "quay.io/cdis/metadata-service:master",
-    "dashboard": "quay.io/cdis/gen3-statics:master"
+    "indexd": "quay.io/cdis/indexd:integration202404",
+    "peregrine": "quay.io/cdis/peregrine:integration202404",
+    "portal": "quay.io/cdis/data-portal:integration202404",
+    "revproxy": "quay.io/cdis/nginx:integration202404",
+    "sheepdog": "quay.io/cdis/sheepdog:integration202404",
+    "spark": "quay.io/cdis/gen3-spark:integration202404",
+    "tube": "quay.io/cdis/tube:integration202404",
+    "manifestservice": "quay.io/cdis/manifestservice:integration202404",
+    "wts": "quay.io/cdis/workspace-token-service:integration202404",
+    "guppy": "quay.io/cdis/guppy:integration202404",
+    "sower": "quay.io/cdis/sower:integration202404",
+    "hatchery": "quay.io/cdis/hatchery:integration202404",
+    "metadata": "quay.io/cdis/metadata-service:integration202404",
+    "dashboard": "quay.io/cdis/gen3-statics:integration202404"
   },
   "arborist": {
     "deployment_version": "2"
@@ -45,16 +43,18 @@
     "USE_AGG_MDS": true,
     "AGG_MDS_NAMESPACE": "jenkins-perf"
   },
-  "sower": {
-    "name": "pelican-export",
-    "container": {
-      "name": "job-task",
-      "image": "quay.io/cdis/pelican:master",
-      "pull_policy": "always",
-      "env": []
-    },
-    "restart_policy": "never"
-  },
+  "sower": [
+    {
+      "name": "pelican-export",
+      "container": {
+        "name": "job-task",
+        "image": "quay.io/cdis/pelican:integration202404",
+        "pull_policy": "always",
+        "env": []
+      },
+      "restart_policy": "never"
+    }
+  ],
   "peregrine": {
     "sidecar": "True"
   },
