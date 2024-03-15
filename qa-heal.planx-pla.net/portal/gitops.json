@@ -119,6 +119,7 @@
     "analysis": false,
     "discovery": true,
     "discoveryUseAggMDS": true,
+    "discoveryUseAggWTS": true,
     "studyRegistration": true,
     "workspaceRegistration": true
   },
