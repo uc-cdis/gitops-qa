@@ -119,7 +119,8 @@
     "analysis": false,
     "discovery": true,
     "discoveryUseAggMDS": true,
-    "discoveryUseAggWTS": false,
+    "discoveryUseAggWTS": true,
+    "workspaceTokenServiceRefreshTokenAtLogin": true,
     "studyRegistration": true,
     "workspaceRegistration": true
   },
