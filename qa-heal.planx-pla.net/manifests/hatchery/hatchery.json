@@ -4,6 +4,12 @@
   "user-volume-size": "10Gi",
   "license-user-maps-dynamodb-table": "gen3-license-user-maps",
   "license-user-maps-global-secondary-index": "activeUsersIndex",
+  "default-pay-model": {
+    "workspace_type": "Trial Workspace",
+    "local": true
+  },
+  "pay-models": [],
+  "pay-models-dynamodb-table": "add-table-name-here",
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
@@ -101,7 +107,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Generic, Limited Gen3-licensed) Stata Notebook",
-      "image": "quay.io/cdis/jupyter-pystata-gen3-licensed:chore_get-stata-license-from-sidecar",
+      "image": "quay.io/cdis/jupyter-pystata-gen3-licensed:1.3.3",
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
