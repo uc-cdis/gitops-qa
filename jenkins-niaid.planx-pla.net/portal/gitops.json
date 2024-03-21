@@ -126,7 +126,7 @@
     }
   },
   "featureFlags": {
-    "explorer": false,
+    "explorer": true,
     "discovery": true,
     "discoveryUseAggMDS": true,
     "studyRegistration": true,
@@ -514,6 +514,58 @@
     }
   ],
   "useArboristUI": true,
+  "dataExplorerConfig": {
+    "filters": {
+      "tabs": [
+        {
+          "title": "Files",
+          "fields": [
+            "project_id",
+            "file_size",
+            "data_format",
+            "data_type"
+          ]
+        }
+      ]
+    },
+    "table": {
+      "enabled": true,
+      "fields": [
+        "project_id",
+        "file_name",
+        "file_size",
+        "data_format"
+      ]
+    },
+    "guppyConfig": {
+      "dataType": "ctfile",
+      "nodeCountTitle": "Files",
+      "fieldMapping": [
+      ],
+      "manifestMapping": {
+        "resourceIndexType": "ctfile",
+        "resourceIdField": "object_id",
+        "referenceIdFieldInResourceIndex": "project_id",
+        "referenceIdFieldInDataIndex": "project_id"
+      }
+    },
+    "buttons": [
+      {
+        "enabled": true,
+        "type": "export-to-workspace",
+        "title": "Export File to Workspace",
+        "leftIcon": "datafile",
+        "rightIcon": "download"
+      },
+      {
+        "enabled": true,
+        "type": "export-to-pfb", 
+        "title": "Export to PFB",
+        "leftIcon": "datafile",
+        "rightIcon": "download"
+      }
+    ]
+  },
   "arrangerConfig": {
     "charts": {
       "project_id": {
