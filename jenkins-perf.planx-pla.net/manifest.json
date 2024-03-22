@@ -7,24 +7,24 @@
     "autodeploy": "yes"
   },
   "versions": {
-    "arborist": "quay.io/cdis/arborist:2024.04",
-    "aws-es-proxy": "quay.io/cdis/aws-es-proxy:v1.3.1",
-    "fence": "quay.io/cdis/fence:2024.04",
+    "arborist": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/arborist:2024.04",
+    "aws-es-proxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/aws-es-proxy:v1.3.1",
+    "fence": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/fence:2024.04",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
-    "indexd": "quay.io/cdis/indexd:2024.04",
-    "peregrine": "quay.io/cdis/peregrine:2024.04",
-    "portal": "quay.io/cdis/data-portal:2024.04",
-    "revproxy": "quay.io/cdis/nginx:2024.04",
-    "sheepdog": "quay.io/cdis/sheepdog:2024.04",
-    "spark": "quay.io/cdis/gen3-spark:2024.04",
-    "tube": "quay.io/cdis/tube:2024.04",
-    "manifestservice": "quay.io/cdis/manifestservice:2024.04",
-    "wts": "quay.io/cdis/workspace-token-service:2024.04",
-    "guppy": "quay.io/cdis/guppy:2024.04",
-    "sower": "quay.io/cdis/sower:2024.04",
-    "hatchery": "quay.io/cdis/hatchery:2024.04",
-    "metadata": "quay.io/cdis/metadata-service:2024.04",
-    "dashboard": "quay.io/cdis/gen3-statics:2024.04"
+    "indexd": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexd:2024.04",
+    "peregrine": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/peregrine:2024.04",
+    "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:2024.04",
+    "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:2024.04",
+    "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:2024.04",
+    "spark": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-spark:2024.04",
+    "tube": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/tube:2024.04",
+    "manifestservice": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifestservice:2024.04",
+    "wts": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/workspace-token-service:2024.04",
+    "guppy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/guppy:2024.04",
+    "sower": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sower:2024.04",
+    "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:2024.04",
+    "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:2024.04",
+    "dashboard": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-statics:2024.04"
   },
   "arborist": {
     "deployment_version": "2"
@@ -48,7 +48,7 @@
       "name": "pelican-export",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/pelican:2024.04",
+        "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/pelican:2024.04",
         "pull_policy": "always",
         "env": []
       },
