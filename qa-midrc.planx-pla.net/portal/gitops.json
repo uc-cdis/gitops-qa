@@ -327,15 +327,6 @@
       "filters": {
         "tabs": [
           {
-            "title": "Annotations",
-            "fields": ["redacted"],
-            "defaultFilters": [
-              {
-                "field": "redacted", "values": ["No"]
-              }
-            ]
-          },  
-          {
             "title": "Demographics",
             "searchFields": [
               "submitter_id"
@@ -534,10 +525,6 @@
         "dataType": "case",
         "nodeCountTitle": "Cases",
         "fieldMapping": [
-          {
-            "field": "redacted",
-            "name": "Data is redacted"
-          },
           {
             "field": "project_id",
             "name": "Project ID"
