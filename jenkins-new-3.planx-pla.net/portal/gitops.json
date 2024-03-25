@@ -120,7 +120,8 @@
     "explorer": true,
     "discovery": true,
     "discoveryUseAggMDS": true,
-    "analysis": true
+    "analysis": true,
+    "studyRegistration": true
   },
   "analysisTools": [
     {

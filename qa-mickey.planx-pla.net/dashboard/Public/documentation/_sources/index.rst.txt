@@ -34,7 +34,9 @@ Table of Contents
    -  `GWAS Results <#gwas-results>`__
 
       -  `Troubleshooting GWAS Errors <#troubleshooting-gwas-errors>`__
-      -  `Data Update Disclaimer <#data-update-disclaimer>`__
+
+   -  `MVP Data Dictionary <#mvp-data-dictionary>`__
+   -  `Data Update Disclaimer <#data-update-disclaimer>`__
 
 -  `Frequently Asked Questions <#frequently-asked-questions>`__
 
@@ -102,9 +104,17 @@ Commons <https://gen3.org/resources/user/analyze-data/>`__.
 --------
 
 The `Apps page <https://va.data-commons.org/analysis>`__ displays the
-option of three Apps: OHDSI Atlas, Gen3 GWAS and GWAS Results. Using
-these Apps, a user may perform a genomic analysis on available data from
-projects that they have access to.
+option of four apps: OHDSI Atlas, Gen3 GWAS, GWAS Results and Data
+Dictionary. Using these Apps, a user may perform a genomic analysis on
+available data from projects that they have access to.
+
+Navigating into Apps for the first time will result in a pop up window
+requiring the user to select a ‘Team project’. Once selected, the user
+will see the Team project name in the upper right of all Apps pages and
+will have access to all team cohorts, GWAS runs and results. Note that
+only the shared objects of the selected team are accessible. If there is
+a need to create or access items for a different team, you will need to
+navigate back to the Apps page and make that selection.
 
 **OHDSI Atlas**
 ---------------
@@ -115,25 +125,27 @@ unified interface to patient level data and analytics. Atlas software
 used to define cohorts, typically dichotomous variables, for analysis.
 
 ATLAS currently includes functionality for searching and navigating the
-vocabulary within the OMOP Common Data Model (CDM). In addition to the
-search and navigation capabilities, it also provides features to curate
-and export custom sets of concept identifiers for use in cohort
-definitions. These will automatically populate on the Gen3 GWAS App. In
-general, ATLAS is an analytics platform that can be used to perform
+vocabulary within the OMOP Common Data Model (CDM). Users may link to
+the MVP Data Dictionary to help with comprehension and curation of
+custom sets. In addition to the search and navigation capabilities, it
+also provides features to curate and export custom sets of concept
+identifiers for use in cohort definitions.
+
+In general, ATLAS is an analytics platform that can be used to perform
 analyses across one or more observational databases which have been
 standardized to the OMOP Common Data Model V5 and can facilitate
 exchange of analysis designs with any other organizations across the
 OHDSI community.
 
 Tutorials for the ATLAS tool can be found
-`here <https://github.com/OHDSI/Atlas/wiki>`__ and the book about the
-OHDSI can be found `here <https://ohdsi.github.io/TheBookOfOhdsi/>`__.
-These resources contain a lot of useful information, particularly you
-might find it useful to read about `Cohort
+`here <https://github.com/OHDSI/Atlas/wiki>`__ and also in the MVP data
+dictionary link. The book about the OHDSI can be found
+`here <https://ohdsi.github.io/TheBookOfOhdsi/>`__. These resources
+contain a lot of useful information, particularly you might find it
+useful to read about `Cohort
 Definition <https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html#Cohorts>`__.
 It is highly advisable that you familiarize yourself with these
-resources before proceeding. We have also provided a brief step-by-step
-guide to creating dichotomous variables here:
+resources before proceeding.
 
 **Steps to Generate a Cohort**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -255,6 +267,9 @@ The “Export” tab provides a text version of how a cohort was created.
 Click on the “Export” tab and then on the “Copy to clipboard” to copy
 the cohort’s information.
 
+Once created and saved, the cohort definition will be available to the
+user as well as other members of the team in the Gen3 GWAS app.
+
 We expect that this documentation in addition to the OHDSI tutorials are
 sufficient for most analyses that users will attempt. If you have any
 questions, please contact us at vadc@lists.uchicago.edu.
@@ -296,11 +311,14 @@ offer highlighted explanations on different parts of the page.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In this step, you will determine the study population. To begin, select
-the cohort that you would like to define your study population with. You
-may only see cohorts that you have access to. You may only select one
-cohort. The size of the cohort population is indicated on the right-hand
-side of the table. To browse the table, please scroll down to the
-bottom. To search for a cohort by name you may use the search box.
+the cohort that you would like to define your study population with. By
+default, the first cohort displayed is the “CATCH ALL” which is
+available to all projects. Subsequent cohorts are those created for your
+specific project. You may only see cohorts that you have access to. You
+may only select one cohort. The size of the cohort population is
+indicated on the right-hand side of the table. To browse the table,
+please scroll down to the bottom. To search for a cohort by name you may
+use the search box.
 
 Once a cohort has been chosen, it will populate the attrition table
 above.
@@ -452,10 +470,10 @@ Status and Review the Results in the “GWAS Results” App.
 **GWAS Results**
 ----------------
 
-This app is used to view your job status and results.
+This app is used to view your team’s job statuses and results.
 
 The landing page displays a table of submitted jobs including the Run ID
-of your analysis, the workflow name, the start time, and the finish
+of team analyses, the workflow name, the start time, and the finish
 time. The table may be sorted by any column by clicking on the up or
 down arrows next to the column name. The “Manage columns” button in the
 upper right corner can be used to toggle the display of any column.
@@ -575,8 +593,23 @@ questions. In your message please provide us with the serial name of
 your workflow and the step in which your GWAS failed (mentioned in your
 error message). A response should be expected with 2 business days.
 
+**MVP Data Dictionary**
+-----------------------
+
+The Data Dictionary App connects users to the static MVP data
+documentation which contains definitions, descriptions, and metadata for
+the variables and concepts available in the VADC Atlas OHDSI and GWAS
+apps. This is also available through a link from the VADC Atlas OHSDI
+page. When selecting data dictionary from the Apps browser, the user
+will be presented with a button. This button directs the user to an
+outside tab. Clicking on the MVP Data Dictionary button will
+automatically launch a popup explaining that the link takes the user
+away from VADC. Clicking the “OK” button will open the dictionary in a
+new tab of the user’s browser allowing toggling between the two sites.
+**Please note- the site can only be accessible within the VA’s VPN.**
+
 **Data Update Disclaimer**
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 Please note that we are constantly improving the GWAS pipeline. The
 retry action will re-run your analysis based on the most recent data
