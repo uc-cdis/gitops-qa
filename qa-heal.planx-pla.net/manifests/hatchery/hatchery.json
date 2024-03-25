@@ -4,12 +4,6 @@
   "user-volume-size": "10Gi",
   "license-user-maps-dynamodb-table": "gen3-license-user-maps",
   "license-user-maps-global-secondary-index": "activeUsersIndex",
-  "default-pay-model": {
-    "workspace_type": "Trial Workspace",
-    "local": true
-  },
-  "pay-models": [],
-  "pay-models-dynamodb-table": "add-table-name-here",
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
