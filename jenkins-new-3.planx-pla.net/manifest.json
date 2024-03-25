@@ -32,6 +32,8 @@
     "dashboard": "quay.io/cdis/gen3-statics:master",
     "requestor": "quay.io/cdis/requestor:master",
     "argo-wrapper": "quay.io/cdis/argo-wrapper:master",
+    "cedar-wrapper": "quay.io/cdis/cedar-wrapper-service:master",
+    "kayako-wrapper": "quay.io/cdis/kayako-wrapper-service:master",
     "cohort-middleware": "quay.io/cdis/cohort-middleware:master"
   },
   "arborist": {
