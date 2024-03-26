@@ -541,7 +541,13 @@
       ]
     },
     "table": {
-      "enabled": false
+      "enabled": true,
+      "fields": [
+        "project_id",
+        "ethnicity",
+        "gender",
+        "submitter_id"
+      ]
     },
     "guppyConfig": {
       "dataType": "case",
@@ -560,6 +566,13 @@
         "enabled": true,
         "type": "export-to-workspace",
         "title": "Export File to Workspace",
+        "leftIcon": "datafile",
+        "rightIcon": "download"
+      },
+      {
+        "enabled": true,
+        "type": "export-to-pfb", 
+        "title": "Export to PFB",
         "leftIcon": "datafile",
         "rightIcon": "download"
       }
