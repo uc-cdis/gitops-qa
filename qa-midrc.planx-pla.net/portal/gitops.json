@@ -340,6 +340,11 @@
               "zip",
               "covid19_positive",
               "project_id"
+            ],
+            "defaultFilters": [
+              {
+                "field": "sex", "values": ["Male", "test value"]
+              }
             ]
           },
           {
