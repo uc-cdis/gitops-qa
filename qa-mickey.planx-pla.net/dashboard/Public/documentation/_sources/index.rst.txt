@@ -116,6 +116,15 @@ only the shared objects of the selected team are accessible. If there is
 a need to create or access items for a different team, you will need to
 navigate back to the Apps page and make that selection.
 
+This release also introduces two distinct user roles. By default, users
+are assigned to the ‘regular user’ role. This allows for the creation of
+a new cohort, generating the cohort so that it appears in the GWAS App
+for all members of the user’s team, and the ability to copy a shared
+cohort definition. A second role, the ‘author user’ allows cohorts to be
+defined, created, and shared with the GWAS app for ALL regular users.
+The ‘author user’ also has authorization to view all regular user cohort
+definitions and copy any to make it a share cohort definition.
+
 **OHDSI Atlas**
 ---------------
 
@@ -473,10 +482,11 @@ Status and Review the Results in the “GWAS Results” App.
 This app is used to view your team’s job statuses and results.
 
 The landing page displays a table of submitted jobs including the Run ID
-of team analyses, the workflow name, the start time, and the finish
-time. The table may be sorted by any column by clicking on the up or
-down arrows next to the column name. The “Manage columns” button in the
-upper right corner can be used to toggle the display of any column.
+of team analyses, the workflow name, the workflow owner, the start time,
+and the finish time. The table may be sorted by any column by clicking
+on the up or down arrows next to the column name. The “Manage columns”
+button in the upper right corner can be used to toggle the display of
+any column.
 
 Three additional columns are displayed by default: job status, details,
 and actions. The details columns lists additional information about your
