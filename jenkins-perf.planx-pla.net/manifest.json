@@ -7,24 +7,24 @@
     "autodeploy": "yes"
   },
   "versions": {
-    "arborist": "quay.io/cdis/arborist:integration202405",
+    "arborist": "quay.io/cdis/arborist:2024.05",
     "aws-es-proxy": "quay.io/cdis/aws-es-proxy:v1.3.1",
-    "fence": "quay.io/cdis/fence:integration202405",
+    "fence": "quay.io/cdis/fence:2024.05",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
-    "indexd": "quay.io/cdis/indexd:integration202405",
-    "peregrine": "quay.io/cdis/peregrine:integration202405",
-    "portal": "quay.io/cdis/data-portal:integration202405",
-    "revproxy": "quay.io/cdis/nginx:integration202405",
-    "sheepdog": "quay.io/cdis/sheepdog:integration202405",
-    "spark": "quay.io/cdis/gen3-spark:integration202405",
-    "tube": "quay.io/cdis/tube:integration202405",
-    "manifestservice": "quay.io/cdis/manifestservice:integration202405",
-    "wts": "quay.io/cdis/workspace-token-service:integration202405",
-    "guppy": "quay.io/cdis/guppy:integration202405",
-    "sower": "quay.io/cdis/sower:integration202405",
-    "hatchery": "quay.io/cdis/hatchery:integration202405",
-    "metadata": "quay.io/cdis/metadata-service:integration202405",
-    "dashboard": "quay.io/cdis/gen3-statics:integration202405"
+    "indexd": "quay.io/cdis/indexd:2024.05",
+    "peregrine": "quay.io/cdis/peregrine:2024.05",
+    "portal": "quay.io/cdis/data-portal:2024.05",
+    "revproxy": "quay.io/cdis/nginx:2024.05",
+    "sheepdog": "quay.io/cdis/sheepdog:2024.05",
+    "spark": "quay.io/cdis/gen3-spark:2024.05",
+    "tube": "quay.io/cdis/tube:2024.05",
+    "manifestservice": "quay.io/cdis/manifestservice:2024.05",
+    "wts": "quay.io/cdis/workspace-token-service:2024.05",
+    "guppy": "quay.io/cdis/guppy:2024.05",
+    "sower": "quay.io/cdis/sower:2024.05",
+    "hatchery": "quay.io/cdis/hatchery:2024.05",
+    "metadata": "quay.io/cdis/metadata-service:2024.05",
+    "dashboard": "quay.io/cdis/gen3-statics:2024.05"
   },
   "arborist": {
     "deployment_version": "2"
@@ -48,7 +48,7 @@
       "name": "pelican-export",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/pelican:integration202405",
+        "image": "quay.io/cdis/pelican:2024.05",
         "pull_policy": "always",
         "env": []
       },
