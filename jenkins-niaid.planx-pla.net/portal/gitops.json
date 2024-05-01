@@ -126,7 +126,7 @@
     }
   },
   "featureFlags": {
-    "explorer": false,
+    "explorer": true,
     "discovery": true,
     "discoveryUseAggMDS": true,
     "studyRegistration": true,
@@ -139,8 +139,20 @@
       "applicationUrl": "https://atlas.qa-mickey.planx-pla.net/atlas/",
       "image": "/custom/sponsors/gitops-sponsors/atlas-logo.png"
     },
-    "GWASUIApp",
-    "GWASResults"
+    {
+      "appId": "GWASUIApp",
+      "title": "Gen3 GWAS",
+      "description": "Use this App to perform high throughput GWAS on Million Veteran Program (MVP) data, using the University of Washington Genesis pipeline",
+      "image": "/src/img/analysis-icons/gwas.svg",
+      "needsTeamProject": true
+    },
+    {
+      "appId": "GWASResults",
+      "title": "GWAS Results",
+      "description": "Use this App to view status & results of submitted workflows",
+      "image": "/src/img/analysis-icons/gwasResults.svg",
+      "needsTeamProject": true
+    }
   ],
   "discoveryConfig": {
     "features": {
@@ -514,6 +526,58 @@
     }
   ],
   "useArboristUI": true,
+  "dataExplorerConfig": {
+    "filters": {
+      "tabs": [
+        {
+          "title": "Files",
+          "fields": [
+            "project_id",
+            "file_size",
+            "data_format",
+            "data_type"
+          ]
+        }
+      ]
+    },
+    "table": {
+      "enabled": true,
+      "fields": [
+        "project_id",
+        "file_name",
+        "file_size",
+        "data_format"
+      ]
+    },
+    "guppyConfig": {
+      "dataType": "ctfile",
+      "nodeCountTitle": "Files",
+      "fieldMapping": [
+      ],
+      "manifestMapping": {
+        "resourceIndexType": "ctfile",
+        "resourceIdField": "object_id",
+        "referenceIdFieldInResourceIndex": "project_id",
+        "referenceIdFieldInDataIndex": "project_id"
+      }
+    },
+    "buttons": [
+      {
+        "enabled": true,
+        "type": "export-to-workspace",
+        "title": "Export File to Workspace",
+        "leftIcon": "datafile",
+        "rightIcon": "download"
+      },
+      {
+        "enabled": true,
+        "type": "export-to-pfb", 
+        "title": "Export to PFB",
+        "leftIcon": "datafile",
+        "rightIcon": "download"
+      }
+    ]
+  },
   "arrangerConfig": {
     "charts": {
       "project_id": {
