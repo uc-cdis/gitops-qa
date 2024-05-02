@@ -16,7 +16,6 @@
     "indexd": "quay.io/cdis/indexd:master",
     "ws-storage": "quay.io/cdis/ws-storage:master",
     "peregrine": "quay.io/cdis/peregrine:master",
-    "pidgin": "quay.io/cdis/pidgin:master",
     "revproxy": "quay.io/cdis/nginx:master",
     "sheepdog": "quay.io/cdis/sheepdog:master",
     "portal": "quay.io/cdis/data-portal:master",
@@ -33,7 +32,9 @@
     "dashboard": "quay.io/cdis/gen3-statics:master",
     "requestor": "quay.io/cdis/requestor:master",
     "cedar-wrapper": "quay.io/cdis/cedar-wrapper-service:master",
-    "kayako-wrapper": "quay.io/cdis/kayako-wrapper-service:master"
+    "kayako-wrapper": "quay.io/cdis/kayako-wrapper-service:master",
+    "argo-wrapper": "quay.io/cdis/argo-wrapper:master",
+    "cohort-middleware": "quay.io/cdis/cohort-middleware:master"
   },
   "sower": [
     {
@@ -283,8 +284,8 @@
     "sync_from_dbgap": "True",
     "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
     "dispatcher_job_num": "5",
-    "netpolicy": "on",
-    "tier_access_level" : "libre"
+    "tier_access_level" : "libre",
+    "es7": true
   },
   "ssjdispatcher": {
     "job_images": {
@@ -357,5 +358,8 @@
     "guppy": {
       "strategy": "auto"
     }
+  },
+  "argo": {
+    "argo_server_service_url": "http://argo-argo-workflows-server.argo.svc.cluster.local:2746"
   }
 }

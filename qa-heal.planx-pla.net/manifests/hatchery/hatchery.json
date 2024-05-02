@@ -2,10 +2,12 @@
   "user-namespace": "jupyter-pods-qa-heal",
   "sub-dir": "/lw-workspace",
   "user-volume-size": "10Gi",
+  "license-user-maps-dynamodb-table": "gen3-license-user-maps",
+  "license-user-maps-global-secondary-index": "activeUsersIndex",
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "quay.io/cdis/ecs-ws-sidecar:2023.06",
+    "image": "quay.io/cdis/ecs-ws-sidecar:2024.04",
     "env": {
       "NAMESPACE": "qa-heal"
     },
@@ -68,7 +70,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Generic, User-licensed) Stata Notebook ",
-      "image": "quay.io/cdis/jupyter-pystata-user-licensed:feat_stata-license",
+      "image": "quay.io/cdis/jupyter-pystata-user-licensed:1.2.0",
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
@@ -99,9 +101,18 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Generic, Limited Gen3-licensed) Stata Notebook",
-      "image": "quay.io/cdis/jupyter-pystata-gen3-licensed:feat_stata-license",
+      "image": "quay.io/cdis/jupyter-pystata-gen3-licensed:1.3.3",
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
+      },
+      "license": {
+        "enabled": true,
+        "license-type": "STATA-HEAL",
+        "max-license-ids": 6,
+        "g3auto-name": "stata-workspace-gen3-license-g3auto",
+        "g3auto-key": "stata_license.txt",
+        "file-path": "stata.lic",
+        "workspace-flavor": "gen3-licensed"
       },
       "args": [
         "--NotebookApp.base_url=/lw-workspace/proxy/",

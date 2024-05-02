@@ -1,5 +1,6 @@
 {
   "gaTrackingId": "UA-119127212-3",
+  "argoTemplate": "gwas-template",
   "graphql": {
     "boardCounts": [
     ],
@@ -33,10 +34,16 @@
           "color": "#035C94"
         },
         {
+          "icon": "analysis",
+          "link": "/analysis",
+          "color": "#a2a2a2",
+          "name": "Apps"
+        },
+        {
           "name": "Analyze Data",
           "icon": "anvil-analyze",
           "body": "Analyze your selected subjects using Jupyter Notebooks in our secure cloud environment",
-          "link": "#hostname#workspace/",
+          "link": "/workspace",
           "label": "Run analysis",
           "color": "#035C94"
         }
@@ -80,8 +87,14 @@
           "name": "Exploration"
         },
         {
+          "icon": "analysis",
+          "link": "/analysis",
+          "color": "#a2a2a2",
+          "name": "Apps"
+        },
+        {
           "icon": "workspace",
-          "link": "#hostname#workspace/",
+          "link": "/workspace",
           "color": "#035C94",
           "name": "Workspace"
         },
@@ -107,8 +120,31 @@
     "explorer": true,
     "discovery": true,
     "discoveryUseAggMDS": true,
-    "studyRegistration": true
+    "studyRegistration": true,
+    "analysis": true
   },
+  "analysisTools": [
+    {
+      "title": "OHDSI Atlas",
+      "description": "Use this App for cohort creation. These will be automatically populated in the Gen3 GWAS App",
+      "applicationUrl": "https://atlas.qa-mickey.planx-pla.net/atlas/",
+      "image": "/custom/sponsors/gitops-sponsors/atlas-logo.png"
+    },
+    {
+      "appId": "GWASUIApp",
+      "title": "Gen3 GWAS",
+      "description": "Use this App to perform high throughput GWAS on Million Veteran Program (MVP) data, using the University of Washington Genesis pipeline",
+      "image": "/src/img/analysis-icons/gwas.svg",
+      "needsTeamProject": true
+    },
+    {
+      "appId": "GWASResults",
+      "title": "GWAS Results",
+      "description": "Use this App to view status & results of submitted workflows",
+      "image": "/src/img/analysis-icons/gwasResults.svg",
+      "needsTeamProject": true
+    }
+  ],
   "discoveryConfig": {
     "features": {
       "advSearchFilters": {
