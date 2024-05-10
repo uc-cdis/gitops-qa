@@ -145,6 +145,9 @@
           },
           {
             "key": "Age"
+          },
+          {
+            "key": "Common Data Elements"
           }
         ]
       },
@@ -457,23 +460,28 @@
       },
       {
         "name": "Research Program",
-        "color": "#532565",
+        "color": "#c0b3c5",
+        "display": false
+      },
+      {
+        "name": "Common Data Elements",
+        "color": "#dabeca",
+        "display": false
+      },
+      {
+        "name": "Other",
+        "color": "#dbb9b3",
         "display": false
       },
       {
         "name": "Commons",
         "displayName": "Data Resources",
-        "color": "#981f32",
-        "display": false
-      },
-      {
-        "name": "Other",
-        "color": "#bf362e",
+        "color": "#eecdcb",
         "display": false
       },
       {
         "name": "Data Repository",
-        "color": "#bf362e",
+        "color": "#f5d8c3",
         "display": true
       }
     ]
@@ -561,7 +569,9 @@
         "clinicalTrialFields": ["NCTId", "OfficialTitle", "BriefTitle", "Acronym", "StudyType", "OverallStatus", "StartDate", "StartDateType", "CompletionDate", "CompletionDateType", "IsFDARegulatedDrug", "IsFDARegulatedDevice", "IsPPSD", "BriefSummary", "DetailedDescription", "Condition", "DesignAllocation", "DesignPrimaryPurpose", "Phase", "DesignInterventionModel", "EnrollmentCount", "EnrollmentType", "DesignObservationalModel", "InterventionType", "PrimaryOutcomeMeasure", "SecondaryOutcomeMeasure", "OtherOutcomeMeasure", "Gender", "GenderBased", "MaximumAge", "MinimumAge", "IPDSharing", "IPDSharingTimeFrame", "IPDSharingAccessCriteria", "IPDSharingURL", "SeeAlsoLinkURL", "AvailIPDURL", "AvailIPDId", "AvailIPDComment"],
         "dataDictionarySubmissionBucket": "",
         "dataDictionarySubmissionDisclaimerField": "All submitted data dictionaries will be available to public.",
-        "dataDictionaryField": "data_dictionaries"
+        "dataDictionaryField": "data_dictionaries",
+        "cdeMetadataGUIDType": "cde_metadata",
+        "cdeMetadataField": "cde_metadata"
       },
       "workspaceRegistrationConfig" : {
         "workspacePolicyId": "workspace_strides_integrated",
