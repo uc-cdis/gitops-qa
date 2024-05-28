@@ -608,15 +608,13 @@
       "_subject_id": {
         "chartType": "count",
         "title": "Subjects"
-      },
-      "fileCounts": false
+      }
     },
     "filters": {
       "tabs": [
         {
           "title": "Project",
           "fields": [
-            "programs_name",
             "project_id",
             "data_type",
             "data_format"
