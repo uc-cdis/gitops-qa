@@ -575,16 +575,14 @@
     "titleField": "project_id",
     "rowAccessor": "submitter_id",
     "listItemConfig": {
-      "blockFields": ["breed"],
-      "tableFields": ["data_type", "auth_resource_path", "disease_type"]
+      "blockFields": ["project_id"],
+      "tableFields": ["data_type"]
     },
     "fieldMapping": [
-      { "field": "breed", "name": "Breed" },
+      { "field": "category", "name": "Category" },
       { "field": "project_id", "name": "Project_ID"},
-      { "field": "submitter_id", "name": "Submitter_ID"},
       { "field": "data_type", "name": "Data_Type"},
-      { "field": "auth_resource_path", "name": "Resource Path"},
-      { "field": "disease_type", "name": "Disease"}
+      { "field": "condition", "name": "Condition"}
     ],
     "openMode": "close-all",
     "buttons": [
@@ -626,9 +624,7 @@
       "enabled": true,
       "fields": [
         "project_id",
-        "file_id",
-        "data_format",
-        "breed"   
+        "data_format"
       ]
     },
     "dropdowns": {
@@ -708,13 +704,11 @@
         {
           "title": "File",
           "fields": [
-            "programs_name",
             "project_id",
             "data_category",
             "data_type",
-            "data_format",
-            "callset",
-            "bucket_path"
+            "file_id",
+            "data_format"
           ],
           "searchFields": [
             "file_name"
@@ -728,9 +722,7 @@
         "project_id",
         "file_name",
         "file_size",
-        "object_id",
-        "callset"
-      ]
+        "object_id"      ]
     },
     "guppyConfig": {
       "dataType": "file",
