@@ -291,7 +291,7 @@
   "guppy": {
     "indices": [
       {
-        "index": "jenkins_subject_alias_new",
+        "index": "jenkins_subject_new_alias",
         "type": "subject"
       },
       {
