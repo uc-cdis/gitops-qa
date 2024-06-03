@@ -55,10 +55,6 @@
         {
           "node": "subject",
           "name": "Subjects"
-        },
-        {
-          "node": "study",
-          "name": "Studies"
         }
       ]
     },
@@ -602,10 +598,6 @@
       "project_id": {
         "chartType": "count",
         "title": "Projects"
-      },
-      "_subject_id": {
-        "chartType": "count",
-        "title": "Subjects"
       }
     },
     "filters": {
@@ -707,7 +699,6 @@
             "project_id",
             "data_category",
             "data_type",
-            "file_id",
             "data_format"
           ],
           "searchFields": [
