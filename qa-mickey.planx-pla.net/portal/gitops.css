@@ -17,7 +17,7 @@
 
 .login-page .login-page__title {
   display: block;
-  background-image: url(/dashboard/Public/login-logo.png);
+  background-image: url(/custom/sponsors/gitops-sponsors/login-logo.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: center;
