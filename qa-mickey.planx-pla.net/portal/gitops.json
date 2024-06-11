@@ -1,6 +1,6 @@
 {
   "gaTrackingId": "UA-119127212-3",
-  "argoTemplate": "gwas-template-new-arborist-resource",
+  "argoTemplate": "gwas-template-new-arborist-resource-team-projects",
   "graphql": {
     "boardCounts": [],
     "chartCounts": [],
