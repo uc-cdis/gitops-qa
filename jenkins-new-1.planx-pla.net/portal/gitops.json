@@ -490,16 +490,14 @@
     "titleField": "project_id",
     "rowAccessor": "submitter_id",
     "listItemConfig": {
-      "blockFields": ["breed"],
-      "tableFields": ["data_type", "auth_resource_path", "disease_type"]
+      "blockFields": ["project_id"],
+      "tableFields": ["data_type"]
     },
     "fieldMapping": [
-      { "field": "breed", "name": "Breed" },
+      { "field": "category", "name": "Category" },
       { "field": "project_id", "name": "Project_ID"},
-      { "field": "submitter_id", "name": "Submitter_ID"},
       { "field": "data_type", "name": "Data_Type"},
-      { "field": "auth_resource_path", "name": "Resource Path"},
-      { "field": "disease_type", "name": "Disease"}
+      { "field": "condition", "name": "Condition"}
     ],
     "openMode": "close-all",
     "buttons": [
@@ -510,7 +508,9 @@
         "type": "request_access",
         "resourceDisplayNameField": "title",
         "accessRequestedText": "DAR In Progress",
-        "accessRequestedTooltipText": "Your recently submitted DAR is being reviewed by NIAID"
+        "accessRequestedTooltipText": "Your recently submitted DAR is being reviewed by NIAID",
+        "enableButtonField": "data_available_for_request",
+        "disableButtonTooltipText": "This dataset is coming soon"
       }]
     }
   ],
@@ -522,10 +522,6 @@
         "project_id": {
           "chartType": "count",
           "title": "Projects"
-        },
-        "node_id": {
-          "chartType": "count",
-          "title": "Subjects"
         },
         "sex": {
           "chartType": "pie",
@@ -543,9 +539,8 @@
             "fields": [
               "project_id",
               "anvil_project_id",
-              "project_dbgap_accession_number",
-              "project_dbgap_phs",
-              "project_dbgap_consent_text"
+              "data_type",
+              "data_format"
             ]
           }, {
             "title": "Subject",
