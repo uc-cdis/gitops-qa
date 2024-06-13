@@ -161,7 +161,7 @@
         "enabled": true,
         "manifestFieldName": "__manifest",
         "enableExportFullMetadata": true,
-        "excludedMetadataFields": ["authz", "registration_authz", "registrant_username", "advSearchFilters"],
+        "excludedMetadataFields": ["authz", "registration_authz", "registrant_username", "advSearchFilters", "__accessible", "commons_name", "commons_url", "commons", "frontend_uid"],
         "enableDownloadManifest": true,
         "enableDownloadZip": true,
         "downloadZipButtonText": "Download Zip",
@@ -467,23 +467,23 @@
       },
       {
         "name": "Common Data Elements",
-        "color": "#dabeca",
+        "color": "#532565",
         "display": false
       },
       {
         "name": "Other",
-        "color": "#dbb9b3",
+        "color": "#982568",
         "display": false
       },
       {
         "name": "Commons",
         "displayName": "Data Resources",
-        "color": "#eecdcb",
+        "color": "#981f32",
         "display": false
       },
       {
         "name": "Data Repository",
-        "color": "#f5d8c3",
+        "color": "#bf362e",
         "display": true
       }
     ]
