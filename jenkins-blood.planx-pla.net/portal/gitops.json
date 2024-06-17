@@ -2,37 +2,9 @@
   "gaTrackingId": "UA-119127212-2",
   "argoTemplate": "gwas-template",
   "graphql": {
-    "boardCounts": [{
-        "graphql": "_study_count",
-        "name": "Study",
-        "plural": "Studies"
-      },
-      {
-        "graphql": "_case_count",
-        "name": "Case",
-        "plural": "Cases"
-      },
-      {
-        "graphql": "_aliquot_count",
-        "name": "Aliquot",
-        "plural": "Aliquots"
-      }
+    "boardCounts": [
     ],
-    "chartCounts": [{
-        "graphql": "_study_count",
-        "name": "Study",
-        "plural": "Studies"
-      },
-      {
-        "graphql": "_case_count",
-        "name": "Case",
-        "plural": "Cases"
-      },
-      {
-        "graphql": "_aliquot_count",
-        "name": "Aliquot",
-        "plural": "Aliquots"
-      }
+    "chartCounts": [
     ],
     "projectDetails": "boardCounts"
   },
@@ -75,16 +47,8 @@
         "link": "/submission"
       },
       "homepageChartNodes": [{
-          "node": "study",
-          "name": "Studies"
-        },
-        {
-          "node": "case",
-          "name": "Cases"
-        },
-        {
-          "node": "aliquot",
-          "name": "Aliquots"
+          "node": "subject",
+          "name": "Subjects"
         }
       ],
       "buttons": [{
@@ -589,22 +553,19 @@
   },
   "studyViewerConfig": [
     {
-    "dataType": "clinical_trials",
+    "dataType": "subject",
     "title": "Studies",
-    "titleField": "title",
-    "rowAccessor": "cmc_unique_id",
+    "titleField": "project_id",
+    "rowAccessor": "submitter_id",
     "listItemConfig": {
-      "blockFields": ["brief_summary"],
-      "tableFields": ["data_availability_date", "data_available", "creator", "nct_number", "condition", "category", "clinical_trial_website", "publications"]
+      "blockFields": ["project_id"],
+      "tableFields": ["data_type"]
     },
     "fieldMapping": [
-      { "field": "brief_summary", "name": "Brief Study Description" },
-      { "field": "description", "name": "Detailed Description"},
-      { "field": "creator", "name": "Sponsor"},
       { "field": "category", "name": "Study Type"},
-      { "field": "clinical_trial_website", "name": "Websites"},
-      { "field": "nct_number", "name": "NCT Number"},
-      { "field": "publications", "name": "Study Publications"}
+      { "field": "project_id", "name": "Project_ID"},
+      { "field": "data_type", "name": "Data_Type"},
+      { "field": "condition", "name": "Condition"}
     ],
     "openMode": "close-all",
     "buttons": [
@@ -619,793 +580,16 @@
       }]
     }
   ],
-  "explorerConfig": [{
-      "tabTitle": "Studies",
+  "dataExplorerConfig": {
       "charts": {
         "project_id": {
           "chartType": "count",
           "title": "Projects"
-        },
-        "study_setup": {
-          "chartType": "bar",
-          "title": "Study Setup"
-        },
-        "study_objective": {
-          "chartType": "bar",
-          "title": "Study Objective"
-        },
-        "study_design": {
-          "chartType": "bar",
-          "title": "Study Design"
         }
       },
       "filters": {
         "tabs": [{
-          "title": "Studies",
-          "fields": [
-            "project_id",
-            "study_setup",
-            "study_objective",
-            "study_design"
-          ]
-        }]
-      },
-      "table": {
-        "enabled": true,
-        "fields": [
-          "project_id",
-          "submitter_id",
-          "study_description",
-          "data_description",
-          "study_setup",
-          "study_objective",
-          "study_design",
-          "associated_study",
-          "_cases_count",
-          "_biospecimens_count",
-          "_samples_count",
-          "_aliquots_count",
-          "_analytes_count",
-          "_immunoassays_count",
-          "_pcr_assays_count",
-          "_pcr_assay_files_count",
-          "_read_groups_count",
-          "_cell_images_count",
-          "_mass_cytometry_assays_count",
-          "_mass_cytometry_images_count",
-          "_slide_images_count",
-          "_submitted_unaligned_reads_files_count",
-          "_submitted_aligned_reads_files_count",
-          "_submitted_somatic_mutations_count",
-          "_submitted_methylations_count"
-        ]
-      },
-      "buttons": [{
-          "enabled": true,
-          "type": "data",
-          "title": "Download Studies",
-          "leftIcon": "user",
-          "rightIcon": "download",
-          "fileName": "studies.json"
-        },
-        {
-          "enabled": false,
-          "type": "manifest",
-          "title": "Download Manifest",
-          "leftIcon": "datafile",
-          "rightIcon": "download",
-          "fileName": "manifest.json"
-        },
-        {
-          "enabled": true,
-          "type": "export-to-workspace",
-          "title": "Export to Workspace",
-          "leftIcon": "datafile",
-          "rightIcon": "download"
-        },
-        {
-          "enabled": true,
-          "type": "export-to-pfb",
-          "title": "Export to PFB",
-          "leftIcon": "datafile",
-          "rightIcon": "download"
-        }
-      ],
-      "guppyConfig": {
-        "dataType": "study",
-        "nodeCountTitle": "Studies",
-        "fieldMapping": [],
-        "manifestMapping": {
-          "resourceIndexType": "file",
-          "resourceIdField": "object_id",
-          "referenceIdFieldInResourceIndex": "_case_id",
-          "referenceIdFieldInDataIndex": "_case_id"
-        },
-        "accessibleFieldCheckList": ["project_id"],
-        "accessibleValidationField": "project_id"
-      }
-    },
-    {
-      "tabTitle": "Cases",
-      "charts": {
-        "project_id": {
-          "chartType": "count",
-          "title": "Projects"
-        },
-        "gender": {
-          "chartType": "pie",
-          "title": "Gender"
-        },
-        "race": {
-          "chartType": "bar",
-          "title": "Race"
-        },
-        "ethnicity": {
-          "chartType": "bar",
-          "title": "Ethnicity"
-        }
-      },
-      "filters": {
-        "tabs": [{
-          "title": "Cases",
-          "fields": [
-            "project_id",
-            "index_date",
-            "lost_to_followup",
-            "gender",
-            "days_to_birth",
-            "race",
-            "ethnicity"
-          ]
-        }]
-      },
-      "table": {
-        "enabled": true,
-        "fields": [
-          "project_id",
-          "submitter_id",
-          "index_date",
-          "lost_to_followup",
-          "gender",
-          "days_to_birth",
-          "race",
-          "ethnicity",
-          "data_format",
-          "data_type",
-          "_biospecimens_count",
-          "_samples_count",
-          "_aliquots_count",
-          "_analytes_count",
-          "_immunoassays_count",
-          "_pcr_assays_count",
-          "_pcr_assay_files_count",
-          "_read_groups_count",
-          "_cell_images_count",
-          "_mass_cytometry_assays_count",
-          "_mass_cytometry_images_count",
-          "_slide_images_count",
-          "_submitted_unaligned_reads_files_count",
-          "_submitted_aligned_reads_files_count",
-          "_submitted_somatic_mutations_count",
-          "_submitted_methylations_count"
-        ]
-      },
-      "buttons": [{
-          "enabled": true,
-          "type": "data-tsv",
-          "title": "Download Case Metadata",
-          "leftIcon": "user",
-          "rightIcon": "download",
-          "fileName": "BloodPAC_cases.tsv"
-        },
-        {
-          "enabled": false,
-          "type": "manifest",
-          "title": "Download Manifest",
-          "leftIcon": "datafile",
-          "rightIcon": "download",
-          "fileName": "manifest.json"
-        },
-        {
-          "enabled": true,
-          "type": "export-to-workspace",
-          "title": "Export to Workspace",
-          "leftIcon": "datafile",
-          "rightIcon": "download"
-        },
-        {
-          "enabled": true,
-          "type": "export-to-pfb",
-          "title": "Export to PFB",
-          "leftIcon": "datafile",
-          "rightIcon": "download"
-        } 
-      ],
-      "guppyConfig": {
-        "dataType": "case",
-        "nodeCountTitle": "Cases",
-        "fieldMapping": [],
-        "manifestMapping": {
-          "resourceIndexType": "file",
-          "resourceIdField": "object_id",
-          "referenceIdFieldInResourceIndex": "case_id",
-          "referenceIdFieldInDataIndex": "case_id"
-        },
-        "accessibleFieldCheckList": ["project_id"],
-        "accessibleValidationField": "project_id"
-      }
-    },
-    {
-      "tabTitle": "Biospecimens",
-      "charts": {
-        "project_id": {
-          "chartType": "count",
-          "title": "Projects"
-        },
-        "biospecimen_anatomic_site": {
-          "chartType": "bar",
-          "title": "Anatomic Site"
-        },
-        "biospecimen_type": {
-          "chartType": "pie",
-          "title": "Biospecimen Type"
-        },
-        "blood_tube_type": {
-          "chartType": "bar",
-          "title": "Blood Tube Type"
-        }
-      },
-      "filters": {
-        "tabs": [{
-            "title": "Biospecimens",
-            "fields": [
-              "project_id",
-              "biospecimen_anatomic_site",
-              "biospecimen_type",
-              "blood_tube_type",
-              "days_to_collection",
-              "days_to_procurement",
-              "method_of_procurement",
-              "procured_or_purchased",
-              "tissue_type",
-              "disease_type",
-              "shipping_temperature",
-              "tumor_code",
-              "tumor_morphology",
-              "days_to_collection_other",
-              "days_to_procurement_other",
-              "biospecimen_volume",
-              "blood_draw_method",
-              "clinical_site",
-              "primary_site",
-              "tumor_descriptor",
-              "procurement_temperature",
-              "metastatic_bone",
-              "metastatic_visceral",
-              "metastatic_lymph_node",
-              "biospecimen_weight"
-            ]
-          },
-          {
-            "title": "Samples",
-            "fields": [
-              "composition",
-              "hours_to_fractionation_lower",
-              "hours_to_fractionation_upper",
-              "blood_fractionation_method",
-              "sample_volume",
-              "storage_agitation",
-              "storage_agitation_hours"
-            ]
-          }
-        ]
-      },
-      "table": {
-        "enabled": true,
-        "fields": [
-          "project_id",
-          "submitter_id",
-          "biospecimen_anatomic_site",
-          "biospecimen_type",
-          "blood_tube_type",
-          "days_to_collection",
-          "days_to_procurement",
-          "method_of_procurement",
-          "procured_or_purchased",
-          "tissue_type",
-          "disease_type",
-          "shipping_temperature",
-          "tumor_code",
-          "tumor_morphology",
-          "days_to_collection_other",
-          "days_to_procurement_other",
-          "biospecimen_volume",
-          "blood_draw_method",
-          "clinical_site",
-          "primary_site",
-          "tumor_descriptor",
-          "procurement_temperature",
-          "metastatic_bone",
-          "metastatic_visceral",
-          "metastatic_lymph_node",
-          "biospecimen_weight",
-          "composition",
-          "hours_to_fractionation_lower",
-          "hours_to_fractionation_upper",
-          "blood_fractionation_method",
-          "sample_volume",
-          "storage_agitation",
-          "storage_agitation_hours"
-        ]
-      },
-      "buttons": [{
-          "enabled": true,
-          "type": "data-tsv",
-          "title": "Download Biospecimen Metadata",
-          "leftIcon": "user",
-          "rightIcon": "download",
-          "fileName": "BloodPAC_biospecimens.tsv"
-        },
-        {
-          "enabled": false,
-          "type": "manifest",
-          "title": "Download Manifest",
-          "leftIcon": "datafile",
-          "rightIcon": "download",
-          "fileName": "manifest.json"
-        },
-        {
-          "enabled": true,
-          "type": "export-to-workspace",
-          "title": "Export to Workspace",
-          "leftIcon": "datafile",
-          "rightIcon": "download"
-        }
-      ],
-      "guppyConfig": {
-        "dataType": "biospecimen",
-        "nodeCountTitle": "Biospecimens",
-        "fieldMapping": [],
-        "manifestMapping": {
-          "resourceIndexType": "file",
-          "resourceIdField": "object_id",
-          "referenceIdFieldInResourceIndex": "case_id",
-          "referenceIdFieldInDataIndex": "case_id"
-        },
-        "accessibleFieldCheckList": ["project_id"],
-        "accessibleValidationField": "project_id"
-      }
-    },
-    {
-      "tabTitle": "Aliquots",
-      "charts": {
-        "aliquot_container": {
-          "chartType": "bar",
-          "title": "Aliquot Container"
-        },
-        "clinical_or_contrived": {
-          "chartType": "pie",
-          "title": "Clinical vs. Contrived"
-        },
-        "analyte_type": {
-          "chartType": "bar",
-          "title": "Analyte Type"
-        }
-      },
-      "filters": {
-        "tabs": [{
-            "title": "Aliquots",
-            "fields": [
-              "project_id",
-              "aliquot_container",
-              "clinical_or_contrived",
-              "preservation_method",
-              "storage_temperature",
-              "aliquot_volume",
-              "methanol_added",
-              "hours_to_freezer_lower",
-              "hours_to_freezer_lower_other",
-              "hours_to_freezer_upper",
-              "hours_to_freezer_upper_other",
-              "aliquot_quantity",
-              "contrivance_method"
-            ]
-          },
-          {
-            "title": "Analytes",
-            "fields": [
-              "analyte_isolation_method",
-              "analyte_type",
-              "cell_type",
-              "cell_identifier",
-              "frame_identifier",
-              "run_identifier",
-              "days_to_assay"
-            ]
-          }
-        ]
-      },
-      "table": {
-        "enabled": true,
-        "fields": [
-          "project_id",
-          "submitter_id",
-          "aliquot_container",
-          "clinical_or_contrived",
-          "preservation_method",
-          "storage_temperature",
-          "aliquot_volume",
-          "methanol_added",
-          "hours_to_freezer_lower",
-          "hours_to_freezer_lower_other",
-          "hours_to_freezer_upper",
-          "hours_to_freezer_upper_other",
-          "aliquot_quantity",
-          "contrivance_method",
-          "analyte_isolation_method",
-          "analyte_type",
-          "cell_type",
-          "cell_identifier",
-          "frame_identifier",
-          "run_identifier",
-          "days_to_assay"
-        ]
-      },
-      "buttons": [{
-          "enabled": true,
-          "type": "data-tsv",
-          "title": "Download Aliquot Metadata",
-          "leftIcon": "user",
-          "rightIcon": "download",
-          "fileName": "aliquots.tsv"
-        },
-        {
-          "enabled": false,
-          "type": "manifest",
-          "title": "Download Manifest",
-          "leftIcon": "datafile",
-          "rightIcon": "download",
-          "fileName": "manifest.json"
-        },
-        {
-          "enabled": true,
-          "type": "export-to-workspace",
-          "title": "Export to Workspace",
-          "leftIcon": "datafile",
-          "rightIcon": "download"
-        }
-      ],
-      "guppyConfig": {
-        "dataType": "aliquot",
-        "nodeCountTitle": "Aliquots",
-        "fieldMapping": [],
-        "manifestMapping": {
-          "resourceIndexType": "file",
-          "resourceIdField": "object_id",
-          "referenceIdFieldInResourceIndex": "case_id",
-          "referenceIdFieldInDataIndex": "case_id"
-        },
-        "accessibleFieldCheckList": ["project_id"],
-        "accessibleValidationField": "project_id"
-      }
-    },
-    {
-      "tabTitle": "Read Groups",
-      "charts": {
-        "instrument_model": {
-          "chartType": "bar",
-          "title": "Instrument Model"
-        },
-        "library_preparation_kit_name": {
-          "chartType": "bar",
-          "title": "Library Prep Kit"
-        },
-        "library_strategy": {
-          "chartType": "bar",
-          "title": "Library Strategy"
-        },
-        "platform": {
-          "chartType": "bar",
-          "title": "Platform"
-        }
-      },
-      "filters": {
-        "tabs": [{
-          "title": "Read Groups",
-          "fields": [
-            "project_id",
-            "instrument_model",
-            "is_paired_end",
-            "library_preparation_kit_name",
-            "library_preparation_kit_vendor",
-            "library_preparation_kit_version",
-            "library_strategy",
-            "platform",
-            "read_group_name",
-            "read_length_lower",
-            "read_length_upper",
-            "barcoding_applied",
-            "target_capture_kit_name",
-            "library_name",
-            "library_selection",
-            "sequencing_center",
-            "library_strand",
-            "flow_cell_barcode",
-            "adapter_sequence",
-            "library_preparation_kit_catalog_number",
-            "cycles"
-          ]
-        }]
-      },
-      "table": {
-        "enabled": true,
-        "fields": [
-          "project_id",
-          "submitter_id",
-          "instrument_model",
-          "is_paired_end",
-          "library_preparation_kit_name",
-          "library_preparation_kit_vendor",
-          "library_preparation_kit_version",
-          "library_strategy",
-          "platform",
-          "read_group_name",
-          "read_length_lower",
-          "read_length_upper",
-          "barcoding_applied",
-          "target_capture_kit_name",
-          "library_name",
-          "library_selection",
-          "sequencing_center",
-          "library_strand",
-          "flow_cell_barcode",
-          "adapter_sequence",
-          "library_preparation_kit_catalog_number",
-          "cycles"
-        ]
-      },
-      "buttons": [{
-          "enabled": true,
-          "type": "data-tsv",
-          "title": "Download Read Group Metadata",
-          "leftIcon": "user",
-          "rightIcon": "download",
-          "fileName": "BloodPAC_read_groups.tsv"
-        },
-        {
-          "enabled": false,
-          "type": "manifest",
-          "title": "Download Manifest",
-          "leftIcon": "datafile",
-          "rightIcon": "download",
-          "fileName": "manifest.json"
-        },
-        {
-          "enabled": true,
-          "type": "export-to-workspace",
-          "title": "Export to Workspace",
-          "leftIcon": "datafile",
-          "rightIcon": "download"
-        }
-      ],
-      "guppyConfig": {
-        "dataType": "read_group",
-        "nodeCountTitle": "Read Groups",
-        "fieldMapping": [],
-        "manifestMapping": {
-          "resourceIndexType": "file",
-          "resourceIdField": "object_id",
-          "referenceIdFieldInResourceIndex": "case_id",
-          "referenceIdFieldInDataIndex": "case_id"
-        },
-        "accessibleFieldCheckList": ["project_id"],
-        "accessibleValidationField": "project_id"
-      }
-    },
-    {
-      "tabTitle": "Medical History",
-      "charts": {
-        "primary_diagnosis": {
-          "chartType": "bar",
-          "title": "Primary Diagnoses"
-        },
-        "comorbidity": {
-          "chartType": "bar",
-          "title": "Comorbidities"
-        },
-        "analyte_name": {
-          "chartType": "bar",
-          "title": "Diagnostic Tests"
-        },
-        "therapeutic_agents": {
-          "chartType": "bar",
-          "title": "Treatments"
-        }
-      },
-      "filters": {
-        "tabs": [{
-            "title": "Projects",
-            "fields": [
-              "project_id"
-            ]
-          },
-          {
-            "title": "Comorbidities",
-            "fields": [
-              "comorbidity",
-              "days_to_comorbidity"
-            ]
-          },
-          {
-            "title": "Diagnoses",
-            "fields": [
-              "age_at_diagnosis",
-              "best_overall_response",
-              "classification_of_tumor",
-              "days_to_best_overall_response",
-              "days_to_diagnosis",
-              "morphology",
-              "primary_diagnosis",
-              "prior_treatment",
-              "tissue_or_organ_of_origin",
-              "tumor_grade",
-              "ajcc_clinical_stage",
-              "overall_survival",
-              "progression_free_survival",
-              "ajcc_pathologic_stage",
-              "method_of_diagnosis",
-              "ajcc_pathologic_n",
-              "ajcc_pathologic_t",
-              "ajcc_pathologic_m"
-            ]
-          },
-          {
-            "title": "Diagnostic Tests",
-            "fields": [
-              "analyte_name",
-              "days_to_test",
-              "test_result",
-              "test_sample_composition",
-              "test_type",
-              "test_units",
-              "test_value"
-            ]
-          },
-          {
-            "title": "Followups",
-            "fields": [
-              "days_to_followup",
-              "time_from_alcohol",
-              "time_from_biopsy",
-              "time_from_exercise",
-              "time_from_food",
-              "time_from_physical_trauma",
-              "time_from_recreational_drugs",
-              "time_from_tobacco",
-              "time_from_treatment"
-            ]
-          },
-          {
-            "title": "Treatments",
-            "fields": [
-              "therapeutic_agents",
-              "treatment_intent_type",
-              "treatment_type",
-              "days_to_treatment_start",
-              "regimen_or_line_of_therapy",
-              "days_to_treatment_end",
-              "treatment_class",
-              "dosage",
-              "dosage_units"
-            ]
-          }
-        ]
-      },
-      "table": {
-        "enabled": true,
-        "fields": [
-          "project_id",
-          "submitter_id",
-          "comorbidity",
-          "days_to_comorbidity",
-          "age_at_diagnosis",
-          "best_overall_response",
-          "classification_of_tumor",
-          "days_to_best_overall_response",
-          "days_to_diagnosis",
-          "morphology",
-          "primary_diagnosis",
-          "prior_treatment",
-          "tissue_or_organ_of_origin",
-          "tumor_grade",
-          "ajcc_clinical_stage",
-          "overall_survival",
-          "progression_free_survival",
-          "ajcc_pathologic_stage",
-          "method_of_diagnosis",
-          "ajcc_pathologic_n",
-          "ajcc_pathologic_t",
-          "ajcc_pathologic_m",
-          "analyte_name",
-          "days_to_test",
-          "test_result",
-          "test_sample_composition",
-          "test_type",
-          "test_units",
-          "test_value",
-          "days_to_followup",
-          "time_from_alcohol",
-          "time_from_biopsy",
-          "time_from_exercise",
-          "time_from_food",
-          "time_from_physical_trauma",
-          "time_from_recreational_drugs",
-          "time_from_tobacco",
-          "time_from_treatment",
-          "therapeutic_agents",
-          "treatment_intent_type",
-          "treatment_type",
-          "days_to_treatment_start",
-          "regimen_or_line_of_therapy",
-          "days_to_treatment_end",
-          "treatment_class",
-          "dosage",
-          "dosage_units"
-        ]
-      },
-      "buttons": [{
-          "enabled": true,
-          "type": "data-tsv",
-          "title": "Download Medical History",
-          "leftIcon": "user",
-          "rightIcon": "download",
-          "fileName": "medical_history.tsv"
-        },
-        {
-          "enabled": false,
-          "type": "manifest",
-          "title": "Download Manifest",
-          "leftIcon": "datafile",
-          "rightIcon": "download",
-          "fileName": "manifest.json"
-        },
-        {
-          "enabled": true,
-          "type": "export-to-workspace",
-          "title": "Export to Workspace",
-          "leftIcon": "datafile",
-          "rightIcon": "download"
-        }
-      ],
-      "guppyConfig": {
-        "dataType": "medical_history",
-        "nodeCountTitle": "Medical History",
-        "fieldMapping": [],
-        "manifestMapping": {
-          "resourceIndexType": "file",
-          "resourceIdField": "object_id",
-          "referenceIdFieldInResourceIndex": "case_id",
-          "referenceIdFieldInDataIndex": "case_id"
-        },
-        "accessibleFieldCheckList": ["project_id"],
-        "accessibleValidationField": "project_id"
-      }
-    },
-    {
-      "tabTitle": "Files",
-      "charts": {
-        "data_type": {
-          "chartType": "stackedBar",
-          "title": "File Type"
-        },
-        "data_format": {
-          "chartType": "stackedBar",
-          "title": "File Format"
-        }
-      },
-      "filters": {
-        "tabs": [{
-          "title": "File",
+          "title": "Project",
           "fields": [
             "project_id",
             "data_type",
@@ -1417,29 +601,115 @@
         "enabled": true,
         "fields": [
           "project_id",
+          "data_format"
+        ]
+      },
+      "buttons": [
+        {
+          "enabled": true,
+          "type": "export",
+          "title": "Export All to Terra",
+          "rightIcon": "external-link"
+        },
+        {
+          "enabled": false,
+          "type": "manifest",
+          "title": "Download Manifest",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "manifest.json"
+        },
+        {
+          "enabled": true,
+          "type": "export-to-workspace",
+          "title": "Export to Workspace",
+          "leftIcon": "datafile",
+          "rightIcon": "download"
+        },
+        {
+          "enabled": true,
+          "type": "export-to-pfb",
+          "title": "Export to PFB",
+          "leftIcon": "datafile",
+          "rightIcon": "download"
+        }
+      ],
+      "guppyConfig": {
+        "dataType": "subject",
+        "nodeCountTitle": "Subjects",
+        "fieldMapping": [],
+        "manifestMapping": {
+          "resourceIndexType": "file",
+          "resourceIdField": "object_id",
+          "referenceIdFieldInResourceIndex": "_subject_id",
+          "referenceIdFieldInDataIndex": "_subject_id"
+        },
+        "accessibleFieldCheckList": ["project_id"],
+        "accessibleValidationField": "project_id"
+      }
+    },
+    "fileExplorerConfig": {
+      "charts": {
+        "data_type": {
+          "chartType": "stackedBar",
+          "title": "File Type"
+        },
+        "data_format": {
+          "chartType": "stackedBar",
+          "title": "File Format"
+        }
+      },
+      "filters": {
+        "tabs": [
+          {
+            "title": "File",
+            "fields": [
+              "project_id",
+              "data_category",
+              "data_type",
+              "data_format"
+            ],
+            "searchFields": [
+              "file_name"
+            ]
+          }
+        ]
+      },
+      "table": {
+        "enabled": true,
+        "fields": [
+          "project_id",
           "file_name",
           "file_size",
-          "object_id"
-        ]
+          "object_id"      ]
       },
       "guppyConfig": {
         "dataType": "file",
-        "fieldMapping": [{
-          "field": "object_id",
-          "name": "GUID"
-        }],
+        "fieldMapping": [
+          {
+            "field": "object_id",
+            "name": "GUID"
+          },
+          {
+            "field": "programs_name",
+            "name": "Program"
+          }
+        ],
         "nodeCountTitle": "Files",
         "manifestMapping": {
-          "resourceIndexType": "case",
-          "resourceIdField": "case_id",
+          "resourceIndexType": "subject",
+          "resourceIdField": "_subject_id",
           "referenceIdFieldInResourceIndex": "object_id",
           "referenceIdFieldInDataIndex": "object_id"
         },
-        "accessibleFieldCheckList": ["project_id"],
+        "accessibleFieldCheckList": [
+          "project_id"
+        ],
         "accessibleValidationField": "project_id",
         "downloadAccessor": "object_id"
       },
-      "buttons": [{
+      "buttons": [
+        {
           "enabled": true,
           "type": "file-manifest",
           "title": "Download Manifest",
@@ -1454,9 +724,35 @@
           "title": "Export to Workspace",
           "leftIcon": "datafile",
           "rightIcon": "download"
+        },
+        {
+          "enabled": true,
+          "type": "export-files-to-pfb",
+          "title": "Export All to PFB",
+          "rightIcon": "external-link"
+        },
+        {
+          "enabled": true,
+          "type": "export-files",
+          "title": "Export All to Terra",
+          "rightIcon": "external-link"
+        },
+        {
+          "enabled": true,
+          "type": "export-files-to-seven-bridges",
+          "title": "Export All to Seven Bridges",
+          "rightIcon": "external-link"
         }
       ],
+      "terraExportURL": "https://terra.biodatacatalyst.nhlbi.nih.gov/#import-data",
+      "terraTemplate": [
+        "bdc",
+        "gen3"
+      ],
+      "sevenBridgesExportURL": "https://platform.sb.biodatacatalyst.nhlbi.nih.gov/import/windmill",
+      "enableLimitedFilePFBExport": {
+        "sourceNodeField": "source_node"
+      },
       "dropdowns": {}
     }
-  ]
 }
