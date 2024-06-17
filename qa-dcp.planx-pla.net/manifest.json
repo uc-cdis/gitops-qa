@@ -7,25 +7,25 @@
     "autodeploy": "yes"
   },
   "versions": {
-    "arborist": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/arborist:2024.06",
+    "arborist": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/arborist:integration202407",
     "aws-es-proxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/aws-es-proxy:v1.3.1",
-    "fence": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/fence:2024.06",
-    "indexd": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexd:2024.06",
-    "peregrine": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/peregrine:2024.06",
-    "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:2024.06",
-    "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:2024.06",
-    "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:2024.06",
+    "fence": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/fence:integration202407",
+    "indexd": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexd:integration202407",
+    "peregrine": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/peregrine:integration202407",
+    "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:integration202407",
+    "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:integration202407",
+    "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:integration202407",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
-    "spark": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-spark:2024.06",
-    "tube": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/tube:2024.06",
-    "guppy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/guppy:2024.06",
-    "sower": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sower:2024.06",
-    "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:2024.06",
+    "spark": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-spark:integration202407",
+    "tube": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/tube:integration202407",
+    "guppy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/guppy:integration202407",
+    "sower": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sower:integration202407",
+    "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:integration202407",
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
-    "wts": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/workspace-token-service:2024.06",
-    "manifestservice": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifestservice:2024.06",
-    "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:2024.06",
-    "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:2024.06"
+    "wts": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/workspace-token-service:integration202407",
+    "manifestservice": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifestservice:integration202407",
+    "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:integration202407",
+    "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:integration202407"
   },
   "google": {
     "enabled": "yes"
@@ -41,7 +41,7 @@
       "serviceAccountName": "jobs-qa-dcp-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-manifest-ingestion:2024.06",
+        "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-manifest-ingestion:integration202407",
         "pull_policy": "Always",
         "env": [
           {
@@ -81,7 +81,7 @@
       "serviceAccountName": "jobs-qa-dcp-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/get-dbgap-metadata:2024.06",
+        "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/get-dbgap-metadata:integration202407",
         "pull_policy": "Always",
         "env": [],
         "volumeMounts": [
@@ -111,7 +111,7 @@
       "serviceAccountName": "jobs-qa-dcp-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifest-indexing:2024.06",
+        "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifest-indexing:integration202407",
         "pull_policy": "Always",
         "env": [
           {
@@ -151,7 +151,7 @@
       "serviceAccountName": "jobs-qa-dcp-planx-pla-net",
       "container": {
         "name": "job-task",
-        "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/download-indexd-manifest:2024.06",
+        "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/download-indexd-manifest:integration202407",
         "pull_policy": "Always",
         "env": [
           {
@@ -190,7 +190,7 @@
       "action": "export",
       "container": {
         "name": "job-task",
-        "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/pelican-export:2024.06",
+        "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/pelican-export:integration202407",
         "pull_policy": "Always",
         "env": [
           {
@@ -254,7 +254,7 @@
       "action": "export-files",
       "container": {
         "name": "job-task",
-        "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/pelican-export:2024.06",
+        "image": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/pelican-export:integration202407",
         "pull_policy": "Always",
         "env": [
           {
@@ -320,7 +320,7 @@
   ],
   "ssjdispatcher": {
     "job_images": {
-      "indexing": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexs3client:2024.06"
+      "indexing": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexs3client:integration202407"
     }
   },
   "global": {
