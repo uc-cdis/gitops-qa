@@ -494,22 +494,19 @@
   },
   "studyViewerConfig": [
       {
-      "dataType": "clinical_trials",
+      "dataType": "subject",
       "title": "Studies",
-      "titleField": "title",
-      "rowAccessor": "cmc_unique_id",
+      "titleField": "project_id",
+      "rowAccessor": "submitter_id",
       "listItemConfig": {
-        "blockFields": ["brief_summary"],
-        "tableFields": ["data_availability_date", "data_available", "creator", "nct_number", "condition", "category", "clinical_trial_website", "publications"]
+        "blockFields": ["project_id"],
+        "tableFields": ["data_type"]
       },
       "fieldMapping": [
-        { "field": "brief_summary", "name": "Brief Study Description" },
-        { "field": "description", "name": "Detailed Description"},
-        { "field": "creator", "name": "Sponsor"},
         { "field": "category", "name": "Study Type"},
-        { "field": "clinical_trial_website", "name": "Websites"},
-        { "field": "nct_number", "name": "NCT Number"},
-        { "field": "publications", "name": "Study Publications"}
+        { "field": "project_id", "name": "Project_ID"},
+        { "field": "data_type", "name": "Data_Type"},
+        { "field": "condition", "name": "Condition"}
       ],
       "openMode": "close-all",
       "buttons": [
@@ -527,13 +524,18 @@
   ],
   "useArboristUI": true,
   "dataExplorerConfig": {
+    "charts": {
+      "project_id": {
+        "chartType": "count",
+        "title": "Projects"
+      }
+    },
     "filters": {
       "tabs": [
         {
           "title": "Files",
           "fields": [
             "project_id",
-            "file_size",
             "data_format",
             "data_type"
           ]
@@ -544,22 +546,33 @@
       "enabled": true,
       "fields": [
         "project_id",
-        "file_name",
-        "file_size",
         "data_format"
       ]
     },
+    "dropdowns": {
+      "download": {
+        "title": "Download"
+      }
+    },
     "guppyConfig": {
-      "dataType": "ctfile",
-      "nodeCountTitle": "Files",
+      "dataType": "subject",
+      "nodeCountTitle": "Subjects",
       "fieldMapping": [
+        {
+          "field": "_subject_id",
+          "name": "Subject ID"
+        }
       ],
       "manifestMapping": {
-        "resourceIndexType": "ctfile",
+        "resourceIndexType": "file",
         "resourceIdField": "object_id",
-        "referenceIdFieldInResourceIndex": "project_id",
-        "referenceIdFieldInDataIndex": "project_id"
-      }
+        "referenceIdFieldInResourceIndex": "_subject_id",
+        "referenceIdFieldInDataIndex": "_subject_id"
+      },
+      "accessibleFieldCheckList": [
+        "project_id"
+      ],
+      "accessibleValidationField": "project_id"
     },
     "buttons": [
       {
@@ -578,89 +591,102 @@
       }
     ]
   },
-  "arrangerConfig": {
+  "fileExplorerConfig": {
     "charts": {
-      "project_id": {
-        "chartType": "count",
-        "title": "Projects"
+      "data_type": {
+        "chartType": "stackedBar",
+        "title": "File Type"
       },
-      "submitter_id": {
-        "chartType": "count",
-        "title": "Subjects"
-      },
-      "gender": {
-        "chartType": "pie",
-        "title": "Gender"
-      },
-      "race": {
-        "chartType": "bar",
-        "title": "Race"
-      },
-      "ethnicity": {
-        "chartType": "bar",
-        "title": "Ethnicity"
+      "data_format": {
+        "chartType": "stackedBar",
+        "title": "File Format"
       }
     },
     "filters": {
       "tabs": [
         {
-          "title": "Subject",
-          "fields":[
-            "project_id",
-            "gender",
-            "race",
-            "ethnicity",
-            "vital_status",
-            "frstdthd"
-          ]
-        }, {
-          "title": "Diagnosis",
+          "title": "File",
           "fields": [
-            "arthxbase",
-            "bshbvstat",
-            "bshcvstat",
-            "cd4nadir",
-            "status",
-            "virus_type",
-            "virus_subtype"
+            "project_id",
+            "data_category",
+            "data_type",
+            "data_format"
+          ],
+          "searchFields": [
+            "file_name"
           ]
         }
       ]
-    },
-    "manifestMapping": {
-      "resourceIndexType": "file",
-      "resourceIdField": "object_id",
-      "referenceIdFieldInResourceIndex": "subject_id",
-      "referenceIdFieldInDataIndex": "node_id"
     },
     "table": {
-      "buttons": [
+      "enabled": true,
+      "fields": [
+        "project_id",
+        "file_name",
+        "file_size",
+        "object_id"      ]
+    },
+    "guppyConfig": {
+      "dataType": "file",
+      "fieldMapping": [
         {
-          "enabled": true,
-          "type": "data",
-          "title": "Download Clinical",
-          "leftIcon": "user",
-          "rightIcon": "download",
-          "fileName": "clinical.json"
+          "field": "object_id",
+          "name": "GUID"
         },
         {
-          "enabled": true,
-          "type": "manifest",
-          "title": "Download Manifest",
-          "leftIcon": "datafile",
-          "rightIcon": "download",
-          "fileName": "manifest.json"
-        },{
-          "enabled": false,
-          "type": "export-to-workspace",
-          "title": "Export to Workspace",
-          "leftIcon": "datafile",
-          "rightIcon": "download"
-        }
-      ]
+					"field": "programs_name",
+					"name": "Program"
+				}
+      ],
+      "nodeCountTitle": "Files",
+      "manifestMapping": {
+        "resourceIndexType": "subject",
+        "resourceIdField": "_subject_id",
+        "referenceIdFieldInResourceIndex": "object_id",
+        "referenceIdFieldInDataIndex": "object_id"
+      },
+      "accessibleFieldCheckList": [
+        "project_id"
+      ],
+      "accessibleValidationField": "project_id",
+      "downloadAccessor": "object_id"
     },
-    "projectId": "search",
-    "graphqlField": "subject",
-    "index": ""
+    "buttons": [
+      {
+        "enabled": true,
+        "type": "file-manifest",
+        "title": "Download Manifest",
+        "leftIcon": "datafile",
+        "rightIcon": "download",
+        "fileName": "file-manifest.json",
+        "dropdownId": "download"
+      },
+      {
+        "enabled": true,
+        "type": "export-files-to-workspace",
+        "title": "Export to Workspace",
+        "leftIcon": "datafile",
+        "rightIcon": "download"
+      },
+      {
+        "enabled": true,
+        "type": "export-files-to-pfb",
+        "title": "Export All to PFB",
+        "rightIcon": "external-link"
+      },
+      {
+        "enabled": true,
+        "type": "export-files",
+        "title": "Export All to Terra",
+        "rightIcon": "external-link"
+      },
+      {
+        "enabled": true,
+        "type": "export-files-to-seven-bridges",
+        "title": "Export All to Seven Bridges",
+        "rightIcon": "external-link"
+      }
+    ],
+    "dropdowns": {}
   }
 }
