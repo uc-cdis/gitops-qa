@@ -3,31 +3,8 @@
   "argoTemplate": "gwas-template",
   "graphql": {
     "boardCounts": [
-      {
-        "graphql": "_case_count",
-        "name": "Case",
-        "plural": "Cases"
-      },
-      {
-        "graphql": "_study_count",
-        "name": "Study",
-        "plural": "Studies"
-      },
-      {
-        "graphql": "_visit_count",
-        "name": "Visit",
-        "plural": "Visits"
-      }
     ],
     "chartCounts": [
-      {
-        "graphql": "_case_count",
-        "name": "Case"
-      },
-      {
-        "graphql": "_study_count",
-        "name": "Study"
-      }
     ],
     "projectDetails": "boardCounts"
   },
@@ -566,22 +543,19 @@
   },
   "studyViewerConfig": [
     {
-    "dataType": "clinical_trials",
+    "dataType": "subject",
     "title": "Studies",
-    "titleField": "title",
-    "rowAccessor": "cmc_unique_id",
+    "titleField": "project_id",
+    "rowAccessor": "submitter_id",
     "listItemConfig": {
-      "blockFields": ["brief_summary"],
-      "tableFields": ["data_availability_date", "data_available", "creator", "nct_number", "condition", "category", "clinical_trial_website", "publications"]
+      "blockFields": ["project_id"],
+      "tableFields": ["data_type"]
     },
     "fieldMapping": [
-      { "field": "brief_summary", "name": "Brief Study Description" },
-      { "field": "description", "name": "Detailed Description"},
-      { "field": "creator", "name": "Sponsor"},
       { "field": "category", "name": "Study Type"},
-      { "field": "clinical_trial_website", "name": "Websites"},
-      { "field": "nct_number", "name": "NCT Number"},
-      { "field": "publications", "name": "Study Publications"}
+      { "field": "project_id", "name": "Project_ID"},
+      { "field": "data_type", "name": "Data_Type"},
+      { "field": "condition", "name": "Condition"}
     ],
     "openMode": "close-all",
     "buttons": [
@@ -601,61 +575,16 @@
       "project_id": {
         "chartType": "count",
         "title": "Projects"
-      },
-      "node_id": {
-        "chartType": "count",
-        "title": "Cases"
-      },
-      "gender": {
-        "chartType": "pie",
-        "title": "Gender"
-      },
-      "race": {
-        "chartType": "bar",
-        "title": "Race"
-      },
-      "ethnicity": {
-        "chartType": "bar",
-        "title": "Ethnicity"
       }
     },
     "filters": {
       "tabs": [
         {
-          "title": "Study Selection",
+          "title": "Project",
           "fields": [
-            "project_id"
-          ]
-        },
-        {
-          "title": "Demographics",
-          "fields": [
-            "gender",
-            "race",
-            "ethnicity",
-            "veteran_status",
-            "age_at_enrollment",
-            "age_at_onset",
-            "education_years"
-          ]
-        },
-        {
-          "title": "Assessment",
-          "fields": [
-            "unified_parkinsons_disease_ratings",
-            "mds_updrs",
-            "hopkins_verbal_learning_tests",
-            "scales_for_outcomes_in_pds",
-            "modified_schwab_england_scales",
-            "baseline_dyspnea_indexes",
-            "hamilton_depression_ratings",
-            "state_trait_anxiety_inventories",
-            "upenn_smell_tests",
-            "geriatric_depression_scales",
-            "montreal_cognitive_functional_tests",
-            "mini_mental_status_exams",
-            "rem_sleep_behaviors",
-            "epworth_sleepiness_scales"
+            "project_id",
+            "data_type",
+            "data_format"
           ]
         }
       ]
@@ -664,44 +593,23 @@
       "enabled": true,
       "fields": [
         "project_id",
-        "submitter_id",
-        "gender",
-        "race",
-        "ethnicity",
-        "age_at_enrollment",
-        "age_at_onset",
-        "education_years"
+        "data_format"
       ]
     },
     "guppyConfig": {
-      "dataType": "case",
-      "nodeCountTitle": "Cases",
+      "dataType": "subject",
+      "nodeCountTitle": "Subjects",
       "fieldMapping": [
-        {"field": "unified_parkinsons_disease_ratings", "name": "UPDRS"},
-        {"field": "mds_updrs", "name": "MDS-UPDRS"},
-        {"field": "hopkins_verbal_learning_tests", "name": "HVLT-R"},
-        {"field": "scales_for_outcomes_in_pds", "name": "Scales for Outcomes in Parkinson’s Disease – Autonomic"},
-        {"field": "modified_schwab_england_scales", "name": "Modified Schwab"},
-        {"field": "baseline_dyspnea_indexes", "name": "BDI"},
-        {"field": "hamilton_depression_ratings", "name": "Hamilton"},
-        {"field": "state_trait_anxiety_inventories", "name": "Anxiety – State-Trait Anxiety Inventory (STAI)"},
-        {"field": "upenn_smell_tests", "name": "UPSIT"},
-        {"field": "geriatric_depression_scales", "name": "Geriatric Depression Scale Short Form Questionnaire"},
-        {"field": "montreal_cognitive_functional_tests", "name": "MOCA"},
-        {"field": "mini_mental_status_exams", "name": "MMSE"},
-        {"field": "rem_sleep_behaviors", "name": "REM Sleep Behavior Disorder Questionnaire"},
-        {"field": "epworth_sleepiness_scales", "name": "Epworth Sleepiness Scale"},
-        {"field": "_aliquots_count", "name": "Aliquots Count"},
-        {"field": "_read_group_count", "name": "Read Groups Count"},
-        {"field": "_samples_count", "name": "Samples Count"},
-        {"field": "_submitted_expression_arrays_count", "name": "Submitted Expression Arrays Count"},
-        {"field": "_submitted_unaligned_reads_count", "name": "Submitted Unaligned Reads Count"}
+        {
+          "field": "_subject_id",
+          "name": "Subject ID"
+        } 
       ],
       "manifestMapping": {
         "resourceIndexType": "file",
         "resourceIdField": "object_id",
-        "referenceIdFieldInResourceIndex": "_case_id",
-        "referenceIdFieldInDataIndex": "_case_id"
+        "referenceIdFieldInResourceIndex": "_subject_id",
+        "referenceIdFieldInDataIndex": "_subject_id"
       },
       "accessibleFieldCheckList": ["project_id"],
       "accessibleValidationField": "project_id"
@@ -756,6 +664,7 @@
           "title": "File",
           "fields": [
             "project_id",
+            "data_category",
             "data_type",
             "data_format"
           ]
@@ -774,12 +683,13 @@
     "guppyConfig": {
       "dataType": "file",
       "fieldMapping": [
-        { "field": "object_id", "name": "GUID" }
+        { "field": "object_id", "name": "GUID" },
+        { "field": "programs_name", "name": "Program" }
       ],
       "nodeCountTitle": "Files",
       "manifestMapping": {
-        "resourceIndexType": "case",
-        "resourceIdField": "case_id",
+        "resourceIndexType": "subject",
+        "resourceIdField": "_subject_id",
         "referenceIdFieldInResourceIndex": "object_id",
         "referenceIdFieldInDataIndex": "object_id"
       },
