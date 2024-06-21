@@ -230,7 +230,7 @@
           },
           {
             "name": "ROOT_NODE",
-            "value": "case"
+            "value": "subject"
           }
         ],
         "volumeMounts": [
