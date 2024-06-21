@@ -216,7 +216,7 @@
           },
           {
             "name": "ROOT_NODE",
-            "value": "study"
+            "value": "subject"
           }
         ],
         "volumeMounts": [
