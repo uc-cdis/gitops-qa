@@ -1,7 +1,8 @@
 {
 	"gaTrackingId": "UA-119127212-3",
 	"graphql": {
-		"boardCounts": [{
+		"boardCounts": [
+			{
 				"graphql": "_subject_count",
 				"name": "Subject",
 				"plural": "Subjects"
@@ -17,7 +18,8 @@
 				"plural": "Aliquots"
 			}
 		],
-		"chartCounts": [{
+		"chartCounts": [
+			{
 				"graphql": "_subject_count",
 				"name": "Subject"
 			},
@@ -29,17 +31,18 @@
 		"projectDetails": "boardCounts"
 	},
 	"components": {
-		"appName": "NHLBI BioData Catalyst",
+		"appName": "NHLBI BioData Catalyst®",
 		"index": {
 			"introduction": {
 				"heading": "",
-				"text": "NHLBI BioData Catalyst supports the management, analysis and sharing of human disease data for the research community and aims to advance basic understanding of the genetic basis of complex traits and accelerate discovery and development of therapies, diagnostic tests, and other technologies for diseases like cancer. The data commons supports cross-project analyses by harmonizing data from different projects through the collaborative development of a data dictionary, providing an API for data queries and download, and providing a cloud-based analysis workspace with rich tools and resources.",
+				"text": "NHLBI BioData Catalyst&reg; (BDC) supports the management, analysis and sharing of human disease data for the research community and aims to advance basic understanding of the genetic basis of complex traits and accelerate discovery and development of therapies, diagnostic tests, and other technologies for diseases like cancer. The data commons supports cross-project analyses by harmonizing data from different projects through the collaborative development of a data dictionary, providing an API for data queries and download, and providing a cloud-based analysis workspace with rich tools and resources.",
 				"link": "/submission"
 			},
-			"buttons": [{
+			"buttons": [
+				{
 					"name": "Define Data Field",
 					"icon": "stage-planning",
-					"body": "NHLBI BioData Catalyst define the data in a general way. Please study the dictionary before you start browsing.",
+					"body": "BDC define the data in a general way. Please study the dictionary before you start browsing.",
 					"link": "/DD",
 					"label": "Learn more"
 				},
@@ -49,23 +52,11 @@
 					"body": "The Exploration Page gives you insights and a clear overview under selected factors.",
 					"link": "/explorer",
 					"label": "Explore data"
-				},
-				{
-					"name": "Access Data",
-					"icon": "stage-access",
-					"body": "Use our selected tool to filter out the data you need.",
-					"link": "/query",
-					"label": "Query data"
-				},
-				{
-					"name": "Analyze Data",
-					"icon": "stage-analyze",
-					"body": "Analyze your selected cases using Jupyter Notebooks in our secure cloud environment",
-					"link": "/workspace",
-					"label": "Run analysis"
 				}
 			],
-			"homepageChartNodes": [{
+			"homepageChartNodesExcludeFiles": true,
+			"homepageChartNodes": [
+				{
 					"node": "subject",
 					"name": "Subjects"
 				},
@@ -76,7 +67,14 @@
 			]
 		},
 		"navigation": {
-			"items": [{
+			"items": [
+				{
+					"icon": "query",
+					"link": "/discovery",
+					"color": "#a2a2a2",
+					"name": "Discovery"
+				},
+				{
 					"icon": "dictionary",
 					"link": "/DD",
 					"color": "#a2a2a2",
@@ -89,18 +87,6 @@
 					"name": "Exploration"
 				},
 				{
-					"icon": "query",
-					"link": "/query",
-					"color": "#a2a2a2",
-					"name": "Query"
-				},
-				{
-					"icon": "workspace",
-					"link": "/workspace",
-					"color": "#a2a2a2",
-					"name": "Workspace"
-				},
-				{
 					"icon": "profile",
 					"link": "/identity",
 					"color": "#a2a2a2",
@@ -109,7 +95,8 @@
 			]
 		},
 		"topBar": {
-			"items": [{
+			"items": [
+				{
 					"icon": "upload",
 					"link": "/submission",
 					"name": "Submit Data"
@@ -130,7 +117,8 @@
 			},
 			"image": "stage-icons/stage-gene"
 		},
-		"footerLogos": [{
+		"footerLogos": [
+			{
 				"src": "/src/img/gen3.png",
 				"href": "https://ctds.uchicago.edu/gen3",
 				"alt": "Gen3 Data Commons"
@@ -147,7 +135,8 @@
 			}
 		],
 		"footer": {
-			"links": [{
+			"links": [
+				{
 					"href": "https://biodatacatalyst.nhlbi.nih.gov/privacy/",
 					"text": "Privacy Policy"
 				},
@@ -156,11 +145,15 @@
 					"text": "Data Sharing Policy"
 				},
 				{
+					"text": "HHS Vulnerability Disclosure",
+					"href": "https://www.hhs.gov/vulnerability-disclosure-policy/index.html"
+				},
+				{
 					"text": "Freedom of Information Act (FOIA)",
 					"href": "https://www.nhlbi.nih.gov/about/foia-fee-for-service-office"
 				},
 				{
-					"text": "Accessibility Information",
+					"text": "Accessibility",
 					"href": "https://biodatacatalyst.nhlbi.nih.gov/accessibility"
 				},
 				{
@@ -199,17 +192,14 @@
 	},
 	"requiredCerts": [],
 	"featureFlags": {
-		"explorer": true
+		"explorer": true,
+		"discovery": true
 	},
 	"dataExplorerConfig": {
 		"charts": {
 			"project_id": {
 				"chartType": "count",
 				"title": "Projects"
-			},
-			"_subject_id": {
-				"chartType": "count",
-				"title": "Subjects"
 			},
 			"annotated_sex": {
 				"chartType": "pie",
@@ -221,7 +211,8 @@
 			}
 		},
 		"filters": {
-			"tabs": [{
+			"tabs": [
+				{
 					"title": "Project",
 					"fields": [
 						"programs_name",
@@ -244,9 +235,6 @@
 						"ethnicity",
 						"hispanic_subgroup",
 						"subcohort",
-						"weight_baseline",
-						"bmi_baseline",
-						"height_baseline",
 						"current_smoker_baseline",
 						"ever_smoker_baseline"
 					]
@@ -254,39 +242,13 @@
 				{
 					"title": "Harmonized Variables",
 					"fields": [
-						"total_cholesterol",
-						"hdl",
-						"ldl",
-						"triglycerides",
 						"fasting_lipids",
 						"lipid_lowering_medication",
-						"cac_score",
-						"cac_volume",
 						"carotid_plaque",
 						"carotid_stenosis",
-						"cimt_1",
-						"cimt_2",
-						"bp_diastolic",
-						"bp_systolic",
 						"antihypertensive_meds",
 						"vte_case_status",
-						"vte_followup_start_age",
-						"vte_prior_history",
-						"basophil_ncnc_bld",
-						"eosinophil_ncnc_bld",
-						"hematocrit_vfr_bld",
-						"hemoglobin_mcnc_bld",
-						"lymphocyte_ncnc_bld",
-						"mch_entmass_rbc",
-						"mchc_mcnc_rbc",
-						"mcv_entvol_rbc",
-						"monocyte_ncnc_bld",
-						"neutrophil_ncnc_bld",
-						"platelet_ncnc_bld",
-						"pmv_entvol_bld",
-						"rbc_ncnc_bld",
-						"rdw_ratio_rbc",
-						"wbc_ncnc_bld"
+						"vte_prior_history"
 					]
 				}
 			]
@@ -299,17 +261,41 @@
 				"race",
 				"annotated_sex",
 				"ethnicity",
-				"bp_diastolic",
 				"hdl",
 				"ldl"
 			]
 		},
 		"dropdowns": {
-			"download": {
-				"title": "Download"
+			"sevenBridges": {
+				"title": "Export to Seven Bridges"
 			}
 		},
-		"buttons": [{
+		"buttons": [
+			{
+				"enabled": true,
+				"type": "export-pfb-to-url",
+				"targetURLTemplate": "https://cgc.sbgenomics.com/import/pfb?URL={{PRESIGNED_URL}}&source=bdc",
+				"title": "Export to CGC",
+				"rightIcon": "external-link",
+				"dropdownId": "sevenBridges"
+			},
+			{
+				"enabled": true,
+				"type": "export-pfb-to-url",
+				"targetURLTemplate": "https://cavatica.sbgenomics.com/import/pfb?URL={{PRESIGNED_URL}}&source=bdc",
+				"title": "Export to CAVATICA",
+				"rightIcon": "external-link",
+				"dropdownId": "sevenBridges"
+			},
+			{
+				"enabled": true,
+				"type": "export-pfb-to-url",
+				"targetURLTemplate": "https://platform.sb.biodatacatalyst.nhlbi.nih.gov/import/pfb?URL={{PRESIGNED_URL}}&source=bdc",
+				"title": "Export to BDC (Seven Bridges)",
+				"rightIcon": "external-link",
+				"dropdownId": "sevenBridges"
+			},
+			{
 				"enabled": true,
 				"type": "export",
 				"title": "Export All to Terra",
@@ -317,21 +303,8 @@
 			},
 			{
 				"enabled": true,
-				"type": "export-to-seven-bridges",
-				"title": "Export All to Seven Bridges",
-				"rightIcon": "external-link"
-			},
-			{
-				"enabled": true,
 				"type": "export-to-pfb",
 				"title": "Export to PFB",
-				"leftIcon": "datafile",
-				"rightIcon": "download"
-			},
-			{
-				"enabled": true,
-				"type": "export-to-workspace",
-				"title": "Export to Workspace",
 				"leftIcon": "datafile",
 				"rightIcon": "download"
 			}
@@ -352,7 +325,8 @@
 			"dataType": "subject",
 			"nodeCountTitle": "Subjects",
 			"fileCountField": "file_count",
-			"fieldMapping": [{
+			"fieldMapping": [
+				{
 					"field": "_subject_id",
 					"name": "Subject ID"
 				},
@@ -387,14 +361,6 @@
 				{
 					"field": "vte_prior_history",
 					"name": "VTE Prior History"
-				},
-				{
-					"field": "bp_diastolic",
-					"name": "BP Diastolic"
-				},
-				{
-					"field": "bp_systolic",
-					"name": "BP Systolic"
 				},
 				{
 					"field": "basophil_ncnc_bld",
@@ -532,21 +498,22 @@
 			}
 		},
 		"filters": {
-			"tabs": [{
-				"title": "File",
-				"fields": [
-					"programs_name",
-					"project_id",
-					"data_category",
-					"data_type",
-					"data_format",
-					"callset",
-					"bucket_path"
-				],
-				"searchFields": [
-					"file_name"
-				]
-			}]
+			"tabs": [
+				{
+					"title": "File",
+					"fields": [
+						"programs_name",
+						"project_id",
+						"data_category",
+						"data_type",
+						"data_format",
+						"callset"
+					],
+					"searchFields": [
+						"file_name"
+					]
+				}
+			]
 		},
 		"table": {
 			"enabled": true,
@@ -569,7 +536,7 @@
 					"field": "programs_name",
 					"name": "Program"
 				}
-					],
+			],
 			"nodeCountTitle": "Files",
 			"manifestMapping": {
 				"resourceIndexType": "subject",
@@ -583,21 +550,43 @@
 			"accessibleValidationField": "project_id",
 			"downloadAccessor": "object_id"
 		},
-		"buttons": [{
+		"dropdowns": {
+			"sevenBridges": {
+				"title": "Export to Seven Bridges"
+			}
+		},
+		"buttons": [
+			{
+				"enabled": true,
+				"type": "export-file-pfb-to-url",
+				"targetURLTemplate": "https://cgc.sbgenomics.com/import/pfb?URL={{PRESIGNED_URL}}&source=bdc",
+				"title": "Export to CGC",
+				"rightIcon": "external-link",
+				"dropdownId": "sevenBridges"
+			},
+			{
+				"enabled": true,
+				"type": "export-file-pfb-to-url",
+				"targetURLTemplate": "https://cavatica.sbgenomics.com/import/pfb?URL={{PRESIGNED_URL}}&source=bdc",
+				"title": "Export to CAVATICA",
+				"rightIcon": "external-link",
+				"dropdownId": "sevenBridges"
+			},
+			{
+				"enabled": true,
+				"type": "export-file-pfb-to-url",
+				"targetURLTemplate": "https://platform.sb.biodatacatalyst.nhlbi.nih.gov/import/pfb?URL={{PRESIGNED_URL}}&source=bdc",
+				"title": "Export to BDC (Seven Bridges)",
+				"rightIcon": "external-link",
+				"dropdownId": "sevenBridges"
+			},
+			{
 				"enabled": true,
 				"type": "file-manifest",
 				"title": "Download Manifest",
 				"leftIcon": "datafile",
 				"rightIcon": "download",
-				"fileName": "file-manifest.json",
-				"dropdownId": "download"
-			},
-			{
-				"enabled": true,
-				"type": "export-files-to-workspace",
-				"title": "Export to Workspace",
-				"leftIcon": "datafile",
-				"rightIcon": "download"
+				"fileName": "file-manifest.json"
 			},
 			{
 				"enabled": true,
@@ -610,12 +599,6 @@
 				"type": "export-files",
 				"title": "Export All to Terra",
 				"rightIcon": "external-link"
-			},
-			{
-				"enabled": true,
-				"type": "export-files-to-seven-bridges",
-				"title": "Export All to Seven Bridges",
-				"rightIcon": "external-link"
 			}
 		],
 		"terraExportURL": "https://terra.biodatacatalyst.nhlbi.nih.gov/#import-data",
@@ -626,12 +609,586 @@
 		"sevenBridgesExportURL": "https://platform.sb.biodatacatalyst.nhlbi.nih.gov/import/windmill",
 		"enableLimitedFilePFBExport": {
 			"sourceNodeField": "source_node"
-		},
-		"dropdowns": {}
+		}
 	},
+	"discoveryConfig": {
+		"features": {
+			"pageTitle": {
+				"enabled": false,
+				"text": "Study Discovery"
+			},
+			"tagsColumn": {
+				"enabled": false
+			},
+			"tagsInDescription": {
+				"enabled": true
+			},
+			"search": {
+				"searchBar": {
+					"enabled": true,
+					"searchableTextFields": [
+						"name",
+						"full_name",
+						"_subjects_count",
+						"study_id",
+						"released",
+						"study_description",
+						"doi_titles",
+						"doi_version_information",
+						"doi_citation",
+						"doi_creators",
+						"doi_publisher",
+						"doi_identifier",
+						"doi_alternateIdentifiers",
+						"doi_contributors",
+						"doi_descriptions",
+						"doi_publication_year",
+						"doi_resolvable_link",
+						"doi_fundingReferences",
+						"doi_relatedIdentifiers"
+					]
+				},
+				"tagSearchDropdown": {
+					"enabled": true,
+					"collapsibleButtonText": "Study Filters"
+				}
+			},
+			"authorization": {
+				"enabled": true,
+				"supportedValues": {
+					"accessible": {
+						"enabled": true,
+						"menuText": "Accessible"
+					},
+					"unaccessible": {
+						"enabled": true,
+						"menuText": "Not Accessible"
+					}
+				}
+			}
+		},
+		"aggregations": [
+			{
+				"name": "Studies",
+				"field": "study_id",
+				"type": "count"
+			},
+			{
+				"name": "Total Subjects",
+				"field": "_subjects_count",
+				"type": "sum"
+			}
+		],
+		"tagSelector": {
+			"title": "Tags by category",
+			"showTagCategoryNames": true
+		},
+		"studyColumns": [
+			{
+				"name": "Study Name",
+				"field": "name"
+			},
+			{
+				"name": "Full Name",
+				"field": "full_name",
+				"errorIfNotAvailable": false,
+				"valueIfNotAvailable": "",
+				"contentType": "string"
+			},
+			{
+				"name": "Number of Subjects",
+				"field": "_subjects_count",
+				"errorIfNotAvailable": false,
+				"valueIfNotAvailable": "n/a",
+				"contentType": "number"
+			},
+			{
+				"name": "dbGaP Accession Number",
+				"field": "study_id"
+			},
+			{
+				"name": "Released",
+				"field": "released",
+				"errorIfNotAvailable": false,
+				"valueIfNotAvailable": "n/a"
+			}
+		],
+		"studyPreviewField": {
+			"name": "Description",
+			"field": "study_description",
+			"contentType": "string",
+			"includeName": false,
+			"includeIfNotAvailable": true,
+			"valueIfNotAvailable": "No description has been provided for this study."
+		},
+		"studyPageFields": {
+			"showAllAvailableFields": false,
+			"header": {
+				"field": "name"
+			},
+			"fieldsToShow": [
+				{
+					"groupName": "Study Identifiers",
+					"includeName": false,
+					"fields": [
+						{
+							"name": "Number of Subjects",
+							"field": "_subjects_count",
+							"contentType": "number"
+						},
+						{
+							"name": "Full Name",
+							"field": "full_name",
+							"contentType": "string"
+						},
+						{
+							"name": "Short Name",
+							"field": "short_name",
+							"contentType": "string",
+							"includeName": true,
+							"includeIfNotAvailable": true,
+							"valueIfNotAvailable": "N/A"
+						},
+						{
+							"name": "dbGaP Study Accession",
+							"field": "dbgap_accession",
+							"contentType": "string",
+							"includeName": true,
+							"includeIfNotAvailable": false
+						},
+						{
+							"name": "Project ID",
+							"field": "project_id",
+							"contentType": "string",
+							"includeIfNotAvailable": false
+						}
+					]
+				},
+				{
+					"fields": [
+						{
+							"name": "Description",
+							"field": "study_description",
+							"contentType": "paragraphs",
+							"includeName": false,
+							"includeIfNotAvailable": true,
+							"valueIfNotAvailable": "No description has been provided for this study."
+						}
+					]
+				}
+			]
+		},
+		"detailView": {
+			"headerField": "project_id",
+			"tabs": [
+				{
+					"tabName": "DOI",
+					"groups": [
+						{
+							"header": "Dataset Information",
+							"fields": [
+								{
+									"type": "block",
+									"label": "",
+									"sourceField": "doi_disclaimer",
+									"default": ""
+								},
+								{
+									"type": "text",
+									"label": "Title:",
+									"sourceField": "doi_titles",
+									"default": "Not specified"
+								},
+								{
+									"type": "link",
+									"label": "DOI:",
+									"sourceField": "doi_resolvable_link",
+									"default": "None"
+								},
+								{
+									"type": "text",
+									"label": "Data available:",
+									"sourceField": "doi_is_available",
+									"default": "None"
+								},
+								{
+									"type": "text",
+									"label": "Creators:",
+									"sourceField": "doi_creators",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Citation:",
+									"sourceField": "doi_citation",
+									"default": "Not specified"
+								},
+								{
+									"type": "link",
+									"label": "Contact:",
+									"sourceField": "doi_contact",
+									"default": "Not specified"
+								}
+							]
+						},
+						{
+							"header": "How to Access the Data",
+							"fields": [
+								{
+									"type": "block",
+									"label": "How to access the data:",
+									"sourceField": "doi_access_information",
+									"default": "Not specified"
+								},
+								{
+									"type": "link",
+									"label": "Data and access information:",
+									"sourceField": "doi_access_information_link",
+									"default": "Not specified"
+								}
+							]
+						},
+						{
+							"header": "Additional Information",
+							"fields": [
+								{
+									"type": "text",
+									"label": "Publisher:",
+									"sourceField": "doi_publisher",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Funded by:",
+									"sourceField": "doi_fundingReferences",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Publication Year:",
+									"sourceField": "doi_publication_year",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Resource Type:",
+									"sourceField": "doi_resource_type",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Version:",
+									"sourceField": "doi_version_information",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Contributors:",
+									"sourceField": "doi_contributors",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Related Identifiers:",
+									"sourceField": "doi_relatedIdentifiers",
+									"default": "Not specified"
+								}
+							]
+						},
+						{
+							"header": "Description",
+							"fields": [
+								{
+									"type": "block",
+									"label": "Description:",
+									"sourceField": "doi_descriptions",
+									"default": "Not specified"
+								}
+							]
+						}
+					]
+				},
+				{
+					"tabName": "Study",
+					"groups": [
+						{
+							"header": "Study Information",
+							"fields": [
+								{
+									"type": "text",
+									"label": "Full Name:",
+									"sourceField": "full_name",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Short Name:",
+									"sourceField": "short_name",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Number Of Subjects:",
+									"sourceField": "_subjects_count",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "dbGaP Accession Number:",
+									"sourceField": "dbgap_accession",
+									"default": "Not specified"
+								},
+								{
+									"type": "link",
+									"label": "dbGaP URL:",
+									"sourceField": "dbgap_url",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Released:",
+									"sourceField": "released",
+									"default": "Not specified"
+								},
+								{
+									"type": "tags"
+								}
+							]
+						},
+						{
+							"header": "Study Description",
+							"fields": [
+								{
+									"type": "block",
+									"sourceField": "study_description"
+								}
+							]
+						}
+					]
+				},
+				{
+					"tabName": "dbGaP FHIR",
+					"groups": [
+						{
+							"header": "Disclaimer",
+							"fields": [
+								{
+									"type": "block",
+									"sourceField": "DBGAP_FHIR_Disclaimer",
+									"default": "This information was retrieved from dbGaP's FHIR API for discoverability purposes and may not contain fully up-to-date information. Please refer to the official FHIR server for up-to-date FHIR data."
+								},
+								{
+									"type": "link",
+									"label": "dbGaP FHIR Research Study URL:",
+									"sourceField": "DBGAP_FHIR_ResearchStudyURL",
+									"default": "Not specified"
+								}
+							]
+						},
+						{
+							"header": "General Information",
+							"fields": [
+								{
+									"type": "text",
+									"label": "Title:",
+									"sourceField": "DBGAP_FHIR_Title",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "ID:",
+									"sourceField": "DBGAP_FHIR_Id",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Focus:",
+									"sourceField": "DBGAP_FHIR_Focus",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Identifier:",
+									"sourceField": "DBGAP_FHIR_Identifier",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Category:",
+									"sourceField": "DBGAP_FHIR_Category",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Status:",
+									"sourceField": "DBGAP_FHIR_Status",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Release Date:",
+									"sourceField": "DBGAP_FHIR_ReleaseDate",
+									"default": "Not specified"
+								}
+							]
+						},
+						{
+							"header": "Counts",
+							"fields": [
+								{
+									"type": "text",
+									"label": "Number of Samples:",
+									"sourceField": "DBGAP_FHIR_NumSamples",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Number of Molecular Datasets:",
+									"sourceField": "DBGAP_FHIR_NumMolecularDatasets",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Number Of Variables:",
+									"sourceField": "DBGAP_FHIR_NumVariables",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Number of Subjects:",
+									"sourceField": "DBGAP_FHIR_NumSubjects",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Number of Documents:",
+									"sourceField": "DBGAP_FHIR_NumDocuments",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Number of Analyses:",
+									"sourceField": "DBGAP_FHIR_NumAnalysis",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Number of Phenotype Datasets:",
+									"sourceField": "DBGAP_FHIR_NumPhenotypeDatasets",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Number of Sub Studies:",
+									"sourceField": "DBGAP_FHIR_NumSubStudies",
+									"default": "Not specified"
+								}
+							]
+						},
+						{
+							"header": "Description",
+							"fields": [
+								{
+									"type": "block",
+									"sourceField": "DBGAP_FHIR_Description"
+								}
+							]
+						},
+						{
+							"header": "Additional Information",
+							"fields": [
+								{
+									"type": "text",
+									"label": "Conditions:",
+									"sourceField": "DBGAP_FHIR_Condition",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Keywords:",
+									"sourceField": "DBGAP_FHIR_Keyword",
+									"default": "Not specified"
+								},
+								{
+									"type": "link",
+									"label": "Study Overview URL:",
+									"sourceField": "DBGAP_FHIR_StudyOverviewUrl",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Part Of:",
+									"sourceField": "DBGAP_FHIR_PartOf",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Enrollment:",
+									"sourceField": "DBGAP_FHIR_Enrollment",
+									"default": "Not specified"
+								},
+								{
+									"type": "text",
+									"label": "Sponsor:",
+									"sourceField": "DBGAP_FHIR_Sponsor",
+									"default": "Not specified"
+								}
+							]
+						}
+					]
+				},
+				{
+					"tabName": "Access",
+					"groups": [
+						{
+							"fields": [
+								{
+									"type": "accessDescriptor"
+								}
+							]
+						},
+						{
+							"header": "Study Access",
+							"fields": [
+								{
+									"type": "text",
+									"sourceField": "study_data_requires_access_request",
+									"label": "Study Data Requires Access Request"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"minimalFieldMapping": {
+			"tagsListFieldName": "tags",
+			"authzField": "authz",
+			"uid": "study_id"
+		},
+		"tagCategories": [
+			{
+				"name": "Program",
+				"color": "rgba(129, 211, 248, 1)",
+				"display": true
+			},
+			{
+				"name": "Study Registration",
+				"color": "rgba(236, 128, 141, 1)",
+				"display": true
+			},
+			{
+				"name": "Data Type",
+				"color": "rgba(112, 182, 3, 1)",
+				"display": true
+			}
+		]
+	},
+	"useArboristUI": true,
 	"terraExportWarning": {
 		"subjectThreshold": 120000,
 		"title": "Warning: Data Transfer May Fail in Terra",
 		"message": "Warning: Your selected cohort contains more subjects than are currently supported for import by Terra. It is recommended that you slice your data into segments of no more than 120,000 subjects and then export each segment separately. Would you like to continue anyway?"
-	}
+	},
+	"ddUrl": "ddog-gov.com"
 }
