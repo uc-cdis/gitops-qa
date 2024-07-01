@@ -125,6 +125,7 @@
     "https://second-argo-bucket.s3.amazonaws.com"
   ],
   "userAccessToSite": {
-    "enabled": true
+    "enabled": true,
+    "noAccessMessage": "Access to this site requires an approved request. Please contact us at vadc@lists.uchicago.edu"
   }
 }
