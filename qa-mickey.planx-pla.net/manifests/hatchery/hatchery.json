@@ -5,7 +5,7 @@
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "1Gi",
-    "image": "quay.io/cdis/gen3fuse-sidecar:0.2.3",
+    "image": "quay.io/cdis/gen3fuse-sidecar:2024.06",
     "env": {
       "NAMESPACE": "qa-mickey",
       "HOSTNAME": "qa-mickey.planx-pla.net"
@@ -53,7 +53,7 @@
         "--NotebookApp.base_url=/lw-workspace/proxy/",
         "--NotebookApp.password=''",
         "--NotebookApp.token=''",
-	"--NotebookApp.shutdown_no_activity_timeout=5400"
+        "--NotebookApp.shutdown_no_activity_timeout=5400"
       ],
       "command": [
         "start-notebook.sh"
@@ -84,7 +84,7 @@
         "--NotebookApp.default_url=/lab",
         "--NotebookApp.password=''",
         "--NotebookApp.token=''",
-	"--NotebookApp.shutdown_no_activity_timeout=5400"
+        "--NotebookApp.shutdown_no_activity_timeout=5400"
       ],
       "command": [
         "start-notebook.sh"
@@ -115,7 +115,7 @@
         "--NotebookApp.default_url=/lab",
         "--NotebookApp.password=''",
         "--NotebookApp.token=''",
-	"--NotebookApp.shutdown_no_activity_timeout=5400"
+        "--NotebookApp.shutdown_no_activity_timeout=5400"
       ],
       "command": [
         "start-notebook.sh"
@@ -151,10 +151,12 @@
         {
           "name": "firefox",
           "image": "quay.io/cdis/docker-firefox:v1.13.0_ctds.1.0.0",
-          "volumeMounts": [{
-            "name": "dshm",
-            "mountPath": "/dev/shm"
-          }],
+          "volumeMounts": [
+            {
+              "name": "dshm",
+              "mountPath": "/dev/shm"
+            }
+          ],
           "securityContext": {
             "privileged": true
           },
@@ -211,10 +213,12 @@
         {
           "name": "firefox",
           "image": "quay.io/cdis/docker-firefox:v1.13.0_ctds.1.0.0",
-          "volumeMounts": [{
-            "name": "dshm",
-            "mountPath": "/dev/shm"
-          }],
+          "volumeMounts": [
+            {
+              "name": "dshm",
+              "mountPath": "/dev/shm"
+            }
+          ],
           "securityContext": {
             "privileged": true
           },
