@@ -123,5 +123,8 @@
   "showFenceAuthzOnProfile": false,
   "connectSrcCSPWhitelist": [
     "https://second-argo-bucket.s3.amazonaws.com"
-  ]
+  ],
+  "userAccessToSite": {
+    "enabled": true
+  }
 }
