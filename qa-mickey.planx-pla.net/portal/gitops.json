@@ -126,6 +126,6 @@
   ],
   "userAccessToSite": {
     "enabled": true,
-    "noAccessMessage": "Access to this site requires an approved request. Please contact us at vadc@lists.uchicago.edu"
+    "noAccessMessage": "You are not authorized to access this system. If you have any questions, please contact vadc@lists.uchicago.edu"
   }
 }
