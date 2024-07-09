@@ -521,14 +521,6 @@
       "project_id": {
         "chartType": "count",
         "title": "Projects"
-      },
-      "sex": {
-        "chartType": "pie",
-        "title": "Sex"
-      },
-      "ancestry": {
-        "chartType": "bar",
-        "title": "Ancestry"
       }
     },
     "filters": {
@@ -537,44 +529,8 @@
           "title": "Projects",
           "fields": [
             "project_id",
-            "anvil_project_id",
             "data_type",
             "data_format"
-          ]
-        }, {
-          "title": "Subject",
-          "fields":[
-            "sex",
-            "ancestry",
-            "age_value",
-            "disease_description",
-            "phenotype_present",
-            "phenotype_absent",
-            "disease_id",
-            "solve_state",
-            "congenital_status",
-            "age_of_onset",
-            "phenotype_group"
-          ]
-        }, {
-          "title": "Sample",
-          "fields": [
-            "tissue_type",
-            "sample_type",
-            "original_material_type",
-            "sample_provider",
-            "tissue_affected_status"
-          ]
-        }, {
-          "title": "Sequencing",
-          "fields": [
-            "sequencing_assay",
-            "reference_genome_build",
-            "library_prep_kit_method",
-            "exome_capture_platform",
-            "capture_region_bed_file",
-            "alignment_method",
-            "data_processing_pipeline"
           ]
         }
       ]
@@ -583,13 +539,7 @@
       "enabled": true,
       "fields": [
         "project_id",
-        "anvil_project_id",
-        "ancestry",
-        "sex",
-        "age_value",
-        "phenotype_group",
-        "_samples_count",
-        "_sequencings_count"
+        "data_format"
       ]
     },
     "buttons": [
