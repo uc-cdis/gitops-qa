@@ -1,5 +1,5 @@
 #!groovy
-@Library('cdis-jenkins-lib@master') _
+@Library('cdis-jenkins-lib@test/popup_handling_homepage') _
 testPipeline {
   MANIFEST = "True"
 }
