@@ -31,7 +31,7 @@
     "environment": "devplanetv2",
     "hostname": "qa-bih.planx-pla.net",
     "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
-    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/bih_dictionary/0.0.6/schema.json",
+    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/bih_dictionary/0.1.0/schema.json",
     "dispatcher_job_num": "10",
     "portal_app": "gitops",
     "sync_from_dbgap": "False",
