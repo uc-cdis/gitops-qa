@@ -112,7 +112,7 @@
     "discoveryUseAggMDS": true,
     "discoveryUseAggWTS": true,
     "workspaceRegistration": true,
-    "workspaceTokenServiceRefreshTokenAtLogin": true
+    "workspaceTokenServiceRefreshTokenAtLogin": false
   },
   "useArboristUI": true,
   "showArboristAuthzOnProfile": true,

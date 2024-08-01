@@ -2,13 +2,6 @@
   "user-namespace": "jupyter-pods-jenkins-new-1",
   "sub-dir": "/lw-workspace",
   "user-volume-size": "2Gi",
-  "default-pay-model": {
-    "bmh_workspace_id": "blanket_billing_eks",
-    "region": "us-east-1",
-    "account_id": "354484406138",
-    "workspace_type": "STRIDES test",
-    "ecs": true
-  },
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
