@@ -567,7 +567,6 @@
     "guppyConfig": {
       "dataType": "subject",
       "nodeCountTitle": "Subjects",
-		  "fileCountField": "file_count",
       "fieldMapping": [
         { "field": "disease_id", "name": "Disease ID" },
         { "field": "age_of_onset", "name": "Age of Onset" },
