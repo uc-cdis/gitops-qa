@@ -1,7 +1,7 @@
 {
   "notes": [
     "This is the dev environment manifest",
-    "That's all I have to say"
+    "That's all I have to say "
   ],
   "versions": {
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
