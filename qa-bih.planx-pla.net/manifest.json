@@ -17,6 +17,7 @@
     "indexd": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexd:2024.05",
     "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:2024.05",
     "peregrine": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/peregrine:2024.05",
+    "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:2024.05",
     "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:2024.05",
     "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:2024.05",
     "wts": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/workspace-token-service:2024.05"
