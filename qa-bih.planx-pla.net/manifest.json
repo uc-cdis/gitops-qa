@@ -62,9 +62,6 @@
     "USE_AGG_MDS": true,
     "AGG_MDS_NAMESPACE": "qa-midrc-bih"
   },
-  "portal": {
-    "GEN3_BUNDLE": "ecosystem"
-  },
   "canary": {
     "default": 0
   },
