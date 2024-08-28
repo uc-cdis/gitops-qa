@@ -9,11 +9,9 @@
   "versions": {
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
     "arborist": "quay.io/cdis/arborist:master",
-    "argo-wrapper": "quay.io/cdis/argo-wrapper:master",
     "audit-service": "quay.io/cdis/audit-service:master",
     "aws-es-proxy": "quay.io/cdis/aws-es-proxy:v1.3.1",
     "awshelper": "quay.io/cdis/awshelper:master",
-    "cohort-middleware": "quay.io/cdis/cohort-middleware:master",
     "fence": "quay.io/cdis/fence:master",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
     "indexd": "quay.io/cdis/indexd:master",
@@ -355,8 +353,5 @@
     "guppy": {
       "strategy": "auto"
     }
-  },
-  "argo": {
-    "argo_server_service_url": "http://argo-argo-workflows-server.argo.svc.cluster.local:2746"
   }
 }

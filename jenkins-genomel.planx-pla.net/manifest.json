@@ -32,9 +32,7 @@
     "dashboard": "quay.io/cdis/gen3-statics:master",
     "requestor": "quay.io/cdis/requestor:master",
     "cedar-wrapper": "quay.io/cdis/cedar-wrapper-service:master",
-    "kayako-wrapper": "quay.io/cdis/kayako-wrapper-service:master",
-    "argo-wrapper": "quay.io/cdis/argo-wrapper:master",
-    "cohort-middleware": "quay.io/cdis/cohort-middleware:master"
+    "kayako-wrapper": "quay.io/cdis/kayako-wrapper-service:master"
   },
   "arborist": {
     "deployment_version": "2"
@@ -359,8 +357,5 @@
     "guppy": {
       "strategy": "auto"
     }
-  },
-  "argo": {
-    "argo_server_service_url": "http://argo-argo-workflows-server.argo.svc.cluster.local:2746"
   }
 }
