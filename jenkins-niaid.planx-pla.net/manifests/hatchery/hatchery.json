@@ -14,6 +14,14 @@
     "command": [
       "/bin/bash",
       "./sidecar.sh"
+    ],
+    "lifecycle-pre-stop": [
+      "su",
+      "-c",
+      "echo test",
+      "-s",
+      "/bin/sh",
+      "root"
     ]
   },
   "containers": [
