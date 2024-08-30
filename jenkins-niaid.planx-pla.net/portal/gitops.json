@@ -558,10 +558,11 @@
       "dataType": "subject",
       "nodeCountTitle": "Subjects",
       "fieldMapping": [
-        {
-          "field": "_subject_id",
-          "name": "Subject ID"
-        }
+        { "field": "disease_id", "name": "Disease ID" },
+        { "field": "age_of_onset", "name": "Age of Onset" },
+        { "field": "project_dbgap_accession_number", "name": "Project dbGaP Accession Number" },
+        { "field": "project_dbgap_consent_text", "name":"Project dbGaP Consent Text"},
+        { "field": "project_dbgap_phs", "name":"Project dbGaP Phs"}
       ],
       "manifestMapping": {
         "resourceIndexType": "file",
