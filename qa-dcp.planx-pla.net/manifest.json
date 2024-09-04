@@ -355,8 +355,12 @@
         "type": "subject"
       },
       {
-        "index": "qa-dcp_file",
-        "type": "file"
+        "index": "qa-dcp_data_file",
+        "type": "data_file"
+      },
+      {
+        "index": "qa-dcp_index_file",
+        "type": "index_file"
       }
     ],
     "config_index": "qa-dcp_array-config",
