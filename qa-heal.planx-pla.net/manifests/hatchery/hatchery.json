@@ -7,7 +7,7 @@
     "local": true
   },
   "pay-models": [],
-  "pay-models-dynamodb-table": "bmh-admin-portal-backend-bmhworkspacetableD4D73E43-4U08KIUG3YW3",
+  "pay-models-dynamodb-table": "bmh-admin-portal-backend-bmhworkspacetableD4D73E43-BAFEMVG0IMKE",
   "license-user-maps-dynamodb-table": "gen3-license-user-maps",
   "license-user-maps-global-secondary-index": "activeUsersIndex",
   "sidecar": {
