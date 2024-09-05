@@ -166,7 +166,6 @@ mappings:
       - name: data_category
       - name: data_format
       - name: data_type
-      - name: state
       - name: callset
       - name: bucket_path
       - name: source_node
