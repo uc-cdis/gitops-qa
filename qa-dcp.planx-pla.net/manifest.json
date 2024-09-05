@@ -277,11 +277,11 @@
           },
           {
             "name": "ROOT_NODE",
-            "value": "file"
+            "value": "data_file"
           },
           {
             "name": "EXTRA_NODES",
-            "value": ""
+            "value": "index_file"
           }
         ],
         "volumeMounts": [
