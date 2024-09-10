@@ -340,11 +340,6 @@
               "zip",
               "covid19_positive",
               "project_id"
-            ],
-            "defaultFilters": [
-              {
-                "field": "sex", "values": ["Male", "test value"]
-              }
             ]
           },
           {
@@ -357,10 +352,13 @@
               "imaging_studies.loinc_long_common_name",
               "imaging_studies.loinc_method",
               "imaging_studies.loinc_system",
-              "imaging_studies.study_location",
               "imaging_studies.age_at_imaging",
               "imaging_studies.body_part_examined",
-              "imaging_studies.days_to_study"
+              "imaging_studies.days_to_study",
+              "imaging_studies.image_data_modified",
+              "data_file_image_data_modified",
+              "data_file_image_data_modification_name",
+              "data_file_image_data_modification_method"
             ]
           },
           {
@@ -382,7 +380,6 @@
               "medications.medication_code_system",
               "medications.medication_manufacturer",
               "medications.medication_name",
-              "medications.medication_status",
               "medications.medication_type"
             ]
           },
@@ -408,11 +405,9 @@
           {
             "title": "Annotations",
             "fields": [
-              "imaging_study_annotations.airspace_disease_grading",
-              "imaging_study_annotations.class_covid19_pneumonia",
+              "imaging_study_annotations.annotation_name",
               "imaging_study_annotations.midrc_mRALE_score",
-              "imaging_study_annotations.annotation_method",
-              "imaging_study_annotations.annotator_id"
+              "imaging_study_annotations.annotation_method"
             ]
           }
         ]
@@ -431,15 +426,21 @@
           "imaging_studies.age_at_imaging",
           "imaging_studies.body_part_examined",
           "imaging_studies.days_to_study",
+          "license",
+          "data_url_doi",
+          "data_contributor",
           "imaging_studies.loinc_code",
           "imaging_studies.loinc_contrast",
           "imaging_studies.loinc_long_common_name",
           "imaging_studies.loinc_method",
           "imaging_studies.loinc_system",
           "imaging_studies.study_description",
-          "imaging_studies.study_location",
           "imaging_studies.study_modality",
           "imaging_studies.study_uid",
+          "imaging_studies.image_data_modified",
+          "data_file_image_data_modified",
+          "data_file_image_data_modification_name",
+          "data_file_image_data_modification_method",
           "measurements.test_name",
           "measurements.test_result_text",
           "measurements.test_method",
@@ -451,7 +452,6 @@
           "medications.medication_code_system",
           "medications.medication_manufacturer",
           "medications.medication_name",
-          "medications.medication_status",
           "medications.medication_type",
           "procedures.breathing_support_type",
           "procedures.days_to_procedure_start",
@@ -462,8 +462,7 @@
           "conditions.condition_code",
           "conditions.days_to_condition_start",
           "conditions.days_to_condition_end",
-          "imaging_study_annotations.airspace_disease_grading",
-          "imaging_study_annotations.class_covid19_pneumonia",
+          "imaging_study_annotations.annotation_name",
           "imaging_study_annotations.midrc_mRALE_score",
           "imaging_study_annotations.annotation_method",
           "imaging_study_annotations.annotator_id",
@@ -474,7 +473,11 @@
           "_cr_series_file_count",
           "_mr_series_file_count",
           "project_id"
-        ]
+        ],
+        "linkFields": [
+          "license",
+          "data_url_doi"
+      ]
       },
       "dropdowns": {
         "download-table": {
@@ -529,6 +532,7 @@
       "guppyConfig": {
         "dataType": "case",
         "nodeCountTitle": "Cases",
+        "fileCountField": "data_file_count",
         "fieldMapping": [
           {
             "field": "project_id",
@@ -583,10 +587,6 @@
             "name": "Study Description"
           },
           {
-            "field": "imaging_studies.study_location",
-            "name": "Study Location"
-          },
-          {
             "field": "imaging_studies.study_modality",
             "name": "Study Modality"
           },
@@ -639,10 +639,6 @@
             "name": "Medication Name"
           },
           {
-            "field": "medications.medication_status",
-            "name": "Medication Status"
-          },
-          {
             "field": "medications.medication_type",
             "name": "Medication Type"
           },
@@ -683,27 +679,31 @@
             "name": "Days to Condition End"
           },
           {
-            "field": "case_annotations.airspace_disease_grading",
+            "field": "imaging_study_annotations.airspace_disease_grading",
             "name": "Airspace Disease Grading"
           },
           {
-            "field": "case_annotations.class_covid19_pneumonia",
+            "field": "imaging_study_annotations.class_covid19_pneumonia",
             "name": "Class COVID-19 Pneumonia"
           },
           {
-            "field": "case_annotations.midrc_mRALE_score",
+            "field": "imaging_study_annotations.annotation_name",
+            "name": "Annotation Name"
+          },
+          {
+            "field": "imaging_study_annotations.midrc_mRALE_score",
             "name": "MIDRC mRALE Score"
           },
           {
-            "field": "case_annotations.annotation_method",
+            "field": "imaging_study_annotations.annotation_method",
             "name": "Annotation Method"
           },
           {
-            "field": "case_annotations.annotator_id",
+            "field": "imaging_study_annotations.annotator_id",
             "name": "Annotator ID"
           },
           {
-            "field": "case_annotations.instance_uids",
+            "field": "imaging_study_annotations.instance_uids",
             "name": "Instance UIDs"
           },
           {
@@ -725,6 +725,18 @@
           {
             "field": "_mr_series_file_count",
             "name": "MR Series Count"
+          },
+          {
+            "field": "license",
+            "name": "License"
+          },
+          {
+            "field": "data_url_doi",
+            "name": "DOI"
+          },
+          {
+            "field": "data_contributor",
+            "name": "Data Contributor"
           }
         ],
         "manifestMapping": {
@@ -745,10 +757,9 @@
       "filters": {
         "tabs": [
           {
-            "title": "Annotations",
+            "title": "Imaging Study Annotations",
             "fields": [
-              "airspace_disease_grading",
-              "class_covid19_pneumonia",
+              "annotation_name",
               "midrc_mRALE_score",
               "annotation_method",
               "annotator_id",
@@ -761,8 +772,6 @@
         "enabled": true,
         "fields": [
           "case_ids",
-          "airspace_disease_grading",
-          "class_covid19_pneumonia",
           "midrc_mRALE_score",
           "annotation_method",
           "annotator_id",
@@ -868,8 +877,15 @@
           "test_name",
           "test_days_from_index",
           "submitter_id",
-          "project_id"
-        ]
+          "project_id",
+          "license",
+          "data_url_doi",
+          "data_contributor"
+        ],
+        "linkFields": [
+          "license",
+          "data_url_doi"
+      ]
       },
       "dropdowns": {
         "download-table": {
@@ -921,6 +937,18 @@
           {
             "field": "case_ids",
             "name": "Case ID"
+          },
+          {
+            "field": "license",
+            "name": "License"
+          },
+          {
+            "field": "data_url_doi",
+            "name": "DOI"
+          },
+          {
+            "field": "data_contributor",
+            "name": "Data Contributor"
           }
         ],
         "accessibleFieldCheckList": [
@@ -946,7 +974,6 @@
               "study_year",
               "study_year_shifted",
               "body_part_examined",
-              "study_location",
               "days_from_study_to_pos_covid_test",
               "days_from_study_to_neg_covid_test",
               "project_id"
@@ -967,7 +994,10 @@
             "fields": [
               "data_format",
               "data_category",
-              "data_type"
+              "data_type",
+              "data_file_image_data_modified",
+              "data_file_image_data_modification_name",
+              "data_file_image_data_modification_method"
             ]
           },
           {
@@ -985,11 +1015,11 @@
           {
             "title": "Annotations",
             "fields": [
-              "imaging_study_annotations.airspace_disease_grading",
-              "imaging_study_annotations.class_covid19_pneumonia",
+              "imaging_study_annotations.annotation_name",
               "imaging_study_annotations.midrc_mRALE_score",
               "imaging_study_annotations.annotation_method",
-              "imaging_study_annotations.annotator_id"
+              "imaging_study_annotations.annotator_id",
+              "data_file_annotation_name"
             ]
           }
         ]
@@ -1005,6 +1035,9 @@
           "days_to_study",
           "study_year",
           "study_year_shifted",
+          "license",
+          "data_url_doi",
+          "data_contributor",
           "loinc_long_common_name",
           "loinc_method",
           "loinc_system",
@@ -1012,7 +1045,7 @@
           "loinc_code",
           "days_from_study_to_pos_covid_test",
           "days_from_study_to_neg_covid_test",
-          "data_format",
+          "image_data_modified",
           "covid19_positive",
           "age_at_index",
           "index_event",
@@ -1020,12 +1053,12 @@
           "race",
           "ethnicity",
           "zip",
-          "imaging_study_annotations.airspace_disease_grading",
-          "imaging_study_annotations.class_covid19_pneumonia",
+          "imaging_study_annotations.annotation_name",
           "imaging_study_annotations.midrc_mRALE_score",
           "imaging_study_annotations.annotation_method",
           "imaging_study_annotations.annotator_id",
           "imaging_study_annotations.instance_uids",
+          "data_file_annotation_name",
           "_ct_series_file_count",
           "_dx_series_file_count",
           "_cr_series_file_count",
@@ -1033,6 +1066,9 @@
           "data_format",
           "data_category",
           "data_type",
+          "data_file_image_data_modified",
+          "data_file_image_data_modification_name",
+          "data_file_image_data_modification_method",
           "study_uid",
           "case_ids",
           "object_id",
@@ -1041,7 +1077,9 @@
         "dicomViewerId": "submitter_id",
         "dicomViewerUrl": "ohif-viewer",
         "linkFields": [
-          "submitter_id"
+          "submitter_id",
+          "license",
+          "data_url_doi"
         ]
       },
       "dropdowns": {
@@ -1123,6 +1161,10 @@
             "name": "Class COVID-19 Pneumonia"
           },
           {
+            "field": "imaging_study_annotations.annotation_name",
+            "name": "Annotation Name"
+          },
+          {
             "field": "imaging_study_annotations.midrc_mRALE_score",
             "name": "MIDRC mRALE Score"
           },
@@ -1153,6 +1195,18 @@
           {
             "field": "_mr_series_file_count",
             "name": "MR Series Count"
+          },
+          {
+            "field": "license",
+            "name": "License"
+          },
+          {
+            "field": "data_url_doi",
+            "name": "DOI"
+          },
+          {
+            "field": "data_contributor",
+            "name": "Data Contributor"
           },
           {
             "field": "loinc_long_common_name",
@@ -1203,7 +1257,10 @@
               "source_node",
               "data_format",
               "data_category",
-              "data_type"
+              "data_type",
+              "image_data_modified",
+              "image_data_modification_name",
+              "image_data_modification_method"
             ]
           },
           {
@@ -1213,7 +1270,6 @@
               "age_at_imaging",
               "study_year",
               "study_year_shifted",
-              "study_location",
               "days_from_study_to_pos_covid_test",
               "days_from_study_to_neg_covid_test",
               "loinc_code",
@@ -1249,6 +1305,7 @@
               "manufacturer",
               "manufacturer_model_name",
               "modality",
+              "number_of_instances",
               "number_of_temporal_positions",
               "patient_position",
               "pixel_spacing",
@@ -1282,18 +1339,17 @@
           {
             "title": "Annotation Properties",
             "fields": [
-                "source_node",
-                "annotation_method",
-                "annotation_name",
-                "annotator_id",
-                "manufacturer",
-                "manufacturer_model_name",
-                "modality",
-                "series_description",
-                "software_versions",
-                "data_format",
-                "data_category",
-                "data_type"
+              "source_node",
+              "data_type",
+              "annotation_method",
+              "annotation_name",
+              "manufacturer",
+              "manufacturer_model_name",
+              "modality",
+              "series_description",
+              "software_versions",
+              "data_format",
+              "data_category"
             ]
           }
         ]
@@ -1301,75 +1357,84 @@
       "table": {
         "enabled": true,
         "fields": [
-            "source_node",
-            "acquisition_type",
-            "angio_flag",
-            "contrast_bolus_agent",
-            "convolution_kernel",
-            "detector_type",
-            "diffusion_b_value",
-            "diffusion_gradient_orientation",
-            "echo_number",
-            "echo_time",
-            "echo_train_length",
-            "exposure_modulation_type",
-            "image_type",
-            "imaged_nucleus",
-            "imager_pixel_spacing",
-            "lossy_image_compression",
-            "manufacturer",
-            "manufacturer_model_name",
-            "modality",
-            "number_of_temporal_positions",
-            "patient_position",
-            "pixel_spacing",
-            "radiopharmaceutical",
-            "repetition_time",
-            "scan_options",
-            "sequence_variant",
-            "series_description",
-            "slice_thickness",
-            "software_version",
-            "spacing_between_slices",
-            "spatial_resolution",
-            "transducer_type",
-            "view_position",
-            "study_description",
-            "age_at_imaging",
-            "days_to_study",
-            "study_year",
-            "study_year_shifted",
-            "days_from_study_to_pos_covid_test",
-            "days_from_study_to_neg_covid_test",
-            "loinc_code",
-            "loinc_contrast",
-            "loinc_long_common_name",
-            "loinc_method",
-            "loinc_system",
-            "covid19_positive",
-            "age_at_index",
-            "index_event",
-            "sex",
-            "race",
-            "zip",
-            "data_format",
-            "data_category",
-            "data_type",
-            "annotation_method",
-            "annotation_name",
-            "annotator_id",
-            "software_versions",
-            "series_uid",
-            "study_uid",
-            "case_ids",
-            "object_id",
-            "submitter_id",
-            "project_id"
+          "source_node",
+          "acquisition_type",
+          "angio_flag",
+          "contrast_bolus_agent",
+          "convolution_kernel",
+          "detector_type",
+          "diffusion_b_value",
+          "diffusion_gradient_orientation",
+          "echo_number",
+          "echo_time",
+          "echo_train_length",
+          "exposure_modulation_type",
+          "image_type",
+          "imaged_nucleus",
+          "imager_pixel_spacing",
+          "lossy_image_compression",
+          "manufacturer",
+          "manufacturer_model_name",
+          "modality",
+          "number_of_instances",
+          "number_of_temporal_positions",
+          "patient_position",
+          "pixel_spacing",
+          "radiopharmaceutical",
+          "repetition_time",
+          "scan_options",
+          "sequence_variant",
+          "series_description",
+          "slice_thickness",
+          "software_version",
+          "spacing_between_slices",
+          "spatial_resolution",
+          "transducer_type",
+          "view_position",
+          "study_description",
+          "age_at_imaging",
+          "days_to_study",
+          "study_year",
+          "study_year_shifted",
+          "days_from_study_to_pos_covid_test",
+          "days_from_study_to_neg_covid_test",
+          "license",
+          "data_url_doi",
+          "data_contributor",
+          "loinc_code",
+          "loinc_contrast",
+          "loinc_long_common_name",
+          "loinc_method",
+          "loinc_system",
+          "covid19_positive",
+          "age_at_index",
+          "index_event",
+          "sex",
+          "race",
+          "zip",
+          "data_format",
+          "data_category",
+          "data_type",
+          "image_data_modified",
+          "image_data_modification_name",
+          "image_data_modification_method",
+          "annotation_method",
+          "annotation_name",
+          "annotator_id",
+          "software_versions",
+          "series_uid",
+          "study_uid",
+          "case_ids",
+          "object_id",
+          "submitter_id",
+          "project_id"
         ],
         "dicomViewerId": "submitter_id",
         "dicomViewerUrl": "ohif-viewer",
         "linkFields": [
-          "submitter_id"
+          "submitter_id",
+          "license",
+          "data_url_doi"
         ]
       },
       "dropdowns": {
@@ -1441,6 +1506,18 @@
           {
             "field": "series_UID",
             "name": "Series UID"
+          },
+          {
+            "field": "license",
+            "name": "License"
+          },
+          {
+            "field": "data_url_doi",
+            "name": "DOI"
+          },
+          {
+            "field": "data_contributor",
+            "name": "Data Contributor"
           }
         ],
         "manifestMapping": {
@@ -1461,13 +1538,19 @@
         "enabled": false,
         "text": "Dataset Discovery"
       },
+      "tagsColumn": {
+        "enabled": false
+      },
+      "tagsInDescription": {
+        "enabled": true
+      },
       "search": {
+        "searchBar": {
+          "enabled": true
+        },
         "tagSearchDropdown": {
           "enabled": true,
           "collapsibleButtonText": "Dataset Filters"
-        },
-        "searchBar": {
-          "enabled": true
         }
       },
       "authorization": {
@@ -1492,36 +1575,42 @@
         }
       }
     },
-    "aggregations": [{
-      "name": "Datasets",
-      "field": "_unique_id",
-      "type": "count"
-    }],
+    "aggregations": [
+      {
+        "name": "Datasets",
+        "field": "_unique_id",
+        "type": "count"
+      }
+    ],
     "tagSelector": {
       "title": "Tags by category"
     },
-    "studyColumns": [{
-      "name": "Title",
-      "field": "short_name",
-      "contentType": "string",
-      "width": 200
-    },
-    {
-      "name": "Description",
-      "field": "data_description",
-      "contentType": "string"
-    },
-    {
-      "name": "Publication URL",
-      "field": "data_url",
-      "contentType": "link"
-    },
-    {
-      "name": "Disease Type",
-      "field": "disease_type",
-      "contentType": "string"
-    }
-  ],
+    "studyColumns": [
+      {
+        "name": "Title",
+        "field": "short_name",
+        "contentType": "string",
+        "width": 200,
+        "errorIfNotAvailable": false,
+        "valueIfNotAvailable": "n/a"
+      },
+      {
+        "name": "Description",
+        "field": "data_description",
+        "contentType": "string",
+        "width": 400,
+        "errorIfNotAvailable": false,
+        "valueIfNotAvailable": "n/a"
+      },
+      {
+        "name": "Publication URL",
+        "field": "data_url",
+        "contentType": "link",
+        "width": 300,
+        "errorIfNotAvailable": false,
+        "valueIfNotAvailable": "n/a"
+      }
+    ],
     "studyPreviewField": {
       "name": "Research Description",
       "field": "research_description",
@@ -1530,65 +1619,169 @@
       "includeIfNotAvailable": false
     },
     "studyPageFields": {
+      "showAllAvailableFields": false,
       "header": {
         "field": "short_name"
       },
       "downloadLinks": {
         "field": "data_download_links"
       },
-      "fieldsToShow": [{
+      "fieldsToShow": [
+        {
           "groupName": "Dataset Identifiers",
-          "includeName": true,
-          "fields": [{
-              "name": "Citation",
-              "field": "data_citation",
-              "contentType": "string"
+          "includeName": false,
+          "fields": [
+            {
+              "name": "DOI Title",
+              "field": "doi_title",
+              "contentType": "string",
+              "includeIfNotAvailable": false
             },
             {
-              "name": "Dataset URL",
-              "field": "data_url",
-              "contentType": "link"
+              "name": "DOI Citation",
+              "field": "doi_citation",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "Citation",
+              "field": "data_citation",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "Abstract",
+              "field": "abstract",
+              "contentType": "string",
+              "includeIfNotAvailable": false
             },
             {
               "name": "Research Description",
               "field": "research_description",
-              "contentType": "string"
+              "contentType": "string",
+              "includeIfNotAvailable": false
             },
             {
               "name": "Data Description",
               "field": "data_description",
-              "contentType": "string"
+              "contentType": "string",
+              "includeIfNotAvailable": false
             },
             {
-              "name": "Disease Type",
-              "field": "disease_type",
-              "contentType": "string"
+              "name": "DOI Creators",
+              "field": "doi_creators",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "DOI Data Access Information",
+              "field": "doi_access_information",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "DOI Data Access Information Link",
+              "field": "doi_access_information_link",
+              "contentType": "link",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "DOI Resolvable Link",
+              "field": "doi_resolvable_link",
+              "contentType": "link",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "Dataset Information URL",
+              "field": "data_url",
+              "contentType": "link",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "DOI Contact",
+              "field": "doi_contact",
+              "contentType": "link",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "DOI Availability",
+              "field": "doi_availability",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "DOI Description",
+              "field": "doi_description",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "DOI Version",
+              "field": "doi_version_information",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "DOI Resource Type",
+              "field": "doi_resource_type",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "DOI Publication Year",
+              "field": "doi_publication_year",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "DOI Funding References",
+              "field": "doi_funding_references",
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "DOI Publisher",
+              "field": "doi_publisher",
+              "contentType": "string",
+              "includeIfNotAvailable": false
             },
             {
               "name": "Primary Site",
               "field": "primary_site",
-              "contentType": "string"
+              "contentType": "string",
+              "includeIfNotAvailable": false
+            },
+            {
+              "name": "Disease Type",
+              "field": "disease_type",
+              "contentType": "string",
+              "includeIfNotAvailable": false
             },
             {
               "name": "Case Count",
               "field": "cases_count",
-              "contentType": "number"
+              "contentType": "number",
+              "includeIfNotAvailable": false
             },
             {
               "name": "Files Count",
               "field": "files_count",
-              "contentType": "number"
+              "contentType": "number",
+              "includeIfNotAvailable": false
             }
           ]
         },
         {
-          "fields": [{
-            "name": "Research Description",
-            "field": "research_description",
-            "contentType": "paragraphs",
-            "includeName": false,
-            "includeIfNotAvailable": false
-          }]
+          "fields": [
+            {
+              "name": "Research Description",
+              "field": "research_description",
+              "contentType": "paragraphs",
+              "includeName": true,
+              "includeIfNotAvailable": false,
+              "valueIfNotAvailable": "No description has been provided for this study."
+            }
+          ]
         }
       ]
     },
@@ -1598,17 +1791,18 @@
       "uid": "_unique_id"
     },
     "tagCategories": [
-    {
-        "name": "Disease Type",
+      {
+        "name": "disease_type",
         "displayName": "Disease Type",
         "color": "#532565",
         "display": true
       },
-    {
-        "name": "Primary Site",
+      {
+        "name": "primary_site",
         "displayName": "Primary Site",
         "color": "#981f32",
         "display": true
-      }]
-    }
+      }
+    ]
+  }
 }
