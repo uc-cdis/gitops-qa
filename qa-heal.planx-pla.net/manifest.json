@@ -13,7 +13,7 @@
     "aws-es-proxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/aws-es-proxy:v1.3.1",
     "cedar-wrapper": "quay.io/cdis/cedar-wrapper-service:0.6.0",
     "dashboard": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-statics:2024.09",
-    "fence": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/fence:master",
+    "fence": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/fence:10.3.1",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
     "frontend-framework": "quay.io/cdis/frontend-framework:0.7.3",
     "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:2024.09",
