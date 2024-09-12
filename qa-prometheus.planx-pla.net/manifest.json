@@ -1,0 +1,54 @@
+{
+  "notes": [
+    "This is the dev environment manifest",
+    "That's all I have to say"
+  ],
+  "versions": {
+    "arborist": "quay.io/cdis/arborist:2023.12",
+    "aws-es-proxy": "quay.io/cdis/aws-es-proxy:0.8",
+    "fence": "quay.io/cdis/fence:2023.12",
+    "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.10.2-debian-cloudwatch-1.0",
+    "indexd": "quay.io/cdis/indexd:2023.12",
+    "jupyterhub": "quay.io/occ_data/jupyterhub:master",
+    "peregrine": "quay.io/cdis/peregrine:2023.12",
+    "pidgin": "quay.io/cdis/pidgin:2023.12",
+    "portal": "quay.io/cdis/data-portal:2023.12",
+    "revproxy": "quay.io/cdis/nginx:1.17.6-ctds-1.0.1",
+    "sheepdog": "quay.io/cdis/sheepdog:2023.12",
+    "spark": "quay.io/cdis/gen3-spark:2023.12",
+    "manifestservice": "quay.io/cdis/manifestservice:2023.12",
+    "wts": "quay.io/cdis/workspace-token-service:2023.12",
+    "tube": "quay.io/cdis/tube:master"
+  },
+  "arranger": {
+    "project_id": "dev",
+    "auth_filter_field": "gen3_resource_path",
+    "auth_filter_node_types": [
+      "subject"
+    ]
+  },
+  "arborist": {
+    "deployment_version": "2"
+  },
+  "jupyterhub": {
+    "enabled": "no"
+  },
+  "global": {
+    "environment": "qaplanetv2",
+    "hostname": "qaplanetv2.planx-pla.net",
+    "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
+    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/datadictionary/develop/schema.json",
+    "portal_app": "dev",
+    "kube_bucket": "kube-qaplanetv2-gen3",
+    "logs_bucket": "logs-qaplanetv2-gen3",
+    "sync_from_dbgap": "False",
+    "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml",
+    "netpolicy": "on",
+    "lb_type": "internal",
+    "argocd": "true",
+    "es7": true
+  },
+  "canary": {
+    "default": 0
+  }
+}
