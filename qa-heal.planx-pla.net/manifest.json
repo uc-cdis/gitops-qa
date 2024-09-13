@@ -24,7 +24,7 @@
     "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:feat_cde-submission",
     "requestor": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/requestor:feat_al2",
     "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:2024.09",
-    "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:test_docker-bash",
+    "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:feat_al2-updates",
     "sower": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sower:2024.09",
     "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:2024.09",
     "wts": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/workspace-token-service:feat_al2"
