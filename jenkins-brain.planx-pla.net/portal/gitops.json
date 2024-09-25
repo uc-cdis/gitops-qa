@@ -127,7 +127,7 @@
           "name": "Documentation"
         }
       ],
-      "useProfileDropdown": true
+      "useProfileDropdown": false
     },
     "login": {
       "title": "BRAIN Commons",
