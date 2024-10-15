@@ -1,6 +1,6 @@
 {
   "gaTrackingId": "UA-119127212-3",
-  "argoTemplate": "gwas-template-cohort-definition",
+  "argoTemplate": "gwas-template-database-version",
   "graphql": {
     "boardCounts": [],
     "chartCounts": [],
