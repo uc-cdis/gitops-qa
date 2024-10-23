@@ -1,9 +1,121 @@
 {
-	"gen3_commons": {
-		"HEAL": {
-			"mds_url": "https://jenkins-blood.planx-pla.net",
-			"commons_url": "jenkins-blood.planx-pla.net"
-		}
-	},
-	"adapter_commons": {}
+    "configuration": {
+        "schema": {
+            "__manifest": {
+                "type": "array",
+                "default": [],
+                "properties": {
+                    "file_name": {
+                        "type": "string"
+                    },
+                    "file_size": {
+                        "type": "integer"
+                    }
+                }
+            },
+            "commons_url": {},
+            "appl_id": {
+                "type": "string"
+            },
+            "investigators_name": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                },
+                "default": []
+            },
+            "_hdp_uid": {
+                "type": "string"
+            },
+            "tags": {
+                "type": "array"
+            },
+            "advSearchFilters": {
+                "type": "array",
+                "default": []
+            },
+            "study_metadata": {
+                "type": "object",
+                "data": {
+                    "type": "object"
+                },
+                "data_availability": {
+                    "type": "object",
+                    "properties": {
+                        "data_collection_finish_date": {
+                            "type": "date"
+                        },
+                        "data_collection_start_date": {
+                            "type": "date"
+                        },
+                        "data_release_finish_date": {
+                            "type": "date"
+                        },
+                        "data_release_start_date": {
+                            "type": "date"
+                        }
+                    }
+                },
+                "human_condition_applicability": {
+                    "type": "object"
+                },
+                "human_subject_applicability": {
+                    "type": "object"
+                },
+                "human_treatment_applicability": {
+                    "type": "object"
+                },
+                "metadata_location": {
+                    "type": "object",
+                    "properties": {
+                        "other_study_websites": {
+                            "type": "array"
+                        }
+                    }
+                },
+                "minimal_info": {
+                    "type": "object"
+                },
+                "study_translational_focus": {
+                    "type": "object"
+                },
+                "study_type": {
+                    "type": "object"
+                }
+            },
+            "study_description_summary": {},
+            "project_title": {}
+        },
+        "settings": {
+            "cache_drs": true
+        }
+    },
+    "adapter_commons": {
+        "HEAL": {
+            "mds_url": "https://jenkins-blood.planx-pla.net",
+			"commons_url": "jenkins-blood.planx-pla.net",
+            "adapter": "gen3",
+            "commons_name": "HEAL",
+            "config": {
+                "guid_type": "discovery_metadata",
+                "study_field": "gen3_discovery",
+                "data_dict_field": "variable_level_metadata"
+            },
+            "keep_original_fields": true,
+            "field_mappings": {
+                "tags": {
+                    "path": "tags",
+                    "default": []
+                },
+                "__manifest": {
+                    "path": "__manifest",
+                    "default": []
+                },
+                "advSearchFilters": {
+                    "path": "advSearchFilters"
+                },
+                "commons_url": "jenkins-blood.planx-pla.net"
+            }
+        }
+    }
 }
