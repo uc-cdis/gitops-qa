@@ -8,7 +8,8 @@
     "chartNodesExcludeFiles": true
   },
   "components": {
-    "appName": "VA logo and Seal, U.S. Department of Veterans Affairs Data Commons",
+    "appName": "VA Data Commons",
+    "logoAltText": "VA logo and Seal, U.S. Department of Veterans Affairs Data Commons",
     "index": {
       "introduction": {
         "heading": "VA Data Commons",
