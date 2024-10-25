@@ -116,6 +116,7 @@
       "title": "MVP Data Dictionary",
       "description": "Use this App to view a tabluar representation of the MVP data dictionary",
       "image": "/src/img/analysis-icons/default-app.png",
+      "dataDictionaryVersion": "new",
       "needsTeamProject": false
     }
   ],
