@@ -1316,6 +1316,12 @@
         ]
       },
       "pageTitle": {
+        "enabled": false
+      },
+      "tagsInDescription": {
+        "enabled": true
+      },
+      "tagsColumn": {
         "enabled": false,
         "text": "Publication Discovery"
       },
@@ -1327,8 +1333,10 @@
         "downloadZipButtonText": "Download Zip",
         "enableDownloadZip": false,
         "enableFillRequestForm": true,
-        "openFillRequestForm": "Request Access",
+        "fillRequestFormDisplayText": "Request Information",
         "fillRequestFormURL": "https://pandemicresponsecommons.org/access-for-samples",
+        "externalWebsiteName" : "Pandemic Response Commons Website", 
+        "externalWebsiteURL" : "https://pandemicresponsecommons.org", 
         "documentationLinks": {
           "gen3Client": "https://gen3.org/resources/user/gen3-client/",
           "gen3Workspaces": "https://gen3.org/resources/user/analyze-data/"
