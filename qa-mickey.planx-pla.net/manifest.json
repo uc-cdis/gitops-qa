@@ -7,15 +7,17 @@
     "autodeploy": "yes"
   },
   "versions": {
+    "aws-es-proxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/aws-es-proxy:chore_nobody",
+    "sower": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sower:chore_nobody",
     "ambassador": "quay.io/datawire/ambassador:1.14.4",
-    "arborist": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/arborist:2023.12",
+    "arborist": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/arborist:chore_nobody",
     "argo-wrapper": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/argo-wrapper:master",
     "awshelper": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/awshelper:2023.12",
-    "cohort-middleware": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/cohort-middleware:master",
+    "cohort-middleware": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/cohort-middleware:chore_nobody",
     "dashboard": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-statics:2023.12",
     "fence": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/fence:feat_add_extra_fields_to_admin_user_post",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
-    "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:2023.12",
+    "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:chore_nobody",
     "indexd": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexd:2023.12",
     "manifestservice": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifestservice:2023.12",
     "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:2023.12",
@@ -26,18 +28,235 @@
     "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:2023.12",
     "requestor": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/requestor:2024.08",
     "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:2023.12",
-    "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:2023.12",
+    "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:chore_nobody",
     "wts": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/workspace-token-service:2023.12"
   },
   "arborist": {
     "deployment_version": "2"
   },
+  "sower": [
+    {
+      "name": "ingest-metadata-manifest",
+      "action": "ingest-metadata-manifest",
+      "activeDeadlineSeconds": 86400,
+      "serviceAccountName": "jobs-jenkins-new-1-planx-pla-net",
+      "container": {
+        "name": "job-task",
+        "image": "quay.io/cdis/metadata-manifest-ingestion:master",
+        "pull_policy": "Always",
+        "env": [
+          {
+            "name": "GEN3_HOSTNAME",
+            "valueFrom": {
+              "configMapKeyRef": {
+                "name": "manifest-global",
+                "key": "hostname"
+              }
+            }
+          }
+        ],
+        "volumeMounts": [
+          {
+            "name": "creds-volume",
+            "readOnly": true,
+            "mountPath": "/creds.json",
+            "subPath": "creds.json"
+          }
+        ],
+        "cpu-limit": "1",
+        "memory-limit": "1Gi"
+      },
+      "volumes": [
+        {
+          "name": "creds-volume",
+          "secret": {
+            "secretName": "sower-jobs-g3auto"
+          }
+        }
+      ],
+      "restart_policy": "Never"
+    },
+    {
+      "name": "get-dbgap-metadata",
+      "action": "get-dbgap-metadata",
+      "serviceAccountName": "jobs-jenkins-new-1-planx-pla-net",
+      "container": {
+        "name": "job-task",
+        "image": "quay.io/cdis/get-dbgap-metadata:master",
+        "pull_policy": "Always",
+        "env": [],
+        "volumeMounts": [
+          {
+            "name": "creds-volume",
+            "readOnly": true,
+            "mountPath": "/creds.json",
+            "subPath": "creds.json"
+          }
+        ],
+        "cpu-limit": "1",
+        "memory-limit": "1Gi"
+      },
+      "volumes": [
+        {
+          "name": "creds-volume",
+          "secret": {
+            "secretName": "sower-jobs-g3auto"
+          }
+        }
+      ],
+      "restart_policy": "Never"
+    },
+    {
+      "name": "manifest-indexing",
+      "action": "index-object-manifest",
+      "serviceAccountName": "jobs-jenkins-new-1-planx-pla-net",
+      "container": {
+        "name": "job-task",
+        "image": "quay.io/cdis/manifest-indexing:master",
+        "pull_policy": "Always",
+        "env": [
+          {
+            "name": "GEN3_HOSTNAME",
+            "valueFrom": {
+              "configMapKeyRef": {
+                "name": "manifest-global",
+                "key": "hostname"
+              }
+            }
+          }
+        ],
+        "volumeMounts": [
+          {
+            "name": "sower-jobs-creds-volume",
+            "readOnly": true,
+            "mountPath": "/creds.json",
+            "subPath": "creds.json"
+          }
+        ],
+        "cpu-limit": "1",
+        "memory-limit": "1Gi"
+      },
+      "volumes": [
+        {
+          "name": "sower-jobs-creds-volume",
+          "secret": {
+            "secretName": "sower-jobs-g3auto"
+          }
+        }
+      ],
+      "restart_policy": "Never"
+    },
+    {
+      "name": "indexd-manifest",
+      "action": "download-indexd-manifest",
+      "serviceAccountName": "jobs-jenkins-new-1-planx-pla-net",
+      "container": {
+        "name": "job-task",
+        "image": "quay.io/cdis/download-indexd-manifest:master",
+        "pull_policy": "Always",
+        "env": [
+          {
+            "name": "GEN3_HOSTNAME",
+            "valueFrom": {
+              "configMapKeyRef": {
+                "name": "manifest-global",
+                "key": "hostname"
+              }
+            }
+          }
+        ],
+        "volumeMounts": [
+          {
+            "name": "sower-jobs-creds-volume",
+            "readOnly": true,
+            "mountPath": "/creds.json",
+            "subPath": "creds.json"
+          }
+        ],
+        "cpu-limit": "1",
+        "memory-limit": "1Gi"
+      },
+      "volumes": [
+        {
+          "name": "sower-jobs-creds-volume",
+          "secret": {
+            "secretName": "sower-jobs-g3auto"
+          }
+        }
+      ],
+      "restart_policy": "Never"
+    },
+    {
+      "name": "pelican-export",
+      "action": "export",
+      "container": {
+        "name": "job-task",
+        "image": "quay.io/cdis/pelican-export:master",
+        "pull_policy": "Always",
+        "env": [
+          {
+            "name": "DICTIONARY_URL",
+            "valueFrom": {
+              "configMapKeyRef": {
+                "name": "manifest-global",
+                "key": "dictionary_url"
+              }
+            }
+          },
+          {
+            "name": "GEN3_HOSTNAME",
+            "valueFrom": {
+              "configMapKeyRef": {
+                "name": "manifest-global",
+                "key": "hostname"
+              }
+            }
+          },
+          {
+            "name": "ROOT_NODE",
+            "value": "subject"
+          }
+        ],
+        "volumeMounts": [
+          {
+            "name": "pelican-creds-volume",
+            "readOnly": true,
+            "mountPath": "/pelican-creds.json",
+            "subPath": "config.json"
+          },
+          {
+            "name": "peregrine-creds-volume",
+            "readOnly": true,
+            "mountPath": "/peregrine-creds.json",
+            "subPath": "creds.json"
+          }
+        ],
+        "cpu-limit": "1",
+        "memory-limit": "4Gi"
+      },
+      "volumes": [
+        {
+          "name": "pelican-creds-volume",
+          "secret": {
+            "secretName": "pelicanservice-g3auto"
+          }
+        },
+        {
+          "name": "peregrine-creds-volume",
+          "secret": {
+            "secretName": "peregrine-creds"
+          }
+        }
+      ],
+      "restart_policy": "Never"
+    }
+  ],
   "indexd": {
     "arborist": "true"
   },
   "ssjdispatcher": {
     "job_images": {
-      "indexing": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexs3client:2023.12"
+      "indexing": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexs3client:chore_nobody"
     }
   },
   "global": {
