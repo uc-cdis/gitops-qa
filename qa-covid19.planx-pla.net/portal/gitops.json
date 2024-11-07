@@ -1337,6 +1337,7 @@
         "fillRequestFormURL": "https://pandemicresponsecommons.org/access-for-samples",
         "externalWebsiteName" : "Pandemic Response Commons Website", 
         "externalWebsiteURL" : "https://pandemicresponsecommons.org", 
+        "fillRequestFormCheckField" : "_medical_sample_id",
         "documentationLinks": {
           "gen3Client": "https://gen3.org/resources/user/gen3-client/",
           "gen3Workspaces": "https://gen3.org/resources/user/analyze-data/"
