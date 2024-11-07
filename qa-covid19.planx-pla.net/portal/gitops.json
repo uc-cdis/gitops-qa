@@ -1333,7 +1333,6 @@
         "downloadZipButtonText": "Download Zip",
         "enableDownloadZip": false,
         "enableFillRequestForm": true,
-        "enableCheckboxWithoutLogin" : true,
         "fillRequestFormDisplayText": "Request Information",
         "fillRequestFormURL": "https://pandemicresponsecommons.org/access-for-samples",
         "externalWebsiteName" : "Pandemic Response Commons Website", 
