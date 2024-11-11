@@ -7,21 +7,21 @@
     "autodeploy": "yes"
   },
   "versions": {
-    "arborist": "quay.io/cdis/arborist:integration202411",
+    "arborist": "quay.io/cdis/arborist:integration202412",
     "aws-es-proxy": "quay.io/cdis/aws-es-proxy:v1.3.1",
-    "fence": "quay.io/cdis/fence:integration202411",
+    "fence": "quay.io/cdis/fence:integration202412",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
-    "indexd": "quay.io/cdis/indexd:integration202411",
-    "peregrine": "quay.io/cdis/peregrine:integration202411",
-    "portal": "quay.io/cdis/data-portal:integration202411",
-    "revproxy": "quay.io/cdis/nginx:integration202411",
-    "sheepdog": "quay.io/cdis/sheepdog:integration202411",
-    "manifestservice": "quay.io/cdis/manifestservice:integration202411",
-    "wts": "quay.io/cdis/workspace-token-service:integration202411",
-    "sower": "quay.io/cdis/sower:integration202411",
-    "hatchery": "quay.io/cdis/hatchery:integration202411",
-    "metadata": "quay.io/cdis/metadata-service:integration202411",
-    "dashboard": "quay.io/cdis/gen3-statics:integration202411"
+    "indexd": "quay.io/cdis/indexd:integration202412",
+    "peregrine": "quay.io/cdis/peregrine:integration202412",
+    "portal": "quay.io/cdis/data-portal:integration202412",
+    "revproxy": "quay.io/cdis/nginx:integration202412",
+    "sheepdog": "quay.io/cdis/sheepdog:integration202412",
+    "manifestservice": "quay.io/cdis/manifestservice:integration202412",
+    "wts": "quay.io/cdis/workspace-token-service:integration202412",
+    "sower": "quay.io/cdis/sower:integration202412",
+    "hatchery": "quay.io/cdis/hatchery:integration202412",
+    "metadata": "quay.io/cdis/metadata-service:integration202412",
+    "dashboard": "quay.io/cdis/gen3-statics:integration202412"
   },
   "arborist": {
     "deployment_version": "2"
@@ -45,7 +45,7 @@
       "name": "pelican-export",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/pelican:integration202411",
+        "image": "quay.io/cdis/pelican:integration202412",
         "pull_policy": "always",
         "env": []
       },
