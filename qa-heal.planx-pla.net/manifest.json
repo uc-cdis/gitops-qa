@@ -72,6 +72,7 @@
     {
       "name": "batch-export",
       "action": "batch-export",
+      "serviceAccountName": "batch-export-sa",
       "activeDeadlineSeconds": 600,
       "container": {
         "name": "job-task",
@@ -94,7 +95,7 @@
               "name": "BUCKET",
               "valueFrom": {
                 "configMapKeyRef": {
-                  "name": "batch-export-sa",
+                  "name": "batch-export-g3auto",
                   "key": "bucket_name"
                 }
               }
