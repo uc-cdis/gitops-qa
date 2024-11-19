@@ -121,6 +121,8 @@
       "needsTeamProject": false
     }
   ],
+  "profilePageTitle": "Profile",
+  "workspacePageTitle": "Workspace",
   "showArboristAuthzOnProfile": false,
   "showFenceAuthzOnProfile": false,
   "connectSrcCSPWhitelist": [
