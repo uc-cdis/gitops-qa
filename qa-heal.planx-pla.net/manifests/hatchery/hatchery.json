@@ -2,7 +2,6 @@
   "user-namespace": "jupyter-pods-qa-heal",
   "sub-dir": "/lw-workspace",
   "user-volume-size": "10Gi",
-  "pay-models-dynamodb-table": "bmh-admin-portal-backend-bmhworkspacetableD4D73E43-BAFEMVG0IMKE",
   "license-user-maps-dynamodb-table": "gen3-license-user-maps",
   "license-user-maps-global-secondary-index": "activeUsersIndex",
   "sidecar": {
