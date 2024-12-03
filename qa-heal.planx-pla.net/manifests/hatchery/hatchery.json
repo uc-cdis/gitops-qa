@@ -8,6 +8,7 @@
   },
   "pay-models": [],
   "pay-models-dynamodb-table": "bmh-admin-portal-backend-bmhworkspacetableD4D73E43-BAFEMVG0IMKE",
+  "pay-models-dynamodb-arn": "arn:aws:iam::840048274993:role/qaplanetv1-sa-permissions",
   "license-user-maps-dynamodb-table": "gen3-license-user-maps",
   "license-user-maps-global-secondary-index": "activeUsersIndex",
   "sidecar": {
