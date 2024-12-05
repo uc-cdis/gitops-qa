@@ -1,0 +1,7 @@
+# //////////////////////////////////////////////////////////////////////////////////////
+# USER ACTIVATION
+# //////////////////////////////////////////////////////////////////////////////////////
+# Set it to false to ensure the user will only be able to login after the user
+# is added to the Fence DB via a separate process. This two-step process allows for
+# a separate onboarding and user "approval" process, instead of the default automatic approval.
+ALLOW_NEW_USER_ON_LOGIN: false
