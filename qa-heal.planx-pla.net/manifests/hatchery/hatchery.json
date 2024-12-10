@@ -151,7 +151,14 @@
         "--NotebookApp.default_url=/lab",
         "--NotebookApp.password=''",
         "--NotebookApp.token=''",
-        "--NotebookApp.quit_button=False"
+        "--JupyterNotebookApp.ip='*'",
+        "--JupyterNotebookApp.notebook_dir='/home/jovyan'",
+        "--JupyterNotebookApp.shutdown_no_activity_timeout=3600",
+        "--NotebookApp.quit_button=False",
+        "--Application.log_level=DEBUG",
+        "--JupyterNotebookApp.log_level=DEBUG",
+        "--JupyterApp.log_level=DEBUG",
+        "--Session.debug=True"
       ],
       "command": [
         "start-notebook.sh"
