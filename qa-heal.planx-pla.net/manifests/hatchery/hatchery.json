@@ -43,16 +43,16 @@
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
       "args": [
-        "--ServerApp.base_url=/lw-workspace/proxy/",
-        "--ServerApp.default_url=/lab",
-        "--ServerApp.password=''",
-        "--ServerApp.token=''",
-        "--ServerApp.ip='*'",
-        "--ServerApp.notebook_dir='/home/jovyan'",
-        "--ServerApp.shutdown_no_activity_timeout=3600",
-        "--ServerApp.quit_button=False",
+        "--JupyterNotebookApp.base_url=/lw-workspace/proxy/",
+        "--JupyterNotebookApp.default_url=/lab",
+        "--JupyterNotebookApp.password=''",
+        "--JupyterNotebookApp.token=''",
+        "--JupyterNotebookApp.ip='*'",
+        "--JupyterNotebookApp.notebook_dir='/home/jovyan'",
+        "--JupyterNotebookApp.shutdown_no_activity_timeout=3600",
+        "--JupyterNotebookApp.quit_button=False",
         "--Application.log_level=DEBUG",
-        "--ServerApp.log_level=DEBUG",
+        "--JupyterNotebookApp.log_level=DEBUG",
         "--JupyterApp.log_level=DEBUG",
         "--Session.debug=True"
       ],
@@ -82,14 +82,14 @@
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
       "args": [
-        "--ServerApp.base_url=/lw-workspace/proxy/",
-        "--ServerApp.default_url=/lab",
-        "--ServerApp.password=''",
-        "--ServerApp.token=''",
-        "--ServerApp.ip='*'",
-        "--ServerApp.notebook_dir='/home/jovyan'",
-        "--ServerApp.shutdown_no_activity_timeout=3600",
-        "--ServerApp.quit_button=False"
+        "--JupyterNotebookApp.base_url=/lw-workspace/proxy/",
+        "--JupyterNotebookApp.default_url=/lab",
+        "--JupyterNotebookApp.password=''",
+        "--JupyterNotebookApp.token=''",
+        "--JupyterNotebookApp.ip='*'",
+        "--JupyterNotebookApp.notebook_dir='/home/jovyan'",
+        "--JupyterNotebookApp.shutdown_no_activity_timeout=3600",
+        "--JupyterNotebookApp.quit_button=False"
       ],
       "command": [
         "start-notebook.sh"
@@ -126,14 +126,14 @@
         "workspace-flavor": "gen3-licensed"
       },
       "args": [
-        "--ServerApp.base_url=/lw-workspace/proxy/",
-        "--ServerApp.default_url=/lab",
-        "--ServerApp.password=''",
-        "--ServerApp.token=''",
-        "--ServerApp.ip='*'",
-        "--ServerApp.notebook_dir='/home/jovyan'",
-        "--ServerApp.shutdown_no_activity_timeout=3600",
-        "--ServerApp.quit_button=False"
+        "--JupyterNotebookApp.base_url=/lw-workspace/proxy/",
+        "--JupyterNotebookApp.default_url=/lab",
+        "--JupyterNotebookApp.password=''",
+        "--JupyterNotebookApp.token=''",
+        "--JupyterNotebookApp.ip='*'",
+        "--JupyterNotebookApp.notebook_dir='/home/jovyan'",
+        "--JupyterNotebookApp.shutdown_no_activity_timeout=3600",
+        "--JupyterNotebookApp.quit_button=False"
       ],
       "command": [
         "/bin/bash",
@@ -162,14 +162,14 @@
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
       "args": [
-        "--ServerApp.base_url=/lw-workspace/proxy/",
-        "--ServerApp.default_url=/lab",
-        "--ServerApp.password=''",
-        "--ServerApp.token=''",
-        "--ServerApp.ip='*'",
-        "--ServerApp.notebook_dir='/home/jovyan'",
-        "--ServerApp.shutdown_no_activity_timeout=3600",
-        "--ServerApp.quit_button=False"
+        "--JupyterNotebookApp.base_url=/lw-workspace/proxy/",
+        "--JupyterNotebookApp.default_url=/lab",
+        "--JupyterNotebookApp.password=''",
+        "--JupyterNotebookApp.token=''",
+        "--JupyterNotebookApp.ip='*'",
+        "--JupyterNotebookApp.notebook_dir='/home/jovyan'",
+        "--JupyterNotebookApp.shutdown_no_activity_timeout=3600",
+        "--JupyterNotebookApp.quit_button=False"
       ],
       "command": [
         "start-notebook.sh"
