@@ -23,7 +23,7 @@
     "peregrine": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/peregrine:integration202502",
     "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:integration202502",
     "requestor": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/requestor:integration202502",
-    "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:integration202502",
+    "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:integration202501",
     "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:integration202502",
     "sower": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sower:integration202502",
     "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:integration202502",
