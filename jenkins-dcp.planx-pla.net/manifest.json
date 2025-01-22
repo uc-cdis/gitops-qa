@@ -32,7 +32,10 @@
     "dashboard": "quay.io/cdis/gen3-statics:master",
     "requestor": "quay.io/cdis/requestor:master",
     "cedar-wrapper": "quay.io/cdis/cedar-wrapper-service:master",
-    "kayako-wrapper": "quay.io/cdis/kayako-wrapper-service:master"
+    "kayako-wrapper": "quay.io/cdis/kayako-wrapper-service:master",
+    "dicom-server": "quay.io/cdis/gen3-orthanc:gen3-0.1.2",
+    "ohif-viewer": "quay.io/cdis/ohif-viewer:gen3-v3.8.0",
+    "orthanc": "docker.io/osimis/orthanc:master"
   },
   "arborist": {
     "deployment_version": "2"
