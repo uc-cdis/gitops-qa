@@ -14,7 +14,7 @@
     "indexd": "quay.io/cdis/indexd:integration202502",
     "peregrine": "quay.io/cdis/peregrine:integration202502",
     "portal": "quay.io/cdis/data-portal:integration202502",
-    "revproxy": "quay.io/cdis/nginx:feat_al-2023-image",
+    "revproxy": "quay.io/cdis/nginx:integration202502",
     "sheepdog": "quay.io/cdis/sheepdog:integration202502",
     "manifestservice": "quay.io/cdis/manifestservice:integration202502",
     "wts": "quay.io/cdis/workspace-token-service:integration202502",
