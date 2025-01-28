@@ -570,7 +570,9 @@
       }]
     }
   ],
-  "dataExplorerConfig": {
+  "explorerConfig": [
+  {
+    "tabTitle": "Data",
     "charts": {
       "project_id": {
         "chartType": "count",
@@ -596,6 +598,39 @@
         "data_format"
       ]
     },
+    "dropdowns": {
+      "download": {
+        "title": "Download"
+      }
+    },
+    "buttons": [
+      {
+        "enabled": true,
+        "type": "export",
+        "title": "Export All to Terra",
+        "rightIcon": "external-link"
+      },
+      {
+        "enabled": true,
+        "type": "export-to-seven-bridges",
+        "title": "Export All to Seven Bridges",
+        "rightIcon": "external-link"
+      },
+      {
+        "enabled": true,
+        "type": "export-to-pfb",
+        "title": "Export to PFB",
+        "leftIcon": "datafile",
+        "rightIcon": "download"
+      },
+      {
+        "enabled": true,
+        "type": "export-to-workspace",
+        "title": "Export to Workspace",
+        "leftIcon": "datafile",
+        "rightIcon": "download"
+      }
+    ],
     "guppyConfig": {
       "dataType": "subject",
       "nodeCountTitle": "Subjects",
@@ -604,7 +639,7 @@
         { "field": "age_of_onset", "name": "Age of Onset" },
         { "field": "project_dbgap_accession_number", "name": "Project dbGaP Accession Number" },
         { "field": "project_dbgap_consent_text", "name":"Project dbGaP Consent Text"},
-        { "field": "project_dbgap_phs", "name":"Project dbGaP Phs"} 
+        { "field": "project_dbgap_phs", "name":"Project dbGaP Phs"}
       ],
       "manifestMapping": {
         "resourceIndexType": "file",
@@ -612,43 +647,21 @@
         "referenceIdFieldInResourceIndex": "_subject_id",
         "referenceIdFieldInDataIndex": "_subject_id"
       },
-      "accessibleFieldCheckList": ["project_id"],
+      "accessibleFieldCheckList": [
+        "project_id"
+      ],
       "accessibleValidationField": "project_id"
     },
-    "buttons": [
-      {
-        "enabled": true,
-        "type": "data",
-        "title": "Download Data",
-        "leftIcon": "user",
-        "rightIcon": "download",
-        "fileName": "data.json"
-      },
-      {
-        "enabled": true,
-        "type": "manifest",
-        "title": "Download Manifest",
-        "leftIcon": "datafile",
-        "rightIcon": "download",
-        "fileName": "manifest.json"
-      },
-      {
-        "enabled": true,
-        "type": "export-to-workspace",
-        "title": "Export File Manifest to Workspace",
-        "leftIcon": "datafile",
-        "rightIcon": "download"
-      },
-      {
-        "enabled": true,
-        "type": "export-to-pfb",
-        "title": "Export to PFB",
-        "leftIcon": "datafile",
-        "rightIcon": "download"
-      }
-    ]
+    "getAccessButtonLink": "https://dbgap.ncbi.nlm.nih.gov/",
+    "terraExportURL": "https://terra.biodatacatalyst.nhlbi.nih.gov/#import-data",
+    "terraTemplate": [
+      "bdc",
+      "gen3"
+    ],
+    "sevenBridgesExportURL": "https://platform.sb.biodatacatalyst.nhlbi.nih.gov/import/windmill"
   },
-   "fileExplorerConfig": {
+  {
+    "tabTitle": "File",
     "charts": {
       "data_type": {
         "chartType": "stackedBar",
@@ -668,6 +681,9 @@
             "data_category",
             "data_type",
             "data_format"
+          ],
+          "searchFields": [
+            "file_name"
           ]
         }
       ]
@@ -678,14 +694,19 @@
         "project_id",
         "file_name",
         "file_size",
-        "object_id"
-      ]
+        "object_id"      ]
     },
     "guppyConfig": {
       "dataType": "file",
       "fieldMapping": [
-        { "field": "object_id", "name": "GUID" },
-        { "field": "programs_name", "name": "Program" }
+        {
+          "field": "object_id",
+          "name": "GUID"
+        },
+        {
+                    "field": "programs_name",
+                    "name": "Program"
+                }
       ],
       "nodeCountTitle": "Files",
       "manifestMapping": {
@@ -694,7 +715,9 @@
         "referenceIdFieldInResourceIndex": "object_id",
         "referenceIdFieldInDataIndex": "object_id"
       },
-      "accessibleFieldCheckList": ["project_id"],
+      "accessibleFieldCheckList": [
+        "project_id"
+      ],
       "accessibleValidationField": "project_id",
       "downloadAccessor": "object_id"
     },
@@ -705,18 +728,170 @@
         "title": "Download Manifest",
         "leftIcon": "datafile",
         "rightIcon": "download",
-        "fileName": "file-manifest.json"
+        "fileName": "file-manifest.json",
+        "dropdownId": "download"
       },
       {
         "enabled": true,
         "type": "export-files-to-workspace",
-        "title": "Export File Manifest to Workspace",
+        "title": "Export to Workspace",
         "leftIcon": "datafile",
         "rightIcon": "download"
+      },
+      {
+        "enabled": true,
+        "type": "export-files-to-pfb",
+        "title": "Export All to PFB",
+        "rightIcon": "external-link"
+      },
+      {
+        "enabled": true,
+        "type": "export-files",
+        "title": "Export All to Terra",
+        "rightIcon": "external-link"
+      },
+      {
+        "enabled": true,
+        "type": "export-files-to-seven-bridges",
+        "title": "Export All to Seven Bridges",
+        "rightIcon": "external-link"
       }
     ],
+    "terraExportURL": "https://terra.biodatacatalyst.nhlbi.nih.gov/#import-data",
+    "terraTemplate": [
+      "bdc",
+      "gen3"
+    ],
+    "sevenBridgesExportURL": "https://platform.sb.biodatacatalyst.nhlbi.nih.gov/import/windmill",
+    "enableLimitedFilePFBExport": {
+      "sourceNodeField": "source_node"
+    },
     "dropdowns": {}
   },
+  {
+      "tabTitle": "Imaging Studies",
+      "charts": {},
+      "filters": {
+          "tabs": [
+          {
+              "title": "Study Properties",
+              "searchFields": [
+              "study_uid"
+              ],
+              "fields": [
+              "study_modality",
+              "study_description",
+              "age_at_imaging",
+              "study_year",
+              "study_year_shifted",
+              "body_part_examined",
+              "days_from_study_to_pos_covid_test",
+              "days_from_study_to_neg_covid_test",
+              "project_id"
+              ]
+          }
+          ]
+      },
+      "table": {
+          "enabled": true,
+          "fields": [
+          "submitter_id",
+          "study_uid",
+          "case_ids",
+          "object_id",
+          "project_id"
+          ],
+          "dicomViewerId": "submitter_id",
+          "dicomViewerUrl": "ohif-viewer",
+          "linkFields": [
+          "submitter_id"
+          ]
+      },
+      "dropdowns": {
+          "download-table": {
+          "title": "Download Table"
+          }
+      },
+      "buttons": [
+          {
+          "enabled": true,
+          "type": "data-json",
+          "title": "JSON",
+          "dropdownId": "download-table",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "Imaging_Studies_table.json"
+          },
+          {
+          "enabled": true,
+          "type": "data-tsv",
+          "title": "TSV",
+          "dropdownId": "download-table",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "Imaging_Studies_table.tsv"
+          },
+          {
+          "enabled": true,
+          "type": "data-csv",
+          "title": "CSV",
+          "dropdownId": "download-table",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "Imaging_Studies_table.csv"
+          },
+          {
+          "enabled": true,
+          "type": "manifest",
+          "title": "Download File Manifest for Imaging Studies",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "imaging_study_manifest.json"
+          },
+          {
+          "enabled": false,
+          "type": "export-to-workspace",
+          "title": "Export to Workspace",
+          "leftIcon": "datafile",
+          "rightIcon": "download"
+          }
+      ],
+      "loginForDownload": true,
+      "guppyConfig": {
+          "dataType": "imaging_study",
+          "nodeCountTitle": "Imaging Studies",
+          "fieldMapping": [
+          {
+              "field": "project_id",
+              "name": "Project ID"
+          },
+          {
+              "field": "study_uid",
+              "name": "Study UID"
+          },
+          {
+              "field": "submitter_id",
+              "name": "Browse in DICOM viewer"
+          },
+          {
+              "field": "case_ids",
+              "name": "Patient ID"
+          }
+          ],
+          "manifestMapping": {
+          "resourceIndexType": "data_file",
+          "resourceIdField": "object_id",
+          "referenceIdFieldInResourceIndex": "_imaging_study_id",
+          "referenceIdFieldInDataIndex": "_imaging_study_id",
+          "useFilterForCounts": false
+          },
+          "accessibleFieldCheckList": [
+          "project_id"
+          ],
+          "accessibleValidationField": "project_id"
+      }
+  }
+  ],
   "useArboristUI": true,
   "showArboristAuthzOnProfile": true,
   "showFenceAuthzOnProfile": false,
