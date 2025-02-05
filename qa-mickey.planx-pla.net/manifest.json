@@ -23,7 +23,7 @@
     "ohdsi-atlas": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ohdsi-atlas:feat_enable_cohort_characterization",
     "ohdsi-webapi": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ohdsi-webapi:2.15.0-DEV",
     "peregrine": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/peregrine:2025.01",
-    "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:feat_add_transformation_to_histogram",
+    "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:bug_logoutHP",
     "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:2025.01",
     "requestor": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/requestor:2025.01",
     "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:2025.01",
