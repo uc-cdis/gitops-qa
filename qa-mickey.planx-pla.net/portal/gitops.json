@@ -9,6 +9,7 @@
   },
   "components": {
     "appName": "VA Data Commons",
+    "logoAltText": "VA logo and Seal, U.S. Department of Veterans Affairs Data Commons",
     "index": {
       "introduction": {
         "heading": "VA Data Commons",
@@ -116,9 +117,12 @@
       "title": "MVP Data Dictionary",
       "description": "Use this App to view a tabluar representation of the MVP data dictionary",
       "image": "/src/img/analysis-icons/default-app.png",
+      "dataDictionaryVersion": "new",
       "needsTeamProject": false
     }
   ],
+  "profilePageTitle": "Profile",
+  "workspacePageTitle": "Workspace",
   "showArboristAuthzOnProfile": false,
   "showFenceAuthzOnProfile": false,
   "connectSrcCSPWhitelist": [

@@ -32,7 +32,9 @@
     "dashboard": "quay.io/cdis/gen3-statics:master",
     "requestor": "quay.io/cdis/requestor:master",
     "cedar-wrapper": "quay.io/cdis/cedar-wrapper-service:master",
-    "kayako-wrapper": "quay.io/cdis/kayako-wrapper-service:master"
+    "kayako-wrapper": "quay.io/cdis/kayako-wrapper-service:master",
+    "ohif-viewer": "quay.io/cdis/ohif-viewer:gen3-v3.8.0",
+    "orthanc": "docker.io/osimis/orthanc:master"
   },
   "sower": [
     {
@@ -280,7 +282,7 @@
     "kube_bucket": "kube-qaplanetv1-gen3",
     "logs_bucket": "logs-qaplanetv1-gen3",
     "sync_from_dbgap": "True",
-    "useryaml_s3path": "s3://cdis-gen3-users/local_helm_testing/user.yaml",
+    "useryaml_s3path": "s3://cdis-gen3-users/ci/user.yaml",
     "dispatcher_job_num": "5",
     "tier_access_level" : "libre",
     "es7": true

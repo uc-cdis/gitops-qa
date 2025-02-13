@@ -523,7 +523,9 @@
     }
   ],
   "useArboristUI": true,
-  "dataExplorerConfig": {
+  "explorerConfig": [
+  {
+    "tabTitle": "Data",
     "charts": {
       "project_id": {
         "chartType": "count",
@@ -533,11 +535,11 @@
     "filters": {
       "tabs": [
         {
-          "title": "Files",
+          "title": "Project",
           "fields": [
             "project_id",
-            "data_format",
-            "data_type"
+            "data_type",
+            "data_format"
           ]
         }
       ]
@@ -554,6 +556,34 @@
         "title": "Download"
       }
     },
+    "buttons": [
+      {
+        "enabled": true,
+        "type": "export",
+        "title": "Export All to Terra",
+        "rightIcon": "external-link"
+      },
+      {
+        "enabled": true,
+        "type": "export-to-seven-bridges",
+        "title": "Export All to Seven Bridges",
+        "rightIcon": "external-link"
+      },
+      {
+        "enabled": true,
+        "type": "export-to-pfb",
+        "title": "Export to PFB",
+        "leftIcon": "datafile",
+        "rightIcon": "download"
+      },
+      {
+        "enabled": true,
+        "type": "export-to-workspace",
+        "title": "Export to Workspace",
+        "leftIcon": "datafile",
+        "rightIcon": "download"
+      }
+    ],
     "guppyConfig": {
       "dataType": "subject",
       "nodeCountTitle": "Subjects",
@@ -575,24 +605,16 @@
       ],
       "accessibleValidationField": "project_id"
     },
-    "buttons": [
-      {
-        "enabled": true,
-        "type": "export-to-workspace",
-        "title": "Export File to Workspace",
-        "leftIcon": "datafile",
-        "rightIcon": "download"
-      },
-      {
-        "enabled": true,
-        "type": "export-to-pfb", 
-        "title": "Export to PFB",
-        "leftIcon": "datafile",
-        "rightIcon": "download"
-      }
-    ]
+    "getAccessButtonLink": "https://dbgap.ncbi.nlm.nih.gov/",
+    "terraExportURL": "https://terra.biodatacatalyst.nhlbi.nih.gov/#import-data",
+    "terraTemplate": [
+      "bdc",
+      "gen3"
+    ],
+    "sevenBridgesExportURL": "https://platform.sb.biodatacatalyst.nhlbi.nih.gov/import/windmill"
   },
-  "fileExplorerConfig": {
+  {
+    "tabTitle": "File",
     "charts": {
       "data_type": {
         "chartType": "stackedBar",
@@ -635,9 +657,9 @@
           "name": "GUID"
         },
         {
-					"field": "programs_name",
-					"name": "Program"
-				}
+                    "field": "programs_name",
+                    "name": "Program"
+                }
       ],
       "nodeCountTitle": "Files",
       "manifestMapping": {
@@ -688,6 +710,139 @@
         "rightIcon": "external-link"
       }
     ],
+    "terraExportURL": "https://terra.biodatacatalyst.nhlbi.nih.gov/#import-data",
+    "terraTemplate": [
+      "bdc",
+      "gen3"
+    ],
+    "sevenBridgesExportURL": "https://platform.sb.biodatacatalyst.nhlbi.nih.gov/import/windmill",
+    "enableLimitedFilePFBExport": {
+      "sourceNodeField": "source_node"
+    },
     "dropdowns": {}
+  },
+  {
+      "tabTitle": "Imaging Studies",
+      "charts": {},
+      "filters": {
+          "tabs": [
+          {
+              "title": "Study Properties",
+              "searchFields": [
+              "study_uid"
+              ],
+              "fields": [
+              "study_modality",
+              "study_description",
+              "age_at_imaging",
+              "study_year",
+              "study_year_shifted",
+              "body_part_examined",
+              "days_from_study_to_pos_covid_test",
+              "days_from_study_to_neg_covid_test",
+              "project_id"
+              ]
+          }
+          ]
+      },
+      "table": {
+          "enabled": true,
+          "fields": [
+          "submitter_id",
+          "study_uid",
+          "case_ids",
+          "object_id",
+          "project_id"
+          ],
+          "dicomViewerId": "submitter_id",
+          "dicomViewerUrl": "ohif-viewer",
+          "linkFields": [
+          "submitter_id"
+          ]
+      },
+      "dropdowns": {
+          "download-table": {
+          "title": "Download Table"
+          }
+      },
+      "buttons": [
+          {
+          "enabled": true,
+          "type": "data-json",
+          "title": "JSON",
+          "dropdownId": "download-table",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "Imaging_Studies_table.json"
+          },
+          {
+          "enabled": true,
+          "type": "data-tsv",
+          "title": "TSV",
+          "dropdownId": "download-table",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "Imaging_Studies_table.tsv"
+          },
+          {
+          "enabled": true,
+          "type": "data-csv",
+          "title": "CSV",
+          "dropdownId": "download-table",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "Imaging_Studies_table.csv"
+          },
+          {
+          "enabled": true,
+          "type": "manifest",
+          "title": "Download File Manifest for Imaging Studies",
+          "leftIcon": "datafile",
+          "rightIcon": "download",
+          "fileName": "imaging_study_manifest.json"
+          },
+          {
+          "enabled": false,
+          "type": "export-to-workspace",
+          "title": "Export to Workspace",
+          "leftIcon": "datafile",
+          "rightIcon": "download"
+          }
+      ],
+      "loginForDownload": true,
+      "guppyConfig": {
+          "dataType": "imaging_study",
+          "nodeCountTitle": "Imaging Studies",
+          "fieldMapping": [
+          {
+              "field": "project_id",
+              "name": "Project ID"
+          },
+          {
+              "field": "study_uid",
+              "name": "Study UID"
+          },
+          {
+              "field": "submitter_id",
+              "name": "Browse in DICOM viewer"
+          },
+          {
+              "field": "case_ids",
+              "name": "Patient ID"
+          }
+          ],
+          "manifestMapping": {
+          "resourceIndexType": "data_file",
+          "resourceIdField": "object_id",
+          "referenceIdFieldInResourceIndex": "_imaging_study_id",
+          "referenceIdFieldInDataIndex": "_imaging_study_id",
+          "useFilterForCounts": false
+          },
+          "accessibleFieldCheckList": [
+          "project_id"
+          ],
+          "accessibleValidationField": "project_id"
+      }
   }
+  ]
 }
