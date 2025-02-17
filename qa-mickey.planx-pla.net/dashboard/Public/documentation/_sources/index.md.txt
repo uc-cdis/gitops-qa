@@ -38,7 +38,7 @@ Clicking on the VA Data Commons logo in the upper left hand corner of the screen
 The button for VA Data Commons Documentation takes you to this page.
 
 ### **Email Support**
-If you need help, the Email Support button allows you to send a message to our help desk at [vadc@lists.uchicago.edu](mailto:vadc@lists.uchicago.edu). You may expect a response within 2 business days.
+If you need help, the Email Support button allows you to send a message to our help desk at [vadc-support@gen3.org](mailto:vadc-support@gen3.org). You may expect a response within 2 business days.
 
 
 # Data Access and Analysis
@@ -144,7 +144,7 @@ Cohort size will be displayed under the column “People”. Use View Reports to
 
 The “Export” tab provides a text version of how a cohort was created. Click on the “Export” tab and then on the “Copy to clipboard” to copy the cohort’s information.
 
-We expect that this documentation in addition to the OHDSI tutorials are sufficient for most analyses that users will attempt. If you have any questions, please contact us at [vadc@lists.uchicago.edu](mailto:vadc@lists.uchicago.edu).
+We expect that this documentation in addition to the OHDSI tutorials are sufficient for most analyses that users will attempt. If you have any questions, please contact us at [vadc-support@gen3.org](mailto:vadc-support@gen3.org).
 
 ## **Gen3 GWAS**
 Use this App to perform a high throughput Genome-wide association studies (GWAS) on MVP data using the University of Washington Genesis pipeline. For more information about the Genesis pipeline please refer to the publication ["Genetic association testing using the GENESIS R/Bioconductor package"](https://doi.org/10.1093/bioinformatics/btz567).
@@ -287,7 +287,7 @@ A timeout error implies that an internal service was temporarily not available w
 
 ####  **Step failed with an uncategorized error**
 
-Many reasons can cause workflows to fail, and some of them may be transient. Please reach out to [vadc@lists.uchicago.edu](mailto:vadc@lists.uchicago.edu) with any further questions. In your message please provide us with the serial name of your workflow and the step in which your GWAS failed (mentioned in your error message). A response should be expected with 2 business days.
+Many reasons can cause workflows to fail, and some of them may be transient. Please reach out to [vadc-support@gen3.org](mailto:vadc-support@gen3.org) with any further questions. In your message please provide us with the serial name of your workflow and the step in which your GWAS failed (mentioned in your error message). A response should be expected with 2 business days.
 
 ## **MVP Data Dictionary**
 
@@ -295,13 +295,13 @@ The Data Dictionary App connects users to the static MVP data documentation whic
 
 ## **Data Update Disclaimer**
 
-Please note that we are constantly improving the GWAS pipeline. The retry action will re-run your analysis based on the most recent data available in the database and the most recent GWAS pipeline implemented. These may differ from the analysis you ran initially, and these differences might affect the outcome. For these reasons, the retry action is only applicable to failed workflows. If you have any questions, please feel free to contact us via email  [vadc@lists.uchicago.edu](mailto:vadc@lists.uchicago.edu).
+Please note that we are constantly improving the GWAS pipeline. The retry action will re-run your analysis based on the most recent data available in the database and the most recent GWAS pipeline implemented. These may differ from the analysis you ran initially, and these differences might affect the outcome. For these reasons, the retry action is only applicable to failed workflows. If you have any questions, please feel free to contact us via email  [vadc-support@gen3.org](mailto:vadc-support@gen3.org).
 
 # Frequently Asked Questions
 
 ## **Where can I find more documentation on the OHDSI Atlas app?**
 
-ATLAS was developed and is maintained by the OHDSI community. Tutorials for the ATLAS tool can be found [here](https://github.com/OHDSI/Atlas/wiki) and the book about the OHDSI can be found [here](https://ohdsi.github.io/TheBookOfOhdsi/). These resources contain a lot of useful information, particularly you might find it useful to read about [Cohort Definition](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html#Cohorts). If you need help, please reach out to our help desk at [vadc@lists.uchicago.edu](mailto:vadc@lists.uchicago.edu)
+ATLAS was developed and is maintained by the OHDSI community. Tutorials for the ATLAS tool can be found [here](https://github.com/OHDSI/Atlas/wiki) and the book about the OHDSI can be found [here](https://ohdsi.github.io/TheBookOfOhdsi/). These resources contain a lot of useful information, particularly you might find it useful to read about [Cohort Definition](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html#Cohorts). If you need help, please reach out to our help desk at [vadc-support@gen3.org](mailto:vadc-support@gen3.org)
 
 ## **What are harmonized variables?**
 
