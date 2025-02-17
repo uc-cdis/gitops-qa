@@ -18,7 +18,7 @@
     "peregrine": "quay.io/cdis/peregrine:master",
     "revproxy": "quay.io/cdis/nginx:master",
     "sheepdog": "quay.io/cdis/sheepdog:master",
-    "portal": "quay.io/cdis/data-portal:master",
+    "portal": "quay.io/cdis/data-portal:2025.01",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
     "spark": "quay.io/cdis/gen3-spark:master",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:master",
