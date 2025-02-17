@@ -130,7 +130,7 @@
   ],
   "userAccessToSite": {
     "enabled": true,
-    "noAccessMessage": "You are not authorized to access this system. If you have any questions, please contact vadc@lists.uchicago.edu"
+    "noAccessMessage": "You are not authorized to access this system. If you have any questions, please contact vadc-support@gen3.org"
   },
   "componentToResourceMapping": { 
     "Workspace": {
