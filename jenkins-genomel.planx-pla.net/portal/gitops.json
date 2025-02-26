@@ -96,6 +96,12 @@
           "link": "/identity",
           "color": "#a2a2a2",
           "name": "Profile"
+        },
+        {
+          "icon": "query",
+          "link": "/study-viewer/clinical_trials",
+          "color": "#a2a2a2",
+          "name": "Study Viewer"
         }
       ]
     },
