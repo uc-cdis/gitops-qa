@@ -71,17 +71,17 @@
       "cpu-limit": "2.0",
       "memory-limit": "16Gi",
       "name": "(Tutorials) Example Analysis Jupyter Lab Notebooks",
-      "image": "quay.io/cdis/brh-notebooks:combined_demos__ac58320468729a6f02930e2fe6d4913c0a3f418d",
+      "image": "quay.io/cdis/brh-notebooks:combined_demos__38bd974d99f6f58f8fcdbd1ae5c7993bdece8b5e",
       "env": {
         "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
       },
       "args": [
-        "--NotebookApp.base_url=/lw-workspace/proxy/",
-        "--NotebookApp.default_url=/lab",
-        "--NotebookApp.password=''",
-        "--NotebookApp.token=''",
-        "--NotebookApp.shutdown_no_activity_timeout=5400",
-        "--NotebookApp.quit_button=False"
+        "--JupyterNotebookApp.base_url=/lw-workspace/proxy/",
+        "--JupyterNotebookApp.default_url=/lab",
+        "--JupyterNotebookApp.password=''",
+        "--JupyterNotebookApp.token=''",
+        "--JupyterNotebookApp.shutdown_no_activity_timeout=5400",
+        "--JupyterNotebookApp.quit_button=False"
       ],
       "command": [
         "start-notebook.sh"
