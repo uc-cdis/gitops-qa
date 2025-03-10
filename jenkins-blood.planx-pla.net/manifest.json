@@ -295,6 +295,9 @@
   "canary": {
     "default": 0
   },
+  "google": {
+    "enabled": "yes"
+  },
   "guppy": {
     "indices": [
       {
