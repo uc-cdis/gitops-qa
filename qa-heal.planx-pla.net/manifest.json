@@ -16,7 +16,7 @@
     "fence": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/fence:2025.03",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
     "frontend-framework": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/heal-data-commons:main",
-    "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:2025.03",
+    "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:feat_assume-role",
     "indexd": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexd:2025.03",
     "manifestservice": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifestservice:2025.03",
     "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:2025.03",
@@ -76,7 +76,7 @@
       "activeDeadlineSeconds": 600,
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/batch-export:2025.03",
+        "image": "quay.io/cdis/batch-export:5.0.1",
         "pull_policy": "Always",
         "labels": {
           "internet": "yes"
