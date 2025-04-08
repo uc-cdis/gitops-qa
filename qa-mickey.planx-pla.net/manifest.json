@@ -55,6 +55,7 @@
     "dispatcher_job_num": "10",
     "netpolicy": "on",
     "lb_type": "internal",
+    "frontend_root": "gen3ff",
     "arborist_url": "http://arborist-service",
     "es7": true
   },
