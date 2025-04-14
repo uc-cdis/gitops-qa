@@ -20,7 +20,7 @@
     "wts": "quay.io/cdis/workspace-token-service:integration202505",
     "sower": "quay.io/cdis/sower:integration202505",
     "hatchery": "quay.io/cdis/hatchery:integration202505",
-    "metadata": "quay.io/cdis/metadata-service:integration202505",
+    "metadata": "quay.io/cdis/metadata-service:2025.04",
     "dashboard": "quay.io/cdis/gen3-statics:integration202505"
   },
   "arborist": {
