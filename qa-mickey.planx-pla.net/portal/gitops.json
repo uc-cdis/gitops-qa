@@ -1,178 +1,178 @@
 {
-  "gaTrackingId": "UA-119127212-3",
-  "argoTemplate": "gwas-template-database-version",
-  "graphql": {
-    "boardCounts": [],
-    "chartCounts": [],
-    "projectDetails": "boardCounts",
-    "chartNodesExcludeFiles": true
-  },
-  "components": {
-    "appName": "VA Data Commons",
-    "logoAltText": "VA logo and Seal, U.S. Department of Veterans Affairs Data Commons",
-    "index": {
-      "introduction": {
-        "heading": "VA Data Commons",
-        "text": "The VA Data Commons supports the research and analysis of US military Veteran medical and genomic data and aims to accelerate scientific discovery and development of therapies, diagnostic tests, and other technologies for improving the lives of Veterans and beyond. The data commons features GWAS analyses on harmonized data."
-      },
-      "buttons": [],
-      "customHomepageChartConfig": [],
-      "homepageChartNodes": []
+    "gaTrackingId": "UA-119127212-3",
+    "argoTemplate": "gwas-template-database-version",
+    "graphql": {
+        "boardCounts": [],
+        "chartCounts": [],
+        "projectDetails": "boardCounts",
+        "chartNodesExcludeFiles": true
     },
-    "navigation": {
-      "items": [
+    "components": {
+        "appName": "VA Data Commons",
+        "logoAltText": "VA logo and Seal, U.S. Department of Veterans Affairs Data Commons",
+        "index": {
+            "introduction": {
+                "heading": "VA Data Commons",
+                "text": "The VA Data Commons supports the research and analysis of US military Veteran medical and genomic data and aims to accelerate scientific discovery and development of therapies, diagnostic tests, and other technologies for improving the lives of Veterans and beyond. The data commons features GWAS analyses on harmonized data."
+            },
+            "buttons": [],
+            "customHomepageChartConfig": [],
+            "homepageChartNodes": []
+        },
+        "navigation": {
+            "items": [
+                {
+                    "name": "Resource Browser",
+                    "link": "/resource-browser",
+                    "icon": "query"
+                },
+                {
+                    "icon": "workspace",
+                    "link": "/workspace",
+                    "color": "#a2a2a2",
+                    "name": "Workspace"
+                },
+                {
+                    "icon": "analysis",
+                    "link": "/analysis",
+                    "color": "#a2a2a2",
+                    "name": "Apps"
+                },
+                {
+                    "icon": "profile",
+                    "link": "/identity",
+                    "color": "#a2a2a2",
+                    "name": "Profile"
+                }
+            ]
+        },
+        "topBar": {
+            "items": [
+                {
+                    "link": "https://qa-mickey.planx-pla.net/dashboard/Public/documentation/index.html",
+                    "name": "VADC Documentation"
+                },
+                {
+                    "link": "support@gen3.org",
+                    "name": "Email Support"
+                }
+            ],
+            "useProfileDropdown": false
+        },
+        "login": {
+            "title": "U.S. Department of Veterans Affairs Data Commons",
+            "subTitle": "search, compare, and analyze data",
+            "text": "The VA Data Commons supports the research and analysis of US military Veteran medical and genomic data and aims to accelerate scientific discovery and development of therapies, diagnostic tests, and other technologies for improving the lives of Veterans and beyond.",
+            "contact": "If you have any questions about access or the registration process, please contact ",
+            "email": "support@gen3.org"
+        },
+        "systemUse": {
+            "systemUseTitle": "VA systems are intended for Academic and Institutional Users",
+            "systemUseText": [
+                "VA systems are intended to be used by authorized VA network users for viewing and retrieving information; except as otherwise authorized for official business and limited personal use under VA policy. Information from this system resides on and transmits through computer systems and networks funded by VA. Access or use constitutes understanding and acceptance that there is no reasonable expectation of privacy in the use of Government networks or systems. Access or use of this system constitutes user understanding and acceptance of these terms and constitutes unconditional consent to review and action includes but is not limited to: monitoring; recording; copying; auditing; inspecting; investigating; restricting access; blocking; tracking; disclosing to authorized personnel; or other authorized actions by authorized VA and law enforcement personnel. Unauthorized user attempts or acts to (1) access; upload; download; change; or delete information on this system; (2) modify this system; (3) deny access to this system; (4) accrue resources for unauthorized use; or (5) otherwise misuse this system are strictly prohibited. Such attempts or acts are subject to action that result in criminal; civil; or administrative penalties."
+            ],
+            "displayUseMsg": "cookie",
+            "expireUseMsgDays": 365
+        },
+        "footerLogos": [
+            {
+                "src": "/src/img/gen3.png",
+                "href": "https://ctds.uchicago.edu/gen3",
+                "alt": "Gen3 Data Commons"
+            },
+            {
+                "src": "/src/img/createdby.png",
+                "href": "https://ctds.uchicago.edu/",
+                "alt": "Center for Translational Data Science at the University of Chicago"
+            },
+            {
+                "src": "/custom/sponsors/gitops-sponsors/OCC.png",
+                "href": "https://occ-data.org/",
+                "alt": "Open Commons Consortium"
+            }
+        ]
+    },
+    "resourceBrowser": {
+        "title": "Resources",
+        "description": "Some description",
+        "public": false,
+        "resources": [
+            {
+                "title": "VA DD",
+                "category": "",
+                "description": "VA static DD page",
+                "link": "/dashboard/Secure/dd.html",
+                "imageUrl": "/src/img/analysis-icons/default-app.png"
+            }
+        ]
+    },
+    "featureFlags": {
+        "explorer": true,
+        "analysis": true,
+        "workspaceTokenServiceRefreshTokenAtLogin": true
+    },
+    "analysisTools": [
         {
-          "name": "Resource Browser",
-          "link": "/resource-browser",
-          "icon": "query"
+            "title": "OHDSI Atlas",
+            "description": "Use this App for cohort creation. These will be automatically populated in the Gen3 GWAS App",
+            "applicationUrl": "https://atlas.qa-mickey.planx-pla.net",
+            "image": "/custom/sponsors/gitops-sponsors/atlas-logo.png",
+            "needsTeamProject": true
         },
         {
-          "icon": "workspace",
-          "link": "/workspace",
-          "color": "#a2a2a2",
-          "name": "Workspace"
+            "appId": "GWASUIApp",
+            "title": "Gen3 GWAS",
+            "description": "Use this App to perform high throughput GWAS on Million Veteran Program (MVP) data, using the University of Washington Genesis pipeline",
+            "image": "/src/img/analysis-icons/gwas.svg",
+            "needsTeamProject": true
         },
         {
-          "icon": "analysis",
-          "link": "/analysis",
-          "color": "#a2a2a2",
-          "name": "Apps"
+            "appId": "GWASResults",
+            "title": "GWAS Results",
+            "description": "Use this App to view status & results of submitted workflows",
+            "image": "/src/img/analysis-icons/gwasResults.svg",
+            "needsTeamProject": true
         },
         {
-          "icon": "profile",
-          "link": "/identity",
-          "color": "#a2a2a2",
-          "name": "Profile"
+            "appId": "AtlasDataDictionary",
+            "title": "MVP Data Dictionary",
+            "description": "Use this App to view a tabluar representation of the MVP data dictionary",
+            "image": "/src/img/analysis-icons/default-app.png",
+            "dataDictionaryVersion": "new",
+            "needsTeamProject": false
         }
-      ]
+    ],
+    "profilePageTitle": "Profile",
+    "workspacePageTitle": "Workspace",
+    "showArboristAuthzOnProfile": false,
+    "showFenceAuthzOnProfile": false,
+    "connectSrcCSPWhitelist": [
+        "https://second-argo-bucket.s3.amazonaws.com"
+    ],
+    "userAccessToSite": {
+        "enabled": true,
+        "noAccessMessage": "You are not authorized to access this system. If you have any questions, please contact vadc-support@gen3.org"
     },
-    "topBar": {
-      "items": [
-        {
-          "link": "https://qa-mickey.planx-pla.net/dashboard/Public/documentation/index.html",
-          "name": "VADC Documentation"
+    "componentToResourceMapping": {
+        "Workspace": {
+            "resource": "/workspace",
+            "method": "access",
+            "service": "jupyterhub"
         },
-        {
-          "link": "support@gen3.org",
-          "name": "Email Support"
+        "Apps": {
+            "resource": "/dashboard",
+            "method": "access",
+            "service": "dashboard"
+        },
+        "Profile": {
+            "resource": "/dashboard",
+            "method": "access",
+            "service": "dashboard"
+        },
+        "Resource Browser": {
+            "resource": "/dashboard",
+            "method": "access",
+            "service": "dashboard"
         }
-      ],
-      "useProfileDropdown": false
-    },
-    "login": {
-      "title": "U.S. Department of Veterans Affairs Data Commons",
-      "subTitle": "search, compare, and analyze data",
-      "text": "The VA Data Commons supports the research and analysis of US military Veteran medical and genomic data and aims to accelerate scientific discovery and development of therapies, diagnostic tests, and other technologies for improving the lives of Veterans and beyond.",
-      "contact": "If you have any questions about access or the registration process, please contact ",
-      "email": "support@gen3.org"
-    },
-    "systemUse": {
-      "systemUseTitle": "VA systems are intended for Academic and Institutional Users",
-      "systemUseText": [
-        "VA systems are intended to be used by authorized VA network users for viewing and retrieving information; except as otherwise authorized for official business and limited personal use under VA policy. Information from this system resides on and transmits through computer systems and networks funded by VA. Access or use constitutes understanding and acceptance that there is no reasonable expectation of privacy in the use of Government networks or systems. Access or use of this system constitutes user understanding and acceptance of these terms and constitutes unconditional consent to review and action includes but is not limited to: monitoring; recording; copying; auditing; inspecting; investigating; restricting access; blocking; tracking; disclosing to authorized personnel; or other authorized actions by authorized VA and law enforcement personnel. Unauthorized user attempts or acts to (1) access; upload; download; change; or delete information on this system; (2) modify this system; (3) deny access to this system; (4) accrue resources for unauthorized use; or (5) otherwise misuse this system are strictly prohibited. Such attempts or acts are subject to action that result in criminal; civil; or administrative penalties."
-      ],
-      "displayUseMsg": "cookie",
-      "expireUseMsgDays": 365
-    },
-    "footerLogos": [
-      {
-        "src": "/src/img/gen3.png",
-        "href": "https://ctds.uchicago.edu/gen3",
-        "alt": "Gen3 Data Commons"
-      },
-      {
-        "src": "/src/img/createdby.png",
-        "href": "https://ctds.uchicago.edu/",
-        "alt": "Center for Translational Data Science at the University of Chicago"
-      },
-      {
-        "src": "/custom/sponsors/gitops-sponsors/OCC.png",
-        "href": "https://occ-data.org/",
-        "alt": "Open Commons Consortium"
-      }
-    ]
-  },
-  "resourceBrowser": {
-    "title": "Resources",
-    "description": "Some description",
-    "public": false,
-    "resources": [
-      {
-        "title": "VA DD",
-        "category": "",
-        "description": "VA static DD page",
-        "link": "/dashboard/Secure/dd.html",
-        "imageUrl": "/src/img/analysis-icons/default-app.png"
-      }
-    ]
-  },
-  "featureFlags": {
-    "explorer": true,
-    "analysis": true,
-    "workspaceTokenServiceRefreshTokenAtLogin": true
-  },
-  "analysisTools": [
-    {
-      "title": "OHDSI Atlas",
-      "description": "Use this App for cohort creation. These will be automatically populated in the Gen3 GWAS App",
-      "applicationUrl": "https://atlas.qa-mickey.planx-pla.net",
-      "image": "/custom/sponsors/gitops-sponsors/atlas-logo.png",
-      "needsTeamProject": true
-    },
-    {
-      "appId": "GWASUIApp",
-      "title": "Gen3 GWAS",
-      "description": "Use this App to perform high throughput GWAS on Million Veteran Program (MVP) data, using the University of Washington Genesis pipeline",
-      "image": "/src/img/analysis-icons/gwas.svg",
-      "needsTeamProject": true
-    },
-    {
-      "appId": "GWASResults",
-      "title": "GWAS Results",
-      "description": "Use this App to view status & results of submitted workflows",
-      "image": "/src/img/analysis-icons/gwasResults.svg",
-      "needsTeamProject": true
-    },
-    {
-      "appId": "AtlasDataDictionary",
-      "title": "MVP Data Dictionary",
-      "description": "Use this App to view a tabluar representation of the MVP data dictionary",
-      "image": "/src/img/analysis-icons/default-app.png",
-      "dataDictionaryVersion": "new",
-      "needsTeamProject": false
     }
-  ],
-  "profilePageTitle": "Profile",
-  "workspacePageTitle": "Workspace",
-  "showArboristAuthzOnProfile": false,
-  "showFenceAuthzOnProfile": false,
-  "connectSrcCSPWhitelist": [
-    "https://second-argo-bucket.s3.amazonaws.com"
-  ],
-  "userAccessToSite": {
-    "enabled": true,
-    "noAccessMessage": "You are not authorized to access this system. If you have any questions, please contact vadc-support@gen3.org"
-  },
-  "componentToResourceMapping": {
-    "Workspace": {
-      "resource": "/workspace",
-      "method": "access",
-      "service": "jupyterhub"
-    },
-    "Apps": {
-      "resource": "/dashboard",
-      "method": "access",
-      "service": "dashboard"
-    },
-    "Profile": {
-      "resource": "/dashboard",
-      "method": "access",
-      "service": "dashboard"
-    },
-    "Resource Browser": {
-      "resource": "/dashboard",
-      "method": "access",
-      "service": "dashboard"
-    }
-  }
 }
