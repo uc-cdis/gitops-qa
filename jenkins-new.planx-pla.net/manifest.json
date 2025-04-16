@@ -32,7 +32,10 @@
     "dashboard": "quay.io/cdis/gen3-statics:master",
     "requestor": "quay.io/cdis/requestor:master",
     "cedar-wrapper": "quay.io/cdis/cedar-wrapper-service:master",
-    "kayako-wrapper": "quay.io/cdis/kayako-wrapper-service:master"
+    "gen3-user-data-library": "quay.io/cdis/gen3-user-data-library:main",
+    "kayako-wrapper": "quay.io/cdis/kayako-wrapper-service:master",
+    "ohif-viewer": "quay.io/cdis/ohif-viewer:gen3-v3.8.0",
+    "orthanc": "docker.io/osimis/orthanc:master"
   },
   "arborist": {
     "deployment_version": "2"
@@ -285,6 +288,9 @@
   },
   "canary": {
     "default": 0
+  },
+  "google": {
+    "enabled": "yes"
   },
   "guppy": {
     "indices": [

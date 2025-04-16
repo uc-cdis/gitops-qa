@@ -9,29 +9,30 @@
   "versions": {
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
     "arborist": "quay.io/cdis/arborist:master",
-    "audit-service": "quay.io/cdis/audit-service:master",
+    "audit-service": "quay.io/cdis/audit-service:2025.01",
     "aws-es-proxy": "quay.io/cdis/aws-es-proxy:v1.3.1",
     "awshelper": "quay.io/cdis/awshelper:master",
     "fence": "quay.io/cdis/fence:master",
-    "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
     "indexd": "quay.io/cdis/indexd:master",
     "ws-storage": "quay.io/cdis/ws-storage:master",
     "peregrine": "quay.io/cdis/peregrine:master",
-    "portal": "quay.io/cdis/data-portal:master",
     "revproxy": "quay.io/cdis/nginx:master",
     "sheepdog": "quay.io/cdis/sheepdog:master",
+    "portal": "quay.io/cdis/data-portal:master",
+    "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
     "spark": "quay.io/cdis/gen3-spark:master",
-    "tube": "quay.io/cdis/tube:master",
     "ssjdispatcher": "quay.io/cdis/ssjdispatcher:master",
+    "tube": "quay.io/cdis/tube:master",
     "manifestservice": "quay.io/cdis/manifestservice:master",
     "wts": "quay.io/cdis/workspace-token-service:master",
     "guppy": "quay.io/cdis/guppy:master",
     "sower": "quay.io/cdis/sower:master",
     "hatchery": "quay.io/cdis/hatchery:master",
-    "metadata": "quay.io/cdis/metadata-service:master",
+    "metadata": "quay.io/cdis/metadata-service:2025.01",
     "dashboard": "quay.io/cdis/gen3-statics:master",
     "requestor": "quay.io/cdis/requestor:master",
     "cedar-wrapper": "quay.io/cdis/cedar-wrapper-service:master",
+    "gen3-user-data-library": "quay.io/cdis/gen3-user-data-library:main",
     "kayako-wrapper": "quay.io/cdis/kayako-wrapper-service:master",
     "ohif-viewer": "quay.io/cdis/ohif-viewer:gen3-v3.8.0",
     "orthanc": "docker.io/osimis/orthanc:master"
@@ -291,6 +292,9 @@
   },
   "canary": {
     "default": 0
+  },
+  "google": {
+    "enabled": "yes"
   },
   "guppy": {
     "indices": [

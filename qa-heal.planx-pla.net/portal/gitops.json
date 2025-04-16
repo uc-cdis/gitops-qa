@@ -12,7 +12,7 @@
     "banner": [
       {
         "type": "warning",
-        "message": "Our helpdesk has moved! Starting 8/21, please contact us at heal-support@gen3.org"
+        "message": "This repository is under review for potential modification in compliance with Administration directives."
       }
     ],
     "index": {
@@ -147,13 +147,13 @@
             "key": "Subject Type"
           },
           {
-            "key": "Gender"
-          },
-          {
             "key": "Age"
           },
           {
             "key": "Common Data Elements"
+          },
+          {
+            "key": "Research Program"
           }
         ]
       },
