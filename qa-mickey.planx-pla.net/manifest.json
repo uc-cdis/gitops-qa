@@ -24,7 +24,7 @@
         "ohdsi-atlas": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ohdsi-atlas:feat_pull_upstream_into_2.15_DEV",
         "ohdsi-webapi": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ohdsi-webapi:feat_pull_upstream_into_2.15_DEV",
         "peregrine": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/peregrine:2025.04",
-        "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:va.data-commons.org-2025.03",
+        "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:feat_add_transformation_and_filters_to_remaining_frontend_parts",
         "requestor": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/requestor:2025.04",
         "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:2025.04",
         "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:2025.04",
