@@ -1,0 +1,10 @@
+{
+    "TCGA-LGG": {
+        "aws_bucket_prefix": "dcf-staging-bucket1",
+        "gs_bucket_prefix": "dcf-staging-bucket1"
+    },
+    "ALICE": {
+        "aws_bucket_prefix": "dcf-staging-bucket2",
+        "gs_bucket_prefix": "dcf-staging-bucket2"
+    }
+}
