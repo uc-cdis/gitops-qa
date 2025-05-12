@@ -32,7 +32,7 @@
   },
   "metadata": {
     "USE_AGG_MDS": true,
-    "AGG_MDS_NAMESPACE": "jenkins-dcp"
+    "AGG_MDS_NAMESPACE": "qa-dcp"
   },
   "google": {
     "enabled": "yes"
