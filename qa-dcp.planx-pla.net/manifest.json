@@ -30,6 +30,10 @@
     "requestor": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/requestor:2025.05",
     "gen3-user-data-library": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-user-data-library:main"
   },
+  "metadata": {
+    "USE_AGG_MDS": true,
+    "AGG_MDS_NAMESPACE": "jenkins-dcp"
+  },
   "google": {
     "enabled": "yes"
   },
@@ -354,7 +358,7 @@
   "guppy": {
     "indices": [
       {
-        "index": "qa-dcp_etl",
+        "index": "qa-dcp_subject",
         "type": "subject"
       },
       {
