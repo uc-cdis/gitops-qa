@@ -1,5 +1,5 @@
 mappings:
-  - name: qa-dcp_etl
+  - name: qa-dcp_subject
     doc_type: subject
     type: aggregator
     root: subject
