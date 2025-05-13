@@ -358,11 +358,11 @@
   "guppy": {
     "indices": [
       {
-        "index": "qa-dcp_subject",
+        "index": "qa-dcp_subject_alias",
         "type": "subject"
       },
       {
-        "index": "qa-dcp_file",
+        "index": "qa-dcp_file_alias",
         "type": "file"
       }
     ],
