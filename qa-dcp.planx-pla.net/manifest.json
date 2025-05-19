@@ -351,7 +351,7 @@
   "guppy": {
     "indices": [
       {
-        "index": "qa-dcp_etl",
+        "index": "qa-dcp_subject",
         "type": "subject"
       },
       {
