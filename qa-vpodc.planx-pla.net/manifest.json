@@ -13,6 +13,7 @@
         "dashboard": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-statics:2025.04",
         "fence": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/fence:2025.04",
         "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
+        "guppy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/guppy:2025.04",
         "frontend-framework": "quay.io/cdis/vpodc-data-commons:main",
         "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:2025.04",
         "indexd": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexd:2025.04",
@@ -54,6 +55,20 @@
         "karpenter": "true",
         "ecr-access-job-role-arn": "arn:aws:iam::654654631253:role/EcrRepoPolicyUpdateRole",
         "frontend_root": "gen3ff"
+    },
+    "guppy": {
+        "indices": [
+            {
+                "index": "etl_mickey",
+                "type": "patients"
+            },
+            {
+                "index": "file_etl_mickey",
+                "type": "file"
+            }
+        ],
+        "config_index": "etl_mickey_array-config",
+        "auth_filter_field": "auth_resource_path"
     },
     "metadata": {
         "USE_AGG_MDS": true,
