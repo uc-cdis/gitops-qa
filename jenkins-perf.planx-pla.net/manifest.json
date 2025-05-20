@@ -118,6 +118,9 @@
     "indexd": {
       "strategy": "auto"
     },
+    "metadata": {
+      "strategy": "auto"
+    },
     "peregrine": {
       "strategy": "auto"
     },
