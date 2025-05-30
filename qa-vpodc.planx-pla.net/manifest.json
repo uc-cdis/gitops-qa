@@ -26,6 +26,8 @@
         "requestor": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/requestor:2025.04",
         "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:2025.04",
         "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:2025.04",
+        "spark": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-spark:2025.04",
+        "tube": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/tube:2025.04",
         "wts": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/workspace-token-service:2025.04"
     },
     "arborist": {
@@ -59,15 +61,15 @@
     "guppy": {
         "indices": [
             {
-                "index": "etl_mickey",
-                "type": "patients"
+                "index": "vpodc_subject",
+                "type": "subject"
             },
             {
-                "index": "file_etl_mickey",
-                "type": "file"
+                "index": "vpodc_data_file",
+                "type": "data_file"
             }
         ],
-        "config_index": "etl_mickey_array-config",
+        "config_index": "vpodc_array-config",
         "auth_filter_field": "auth_resource_path"
     },
     "metadata": {
