@@ -9,7 +9,7 @@
     "versions": {
         "ambassador": "quay.io/datawire/ambassador:1.14.4",
         "arborist": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/arborist:2025.04",
-        "argo-wrapper": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/argo-wrapper:master",
+        "argo-wrapper": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/argo-wrapper:feat_support_plp_submission",
         "audit-service": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/audit-service:2025.04",
         "awshelper": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/awshelper:2025.04",
         "cohort-middleware": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/cohort-middleware:feat_new_endpoints_for_plp_scenarios",
