@@ -15,7 +15,6 @@ mappings:
     category: data_file
     props:
       - name: submitter_id
-      - name: type
       - name: file_name
       - name: file_size
       - name: md5sum
