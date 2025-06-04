@@ -61,8 +61,8 @@
     "guppy": {
         "indices": [
             {
-                "index": "vpodc_subject",
-                "type": "subject"
+                "index": "vpodc_patient",
+                "type": "patient"
             },
             {
                 "index": "vpodc_data_file",
