@@ -6,8 +6,6 @@ mappings:
     props:
       - name: project_id
       - name: submitter_id
-      - name: type
-      - name: projects
   - name: vpodc_data_file
     doc_type: imaging_file
     type: collector
