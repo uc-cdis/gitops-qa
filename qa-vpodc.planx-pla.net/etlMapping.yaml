@@ -1,38 +1,24 @@
 mappings:
-  - name: vpodc_subject
-    doc_type: subject
+  - name: vpodc_case
+    doc_type: case
     type: aggregator
-    root: subject
+    root: case
     props:
       - name: project_id
       - name: submitter_id
-      - name: amputation_type
-      - name: geographic_site
-      - name: cohort_id
-      - name: eligibility
-      - name: index_date
-      - name: transplanted_organ
-      - name: consent_codes
-      - name: unit_geographic_site
-      - name: derived_parent_subject_id
-      - name: derived_topmed_subject_id
-      - name: participant_id
   - name: vpodc_data_file
-    doc_type: data_file
+    doc_type: imaging_file
     type: collector
     root: None
     category: data_file
     props:
+      - name: submitter_id
       - name: file_name
       - name: file_size
-      - name: file_format
       - name: md5sum
-      - name: object_id
-      - name: file_state
-      - name: error_type
-      - name: ga4gh_drs_uri
-      - name: bucket_path
-      - name: callset
+      - name: data_format
+      - name: data_type
+      - name: data_category
     injecting_props:
       subject:
         props:
