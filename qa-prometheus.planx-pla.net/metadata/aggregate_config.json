@@ -49,8 +49,8 @@
             "subject_chemical_agents_of_exposure": {},
             "prometheus_global_id": {},
             "studies": {
-		"type": "array"
-	    }
+                "type": "array"
+            }
         },
         "settings": {
             "cache_drs": true
@@ -414,17 +414,15 @@
             },
             "per_item_values": {
                 "synth_12345": {
-                    {
-                        "__manifest": [
-                            {
-                                "md5": "44d8497a87b5bb040b09699899b57bff",
-                                "file_name": "synth_12345",
-                                "file_size": 39953,
-                                "object_id": "f5d75619-93fc-4cdb-87e3-4e44523d7a4b",
-                                "commons_url": "vpodc.data-commons.org"
-                            }
-                        ]
-                    }
+                    "__manifest": [
+                        {
+                            "md5": "44d8497a87b5bb040b09699899b57bff",
+                            "file_name": "synth_12345",
+                            "file_size": 39953,
+                            "object_id": "f5d75619-93fc-4cdb-87e3-4e44523d7a4b",
+                            "commons_url": "vpodc.data-commons.org"
+                        }
+                    ]
                 }
             }
         },
@@ -968,6 +966,71 @@
                 "prometheus_global_id": "path:prometheus_global_id",
                 "is_synthetic": "No",
                 "studies": "path:studies.*"
+            }
+        },
+        "Windber-subject-level-metadata": {
+            "mds_url": "https://t-apps.wriwindber.org/prometheus-mesh-api/v1/metadata",
+            "commons_url": "externalgen3.prometheus.data-commons.org",
+            "adapter": "windbersubject",
+            "config": {
+                "guid_type": "Windber_subject_metadata",
+                "study_field": "gen3_discovery"
+            },
+            "keep_original_fields": false,
+            "field_mappings": {
+                "authz": "",
+                "tags": "path:tags",
+                "_unique_id": "path:_unique_id",
+                "commons": "path:commons",
+                "subject_id": "path:_unique_id",
+                "subject_apollo_id": "path:apollo_id",
+                "subject_race": "path:race",
+                "subject_gender": {
+                    "path": "gender",
+                    "filters": [
+                        "normalize_value"
+                    ],
+                    "filterParams": {
+                        "normalize_value": {
+                            "male": "Male",
+                            "female": "Female",
+                            "m": "Male",
+                            "f": "Female",
+                            "Male": "Male",
+                            "Female": "Female",
+                            "not reported": "Not Reported",
+                            "Not Reported": "Not Reported"
+                        }
+                    },
+                    "default": ""
+                },
+                "subject_ethnicity": {
+                    "path": "ethnicity",
+                    "filters": [
+                        "normalize_value"
+                    ],
+                    "filterParams": {
+                        "normalize_value": {
+                            "NOT HISPANIC OR LATINO": "Not Hispanic or Latino",
+                            "not reported": "Not Reported",
+                            "Not Reported": "Not Reported",
+                            "DECLINED TO ANSWER": "Declined to Answer",
+                            "HISPANIC OR LATINO": "Hispanic or Latino",
+                            "Not Spanish/Hispanic/Latino": "Not Hispanic or Latino",
+                            "Unknown": "Unknown"
+                        }
+                    },
+                    "default": ""
+                },
+                "subject_metastasis": "",
+                "subject_cancer_type": "",
+                "subject_cancer_grade": "",
+                "subject_cancer_stage": "",
+                "subject_primary_disease": "",
+                "data_source": "Windber",
+                "commons_url": "externalgen3.prometheus.data-commons.org",
+                "prometheus_global_id": "path:prometheus_global_id",
+                "is_synthetic": "Yes"
             }
         }
     }
