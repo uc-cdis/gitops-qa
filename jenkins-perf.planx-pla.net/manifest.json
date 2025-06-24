@@ -7,21 +7,21 @@
     "autodeploy": "yes"
   },
   "versions": {
-    "arborist": "quay.io/cdis/arborist:2025.06",
+    "arborist": "quay.io/cdis/arborist:2025.07",
     "aws-es-proxy": "quay.io/cdis/aws-es-proxy:v1.3.1",
-    "fence": "quay.io/cdis/fence:2025.06",
+    "fence": "quay.io/cdis/fence:2025.07",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
-    "indexd": "quay.io/cdis/indexd:2025.06",
-    "peregrine": "quay.io/cdis/peregrine:2025.06",
-    "portal": "quay.io/cdis/data-portal:2025.06",
-    "revproxy": "quay.io/cdis/nginx:2025.06",
-    "sheepdog": "quay.io/cdis/sheepdog:2025.06",
-    "manifestservice": "quay.io/cdis/manifestservice:2025.06",
-    "wts": "quay.io/cdis/workspace-token-service:2025.06",
-    "sower": "quay.io/cdis/sower:2025.06",
-    "hatchery": "quay.io/cdis/hatchery:2025.06",
-    "metadata": "quay.io/cdis/metadata-service:2025.06",
-    "dashboard": "quay.io/cdis/gen3-statics:2025.06"
+    "indexd": "quay.io/cdis/indexd:2025.07",
+    "peregrine": "quay.io/cdis/peregrine:2025.07",
+    "portal": "quay.io/cdis/data-portal:2025.07",
+    "revproxy": "quay.io/cdis/nginx:2025.07",
+    "sheepdog": "quay.io/cdis/sheepdog:2025.07",
+    "manifestservice": "quay.io/cdis/manifestservice:2025.07",
+    "wts": "quay.io/cdis/workspace-token-service:2025.07",
+    "sower": "quay.io/cdis/sower:2025.07",
+    "hatchery": "quay.io/cdis/hatchery:2025.07",
+    "metadata": "quay.io/cdis/metadata-service:2025.07",
+    "dashboard": "quay.io/cdis/gen3-statics:2025.07"
   },
   "arborist": {
     "deployment_version": "2"
@@ -45,7 +45,7 @@
       "name": "pelican-export",
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/pelican:2025.06",
+        "image": "quay.io/cdis/pelican:2025.07",
         "pull_policy": "always",
         "env": []
       },
