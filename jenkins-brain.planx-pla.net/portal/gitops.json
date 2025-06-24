@@ -631,6 +631,7 @@
         "rightIcon": "download"
       }
     ],
+    "loginForDownload": true,
     "guppyConfig": {
       "dataType": "subject",
       "nodeCountTitle": "Subjects",
@@ -696,6 +697,7 @@
         "file_size",
         "object_id"      ]
     },
+    "loginForDownload": true,
     "guppyConfig": {
       "dataType": "file",
       "fieldMapping": [
