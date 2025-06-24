@@ -1,8 +1,8 @@
 mappings:
-  - name: vpodc_case
-    doc_type: case
+  - name: vpodc_cases
+    doc_type: cases
     type: aggregator
-    root: case
+    root: cases
     props:
       - name: project_id
       - name: submitter_id
