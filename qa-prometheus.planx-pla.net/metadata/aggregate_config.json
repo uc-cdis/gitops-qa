@@ -50,6 +50,9 @@
       "subject_year_of_birth": {},
       "subject_primary_disease": {},
       "subject_type_of_exposure": {},
+      "subject_type_of_exposures" : {
+        "type": "array"
+      },
       "subject_chemical_agents_of_exposure": {},
       "mc2dp_global_id": {},
       "studies": {
@@ -1140,6 +1143,7 @@
         "subject_metastasis": "path:metastasis",
         "subject_cancer_type": "path:cancer_type",
         "subject_primary_disease": "path:primary_disease",
+        "subject_type_of_exposures" : "path:type_of_exposures",
         "data_source": "path:data_source",
         "commons_url": "externalgen3.prometheus.data-commons.org",
         "mc2dp_global_id": "path:mc2dp_global_id",
