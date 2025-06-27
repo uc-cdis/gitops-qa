@@ -35,6 +35,10 @@
       "primary_site": {},
       "authz": {},
       "subject_id": {},
+      "subject_id_list" : {
+        "type": "array",
+        "default": []
+      },
       "subject_apollo_id": {},
       "subject_race": {},
       "subject_gender": {},
@@ -47,8 +51,11 @@
       "subject_primary_disease": {},
       "subject_type_of_exposure": {},
       "subject_chemical_agents_of_exposure": {},
-      "prometheus_global_id": {},
+      "mc2dp_global_id": {},
       "studies": {
+        "type": "array"
+      },
+      "data_files": {
         "type": "array"
       },
       "filesCount": {
@@ -358,7 +365,7 @@
         "subject_primary_disease": "path:primary_disease",
         "commons_url": "data.bloodpac.org",
         "data_source": "BLOODPAC",
-        "prometheus_global_id": "path:prometheus_global_id",
+        "mc2dp_global_id": "path:mc2dp_global_id",
         "is_synthetic": "Yes"
       }
     },
@@ -491,7 +498,7 @@
         },
         "commons_url": "vpodc.data-commons.org",
         "data_source": "VPODC",
-        "prometheus_global_id": "path:prometheus_global_id",
+        "mc2dp_global_id": "path:mc2dp_global_id",
         "is_synthetic": "No"
       },
       "per_item_values": {
@@ -794,7 +801,7 @@
         "subject_chemical_agents_of_exposure": "path:exposure_agent",
         "data_source": "path:data_source",
         "commons_url": "externalgen3.prometheus.data-commons.org",
-        "prometheus_global_id": "path:prometheus_global_id",
+        "mc2dp_global_id": "path:mc2dp_global_id",
         "is_synthetic": "Yes"
       }
     },
@@ -934,7 +941,7 @@
         "data_source": "path:data_source",
         "sub_data_source": "path:sub_data_source",
         "commons_url": "externalgen3.prometheus.data-commons.org",
-        "prometheus_global_id": "path:prometheus_global_id",
+        "mc2dp_global_id": "path:mc2dp_global_id",
         "is_synthetic": "No"
       }
     },
@@ -1045,7 +1052,7 @@
         "subject_primary_disease": "",
         "data_source": "TCIA",
         "commons_url": "externalgen3.prometheus.data-commons.org",
-        "prometheus_global_id": "path:prometheus_global_id",
+        "mc2dp_global_id": "path:mc2dp_global_id",
         "is_synthetic": "No",
         "studies": "path:studies.*"
       }
@@ -1111,8 +1118,33 @@
         "subject_primary_disease": "",
         "data_source": "Windber",
         "commons_url": "externalgen3.prometheus.data-commons.org",
-        "prometheus_global_id": "path:prometheus_global_id",
+        "mc2dp_global_id": "path:mc2dp_global_id",
         "is_synthetic": "Yes"
+      }
+    },
+    "aggregated-subject-level-metadata": {
+      "mds_url": "https://externalgen3.prometheus.data-commons.org/",
+      "commons_url": "externalgen3.prometheus.data-commons.org",
+      "adapter": "gen3",
+      "config": {
+        "guid_type": "aggmds_metadata_entry",
+        "study_field": "gen3_discovery"
+      },
+      "keep_original_fields": false,
+      "field_mappings": {
+        "authz": "",
+        "tags": "path:tags",
+        "_unique_id": "path:mc2dp_global_id",
+        "commons": "path:data_source",
+        "subject_id_list": "path:data_source_ids",
+        "subject_metastasis": "path:metastasis",
+        "subject_cancer_type": "path:cancer_type",
+        "subject_primary_disease": "path:primary_disease",
+        "data_source": "path:data_source",
+        "commons_url": "externalgen3.prometheus.data-commons.org",
+        "mc2dp_global_id": "path:mc2dp_global_id",
+        "is_synthetic": "No",
+        "data_files": "path:data_type"
       }
     }
   }
