@@ -70,11 +70,11 @@
     "guppy": {
       "indices": [
       {
-        "index": "default-commons-index",
+        "index": "pdp-commons-index",
         "type": "metadata"
       }
     ],
-    "config_index": "default-commons-config-index"
+    "config_index": "pdp-commons-config-index"
     },
     "canary": {
         "default": 0
