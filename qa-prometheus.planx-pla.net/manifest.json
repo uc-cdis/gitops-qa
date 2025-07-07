@@ -73,7 +73,7 @@
         "type": "metadata"
       }
     ],
-    "config_index": "pdp-commons-commons-config-index",
+    "config_index": "pdp-commons-commons-config-index"
     },
     "canary": {
         "default": 0
