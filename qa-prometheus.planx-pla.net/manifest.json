@@ -13,8 +13,9 @@
         "dashboard": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-statics:2025.04",
         "fence": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/fence:2025.04",
         "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
-        "frontend-framework": "quay.io/cdis/mc2dp-data-platform:main",
+        "frontend-framework": "quay.io/cdis/mc2dp-data-platform:chore_update_gff_0.10.99",
         "gen3-user-data-library": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-user-data-library:1.1.0",
+        "guppy": "quay.io/cdis/guppy:2025.07",
         "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:2025.04",
         "indexd": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexd:2025.04",
         "manifestservice": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifestservice:2025.04",
@@ -43,8 +44,7 @@
         "kube_bucket": "kube_bucket.devplanetv1.gen3",
         "logs_bucket": "logs-devplanetv1-gen3",
         "useryaml_s3path": "s3://cdis-gen3-users/pdp/user.yaml",
-        "tier_access_level": "regular",
-        "tier_access_limit": 50,
+        "tier_access_level": "libre",
         "public_datasets": true,
         "netpolicy": "on",
         "argocd": "true",
@@ -65,6 +65,15 @@
     },
     "portal": {
         "GEN3_BUNDLE": "ecosystem"
+    },
+    "guppy": {
+      "indices": [
+      {
+        "index": "pdp-commons-commons-index",
+        "type": "metadata"
+      }
+    ],
+    "config_index": "pdp-commons-commons-config-index"
     },
     "canary": {
         "default": 0
