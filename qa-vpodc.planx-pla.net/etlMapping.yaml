@@ -20,11 +20,8 @@ mappings:
       - name: data_type
       - name: data_category
     injecting_props:
-      subject:
+      case:
         props:
-          - name: _subject_id
-            src: id
-            fn: set
-          - name: amputation_type
-            src: amputation_type
+          - name: _case_id
+            src: submitter_id
             fn: set
