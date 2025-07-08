@@ -34,6 +34,7 @@
       "disease_type": {},
       "primary_site": {},
       "authz": {},
+      "is_synthetic": {},
       "subject_id": {},
       "subject_id_list" : {
         "type": "array",
