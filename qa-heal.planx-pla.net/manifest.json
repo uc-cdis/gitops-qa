@@ -8,26 +8,26 @@
   },
   "versions": {
     "ambassador": "quay.io/datawire/ambassador:1.4.2",
-    "arborist": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/arborist:4.1.0",
-    "audit-service": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/audit-service:2025.05",
+    "arborist": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/arborist:integration202508",
+    "audit-service": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/audit-service:integration202508",
     "aws-es-proxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/aws-es-proxy:v1.3.1",
     "cedar-wrapper": "quay.io/cdis/cedar-wrapper-service:0.6.0",
-    "dashboard": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-statics:2025.05",
-    "fence": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/fence:2025.05",
+    "dashboard": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-statics:integration202508",
+    "fence": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/fence:integration202508",
     "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
     "frontend-framework": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/heal-data-commons:main",
-    "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:2025.05",
-    "indexd": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexd:2025.05",
-    "manifestservice": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifestservice:2025.05",
-    "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:2025.05",
-    "peregrine": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/peregrine:2025.05",
-    "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:5.38.1",
-    "requestor": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/requestor:2025.05",
-    "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:2025.05",
-    "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:2025.05",
-    "sower": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sower:2025.05",
-    "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:2025.05",
-    "wts": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/workspace-token-service:2025.05"
+    "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:integration202508",
+    "indexd": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexd:integration202508",
+    "manifestservice": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/manifestservice:integration202508",
+    "metadata": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/metadata-service:integration202508",
+    "peregrine": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/peregrine:integration202508",
+    "portal": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/data-portal:integration202508",
+    "requestor": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/requestor:integration202508",
+    "revproxy": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/nginx:integration202508",
+    "sheepdog": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sheepdog:integration202508",
+    "sower": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/sower:integration202508",
+    "ssjdispatcher": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/ssjdispatcher:integration202508",
+    "wts": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/workspace-token-service:integration202508"
   },
   "arborist": {
     "deployment_version": "2"
@@ -42,7 +42,7 @@
   },
   "ssjdispatcher": {
     "job_images": {
-      "indexing": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexs3client:2025.05"
+      "indexing": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/indexs3client:integration202508"
     }
   },
   "global": {
@@ -76,7 +76,7 @@
       "activeDeadlineSeconds": 600,
       "container": {
         "name": "job-task",
-        "image": "quay.io/cdis/batch-export:5.1.0",
+        "image": "quay.io/cdis/batch-export:integration202508",
         "pull_policy": "Always",
         "labels": {
           "internet": "yes"
