@@ -1121,7 +1121,7 @@
         "subject_primary_disease": "",
         "data_source": "Windber",
         "commons_url": "externalgen3.prometheus.data-commons.org",
-        "mc2dp_global_id": "path:mc2dp_global_id",
+        "mc2dp_global_id": "",
         "is_synthetic": "Yes"
       }
     },
