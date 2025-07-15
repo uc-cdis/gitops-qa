@@ -88,7 +88,7 @@
     "topBar": {
       "items": [
         {
-          "link": "https://qa-heal.planx-pla.net/documentation",
+          "link": "https://heal.github.io/platform-documentation/",
           "name": "Help and Guidance"
         }
       ]
