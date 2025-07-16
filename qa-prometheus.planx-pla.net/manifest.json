@@ -13,7 +13,7 @@
         "dashboard": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-statics:2025.04",
         "fence": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/fence:2025.04",
         "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.15.3-debian-cloudwatch-1.0",
-        "frontend-framework": "quay.io/cdis/mc2dp-data-platform:chore_update_gff_0.10.99",
+        "frontend-framework": "quay.io/cdis/mc2dp-data-platform:main",
         "gen3-user-data-library": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/gen3-user-data-library:1.1.0",
         "guppy": "quay.io/cdis/guppy:2025.07",
         "hatchery": "707767160287.dkr.ecr.us-east-1.amazonaws.com/gen3/hatchery:2025.04",
