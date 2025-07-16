@@ -657,7 +657,7 @@
           }
         ],
         "_unique_id": "path:case_submitter_id",
-        "commons": "GDC",
+        "commons": "PDC",
         "disease_type": "path:disease_type",
         "primary_site": "path:primary_site",
         "subject_id": "path:case_submitter_id",
@@ -694,7 +694,7 @@
           },
           "default": ""
         },
-        "subject_metastasis": "path:metastasis_at_diagnosis",
+        "subject_metastasis": "",
         "subject_cancer_type": "",
         "subject_cancer_grade": {
           "path": "diagnoses[*].tumor_grade",
