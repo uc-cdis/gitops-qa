@@ -14,7 +14,7 @@
   "sidecar": {
     "cpu-limit": "1.0",
     "memory-limit": "256Mi",
-    "image": "quay.io/cdis/ecs-ws-sidecar:2025.07",
+    "image": "quay.io/cdis/ecs-ws-sidecar:integration202508",
     "env": {
       "NAMESPACE": "qa-heal"
     },
