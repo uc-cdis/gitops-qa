@@ -558,6 +558,7 @@
 				"callset"
 			]
 		},
+		"loginForDownload": true,
 		"guppyConfig": {
 			"dataType": "file",
 			"fieldMapping": [
