@@ -21,29 +21,49 @@ mappings:
       - name: oncology_primaries
         path: oncology_primaries
         props:
-          - name: Multiplicitycounter
-          - name: ICDOSite
-          - name: Radiation
-          - name: Chemotherapy
-          - name: DaysFromAnchorDateToDiagnosisDate
-          - name: Gradedifferentiation
-          - name: Laterality
-          - name: Stagegroupbest
-          - name: RadiationsurgerySequence
-          - name: Histologyicdo3X
-          - name: Lymphvascularinvasionl
-          - name: SeerSummaryStage2000
-          - name: PhysiciansStage
-          - name: DaysFromAnchorDateToMostdefinitivesurgDate
-          - name: ChemotherapyFac
-          - name: TumorSize
-          - name: SequenceNumber
+          - name: Oncology_Primary.Multiplicitycounter
+            src: Multiplicitycounter
+          - name: Oncology_Primary.ICDOSite
+            src: ICDOSite
+          - name: Oncology_Primary.Radiation
+            src: Radiation
+          - name: Oncology_Primary.Chemotherapy
+            src: Chemotherapy
+          - name: Oncology_Primary.DaysFromAnchorDateToDiagnosisDate
+            src: DaysFromAnchorDateToDiagnosisDate
+          - name: Oncology_Primary.Gradedifferentiation
+            src: Gradedifferentiation
+          - name: Oncology_Primary.Laterality
+            src: Laterality
+          - name: Oncology_Primary.Stagegroupbest
+            src: Stagegroupbest
+          - name: Oncology_Primary.RadiationsurgerySequence
+            src: RadiationsurgerySequence
+          - name: Oncology_Primary.Histologyicdo3X
+            src: Histologyicdo3X
+          - name: Oncology_Primary.Lymphvascularinvasionl
+            src: Lymphvascularinvasionl
+          - name: Oncology_Primary.SeerSummaryStage2000
+            src: SeerSummaryStage2000
+          - name: Oncology_Primary.PhysiciansStage
+            src: PhysiciansStage
+          - name: Oncology_Primary.DaysFromAnchorDateToMostdefinitivesurgDate
+            src: DaysFromAnchorDateToMostdefinitivesurgDate
+          - name: Oncology_Primary.ChemotherapyFac
+            src: ChemotherapyFac
+          - name: Oncology_Primary.TumorSize
+            src: TumorSize
+          - name: Oncology_Primary.SequenceNumber
+            src: SequenceNumber
       - name: actionable_mutations
         path: actionable_mutations
         props:
-          - name: Lab
-          - name: Gene
-          - name: DaysFromAnchorDateToBxDate
+          - name: ActionableMutations.Lab
+            src: Lab
+          - name: ActionableMutations.Gene
+            src: Gene
+          - name: ActionableMutations.DaysFromAnchorDateToBxDate
+            src: DaysFromAnchorDateToBxDate
   - name: file_etl_mickey
     doc_type: file
     type: collector
