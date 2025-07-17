@@ -69,7 +69,6 @@
                 "type": "file"
             }
         ],
-        "config_index": "vpodc_array-config",
         "auth_filter_field": "auth_resource_path"
     },
     "metadata": {
