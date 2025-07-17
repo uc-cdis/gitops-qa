@@ -1,27 +1,19 @@
 mappings:
-  - name: vpodc_case
-    doc_type: case
-    type: aggregator
-    root: case
-    props:
-      - name: project_id
-      - name: submitter_id
-  - name: vpodc_data_file
-    doc_type: imaging_file
+  - name: file_tube_etl_mickey
+    doc_type: file
     type: collector
     root: None
     category: data_file
     props:
-      - name: submitter_id
+      - name: object_id
+      - name: md5sum
       - name: file_name
       - name: file_size
-      - name: md5sum
       - name: data_format
       - name: data_type
-      - name: data_category
+      - name: state
     injecting_props:
       case:
         props:
-          - name: _case_id
-            src: submitter_id
-            fn: set
+          - name: submitter_id
+          - name: project_id
