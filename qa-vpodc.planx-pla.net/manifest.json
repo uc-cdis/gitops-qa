@@ -61,12 +61,12 @@
     "guppy": {
         "indices": [
             {
-                "index": "vpodc_case",
-                "type": "case"
+                "index": "etl_mickey",
+                "type": "patients"
             },
             {
-                "index": "vpodc_data_file",
-                "type": "data_file"
+                "index": "file_etl_mickey",
+                "type": "file"
             }
         ],
         "config_index": "vpodc_array-config",
