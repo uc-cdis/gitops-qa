@@ -1,27 +1,59 @@
 mappings:
-  - name: vpodc_case
-    doc_type: case
+  - name: etl_mickey
+    doc_type: patients
     type: aggregator
     root: case
     props:
       - name: project_id
-      - name: submitter_id
-  - name: vpodc_data_file
-    doc_type: imaging_file
+      - name: Days_To_Birth
+        src: days_to_lost_to_followup
+      - name: Days_To_Death
+        src: days_to_lost_to_followup
+      - name: Gender
+        src: lost_to_followup
+      - name: Ethnicity
+        src: lost_to_followup
+      - name: Race
+        src: lost_to_followup
+      - name: DeceasedFlag
+        src: lost_to_followup
+    nested_props:
+      - name: oncology_primaries
+        path: oncology_primaries
+        props:
+          - name: Multiplicitycounter
+          - name: ICDOSite
+          - name: Radiation
+          - name: Chemotherapy
+          - name: DaysFromAnchorDateToDiagnosisDate
+          - name: Gradedifferentiation
+          - name: Laterality
+          - name: Stagegroupbest
+          - name: RadiationsurgerySequence
+          - name: Histologyicdo3X
+          - name: Lymphvascularinvasionl
+          - name: SeerSummaryStage2000
+          - name: PhysiciansStage
+          - name: DaysFromAnchorDateToMostdefinitivesurgDate
+          - name: ChemotherapyFac
+          - name: TumorSize
+          - name: SequenceNumber
+      - name: actionable_mutations
+        path: actionable_mutations
+        props:
+          - name: Lab
+          - name: Gene
+          - name: DaysFromAnchorDateToBxDate
+  - name: file_etl_mickey
+    doc_type: file
     type: collector
     root: None
     category: data_file
     props:
+      - name: project_id
       - name: submitter_id
       - name: file_name
       - name: file_size
-      - name: md5sum
       - name: data_format
       - name: data_type
-      - name: data_category
-    injecting_props:
-      case:
-        props:
-          - name: _case_id
-            src: submitter_id
-            fn: set
+      - name: object_id
