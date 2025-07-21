@@ -205,8 +205,19 @@
             "administering_ic",
             "research_program",
             "doi_identifier",
-            "doi_resolvable_link"
-          ]
+            "doi_resolvable_link",
+            "variable_metadata.field_standards_mappings_ids",
+            "variable_metadata.field_standards_mappings_sources",
+            "variable_metadata.standards_mappings_instrument_ids",
+            "variable_metadata.drupal_ids"
+          ],
+          "searchableAndSelectableTextFields": {
+            "HEAL CDE Name": "variable_metadata.field_standards_mappings_titles",
+            "Instrument/CRF Item": "variable_metadata.field_standards_mappings_id_source_combos",
+            "Variable Title": "variable_metadata.field_titles",
+            "Variable Name": "variable_metadata.field_names",
+            "Variable Description": "variable_metadata.field_descriptions"
+          },
         },
         "tagSearchDropdown": {
           "enabled": true,
