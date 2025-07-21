@@ -217,7 +217,7 @@
             "Variable Title": "variable_metadata.field_titles",
             "Variable Name": "variable_metadata.field_names",
             "Variable Description": "variable_metadata.field_descriptions"
-          },
+          }
         },
         "tagSearchDropdown": {
           "enabled": true,
