@@ -213,7 +213,7 @@
           ],
           "searchableAndSelectableTextFields": {
             "HEAL CDE Name": "variable_metadata.field_standards_mappings_titles",
-            "Instrument/CRF Item": "variable_metadata.field_standards_mappings_id_source_combos",
+            "Variable Source and/or ID": "variable_metadata.field_standards_mappings_id_source_combos",
             "Variable Title": "variable_metadata.field_titles",
             "Variable Name": "variable_metadata.field_names",
             "Variable Description": "variable_metadata.field_descriptions"
