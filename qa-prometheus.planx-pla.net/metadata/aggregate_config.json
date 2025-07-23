@@ -975,7 +975,7 @@
         "authz": "",
         "tags": "path:tags",
         "_unique_id": "path:external_windber_id",
-        "commons": "path:commons",
+        "commons": "Windber",
         "subject_id": "path:external_windber_id",
         "subject_apollo_id": "path:apollo_id",
         "subject_race": "path:race",
