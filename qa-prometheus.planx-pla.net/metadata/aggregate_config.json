@@ -161,14 +161,25 @@
                 "HISPANIC OR LATINO": "Hispanic or Latino"
               },
               "cancer_grade": {
-                "Grade 1": "Grade I",
-                "G1": "Grade I",
-                "Grade 2": "Grade II",
-                "G2": "Grade II",
-                "Grade 3": "Grade III",
-                "G3": "Grade III",
-                "Grade 4": "Grade IV",
-                "G4": "Grade IV"
+                "Grade 1": "I",
+                "G1": "I",
+                "Grade 2": "II",
+                "G2": "II",
+                "Grade 3": "III",
+                "G3": "III",
+                "Grade 4": "IV",
+                "G4": "IV"
+              },
+              "cancer_stage": {
+                "Stage IA": "IA",
+                "Stage IIA": "IIA",
+                "Stage IIIA": "IIIA",
+                "Stage IB": "IB",
+                "Stage IV": "IV",
+                "Stage IIB": "IIB",
+                "Stage I": "I",
+                "Stage II": "II",
+                "Stage III": "III"
               }
             }
           }
@@ -237,14 +248,25 @@
                 "HISPANIC OR LATINO": "Hispanic or Latino"
               },
               "cancer_grade": {
-                "Grade 1": "Grade I",
-                "G1": "Grade I",
-                "Grade 2": "Grade II",
-                "G2": "Grade II",
-                "Grade 3": "Grade III",
-                "G3": "Grade III",
-                "Grade 4": "Grade IV",
-                "G4": "Grade IV"
+                "Grade 1": "I",
+                "G1": "I",
+                "Grade 2": "II",
+                "G2": "II",
+                "Grade 3": "III",
+                "G3": "III",
+                "Grade 4": "IV",
+                "G4": "IV"
+              },
+              "cancer_stage": {
+                "Stage IA": "IA",
+                "Stage IIA": "IIA",
+                "Stage IIIA": "IIIA",
+                "Stage IB": "IB",
+                "Stage IV": "IV",
+                "Stage IIB": "IIB",
+                "Stage I": "I",
+                "Stage II": "II",
+                "Stage III": "III"
               }
             }
           }
@@ -589,14 +611,25 @@
                 "HISPANIC OR LATINO": "Hispanic or Latino"
               },
               "cancer_grade": {
-                "Grade 1": "Grade I",
-                "G1": "Grade I",
-                "Grade 2": "Grade II",
-                "G2": "Grade II",
-                "Grade 3": "Grade III",
-                "G3": "Grade III",
-                "Grade 4": "Grade IV",
-                "G4": "Grade IV"
+                "Grade 1": "I",
+                "G1": "I",
+                "Grade 2": "II",
+                "G2": "II",
+                "Grade 3": "III",
+                "G3": "III",
+                "Grade 4": "IV",
+                "G4": "IV"
+              },
+              "cancer_stage": {
+                "Stage IA": "IA",
+                "Stage IIA": "IIA",
+                "Stage IIIA": "IIIA",
+                "Stage IB": "IB",
+                "Stage IV": "IV",
+                "Stage IIB": "IIB",
+                "Stage I": "I",
+                "Stage II": "II",
+                "Stage III": "III"
               }
             }
           }
@@ -644,14 +677,25 @@
                 "HISPANIC OR LATINO": "Hispanic or Latino"
               },
               "cancer_grade": {
-                "Grade 1": "Grade I",
-                "G1": "Grade I",
-                "Grade 2": "Grade II",
-                "G2": "Grade II",
-                "Grade 3": "Grade III",
-                "G3": "Grade III",
-                "Grade 4": "Grade IV",
-                "G4": "Grade IV"
+                "Grade 1": "I",
+                "G1": "I",
+                "Grade 2": "II",
+                "G2": "II",
+                "Grade 3": "III",
+                "G3": "III",
+                "Grade 4": "IV",
+                "G4": "IV"
+              },
+              "cancer_stage": {
+                "Stage IA": "IA",
+                "Stage IIA": "IIA",
+                "Stage IIIA": "IIIA",
+                "Stage IB": "IB",
+                "Stage IV": "IV",
+                "Stage IIB": "IIB",
+                "Stage I": "I",
+                "Stage II": "II",
+                "Stage III": "III"
               }
             }
           }
