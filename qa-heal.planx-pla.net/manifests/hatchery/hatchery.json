@@ -77,7 +77,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Generic, User-licensed) Stata Notebook ",
-      "image": "quay.io/cdis/jupyter-pystata-user-licensed:2.0.0",
+      "image": "quay.io/cdis/jupyter-pystata-user-licensed:feat_heal-nb-update",
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
@@ -112,7 +112,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Generic, Limited Gen3-licensed) Stata Notebook",
-      "image": "quay.io/cdis/jupyter-pystata-gen3-licensed:2.0.0",
+      "image": "quay.io/cdis/jupyter-pystata-gen3-licensed:feat_heal-nb-update",
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
