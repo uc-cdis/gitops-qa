@@ -163,12 +163,16 @@
               "cancer_grade": {
                 "Grade 1": "I",
                 "G1": "I",
+                "Grade I": "I",
                 "Grade 2": "II",
                 "G2": "II",
+                "Grade II": "II",
                 "Grade 3": "III",
                 "G3": "III",
+                "Grade III": "III",
                 "Grade 4": "IV",
-                "G4": "IV"
+                "G4": "IV",
+                "Grade IV": "IV"
               },
               "cancer_stage": {
                 "Stage IA": "IA",
