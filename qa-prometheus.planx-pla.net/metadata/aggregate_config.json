@@ -709,7 +709,7 @@
           }
         },
         "_unique_id": "path:_unique_id",
-        "commons": "path:commons",
+        "commons": "VMOAT",
         "subject_id": "path:_unique_id",
         "subject_apollo_id": "path:apollo_id",
         "subject_type_of_exposure": "path:exposure_type",
@@ -775,7 +775,7 @@
           }
         },
         "_unique_id": "path:_unique_id",
-        "commons": "path:commons",
+        "commons": "Metabolomics",
         "subject_id": "path:subject_id",
         "subject_apollo_id": "path:apollo_id",
         "subject_race": "",
@@ -873,7 +873,7 @@
         "authz": "",
         "tags": "path:tags",
         "_unique_id": "path:guid",
-        "commons": "path:commons",
+        "commons": "TCIA",
         "subject_id": "path:subject_id",
         "subject_apollo_id": "path:apollo_id",
         "subject_race": "path:race",
