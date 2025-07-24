@@ -205,9 +205,17 @@
           "filterParams": {
             "normalize_value": {
               "Grade 1": "I",
+              "G1": "I",
+              "Grade I": "I",
               "Grade 2": "II",
+              "G2": "II",
+              "Grade II", "II"
               "Grade 3": "III",
-              "Grade 4": "IV"
+              "G3": "III",
+              "Grade III": "III",
+              "Grade 4": "IV",
+              "G4": "IV",
+              "Grade IV": "IV"
             }
           },
           "default": ""
@@ -273,12 +281,16 @@
               "cancer_grade": {
                 "Grade 1": "I",
                 "G1": "I",
+                "Grade I": "I",
                 "Grade 2": "II",
                 "G2": "II",
+                "Grade II": "II",
                 "Grade 3": "III",
                 "G3": "III",
+                "Grade III": "III",
                 "Grade 4": "IV",
-                "G4": "IV"
+                "G4": "IV",
+                "Grade IV": "IV"
               },
               "cancer_stage": {
                 "Stage IA": "IA",
@@ -356,12 +368,16 @@
             "normalize_value": {
               "Grade 1": "I",
               "G1": "I",
+              "Grade I", "I"
               "Grade 2": "II",
               "G2": "II",
+              "Grade II": "II",
               "Grade 3": "III",
               "G3": "III",
+              "Grade III": "III",
               "Grade 4": "IV",
-              "G4": "IV"
+              "G4": "IV",
+              "Grade IV": "IV"
             }
           },
           "default": ""
@@ -511,12 +527,16 @@
             "normalize_value": {
               "Grade 1": "I",
               "G1": "I",
+              "Grade I": "I",
               "Grade 2": "II",
               "G2": "II",
+              "Grade II", "II"
               "Grade 3": "III",
               "G3": "III",
+              "Grade III": "III",
               "Grade 4": "IV",
-              "G4": "IV"
+              "G4": "IV",
+              "Grade IV": "IV"
             }
           },
           "default": ""
@@ -616,12 +636,16 @@
             "normalize_value": {
               "Grade 1": "I",
               "G1": "I",
+              "Grade I": "I",
               "Grade 2": "II",
               "G2": "II",
+              "Grade II": "II",
               "Grade 3": "III",
               "G3": "III",
+              "Grade III": "III",
               "Grade 4": "IV",
-              "G4": "IV"
+              "G4": "IV",
+              "Grade IV": "IV"
             }
           },
           "default": ""
@@ -687,12 +711,16 @@
               "cancer_grade": {
                 "Grade 1": "I",
                 "G1": "I",
+                "Grade I": "I",
                 "Grade 2": "II",
                 "G2": "II",
+                "Grade II": "II",
                 "Grade 3": "III",
                 "G3": "III",
+                "Grade III": "III",
                 "Grade 4": "IV",
-                "G4": "IV"
+                "G4": "IV",
+                "Grade IV": "IV"
               },
               "cancer_stage": {
                 "Stage IA": "IA",
@@ -753,12 +781,16 @@
               "cancer_grade": {
                 "Grade 1": "I",
                 "G1": "I",
+                "Grade I": "I",
                 "Grade 2": "II",
                 "G2": "II",
+                "Grade II", "II"
                 "Grade 3": "III",
                 "G3": "III",
+                "Grade III": "III",
                 "Grade 4": "IV",
-                "G4": "IV"
+                "G4": "IV",
+                "Grade IV": "IV"
               },
               "cancer_stage": {
                 "Stage IA": "IA",
@@ -821,12 +853,16 @@
             "normalize_value": {
               "Grade 1": "I",
               "G1": "I",
+              "Grade I": "I",
               "Grade 2": "II",
               "G2": "II",
+              "Grade II", "II"
               "Grade 3": "III",
               "G3": "III",
+              "Grade III": "III",
               "Grade 4": "IV",
-              "G4": "IV"
+              "G4": "IV",
+              "Grade IV": "IV"
             }
           },
           "default": ""
@@ -923,12 +959,16 @@
             "normalize_value": {
               "Grade 1": "I",
               "G1": "I",
+              "Grade I": "I",
               "Grade 2": "II",
               "G2": "II",
+              "Grade II", "II"
               "Grade 3": "III",
               "G3": "III",
+              "Grade III": "III",
               "Grade 4": "IV",
-              "G4": "IV"
+              "G4": "IV",
+              "Grade IV": "IV"
             }
           },
           "default": ""
@@ -1027,12 +1067,16 @@
             "normalize_value": {
               "Grade 1": "I",
               "G1": "I",
+              "Grade I": "I",
               "Grade 2": "II",
               "G2": "II",
+              "Grade II", "II"
               "Grade 3": "III",
               "G3": "III",
+              "Grade III": "III",
               "Grade 4": "IV",
-              "G4": "IV"
+              "G4": "IV",
+              "Grade IV": "IV"
             }
           },
         "subject_cancer_stage": {
