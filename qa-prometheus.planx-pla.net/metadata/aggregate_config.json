@@ -1075,7 +1075,7 @@
         "authz": "",
         "tags": "path:tags",
         "_unique_id": "path:mc2dp_global_id",
-        "commons": "Agreegated Rows",
+        "commons": "Aggregated Rows",
         "subject_id_list": "path:data_source_ids",
         "subject_metastasis": "path:metastasis",
         "subject_cancer_type": "path:cancer_type",
