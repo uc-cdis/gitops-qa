@@ -297,7 +297,7 @@
         "advSearchFilters": {
           "path": "filters"
         },
-        "_unique_id": "",
+        "_unique_id": "path:case_submitter_id",
         "commons": {
           "path": "platform_id",
           "default": ""
@@ -709,7 +709,7 @@
           }
         },
         "_unique_id": "path:_unique_id",
-        "commons": "path:commons",
+        "commons": "VMOAT",
         "subject_id": "path:_unique_id",
         "subject_apollo_id": "path:apollo_id",
         "subject_type_of_exposure": "path:exposure_type",
@@ -775,7 +775,7 @@
           }
         },
         "_unique_id": "path:_unique_id",
-        "commons": "path:commons",
+        "commons": "Metabolomics",
         "subject_id": "path:subject_id",
         "subject_apollo_id": "path:apollo_id",
         "subject_race": "",
@@ -873,7 +873,7 @@
         "authz": "",
         "tags": "path:tags",
         "_unique_id": "path:guid",
-        "commons": "path:commons",
+        "commons": "TCIA",
         "subject_id": "path:subject_id",
         "subject_apollo_id": "path:apollo_id",
         "subject_race": "path:race",
@@ -975,7 +975,7 @@
         "authz": "",
         "tags": "path:tags",
         "_unique_id": "path:external_windber_id",
-        "commons": "path:commons",
+        "commons": "Windber",
         "subject_id": "path:external_windber_id",
         "subject_apollo_id": "path:apollo_id",
         "subject_race": "path:race",
@@ -1075,7 +1075,7 @@
         "authz": "",
         "tags": "path:tags",
         "_unique_id": "path:mc2dp_global_id",
-        "commons": "path:data_source",
+        "commons": "Aggregated Rows",
         "subject_id_list": "path:data_source_ids",
         "subject_metastasis": "path:metastasis",
         "subject_cancer_type": "path:cancer_type",
