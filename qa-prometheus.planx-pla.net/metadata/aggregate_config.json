@@ -1084,26 +1084,27 @@
                             "Grade IV": "IV"
                         }
                     },
-                    "subject_cancer_stage": {
-                        "path": "cancer_stage",
-                        "filters": [
-                            "normalize_value"
-                        ],
-                        "filterParams": {
-                            "normalize_value": {
-                                "Stage IA": "IA",
-                                "Stage IIA": "IIA",
-                                "Stage IIIA": "IIIA",
-                                "Stage IB": "IB",
-                                "Stage IV": "IV",
-                                "Stage IIB": "IIB",
-                                "Stage I": "I",
-                                "Stage II": "II",
-                                "Stage III": "III"
-                            }
-                        },
-                        "default": ""
-                    }
+                    "default": ""
+                },
+                "subject_cancer_stage": {
+                    "path": "cancer_stage",
+                    "filters": [
+                        "normalize_value"
+                    ],
+                    "filterParams": {
+                        "normalize_value": {
+                            "Stage IA": "IA",
+                            "Stage IIA": "IIA",
+                            "Stage IIIA": "IIIA",
+                            "Stage IB": "IB",
+                            "Stage IV": "IV",
+                            "Stage IIB": "IIB",
+                            "Stage I": "I",
+                            "Stage II": "II",
+                            "Stage III": "III"
+                        }
+                    },
+                    "default": ""
                 }
             }
         },
