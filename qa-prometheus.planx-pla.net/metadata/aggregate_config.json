@@ -297,7 +297,7 @@
         "advSearchFilters": {
           "path": "filters"
         },
-        "_unique_id": "",
+        "_unique_id": "path:case_submitter_id",
         "commons": {
           "path": "platform_id",
           "default": ""
