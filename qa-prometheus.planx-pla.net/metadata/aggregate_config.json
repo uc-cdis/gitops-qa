@@ -1019,6 +1019,11 @@
                 "subject_id": "path:external_windber_id",
                 "subject_apollo_id": "path:apollo_id",
                 "subject_race": "path:race",
+                "subject_primary_disease": "",
+                "data_source": "Windber",
+                "commons_url": "externalgen3.prometheus.data-commons.org",
+                "mc2dp_global_id": "",
+                "is_synthetic": "Yes",
                 "subject_gender": {
                     "path": "gender",
                     "filters": [
@@ -1099,11 +1104,6 @@
                         },
                         "default": ""
                     },
-                    "subject_primary_disease": "",
-                    "data_source": "Windber",
-                    "commons_url": "externalgen3.prometheus.data-commons.org",
-                    "mc2dp_global_id": "",
-                    "is_synthetic": "Yes"
                 }
             }
         },
