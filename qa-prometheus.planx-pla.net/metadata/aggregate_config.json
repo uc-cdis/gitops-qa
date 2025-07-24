@@ -1105,32 +1105,32 @@
                     "mc2dp_global_id": "",
                     "is_synthetic": "Yes"
                 }
+            }
+        },
+        "aggregated-subject-level-metadata": {
+            "mds_url": "https://externalgen3.prometheus.data-commons.org/",
+            "commons_url": "externalgen3.prometheus.data-commons.org",
+            "adapter": "gen3",
+            "config": {
+                "guid_type": "aggmds_metadata_entry",
+                "study_field": "gen3_discovery"
             },
-            "aggregated-subject-level-metadata": {
-                "mds_url": "https://externalgen3.prometheus.data-commons.org/",
+            "keep_original_fields": false,
+            "field_mappings": {
+                "authz": "",
+                "tags": "path:tags",
+                "_unique_id": "path:mc2dp_global_id",
+                "commons": "Aggregated Rows",
+                "subject_id_list": "path:data_source_ids",
+                "subject_metastasis": "path:metastasis",
+                "subject_cancer_type": "path:cancer_type",
+                "subject_primary_disease": "path:primary_disease",
+                "subject_type_of_exposures": "path:type_of_exposures",
+                "data_source": "path:data_source",
                 "commons_url": "externalgen3.prometheus.data-commons.org",
-                "adapter": "gen3",
-                "config": {
-                    "guid_type": "aggmds_metadata_entry",
-                    "study_field": "gen3_discovery"
-                },
-                "keep_original_fields": false,
-                "field_mappings": {
-                    "authz": "",
-                    "tags": "path:tags",
-                    "_unique_id": "path:mc2dp_global_id",
-                    "commons": "Aggregated Rows",
-                    "subject_id_list": "path:data_source_ids",
-                    "subject_metastasis": "path:metastasis",
-                    "subject_cancer_type": "path:cancer_type",
-                    "subject_primary_disease": "path:primary_disease",
-                    "subject_type_of_exposures": "path:type_of_exposures",
-                    "data_source": "path:data_source",
-                    "commons_url": "externalgen3.prometheus.data-commons.org",
-                    "mc2dp_global_id": "path:mc2dp_global_id",
-                    "is_synthetic": "No",
-                    "data_files": "path:data_type"
-                }
+                "mc2dp_global_id": "path:mc2dp_global_id",
+                "is_synthetic": "No",
+                "data_files": "path:data_type"
             }
         }
     }
