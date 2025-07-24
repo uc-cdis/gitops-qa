@@ -594,22 +594,6 @@
                 "subject_id": "path:case_submitter_id",
                 "subject_apollo_id": "path:case_submitter_id",
                 "subject_race": "path:race",
-                "subject_gender": {
-                    "path": "demographic.gender",
-                    "filters": [
-                        "normalize_value"
-                    ],
-                    "filterParams": {
-                        "normalize_value": {
-                            "male": "Male",
-                            "female": "Female",
-                            "m": "Male",
-                            "f": "Female",
-                            "not reported": "Not Reported"
-                        }
-                    },
-                    "default": ""
-                },
                 "subject_ethnicity": {
                     "path": "demographic.ethnicity",
                     "filters": [
@@ -973,28 +957,7 @@
                     },
                     "default": ""
                 },
-                "subject_cancer_stage": {
-                    "path": "cancer_stage",
-                    "filters": [
-                        "normalize_value"
-                    ],
-                    "filterParams": {
-                        "normalize_value": {
-                            "Stage IA": "IA",
-                            "Stage IIA": "IIA",
-                            "Stage IIIA": "IIIA",
-                            "Stage IB": "IB",
-                            "Stage IV": "IV",
-                            "Stage IIB": "IIB",
-                            "Stage I": "I",
-                            "Stage II": "II",
-                            "Stage III": "III"
-                        }
-                    },
-                    "default": ""
-                },
                 "subject_year_of_birth": "",
-                "subject_primary_disease": "",
                 "data_source": "TCIA",
                 "commons_url": "externalgen3.prometheus.data-commons.org",
                 "mc2dp_global_id": "path:mc2dp_global_id",
@@ -1019,7 +982,6 @@
                 "subject_id": "path:external_windber_id",
                 "subject_apollo_id": "path:apollo_id",
                 "subject_race": "path:race",
-                "subject_primary_disease": "",
                 "data_source": "Windber",
                 "commons_url": "externalgen3.prometheus.data-commons.org",
                 "mc2dp_global_id": "",
@@ -1082,26 +1044,6 @@
                             "Grade 4": "IV",
                             "G4": "IV",
                             "Grade IV": "IV"
-                        }
-                    },
-                    "default": ""
-                },
-                "subject_cancer_stage": {
-                    "path": "cancer_stage",
-                    "filters": [
-                        "normalize_value"
-                    ],
-                    "filterParams": {
-                        "normalize_value": {
-                            "Stage IA": "IA",
-                            "Stage IIA": "IIA",
-                            "Stage IIIA": "IIIA",
-                            "Stage IB": "IB",
-                            "Stage IV": "IV",
-                            "Stage IIB": "IIB",
-                            "Stage I": "I",
-                            "Stage II": "II",
-                            "Stage III": "III"
                         }
                     },
                     "default": ""
