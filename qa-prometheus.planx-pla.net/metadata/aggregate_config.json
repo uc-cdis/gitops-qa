@@ -594,22 +594,6 @@
                 "subject_id": "path:case_submitter_id",
                 "subject_apollo_id": "path:case_submitter_id",
                 "subject_race": "path:race",
-                "subject_gender": {
-                    "path": "demographic.gender",
-                    "filters": [
-                        "normalize_value"
-                    ],
-                    "filterParams": {
-                        "normalize_value": {
-                            "male": "Male",
-                            "female": "Female",
-                            "m": "Male",
-                            "f": "Female",
-                            "not reported": "Not Reported"
-                        }
-                    },
-                    "default": ""
-                },
                 "subject_ethnicity": {
                     "path": "demographic.ethnicity",
                     "filters": [
@@ -973,28 +957,7 @@
                     },
                     "default": ""
                 },
-                "subject_cancer_stage": {
-                    "path": "cancer_stage",
-                    "filters": [
-                        "normalize_value"
-                    ],
-                    "filterParams": {
-                        "normalize_value": {
-                            "Stage IA": "IA",
-                            "Stage IIA": "IIA",
-                            "Stage IIIA": "IIIA",
-                            "Stage IB": "IB",
-                            "Stage IV": "IV",
-                            "Stage IIB": "IIB",
-                            "Stage I": "I",
-                            "Stage II": "II",
-                            "Stage III": "III"
-                        }
-                    },
-                    "default": ""
-                },
                 "subject_year_of_birth": "",
-                "subject_primary_disease": "",
                 "data_source": "TCIA",
                 "commons_url": "externalgen3.prometheus.data-commons.org",
                 "mc2dp_global_id": "path:mc2dp_global_id",
@@ -1019,6 +982,10 @@
                 "subject_id": "path:external_windber_id",
                 "subject_apollo_id": "path:apollo_id",
                 "subject_race": "path:race",
+                "data_source": "Windber",
+                "commons_url": "externalgen3.prometheus.data-commons.org",
+                "mc2dp_global_id": "",
+                "is_synthetic": "Yes",
                 "subject_gender": {
                     "path": "gender",
                     "filters": [
@@ -1079,58 +1046,34 @@
                             "Grade IV": "IV"
                         }
                     },
-                    "subject_cancer_stage": {
-                        "path": "cancer_stage",
-                        "filters": [
-                            "normalize_value"
-                        ],
-                        "filterParams": {
-                            "normalize_value": {
-                                "Stage IA": "IA",
-                                "Stage IIA": "IIA",
-                                "Stage IIIA": "IIIA",
-                                "Stage IB": "IB",
-                                "Stage IV": "IV",
-                                "Stage IIB": "IIB",
-                                "Stage I": "I",
-                                "Stage II": "II",
-                                "Stage III": "III"
-                            }
-                        },
-                        "default": ""
-                    },
-                    "subject_primary_disease": "",
-                    "data_source": "Windber",
-                    "commons_url": "externalgen3.prometheus.data-commons.org",
-                    "mc2dp_global_id": "",
-                    "is_synthetic": "Yes"
+                    "default": ""
                 }
+            }
+        },
+        "aggregated-subject-level-metadata": {
+            "mds_url": "https://externalgen3.prometheus.data-commons.org/",
+            "commons_url": "externalgen3.prometheus.data-commons.org",
+            "adapter": "gen3",
+            "config": {
+                "guid_type": "aggmds_metadata_entry",
+                "study_field": "gen3_discovery"
             },
-            "aggregated-subject-level-metadata": {
-                "mds_url": "https://externalgen3.prometheus.data-commons.org/",
+            "keep_original_fields": false,
+            "field_mappings": {
+                "authz": "",
+                "tags": "path:tags",
+                "_unique_id": "path:mc2dp_global_id",
+                "commons": "path:data_source",
+                "subject_id_list": "path:data_source_ids",
+                "subject_metastasis": "path:metastasis",
+                "subject_cancer_type": "path:cancer_type",
+                "subject_primary_disease": "path:primary_disease",
+                "subject_type_of_exposures": "path:type_of_exposures",
+                "data_source": "aggregated data",
                 "commons_url": "externalgen3.prometheus.data-commons.org",
-                "adapter": "gen3",
-                "config": {
-                    "guid_type": "aggmds_metadata_entry",
-                    "study_field": "gen3_discovery"
-                },
-                "keep_original_fields": false,
-                "field_mappings": {
-                    "authz": "",
-                    "tags": "path:tags",
-                    "_unique_id": "path:mc2dp_global_id",
-                    "commons": "Aggregated Rows",
-                    "subject_id_list": "path:data_source_ids",
-                    "subject_metastasis": "path:metastasis",
-                    "subject_cancer_type": "path:cancer_type",
-                    "subject_primary_disease": "path:primary_disease",
-                    "subject_type_of_exposures": "path:type_of_exposures",
-                    "data_source": "path:data_source",
-                    "commons_url": "externalgen3.prometheus.data-commons.org",
-                    "mc2dp_global_id": "path:mc2dp_global_id",
-                    "is_synthetic": "No",
-                    "data_files": "path:data_type"
-                }
+                "mc2dp_global_id": "path:mc2dp_global_id",
+                "is_synthetic": "No",
+                "data_files": "path:data_type"
             }
         }
     }
