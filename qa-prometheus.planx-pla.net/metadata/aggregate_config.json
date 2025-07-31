@@ -56,9 +56,6 @@
             },
             "subject_chemical_agents_of_exposure": {},
             "mc2dp_global_id": {},
-            "studies": {
-                "type": "array"
-            },
             "data_files": {
                 "type": "array"
             },
