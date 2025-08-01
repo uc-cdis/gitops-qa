@@ -19,8 +19,15 @@
                 "type": "array"
             },
             "advSearchFilters": {
-                "type": "array",
-                "default": []
+                 "type": "array",
+               "properties": {
+                    "key": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                }
             },
             "_unique_id": {},
             "study_description": {},
