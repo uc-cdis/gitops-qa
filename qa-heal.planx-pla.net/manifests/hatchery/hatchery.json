@@ -38,7 +38,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Generic) Jupyter Lab Notebook with R Kernel",
-      "image": "quay.io/cdis/heal-notebooks:generic_rkernel__a446922e0751453477295f010e18119cee4dd543",
+      "image": "quay.io/cdis/heal-notebooks:generic_rkernel__feat_heal-nb-update",
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
@@ -157,7 +157,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Tutorials) Example Analysis Jupyter Lab Notebooks",
-      "image": "quay.io/cdis/heal-notebooks:combined_tutorials__22ec8d31c349ea76590d1071e8ceb1072eb69c72",
+      "image": "quay.io/cdis/heal-notebooks:combined_tutorials__feat_heal-nb-update",
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
