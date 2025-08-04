@@ -157,7 +157,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Tutorials) Example Analysis Jupyter Lab Notebooks",
-      "image": "quay.io/cdis/heal-notebooks:combined_tutorials__feat_heal-nb-update",
+      "image": "quay.io/cdis/heal-notebooks:combined_tutorials__bd7cb4ba2442650afc0c21a255ab4ed3f9c7bfb6",
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
