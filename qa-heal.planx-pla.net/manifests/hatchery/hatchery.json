@@ -38,7 +38,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Generic) Jupyter Lab Notebook with R Kernel",
-      "image": "quay.io/cdis/heal-notebooks:generic_rkernel__a446922e0751453477295f010e18119cee4dd543",
+      "image": "quay.io/cdis/heal-notebooks:generic_rkernel__8c8e55744d54da20ec21eea51e93c2a06be5caeb",
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
@@ -67,7 +67,7 @@
         "-c",
         "export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; rm -rf /home/$IAM/pd/lost+found; ln -s /data /home/$IAM/; rm /home/$IAM/pd/data; wget -O /data/external_data_download.ipynb https://raw.githubusercontent.com/uc-cdis/heal-platform-sdk/refs/heads/master/notebooks/external_data_download.ipynb; wget -O /data/NDA_data_package_download.ipynb https://raw.githubusercontent.com/uc-cdis/heal-platform-sdk/refs/heads/master/notebooks/NDA_data_package_download.ipynb; true"
       ],
-      "user-uid": 1000,
+      "user-uid": 1010,
       "fs-gid": 100,
       "user-volume-location": "/home/jovyan/pd",
       "gen3-volume-location": "/home/jovyan/.gen3"
@@ -157,7 +157,7 @@
       "cpu-limit": "1.0",
       "memory-limit": "2Gi",
       "name": "(Tutorials) Example Analysis Jupyter Lab Notebooks",
-      "image": "quay.io/cdis/heal-notebooks:combined_tutorials__22ec8d31c349ea76590d1071e8ceb1072eb69c72",
+      "image": "quay.io/cdis/heal-notebooks:combined_tutorials__bd7cb4ba2442650afc0c21a255ab4ed3f9c7bfb6",
       "env": {
         "FRAME_ANCESTORS": "https://qa-heal.planx-pla.net"
       },
@@ -182,7 +182,7 @@
         "-c",
         "export IAM=`whoami`; rm -rf /home/$IAM/pd/dockerHome; rm -rf /home/$IAM/pd/lost+found; ln -s /data /home/$IAM/; rm /home/$IAM/pd/data; true"
       ],
-      "user-uid": 1000,
+      "user-uid": 1010,
       "fs-gid": 100,
       "user-volume-location": "/home/jovyan/pd",
       "gen3-volume-location": "/home/jovyan/.gen3"
