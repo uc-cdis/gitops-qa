@@ -71,7 +71,7 @@
       "cpu-limit": "2.0",
       "memory-limit": "16Gi",
       "name": "(Tutorials) Example Analysis Jupyter Lab Notebooks",
-      "image": "quay.io/cdis/brh-notebooks:combined_demos__48a3c0fc485db9b680a77b9da45a375a297a85fb",
+      "image": "quay.io/cdis/brh-notebooks:combined_demos__b0a59aa051cbd993bbda25a7bb42f99bd4d91322",
       "env": {
         "FRAME_ANCESTORS": "https://qa-brh.planx-pla.net"
       },
