@@ -62,6 +62,17 @@
                 "type": "array"
             },
             "subject_chemical_agents_of_exposure": {},
+            "subject_run_id": {},
+            "subject_class": {},
+            "subject_group": {},
+            "subject_project": {},
+            "subject_rundate": {},
+            "subject_exp_target": {},
+            "subject_ionization": {},
+            "subject_chromatography": {},
+            "subject_plate": {},
+            "subject_injection": {},
+            "subject_plate_position": {},
             "mc2dp_global_id": {},
             "data_files": {
                 "type": "array"
@@ -243,6 +254,38 @@
                 "mc2dp_global_id": "path:mc2dp_global_id",
                 "is_synthetic": "No",
                 "data_files": "path:data_type"
+            }
+        },
+        "PNNL-subject-level-metadata": {
+            "mds_url": "https://externalgen3.prometheus.data-commons.org/",
+            "commons_url": "externalgen3.prometheus.data-commons.org",
+            "adapter": "gen3",
+            "config": {
+                "guid_type": "PNNL_subject_metadata",
+                "study_field": "gen3_discovery"
+            },
+            "keep_original_fields": false,
+            "field_mappings": {
+                "authz": "",
+                "tags": "path:tags",
+                "_unique_id": "path:_unique_id",
+                "commons": "path:commons",
+                "subject_id": "path:sample_id",
+                "subject_run_id": "path:replicate_info.run_id",
+                "subject_class": "path:class",
+                "subject_group": "path:group",
+                "subject_project": "path:project",
+                "subject_rundate": "path:rundate",
+                "subject_exp_target": "path:exp_target",
+                "subject_ionization": "path:ionization",
+                "subject_chromatography": "path:chromatography",
+                "subject_plate": "path:replicate_info.plate",
+                "subject_injection": "path:replicate_info.injection",
+                "subject_plate_position": "path:replicate_info.plate_position",
+                "data_source": "path:data_source",
+                "mc2dp_global_id": "",
+                "is_synthetic": "Yes",
+                "commons_url": "externalgen3.prometheus.data-commons.org"
             }
         }
     }
