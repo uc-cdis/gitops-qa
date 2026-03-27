@@ -32,27 +32,6 @@
     "navigation": {
       "items": [
         {
-          "name": "Discovery",
-          "link": "/discovery",
-          "icon": "query",
-          "tooltip": "Use free-text search and tags to rapidly find relevant studies, discover new datasets across multiple resources, and easily export selected data files to the analysis workspace.",
-          "color": "#a2a2a2"
-        },
-        {
-          "name": "Workspace",
-          "link": "/workspace",
-          "icon": "workspace",
-          "tooltip": "Gen3 workspaces are secure data analysis environments in the cloud that can access data from one or more data resources.",
-          "color": "#a2a2a2"
-        },
-        {
-          "name": "Example Analysis",
-          "link": "/resource-browser",
-          "icon": "bar-chart",
-          "tooltip": "Learn how to use Jupyter Notebooks to explore and visualize data discovered in the Biomedical Research Hub by running a static tutorial notebook, or use one of these examples as a launching point for your own custom analysis.",
-          "color": "#a2a2a2"
-        },
-        {
           "name": "Profile",
           "link": "/identity",
           "icon": "profile",
@@ -117,5 +96,5 @@
   "useArboristUI": true,
   "showArboristAuthzOnProfile": true,
   "showFenceAuthzOnProfile": false,
-  "showExternalLoginsOnProfile": true
+  "showExternalLoginsOnProfile": false
 }
