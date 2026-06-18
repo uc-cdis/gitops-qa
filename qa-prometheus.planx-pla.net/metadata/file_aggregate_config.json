@@ -1,0 +1,78 @@
+    {
+         "configuration": {
+             "schema": {
+                 "_unique_id": {},
+                 "authz": { "type": "string", "default" : "/programs/open" },
+                 "file_name": {
+                  "type": "string"
+                },
+                "file_data_size": {
+                  "type": "integer"
+                },
+                 "file_data_type": {
+                     "type": "string"
+                 },
+                 "file_subtype": {
+                     "type": "string"
+                 },
+                 "file_permission": {
+                     "type": "string"
+                 },
+                 "file_number_of_files": {
+                     "type": "integer"
+                 },
+                 "file_unique_identifier": {
+                     "type": "string"
+                 },
+                 "file_download_url": {
+                     "type": "string"
+                 },
+                 "file_data_source": {
+                     "type": "string"
+                 },
+                 "file_data_source_id": {
+                     "type": "string"
+                 },
+                 "file_data_source_project": {
+                     "type": "string"
+                 }
+             },
+             "settings": {
+                 "cache_drs": false,
+                 "array_config_prefix": "gen3_discovery"
+             }
+         },
+         "adapter_commons": {
+             "aggregated-subject-level-metadata": {
+                 "mds_url": "https://externalgen3.prometheus.data-commons.org/",
+                 "commons_url": "externalgen3.prometheus.data-commons.org",
+                 "adapter": "mc2dpFiles",
+                 "config": {
+                     "guid_type": "aggmds_metadata_entry",
+                     "study_field": "gen3_discovery",
+                     "data_files_field": "data_type",
+                     "file_guid_field": "file_unique_identifier",
+                     "batchSize": 100
+                 },
+                 "keep_original_fields": false,
+                 "field_mappings": {
+                     "_unique_id": "path:file_unique_identifier",
+                     "file_name": "path:file_name",
+                     "file_data_size": "path:file_data_size",
+                     "file_data_type": "path:file_data_type",
+                     "file_subtype": {
+                         "path": "file_subtype",
+                         "default": "unknown"
+                     },
+                     "file_permission": "path:file_permission",
+                     "mc2dp_global_id": "path:mc2dp_global_id",
+                     "file_data_source": "path:file_data_source",
+                     "file_download_url": "path:file_download_url",
+                     "file_data_source_id": "path:file_data_source_id",
+                     "file_number_of_files": "path:file_number_of_files",
+                     "file_unique_identifier": "path:file_unique_identifier",
+                     "file_data_source_project": "path:file_data_source_project"
+                 }
+             }
+         }
+     }
