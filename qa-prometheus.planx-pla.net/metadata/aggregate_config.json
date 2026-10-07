@@ -141,7 +141,8 @@
             }
         },
         "settings": {
-            "cache_drs": true
+            "cache_drs": true,
+            "array_config_prefix": "gen3_discovery"
         }
     },
     "adapter_commons": {
