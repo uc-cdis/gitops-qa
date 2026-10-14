@@ -4,3 +4,4 @@
 .DS_Store
 .dccache
 .idea
+.vscode/settings.json
